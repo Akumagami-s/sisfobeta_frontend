@@ -1,0 +1,564 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+#mainHeader {
+  background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+  position: relative;
+  z-index: 1;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand {
+  display: flex;
+  align-items: center;
+  transition: .5s;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand img {
+  transition: .5s;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+  font-family: steelfish;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
+  font-size: 12px;
+  letter-spacing: .8px;
+  font-weight: 500;
+}
+
+#mainHeader .navbar .container-fluid .userControl {
+  display: flex;
+  align-items: center;
+  transition: .5s;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchIcon {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+  border: none;
+  width: 0px;
+  transition: .5s;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
+  width: 200px;
+  transition: width .5s;
+  border-bottom: 2px solid #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl ion-icon {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 15px;
+  transition: 1s;
+  width: max-content;
+  padding: 0px 16px 0px 0px;
+}
+
+#mainHeader .navbar .container-fluid .userControl button:hover {
+  transition: .8s;
+}
+
+#mainHeader .navbar .container-fluid .userControl button:hover img {
+  transition: .8s;
+}
+
+#mainHeader .navbar .container-fluid .userControl button:hover p {
+  transition: .8s;
+  padding-left: .8rem;
+}
+
+#mainHeader .navbar .container-fluid .userControl button img {
+  border-radius: 50%;
+  margin-right: 4px;
+  transition: 1s;
+}
+
+#mainHeader .navbar .container-fluid .userControl button p {
+  font-weight: 500;
+  font-size: 18px;
+  transition: 1s;
+}
+
+.mainMenu {
+  position: relative;
+  z-index: 2;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu {
+  display: flex;
+  position: relative;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain {
+  display: flex;
+  background: #fff;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .headerRekap p {
+  font-weight: 500;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap {
+  display: flex;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information {
+  display: flex;
+  position: relative;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information {
+  position: relative;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: red;
+  border-radius: 50%;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information h1 {
+  font-weight: 700;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-aktif::before {
+  background: #A2A846;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-pensiun::before {
+  background: #587350;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .menuButton {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .menuButton .menu {
+  background: #fff;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name h1 {
+  font-weight: 700;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name span {
+  font-weight: 500;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information .currency {
+  font-weight: 500;
+}
+
+.mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information .bank-interest {
+  color: #32B404;
+  font-weight: 500;
+}
+
+/*============
+Responsive Mobile and Desktop
+============*/
+@media screen and (min-width: 0px) {
+  #mainHeader {
+    border-radius: 0px 0px 50px 50px;
+    height: 300px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand img {
+    max-width: 70px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+    margin-left: 0px;
+    display: none;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
+    width: 100px;
+  }
+  #mainHeader .navbar .container-fluid .userControl ion-icon {
+    margin: 0 .5rem;
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl button {
+    margin-left: .5rem;
+    border-radius: 15px;
+  }
+  #mainHeader .navbar .container-fluid .userControl button img {
+    max-width: 25px;
+  }
+  #mainHeader .navbar .container-fluid .userControl button p {
+    font-size: 12px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain {
+    position: relative;
+    flex-direction: column;
+    top: -150px;
+    width: 90%;
+    padding: 26px 12px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .headerRekap {
+    margin-bottom: 1rem;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap {
+    flex-direction: column;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .chart {
+    margin-bottom: 3rem;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information::before {
+    height: 12px;
+    width: 12px;
+    left: -20px;
+    top: 2px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information h1 {
+    font-size: 14px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information p {
+    font-size: 12px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton {
+    position: relative;
+    top: -110px;
+    justify-content: space-between;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu {
+    margin: 6px 6px 12px 6px;
+    padding: 12px 12px;
+    width: 45%;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .icon {
+    margin-bottom: 12px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .icon img {
+    width: 32px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name {
+    margin-bottom: 6px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name h1 {
+    font-size: 14px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name span {
+    font-size: 12px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information::before {
+    left: -25px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information h1 {
+    font-size: 16px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information p {
+    font-size: 14px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu {
+    width: 47%;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .icon img {
+    width: 36px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name h1 {
+    font-size: 16px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name span {
+    font-size: 14px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #mainHeader {
+    border-radius: 0px 0px 50px 50px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand img {
+    max-width: 80px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+    margin-left: 4px;
+    display: block;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+    margin-bottom: 4px;
+    letter-spacing: 10px;
+    font-size: 62px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
+    font-size: 9px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
+    width: 150px;
+  }
+  #mainHeader .navbar .container-fluid .userControl ion-icon {
+    margin: 0 .8rem;
+    font-size: 18px;
+  }
+  #mainHeader .navbar .container-fluid .userControl button {
+    margin-left: 1rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl button img {
+    max-width: 35px;
+  }
+  #mainHeader .navbar .container-fluid .userControl button p {
+    font-size: 18px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu {
+    flex-direction: row;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain {
+    padding: 26px 26px;
+    width: 100%;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .chart {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information {
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-evenly;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton {
+    width: 100%;
+    margin-left: .5rem;
+    top: -145px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu {
+    width: 46%;
+    margin: 6px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #mainHeader {
+    border-radius: 0px 0px 50px 50px;
+    padding: 0 3rem;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand img {
+    max-width: 100px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+    margin-left: 4px;
+    display: block;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+    margin-bottom: 4px;
+    font-size: 72px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
+    font-size: 10px;
+  }
+  #mainHeader .navbar .container-fluid .userControl ion-icon {
+    margin: 0 .8rem;
+    font-size: 22px;
+  }
+  #mainHeader .navbar .container-fluid .userControl button {
+    margin-left: 1rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl button img {
+    max-width: 35px;
+  }
+  #mainHeader .navbar .container-fluid .userControl button p {
+    font-size: 18px;
+  }
+  .mainMenu {
+    padding: 0 3rem;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton {
+    width: 100%;
+    margin-left: .5rem;
+    top: -145px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu {
+    width: 47%;
+    margin: 6px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .icon img {
+    width: 38px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name h1 {
+    font-size: 18px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name span {
+    font-size: 16px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #mainHeader {
+    height: 400px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand img {
+    max-width: 120px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+    margin-left: 8px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+    font-size: 86px;
+    letter-spacing: 11px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
+    width: 200px;
+  }
+  #mainHeader .navbar .container-fluid .userControl ion-icon {
+    margin: 0 1rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl button {
+    margin-left: 1rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl button img {
+    max-width: 35px;
+  }
+  #mainHeader .navbar .container-fluid .userControl button p {
+    font-size: 18px;
+  }
+  .mainMenu {
+    padding: 0 3rem;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain {
+    top: -200px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton {
+    top: -200px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu {
+    width: 48%;
+    margin: 8px 4px;
+    padding: 12px 18px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .mainMenu .container-fluid .wrapperMainMenu .rekapMain {
+    width: 100%;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton {
+    width: 100%;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .icon img {
+    width: 46px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name h1 {
+    font-size: 24px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name span {
+    font-size: 24px;
+  }
+  .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=dashboard.css.map */

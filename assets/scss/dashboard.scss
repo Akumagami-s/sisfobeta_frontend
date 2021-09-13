@@ -1,0 +1,694 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+/*------------
+Variables
+------------*/
+$white-color : #fff;
+$dashboard-background : linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+$font-color : #3B4E63;
+$font-weight300 : 300;
+$font-weight400 : 400;
+$font-weight500 : 500;
+$font-weight700 : 700;
+$font-weight900 : 900;
+$fontsize-card-title : 24px;
+$fontsize-card-valueNumber : 28px;
+
+/*------------
+Styling
+------------*/
+#mainHeader {
+    background: $dashboard-background;
+    position: relative;
+    z-index: 1;
+
+    .navbar {
+        .container-fluid {
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                transition: .5s;
+                img {
+                    transition: .5s;
+                }
+                .brand-title {
+                    color: $white-color;
+                    h1 {
+                        font-family: steelfish;
+                    }
+                    p {
+                        font-size: 12px;
+                        letter-spacing: .8px;
+                        font-weight: $font-weight500;
+                    }
+                }
+            }
+            .userControl {
+                display: flex;
+                align-items: center;
+                transition: .5s;
+                
+                .searchBox {
+                    display: flex;
+                    align-items: center;
+                    background: transparent;
+                    .searchIcon {
+                        display: flex;
+                        align-items: center;
+                        color: $white-color;
+                        cursor: pointer;
+                    }
+                    .searchInput {
+                        border: none;
+                        width: 0px;
+                        transition: .5s;
+                        background: transparent;
+                        color: $white-color;
+                        font-weight: $font-weight500;
+
+                        &::placeholder {
+                            color: $white-color;
+                        }
+                        &.active {
+                            width: 200px;
+                            transition: width .5s;
+                            border-bottom: 2px solid $white-color;
+
+                        }
+                    }
+                }
+                ion-icon {
+                    color: $white-color;
+                }
+                button {
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                    background: rgba($color: $white-color, $alpha: .2);
+                    color: $white-color;
+                    border-radius: 15px;
+                    transition: 1s;
+                    width: max-content;
+                    padding: 0px 16px 0px 0px;
+
+                    &:hover {
+                        transition: .8s;
+                        img {
+                            transition: .8s;
+                        }
+                        p {
+                            transition: .8s;
+                            padding-left: .8rem;
+                        }
+                    }
+                    img {
+                        border-radius: 50%;
+                        margin-right: 4px;
+                        transition: 1s;
+                    }
+                    p {
+                        font-weight: $font-weight500;
+                        font-size: 18px;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainMenu {
+    position: relative;
+    z-index: 2;
+
+    .container-fluid {
+        .wrapperMainMenu {
+            display: flex;
+            position: relative;
+            .rekapMain {
+                display: flex;
+                background: $white-color;
+                box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+                border-radius: 15px;
+
+                .headerRekap {
+                    p {
+                        font-weight: $font-weight500;
+                    }
+                }
+                .wrapperRekap {
+                    display: flex;
+                    .rekap-information {
+                        display: flex;
+                        position: relative;
+                        .prajurit-information {
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                background: red;
+                                border-radius: 50%;
+                            }
+                            h1 {
+                                font-weight: $font-weight700;
+                            }
+                        }
+                        .prajurit-aktif {
+                            &::before {
+                                background: #A2A846;
+                            }
+                        }
+                        .prajurit-pensiun {
+                            &::before {
+                                background: #587350;
+                            }
+                        }
+    
+                    }
+                }
+            }
+            .menuButton {
+                display: flex;
+                flex-wrap: wrap;
+                .menu {
+                    background: $white-color;
+                    box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+                    border-radius: 15px;
+                    .icon {
+
+                    }
+                    .menu-name {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h1 {
+                            font-weight: $font-weight700;
+                        }
+                        span {
+                            font-weight: $font-weight500;
+                        }
+                    }
+
+                    .menu-information {
+                        display: flex;
+                        justify-content: space-between;
+                        .currency {
+                            font-weight: $font-weight500;
+                        }
+                        .bank-interest {
+                            color: #32B404;
+                            font-weight: $font-weight500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/*============
+Responsive Mobile and Desktop
+============*/
+@media screen and (min-width :0px) {
+    #mainHeader {
+        border-radius: 0px 0px 50px 50px;
+        height: 300px; 
+
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        max-width: 70px;
+                    }
+                    .brand-title {
+                        margin-left: 0px;
+                        display: none;
+                    }
+                }
+                .userControl {
+                    .searchBox {
+                        .searchInput {
+                            font-size: 12px;
+    
+                            &::placeholder {
+                                font-size: 12px;
+                            }
+                            &.active {
+                                width: 100px;
+                            }
+                        }
+                    }
+                    ion-icon {
+                        margin: 0 .5rem;
+                        font-size: 16px;
+                    }
+                    button {
+                        margin-left: .5rem;
+                        border-radius: 15px;
+                        img {
+                            max-width: 25px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .mainMenu {
+        .container-fluid {
+            .wrapperMainMenu {
+                flex-direction: column;
+                align-items: center;
+                .rekapMain {
+                    position: relative;
+                    flex-direction: column;
+                    top: -150px;
+                    width: 90%;
+                    padding: 26px 12px;
+                    .headerRekap {
+                        margin-bottom: 1rem;
+                    }
+                    .wrapperRekap {
+                        flex-direction: column;
+                        .chart {
+                            margin-bottom: 3rem;
+                        }
+                        .rekap-information {
+                            flex-direction: row;
+                            justify-content: space-around;
+                            .prajurit-information {
+                                &::before {
+                                    height: 12px;
+                                    width: 12px;
+                                    left: -20px;
+                                    top: 2px;
+                                }
+                                h1 {
+                                    font-size: 14px;
+                                }
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .menuButton {
+                    position: relative;
+                    top: -110px;
+                    justify-content: space-between;
+                    .menu {
+                        margin: 6px 6px 12px 6px;
+                        padding: 12px 12px;
+                        width: 45%;
+                        .icon {
+                            margin-bottom: 12px;
+                            img {
+                                width: 32px;
+                            }
+                        }
+                        .menu-name {
+                            margin-bottom: 6px;
+                            h1 {
+                                font-size: 14px;
+                            }
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .menu-information {
+                            span {
+                                font-size: 12px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 576px) {
+    .mainMenu {
+        .container-fluid {
+            .wrapperMainMenu {
+                .rekapMain {
+                    .wrapperRekap {
+                        .rekap-information {
+                            .prajurit-information {
+                                &::before {
+                                    left: -25px;
+                                }
+                                h1 {
+                                    font-size: 16px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .menuButton {
+                    .menu {
+                        width: 47%;
+                        .icon {
+                            img {
+                                width: 36px;
+                            }
+                        }
+                        .menu-name {
+                            h1 {
+                                font-size: 16px;
+                            }
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .menu-information {
+                            span {
+                                font-size: 14px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :768px) {
+    #mainHeader {
+        border-radius: 0px 0px 50px 50px;
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        max-width: 80px;
+                    }
+                    .brand-title {
+                        margin-left: 4px;
+                        display: block;
+                        h1 {
+                            margin-bottom: 4px;
+                            letter-spacing: 10px;
+                            font-size: 62px;
+                        }
+                        p {
+                            font-size: 9px;
+                        }
+                    }
+                }
+                .userControl {
+                    .searchBox {
+                        .searchInput {
+                            font-size: 16px;
+    
+                            &::placeholder {
+                                font-size: 16px;
+                            }
+                            &.active {
+                                width: 150px;
+                            }
+                        }
+                    }
+                    ion-icon {
+                        margin: 0 .8rem;
+                        font-size: 18px;
+                    }
+                    button {
+                        margin-left: 1rem;
+                        img {
+                            max-width: 35px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mainMenu {
+        .container-fluid {
+            .wrapperMainMenu {
+                flex-direction: row;
+
+                .rekapMain {
+                    padding: 26px 26px;
+                    width: 100%;
+                    .wrapperRekap {
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .chart {
+                            margin-bottom: 0;
+                            width: 100%;
+                        }
+
+                        .rekap-information {
+                            flex-direction: column;
+                            width: 40%;
+                            justify-content: space-evenly;
+                        }
+                    }
+                }
+                .menuButton {
+                    width: 100%;
+                    margin-left: .5rem;
+                    top: -145px;
+                    .menu {
+                        width: 46%;
+                        margin: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :992px) {
+    #mainHeader {
+        border-radius: 0px 0px 50px 50px;
+        padding: 0 3rem;
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        max-width: 100px;
+                    }
+                    .brand-title {
+                        margin-left: 4px;
+                        display: block;
+                        h1 {
+                            margin-bottom: 4px;
+                            font-size: 72px;
+                        }
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .userControl {
+                    ion-icon {
+                        margin: 0 .8rem;
+                        font-size: 22px;
+                    }
+                    button {
+                        margin-left: 1rem;
+                        img {
+                            max-width: 35px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mainMenu {
+        padding: 0 3rem;
+        .container-fluid {
+            .wrapperMainMenu {
+                .menuButton {
+                    width: 100%;
+                    margin-left: .5rem;
+                    top: -145px;
+                    .menu {
+                        width: 47%;
+                        margin: 6px;
+
+                        .icon {
+                            img {
+                                width: 38px;
+                            }
+                        }
+                        .menu-name {
+                            h1 {
+                                font-size: 18px;
+                            }
+                            span {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .menu-information {
+                            span {
+                                font-size: 16px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :1200px) {
+    #mainHeader {
+        height: 400px;
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        max-width: 120px;
+                    }
+                    .brand-title {
+                        margin-left: 8px;
+                        h1 {
+                            font-size: 86px;
+                            letter-spacing: 11px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                       
+                    }
+                }
+                .userControl {
+                    .searchBox {
+                        .searchInput {
+                            font-size: 16px;
+    
+                            &::placeholder {
+                                font-size: 16px;
+                            }
+                            &.active {
+                                width: 200px;
+                            }
+                        }
+                    }
+                    ion-icon {
+                        margin: 0 1rem;
+                    }
+                    button {
+                        margin-left: 1rem;
+                        img {
+                            max-width: 35px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mainMenu {
+        padding: 0 3rem;
+        .container-fluid {
+            .wrapperMainMenu {
+
+                .rekapMain {
+                    top: -200px;
+                }
+                .menuButton {
+                    top: -200px;
+
+                    .menu {
+                        width: 48%;
+                        margin: 8px 4px;
+                        padding: 12px 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :1400px) {
+    .mainMenu {
+        .container-fluid {
+            .wrapperMainMenu {
+                .rekapMain {
+                    width: 100%;
+                }
+                .menuButton {
+                    width: 100%;
+
+                    .menu {
+                        .icon {
+                            img {
+                                width: 46px;
+                            }
+                        }
+                        .menu-name {
+                            h1 {
+                                font-size: 24px;
+                            }
+                            span {
+                                font-size: 24px;
+                            }
+                        }
+
+                        .menu-information {
+                            span {
+                                font-size: 18px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
+

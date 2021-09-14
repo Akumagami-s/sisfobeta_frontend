@@ -211,6 +211,10 @@ Styling
                         }
                     }
                 }
+
+                .nav-link {
+                    color: $font-color;
+                }
             }
         }
     }
@@ -638,8 +642,6 @@ Responsive Mobile and Desktop
             }
         }
     }
-
-    
 }
 
 

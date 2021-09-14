@@ -12,8 +12,7 @@ Font
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -36,8 +35,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  -webkit-box-shadow: 0px 0px 4px 1px #3E563E;
-          box-shadow: 0px 0px 4px 1px #3E563E;
+  box-shadow: 0px 0px 4px 1px #3E563E;
   outline: 0 none;
 }
 
@@ -52,8 +50,6 @@ Style
 }
 
 .authRegister .wrapperAuth {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -81,17 +77,10 @@ Style
 
 .authRegister .wrapperAuth .leftBackground .gradient .authInformation {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #fff;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -119,12 +108,8 @@ Style
 }
 
 .authRegister .wrapperAuth .leftBackground .gradient .authInformation .paragrafInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .authRegister .wrapperAuth .leftBackground .gradient .authInformation .paragrafInfo p {
@@ -135,13 +120,8 @@ Style
 
 .authRegister .wrapperAuth .rightContent {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 64px 84px;
 }
 
@@ -173,15 +153,9 @@ Style
 }
 
 .authRegister .wrapperAuth .rightContent .headingAuth .patners {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
@@ -216,8 +190,7 @@ Style
 .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   padding: 0 .8rem;
 }

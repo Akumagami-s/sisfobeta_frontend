@@ -62,14 +62,13 @@ Style
     .wrapperAuth {
         display: flex;
         .leftBackground {
-            height: 100vh;
             background-image: url(../img/authBackground.png),;
             background-repeat: no-repeat;
             background-size: cover;
             width: 60%;
             .gradient {
                 width: 100%;
-                height: 100vh;
+                height: 100%;
                 position: relative;
 
                 &::after {
@@ -82,7 +81,7 @@ Style
                 }
     
                 .authInformation {
-                    height: 100vh;
+                    height: 100%;
                     display: flex;
                     color: $white-color;
                     flex-direction: column;
@@ -253,7 +252,7 @@ Style
             }
             .rightContent {
                 width: 100%;
-                padding: 2rem 2rem;
+                padding: 5rem 2rem;
             }
         }
     }

@@ -11,7 +11,8 @@ Font
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, p {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -31,12 +32,18 @@ Styling
 }
 
 #mainHeader .navbar .container-fluid .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 #mainHeader .navbar .container-fluid .navbar-brand img {
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -55,20 +62,33 @@ Styling
 }
 
 #mainHeader .navbar .container-fluid .userControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 #mainHeader .navbar .container-fluid .userControl .searchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: transparent;
 }
 
 #mainHeader .navbar .container-fluid .userControl .searchBox .searchIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   cursor: pointer;
 }
@@ -76,10 +96,23 @@ Styling
 #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
   border: none;
   width: 0px;
+  -webkit-transition: .5s;
   transition: .5s;
   background: transparent;
   color: #fff;
   font-weight: 500;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput:-ms-input-placeholder {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-ms-input-placeholder {
+  color: #fff;
 }
 
 #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
@@ -88,6 +121,7 @@ Styling
 
 #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
   width: 200px;
+  -webkit-transition: width .5s;
   transition: width .5s;
   border-bottom: 2px solid #fff;
 }
@@ -97,26 +131,36 @@ Styling
 }
 
 #mainHeader .navbar .container-fluid .userControl button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   border-radius: 15px;
+  -webkit-transition: 1s;
   transition: 1s;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   padding: 0px 16px 0px 0px;
 }
 
 #mainHeader .navbar .container-fluid .userControl button:hover {
+  -webkit-transition: .8s;
   transition: .8s;
 }
 
 #mainHeader .navbar .container-fluid .userControl button:hover img {
+  -webkit-transition: .8s;
   transition: .8s;
 }
 
 #mainHeader .navbar .container-fluid .userControl button:hover p {
+  -webkit-transition: .8s;
   transition: .8s;
   padding-left: .8rem;
 }
@@ -124,12 +168,14 @@ Styling
 #mainHeader .navbar .container-fluid .userControl button img {
   border-radius: 50%;
   margin-right: 4px;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
 #mainHeader .navbar .container-fluid .userControl button p {
   font-weight: 500;
   font-size: 18px;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -139,14 +185,19 @@ Styling
 }
 
 .mainMenu .container-fluid .wrapperMainMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .rekapMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #fff;
-  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
@@ -155,10 +206,14 @@ Styling
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -188,20 +243,30 @@ Styling
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .menuButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu {
   background: #fff;
-  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name h1 {
@@ -213,8 +278,12 @@ Styling
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information .currency {
@@ -244,6 +313,15 @@ Responsive Mobile and Desktop
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
     font-size: 12px;
   }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-ms-input-placeholder {
+    font-size: 12px;
+  }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
     font-size: 12px;
   }
@@ -265,12 +343,20 @@ Responsive Mobile and Desktop
     font-size: 12px;
   }
   .mainMenu .container-fluid .wrapperMainMenu {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain {
     position: relative;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: -150px;
     width: 90%;
     padding: 26px 12px;
@@ -279,14 +365,21 @@ Responsive Mobile and Desktop
     margin-bottom: 1rem;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .chart {
     margin-bottom: 3rem;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information {
-    flex-direction: row;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information .prajurit-information::before {
     height: 12px;
@@ -303,7 +396,9 @@ Responsive Mobile and Desktop
   .mainMenu .container-fluid .wrapperMainMenu .menuButton {
     position: relative;
     top: -110px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu {
     margin: 6px 6px 12px 6px;
@@ -379,6 +474,15 @@ Responsive Mobile and Desktop
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
     font-size: 16px;
   }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-ms-input-placeholder {
+    font-size: 16px;
+  }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
     font-size: 16px;
   }
@@ -399,24 +503,37 @@ Responsive Mobile and Desktop
     font-size: 18px;
   }
   .mainMenu .container-fluid .wrapperMainMenu {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain {
     padding: 26px 26px;
     width: 100%;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap {
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .chart {
     margin-bottom: 0;
     width: 100%;
   }
   .mainMenu .container-fluid .wrapperMainMenu .rekapMain .wrapperRekap .rekap-information {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 40%;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .mainMenu .container-fluid .wrapperMainMenu .menuButton {
     width: 100%;
@@ -505,6 +622,15 @@ Responsive Mobile and Desktop
     font-size: 12px;
   }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-ms-input-placeholder {
     font-size: 16px;
   }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {

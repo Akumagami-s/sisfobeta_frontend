@@ -130,53 +130,34 @@ Styling
   color: #fff;
 }
 
-#mainHeader .navbar .container-fluid .userControl button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#mainHeader .navbar .container-fluid .userControl .dropdown {
+  margin: 0 .8rem;
+}
+
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle {
+  background: none;
   border: none;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  border-radius: 15px;
-  -webkit-transition: 1s;
-  transition: 1s;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 0px 16px 0px 0px;
 }
 
-#mainHeader .navbar .container-fluid .userControl button:hover {
-  -webkit-transition: .8s;
-  transition: .8s;
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle::after {
+  display: none;
 }
 
-#mainHeader .navbar .container-fluid .userControl button:hover img {
-  -webkit-transition: .8s;
-  transition: .8s;
-}
-
-#mainHeader .navbar .container-fluid .userControl button:hover p {
-  -webkit-transition: .8s;
-  transition: .8s;
-  padding-left: .8rem;
-}
-
-#mainHeader .navbar .container-fluid .userControl button img {
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle img {
+  max-width: 40px;
   border-radius: 50%;
-  margin-right: 4px;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
-#mainHeader .navbar .container-fluid .userControl button p {
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-menu {
+  left: -110px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+}
+
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
   font-weight: 500;
-  font-size: 18px;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .mainMenu {
@@ -332,16 +313,6 @@ Responsive Mobile and Desktop
     margin: 0 .5rem;
     font-size: 16px;
   }
-  #mainHeader .navbar .container-fluid .userControl button {
-    margin-left: .5rem;
-    border-radius: 15px;
-  }
-  #mainHeader .navbar .container-fluid .userControl button img {
-    max-width: 25px;
-  }
-  #mainHeader .navbar .container-fluid .userControl button p {
-    font-size: 12px;
-  }
   .mainMenu .container-fluid .wrapperMainMenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -493,15 +464,6 @@ Responsive Mobile and Desktop
     margin: 0 .8rem;
     font-size: 18px;
   }
-  #mainHeader .navbar .container-fluid .userControl button {
-    margin-left: 1rem;
-  }
-  #mainHeader .navbar .container-fluid .userControl button img {
-    max-width: 35px;
-  }
-  #mainHeader .navbar .container-fluid .userControl button p {
-    font-size: 18px;
-  }
   .mainMenu .container-fluid .wrapperMainMenu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -569,15 +531,6 @@ Responsive Mobile and Desktop
     margin: 0 .8rem;
     font-size: 22px;
   }
-  #mainHeader .navbar .container-fluid .userControl button {
-    margin-left: 1rem;
-  }
-  #mainHeader .navbar .container-fluid .userControl button img {
-    max-width: 35px;
-  }
-  #mainHeader .navbar .container-fluid .userControl button p {
-    font-size: 18px;
-  }
   .mainMenu {
     padding: 0 3rem;
   }
@@ -641,15 +594,6 @@ Responsive Mobile and Desktop
   }
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 1rem;
-  }
-  #mainHeader .navbar .container-fluid .userControl button {
-    margin-left: 1rem;
-  }
-  #mainHeader .navbar .container-fluid .userControl button img {
-    max-width: 35px;
-  }
-  #mainHeader .navbar .container-fluid .userControl button p {
-    font-size: 18px;
   }
   .mainMenu {
     padding: 0 3rem;

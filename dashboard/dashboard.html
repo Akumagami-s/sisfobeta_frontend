@@ -34,10 +34,17 @@
                   placeholder="Search">
                 </div>
                 <ion-icon name="notifications"></ion-icon>
-                <button class="buttonLogout">
-                    <img class="userImg" src="../assets/img/profil.png" alt="">
-                    <p>Logout</p>
-                </button>
+
+                <div class="dropdown">
+                  <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
+                    <img src="../assets/img/profil.png" alt="">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                    <li><a class="dropdown-item" href="#">Profil</a></li>
+                    <li><button class="dropdown-item" href="#">Logout</button></li>
+                  </ul>
+                </div>
+                
               </div>
             </div>
         </nav>

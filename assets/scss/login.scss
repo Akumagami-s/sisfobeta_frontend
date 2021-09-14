@@ -1,0 +1,35 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+/*------------
+Variables
+------------*/
+$white-color : #fff;
+$dashboard-background : linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+$font-color : #3B4E63;
+$font-weight300 : 300;
+$font-weight400 : 400;
+$font-weight500 : 500;
+$font-weight700 : 700;
+$font-weight900 : 900;
+$fontsize-card-title : 24px;
+$button-background :#3E563E;
+$border : 2px solid #8E8E8E;
+$fontsize-card-valueNumber : 28px;

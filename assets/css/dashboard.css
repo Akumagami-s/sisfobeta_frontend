@@ -222,6 +222,45 @@ Styling
   color: #3B4E63;
 }
 
+.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .headerTitleMenu h1 {
+  font-weight: 700;
+  color: #3B4E63;
+}
+
+.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic {
+  display: flex;
+  width: 100%;
+}
+
+.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+  background: #fff;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  padding: 22px 24px;
+  width: 100%;
+  margin: 0 12px;
+  border-radius: 20px;
+}
+
+.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+  font-size: 12px;
+}
+
+.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card ion-icon {
+  transform: rotate(-40deg);
+}
+
 /*============
 Responsive Mobile and Desktop
 ============*/
@@ -301,6 +340,7 @@ Responsive Mobile and Desktop
   }
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .icon img {
     width: 32px;
+    height: 52px;
   }
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-name {
     margin-bottom: 6px;

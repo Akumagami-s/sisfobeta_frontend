@@ -57,7 +57,6 @@ Style
   background-image: url(../img/authBackground.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 60%;
 }
 
 .authLogin .wrapperAuth .leftBackground .gradient {
@@ -119,7 +118,6 @@ Style
 }
 
 .authLogin .wrapperAuth .rightContent {
-  width: 40%;
   display: flex;
   flex-direction: column;
   padding: 64px 84px;
@@ -127,27 +125,25 @@ Style
 
 .authLogin .wrapperAuth .rightContent .headingAuth {
   text-align: center;
-  margin-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.authLogin .wrapperAuth .rightContent .headingAuth .tetxtWelcome {
+.authLogin .wrapperAuth .rightContent .headingAuth .textWelcome {
   color: #3E563E;
-  margin-bottom: 16px;
 }
 
-.authLogin .wrapperAuth .rightContent .headingAuth .tetxtWelcome .welcome {
+.authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
   font-weight: 900;
-  font-size: 28px;
 }
 
-.authLogin .wrapperAuth .rightContent .headingAuth .tetxtWelcome .nameApps {
+.authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
   font-family: steelfish;
-  font-size: 68px;
-  letter-spacing: 10px;
   font-weight: 500;
 }
 
-.authLogin .wrapperAuth .rightContent .headingAuth .tetxtWelcome .nameApps .version {
+.authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps .version {
   font-family: steelfish;
   letter-spacing: 1px;
 }
@@ -158,14 +154,20 @@ Style
   justify-content: center;
 }
 
+.authLogin .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+  width: 50%;
+}
+
 .authLogin .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
   width: 100%;
-  max-width: 75px;
+}
+
+.authLogin .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+  width: 50%;
 }
 
 .authLogin .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
   width: 100%;
-  max-width: 180px;
 }
 
 .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection {
@@ -220,15 +222,18 @@ Style
   width: 100%;
   padding: 18px 18px;
   background: #3E563E;
+  border-radius: 8px;
+}
+
+.authLogin .wrapperAuth .rightContent .mainAuth form .login a {
+  text-decoration: none;
   color: #fff;
   font-weight: 500;
-  border-radius: 8px;
 }
 
 .authLogin .wrapperAuth .rightContent .mainAuth form .toRegisterPage {
   text-align: center;
   font-weight: 500;
-  margin-top: 2.5rem;
   color: #8E8E8E;
 }
 
@@ -248,7 +253,53 @@ Style
   }
   .authLogin .wrapperAuth .rightContent {
     width: 100%;
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth {
+    margin-bottom: 1rem;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .textWelcome {
+    margin-bottom: 1rem;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
+    font-size: 18px;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
+    font-size: 64px;
+    letter-spacing: 5px;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners {
+    width: 80%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 70px;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection label {
+    font-size: 14px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control img {
+    max-width: 15px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
+    font-size: 14px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .confirmation-user .form-check label {
+    font-size: 14px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .confirmation-user .forgetPassowrd {
+    font-size: 14px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .toRegisterPage {
+    margin-top: 1rem;
   }
 }
 

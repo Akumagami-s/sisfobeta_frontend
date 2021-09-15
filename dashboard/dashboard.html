@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--Dashboard Css-->
     <link rel="stylesheet" href="../assets/css/dashboard.css">
-
+    <!--unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--slick Css-->
+    <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
 </head>
 <body>
     <div id="mainHeader">
@@ -169,7 +172,7 @@
 
     <!---Content Menu-->
     <section class="content-menu">
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="tab-content" id="v-pills-tabContent">
 
@@ -197,7 +200,7 @@
                           <span class="value-accept">366.746</span>
                         </div>
                         <div class="chart-accept">
-
+                          <canvas id="totalPenerima"></canvas>
                         </div>
                       </div>
                   </div>
@@ -213,7 +216,29 @@
                         <span class="value-accept">366.746</span>
                       </div>
                       <div class="chart-accept">
-                        
+                        <canvas id="sudahDiterima"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wrapperDataAlokasi">
+                  <div class="headerDataAlokasi">
+                    <p>Data Alokasi</p>
+                  </div>
+                  <div class="statisticDataAlokasi">
+                    <div class="chart">
+                      <canvas id="chartDataAlokasi"></canvas>
+                    </div>
+        
+                    <div class="alokasiData-informasi">
+                      <div class="danaAlokasi-informasi jumlahDana">
+                          <h1>Jumlah Dana Alokasi</h1>
+                          <p>120.235.231</p>
+                      </div>
+                      <div class="danaAlokasi-informasi danaTeralisasi">
+                        <h1>Dana Alokasi Terealisasi</h1>
+                        <p>120.235.231</p>
                       </div>
                     </div>
                   </div>
@@ -222,6 +247,16 @@
               </div>
             </div>
 
+          </div>
+
+          <div class="tab-pane fade"
+            id="v-pills-ekpr" 
+            role="tabpanel" 
+            aria-labelledby="ekpr-menu">
+
+            <div class="wrapperEkprContent">
+              
+            </div>
           </div>
 
         </div>
@@ -244,6 +279,9 @@
     <!--Chart Js-->
     <script src="../assets/vendors/chartjs/Chart.js"></script>
     <script src="../assets/js/chartjs/ui-chart.js"></script>
+
+    <!--Slick Js-->
+    <script src="../assets/vendors/slick/slick.min.js"></script>
     <!--Dashboard Js-->
     <script src="../assets/js/dashboard.js"></script>
 </body>

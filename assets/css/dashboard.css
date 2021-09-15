@@ -179,6 +179,10 @@ Styling
   background: #587350;
 }
 
+.mainMenu .container-fluid .wrapperMainMenu .rekapMain .chart {
+  max-width: 500px;
+}
+
 .mainMenu .container-fluid .wrapperMainMenu .menuButton {
   display: flex;
   flex-wrap: wrap;
@@ -222,43 +226,111 @@ Styling
   color: #3B4E63;
 }
 
-.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .headerTitleMenu h1 {
+.content-menu {
+  position: relative;
+  top: -70px;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .headerTitleMenu {
+  margin-bottom: 2rem;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .headerTitleMenu h1 {
   font-weight: 700;
   color: #3B4E63;
 }
 
-.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab {
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic {
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic {
   display: flex;
   width: 100%;
+  justify-content: center;
 }
 
-.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
   background: #fff;
-  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
-  padding: 22px 24px;
-  width: 100%;
-  margin: 0 12px;
   border-radius: 20px;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
 }
 
-.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card {
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  align-items: center;
 }
 
-.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
-  font-size: 12px;
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+  font-weight: 700;
 }
 
-.content-menu .container .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card ion-icon {
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card ion-icon {
   transform: rotate(-40deg);
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept {
+  color: #3B4E63;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept p {
+  font-weight: 500;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept span {
+  font-weight: 700;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi {
+  display: flex;
+  background: #fff;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .headerDataAlokasi p {
+  font-weight: 500;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi {
+  display: flex;
+  align-items: center;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi {
+  position: relative;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaAlokasi-informasi::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaAlokasi-informasi h1 {
+  font-weight: 700;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .jumlahDana::before {
+  background: #7334FF;
+}
+
+.content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaTeralisasi::before {
+  background: #FF832B;
 }
 
 /*============
@@ -354,6 +426,121 @@ Responsive Mobile and Desktop
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
     font-size: 12px;
   }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .headerTitleMenu h1 {
+    font-size: 24px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic {
+    margin-bottom: .5rem;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+    padding: 14px 14px;
+    margin: 1.5rem 12px;
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card {
+    margin-bottom: 8px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept {
+    width: 60%;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept p {
+    font-size: 12px;
+    margin-bottom: .85rem;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept span {
+    font-size: 14px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .chart-accept {
+    width: 40%;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi {
+    position: relative;
+    flex-direction: column;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .headerDataAlokasi {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .headerDataAlokasi p {
+    font-weight: 500;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi {
+    flex-direction: column;
+    padding: 1rem 3rem 2rem 3rem;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .chart {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaAlokasi-informasi {
+    flex-direction: column;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaAlokasi-informasi::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: red;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaAlokasi-informasi h1 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaAlokasi-informasi p {
+    font-size: 12px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .jumlahDana {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .jumlahDana::before {
+    background: #7334FF;
+    left: -20px;
+    top: 2px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaTeralisasi {
+    position: relative;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrapperDataAlokasi .statisticDataAlokasi .alokasiData-informasi .danaTeralisasi::before {
+    background: #FF832B;
+    left: -20px;
+    top: 2px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+    padding: 14px 14px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card {
+    margin-bottom: 4px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept {
+    width: 50%;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept p {
+    font-size: 14px;
+    margin-bottom: .85rem;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept span {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .chart-accept {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -380,6 +567,24 @@ Responsive Mobile and Desktop
   }
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
     font-size: 14px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+    padding: 22px 18px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept {
+    width: 50%;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept p {
+    font-size: 14px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept span {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .chart-accept {
+    width: 50%;
   }
 }
 
@@ -444,6 +649,24 @@ Responsive Mobile and Desktop
     width: 46%;
     margin: 6px;
   }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .headerTitleMenu h1 {
+    font-size: 32px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+    padding: 22px 24px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept {
+    width: 50%;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept span {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .chart-accept {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -493,6 +716,27 @@ Responsive Mobile and Desktop
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
     font-size: 16px;
   }
+  .content-menu {
+    padding: 0 3rem;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+    padding: 22px 24px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept {
+    width: 50%;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept p {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept span {
+    font-size: 24px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .chart-accept {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -538,6 +782,18 @@ Responsive Mobile and Desktop
     margin: 8px 4px;
     padding: 12px 18px;
   }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+    padding: 22px 24px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept p {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept span {
+    font-size: 26px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -558,6 +814,18 @@ Responsive Mobile and Desktop
   }
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
     font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan {
+    padding: 22px 24px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .heading-card h1 {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept p {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content #v-pills-ebaltab .wrappercontentMenu .contentEbaltab .wrappercard-statistic .statisticPengajuan .body-card .totaly-accept span {
+    font-size: 26px;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */

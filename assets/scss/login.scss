@@ -65,7 +65,6 @@ Style
             background-image: url(../img/authBackground.png),;
             background-repeat: no-repeat;
             background-size: cover;
-            width: 60%;
             .gradient {
                 width: 100%;
                 height: 100%;
@@ -122,26 +121,23 @@ Style
             }
         }
         .rightContent {
-            width: 40%;
             display: flex;
             flex-direction: column;
             padding: 64px 84px;
             .headingAuth {
                 text-align: center;
-                margin-bottom: 42px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-                .tetxtWelcome {
+                .textWelcome {
                     color: $button-background;
-                    margin-bottom: 16px;
 
                     .welcome {
                         font-weight: $font-weight900;
-                        font-size: 28px;
                     }
                     .nameApps {
                         font-family: steelfish;
-                        font-size: 68px;
-                        letter-spacing: 10px;
                         font-weight: $font-weight500;
 
                         .version {
@@ -156,15 +152,15 @@ Style
                     align-items: center;
                     justify-content: center;
                     .tni_ad {
+                        width: 50%;
                         img {
                             width: 100%;
-                            max-width: 75px;
                         }
                     }
                     .bank-btn {
+                        width: 50%;
                         img {
                             width: 100%;
-                            max-width: 180px;
                         }
                     }
                 }
@@ -220,15 +216,17 @@ Style
                         width: 100%;
                         padding: 18px 18px;
                         background: $button-background;
-                        color: $white-color;
-                        font-weight: 500;
                         border-radius: 8px;
+                        a {
+                            text-decoration: none;
+                            color: $white-color;
+                            font-weight: 500;
+                        }
                     }
 
                     .toRegisterPage {
                         text-align: center;                        
                         font-weight: $font-weight500;
-                        margin-top: 2.5rem;
                         color: #8E8E8E;
                         p {
                         font-family: 'Poppins', sans-serif;
@@ -252,7 +250,69 @@ Style
             }
             .rightContent {
                 width: 100%;
-                padding: 5rem 2rem;
+                padding: 2rem 2rem;
+
+                .headingAuth {
+                    margin-bottom: 1rem;
+                    .textWelcome {
+                        margin-bottom: 1rem;
+                        .welcome {
+                            font-size: 18px
+                        }
+                        .nameApps {
+                            font-size: 64px;
+                            letter-spacing: 5px;
+                        }
+                    }
+                    .patners {
+                        width: 80%;
+                        .tni_ad {
+                            width: 100%;
+                            img {
+                                max-width: 70px;
+                            }
+                        }
+                        .bank-btn {
+                            width: 100%;
+                            img {
+                                max-width: 150px;
+                            }
+                        }
+                    }
+                }
+
+                .mainAuth {
+                    form {
+                        .inputSection {
+                            label {
+                                font-size: 14px;
+                            }
+                            .icon-control {
+                                img {
+                                    max-width: 15px;
+                                }
+                            }
+                            .form-control {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .confirmation-user {
+                            .form-check {
+                                label {
+                                    font-size: 14px;
+                                }
+                            }
+                            .forgetPassowrd {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .toRegisterPage {
+                            margin-top: 1rem;
+                        }
+                    }
+                }
             }
         }
     }

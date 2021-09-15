@@ -176,6 +176,9 @@ Styling
     
                     }
                 }
+                .chart {
+                    max-width: 500px;
+                }
             }
             .menuButton {
                 display: flex;
@@ -224,11 +227,14 @@ Styling
 //Content Menu
 
 .content-menu {
-    .container {
+    position: relative;
+    top: -70px;
+    .container-fluid {
         .tab-content {
             #v-pills-ebaltab {
                 .wrappercontentMenu {
                     .headerTitleMenu {
+                        margin-bottom: 2rem;
                         h1 {
                             font-weight: $font-weight700;
                             color: $font-color;
@@ -242,23 +248,87 @@ Styling
                         .wrappercard-statistic {
                             display: flex;
                             width: 100%;
+                            justify-content: center;
+                            
                             .statisticPengajuan {
                                 background: $white-color;
-                                box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
-                                padding: 22px 24px;
-                                width: 100%;
-                                margin: 0 12px;
                                 border-radius: 20px;
+                                box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
 
                                 .heading-card {
                                     display: flex;
                                     justify-content: space-between;
-                                    margin-bottom: 12px;
+                                    align-items: center;
                                     h1 {
-                                        font-size: 12px;
+                                        font-weight: $font-weight700;
                                     }
                                     ion-icon {
                                         transform: rotate(-40deg);
+                                    }
+                                }
+
+                                .body-card {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    .totaly-accept {
+                                        color: $font-color;
+
+                                        p {
+                                            font-weight: $font-weight500;
+                                        }
+                                        span {
+                                            font-weight: $font-weight700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .wrapperDataAlokasi {
+                            display: flex;
+                            background: $white-color;
+                            box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                            border-radius: 15px;
+                            width: 100%;
+                            .headerDataAlokasi {
+                                p {
+                                    font-weight: $font-weight500;
+                                }
+                            }
+
+                            .statisticDataAlokasi {
+                                display: flex;
+                                align-items: center;
+
+                                .alokasiData-informasi {
+                                    position: relative;
+                                    .danaAlokasi-informasi {
+                                        &::before {
+                                            content: '';
+                                            position: absolute;
+                                            display: block;
+                                            background: red;
+                                            border-radius: 50%;
+                                            height: 20px;
+                                            width: 20px;
+                                        }
+
+                                        h1 {
+                                            font-weight: $font-weight700;
+                                        }
+                                    }
+
+                                    .jumlahDana {
+                                        &::before {
+                                            background: #7334FF;
+                                        }
+                                    }
+
+                                    .danaTeralisasi {
+                                        &::before {
+                                            background: #FF832B;
+                                        }
                                     }
                                 }
                             }
@@ -401,6 +471,167 @@ Responsive Mobile and Desktop
             }
         }
     }
+
+    .content-menu {
+        .container-fluid {
+            .tab-content {
+                #v-pills-ebaltab {
+                    .wrappercontentMenu {
+                        .headerTitleMenu {
+                            h1 {
+                                font-size: 24px;
+                            }
+                        }
+                        .contentEbaltab {
+                            .wrappercard-statistic {
+                                margin-bottom: .5rem;
+                                .statisticPengajuan {
+                                    padding: 14px 14px;
+                                    margin: 1.5rem 12px;
+                                    width: 100%;
+
+                                    .heading-card {
+                                        margin-bottom: 8px;
+
+                                        h1 {
+                                            font-size: 16px;
+                                        }
+                                    }
+    
+                                    .body-card {
+                                        .totaly-accept {
+                                            width: 60%;
+                                            p {
+                                                font-size: 12px;
+                                                margin-bottom: .85rem;
+
+                                            }
+                                            span {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        .chart-accept {
+                                            width: 40%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .wrapperDataAlokasi {
+                                position: relative;
+                                flex-direction: column;
+                                .headerDataAlokasi {
+                                    padding: 2rem 1.5rem 1rem 1.5rem;
+                                    p {
+                                        font-weight: $font-weight500;
+                                    }
+                                }
+    
+                                .statisticDataAlokasi {
+                                    flex-direction: column;
+                                    padding: 1rem 3rem 2rem 3rem;
+                                    .chart {
+                                        width: 100%;
+                                        margin-bottom: 2rem;
+                                    }
+                                    .alokasiData-informasi {
+                                        position: relative;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-self: flex-start;
+                                        .danaAlokasi-informasi {
+                                            flex-direction: column;
+                                            &::before {
+                                                content: '';
+                                                position: absolute;
+                                                display: block;
+                                                background: red;
+                                                border-radius: 50%;
+                                                height: 12px;
+                                                width: 12px;
+                                            }
+    
+                                            h1 {
+                                                font-weight: $font-weight700;
+                                                font-size: 14px;
+                                            }
+                                            p {
+                                                font-size: 12px;
+                                            }
+                                        }
+    
+                                        .jumlahDana {
+                                            position: relative;
+                                            margin-bottom: 1rem;
+                                            &::before {
+                                                background: #7334FF;
+                                                left: -20px;
+                                                top: 2px;
+                                            }
+                                        }
+    
+                                        .danaTeralisasi {
+                                            position: relative;
+                                            &::before {
+                                                background: #FF832B;
+                                                left: -20px;
+                                                top: 2px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 375px) {
+    .content-menu {
+        .container-fluid {
+            .tab-content {
+                #v-pills-ebaltab {
+                    .wrappercontentMenu {
+                        .contentEbaltab {
+                            .wrappercard-statistic {
+                                .statisticPengajuan {
+                                    padding: 14px 14px;
+
+                                    .heading-card {
+                                        margin-bottom: 4px;
+
+                                        h1 {
+                                            font-size: 18px;
+                                        }
+                                    }
+    
+                                    .body-card {
+                                        .totaly-accept {
+                                            width: 50%;
+                                            p {
+                                                font-size: 14px;
+                                                margin-bottom: .85rem;
+
+                                            }
+                                            span {
+                                                font-size: 16px;
+                                            }
+                                        }
+                                        .chart-accept {
+                                            width: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width : 576px) {
@@ -444,6 +675,47 @@ Responsive Mobile and Desktop
                         .menu-information {
                             span {
                                 font-size: 14px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content-menu {
+        .container-fluid {
+            .tab-content {
+                #v-pills-ebaltab {
+                    .wrappercontentMenu {
+    
+                        .contentEbaltab {
+                            .wrappercard-statistic {
+
+                                .statisticPengajuan {
+                                    padding: 22px 18px;
+
+                                    .heading-card {
+                                        h1 {
+                                            font-size: 16px;
+                                        }
+                                    }
+    
+                                    .body-card {
+                                        .totaly-accept {
+                                            width: 50%;
+                                            p {
+                                                font-size: 14px;
+                                            }
+                                            span {
+                                                font-size: 16px;
+                                            }
+                                        }
+                                        .chart-accept {
+                                            width: 50%;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -532,6 +804,49 @@ Responsive Mobile and Desktop
             }
         }
     }
+
+    .content-menu {
+        .container-fluid {
+            .tab-content {
+                #v-pills-ebaltab {
+                    .wrappercontentMenu {
+
+                        .headerTitleMenu {
+                            h1 {
+                                font-size: 32px;
+                            }
+                        }
+    
+                        .contentEbaltab {
+                            .wrappercard-statistic {
+                                .statisticPengajuan {
+                                    padding: 22px 24px;
+
+                                    .heading-card {
+                                        h1 {
+                                            font-size: 18px;
+                                        }
+                                    }
+    
+                                    .body-card {
+                                        .totaly-accept {
+                                            width: 50%;
+                                            span {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                        .chart-accept {
+                                            width: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width :992px) {
@@ -595,6 +910,47 @@ Responsive Mobile and Desktop
                         .menu-information {
                             span {
                                 font-size: 16px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content-menu {
+        padding: 0 3rem;
+        .container-fluid {
+            .tab-content {
+                #v-pills-ebaltab {
+                    .wrappercontentMenu {
+                        
+                        .contentEbaltab {
+                            .wrappercard-statistic {
+                                .statisticPengajuan {
+                                    padding: 22px 24px;
+
+                                    .heading-card {
+                                        h1 {
+                                            font-size: 18px;
+                                        }
+                                    }
+    
+                                    .body-card {
+                                        .totaly-accept {
+                                            width: 50%;
+                                            p {
+                                                font-size: 16px;
+                                            }
+                                            span {
+                                                font-size: 24px;
+                                            }
+                                        }
+                                        .chart-accept {
+                                            width: 50%;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -666,6 +1022,45 @@ Responsive Mobile and Desktop
             }
         }
     }
+
+    .content-menu {
+        .container-fluid {
+            .tab-content {
+                #v-pills-ebaltab {
+                    .wrappercontentMenu {
+                        
+                        .contentEbaltab {
+                            .wrappercard-statistic {
+
+                                .statisticPengajuan {
+                                    padding: 22px 24px;
+
+                                    .heading-card {
+                                        h1 {
+                                            font-size: 18px;
+                                        }
+                                    }
+    
+                                    .body-card {
+                                        .totaly-accept {
+                                            p {
+                                                font-size: 16px;
+                                            }
+                                            span {
+                                                font-size: 26px;
+                                            }
+                                        }
+                                        .chart-accept {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width :1400px) {
@@ -703,6 +1098,43 @@ Responsive Mobile and Desktop
             }
         }
     }
+
+    .content-menu {
+        .container-fluid {
+            .tab-content {
+                #v-pills-ebaltab {
+                    .wrappercontentMenu {
+                        
+                        .contentEbaltab {
+                            .wrappercard-statistic {
+                                .statisticPengajuan {
+                                    padding: 22px 24px;
+
+                                    .heading-card {
+                                        h1 {
+                                            font-size: 18px;
+                                        }
+                                    }
+    
+                                    .body-card {
+                                        .totaly-accept {
+                                            p {
+                                                font-size: 16px;
+                                            }
+                                            span {
+                                                font-size: 26px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 

@@ -419,6 +419,9 @@ Style
   .authLogin .wrapperAuth .rightContent .mainAuth form .confirmation-user .forgetPassowrd {
     font-size: 16px;
   }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .login a {
+    font-size: 18px;
+  }
   .authLogin .wrapperAuth .rightContent .mainAuth form .toRegisterPage p {
     font-size: 16px;
   }

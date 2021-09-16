@@ -122,34 +122,31 @@ Style
   width: 40%;
   display: flex;
   flex-direction: column;
-  padding: 64px 84px;
+  height: 100%;
 }
 
 .authRegister .wrapperAuth .rightContent .headingAuth {
   text-align: center;
-  margin-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.authRegister .wrapperAuth .rightContent .headingAuth .tetxtWelcome {
+.authRegister .wrapperAuth .rightContent .headingAuth .textWelcome {
   color: #3E563E;
-  margin-bottom: 16px;
 }
 
-.authRegister .wrapperAuth .rightContent .headingAuth .tetxtWelcome .welcome {
+.authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
   font-weight: 900;
-  font-size: 28px;
 }
 
-.authRegister .wrapperAuth .rightContent .headingAuth .tetxtWelcome .nameApps {
+.authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
   font-family: steelfish;
-  font-size: 68px;
-  letter-spacing: 10px;
   font-weight: 500;
 }
 
-.authRegister .wrapperAuth .rightContent .headingAuth .tetxtWelcome .nameApps .version {
+.authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps .version {
   font-family: steelfish;
-  letter-spacing: 1px;
 }
 
 .authRegister .wrapperAuth .rightContent .headingAuth .patners {
@@ -160,12 +157,10 @@ Style
 
 .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
   width: 100%;
-  max-width: 75px;
 }
 
 .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
   width: 100%;
-  max-width: 180px;
 }
 
 .authRegister .wrapperAuth .rightContent .mainAuth .notice {
@@ -230,9 +225,14 @@ Style
   width: 100%;
   padding: 18px 18px;
   background: #3E563E;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .register a {
+  text-decoration: none;
   color: #fff;
   font-weight: 500;
-  border-radius: 8px;
 }
 
 @media screen and (min-width: 0px) {
@@ -243,15 +243,146 @@ Style
     width: 100%;
     padding: 2rem 2rem;
   }
+  .authRegister .wrapperAuth .rightContent .headingAuth {
+    margin-bottom: .8rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
+    font-size: 16px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
+    font-size: 42px;
+    letter-spacing: 5px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    width: 70%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 50px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth .notice {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth .notice p {
+    font-size: 14px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control img {
+    max-width: 16px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
+    font-size: 14px;
+    padding: .85rem 1rem .85rem 2.5rem;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .custom-select select {
+    padding: .85rem 1rem .85rem 2.5rem;
+    font-size: 14px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .register {
+    padding: 12px 18px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    width: 70%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 70px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth .notice {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .register {
+    padding: 12px 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
+    font-size: 24px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
+    font-size: 68px;
+    letter-spacing: 5px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    width: 40%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 70px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth .notice {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .register {
+    padding: 12px 18px;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .authRegister .wrapperAuth {
+    height: 100vh;
+    align-items: center;
+  }
   .authRegister .wrapperAuth .leftBackground {
     display: inline-block;
+    height: 100%;
+    width: 60%;
   }
   .authRegister .wrapperAuth .rightContent {
-    width: 50%;
-    padding: 64px 64px;
+    width: 40%;
+    padding: 2rem 2rem;
+    height: min-content;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth {
+    margin-bottom: .8rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    width: 80%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 70px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
   }
 }
 

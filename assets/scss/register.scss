@@ -125,28 +125,25 @@ Style
             width: 40%;
             display: flex;
             flex-direction: column;
-            padding: 64px 84px;
+            height: 100%;
             .headingAuth {
                 text-align: center;
-                margin-bottom: 42px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-                .tetxtWelcome {
+                .textWelcome {
                     color: $button-background;
-                    margin-bottom: 16px;
 
                     .welcome {
                         font-weight: $font-weight900;
-                        font-size: 28px;
                     }
                     .nameApps {
                         font-family: steelfish;
-                        font-size: 68px;
-                        letter-spacing: 10px;
                         font-weight: $font-weight500;
 
                         .version {
                             font-family: steelfish;
-                            letter-spacing: 1px;
                         }
                     }
                 }
@@ -158,13 +155,11 @@ Style
                     .tni_ad {
                         img {
                             width: 100%;
-                            max-width: 75px;
                         }
                     }
                     .bank-btn {
                         img {
                             width: 100%;
-                            max-width: 180px;
                         }
                     }
                 }
@@ -220,14 +215,18 @@ Style
                             }
                         }
                     }
-
+                        
                     .register {
                         width: 100%;
                         padding: 18px 18px;
                         background: $button-background;
-                        color: $white-color;
-                        font-weight: 500;
                         border-radius: 8px;
+                        margin-top: 1rem;
+                        a {
+                            text-decoration: none;
+                            color: $white-color;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
@@ -243,19 +242,190 @@ Style
             .rightContent {
                 width: 100%;
                 padding: 2rem 2rem;
+
+                .headingAuth {
+                    margin-bottom: .8rem;
+                    .textWelcome {
+                        margin-bottom: 1rem;
+                        .welcome {
+                            font-size: 16px
+                        }
+                        .nameApps {
+                            font-size: 42px;
+                            letter-spacing: 5px;
+                        }
+                    }
+                    .patners {
+                        width: 70%;
+                        .tni_ad {
+                            width: 100%;
+                            img {
+                                max-width: 50px;
+                            }
+                        }
+                        .bank-btn {
+                            width: 100%;
+                            img {
+                                max-width: 150px;
+                            }
+                        }
+                    }
+                }
+
+                .mainAuth {
+                    .notice {
+                        margin-bottom: 1rem;
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                    form {
+                        .inputSection {
+                            .icon-control {
+                                img {
+                                    max-width: 16px;
+                                }
+                            }
+                            .form-control {
+                                font-size: 14px;
+                                padding: .85rem 1rem .85rem 2.5rem;
+                            }
+                            .custom-select {
+                                select {
+                                    padding: .85rem 1rem .85rem 2.5rem;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .register {
+                            padding: 12px 18px;
+                        }
+                    }
+                }
             }
         }
     }
 }
+
+@media screen and (min-width : 375px) {
+    .authRegister {
+        .wrapperAuth {
+            .rightContent {
+
+                .headingAuth {
+                    .patners {
+                        width: 70%;
+                        .tni_ad {
+                            width: 100%;
+                            img {
+                                max-width: 70px;
+                            }
+                        }
+                        .bank-btn {
+                            width: 100%;
+                            img {
+                                max-width: 150px;
+                            }
+                        }
+                    }
+                }
+
+                .mainAuth {
+                    .notice {
+                        margin-bottom: 1rem;
+                    }
+                    form {
+                        .register {
+                            padding: 12px 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 768px) {
+    .authRegister {
+        .wrapperAuth {
+            .rightContent {
+                .headingAuth {
+                    .textWelcome {
+                        margin-bottom: 1rem;
+                        .welcome {
+                            font-size: 24px
+                        }
+                        .nameApps {
+                            font-size: 68px;
+                            letter-spacing: 5px;
+                        }
+                    }
+                    .patners {
+                        width: 40%;
+                        .tni_ad {
+                            width: 100%;
+                            img {
+                                max-width: 70px;
+                            }
+                        }
+                        .bank-btn {
+                            width: 100%;
+                            img {
+                                max-width: 150px;
+                            }
+                        }
+                    }
+                }
+                .mainAuth {
+                    .notice {
+                        margin-bottom: 1rem;
+                    }
+                    form {
+                        .register {
+                            padding: 12px 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
 @media screen and (min-width : 992px) {
     .authRegister {
         .wrapperAuth {
+            height: 100vh;
+            align-items: center;
             .leftBackground {
                 display: inline-block;
+                height: 100%;
+                width: 60%;
             }
             .rightContent {
-                width: 50%;
-                padding: 64px 64px;
+                width: 40%;
+                padding: 2rem 2rem;
+                height: min-content;
+
+                .headingAuth {
+                    margin-bottom: .8rem;
+                    .patners {
+                        width: 80%;
+                        .tni_ad {
+                            width: 100%;
+                            img {
+                                max-width: 70px;
+                            }
+                        }
+                        .bank-btn {
+                            width: 100%;
+                            img {
+                                max-width: 150px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

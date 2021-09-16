@@ -1,0 +1,177 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+.authOtp .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.authOtp .container .wrapperMain {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.authOtp .container .wrapperMain .iconSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(142.87deg, #3B533B 19.31%, #97BB7D 110.21%);
+  border-radius: 15px;
+  position: relative;
+}
+
+.authOtp .container .wrapperMain .iconSection .iconEmail {
+  position: relative;
+  bottom: -30px;
+  width: 100%;
+  z-index: 2;
+}
+
+.authOtp .container .wrapperMain .iconSection .wave {
+  width: 100%;
+  position: relative;
+  bottom: -2px;
+}
+
+.authOtp .container .wrapperMain .actionMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.authOtp .container .wrapperMain .actionMain h1, .authOtp .container .wrapperMain .actionMain p {
+  color: #3E563E;
+}
+
+.authOtp .container .wrapperMain .actionMain h1 {
+  font-family: steelfish;
+  margin-bottom: 1.5rem;
+}
+
+.authOtp .container .wrapperMain .actionMain p {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.authOtp .container .wrapperMain .actionMain .requestOtp {
+  border: none;
+  background: #3E563E;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 0px) {
+  .authOtp .container .wrapperMain .iconSection {
+    padding-top: 2rem;
+  }
+  .authOtp .container .wrapperMain .iconSection .iconEmail {
+    max-width: 200px;
+    bottom: -30px;
+  }
+  .authOtp .container .wrapperMain .actionMain {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .authOtp .container .wrapperMain .actionMain h1, .authOtp .container .wrapperMain .actionMain p {
+    color: #3E563E;
+  }
+  .authOtp .container .wrapperMain .actionMain h1 {
+    font-family: steelfish;
+    font-size: 46px;
+    letter-spacing: 5px;
+  }
+  .authOtp .container .wrapperMain .actionMain p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .authOtp .container .wrapperMain .iconSection .iconEmail {
+    max-width: 250px;
+    bottom: -50px;
+  }
+  .authOtp .container .wrapperMain .actionMain h1 {
+    font-family: steelfish;
+    font-size: 56px;
+    letter-spacing: 5px;
+  }
+  .authOtp .container .wrapperMain .actionMain p {
+    font-size: 16px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .authOtp .container .wrapperMain {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .authOtp .container .wrapperMain {
+    width: 60%;
+  }
+  .authOtp .container .wrapperMain .iconSection .iconEmail {
+    max-width: 300px;
+    bottom: -50px;
+  }
+  .authOtp .container .wrapperMain .actionMain {
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  .authOtp .container .wrapperMain .actionMain h1 {
+    font-family: steelfish;
+    font-size: 62px;
+    letter-spacing: 5px;
+  }
+  .authOtp .container .wrapperMain .actionMain p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .authOtp .container .wrapperMain {
+    width: 48%;
+  }
+  .authOtp .container .wrapperMain .iconSection .iconEmail {
+    max-width: 300px;
+    bottom: -50px;
+  }
+  .authOtp .container .wrapperMain .actionMain {
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  .authOtp .container .wrapperMain .actionMain h1 {
+    font-family: steelfish;
+    font-size: 62px;
+    letter-spacing: 5px;
+  }
+  .authOtp .container .wrapperMain .actionMain p {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=otp.css.map */

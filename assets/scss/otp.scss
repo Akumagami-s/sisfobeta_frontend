@@ -56,19 +56,51 @@ Resset Css
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                h1,p {
+                .nameApps,.notice {
                     color: #3E563E;
                 }
-                h1 {
+                .nameApps {
                     font-family: steelfish;
                     margin-bottom: 1.5rem;
                 }
-                p {
+                .notice {
                     font-weight: 500;
                     font-family: 'Poppins', sans-serif;
                     margin-bottom: 2rem;
+                    max-width: 500px;
                 }
-                .requestOtp {
+                .noticeGetOtp {
+                    max-width: 400px;
+                    margin-bottom: 12px;
+                }
+                #countDown {
+                    margin-bottom: 1rem;
+                    color: #FF0000A6;
+                    font-weight: 600;
+                }     
+                .inputParent {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1.5rem;
+                    width: 100%;
+                    .inputOTP {
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                        border: none;
+                        background: #C4C4C4;
+                        text-align: center;
+                        font-weight: 600;
+                    }
+                }
+                .resendOTPagain {
+                    border: none;
+                    background: transparent;
+                    color: #FF0000A6;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }           
+                .btn-otp {
                     border: none;
                     background: #3E563E;
                     color: #fff;
@@ -91,24 +123,42 @@ Resset Css
                 .iconSection {
                     padding-top: 2rem;
                     .iconEmail {
-                        max-width: 200px;
+                        max-width: 150px;
                         bottom: -30px;
                     }
                 }
     
                 .actionMain {
                     padding: 1rem 1rem 2rem 1rem;
-                    h1,p {
-                        color: #3E563E;
-                    }
-                    h1 {
-                        font-family: steelfish;
+                    .nameApps {
                         font-size: 46px;
                         letter-spacing: 5px;
                     }
-                    p {
+                    .notice {
                         font-size: 14px;
                     }
+                    #countDown {
+                        font-size: 16px;
+                    }
+                    .inputParent {
+                        .inputOTP {
+                            height: 52px;
+                            width: 100%;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 425px) {
+    .authOtp {
+        .container {
+            .wrapperMain {
+                .actionMain {
+                    .inputParent {
+                        width: 75%;
+                    } 
                 }
             }
         }
@@ -127,16 +177,20 @@ Resset Css
                 }
     
                 .actionMain {
-                    
-                    h1 {
+                    .nameApps {
                         font-family: steelfish;
                         font-size: 56px;
                         letter-spacing: 5px;
                     }
-                    p {
+                    .notice {
                         font-size: 16px;
-                        max-width: 500px;
                     }
+                    .inputParent {
+                        width: 70%;
+                        .inputOTP {
+                            height: 64px;
+                        }
+                    } 
                 }
             }
         }
@@ -147,7 +201,7 @@ Resset Css
     .authOtp {
         .container {
             .wrapperMain {
-                width: 80%;
+                width: 65%;
             }
         }
     }
@@ -167,13 +221,16 @@ Resset Css
     
                 .actionMain {
                     padding: 1rem 1rem 3rem 1rem;
-                    h1 {
+                    .nameApps {
                         font-family: steelfish;
                         font-size: 62px;
                         letter-spacing: 5px;
                     }
-                    p {
+                    .notice {
                         font-size: 18px;
+                    }
+                    .inputParent {
+                        width: 60%;
                     }
                 }
             }
@@ -194,14 +251,16 @@ Resset Css
     
                 .actionMain {
                     padding: 1rem 1rem 3rem 1rem;
-                    h1 {
+                    .nameApps {
                         font-family: steelfish;
                         font-size: 62px;
                         letter-spacing: 5px;
                     }
-                    p {
+                    .notice {
                         font-size: 18px;
                     }
+
+                    
                 }
             }
         }

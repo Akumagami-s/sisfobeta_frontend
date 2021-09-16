@@ -62,22 +62,60 @@ Resset Css
   text-align: center;
 }
 
-.authOtp .container .wrapperMain .actionMain h1, .authOtp .container .wrapperMain .actionMain p {
+.authOtp .container .wrapperMain .actionMain .nameApps, .authOtp .container .wrapperMain .actionMain .notice {
   color: #3E563E;
 }
 
-.authOtp .container .wrapperMain .actionMain h1 {
+.authOtp .container .wrapperMain .actionMain .nameApps {
   font-family: steelfish;
   margin-bottom: 1.5rem;
 }
 
-.authOtp .container .wrapperMain .actionMain p {
+.authOtp .container .wrapperMain .actionMain .notice {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 2rem;
+  max-width: 500px;
 }
 
-.authOtp .container .wrapperMain .actionMain .requestOtp {
+.authOtp .container .wrapperMain .actionMain .noticeGetOtp {
+  max-width: 400px;
+  margin-bottom: 12px;
+}
+
+.authOtp .container .wrapperMain .actionMain #countDown {
+  margin-bottom: 1rem;
+  color: #FF0000A6;
+  font-weight: 600;
+}
+
+.authOtp .container .wrapperMain .actionMain .inputParent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.authOtp .container .wrapperMain .actionMain .inputParent .inputOTP {
+  border: none;
+  background: #C4C4C4;
+  text-align: center;
+  font-weight: 600;
+}
+
+.authOtp .container .wrapperMain .actionMain .inputParent .inputOTP:not(:last-child) {
+  margin-right: 10px;
+}
+
+.authOtp .container .wrapperMain .actionMain .resendOTPagain {
+  border: none;
+  background: transparent;
+  color: #FF0000A6;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.authOtp .container .wrapperMain .actionMain .btn-otp {
   border: none;
   background: #3E563E;
   color: #fff;
@@ -92,22 +130,31 @@ Resset Css
     padding-top: 2rem;
   }
   .authOtp .container .wrapperMain .iconSection .iconEmail {
-    max-width: 200px;
+    max-width: 150px;
     bottom: -30px;
   }
   .authOtp .container .wrapperMain .actionMain {
     padding: 1rem 1rem 2rem 1rem;
   }
-  .authOtp .container .wrapperMain .actionMain h1, .authOtp .container .wrapperMain .actionMain p {
-    color: #3E563E;
-  }
-  .authOtp .container .wrapperMain .actionMain h1 {
-    font-family: steelfish;
+  .authOtp .container .wrapperMain .actionMain .nameApps {
     font-size: 46px;
     letter-spacing: 5px;
   }
-  .authOtp .container .wrapperMain .actionMain p {
+  .authOtp .container .wrapperMain .actionMain .notice {
     font-size: 14px;
+  }
+  .authOtp .container .wrapperMain .actionMain #countDown {
+    font-size: 16px;
+  }
+  .authOtp .container .wrapperMain .actionMain .inputParent .inputOTP {
+    height: 52px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .authOtp .container .wrapperMain .actionMain .inputParent {
+    width: 75%;
   }
 }
 
@@ -116,20 +163,25 @@ Resset Css
     max-width: 250px;
     bottom: -50px;
   }
-  .authOtp .container .wrapperMain .actionMain h1 {
+  .authOtp .container .wrapperMain .actionMain .nameApps {
     font-family: steelfish;
     font-size: 56px;
     letter-spacing: 5px;
   }
-  .authOtp .container .wrapperMain .actionMain p {
+  .authOtp .container .wrapperMain .actionMain .notice {
     font-size: 16px;
-    max-width: 500px;
+  }
+  .authOtp .container .wrapperMain .actionMain .inputParent {
+    width: 70%;
+  }
+  .authOtp .container .wrapperMain .actionMain .inputParent .inputOTP {
+    height: 64px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .authOtp .container .wrapperMain {
-    width: 80%;
+    width: 65%;
   }
 }
 
@@ -144,13 +196,16 @@ Resset Css
   .authOtp .container .wrapperMain .actionMain {
     padding: 1rem 1rem 3rem 1rem;
   }
-  .authOtp .container .wrapperMain .actionMain h1 {
+  .authOtp .container .wrapperMain .actionMain .nameApps {
     font-family: steelfish;
     font-size: 62px;
     letter-spacing: 5px;
   }
-  .authOtp .container .wrapperMain .actionMain p {
+  .authOtp .container .wrapperMain .actionMain .notice {
     font-size: 18px;
+  }
+  .authOtp .container .wrapperMain .actionMain .inputParent {
+    width: 60%;
   }
 }
 
@@ -165,12 +220,12 @@ Resset Css
   .authOtp .container .wrapperMain .actionMain {
     padding: 1rem 1rem 3rem 1rem;
   }
-  .authOtp .container .wrapperMain .actionMain h1 {
+  .authOtp .container .wrapperMain .actionMain .nameApps {
     font-family: steelfish;
     font-size: 62px;
     letter-spacing: 5px;
   }
-  .authOtp .container .wrapperMain .actionMain p {
+  .authOtp .container .wrapperMain .actionMain .notice {
     font-size: 18px;
   }
 }

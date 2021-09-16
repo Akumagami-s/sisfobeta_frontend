@@ -247,7 +247,66 @@ Style
   font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  .authLogin .wrapperAuth .leftBackground {
+    display: none;
+  }
+  .authLogin .wrapperAuth .rightContent {
+    width: 100%;
+    padding: 1.5rem 2rem;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth {
+    margin-bottom: .8rem;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .textWelcome {
+    margin-bottom: 1rem;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
+    font-size: 16px;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
+    font-size: 42px;
+    letter-spacing: 5px;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners {
+    width: 70%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 50px;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection label {
+    font-size: 14px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control img {
+    max-width: 15px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
+    font-size: 14px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .confirmation-user .form-check label {
+    font-size: 14px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .confirmation-user .forgetPassowrd {
+    font-size: 14px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .toRegisterPage {
+    margin-top: 1rem;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .toRegisterPage p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 375px) {
   .authLogin .wrapperAuth .leftBackground {
     display: none;
   }
@@ -287,7 +346,7 @@ Style
     font-size: 14px;
   }
   .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control img {
-    max-width: 15px;
+    max-width: 18px;
   }
   .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
     font-size: 14px;
@@ -299,26 +358,69 @@ Style
     font-size: 14px;
   }
   .authLogin .wrapperAuth .rightContent .mainAuth form .toRegisterPage {
-    margin-top: 1rem;
+    margin-top: 2rem;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .toRegisterPage p {
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .authLogin .wrapperAuth {
+    height: 100vh;
+    align-items: center;
+  }
   .authLogin .wrapperAuth .leftBackground {
     display: inline-block;
+    height: 100%;
+    width: 60%;
   }
   .authLogin .wrapperAuth .rightContent {
-    width: 50%;
+    width: 40%;
     padding: 64px 64px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .authLogin .wrapperAuth .leftBackground {
-    display: inline-block;
+  .authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
+    font-size: 22px;
   }
-  .authLogin .wrapperAuth .rightContent {
-    width: 40%;
+  .authLogin .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
+    font-size: 64px;
+    letter-spacing: 10px;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners {
+    width: 70%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 50%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 70px;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authLogin .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 181px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection label {
+    font-size: 16px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control img {
+    max-width: 20px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
+    font-size: 16px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .confirmation-user .form-check label {
+    font-size: 16px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .confirmation-user .forgetPassowrd {
+    font-size: 16px;
+  }
+  .authLogin .wrapperAuth .rightContent .mainAuth form .toRegisterPage p {
+    font-size: 16px;
   }
 }
 

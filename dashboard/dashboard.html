@@ -182,68 +182,129 @@
             aria-labelledby="ebaltab-menu">
 
             <div class="wrappercontentMenu">
-              <div class="headerTitleMenu">
+              <div class="headerTitleContent">
                 <h1>e-BALTAB</h1>
               </div>
 
-              <div class="contentEbaltab">
+              <div class="bodyContent contentEbaltab">
+                <div class="buttonMenuInContent menuEbaltab nav nav-pills"
+                  id="v-pills-tab" 
+                  role="tablist">
+                  
+                  <div class="menu dashboard nav-link active"
+                    id="v-pills-dashboardContent-tab" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#v-pills-dashboardContent" 
+                    type="button" role="tab" 
+                    aria-controls="v-pills-dashboardContent" 
+                    aria-selected="true">
+
+                    <div class="icon">
+                      <img src="../assets/img/dashboardIcon.svg" alt="">
+                    </div>
+                    <div class="nameMenuContent">
+                      <h4>Dashboard</h4>
+                    </div>
+                  </div>
+
+                  <div class="menu dataPokokPrajurit nav-link" 
+                    id="v-pills-dataPrajurit-tab" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#v-pills-dataPrajurit" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="v-pills-dataPrajurit" 
+                    aria-selected="false">
+
+                    <div class="icon">
+                      <img src="../assets/img/dataPrajuritIcon.svg" alt="">
+                    </div>
+                    <div class="nameMenuContent">
+                      <h4>Data Pokok Prajurit</h4>
+                    </div>
+                  
+                  </div>
+
+                  <div class="menu rekayasaData nav-link"
+                    id="buttonContentRekayasaData" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#buttonContentRekayasaData" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="buttonContentRekayasaData" 
+                    aria-selected="false">
+
+                    <div class="icon">
+                      <img src="../assets/img/rekayasaDataIcon.svg" alt="">
+                    </div>
+                    <div class="nameMenuContent">
+                      <h4>Rekayasa Data</h4>
+                    </div>
                 
-                <div class="wrappercard-statistic">
-                  <div class="statisticPengajuan">
-                      <div class="heading-card">
-                        <h1>Jumlah Pengajuan</h1>
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                      </div>
-                      <div class="body-card">
-                        <div class="totaly-accept">
-                          <p>Total Penerimaan</p>
-                          <span class="value-accept">366.746</span>
-                        </div>
-                        <div class="chart-accept">
-                          <canvas id="totalPenerima"></canvas>
-                        </div>
-                      </div>
                   </div>
 
-                  <div class="statisticPengajuan">
-                    <div class="heading-card">
-                      <h1>Jumlah Pengajuan</h1>
-                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                  <div class="menu pengajuan nav-link"
+                    id="buttonContentPengajuan" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#buttonContentPengajuan" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="buttonContentPengajuan" 
+                    aria-selected="false">
+
+                    <div class="icon">
+                      <img src="../assets/img/pengajuanIcon.svg" alt="">
                     </div>
-                    <div class="body-card">
-                      <div class="totaly-accept">
-                        <p>Total Penerimaan</p>
-                        <span class="value-accept">366.746</span>
-                      </div>
-                      <div class="chart-accept">
-                        <canvas id="sudahDiterima"></canvas>
-                      </div>
+                    <div class="nameMenuContent">
+                      <h4>Rekayasa Data</h4>
+                    </div>
+
+                  </div>
+
+                  <div class="menu sprin nav-link"
+                    id="buttonContentSprin" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#buttonContentSprin" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="buttonContentSprin" 
+                    aria-selected="false">
+
+                    <div class="icon">
+                      <img src="../assets/img/sprinIcon.svg" alt="">
+                    </div>
+                    <div class="nameMenuContent">
+                      <h4>Sprin</h4>
+                    </div>
+
+                  </div>
+                  
+                  <div class="menu master nav-link"
+                    id="buttonContentMaster" 
+                    data-bs-toggle="pill" 
+                    data-bs-target="#buttonContentMaster" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="buttonContentMaster" 
+                    aria-selected="false">
+
+                    <div class="icon">
+                      <img src="../assets/img/masterIcon.svg" alt="">
+                    </div>
+                    <div class="nameMenuContent">
+                      <h4>Maser</h4>
                     </div>
                   </div>
+                  
                 </div>
 
-                <div class="wrapperDataAlokasi">
-                  <div class="headerDataAlokasi">
-                    <p>Data Alokasi</p>
-                  </div>
-                  <div class="statisticDataAlokasi">
-                    <div class="chart">
-                      <canvas id="chartDataAlokasi"></canvas>
-                    </div>
-        
-                    <div class="alokasiData-informasi">
-                      <div class="danaAlokasi-informasi jumlahDana">
-                          <h1>Jumlah Dana Alokasi</h1>
-                          <p>120.235.231</p>
-                      </div>
-                      <div class="danaAlokasi-informasi danaTeralisasi">
-                        <h1>Dana Alokasi Terealisasi</h1>
-                        <p>120.235.231</p>
-                      </div>
-                    </div>
-                  </div>
+                
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-dashboardContent" role="tabpanel" aria-labelledby="v-pills-dashboardContent-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, distinctio?</div>
+                  <div class="tab-pane fade" id="v-pills-dataPrajurit" role="tabpanel" aria-labelledby="v-pills-dataPrajurit-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id architecto officiis minus a rem et omnis voluptates doloribus sequi?</div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
                 </div>
-
               </div>
             </div>
 
@@ -254,9 +315,16 @@
             role="tabpanel" 
             aria-labelledby="ekpr-menu">
 
-            <div class="wrapperEkprContent">
-              
-            </div>
+            <div class="wrappercontentMenu">
+              <div class="headerTitleContent">
+                <h1>e-KPR</h1>
+              </div>
+
+              <div class="bodyContent contentEkpr">
+                <div class="buttonMenuInContent menuEkpr">
+                  
+                </div>
+              </div>
           </div>
 
         </div>

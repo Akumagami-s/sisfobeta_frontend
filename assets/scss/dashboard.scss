@@ -228,109 +228,47 @@ Styling
 
 .content-menu {
     position: relative;
-    top: -70px;
     .container-fluid {
         .tab-content {
-            #v-pills-ebaltab {
+            .tab-pane {
                 .wrappercontentMenu {
-                    .headerTitleMenu {
+                    .headerTitleContent {
                         margin-bottom: 2rem;
                         h1 {
                             font-weight: $font-weight700;
                             color: $font-color;
                         }
                     }
-
-                    .contentEbaltab {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        .wrappercard-statistic {
+                    
+                    .bodyContent {
+                        .buttonMenuInContent {
                             display: flex;
-                            width: 100%;
                             justify-content: center;
-                            
-                            .statisticPengajuan {
-                                background: $white-color;
-                                border-radius: 20px;
-                                box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
-
-                                .heading-card {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    h1 {
-                                        font-weight: $font-weight700;
-                                    }
-                                    ion-icon {
-                                        transform: rotate(-40deg);
-                                    }
-                                }
-
-                                .body-card {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    .totaly-accept {
-                                        color: $font-color;
-
-                                        p {
-                                            font-weight: $font-weight500;
-                                        }
-                                        span {
-                                            font-weight: $font-weight700;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .wrapperDataAlokasi {
-                            display: flex;
-                            background: $white-color;
-                            box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
-                            border-radius: 15px;
-                            width: 100%;
-                            .headerDataAlokasi {
-                                p {
-                                    font-weight: $font-weight500;
-                                }
-                            }
-
-                            .statisticDataAlokasi {
+                            flex-wrap: wrap;
+                            .menu {
                                 display: flex;
+                                flex-direction: column;
                                 align-items: center;
+                                background: #fff;
+                                box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);     
+                                border-radius: 15px;    
+                                margin: .8rem 1rem;
+                                padding: 2rem 2rem;
+                                width: 20%;
 
-                                .alokasiData-informasi {
-                                    position: relative;
-                                    .danaAlokasi-informasi {
-                                        &::before {
-                                            content: '';
-                                            position: absolute;
-                                            display: block;
-                                            background: red;
-                                            border-radius: 50%;
-                                            height: 20px;
-                                            width: 20px;
-                                        }
-
-                                        h1 {
-                                            font-weight: $font-weight700;
-                                        }
-                                    }
-
-                                    .jumlahDana {
-                                        &::before {
-                                            background: #7334FF;
-                                        }
-                                    }
-
-                                    .danaTeralisasi {
-                                        &::before {
-                                            background: #FF832B;
-                                        }
+                                .icon {
+                                    margin-bottom: 1.5rem;
+                                    img {
+                                        width: 100%;
                                     }
                                 }
+                                .nameMenuContent {
+                                    color: #3E3C3C;
+                                    font-weight: 500;
+                                }
+                            }
+                            .active {
+                                background: #DDDDDD;
                             }
                         }
                     }
@@ -473,114 +411,18 @@ Responsive Mobile and Desktop
     }
 
     .content-menu {
+        top: -70px;
         .container-fluid {
             .tab-content {
-                #v-pills-ebaltab {
+                .tab-pane {
                     .wrappercontentMenu {
-                        .headerTitleMenu {
+                        .headerTitleContent {
                             h1 {
                                 font-size: 24px;
                             }
                         }
-                        .contentEbaltab {
-                            .wrappercard-statistic {
-                                margin-bottom: .5rem;
-                                .statisticPengajuan {
-                                    padding: 14px 14px;
-                                    margin: 1.5rem 12px;
-                                    width: 100%;
-
-                                    .heading-card {
-                                        margin-bottom: 8px;
-
-                                        h1 {
-                                            font-size: 16px;
-                                        }
-                                    }
-    
-                                    .body-card {
-                                        .totaly-accept {
-                                            width: 60%;
-                                            p {
-                                                font-size: 12px;
-                                                margin-bottom: .85rem;
-
-                                            }
-                                            span {
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .chart-accept {
-                                            width: 40%;
-                                        }
-                                    }
-                                }
-                            }
-
-                            .wrapperDataAlokasi {
-                                position: relative;
-                                flex-direction: column;
-                                .headerDataAlokasi {
-                                    padding: 2rem 1.5rem 1rem 1.5rem;
-                                    p {
-                                        font-weight: $font-weight500;
-                                    }
-                                }
-    
-                                .statisticDataAlokasi {
-                                    flex-direction: column;
-                                    padding: 1rem 3rem 2rem 3rem;
-                                    .chart {
-                                        width: 100%;
-                                        margin-bottom: 2rem;
-                                    }
-                                    .alokasiData-informasi {
-                                        position: relative;
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-self: flex-start;
-                                        .danaAlokasi-informasi {
-                                            flex-direction: column;
-                                            &::before {
-                                                content: '';
-                                                position: absolute;
-                                                display: block;
-                                                background: red;
-                                                border-radius: 50%;
-                                                height: 12px;
-                                                width: 12px;
-                                            }
-    
-                                            h1 {
-                                                font-weight: $font-weight700;
-                                                font-size: 14px;
-                                            }
-                                            p {
-                                                font-size: 12px;
-                                            }
-                                        }
-    
-                                        .jumlahDana {
-                                            position: relative;
-                                            margin-bottom: 1rem;
-                                            &::before {
-                                                background: #7334FF;
-                                                left: -20px;
-                                                top: 2px;
-                                            }
-                                        }
-    
-                                        .danaTeralisasi {
-                                            position: relative;
-                                            &::before {
-                                                background: #FF832B;
-                                                left: -20px;
-                                                top: 2px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                        .bodyContent {
+                            
                         }
                     }
                 }
@@ -593,39 +435,10 @@ Responsive Mobile and Desktop
     .content-menu {
         .container-fluid {
             .tab-content {
-                #v-pills-ebaltab {
+                .tab-pane {
                     .wrappercontentMenu {
-                        .contentEbaltab {
-                            .wrappercard-statistic {
-                                .statisticPengajuan {
-                                    padding: 14px 14px;
-
-                                    .heading-card {
-                                        margin-bottom: 4px;
-
-                                        h1 {
-                                            font-size: 18px;
-                                        }
-                                    }
-    
-                                    .body-card {
-                                        .totaly-accept {
-                                            width: 50%;
-                                            p {
-                                                font-size: 14px;
-                                                margin-bottom: .85rem;
-
-                                            }
-                                            span {
-                                                font-size: 16px;
-                                            }
-                                        }
-                                        .chart-accept {
-                                            width: 50%;
-                                        }
-                                    }
-                                }
-                            }
+                        .bodyContent {
+                            
                         }
                     }
                 }
@@ -686,37 +499,10 @@ Responsive Mobile and Desktop
     .content-menu {
         .container-fluid {
             .tab-content {
-                #v-pills-ebaltab {
+                .tab-pane {
                     .wrappercontentMenu {
-    
-                        .contentEbaltab {
-                            .wrappercard-statistic {
-
-                                .statisticPengajuan {
-                                    padding: 22px 18px;
-
-                                    .heading-card {
-                                        h1 {
-                                            font-size: 16px;
-                                        }
-                                    }
-    
-                                    .body-card {
-                                        .totaly-accept {
-                                            width: 50%;
-                                            p {
-                                                font-size: 14px;
-                                            }
-                                            span {
-                                                font-size: 16px;
-                                            }
-                                        }
-                                        .chart-accept {
-                                            width: 50%;
-                                        }
-                                    }
-                                }
-                            }
+                        .bodyContent {
+                            
                         }
                     }
                 }
@@ -808,39 +594,15 @@ Responsive Mobile and Desktop
     .content-menu {
         .container-fluid {
             .tab-content {
-                #v-pills-ebaltab {
+                .tab-pane {
                     .wrappercontentMenu {
-
-                        .headerTitleMenu {
+                        .headerTitleContent {
                             h1 {
                                 font-size: 32px;
                             }
                         }
-    
-                        .contentEbaltab {
-                            .wrappercard-statistic {
-                                .statisticPengajuan {
-                                    padding: 22px 24px;
-
-                                    .heading-card {
-                                        h1 {
-                                            font-size: 18px;
-                                        }
-                                    }
-    
-                                    .body-card {
-                                        .totaly-accept {
-                                            width: 50%;
-                                            span {
-                                                font-size: 18px;
-                                            }
-                                        }
-                                        .chart-accept {
-                                            width: 50%;
-                                        }
-                                    }
-                                }
-                            }
+                        .bodyContent {
+                            
                         }
                     }
                 }
@@ -922,36 +684,11 @@ Responsive Mobile and Desktop
         padding: 0 3rem;
         .container-fluid {
             .tab-content {
-                #v-pills-ebaltab {
+                .tab-pane {
                     .wrappercontentMenu {
                         
-                        .contentEbaltab {
-                            .wrappercard-statistic {
-                                .statisticPengajuan {
-                                    padding: 22px 24px;
-
-                                    .heading-card {
-                                        h1 {
-                                            font-size: 18px;
-                                        }
-                                    }
-    
-                                    .body-card {
-                                        .totaly-accept {
-                                            width: 50%;
-                                            p {
-                                                font-size: 16px;
-                                            }
-                                            span {
-                                                font-size: 24px;
-                                            }
-                                        }
-                                        .chart-accept {
-                                            width: 50%;
-                                        }
-                                    }
-                                }
-                            }
+                        .bodyContent {
+                           
                         }
                     }
                 }
@@ -1024,37 +761,12 @@ Responsive Mobile and Desktop
     }
 
     .content-menu {
+        top: -120px;
         .container-fluid {
             .tab-content {
-                #v-pills-ebaltab {
+                .tab-pane {
                     .wrappercontentMenu {
-                        
-                        .contentEbaltab {
-                            .wrappercard-statistic {
-
-                                .statisticPengajuan {
-                                    padding: 22px 24px;
-
-                                    .heading-card {
-                                        h1 {
-                                            font-size: 18px;
-                                        }
-                                    }
-    
-                                    .body-card {
-                                        .totaly-accept {
-                                            p {
-                                                font-size: 16px;
-                                            }
-                                            span {
-                                                font-size: 26px;
-                                            }
-                                        }
-                                        .chart-accept {
-                                        }
-                                    }
-                                }
-                            }
+                        .bodyContent {
                         }
                     }
                 }
@@ -1102,32 +814,9 @@ Responsive Mobile and Desktop
     .content-menu {
         .container-fluid {
             .tab-content {
-                #v-pills-ebaltab {
+                .tab-pane {
                     .wrappercontentMenu {
-                        
-                        .contentEbaltab {
-                            .wrappercard-statistic {
-                                .statisticPengajuan {
-                                    padding: 22px 24px;
-
-                                    .heading-card {
-                                        h1 {
-                                            font-size: 18px;
-                                        }
-                                    }
-    
-                                    .body-card {
-                                        .totaly-accept {
-                                            p {
-                                                font-size: 16px;
-                                            }
-                                            span {
-                                                font-size: 26px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                        .bodyContent {
                         }
                     }
                 }

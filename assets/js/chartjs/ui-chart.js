@@ -1,56 +1,23 @@
 /* Chart Prajurit Actif or no */
 const data = {
-    labels: [
-      'Prajurit Aktif',
-      'Prajurit Pensiun'
-    ],
-    datasets: [{
-      label: 'My First Dataset',
-      data: [90,10],
-      backgroundColor: [
-        '#A2A846',
-        '#587350',
-      ],
-      hoverOffset: 4
-    }]
-  };
-
-  const config = {
-    type: 'doughnut',
-    data: data,
-    options : {
-      legend: {
-        display: false
-      },
-    }
-  };
-
-  var myChart = new Chart(
-    document.getElementById('rekapChart'),
-    config
-  );
-
-
-
-  /* Chart total terima (Ebaltab) */
-
-const dataTotalTerima = {
   labels: [
-    'Total Di Terima'
+    'Prajurit Aktif',
+    'Prajurit Pensiun'
   ],
   datasets: [{
     label: 'My First Dataset',
-    data: [20,0],
+    data: [90,10],
     backgroundColor: [
-      '#7334FF'
+      '#A2A846',
+      '#587350',
     ],
     hoverOffset: 4
   }]
 };
 
-const configTotalTerima = {
+const config = {
   type: 'doughnut',
-  data: dataTotalTerima,
+  data: data,
   options : {
     legend: {
       display: false
@@ -59,30 +26,61 @@ const configTotalTerima = {
 };
 
 var myChart = new Chart(
-  document.getElementById('totalPenerima'),
-  configTotalTerima
+  document.getElementById('rekapChart'),
+  config
 );
 
-  /* Chart sudah Diterima (Ebaltab) */
 
 
-const dataSudahDiterima = {
+  /* Chart KelengkapanPengajuan Data */
+
+const dataKelengkapanPengajuan = {
+labels: [
+  'Kelengkapan data pengajuan '
+],
+datasets: [{
+  label: 'My First Dataset',
+  data: [75,25],
+  backgroundColor: [
+    '#FF832A','#fff'
+  ],
+  hoverOffset: 4
+}]
+};
+
+const configKelengkapanPengajuan = {
+type: 'doughnut',
+data: dataKelengkapanPengajuan,
+options : {
+  legend: {
+    display: false
+  },
+}
+};
+
+var myChart = new Chart(
+document.getElementById('kelengkapanPengajuan'),
+configKelengkapanPengajuan
+);
+
+/* Chart dataSprin */
+const dataSprin = {
   labels: [
-    'Sudah Di Terima',
+    'Approval Sprin'
   ],
   datasets: [{
     label: 'My First Dataset',
-    data: [30],
+    data: [75,25],
     backgroundColor: [
-      '#DC3546',
+      '#A2A846','#fff'
     ],
     hoverOffset: 4
   }]
 };
 
-const configSudahDiterima = {
+const configSprin = {
   type: 'doughnut',
-  data: dataSudahDiterima,
+  data: dataSprin,
   options : {
     legend: {
       display: false
@@ -91,38 +89,67 @@ const configSudahDiterima = {
 };
 
 var myChart = new Chart(
-  document.getElementById('sudahDiterima'),
-  configSudahDiterima
+  document.getElementById('approvalSprin'),
+  configSprin
 );
 
-/* Chart Data Alokasi */
-  const dataAlokasi = {
-    labels: [
-      'Jumlah Dana Alokasi',
-      'Dana Alokasi Terealisasi'
+/* Chart danaAlokasi */
+const dataDanaAlokasi = {
+  labels: [
+    'Approval Sprin'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [75,25],
+    backgroundColor: [
+      '#7334FF','#fff'
     ],
-    datasets: [{
-      label: 'My First Dataset',
-      data: [90,20],
-      backgroundColor: [
-        '#7334FF',
-        '#FF832B',
-      ],
-      hoverOffset: 4
-    }]
-  };
+    hoverOffset: 4
+  }]
+};
 
-  const configDataAlokasi = {
-    type: 'doughnut',
-    data: dataAlokasi,
-    options : {
-      legend: {
-        display: false
-      },
-    }
-  };
+const configDanaAlokasi = {
+  type: 'doughnut',
+  data: dataDanaAlokasi,
+  options : {
+    legend: {
+      display: false
+    },
+  }
+};
 
-  var myChart = new Chart(
-    document.getElementById('chartDataAlokasi'),
-    configDataAlokasi
-  );
+var myChart = new Chart(
+  document.getElementById('chartDanaAlokasi'),
+  configDanaAlokasi
+);
+
+
+/* Chart ApprovaldanaAlokasi */
+const dataApprovalDanaAlokasi = {
+  labels: [
+    'Approval Sprin'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [75,25],
+    backgroundColor: [
+      '#FF832A','#fff'
+    ],
+    hoverOffset: 4
+  }]
+};
+
+const configApprovalDanaAlokasi = {
+  type: 'doughnut',
+  data: dataApprovalDanaAlokasi,
+  options : {
+    legend: {
+      display: false
+    },
+  }
+};
+
+var myChart = new Chart(
+  document.getElementById('chartApprovalDanaAlokasi'),
+  configApprovalDanaAlokasi
+);

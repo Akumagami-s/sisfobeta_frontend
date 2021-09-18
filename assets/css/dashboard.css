@@ -274,6 +274,111 @@ Styling
   background: #DDDDDD;
 }
 
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .slick-list {
+  width: 100%;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission {
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon img {
+  max-width: 210px;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission canvas {
+  width: 100%;
+  max-width: 350px;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission p span {
+  color: #DC3545;
+  font-weight: 700;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .month {
+  font-weight: 400;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .buttonSync button {
+  border: none;
+  background: #DC3545;
+  padding: 8px 33px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik {
+  background: #fff;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik h1 {
+  font-weight: 500;
+  color: #3E3C3C;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik p {
+  color: #3E3C3C;
+  font-weight: 700;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart {
+  display: flex;
+  position: relative;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .chart {
+  width: 100%;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .chart canvas {
+  width: 100%;
+  max-width: 350px;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .arrowIcon {
+  position: absolute;
+}
+
 /*============
 Responsive Mobile and Desktop
 ============*/
@@ -373,6 +478,74 @@ Responsive Mobile and Desktop
   .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .headerTitleContent h1 {
     font-size: 24px;
   }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission {
+    justify-content: center;
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission {
+    margin: 1rem 1rem;
+    padding: 2.5rem 2rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon {
+    margin-bottom: 1rem;
+    width: 40%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon img {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission {
+    width: 70%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission p {
+    font-size: 14px;
+    margin-bottom: .3rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .month {
+    font-size: 14px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .buttonSync {
+    margin-top: .5rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .buttonSync button {
+    font-size: 14px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik {
+    width: 100%;
+    padding: 1rem 1rem;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 1rem 5px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik {
+    text-align: center;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik h1 {
+    font-weight: 500;
+    color: #3E3C3C;
+    font-size: 12px;
+    margin-bottom: .3rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik p {
+    color: #3E3C3C;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .chart canvas {
+    width: 100%;
+    max-width: 350px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .arrowIcon {
+    right: 0;
+    top: -10px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .arrowIcon img {
+    max-width: 10px;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -466,6 +639,26 @@ Responsive Mobile and Desktop
   .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .headerTitleContent h1 {
     font-size: 32px;
   }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon {
+    margin-bottom: 1.5rem;
+    width: 40%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon img {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission {
+    width: 70%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission p {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .month {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .buttonSync button {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -517,6 +710,23 @@ Responsive Mobile and Desktop
   }
   .content-menu {
     padding: 0 3rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon {
+    margin-bottom: 1.5rem;
+    width: 60%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon img {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission {
+    width: 100%;
   }
 }
 
@@ -586,6 +796,22 @@ Responsive Mobile and Desktop
   }
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
     font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon {
+    margin-bottom: 2.5rem;
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .icon img {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission p {
+    font-size: 24px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .month {
+    font-size: 20px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */

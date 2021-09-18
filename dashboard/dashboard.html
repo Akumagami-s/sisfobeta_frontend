@@ -187,10 +187,10 @@
               </div>
 
               <div class="bodyContent contentEbaltab">
+
                 <div class="buttonMenuInContent menuEbaltab nav nav-pills"
                   id="v-pills-tab" 
                   role="tablist">
-                  
                   <div class="menu dashboard nav-link active"
                     id="v-pills-dashboardContent-tab" 
                     data-bs-toggle="pill" 
@@ -295,16 +295,90 @@
                       <h4>Maser</h4>
                     </div>
                   </div>
+                </div>
+                
+                <div class="tab-content ebaltab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active"
+                   id="v-pills-dashboardContent"
+                   role="tabpanel" 
+                   aria-labelledby="v-pills-dashboardContent-tab">
+                    
+                   <div class="wrapperSubmission">
+                      <div class="submission scyncData">
+                          <div class="icon">
+                            <img src="../assets/img/syncDataIcon.svg" alt="">
+                          </div>
+                          <p><span class="dataNotSync">287.828</span> Data Belum Sinkron</p>
+                          <div class="buttonSync">
+                            <button type="submit">SINKRON DATA</button>
+                          </div>
+                      </div>
+
+                      <div class="submission kelengkapanPengajuan">
+                          <div class="icon chartSubmission">
+                              <canvas id="kelengkapanPengajuan"></canvas>
+                          </div>
+                          <p>Kelengkapan Data Pengajuan</p>
+                          <span class="month">September 20201</span>
+                      </div>
+
+                      <div class="submission approvalSprin">
+                        <div class="icon chartSubmission">
+                          <canvas id="approvalSprin"></canvas>
+                        </div>
+                        <p>Approval Sprin</p>
+                        <span class="month">September 20201</span>
+                      </div>
+                   </div>
+
+                   <div class="wrapperDanaAlokasiDanPenyaluran">
+                      <div class="d-flex danaAlokasi">
+
+                          <div class="statistik statistikDanaAlokasi">
+                            <div class="infoStatisctik">
+                                <h1>Dana Alokasi</h1>
+                                <p>Rp <span class="nominal">308.260.458.101</span></p>
+                            </div>
+                            <div class="wrapperChart">
+                              <div class="chart">
+                                <canvas id="chartDanaAlokasi"></canvas>
+                              </div>
+                              <div class="arrowIcon">
+                                <img src="../assets/img/arrowChart.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="statistik statistikApprovalAlokasi">
+                            <div class="infoStatisctik">
+                                <h1>Approval Dana Alokasi</h1>
+                                <p>Rp <span class="nominal">308.260.458.101</span></p>
+                            </div>
+                            <div class="wrapperChart">
+                              <div class="chart">
+                                <canvas id="chartApprovalDanaAlokasi"></canvas>
+                              </div>
+                              <div class="arrowIcon">
+                                <img src="../assets/img/arrowChart.svg" alt="">
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+                      <div class="d-flex danaPenyaluran"></div>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane fade" 
+                    id="v-pills-dataPrajurit" 
+                    role="tabpanel" 
+                    aria-labelledby="v-pills-dataPrajurit-tab">
+                    ....
+                  </div>
                   
                 </div>
 
-                
-                <div class="tab-content" id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-dashboardContent" role="tabpanel" aria-labelledby="v-pills-dashboardContent-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, distinctio?</div>
-                  <div class="tab-pane fade" id="v-pills-dataPrajurit" role="tabpanel" aria-labelledby="v-pills-dataPrajurit-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id architecto officiis minus a rem et omnis voluptates doloribus sequi?</div>
-                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-                </div>
               </div>
             </div>
 

@@ -303,7 +303,7 @@
                    role="tabpanel" 
                    aria-labelledby="v-pills-dashboardContent-tab">
                     
-                   <div class="wrapperSubmission">
+                    <div class="wrapperSubmission">
                       <div class="submission scyncData">
                           <div class="icon">
                             <img src="../assets/img/syncDataIcon.svg" alt="">
@@ -329,10 +329,10 @@
                         <p>Approval Sprin</p>
                         <span class="month">September 20201</span>
                       </div>
-                   </div>
+                    </div>
 
-                   <div class="wrapperDanaAlokasiDanPenyaluran">
-                      <div class="d-flex danaAlokasi">
+                    <div class="wrapperDanaAlokasiDanPenyaluran">
+                      <div class="d-flex parentStatistic danaAlokasi">
 
                           <div class="statistik statistikDanaAlokasi">
                             <div class="infoStatisctik">
@@ -365,7 +365,56 @@
                           </div>
 
                       </div>
-                      <div class="d-flex danaPenyaluran"></div>
+
+                      <div class="d-flex parentStatistic danaPenyaluran">
+                        <div class="statistik statistikDanaPenyaluran">
+                          <div class="infoStatisctik">
+                              <h1>Dana Penyaluran</h1>
+                              <p>Rp <span class="nominal">308.260.458.101</span></p>
+                          </div>
+                          <div class="wrapperChart">
+                            <div class="chart">
+                              <canvas id="chartDanaPenyaluran"></canvas>
+                            </div>
+                            <div class="arrowIcon">
+                              <img src="../assets/img/arrowChart.svg" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="statistik statistikApprovalDanaPenyaluran">
+                          <div class="infoStatisctik">
+                              <h1>Approval Dana Penyaluran</h1>
+                              <p>Rp <span class="nominal">308.260.458.101</span></p>
+                          </div>
+                          <div class="wrapperChart">
+                            <div class="chart">
+                              <canvas id="chartApprovalDanaPenyaluran"></canvas>
+                            </div>
+                            <div class="arrowIcon">
+                              <img src="../assets/img/arrowChart.svg" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="wrapperAllData">
+                      <div class="headerTitle">
+                        <h1>Data <span class="year">2021</span></h1>
+                      </div>
+                      <div class="bodyData">
+                        <div class="chart">
+                          <canvas id="allDataEbaltab"></canvas>
+                        </div>
+                        <div class="informasiChart">
+                          <p class="SymbolChart jumlahPengajuan">Jumlah Pengajuan</p>
+                          <p class="SymbolChart danaAlokasi">Dana Alokasi</p>
+                          <p class="SymbolChart danaPenyaluran">Dana Penyaluran</p>
+                        </div>
+                      </div>
                     </div>
 
                   </div>
@@ -405,7 +454,11 @@
 
       </div>
     </section>
-    <!---Content Menu-->
+    <!---End Content Menu-->
+
+    <footer>
+      <p>Copyright 2021 © DITKUAD</p>
+    </footer>
 
 
 

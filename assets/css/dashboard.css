@@ -341,7 +341,11 @@ Styling
   border-radius: 10px;
 }
 
-.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik {
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran {
+  margin-bottom: 1rem;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik {
   background: #fff;
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -351,32 +355,95 @@ Styling
   border-radius: 15px;
 }
 
-.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik h1 {
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik h1 {
   font-weight: 500;
   color: #3E3C3C;
 }
 
-.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik p {
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik p {
   color: #3E3C3C;
   font-weight: 700;
 }
 
-.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart {
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart {
   display: flex;
   position: relative;
 }
 
-.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .chart {
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
-.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .chart canvas {
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .chart canvas {
   width: 100%;
   max-width: 350px;
 }
 
-.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .arrowIcon {
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .arrowIcon {
   position: absolute;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData {
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle {
+  margin-bottom: 1rem;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle h1 {
+  font-size: 24px;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData {
+  width: 100%;
+  display: flex;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .chart canvas {
+  width: 100%;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart {
+  display: flex;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart::before {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .jumlahPengajuan::before {
+  background: #FF832A;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .danaAlokasi::before {
+  background: #7334FF;
+}
+
+.content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .danaPenyaluran::before {
+  background: #DC3545;
+}
+
+footer {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px -10px 24px;
+  padding: 3rem 0;
+  text-align: center;
+  font-weight: 400;
 }
 
 /*============
@@ -509,42 +576,82 @@ Responsive Mobile and Desktop
   .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .buttonSync button {
     font-size: 14px;
   }
-  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik {
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik {
     width: 100%;
     padding: 1rem 1rem;
     align-items: center;
     flex-direction: column-reverse;
-    margin: 1rem 5px;
+    margin: .8rem 5px;
   }
-  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik {
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik {
     text-align: center;
   }
-  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik h1 {
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik h1 {
     font-weight: 500;
     color: #3E3C3C;
     font-size: 12px;
     margin-bottom: .3rem;
   }
-  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .infoStatisctik p {
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik p {
     color: #3E3C3C;
     font-weight: 700;
     font-size: 12px;
   }
-  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart {
-    display: flex;
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart {
     width: 100%;
     margin-bottom: 1rem;
   }
-  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .chart canvas {
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .chart canvas {
     width: 100%;
     max-width: 350px;
   }
-  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .arrowIcon {
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .arrowIcon {
     right: 0;
     top: -10px;
   }
-  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .danaAlokasi .statistik .wrapperChart .arrowIcon img {
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .arrowIcon img {
     max-width: 10px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData {
+    padding: 2rem 1rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle {
+    margin-bottom: 1rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle h1 {
+    font-size: 18px;
+    color: #3E3C3C;
+    font-weight: 700;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData {
+    width: 100%;
+    flex-direction: column;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .chart {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart {
+    font-size: 14px;
+    margin: 0 .5rem;
+    text-align: center;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart::before {
+    height: 10px;
+    width: 10px;
+    left: -15px;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  footer p {
+    font-size: 14px;
   }
 }
 
@@ -572,6 +679,16 @@ Responsive Mobile and Desktop
   }
   .mainMenu .container-fluid .wrapperMainMenu .menuButton .menu .menu-information span {
     font-size: 14px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik {
+    padding: 2rem 1rem;
+    margin: .8rem 10px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik h1 {
+    font-size: 14px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik p {
+    font-size: 16px;
   }
 }
 
@@ -650,7 +767,7 @@ Responsive Mobile and Desktop
     width: 70%;
   }
   .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: .5rem;
   }
   .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .month {
@@ -658,6 +775,17 @@ Responsive Mobile and Desktop
   }
   .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .buttonSync button {
     font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle h1 {
+    font-size: 22px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart::before {
+    height: 10px;
+    width: 10px;
+    left: -20px;
   }
 }
 
@@ -728,6 +856,53 @@ Responsive Mobile and Desktop
   .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission {
     width: 100%;
   }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik {
+    flex-direction: row;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik {
+    width: 100%;
+    text-align: start;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik h1 {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik p {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .arrowIcon {
+    top: -15px;
+    right: 10px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle h1 {
+    font-size: 22px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData {
+    flex-direction: row;
+    align-items: center;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .chart {
+    width: 80%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    padding-left: 2rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart {
+    font-size: 16px;
+    text-align: start;
+    margin: .5rem 0;
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart::before {
+    height: 12px;
+    width: 12px;
+    left: -25px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -776,6 +951,57 @@ Responsive Mobile and Desktop
   .content-menu {
     top: -120px;
   }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission p {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .month {
+    font-size: 16px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik {
+    padding: 2rem 2rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik h1 {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik p {
+    font-size: 22px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .arrowIcon {
+    top: 0px;
+    right: 10px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .arrowIcon img {
+    max-width: 15px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData {
+    padding: 2rem 3rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle {
+    margin-bottom: 2rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle h1 {
+    font-size: 24px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart {
+    font-size: 18px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart::before {
+    height: 15px;
+    width: 15px;
+    left: -25px;
+  }
+  footer {
+    padding: 2.5rem 0;
+  }
+  footer p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -812,6 +1038,53 @@ Responsive Mobile and Desktop
   }
   .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperSubmission .submission .chartSubmission {
     width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik {
+    padding: 2rem 3rem;
+    margin: 1.2rem 0px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik:not(:last-child) {
+    margin-right: 42px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik h1 {
+    font-size: 22px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .infoStatisctik p {
+    font-size: 26px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart {
+    width: 100%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .arrowIcon {
+    top: 0px;
+    right: 10px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperDanaAlokasiDanPenyaluran .parentStatistic .statistik .wrapperChart .arrowIcon img {
+    max-width: 15px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData {
+    padding: 2rem 3rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle {
+    margin-bottom: 3rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .headerTitle h1 {
+    font-size: 28px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .chart {
+    width: 80%;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart {
+    width: 20%;
+    padding-left: 5rem;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart {
+    font-size: 22px;
+  }
+  .content-menu .container-fluid .tab-content .tab-pane .wrappercontentMenu .bodyContent .tab-content .tab-pane .wrapperAllData .bodyData .informasiChart .SymbolChart::before {
+    height: 20px;
+    width: 20px;
+    left: -40px;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */

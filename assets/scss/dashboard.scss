@@ -338,7 +338,8 @@ Styling
                                 }
 
                                 .wrapperDanaAlokasiDanPenyaluran {
-                                    .danaAlokasi {
+                                    margin-bottom: 1rem;
+                                    .parentStatistic {
                                         .statistik {
                                             background: $white-color;
                                             box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
@@ -364,6 +365,9 @@ Styling
                                                 display: flex;
                                                 position: relative;
                                                 .chart {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
                                                     width: 100%;
                                                     canvas {
                                                         width: 100%;
@@ -381,12 +385,77 @@ Styling
 
                                     }
                                 }
+
+                                .wrapperAllData {
+                                    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+                                    border-radius: 15px;
+                                    .headerTitle {
+                                        margin-bottom: 1rem;
+                                        h1 {
+                                            font-size: 24px;
+                                        }
+                                    }
+                                    .bodyData {
+                                        width: 100%;
+                                        display: flex;
+                                        .chart {
+                                            canvas {
+                                                width: 100%;
+                                            }
+                                        }
+    
+                                        .informasiChart {
+                                            display: flex;
+                                            .SymbolChart {
+                                                font-weight: 500;
+                                                display: flex;
+                                                align-items: center;
+                                                position: relative;
+                                                &::before {
+                                                    content: '';
+                                                    display: block;
+                                                    border-radius: 50%;
+                                                    background: red;
+                                                    position: absolute;
+                                                }
+                                            }
+    
+                                            .jumlahPengajuan {
+                                                &::before {
+                                                    background: #FF832A;
+                                                }
+                                            }
+    
+                                            .danaAlokasi {
+                                                &::before {
+                                                    background: #7334FF;
+                                                }
+                                            }
+    
+                                            .danaPenyaluran {
+                                                &::before {
+                                                    background: #DC3545;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
         }
+    }
+}
+
+footer {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px -10px 24px;
+    padding: 3rem 0;
+    text-align: center;
+    font-weight: $font-weight400;
+    p {
+
     }
 }
 
@@ -573,13 +642,13 @@ Responsive Mobile and Desktop
                                         }
                                     }
                                     .wrapperDanaAlokasiDanPenyaluran {
-                                        .danaAlokasi {
+                                        .parentStatistic {
                                             .statistik {
                                                 width: 100%;
                                                 padding: 1rem 1rem;
                                                 align-items: center;
                                                 flex-direction: column-reverse;
-                                                margin: 1rem 5px;
+                                                margin: .8rem 5px;
                                                 .infoStatisctik {
                                                     text-align: center;
                                                     h1 {
@@ -595,7 +664,6 @@ Responsive Mobile and Desktop
                                                     }
                                                 }
                                                 .wrapperChart {
-                                                    display: flex;
                                                     width: 100%;
                                                     margin-bottom: 1rem;
                                                     .chart {
@@ -614,8 +682,43 @@ Responsive Mobile and Desktop
                                                 }
                                             }
                                         }
-                                        .danaPenyaluran {
-    
+                                    }
+
+                                    .wrapperAllData {
+                                        padding: 2rem 1rem;
+                                        .headerTitle {
+                                            margin-bottom: 1rem;
+                                            h1 {
+                                                font-size: 18px;
+                                                color: $dark-color;
+                                                font-weight: $font-weight700;
+                                            }
+                                        }
+                                        .bodyData {
+                                            width: 100%;
+                                            flex-direction: column;
+                                            .chart {
+                                                width: 100%;
+                                                margin-bottom: 1rem;
+                                            }
+        
+                                            .informasiChart {
+                                                width: 100%;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                justify-content: space-evenly;
+
+                                                .SymbolChart {
+                                                    font-size: 14px;
+                                                    margin: 0 .5rem;
+                                                    text-align: center;
+                                                    &::before {
+                                                        height: 10px;
+                                                        width: 10px;
+                                                        left: -15px;
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 } 
@@ -624,6 +727,13 @@ Responsive Mobile and Desktop
                     }
                 }
             }
+        }
+    }
+
+    footer {
+        padding: 2rem 0;
+        p {
+            font-size: 14px;
         }
     }
 }
@@ -699,7 +809,26 @@ Responsive Mobile and Desktop
                 .tab-pane {
                     .wrappercontentMenu {
                         .bodyContent {
-                            
+                            .tab-content {
+                                .tab-pane {
+                                    .wrapperDanaAlokasiDanPenyaluran {
+                                        .parentStatistic {
+                                            .statistik {
+                                                padding: 2rem 1rem;
+                                                margin: .8rem 10px;
+                                                .infoStatisctik {
+                                                    h1 {
+                                                        font-size: 14px;
+                                                    }
+                                                    p {
+                                                        font-size: 16px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                } 
+                            }
                         }
                     }
                 }
@@ -814,7 +943,7 @@ Responsive Mobile and Desktop
                                                 width: 70%;
                                             }
                                             p {
-                                                font-size: 16px;
+                                                font-size: 14px;
                                                 margin-bottom: .5rem;
 
                                             }
@@ -824,6 +953,26 @@ Responsive Mobile and Desktop
                                             .buttonSync {
                                                 button {
                                                     font-size: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .wrapperAllData {
+                                        .headerTitle {
+                                            h1 {
+                                                font-size: 22px;
+                                            }
+                                        }
+                                        .bodyData {
+        
+                                            .informasiChart {
+                                                .SymbolChart {
+                                                    font-size: 16px;
+                                                    &::before {
+                                                        height: 10px;
+                                                        width: 10px;
+                                                        left: -20px;
+                                                    }
                                                 }
                                             }
                                         }
@@ -934,6 +1083,63 @@ Responsive Mobile and Desktop
                                             }
                                         }
                                     }
+                                    .wrapperDanaAlokasiDanPenyaluran {
+                                        .parentStatistic {
+                                            .statistik {
+                                                flex-direction: row;
+                                                .infoStatisctik {
+                                                    width: 100%;
+                                                    text-align: start;
+                                                    h1 {
+                                                        font-size: 16px;
+                                                    }
+                                                    p {
+                                                        font-size: 18px;
+                                                    }
+                                                }
+                                                .wrapperChart {
+                                                    width: 100%;
+                                                    .arrowIcon {
+                                                        top: -15px;
+                                                        right: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .wrapperAllData {
+                                        .headerTitle {
+                                            h1 {
+                                                font-size: 22px;
+                                            }
+                                        }
+                                        .bodyData {
+                                            flex-direction: row;
+                                            align-items: center;
+                                            .chart {
+                                                width:80%;
+                                            }
+                                            .informasiChart {
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                width: 20%;
+                                                padding-left: 2rem;
+                                                
+                                                .SymbolChart {
+                                                    font-size: 16px;
+                                                    text-align: start;
+                                                    margin: .5rem 0;
+                                                    width: 100%;
+                                                    &::before {
+                                                        height: 12px;
+                                                        width: 12px;
+                                                        left: -25px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 } 
                             }
                         }
@@ -1014,10 +1220,81 @@ Responsive Mobile and Desktop
                 .tab-pane {
                     .wrappercontentMenu {
                         .bodyContent {
+                            .tab-content {
+                                .tab-pane {
+                                    .wrapperSubmission {
+                                        .submission {
+                                            p {
+                                                font-size: 18px;
+                                            }
+                                            .month {
+                                                font-size: 16px;
+                                            }
+                                            .chartSubmission {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .wrapperDanaAlokasiDanPenyaluran {
+                                        .parentStatistic {
+                                            .statistik {
+                                                padding: 2rem 2rem;
+                                                .infoStatisctik {
+                                                    h1 {
+                                                        font-size: 18px;
+                                                    }
+                                                    p {
+                                                        font-size: 22px;
+                                                    }
+                                                }
+                                                .wrapperChart {
+                                                    width: 100%;
+                                                    .arrowIcon {
+                                                        top: 0px;
+                                                        right: 10px;
+                                                        img {
+                                                            max-width: 15px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .wrapperAllData {
+                                        padding: 2rem 3rem;
+                                        .headerTitle {
+                                            margin-bottom: 2rem;
+                                            h1 {
+                                                font-size: 24px;
+                                            }
+                                        }
+                                        .bodyData {
+                                            .informasiChart {
+                                                .SymbolChart {
+                                                    font-size: 18px;
+                                                    &::before {
+                                                        height: 15px;
+                                                        width: 15px;
+                                                        left: -25px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                } 
+                            }
                         }
                     }
                 }
             }
+        }
+    }
+
+    footer {
+        padding: 2.5rem 0;
+        p {
+            font-size: 16px;
         }
     }
 }
@@ -1083,6 +1360,64 @@ Responsive Mobile and Desktop
                                             }
                                             .chartSubmission {
                                                 width: 100%;
+                                            }
+                                        }
+                                    }
+
+                                    .wrapperDanaAlokasiDanPenyaluran {
+                                        .parentStatistic {
+                                            .statistik {
+                                                padding: 2rem 3rem;
+                                                margin: 1.2rem 0px;
+
+                                                &:not(:last-child) {
+                                                    margin-right: 42px;
+                                                }
+                                                .infoStatisctik {
+                                                    h1 {
+                                                        font-size: 22px;
+                                                    }
+                                                    p {
+                                                        font-size: 26px;
+                                                    }
+                                                }
+                                                .wrapperChart {
+                                                    width: 100%;
+                                                    .arrowIcon {
+                                                        top: 0px;
+                                                        right: 10px;
+                                                        img {
+                                                            max-width: 15px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                    .wrapperAllData {
+                                        padding: 2rem 3rem;
+                                        .headerTitle {
+                                            margin-bottom: 3rem;
+                                            h1 {
+                                                font-size: 28px;
+                                            }
+                                        }
+                                        .bodyData {
+                                            .chart {
+                                                width: 80%;
+                                            }
+                                            .informasiChart {
+                                                width: 20%;
+                                                padding-left: 5rem;
+                                                .SymbolChart {
+                                                    font-size: 22px;
+                                                    &::before {
+                                                        height: 20px;
+                                                        width: 20px;
+                                                        left: -40px;
+                                                    }
+                                                }
                                             }
                                         }
                                     }

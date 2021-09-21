@@ -36,7 +36,7 @@ var myChart = new Chart(
 
 const dataKelengkapanPengajuan = {
 labels: [
-  'Kelengkapan data pengajuan '
+  'Value'
 ],
 datasets: [{
   label: 'My First Dataset',
@@ -52,9 +52,11 @@ const configKelengkapanPengajuan = {
 type: 'doughnut',
 data: dataKelengkapanPengajuan,
 options : {
-  legend: {
-    display: false
-  },
+  plugins : {
+    legend: {
+      display: false
+    },
+  }
 }
 };
 
@@ -82,9 +84,11 @@ const configSprin = {
   type: 'doughnut',
   data: dataSprin,
   options : {
-    legend: {
-      display: false
-    },
+    plugins : {
+      legend: {
+        display: false
+      },
+    }
   }
 };
 

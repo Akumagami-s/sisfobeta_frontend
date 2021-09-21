@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--Component-->
     <link rel="stylesheet" href="./assets/component/navbar.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
     <!--slick Css-->
     <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
@@ -54,7 +55,6 @@
         <!--End Navbar-->
 
         <!--Main Menu-->
-
         <div class="container-fluid flex-column align-items-start mainSubmenu">
           <div class="d-flex align-items-center wrapperHome">
             <a href="dashboard.html"class="backToHome"><img src="./assets/img/homeIcon.svg" alt=""></a>
@@ -180,17 +180,71 @@
 
     </div>
 
+    <div class="mainContent">
+      <div class="container-fluid">
+        <div class="tab-content" id="nav-tabContent">
+          
+          <div class="tab-pane fade show active" 
+            id="nav-dashboard" 
+            role="tabpanel" 
+            aria-labelledby="nav-dashboard-tab">
+            
+            <h1 class="titleHeaderContent">Data</h1>
+            <div class="wrapperDataSummary wrapperSlick">
+              <div class="data dataNotSync">
+                  <div class="icon">
+                    <img src="./assets/img/syncDataIcon.svg" alt="">
+                  </div>
+                  <h1 class="titleData"><span class="valueData">287.828</span> Data Belum Sinkron</h1>
+                  <button class="btnStyle redButton" type="submit">SINKRON DATA</button>
+              </div>
+
+              <div class="data kelengkapanPengajuan">
+                <div class="arrow">
+                    <img src="./assets/img/arrowChart.svg" alt="">
+                </div>
+                <div class="icon wrapperChart">
+                  <canvas id="kelengkapanPengajuan"></canvas>
+                </div>
+                <h1 class="titleData">Kelengkapan Pengajuan</h1>
+                <p><span class="month">September</span><span class="years">2021</span></p>
+              </div>
+
+              <div class="data approvalSprin">
+                <div class="arrow">
+                  <img src="./assets/img/arrowChart.svg" alt="">
+                </div>
+                <div class="icon wrapperChart">
+                  <canvas id="approvalSprin"></canvas>
+                </div>
+                <h1 class="titleData">Approval Sprin</h1>
+                <p><span class="month">September</span><span class="years">2021</span></p>
+              </div>
+            </div>
+        
+          </div>
+
+          <div class="tab-pane 
+            fade show active" 
+            id="nav-dataPrajurit" 
+            role="tabpanel" 
+            aria-labelledby="nav-dataPrajurit-tab">
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!--jQuery-->
     <script src="./assets/vendors/jquery/jquery.min.js"></script>
     <!--Bootstrap Asset-->
     <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart Js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/chartjs/ui-chart.js"></script>
     <!--Ion Icon-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!--Chart Js-->
-    <script src="./assets/vendors/chartjs/Chart.js"></script>
-    <script src="./assets/js/chartjs/ui-chart.js"></script>
     <!--Slick Js-->
     <script src="./assets/vendors/slick/slick.min.js"></script>
     <!--Ebaltab Js-->

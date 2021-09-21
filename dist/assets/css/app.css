@@ -1,0 +1,51 @@
+.wrapperSlick {
+  width: 100%;
+}
+
+.titleHeaderContent {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.btnStyle {
+  border: 0;
+  padding: .5rem 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.wrapperSlick .slick-list {
+  width: 100%;
+}
+
+.wrapperSlick .slick-list .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.redButton {
+  background-color: #DC3545;
+}
+
+.greenButton {
+  background-color: #28A745;
+}
+
+@media screen and (min-width: 320px) {
+  .mainContent {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainContent {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .mainContent {
+    margin-top: 4rem;
+  }
+}

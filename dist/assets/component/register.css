@@ -1,0 +1,403 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  box-shadow: 0px 0px 4px 1px #3E563E;
+  outline: 0 none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Style
+------------*/
+.authRegister {
+  width: 100%;
+}
+
+.authRegister .wrapperAuth {
+  display: flex;
+}
+
+.authRegister .wrapperAuth .leftBackground {
+  background-image: url(../img/authBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(146.71deg, #3E563E 13.98%, #97BB7D 100.03%);
+  mix-blend-mode: multiply;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient .authInformation {
+  height: 100%;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient .authInformation .title {
+  margin-bottom: 2rem;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient .authInformation .title h1 {
+  font-family: steelfish;
+  font-size: 84px;
+  letter-spacing: 10px;
+  margin-bottom: 8px;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient .authInformation .title h1 span {
+  font-family: steelfish;
+  letter-spacing: 5px;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient .authInformation .title p {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient .authInformation .paragrafInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.authRegister .wrapperAuth .leftBackground .gradient .authInformation .paragrafInfo p {
+  max-width: 700px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.authRegister .wrapperAuth .rightContent {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.authRegister .wrapperAuth .rightContent .headingAuth {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authRegister .wrapperAuth .rightContent .headingAuth .textWelcome {
+  color: #3E563E;
+}
+
+.authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
+  font-weight: 900;
+}
+
+.authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
+  font-family: steelfish;
+  font-weight: 500;
+}
+
+.authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps .version {
+  font-family: steelfish;
+}
+
+.authRegister .wrapperAuth .rightContent .headingAuth .patners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+  width: 100%;
+}
+
+.authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+  width: 100%;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth .notice {
+  text-align: center;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth .notice p {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form {
+  font-family: 'Poppins', sans-serif;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection {
+  position: relative;
+  margin: 8px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding: 0 .8rem;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control img {
+  max-width: 20px;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
+  width: 100%;
+  padding: .85rem 1rem .85rem 3rem;
+  border: 2px solid #8E8E8E;
+  border-radius: 8px;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .custom-select {
+  font-family: 'Poppins', sans-serif;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .custom-select select {
+  width: 100%;
+  padding: .85rem 1rem .85rem 3rem;
+  border: 2px solid #8E8E8E;
+  margin: 0;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .custom-select select option {
+  padding: .85rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .register {
+  width: 100%;
+  padding: 18px 18px;
+  background: #3E563E;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .register a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 0px) {
+  .authRegister .wrapperAuth .leftBackground {
+    display: none;
+  }
+  .authRegister .wrapperAuth .rightContent {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth {
+    margin-bottom: .8rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
+    font-size: 16px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
+    font-size: 42px;
+    letter-spacing: 5px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    width: 70%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 50px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth .notice {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth .notice p {
+    font-size: 14px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control img {
+    max-width: 16px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
+    font-size: 14px;
+    padding: .85rem 1rem .85rem 2.5rem;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .custom-select select {
+    padding: .85rem 1rem .85rem 2.5rem;
+    font-size: 14px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .register {
+    padding: 12px 18px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    width: 70%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 70px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth .notice {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .register {
+    padding: 12px 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .welcome {
+    font-size: 24px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .textWelcome .nameApps {
+    font-size: 68px;
+    letter-spacing: 5px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    width: 40%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 70px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth .notice {
+    margin-bottom: 1rem;
+  }
+  .authRegister .wrapperAuth .rightContent .mainAuth form .register {
+    padding: 12px 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .authRegister .wrapperAuth {
+    height: 100vh;
+    align-items: center;
+  }
+  .authRegister .wrapperAuth .leftBackground {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+  }
+  .authRegister .wrapperAuth .rightContent {
+    width: 40%;
+    padding: 2rem 2rem;
+    height: min-content;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth {
+    margin-bottom: .8rem;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    width: 80%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .tni_ad img {
+    max-width: 70px;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn {
+    width: 100%;
+  }
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners .bank-btn img {
+    max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .authRegister .wrapperAuth .leftBackground {
+    display: inline-block;
+  }
+  .authRegister .wrapperAuth .rightContent {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .authRegister .wrapperAuth .rightContent {
+    width: 40%;
+    padding: 64px 84px;
+  }
+}

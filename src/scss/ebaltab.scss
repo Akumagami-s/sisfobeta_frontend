@@ -83,6 +83,38 @@ Styling
                         }
                     }
                 }
+
+                .container-danaAlokasi-penyaluranDana {
+                    width: 100%;
+                    .alokasiDana {
+                        display: flex;
+                        width: 100%;
+                        .cardStatistic {
+                            box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+                            border-radius: 15px;
+                            display: flex;
+                            align-items: center;
+                            margin: 1rem 1rem;
+                            width: 100%;
+                            .contentValue {
+                                .nameValue {
+                                }
+                                .valueDana {
+                                    font-weight: $font-weight700;
+                                    .value {
+
+                                    }
+                                }
+                            }
+                            .wrapperChart {
+                                width: 100%;
+                                canvas {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -132,11 +164,38 @@ Styling
                             }
                         }
                     }
+
+                    .container-danaAlokasi-penyaluranDana {
+                        width: 100%;
+                        .alokasiDana {
+                            width: 100%;
+                            .cardStatistic {
+                                padding: 2rem 2rem;
+                                margin: 1rem 1rem;
+                                flex-direction: column-reverse;
+    
+                                .contentValue {
+                                    width: 100%;
+                                    .nameValue {
+                                        font-size: 14px;
+                                    }
+                                    .valueDana {
+                                        font-size: 18px;
+                                    }
+                                }
+                                .wrapperChart {
+                                    max-width: 130px;
+                                    margin-bottom: 1.5rem;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
+
 
 @media screen and (min-width :992px) {
     .mainContent {
@@ -161,6 +220,23 @@ Styling
                             }
                             p {
                                 font-size: 12px;
+                            }
+                        }
+                    }
+                    .container-danaAlokasi-penyaluranDana {
+                        .alokasiDana {
+                            .cardStatistic {
+                                .contentValue {
+                                    .nameValue {
+                                        font-size: 16px;
+                                    }
+                                    .valueDana {
+                                        font-size: 18px;
+                                    }
+                                }
+                                .wrapperChart {
+                                    max-width: 150px;
+                                }
                             }
                         }
                     }
@@ -195,6 +271,25 @@ Styling
                             }
                         }
                     }
+                    .container-danaAlokasi-penyaluranDana {
+                        .alokasiDana {
+                            .cardStatistic {
+                                flex-direction: row;
+                                .contentValue {
+                                    .nameValue {
+                                        font-size: 18px;
+                                    }
+                                    .valueDana {
+                                        font-size: 22px;
+                                    }
+                                }
+                                .wrapperChart {
+                                    max-width: 160px;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -222,6 +317,26 @@ Styling
                             p {
                                 font-size: 18px;
                                 margin-top: .5rem;
+                            }
+                        }
+                    }
+                    .container-danaAlokasi-penyaluranDana {
+                        .alokasiDana {
+                            .cardStatistic {
+                                flex-direction: row;
+                                .contentValue {
+                                    width: 70%;
+                                    .nameValue {
+                                        font-size: 24px;
+                                    }
+                                    .valueDana {
+                                        font-size: 32px;
+                                    }
+                                }
+                                .wrapperChart {
+                                    max-width: 300px;
+                                    width: 30%;
+                                }
                             }
                         }
                     }

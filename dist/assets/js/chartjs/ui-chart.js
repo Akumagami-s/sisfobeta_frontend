@@ -116,9 +116,11 @@ const configDanaAlokasi = {
   type: 'doughnut',
   data: dataDanaAlokasi,
   options : {
-    legend: {
-      display: false
-    },
+    plugins : {
+      legend: {
+        display: false
+      },
+    }
   }
 };
 
@@ -147,9 +149,11 @@ const configApprovalDanaAlokasi = {
   type: 'doughnut',
   data: dataApprovalDanaAlokasi,
   options : {
-    legend: {
-      display: false
-    },
+    plugins : {
+      legend: {
+        display: false
+      },
+    }
   }
 };
 

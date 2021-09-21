@@ -70,6 +70,36 @@ Styling
   text-align: center;
 }
 
+.mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana {
+  width: 100%;
+}
+
+.mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana {
+  display: flex;
+  width: 100%;
+}
+
+.mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic {
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin: 1rem 1rem;
+  width: 100%;
+}
+
+.mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .valueDana {
+  font-weight: 700;
+}
+
+.mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .wrapperChart {
+  width: 100%;
+}
+
+.mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .wrapperChart canvas {
+  width: 100%;
+}
+
 @media screen and (min-width: 0px) {
   .mainContent .container-fluid .tab-content .tab-pane .wrapperDataSummary .data {
     margin: 1rem 1rem;
@@ -105,6 +135,30 @@ Styling
   .mainContent .container-fluid .tab-content .tab-pane .wrapperDataSummary .data p .month {
     margin-right: .2rem;
   }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana {
+    width: 100%;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana {
+    width: 100%;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic {
+    padding: 2rem 2rem;
+    margin: 1rem 1rem;
+    flex-direction: column-reverse;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue {
+    width: 100%;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .nameValue {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .valueDana {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .wrapperChart {
+    max-width: 130px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -126,6 +180,15 @@ Styling
   .mainContent .container-fluid .tab-content .tab-pane .wrapperDataSummary .data p {
     font-size: 12px;
   }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .nameValue {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .valueDana {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .wrapperChart {
+    max-width: 150px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -140,6 +203,19 @@ Styling
   }
   .mainContent .container-fluid .tab-content .tab-pane .wrapperDataSummary .data p {
     font-size: 14px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic {
+    flex-direction: row;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .nameValue {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .valueDana {
+    font-size: 22px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .wrapperChart {
+    max-width: 160px;
+    margin-bottom: 0;
   }
 }
 
@@ -156,5 +232,21 @@ Styling
   .mainContent .container-fluid .tab-content .tab-pane .wrapperDataSummary .data p {
     font-size: 18px;
     margin-top: .5rem;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic {
+    flex-direction: row;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue {
+    width: 70%;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .nameValue {
+    font-size: 24px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .valueDana {
+    font-size: 32px;
+  }
+  .mainContent .container-fluid .tab-content .tab-pane .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .wrapperChart {
+    max-width: 300px;
+    width: 30%;
   }
 }

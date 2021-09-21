@@ -18,6 +18,21 @@ $('.wrapperDataSummary').slick({
       {
         breakpoint: 480,
         settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+  $('.alokasiDana').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows : false,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
           slidesToShow: 1
         }
       }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EKPR | Menu</title>
+    <!--Bootstrap Asset-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <!--Ebaltab Css-->
+    <link rel="stylesheet" href="./assets/css/ekpr.css">
+    <!--unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Component-->
+    <link rel="stylesheet" href="./assets/component/navbar.css">
+    <!--slick Css-->
+    <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar-->
+        <nav class="navbar navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/tni_logo.png" alt="">
+                <div class="brand-title">
+                    <h1>SISFOBETA 4.0</h1>
+                    <p>SISTEM INFORMASI BENDAHARA TWP AD ONLINE</p>
+                </div>
+              </a>
+    
+              <div class="userControl">
+                <div class="searchBox">
+                  <ion-icon name="search" class="searchIcon"></ion-icon>
+                  <input class="searchInput"
+                  type="search"
+                  name="search"
+                  placeholder="Search">
+                </div>
+                <div class="dropdown">
+                  <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
+                    <img src="./assets/img/profil.png" alt="">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                    <li><a class="dropdown-item" href="#">Profil</a></li>
+                    <li><button class="dropdown-item" href="#">Logout</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <div class="container-fluid flex-column align-items-start mainSubmenu">
+          <div class="d-flex align-items-center">
+            <a href="dashboard.html"class="backToHome"><img src="./assets/img/homeIcon.svg" alt=""></a>
+            <div class="wrapperBreadcrumb" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">e-BALTAB</li>
+              </ol>
+            </div>
+          </div>
+
+          <h1 class="namePages">e-BALTAB</h1>
+
+          <div class="nav nav-tabs eBaltabTabs" id="eBaltab-tab" role="tablist">
+              <button class="nav-link active" 
+              id="nav-home-tab" 
+              data-bs-toggle="tab" 
+              data-bs-target="#nav-home" 
+              type="button" role="tab" 
+              aria-controls="nav-home" 
+              aria-selected="true">
+              Home</button>
+
+              <button class="nav-link" 
+              id="nav-profile-tab" 
+              data-bs-toggle="tab" 
+              data-bs-target="#nav-profile" 
+              type="button" role="tab" 
+              aria-controls="nav-profile" 
+              aria-selected="false">
+              Profile</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--jQuery-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Asset-->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Chart Js-->
+    <script src="./assets/vendors/chartjs/Chart.js"></script>
+    <script src="./assets/js/chartjs/ui-chart.js"></script>
+    <!--Slick Js-->
+    <script src="./assets/vendors/slick/slick.min.js"></script>
+    <!--Ebaltab Js-->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--Bootstrap Asset-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <!--Dashboard Css-->
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <!--unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Component-->
+    <link rel="stylesheet" href="./assets/component/navbar.css">
+    <!--slick Css-->
+    <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar-->
+        <nav class="navbar navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/tni_logo.png" alt="">
+                <div class="brand-title">
+                    <h1>SISFOBETA 4.0</h1>
+                    <p>SISTEM INFORMASI BENDAHARA TWP AD ONLINE</p>
+                </div>
+              </a>
+    
+              <div class="userControl">
+                <div class="searchBox">
+                  <ion-icon name="search" class="searchIcon"></ion-icon>
+                  <input class="searchInput"
+                  type="search"
+                  name="search"
+                  placeholder="Search">
+                </div>
+                <div class="dropdown">
+                  <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
+                    <img src="./assets/img/profil.png" alt="">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                    <li><a class="dropdown-item" href="#">Profil</a></li>
+                    <li><button class="dropdown-item" href="#">Logout</button></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+    </div>
+
+
+    <!--jQuery-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Asset-->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Chart Js-->
+    <script src="./assets/vendors/chartjs/Chart.js"></script>
+    <script src="./assets/js/chartjs/ui-chart.js"></script>
+
+    <!--Slick Js-->
+    <script src="./assets/vendors/slick/slick.min.js"></script>
+    <!--Dashboard Js-->
+    <script src="./assets/js/dashboard.js"></script>
+</body>
+</html>

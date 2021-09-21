@@ -1,0 +1,459 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+/*------------
+Variables
+------------*/
+$white-color : #fff;
+$dashboard-background : linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+$font-color : #3B4E63;
+$dark-color : #3E3C3C;
+$font-weight300 : 300;
+$font-weight400 : 400;
+$font-weight500 : 500;
+$font-weight700 : 700;
+$font-weight900 : 900;
+$fontsize-card-title : 24px;
+$fontsize-card-valueNumber : 28px;
+
+/*------------
+Styling
+------------*/
+#mainHeader {
+    background: $dashboard-background;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 3rem;
+
+    .navbar {
+        .container-fluid {
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                transition: .5s;
+                img {
+                    transition: .5s;
+                }
+                .brand-title {
+                    color: $white-color;
+                    h1 {
+                        font-family: steelfish;
+                    }
+                    p {
+                        font-size: 12px;
+                        letter-spacing: .8px;
+                        font-weight: $font-weight500;
+                    }
+                }
+            }
+            .userControl {
+                display: flex;
+                align-items: center;
+                transition: .5s;
+                
+                .searchBox {
+                    display: flex;
+                    align-items: center;
+                    background: transparent;
+                    .searchIcon {
+                        display: flex;
+                        align-items: center;
+                        color: $white-color;
+                        cursor: pointer;
+                    }
+                    .searchInput {
+                        border: none;
+                        width: 0px;
+                        transition: .5s;
+                        background: transparent;
+                        color: $white-color;
+                        font-weight: $font-weight500;
+
+                        &::placeholder {
+                            color: $white-color;
+                        }
+                        &.active {
+                            width: 200px;
+                            transition: width .5s;
+                            border-bottom: 2px solid $white-color;
+
+                        }
+                    }
+                }
+                ion-icon {
+                    color: $white-color;
+                }
+                .dropdown {
+                    margin: 0 .8rem;
+                    .dropdown-toggle {
+                        background: none;
+                        border: none;
+                        &::after {
+                            display: none;
+                        }
+                        img {
+                            max-width: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .dropdown-menu {
+                         left: -110px;
+                        border-radius: 8px;
+                        box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+                        .dropdown-item {
+                            font-size: 14px;
+                            font-weight: $font-weight500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainSubmenu {
+        .wrapperHome {
+            margin-bottom: 1rem;
+        }
+        .backToHome {
+            background: $white-color;
+            padding: .7rem;
+            box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            margin-right: 1rem;
+            img {
+                max-width: 30px;
+            }
+        }
+        .wrapperBreadcrumb {
+            .breadcrumb {
+                margin: 0;
+                .breadcrumb-item {
+                    font-weight: $font-weight500;
+                    a {
+                        text-decoration: none;
+                        color: #BEBEBE;
+                    }
+                }
+                .breadcrumb-item.active {
+                    color: $white-color;
+                }
+            }
+        }
+
+        .namePages {
+            color: $white-color;
+            font-weight: $font-weight700;
+            margin-bottom: 2rem;
+        }
+
+        .nav-tabs {
+            border: none;
+            width: 100%;
+            .nav-link {
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                color: $white-color;
+                font-weight: $font-weight500;
+                box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+                border: 1px solid #FFFFFF;
+                background: $white-color;
+                svg {
+                    fill: #08850D;
+                }
+                p {
+                    color: $font-color;
+                }
+            }
+            .active {
+                color: $font-color;
+                background: linear-gradient(136.39deg, rgba(60, 84, 60, 0.1) 9.31%, rgba(255, 255, 255, 0.1) 91.79%);;
+                svg {
+                    fill: $white-color;
+                }
+                p {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width :0px) {
+    #mainHeader {
+        border-radius: 0px 0px 50px 50px;
+
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        max-width: 70px;
+                    }
+                    .brand-title {
+                        margin-left: 0px;
+                        display: none;
+                    }
+                }
+                .userControl {
+                    .searchBox {
+                        .searchInput {
+                            font-size: 12px;
+    
+                            &::placeholder {
+                                font-size: 12px;
+                            }
+                            &.active {
+                                width: 100px;
+                            }
+                        }
+                    }
+                    ion-icon {
+                        margin: 0 .5rem;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .mainSubmenu {
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            .backToHome {
+                border-radius: 10px;
+                img {
+                    max-width: 25px;
+                }
+            }
+            .wrapperBreadcrumb {
+                .breadcrumb {
+                    .breadcrumb-item {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+    
+            .nav-tabs {
+                justify-content: center;
+                .nav-link {
+                    flex-direction: column;
+                    display: flex;
+                    margin: .5rem .5rem;
+                    padding: .5rem 1rem;
+                    border-radius: 10px;
+
+                    svg {
+                        max-width: 25px;
+                    }
+
+                    
+                    p {
+                        font-size: 10px;
+                        display: none;
+                    }
+                }
+                .active {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :768px) {
+    #mainHeader {
+        border-radius: 0px 0px 50px 50px;
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        max-width: 80px;
+                    }
+                    .brand-title {
+                        margin-left: 4px;
+                        display: block;
+                        h1 {
+                            margin-bottom: 4px;
+                            letter-spacing: 10px;
+                            font-size: 62px;
+                        }
+                        p {
+                            font-size: 9px;
+                        }
+                    }
+                }
+                .userControl {
+                    .searchBox {
+                        .searchInput {
+                            font-size: 16px;
+    
+                            &::placeholder {
+                                font-size: 16px;
+                            }
+                            &.active {
+                                width: 150px;
+                            }
+                        }
+                    }
+                    ion-icon {
+                        margin: 0 .8rem;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :992px) {
+    #mainHeader {
+        border-radius: 0px 0px 50px 50px;
+        padding: 0 3rem;
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        max-width: 100px;
+                    }
+                    .brand-title {
+                        margin-left: 4px;
+                        display: block;
+                        h1 {
+                            margin-bottom: 4px;
+                            font-size: 72px;
+                        }
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .userControl {
+                    ion-icon {
+                        margin: 0 .8rem;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        .mainSubmenu {
+            padding-top: 3rem;
+            .backToHome {
+                img {
+                    max-width: 30px;
+                }
+            }
+            .wrapperBreadcrumb {
+                .breadcrumb {
+                    .breadcrumb-item {
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .nav-tabs {
+                justify-content: center;
+                .nav-link {
+                    flex-direction: row;
+                    padding: .5rem 1rem;
+                    svg {
+                        margin-right: .5rem;
+                    }
+                    p {
+                        font-size: 12px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :1200px) {
+    #mainHeader {
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        max-width: 120px;
+                    }
+                    .brand-title {
+                        margin-left: 8px;
+                        h1 {
+                            font-size: 86px;
+                            letter-spacing: 11px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                       
+                    }
+                }
+                .userControl {
+                    .searchBox {
+                        .searchInput {
+                            font-size: 16px;
+    
+                            &::placeholder {
+                                font-size: 16px;
+                            }
+                            &.active {
+                                width: 200px;
+                            }
+                        }
+                    }
+                    ion-icon {
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+
+        .mainSubmenu {
+            padding-top: 3rem;
+            .backToHome {
+                img {
+                    max-width: 30px;
+                }
+            }
+            .nav-tabs {
+                width: 100%;
+                .nav-link {
+                    justify-content: center;
+                    flex-direction: row;
+                    padding: .5rem 1.5rem;
+                    width: 15.1%;
+                    svg {
+                        max-width: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1400px) {
+    
+}

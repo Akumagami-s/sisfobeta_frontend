@@ -1,0 +1,393 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+#mainHeader {
+  background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+  position: relative;
+  z-index: 1;
+  padding-bottom: 3rem;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand {
+  display: flex;
+  align-items: center;
+  transition: .5s;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand img {
+  transition: .5s;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+  font-family: steelfish;
+}
+
+#mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
+  font-size: 12px;
+  letter-spacing: .8px;
+  font-weight: 500;
+}
+
+#mainHeader .navbar .container-fluid .userControl {
+  display: flex;
+  align-items: center;
+  transition: .5s;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchIcon {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+  border: none;
+  width: 0px;
+  transition: .5s;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
+  width: 200px;
+  transition: width .5s;
+  border-bottom: 2px solid #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl ion-icon {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl .dropdown {
+  margin: 0 .8rem;
+}
+
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle {
+  background: none;
+  border: none;
+}
+
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle img {
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-menu {
+  left: -110px;
+  border-radius: 8px;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+}
+
+#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#mainHeader .mainSubmenu .wrapperHome {
+  margin-bottom: 1rem;
+}
+
+#mainHeader .mainSubmenu .backToHome {
+  background: #fff;
+  padding: .7rem;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-right: 1rem;
+}
+
+#mainHeader .mainSubmenu .backToHome img {
+  max-width: 30px;
+}
+
+#mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb {
+  margin: 0;
+}
+
+#mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item {
+  font-weight: 500;
+}
+
+#mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  color: #BEBEBE;
+}
+
+#mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item.active {
+  color: #fff;
+}
+
+#mainHeader .mainSubmenu .namePages {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+#mainHeader .mainSubmenu .nav-tabs {
+  border: none;
+  width: 100%;
+}
+
+#mainHeader .mainSubmenu .nav-tabs .nav-link {
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border: 1px solid #FFFFFF;
+  background: #fff;
+}
+
+#mainHeader .mainSubmenu .nav-tabs .nav-link svg {
+  fill: #08850D;
+}
+
+#mainHeader .mainSubmenu .nav-tabs .nav-link p {
+  color: #3B4E63;
+}
+
+#mainHeader .mainSubmenu .nav-tabs .active {
+  color: #3B4E63;
+  background: linear-gradient(136.39deg, rgba(60, 84, 60, 0.1) 9.31%, rgba(255, 255, 255, 0.1) 91.79%);
+}
+
+#mainHeader .mainSubmenu .nav-tabs .active svg {
+  fill: #fff;
+}
+
+#mainHeader .mainSubmenu .nav-tabs .active p {
+  color: #fff;
+}
+
+@media screen and (min-width: 0px) {
+  #mainHeader {
+    border-radius: 0px 0px 50px 50px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand img {
+    max-width: 70px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+    margin-left: 0px;
+    display: none;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
+    width: 100px;
+  }
+  #mainHeader .navbar .container-fluid .userControl ion-icon {
+    margin: 0 .5rem;
+    font-size: 16px;
+  }
+  #mainHeader .mainSubmenu {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  #mainHeader .mainSubmenu .backToHome {
+    border-radius: 10px;
+  }
+  #mainHeader .mainSubmenu .backToHome img {
+    max-width: 25px;
+  }
+  #mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item a {
+    font-size: 14px;
+  }
+  #mainHeader .mainSubmenu .nav-tabs {
+    justify-content: center;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link {
+    flex-direction: column;
+    display: flex;
+    margin: .5rem .5rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link svg {
+    max-width: 25px;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link p {
+    font-size: 10px;
+    display: none;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .active {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #mainHeader {
+    border-radius: 0px 0px 50px 50px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand img {
+    max-width: 80px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+    margin-left: 4px;
+    display: block;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+    margin-bottom: 4px;
+    letter-spacing: 10px;
+    font-size: 62px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
+    font-size: 9px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
+    width: 150px;
+  }
+  #mainHeader .navbar .container-fluid .userControl ion-icon {
+    margin: 0 .8rem;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #mainHeader {
+    border-radius: 0px 0px 50px 50px;
+    padding: 0 3rem;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand img {
+    max-width: 100px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+    margin-left: 4px;
+    display: block;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+    margin-bottom: 4px;
+    font-size: 72px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
+    font-size: 10px;
+  }
+  #mainHeader .navbar .container-fluid .userControl ion-icon {
+    margin: 0 .8rem;
+    font-size: 22px;
+  }
+  #mainHeader .mainSubmenu {
+    padding-top: 3rem;
+  }
+  #mainHeader .mainSubmenu .backToHome img {
+    max-width: 30px;
+  }
+  #mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item a {
+    font-size: 16px;
+  }
+  #mainHeader .mainSubmenu .nav-tabs {
+    justify-content: center;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link {
+    flex-direction: row;
+    padding: .5rem 1rem;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link svg {
+    margin-right: .5rem;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link p {
+    font-size: 12px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #mainHeader .navbar .container-fluid .navbar-brand img {
+    max-width: 120px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
+    margin-left: 8px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+    font-size: 86px;
+    letter-spacing: 11px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
+    width: 200px;
+  }
+  #mainHeader .navbar .container-fluid .userControl ion-icon {
+    margin: 0 1rem;
+  }
+  #mainHeader .mainSubmenu {
+    padding-top: 3rem;
+  }
+  #mainHeader .mainSubmenu .backToHome img {
+    max-width: 30px;
+  }
+  #mainHeader .mainSubmenu .nav-tabs {
+    width: 100%;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link {
+    justify-content: center;
+    flex-direction: row;
+    padding: .5rem 1.5rem;
+    width: 15.1%;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link svg {
+    max-width: 30px;
+  }
+  #mainHeader .mainSubmenu .nav-tabs .nav-link p {
+    font-size: 16px;
+  }
+}

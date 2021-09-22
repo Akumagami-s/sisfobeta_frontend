@@ -1,0 +1,492 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+/*------------
+Variables
+------------*/
+$white-color : #fff;
+$dashboard-background : linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+$font-color : #3B4E63;
+$dark-color : #3E3C3C;
+$font-weight300 : 300;
+$font-weight400 : 400;
+$font-weight500 : 500;
+$font-weight700 : 700;
+$font-weight900 : 900;
+$fontsize-card-title : 24px;
+$fontsize-card-valueNumber : 28px;
+
+/*------------
+Styling
+------------*/
+
+
+#mainHeader {
+    height: 100%;
+}
+
+.mainContent {
+    .container-fluid {
+        .wrapperContent {
+            .wrapperDataSummary {
+                display: flex;
+                .data {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background-color: $white-color;
+                    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+                    border-radius: 15px;
+                    width: 100%;
+                    .arrow {
+                        position: absolute;
+                    }
+                    .icon {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .wrapperChart {
+                        canvas {
+                            width: 100%;
+                        }
+                    }
+                    .titleData {
+                        font-size: 18px;
+                        text-align: center;
+
+                        .valueData {
+                            color: #DC3545;
+                        }
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .container-danaAlokasi-penyaluranDana {
+                width: 100%;
+                .alokasiDana {
+                    display: flex;
+                    width: 100%;
+                    .cardStatistic {
+                        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+                        border-radius: 15px;
+                        display: flex;
+                        align-items: center;
+                        margin: 1rem 1rem;
+                        width: 100%;
+                        .contentValue {
+                            .nameValue {
+                            }
+                            .valueDana {
+                                font-weight: $font-weight700;
+                                .value {
+
+                                }
+                            }
+                        }
+                        .wrapperChart {
+                            width: 100%;
+                            canvas {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .penyaluranDana {
+                    display: flex;
+                    width: 100%;
+
+                    .cardStatistic {
+                        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+                        border-radius: 15px;
+                        display: flex;
+                        align-items: center;
+                        margin: 1rem 1rem;
+                        width: 100%;
+                        .contentValue {
+                            .valueDana {
+                                font-weight: $font-weight700;
+                                .value {
+
+                                }
+                            }
+                        }
+                        .wrapperChart {
+                            width: 100%;
+                            canvas {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .statisticAllDataEbaltab {
+                background: $white-color;
+                box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+                border-radius: 15px;
+                margin: 1rem 1rem;
+                .containerChart {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    .wrapperChart {
+                        width: 100%;
+                        canvas {
+                            width: 100%;
+                        }
+                    }
+                    .wrapperInfo {
+                        display: flex;
+                        position: relative;
+                        justify-content: space-between;
+
+                        .info {
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 0px) {
+    #mainHeader {
+    }
+
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperDataSummary {
+                    .data {
+                        margin: 1rem 1rem;
+                        padding: 2rem 2rem;
+                        position: relative;
+                        .arrow {
+                            right: 10%;
+                            top: 10%;
+                            img {
+                                max-width: 15px;
+                            }
+                        }
+                        .icon {
+                            margin-bottom: 2rem;
+                            img {
+                                max-width: 120px;
+                            }
+                        }
+                        .wrapperChart {
+                            max-width: 110px;
+                        }
+                        .titleData {
+                            font-size: 14px;
+                        }
+                        .btnStyle {
+                            margin-top: .5rem;
+                        }
+                        p {
+                            font-size: 12px;
+                            margin-top: .3rem;
+                            .month {
+                                margin-right: .2rem;
+                            }
+                        }
+                    }
+                }
+
+                .container-danaAlokasi-penyaluranDana {
+                    width: 100%;
+                    .alokasiDana {
+                        width: 100%;
+                        .cardStatistic {
+                            padding: 2rem 2rem;
+                            margin: 1rem 1rem;
+                            flex-direction: column-reverse;
+
+                            .contentValue {
+                                width: 100%;
+                                .nameValue {
+                                    font-size: 14px;
+                                }
+                                .valueDana {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperChart {
+                                max-width: 130px;
+                                margin-bottom: 1.5rem;
+                            }
+                        }
+                    }
+
+                    .penyaluranDana {
+                        width: 100%;
+                        .cardStatistic {
+                            padding: 2rem 2rem;
+                            margin: 1rem 1rem;
+                            flex-direction: column-reverse;
+
+                            .contentValue {
+                                width: 100%;
+                                .nameValue {
+                                    font-size: 14px;
+                                }
+                                .valueDana {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperChart {
+                                max-width: 130px;
+                                margin-bottom: 1.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .statisticAllDataEbaltab {
+                    padding: 2rem 1rem;
+                    .containerChart {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        .wrapperChart {
+                            margin-bottom: 2rem;
+                            
+                        }
+                        .wrapperInfo {
+                            width: 100%;
+
+                            .info {
+                                font-size: 12px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width :992px) {
+    .mainContent {
+        padding: 0 3rem;
+        .container-fluid {
+            .wrapperContent {
+                .wrapperDataSummary {
+                    justify-content: center;
+                    .data {
+                        .icon {
+                            img {
+                                max-width: 150px;
+                            }
+                        }
+                        .wrapperChart {
+                            max-width: 135px;
+                        }
+                        .titleData {
+                            font-size: 14px;
+
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .container-danaAlokasi-penyaluranDana {
+                    .alokasiDana {
+                        .cardStatistic {
+                            .contentValue {
+                                .nameValue {
+                                    font-size: 16px;
+                                }
+                                .valueDana {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperChart {
+                                max-width: 150px;
+                            }
+                        }
+                    }
+
+                    .penyaluranDana {
+                        .cardStatistic {
+                            .contentValue {
+                                .nameValue {
+                                    font-size: 16px;
+                                }
+                                .valueDana {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperChart {
+                                max-width: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    #mainHeader {
+    }
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperDataSummary {
+                    .data {
+                        .icon {
+                            img {
+                                max-width: 160px;
+                            }
+                        }
+                        .wrapperChart {
+                            max-width: 140px;
+                        }
+                        .titleData {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .container-danaAlokasi-penyaluranDana {
+                    .alokasiDana {
+                        .cardStatistic {
+                            flex-direction: row;
+                            .contentValue {
+                                .nameValue {
+                                    font-size: 18px;
+                                }
+                                .valueDana {
+                                    font-size: 22px;
+                                }
+                            }
+                            .wrapperChart {
+                                max-width: 160px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .penyaluranDana {
+                        .cardStatistic {
+                            flex-direction: row;
+                            .contentValue {
+                                .nameValue {
+                                    font-size: 18px;
+                                }
+                                .valueDana {
+                                    font-size: 22px;
+                                }
+                            }
+                            .wrapperChart {
+                                max-width: 160px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1400px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperDataSummary {
+                    .data {
+                        .icon {
+                            img {
+                                max-width: 200px;
+                            }
+                        }
+                        .wrapperChart {
+                            max-width: 155px;
+                        }
+                        .titleData {
+                            font-size: 24px;
+                        }
+                        p {
+                            font-size: 18px;
+                            margin-top: .5rem;
+                        }
+                    }
+                }
+                .container-danaAlokasi-penyaluranDana {
+                    .alokasiDana {
+                        .cardStatistic {
+                            flex-direction: row;
+                            padding: 2rem 3rem;
+                            .contentValue {
+                                width: 70%;
+                                .nameValue {
+                                    font-size: 24px;
+                                }
+                                .valueDana {
+                                    font-size: 32px;
+                                }
+                            }
+                            .wrapperChart {
+                                max-width: 300px;
+                                width: 30%;
+                            }
+                        }
+                    }
+
+                    .penyaluranDana {
+                        .cardStatistic {
+                            flex-direction: row;
+                            padding: 2rem 3rem;
+                            .contentValue {
+                                width: 70%;
+                                .nameValue {
+                                    font-size: 24px;
+                                }
+                                .valueDana {
+                                    font-size: 32px;
+                                }
+                            }
+                            .wrapperChart {
+                                max-width: 300px;
+                                width: 30%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -162,9 +162,12 @@ Styling
             margin-bottom: 2rem;
         }
 
-        .nav-tabs {
+        .menu{
             border: none;
             width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
             .nav-link {
                 border-radius: 15px;
                 display: flex;
@@ -251,7 +254,7 @@ Styling
                 }
             }
     
-            .nav-tabs {
+            .menu{
                 justify-content: center;
                 .nav-link {
                     flex-direction: column;
@@ -370,7 +373,7 @@ Styling
                     }
                 }
             }
-            .nav-tabs {
+            .menu{
                 justify-content: center;
                 .nav-link {
                     flex-direction: row;
@@ -435,7 +438,7 @@ Styling
                     max-width: 30px;
                 }
             }
-            .nav-tabs {
+            .menu{
                 width: 100%;
                 .nav-link {
                     justify-content: center;

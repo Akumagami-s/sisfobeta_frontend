@@ -165,12 +165,15 @@ Styling
   margin-bottom: 2rem;
 }
 
-#mainHeader .mainSubmenu .nav-tabs {
+#mainHeader .mainSubmenu .menu {
   border: none;
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#mainHeader .mainSubmenu .nav-tabs .nav-link {
+#mainHeader .mainSubmenu .menu .nav-link {
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -181,24 +184,24 @@ Styling
   background: #fff;
 }
 
-#mainHeader .mainSubmenu .nav-tabs .nav-link svg {
+#mainHeader .mainSubmenu .menu .nav-link svg {
   fill: #08850D;
 }
 
-#mainHeader .mainSubmenu .nav-tabs .nav-link p {
+#mainHeader .mainSubmenu .menu .nav-link p {
   color: #3B4E63;
 }
 
-#mainHeader .mainSubmenu .nav-tabs .active {
+#mainHeader .mainSubmenu .menu .active {
   color: #3B4E63;
   background: linear-gradient(136.39deg, rgba(60, 84, 60, 0.1) 9.31%, rgba(255, 255, 255, 0.1) 91.79%);
 }
 
-#mainHeader .mainSubmenu .nav-tabs .active svg {
+#mainHeader .mainSubmenu .menu .active svg {
   fill: #fff;
 }
 
-#mainHeader .mainSubmenu .nav-tabs .active p {
+#mainHeader .mainSubmenu .menu .active p {
   color: #fff;
 }
 
@@ -239,24 +242,24 @@ Styling
   #mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item a {
     font-size: 14px;
   }
-  #mainHeader .mainSubmenu .nav-tabs {
+  #mainHeader .mainSubmenu .menu {
     justify-content: center;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link {
+  #mainHeader .mainSubmenu .menu .nav-link {
     flex-direction: column;
     display: flex;
     margin: .5rem .5rem;
     padding: .5rem 1rem;
     border-radius: 10px;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link svg {
+  #mainHeader .mainSubmenu .menu .nav-link svg {
     max-width: 25px;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link p {
+  #mainHeader .mainSubmenu .menu .nav-link p {
     font-size: 10px;
     display: none;
   }
-  #mainHeader .mainSubmenu .nav-tabs .active {
+  #mainHeader .mainSubmenu .menu .active {
     color: #fff;
   }
 }
@@ -327,17 +330,17 @@ Styling
   #mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item a {
     font-size: 16px;
   }
-  #mainHeader .mainSubmenu .nav-tabs {
+  #mainHeader .mainSubmenu .menu {
     justify-content: center;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link {
+  #mainHeader .mainSubmenu .menu .nav-link {
     flex-direction: row;
     padding: .5rem 1rem;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link svg {
+  #mainHeader .mainSubmenu .menu .nav-link svg {
     margin-right: .5rem;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link p {
+  #mainHeader .mainSubmenu .menu .nav-link p {
     font-size: 12px;
     display: block;
   }
@@ -375,19 +378,19 @@ Styling
   #mainHeader .mainSubmenu .backToHome img {
     max-width: 30px;
   }
-  #mainHeader .mainSubmenu .nav-tabs {
+  #mainHeader .mainSubmenu .menu {
     width: 100%;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link {
+  #mainHeader .mainSubmenu .menu .nav-link {
     justify-content: center;
     flex-direction: row;
     padding: .5rem 1.5rem;
     width: 15.1%;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link svg {
+  #mainHeader .mainSubmenu .menu .nav-link svg {
     max-width: 30px;
   }
-  #mainHeader .mainSubmenu .nav-tabs .nav-link p {
+  #mainHeader .mainSubmenu .menu .nav-link p {
     font-size: 16px;
   }
 }

@@ -182,9 +182,11 @@ const configDanaPenyaluran = {
   type: 'doughnut',
   data: dataDanaPenyaluran,
   options : {
-    legend: {
-      display: false
-    },
+    plugins : {
+      legend: {
+        display: false
+      },
+    }
   }
 };
 
@@ -212,9 +214,11 @@ const configApprovalDanaPenyaluran = {
   type: 'doughnut',
   data: dataApprovalDanaPenyaluran,
   options : {
-    legend: {
-      display: false
-    },
+    plugins : {
+      legend: {
+        display: false
+      },
+    }
   }
 };
 
@@ -281,9 +285,11 @@ const configDataEbaltab = {
         easing: 'linear',
       }
     },
-    legend: {
-      display: false
-    },
+    plugins : {
+      legend: {
+        display: false
+      },
+    }
   }
 };
 

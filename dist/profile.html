@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--Bootstrap Asset-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <!--Profil Css-->
+    <link rel="stylesheet" href="./assets/css/profil.css">
+    <!--unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--slick Css-->
+    <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
+    <!--slick Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css" integrity="sha512-EZSUkJWTjzDlspOoPSpUFR0o0Xy7jdzW//6qhUkoZ9c4StFkVsp9fbbd0O06p9ELS3H486m4wmrCELjza4JEog==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar-->
+        <nav class="navbar navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/tni_logo.png" alt="">
+                <div class="brand-title">
+                    <h1>SISFOBETA 4.0</h1>
+                    <p>SISTEM INFORMASI BENDAHARA TWP AD ONLINE</p>
+                </div>
+              </a>
+    
+              <div class="userControl">
+                <div class="dropdown">
+                  <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
+                    <img src="./assets/img/profil.png" alt="">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                    <li><button class="dropdown-item" href="#">Logout</button></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+    </div>
+
+    <!--Body-->
+    <div class="body container-fluid">
+
+        <!--Menu-->
+        <div>
+            <div class="d-inline-flex">
+                <a href="" class="text-decoration-none color-text-gray fs-5 me-2">Dashboard </a><p class="fs-5 color-text-brown"> / Profil</p>
+            </div>
+            <p class="fs-1 color-text-brown">Pengaturan Akun</p>
+            <p class="fs-5 color-text-gray">Ubah profil dan password anda</p>
+        </div>
+        <div class="nav nav-tabs py-5 border-bottom-0" id="nav-tab" role="tablist">
+            <button class="nav-link active fw-bolder fs-5" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Profil</button>
+            <button class="nav-link fw-bolder fs-5" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Password</button>
+        </div>
+
+        <!--Conten-->
+
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show profil-menu active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="row">
+
+                <div class="col">
+                    <div class="profil d-flex justify-content-center flex-column align-items-center">
+                        <div class="profil-image">
+                            <img src="assets/img/profil.png" alt="">
+                        </div>
+                        <h3 class="py-3">Admin</h3>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Ganti Photo
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ganti Photo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-8">
+                  <form class="pb-5">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">NRP</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Nama</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Satker</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Kesatuan</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">No Telepon</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">+62</span>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">NIK</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">No Rekening</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Nama Rekening</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Nama Bank</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="d-inline-flex pb-5 float-end">
+                        <button type="submit" class="btn bg-danger color-text-white">Kembali</button>
+                        <button type="submit" class="btn bg-success color-text-white mx-2">Perbarui</button>
+                      </div>
+                  </form>
+                </div>
+
+              </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="container" style="max-width: 50.0rem;">
+                        <form class="change-password">
+                            <label>Password Lama</label>
+                            <div class="input-group mb-2 mr-sm-2">
+                              <input type="password" class="form-control" id="password">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
+                              </div>
+                            </div>
+                            <label>Password Baru</label>
+                            <div class="input-group mb-2 mr-sm-2">
+                              <input type="password" class="form-control" id="password">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
+                              </div>
+                            </div>
+                            <label>Konfirmasi Password Baru</label>
+                            <div class="input-group mb-2 mr-sm-2">
+                              <input type="password" class="form-control" id="password">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
+                              </div>
+                            </div>
+                            <div class="d-inline-flex pt-3 pb-5">
+                                <button type="submit" class="btn bg-danger color-text-white">Kembali</button>
+                                <button type="submit" class="btn bg-success color-text-white mx-2">Perbarui</button>
+                            </div>
+                        </form>
+              </div>
+          </div>
+        </div>
+
+    </div>
+    <!--End Body-->
+
+    <!--jQuery-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Asset-->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Chart Js-->
+    <script src="./assets/vendors/chartjs/Chart.js"></script>
+    <script src="./assets/js/chartjs/ui-chart.js"></script>
+
+    <!--Dropify Js-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js" integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+    $('.dropify').dropify();</script>
+
+    <!--Slick Js-->
+    <script src="./assets/vendors/slick/slick.min.js"></script>
+    <!--eye Js-->
+    <script>$(function(){
+  
+      $('#eye').click(function(){
+           
+            if($(this).hasClass('fa-eye-slash')){
+               
+              $(this).removeClass('fa-eye-slash');
+              
+              $(this).addClass('fa-eye');
+              
+              $('#password').attr('type','text');
+                
+            }else{
+             
+              $(this).removeClass('fa-eye');
+              
+              $(this).addClass('fa-eye-slash');  
+              
+              $('#password').attr('type','password');
+            }
+        });
+    });</script>
+</body>
+</html>

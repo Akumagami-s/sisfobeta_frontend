@@ -67,126 +67,150 @@
         <!--Conten-->
 
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show profil-menu active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <div class="row">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-                <div class="col">
-                    <div class="profil d-flex justify-content-center flex-column align-items-center">
-                        <div class="profil-image">
-                            <img src="assets/img/profil.png" alt="">
-                        </div>
-                        <h3 class="py-3">Admin</h3>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          Ganti Photo
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Ganti Photo</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="row justify-content-center">
+                        <div class="col">
+                          <div class="profil d-flex justify-content-center flex-column align-items-center">
+                              <div class="profil-image pb-3">
+                                  <img src="assets/img/profil.png" alt="">
                               </div>
-                              <div class="modal-body">
-                                <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-primary w-50 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ganti Photo
+                              </button>
+      
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Ganti Photo</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
+                          </div>
+                        </div>      
+  
+                        <div class="col-12 col-md-4">
+                          <fieldset disabled>
+                            <div class="mb-2">
+                              <label for="nrp" class="form-label">NRP</label>
+                              <input type="text" class="form-control" id="nrp" aria-describedby="">
                             </div>
+                          </fieldset>
+                          <div class="mb-2">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="nik" class="form-label">NIK</label>
+                            <input type="text" class="form-control" id="nik" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="noTlp" class="form-label">No Telepon</label>
+                            <input type="text" class="form-control" id="noTlp" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="npwp" class="form-label">NPWP</label>
+                            <input type="text" class="form-control" id="npwp" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="tglLahir" class="form-label">Tgl Lahir</label>
+                            <input type="date" class="form-control" id="tglLahir" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="pangkat" class="form-label">Pangkat</label>
+                            <input type="text" class="form-control" id="pangkat" aria-describedby="">
                           </div>
                         </div>
-                    </div>
-                </div>
+                        
+                        <div class="col-12 col-md-4">
+                          <div class="mb-2">
+                            <label for="satker" class="form-label">Satker</label>
+                            <input type="text" class="form-control" id="satker" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="corp" class="form-label">Corp</label>
+                            <input type="text" class="form-control" id="corp" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="kesatuan" class="form-label">Kesatuan</label>
+                            <input type="text" class="form-control" id="kesatuan" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="kotama" class="form-label">Kotama</label>
+                            <input type="text" class="form-control" id="kotama" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="naBank" class="form-label">Nama Bank</label>
+                            <input type="text" class="form-control" id="naBank" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="naRek" class="form-label">Nama Rekening</label>
+                            <input type="text" class="form-control" id="naRek" aria-describedby="">
+                          </div>
+                          <div class="mb-2">
+                            <label for="noRek" class="form-label">No Rekening</label>
+                            <input type="text" class="form-control" id="noRek" aria-describedby="">
+                          </div>
+                          <div>
+                            <label for="noDebitur" class="form-label">Nomor Debitur</label>
+                            <input type="text" class="form-control" id="noDebitur" aria-describedby="">
+                          </div>
+                          <div class="py-3 float-end">
+                            <button type="button" class="btn btn-danger">Kembali</button>
+                            <button type="button" class="btn btn-success">Perbarui</button>
+                          </div>
+                          </div>
+                      </div>
 
-                <div class="col-sm-8">
-                  <form class="pb-5">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">NRP</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Nama</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Satker</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Kesatuan</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">No Telepon</label>
-                        <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1">+62</span>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">NIK</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">No Rekening</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Nama Rekening</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Nama Bank</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="d-inline-flex pb-5 float-end">
-                        <button type="submit" class="btn bg-danger color-text-white">Kembali</button>
-                        <button type="submit" class="btn bg-success color-text-white mx-2">Perbarui</button>
-                      </div>
-                  </form>
-                </div>
-
-              </div>
           </div>
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                 
             <div class="container" style="max-width: 50.0rem;">
-                        <form class="change-password">
-                            <label>Password Lama</label>
-                            <div class="input-group mb-2 mr-sm-2">
-                              <input type="password" class="form-control" id="password">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
-                              </div>
-                            </div>
-                            <label>Password Baru</label>
-                            <div class="input-group mb-2 mr-sm-2">
-                              <input type="password" class="form-control" id="password">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
-                              </div>
-                            </div>
-                            <label>Konfirmasi Password Baru</label>
-                            <div class="input-group mb-2 mr-sm-2">
-                              <input type="password" class="form-control" id="password">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
-                              </div>
-                            </div>
-                            <div class="d-inline-flex pt-3 pb-5">
-                                <button type="submit" class="btn bg-danger color-text-white">Kembali</button>
-                                <button type="submit" class="btn bg-success color-text-white mx-2">Perbarui</button>
-                            </div>
-                        </form>
-              </div>
+              <form class="change-password">
+                  <label>Password Lama</label>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <input type="password" class="form-control" id="password">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
+                    </div>
+                  </div>
+                  <label>Password Baru</label>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <input type="password" class="form-control" id="password">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
+                    </div>
+                  </div>
+                  <label>Konfirmasi Password Baru</label>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <input type="password" class="form-control" id="password">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><img src="assets/img/Eye.svg" id="eye" class="fas fa-eye-slash"></div>
+                    </div>
+                  </div>
+                  <div class="d-inline-flex pt-3 pb-5">
+                      <button type="submit" class="btn bg-danger color-text-white">Kembali</button>
+                      <button type="submit" class="btn bg-success color-text-white mx-2">Perbarui</button>
+                  </div>
+              </form>
+            </div>
+
           </div>
         </div>
 

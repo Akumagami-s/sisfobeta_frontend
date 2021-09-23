@@ -95,7 +95,7 @@
               </a>
 
               <a class="nav-link ebaltabRekayasaData"
-                href="rekayasaData-eBaltab.html"
+                href="#"
                 aria-selected="true">
 
                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,431 +156,249 @@
     </div>
 
     <div class="mainContent">
-      <div class="container-fluid">
-          <div class="wrapperContent">
-
-            <div class="nav nav-tabs tabsButton" id="nav-tab" role="tablist">
-              <button class="nav-link active"
-               id="index-tab-menu" 
-               data-bs-toggle="tab" 
-               data-bs-target="#index-tab" 
-               type="button" role="tab" 
-               aria-controls="index-tab" 
-               aria-selected="true">Index</button>
-
-               <button class="nav-link"
-               id="cari-tab-menu" 
-               data-bs-toggle="tab" 
-               data-bs-target="#cari-tab" 
-               type="button" role="tab" 
-               aria-controls="cari-tab" 
-               aria-selected="true">Cari</button>
-            </div>
-
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" 
-                id="index-tab" 
-                role="tabpanel" 
-                aria-labelledby="index-tab-menu">
-
-                <h1 class="nameContent">Data Pokok Prajurit</h1>
-
-                <div class="wrapperTable">
-                  <table id="tablePokokPrajurit" class="table" style="width:100%">
-                    <thead class="headTable">
-                        <tr>
-                            <th>NRP</th>
-                            <th>Name</th>
-                            <th>Pangkat</th>
-                            <th>Kesatuan</th>
-                            <th>Korp</th>
-                            <th>Pengankatan</th>
-                            <th>Tanggal</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bodyTable">
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-                </div>
+        <div class="container-fluid">
+           
+          <h1 class="nameContent">Edit Data Pokok Prajurit</h1>
+          <div class="card rounded-3 mb-4">
+              <div class="card-header">
+               <h2 class="container-xxl">RH</h2>
               </div>
-
-              <div class="tab-pane fade" 
-                id="cari-tab" 
-                role="tabpanel" 
-                aria-labelledby="cari-tab-menu">
-
-                <h1 class="nameContent">Data Pokok Prajurit</h1>
-
-                <div class="searchAndImportWrapper">
-                    <input class="searchInput" type="search" placeholder="Masukan NRP">
-                    <ion-icon name="search"></ion-icon>
-                </div>
-
-                <div class="wrapperMainData">
-                    <div class="wrapperData">
-
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button class="nav-link active" 
-                        id="nav-rh" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-riwayathidup" 
-                        type="button" role="tab" 
-                        aria-controls="nav-riwayathidup" 
-                        aria-selected="true">
-                        RH
-                      </button>
-
-                      <button class="nav-link" 
-                        id="nav-pangkat-tab" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-pangkat" 
-                        type="button" role="tab" 
-                        aria-controls="nav-pangkat" 
-                        aria-selected="false">
-                        Pangkat
-                      </button>
-
-                      <button class="nav-link" 
-                        id="nav-tabungan-tab" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-tabungan" 
-                        type="button" role="tab" 
-                        aria-controls="nav-tabungan" 
-                        aria-selected="false">
-                        Tabungan
-                      </button>
-
-                      <button class="nav-link" 
-                        id="nav-status-tab" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-status" 
-                        type="button" role="tab" 
-                        aria-controls="nav-status" 
-                        aria-selected="false">
-                        Status
-                      </button>
-
-                      <button class="nav-link" 
-                        id="nav-pembayaran-tab" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-pembayaran" 
-                        type="button" role="tab" 
-                        aria-controls="nav-pembayaran" 
-                        aria-selected="false">
-                        Pembayaran
-                      </button>
-                      
-                    </div>
-                    
-                    <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade show active" 
-                        id="nav-riwayathidup" 
-                        role="tabpanel" 
-                        aria-labelledby="nav-rh">
-                        
-
-                        <div class="d-flex dataWrapper">
-                            <div class="imgProfil">
-                              <img src="../assets/img/profil.png" alt="">
-                            </div>
-                            <div class="wrapperTableInfoData d-flex">
-                                <table class="table table-striped">
-                                    <tbody>
-                                      <tr>
-                                        <td>NRP</td>
-                                        <td>: <span class="value_nrp">290918</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Nama</td>
-                                        <td>: <span class="value_name">Saepul</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Tanggal Lahir</td>
-                                        <td>: <span class="value_date">19 April 1979</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Pangkat</td>
-                                        <td>: <span class="value_grade">Jendral</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Corp</td>
-                                        <td>: <span class="value_corp">TNI</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Kesatuan</td>
-                                        <td>: <span class="value_kesatuan">Kondiklatad</span></td>
-                                      </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table table-striped">
-                                  <tbody>
-                                    <tr>
-                                      <td>Kotama</td>
-                                      <td>: <span class="value_kotama">DENMABESAD</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Pengangkatan</td>
-                                      <td>: <span class="value_datePengangkatan">01 April 1999</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Pensiun</td>
-                                      <td>: <span class="value_pensiun">19 September 2021</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Tanggal Update</td>
-                                      <td>: <span class="value_tanggalUpdate">15 September 2021</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>KRP</td>
-                                      <td>: <span class="value_kpr">(04 September 2021)</span></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+              <div class="card-body container-xxl">
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-md-4">
+                          <div class="imgProfil d-flex justify-content-center flex-column align-items-center ">
+                              <img src="../assets/img/profil.png" class="rounded-circle w-50">
                             </div>
                         </div>
-                      </div>
-
-                      <div class="tab-pane fade" 
-                        id="nav-pangkat"
-                        role="tabpanel" 
-                        aria-labelledby="nav-pangkat-tab">
-
-                          <div class="d-flex dataWrapper">
-                            <div class="wrapperTableInfoData fullWidth d-flex">
-                                <table class="table table-striped">
-                                    <tbody>
-                                      <tr>
-                                        <td>Pangkat</td>
-                                        <td>: <span class="value_tahun">Tahun</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Tamtama/PNS Gol.I</td>
-                                        <td>: <span class="value_tamtama">-</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Bintara/PNS Gol.II</td>
-                                        <td>: <span class="value_date">-</span></td>
-                                      </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table table-striped">
-                                  <tbody>
-                                    <tr>
-                                      <td>Pama/PNS Gol.III</td>
-                                      <td>: <span class="value_date">01 Februari 1990</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Pamen/PNS Gol.IV</td>
-                                      <td>: <span class="value_date">01 April 1999</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Pati</td>
-                                      <td>: <span class="value_pati">19 September 2021</span></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                            </div>
+  
+                        <div class="col">
+                          <table class="table">
+                              <tbody>
+                                <tr>
+                                  <td>NRP</td>
+                                  <td><input type="text" id="nrp" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                                </tr>
+                                <tr>
+                                  <td>Nama Prajurit</td>
+                                  <td><input type="text" id="namaPrajurit" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                                </tr>
+                                <tr>
+                                  <td>Pangkat Prajurit</td>
+                                  <td>
+                                      <select class="form-select" aria-label="Default select example">
+                                          <option selected>Jendral</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Tanggal Pengangkatan</td>
+                                  <td><input type="text" id="tglPengangkatan" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                                </tr>
+                                <tr>
+                                  <td>Corp</td>
+                                  <td>
+                                      <select class="form-select" aria-label="Default select example">
+                                          <option selected>TNI</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                         </div>
-
-                      </div>
-
-                      <div class="tab-pane fade" 
-                        id="nav-tabungan" 
-                        role="tabpanel" 
-                        aria-labelledby="nav-tabungan-tab">
                         
-                          <div class="d-flex dataWrapper">
-                            <div class="wrapperTableInfoData fullWidth">
-                                <table class="table table-striped">
-                                  <thead>
-                                      <tr>
-                                        <td>MULYONO/28678</td>
-                                      </tr>
-                                  </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>Pama</td>
-                                        <td>: <span class="value_date">Feb’ 89 s.d Mar’ 95 </span></td>
-                                        <td>110 Bulan X <span class="bunga">4.500</span></td>
-                                        <td>Rp <span class="total">95.000</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Pamen</td>
-                                        <td>: <span class="value_date">Feb’ 89 s.d Mar’ 95 </span></td>
-                                        <td>168 Bulan X <span class="bunga">5.500</span></td>
-                                        <td>Rp <span class="total">95.000</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>(Index Rp 50.000.-)</td>
-                                        <td>: <span class="value_date">Feb’ 89 s.d Mar’ 95 </span></td>
-                                        <td>110 Bulan X<span class="bunga">4.500</span></td>
-                                        <td>Rp <span class="total">95.000</span></td>
-                                      </tr>
-                                      <tr class="totalBunga">
-                                        <td>Bunga</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Rp <span class="total">9.819.000,00</span></td>
-                                      </tr>
-                                      <tr class="totalKeseluruhan">
-                                        <td>Total</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Rp <span class="total">16.819.000,00</span></td>
-                                      </tr>
-                                    </tbody>
-                                </table>
-
-                                <div class="notice d-flex">
-                                    <p>Perhatian : Perhitungan diatas hanya meruapakan simulasi yang menggunakan sistem Perbulatan. Tingkat imbal hasil tabungan dari perhitungan simulasi tersebut bukanlah suatu jaminan, tetapi hanya merupakan indikasi berdasarkan rata-rata historis. Realisasi pengembalian tabungan tergantung pada kebijaksanaan pimpinan TNI-AD dalam penentuan pemotongan tabungan dan suku bunga.</p>
-                                </div>
-                              </div>
-                          </div>
-
+                        <div class="col">
+                          <table class="table">
+                              <tbody>
+                                <tr>
+                                  <td>Kesatuan</td>
+                                  <td>
+                                      <select class="form-select" aria-label="Default select example">
+                                          <option selected>Jendral</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Kotama</td>
+                                  <td>
+                                      <select class="form-select" aria-label="Default select example">
+                                          <option selected>TNI</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Tanggal Lahir</td>
+                                  <td><input type="date" id="tglPengangkatan" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                                </tr>
+                                <tr>
+                                  <td>Tanggal Update</td>
+                                  <td>
+                                      <fieldset disabled>
+                                          <input type="date" id="disabledTextInput" class="form-control">
+                                      </fieldset>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
                       </div>
-
-                      <div class="tab-pane fade" 
-                        id="nav-status" 
-                        role="tabpanel" 
-                        aria-labelledby="nav-status-tab">
-                        
-                          <div class="d-flex dataWrapper">
-                            <div class="wrapperTableInfoData fullWidth">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                          <td>Status</td>
-                                          <td>: <span class="value_proses">Sedang Dalam Proses</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                              </div>
-                          </div>
-
-                      </div>
-
-                      <div class="tab-pane fade" 
-                        id="nav-pembayaran" 
-                        role="tabpanel" 
-                        aria-labelledby="nav-pembayaran-tab">
-                        
-                          <div class="d-flex dataWrapper">
-                            <div class="d-flex wrapperTableInfoData fullWidth">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                          <td>Jumlah Uang</td>
-                                          <td>: <span class="value_uang">100.000.000</span></td>
-                                        </tr>
-                                        <tr>
-                                          <td>Nama Bank</td>
-                                          <td>: <span class="value_bank">BTN</span></td>
-                                        </tr>
-                                        <tr>
-                                          <td>No Rekening</td>
-                                          <td>: <span class="value_uang">237462578</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="table table-striped">
-                                  <tbody>
-                                      <tr>
-                                        <td>Atas Nama</td>
-                                        <td>: <span class="value_prajurit">Arkan</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Tanggal</td>
-                                        <td>: <span class="value_date">12 April 2021</span></td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                              </div>
-                          </div>
-
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="actionButton fade show">
-                      <button class="btn editBtn d-flex align-items-center" type="edit">
-                          <img src="../assets/img/white_editIcon.svg" alt="">
-                          Edit
-                      </button>
-                      <button class="btn deleteBtn d-flex align-items-center" type="delete">
-                          <img src="../assets/img/white_deleteIcon.svg" alt="">
-                          Delete
-                      </button>
-                  </div>
-                </div>
-
-                
               </div>
-            </div>
-
           </div>
-      </div>
-    </div>
 
-    <footer >
+          <div class="card rounded-3 mb-4">
+            <div class="card-header">
+             <h2 class="container-xxl">Pangkat</h2>
+            </div>
+            <div class="card-body container-xxl">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-md-6">
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>TMT Tamtama</td>
+                                <td><input type="text" id="tamtama" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>TMT Bintara</td>
+                                <td><input type="text" id="bintara" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>TMT Pama</td>
+                                <td><input type="text" id="pama" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                      
+                      <div class="col-12 col-md-6">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>TMT Pamen</td>
+                                    <td><input type="text" id="pamen" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                                  </tr>
+                                  <tr>
+                                    <td>TMT Pati</td>
+                                    <td><input type="text" id="pati" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                    </div>
+            </div>
+          </div>
+
+          <div class="card rounded-3 mb-4">
+            <div class="card-header">
+             <h2 class="container-xxl">RH</h2>
+            </div>
+            <div class="card-body container-xxl">
+                    <div class="row justify-content-center">
+                      <div class="col">
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>TMT Pangka</td>
+                                <td><input type="text" id="tmtPangkat" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>TMT Pensiun</td>
+                                <td><input type="text" id="tmtPensiun" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>Kd Bansus</td>
+                                <td><input type="text" id="kdBansus" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>TMT Perwira</td>
+                                <td><input type="text" id="tmtPerwira" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>No Bitur</td>
+                                <td><input type="text" id="noBitur" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>Katagori</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Kodiklatad</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                      
+                      <div class="col">
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>TMT KTg</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Denmabes</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Gaji Pokok</td>
+                                <td><input type="text" id="nrp" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>Tunjangan Istri</td>
+                                <td><input type="text" id="namaPrajurit" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>Tunjangan Anak</td>
+                                <td><input type="text" id="namaPrajurit" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>KPR 1</td>
+                                <td><input type="text" id="tglPengangkatan" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                              <tr>
+                                <td>KPR 2</td>
+                                <td><input type="text" id="tglPengangkatan" class="form-control float-end" aria-describedby="passwordHelpInline"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                    </div>
+            </div>
+          </div>
+
+          <div class="actionButton fade show">
+            <button class="btn simpanBtn d-flex align-items-center" type="edit">
+                <img src="../assets/img/floppy-disk 2.svg" alt="">
+                Simpan
+            </button>
+            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                Delete
+            </button>
+          </div>
+  
+        </div>
+      </div>
+
+    <footer>
         <p>Copyright 2021 © DITKUAD</p>
     </footer>
 

@@ -51,7 +51,7 @@ Styling
   background: #8E8E8E;
 }
 
-.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperTable table tbody tr td .accordion .accordion-item .accordion-colgit lapse .accordion-body {
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperTable table tbody tr td .accordion .accordion-item .accordion-collapse .accordion-body {
   margin-top: 1rem;
   padding: 1rem .5rem;
   border: 1px solid #C4C4C4;
@@ -59,7 +59,7 @@ Styling
   border-radius: 0px 10px 10px 0px;
 }
 
-.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperTable table tbody tr td .accordion .accordion-item .accordion-colgit lapse .accordion-body .valueNpwpSesudah {
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperTable table tbody tr td .accordion .accordion-item .accordion-collapse .accordion-body .valueNpwpSesudah {
   color: #FEC213;
 }
 

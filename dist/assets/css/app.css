@@ -78,7 +78,7 @@
   color: #000000;
 }
 
-.searchWrapper {
+.searchAndImportWrapper {
   display: flex;
   align-items: center;
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
@@ -86,7 +86,7 @@
   margin-bottom: 2rem;
 }
 
-.searchWrapper .searchInput {
+.searchAndImportWrapper .searchInput {
   border: none;
   width: 100%;
   border-bottom: 1px solid #000000;
@@ -94,7 +94,7 @@
   max-width: 250px;
 }
 
-.searchWrapper .searchInput::placeholder {
+.searchAndImportWrapper .searchInput::placeholder {
   color: #8E8E8E;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -200,12 +200,26 @@ footer p {
   background: #FF832A;
 }
 
-.actionButton .simpanBtn{
-  background: #28A745;
-}
-
 .actionButton .deleteBtn {
   background: #DC3545;
+}
+
+.view {
+  border: none;
+  background: #7334FF;
+  padding: .3rem .5rem;
+  border-radius: 5px;
+}
+
+.view img {
+  max-width: 25px;
+  margin-right: .5rem;
+}
+
+.view p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .wrapperMainData .wrapperData .nav-tabs {
@@ -301,7 +315,7 @@ footer p {
   .wrapperTable {
     padding: 1rem;
   }
-  .searchWrapper {
+  .searchAndImportWrapper {
     padding: 2rem;
   }
   .wrapperData {
@@ -347,7 +361,7 @@ footer p {
   .wrapperTable {
     padding: 2rem;
   }
-  .searchWrapper {
+  .searchAndImportWrapper {
     padding: 3rem;
   }
 }

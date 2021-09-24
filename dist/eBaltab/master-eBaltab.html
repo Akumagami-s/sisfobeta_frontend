@@ -193,6 +193,14 @@
                aria-selected="true">Kategori</button>
 
                <button class="nav-link"
+               id="kotama-tab-menu" 
+               data-bs-toggle="tab" 
+               data-bs-target="#kotama-tab" 
+               type="button" role="tab" 
+               aria-controls="kotama-tab" 
+               aria-selected="true">Kotama</button>
+
+               <button class="nav-link"
                id="satminkal-tab-menu" 
                data-bs-toggle="tab" 
                data-bs-target="#satminkal-tab" 
@@ -219,27 +227,18 @@
             </div>
 
             <div class="tab-content" id="nav-tabContent">
+
               <div class="tab-pane fade show active" 
                 id="institut-tab" 
                 role="tabpanel" 
                 aria-labelledby="institut-tab-menu">
 
-                <h1 class="nameContent">Data Pokok Prajurit</h1>
+                <h1 class="nameContent">Ini bagian institut</h1>
                 
                 <div class="wrapperMainData">
                     <div class="wrapperData">
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link active" 
-                              id="nav-rh" 
-                              data-bs-toggle="tab" 
-                              data-bs-target="#nav-riwayathidup" 
-                              type="button" role="tab" 
-                              aria-controls="nav-riwayathidup" 
-                              aria-selected="true">
-                              RH
-                            </button>
-      
-                            <button class="nav-link" 
                               id="nav-pangkat-tab" 
                               data-bs-toggle="tab" 
                               data-bs-target="#nav-pangkat" 
@@ -250,35 +249,474 @@
                             </button>
       
                             <button class="nav-link" 
-                              id="nav-tabungan-tab" 
+                              id="nav-kesatuan-tab" 
                               data-bs-toggle="tab" 
-                              data-bs-target="#nav-tabungan" 
+                              data-bs-target="#nav-kesatuan" 
                               type="button" role="tab" 
-                              aria-controls="nav-tabungan" 
+                              aria-controls="nav-kesatuan" 
                               aria-selected="false">
-                              Tabungan
+                              Kesatuan
                             </button>
       
                             <button class="nav-link" 
-                              id="nav-status-tab" 
+                              id="nav-korp-tab" 
                               data-bs-toggle="tab" 
-                              data-bs-target="#nav-status" 
+                              data-bs-target="#nav-korp" 
                               type="button" role="tab" 
-                              aria-controls="nav-status" 
+                              aria-controls="nav-korp" 
                               aria-selected="false">
-                              Status
+                              Korp
                             </button>
-      
-                            <button class="nav-link" 
-                              id="nav-pembayaran-tab" 
-                              data-bs-toggle="tab" 
-                              data-bs-target="#nav-pembayaran" 
-                              type="button" role="tab" 
-                              aria-controls="nav-pembayaran" 
-                              aria-selected="false">
-                              Pembayaran
-                            </button>
+                          </div>
+
+                          <div class="tab-content" id="nav-tabContent">
+
+                            <div class="tab-pane fade show active" 
+                              id="nav-pangkat" 
+                              role="tabpanel" 
+                              aria-labelledby="nav-pangkat-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableMasterInstitutPangkat" class="table" style="width:100%">
+
+                                  <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Tambah
+                                  </button>
+
+                                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Tambah Pangkat</h5>
+                                        </div>
+
+                                        <div class="modal-body">
+                                          <form action="">
+                                              <div class="mainForm columnForm">
+                                                <div class="actionForm first">
+                                                  <label for="">Kode</label>
+                                                  <input type="text">
+                                                </div>
+                                                <div class="actionForm two">
+                                                  <label for="">Uraian</label>
+                                                  <input type="text">
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="buttonActionForm">
+
+                                              </div>
+                                          </form>
+                                        </div>
+
+                                        <div class="modal-footer actionButton">
+                                          <button class="btn saveBtn d-flex align-items-center" type="save">
+                                            <img src="../assets/img/saveIcon.svg" alt="">
+                                            Simpan
+                                          </button>
+                                        <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
+                                            Batal
+                                        </button>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  
+                                  <thead class="headTable">
+                                      <tr>
+                                          <th>Kode</th>
+                                          <th>Uraian</th>
+                                          <th>Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody class="bodyTable">
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                  </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" 
+                              id="nav-kesatuan" 
+                              role="tabpanel" 
+                              aria-labelledby="nav-kesatuan-tab">
+                              <div class="wrapperTable">
+                                <table id="tableMasterInstitutKesatuan" class="table" style="width:100%">
+
+                                  <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#institutKesatuan">
+                                    Tambah
+                                  </button>
+
+                                  <div class="modal fade" id="institutKesatuan" tabindex="-1" aria-labelledby="institutKesatuanLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="institutKesatuanLabel">Tambah Kesatuan</h5>
+                                        </div>
+
+                                        <div class="modal-body">
+                                          <form action="">
+                                              <div class="mainForm rowForm">
+                                                <div class="first">
+                                                    <div class="actionForm">
+                                                      <label for="">Nopeend</label>
+                                                      <input type="text">
+                                                    </div>
+                                                    <div class="actionForm">
+                                                      <label for="">Kobri</label>
+                                                      <input type="text">
+                                                    </div>
+                                                    <div class="actionForm">
+                                                      <label for="">Kosat</label>
+                                                      <input type="text">
+                                                    </div>
+                                                    <div class="actionForm">
+                                                      <label for="">Kpd</label>
+                                                      <input type="text">
+                                                    </div>
+                                                    <div class="actionForm">
+                                                      <label for="">Namsat</label>
+                                                      <input type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="two">
+                                                  <div class="actionForm">
+                                                    <label for="">Lokasi</label>
+                                                    <select id="cars" name="cars">
+                                                      <option value="volvo">Volvo XC90</option>
+                                                      <option value="saab">Saab 95</option>
+                                                      <option value="mercedes">Mercedes SLK</option>
+                                                      <option value="audi">Audi TT</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="actionForm">
+                                                    <label for="">Kota</label>
+                                                    <input type="text">
+                                                  </div>
+                                                  <div class="actionForm">
+                                                    <label for="">Di</label>
+                                                    <input type="text">
+                                                  </div>
+                                                  <div class="actionForm">
+                                                    <label for="">Ku Kotama</label>
+                                                    <input type="text">
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="buttonActionForm">
+
+                                              </div>
+                                          </form>
+                                        </div>
+
+                                        <div class="modal-footer actionButton">
+                                          <button class="btn saveBtn d-flex align-items-center" type="save">
+                                            <img src="../assets/img/saveIcon.svg" alt="">
+                                            Simpan
+                                        </button>
+                                        <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
+                                            Batal
+                                        </button>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  
+                                  <thead class="headTable">
+                                      <tr>
+                                          <th>Kode</th>
+                                          <th>Uraian</th>
+                                          <th>Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody class="bodyTable">
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                  </tbody>
+                              </table>
+                              </div>
                             
+                            
+                            </div>
+
+                            <div class="tab-pane fade" 
+                              id="nav-korp" 
+                              role="tabpanel" 
+                              aria-labelledby="nav-korp-tab">
+
+                              <div class="wrapperTable">
+                                <table id="tableMasterInstitutKorp" class="table" style="width:100%">
+
+                                  <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#modelKorp">
+                                    Tambah
+                                  </button>
+
+                                  <div class="modal fade" id="modelKorp" tabindex="-1" aria-labelledby="modelKorpLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="modelKorpLabel">Tambah Pangkat</h5>
+                                        </div>
+
+                                        <div class="modal-body">
+                                          <form action="">
+                                              <div class="mainForm columnForm">
+                                                <div class="actionForm first">
+                                                  <label for="">Kode</label>
+                                                  <input type="text">
+                                                </div>
+                                                <div class="actionForm two">
+                                                  <label for="">Uraian</label>
+                                                  <input type="text">
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="buttonActionForm">
+
+                                              </div>
+                                          </form>
+                                        </div>
+
+                                        <div class="modal-footer actionButton">
+                                          <button class="btn saveBtn d-flex align-items-center" type="save">
+                                            <img src="../assets/img/saveIcon.svg" alt="">
+                                            Simpan
+                                        </button>
+                                        <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
+                                            Batal
+                                        </button>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  
+                                  <thead class="headTable">
+                                      <tr>
+                                          <th>Kode</th>
+                                          <th>Uraian</th>
+                                          <th>Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody class="bodyTable">
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>17 April 2021</td>
+                                        <td>
+                                          <div class="actionButton fade show">
+                                            <button class="btn editBtn d-flex align-items-center" type="edit">
+                                                <img src="../assets/img/white_editIcon.svg" alt="">
+                                                Edit
+                                            </button>
+                                            <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                                <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                                Delete
+                                            </button>
+                                          </div>
+                                        </td>
+                                      </tr>
+              
+                                  </tbody>
+                              </table>
+                              </div>
+
+
+                            </div>
+
                           </div>
                     </div>
                 </div>
@@ -290,10 +728,773 @@
                 role="tabpanel" 
                 aria-labelledby="distrik-tab-menu">
 
-                <h1 class="nameContent">Data Pokok Prajurit</h1>
-
-                
+                <h1 class="nameContent">ini distrik</h1>
               </div>
+
+              <div class="tab-pane fade" 
+                id="lokasi-tab" 
+                role="tabpanel" 
+                aria-labelledby="lokasi-tab-menu">
+
+                <h1 class="nameContent">ini Lokasi</h1>
+              </div>
+
+              <div class="tab-pane fade" 
+                id="kategori-tab" 
+                role="tabpanel" 
+                aria-labelledby="kategori-tab-menu">
+
+                <h1 class="nameContent">Kategori</h1>
+
+                <div class="wrapperTable">
+                  <table id="tableMasterKategori" class="table" style="width:100%">
+
+                    <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#kategori">
+                      Tambah
+                    </button>
+
+                    <div class="modal fade" id="kategori" tabindex="-1" aria-labelledby="kategoriLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="kategoriLabel">Tambah Kategori</h5>
+                          </div>
+
+                          <div class="modal-body">
+                            <form action="">
+                                <div class="mainForm columnForm">
+                                  <div class="actionForm first">
+                                    <label for="">Kode</label>
+                                    <input type="text">
+                                  </div>
+                                  <div class="actionForm two">
+                                    <label for="">Uraian</label>
+                                    <input type="text">
+                                  </div>
+                                </div>
+                                
+                                <div class="buttonActionForm">
+
+                                </div>
+                            </form>
+                          </div>
+
+                          <div class="modal-footer actionButton">
+                            <button class="btn saveBtn d-flex align-items-center" type="save">
+                              <img src="../assets/img/saveIcon.svg" alt="">
+                              Simpan
+                          </button>
+                          <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
+                              Batal
+                          </button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <thead class="headTable">
+                        <tr>
+                            <th>Kode</th>
+                            <th>Uraian</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bodyTable">
+                        <tr>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" 
+                id="kotama-tab" 
+                role="tabpanel" 
+                aria-labelledby="kotama-tab-menu">
+
+                <h1 class="nameContent">Kotama</h1>
+
+                <div class="wrapperTable">
+                  <table id="tableMasterKotama" class="table" style="width:100%">
+
+                    <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#kotama">
+                      Tambah
+                    </button>
+
+                    <div class="modal fade" id="kotama" tabindex="-1" aria-labelledby="kotamaLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="kotamaLabel">Tambah Kotama</h5>
+                          </div>
+
+                          <div class="modal-body">
+                            <form action="">
+                                <div class="mainForm columnForm">
+                                  <div class="actionForm first">
+                                    <label for="">Kode</label>
+                                    <input type="text">
+                                  </div>
+                                  <div class="actionForm two">
+                                    <label for="">Uraian</label>
+                                    <input type="text">
+                                  </div>
+                                </div>
+                                
+                                <div class="buttonActionForm">
+
+                                </div>
+                            </form>
+                          </div>
+
+                          <div class="modal-footer actionButton">
+                            <button class="btn saveBtn d-flex align-items-center" type="save">
+                              <img src="../assets/img/saveIcon.svg" alt="">
+                              Simpan
+                          </button>
+                          <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
+                              Batal
+                          </button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <thead class="headTable">
+                        <tr>
+                            <th>Kode</th>
+                            <th>Uraian</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bodyTable">
+                        <tr>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" 
+                id="satminkal-tab" 
+                role="tabpanel" 
+                aria-labelledby="satminkal-tab-menu">
+
+                <h1 class="nameContent">Satminkal</h1>
+
+                <div class="wrapperTable">
+                  <table id="tableMasterSatminkal" class="table" style="width:100%">
+
+                    <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#satminkal">
+                      Tambah
+                    </button>
+
+                    <div class="modal fade" id="satminkal" tabindex="-1" aria-labelledby="satminkalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="satminkalLabel">Tambah Satminkal</h5>
+                          </div>
+
+                          <div class="modal-body">
+                            <form action="">
+                                <div class="mainForm columnForm">
+                                  <div class="actionForm first">
+                                    <label for="">Kode KTM</label>
+                                    <input type="text">
+                                  </div>
+                                  <div class="actionForm first">
+                                    <label for="">Kode</label>
+                                    <input type="text">
+                                  </div>
+                                  <div class="actionForm two">
+                                    <label for="">Uraian</label>
+                                    <input type="text">
+                                  </div>
+                                </div>
+                                
+                                <div class="buttonActionForm">
+
+                                </div>
+                            </form>
+                          </div>
+
+                          <div class="modal-footer actionButton">
+                            <button class="btn saveBtn d-flex align-items-center" type="save">
+                              <img src="../assets/img/saveIcon.svg" alt="">
+                              Simpan
+                          </button>
+                          <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
+                              Batal
+                          </button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <thead class="headTable">
+                        <tr>
+                            <th>Kode KTM</th>
+                            <th>Kode</th>
+                            <th>Uraian</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bodyTable">
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn editBtn d-flex align-items-center" type="edit">
+                                  <img src="../assets/img/white_editIcon.svg" alt="">
+                                  Edit
+                              </button>
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" 
+                id="bunga-tab" 
+                role="tabpanel" 
+                aria-labelledby="bunga-tab-menu">
+
+                <h1 class="nameContent">Bunga</h1>
+
+                <div class="wrapperPotonganBunga">
+
+                  <div class="nameTabs">
+                    <h3>Potongan</h3>
+
+                    <form action="" class="wrapperAction">
+                        <div class="formInput month">
+                            <label for="">Bulan</label>
+                            <select id="cars" name="cars">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="fiat">Fiat</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                        </div>
+
+                        <div class="formInput year">
+                          <label for="">Tahun</label>
+                          <select id="cars" name="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                          </select>
+                        </div>
+
+                        <div class="formInput jumlah">
+                          <label for="">Jumlah (Rp)</label>
+                          <input type="text">
+                        </div>
+
+                        <div class="formInput actionButton">
+                          <button class="btn greenButton d-flex align-items-center" type="save">
+                            <img src="../assets/img/saveIcon.svg" alt="">
+                            Simpan
+                          </button>
+                        </div>
+                    </form>
+                  </div>
+                  
+                </div>
+
+                <div class="wrapperTable">
+                  <table id="tableMasterBunga" class="table" style="width:100%">
+
+                    <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#bunga">
+                      Tambah
+                    </button>
+
+                    <div class="modal fade" id="bunga" tabindex="-1" aria-labelledby="bungaLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bungaLabel">Tambah Bunga</h5>
+                          </div>
+
+                          <div class="modal-body">
+                            <form action="">
+                                <div class="mainForm columnForm">
+                                  <div class="actionForm first">
+                                    <label for="">Kode KTM</label>
+                                    <input type="text">
+                                  </div>
+                                  <div class="actionForm first">
+                                    <label for="">Kode</label>
+                                    <input type="text">
+                                  </div>
+                                  <div class="actionForm two">
+                                    <label for="">Uraian</label>
+                                    <input type="text">
+                                  </div>
+                                </div>
+                                
+                                <div class="buttonActionForm">
+
+                                </div>
+                            </form>
+                          </div>
+
+                          <div class="modal-footer actionButton">
+                          <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
+                              Batal
+                          </button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <thead class="headTable">
+                        <tr>
+                            <th>Periode</th>
+                            <th>Pangkat</th>
+                            <th>Jumlah</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bodyTable">
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Hapus
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Hapus
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Hapus
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Hapus
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" 
+                id="potongan-tab" 
+                role="tabpanel" 
+                aria-labelledby="potongan-tab-menu">
+
+                <h1 class="nameContent">Potongan</h1>
+
+                <div class="wrapperPotonganBunga">
+
+                  <div class="nameTabs">
+                    <h3>Potongan</h3>
+
+                    <form action="" class="wrapperAction">
+                        <div class="formInput month">
+                            <label for="">Bulan</label>
+                            <select id="cars" name="cars">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="fiat">Fiat</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                        </div>
+
+                        <div class="formInput year">
+                          <label for="">Tahun</label>
+                          <select id="cars" name="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                          </select>
+                        </div>
+
+                        <div class="formInput jumlah">
+                          <label for="">Jumlah (Rp)</label>
+                          <input type="text">
+                        </div>
+
+                        <div class="formInput actionButton">
+                          <button class="btn greenButton d-flex align-items-center" type="save">
+                            <img src="../assets/img/saveIcon.svg" alt="">
+                            Simpan
+                          </button>
+                        </div>
+                    </form>
+                  </div>
+                  
+                </div>
+
+                <div class="wrapperTable">
+                  <table id="tableMasterPotongan" class="table" style="width:100%">
+
+                    <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#potongan">
+                      Tambah
+                    </button>
+
+                    <div class="modal fade" id="potongan" tabindex="-1" aria-labelledby="potonganLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="potonganLabel">Tambah Potongan</h5>
+                          </div>
+
+                          <div class="modal-body">
+                            <form action="">
+                                <div class="mainForm columnForm">
+                                  <div class="actionForm first">
+                                    <label for="">Kode KTM</label>
+                                    <input type="text">
+                                  </div>
+                                  <div class="actionForm first">
+                                    <label for="">Kode</label>
+                                    <input type="text">
+                                  </div>
+                                  <div class="actionForm two">
+                                    <label for="">Uraian</label>
+                                    <input type="text">
+                                  </div>
+                                </div>
+                                
+                                <div class="buttonActionForm">
+
+                                </div>
+                            </form>
+                          </div>
+
+                          <div class="modal-footer actionButton">
+                          <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
+                              Batal
+                          </button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <thead class="headTable">
+                        <tr>
+                            <th>Periode</th>
+                            <th>Pangkat</th>
+                            <th>Jumlah</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bodyTable">
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Hapus
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Hapus
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Hapus
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>KTM KODE</td>
+                          <td>00000</td>
+                          <td>17 April 2021</td>
+                          <td>
+                            <div class="actionButton fade show">
+                              <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                                  <img src="../assets/img/white_deleteIcon.svg" alt="">
+                                  Hapus
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                </div>
+              </div>
+
             </div>
 
           </div>
@@ -309,18 +1510,13 @@
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <!--Bootstrap Asset-->
     <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!--Chart Js-->
-    <script src="../assets/vendors/chart.js"></script>
-    <script src="../assets/js/chartjs/ui-chart.js"></script>
     <!--DataTable-->
     <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
     <!--Ion Icon-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!--Slick Js-->
-    <script src="../assets/vendors/slick/slick.min.js"></script>
     <!--dataPrajurit Js-->
-    <script src="../assets/js/dataPrajurit.js"></script>
+    <script src="../assets/js/master-eBaltab.js"></script>
 </body>
 </html>

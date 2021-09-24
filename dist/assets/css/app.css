@@ -200,6 +200,10 @@ footer p {
   background: #FF832A;
 }
 
+.actionButton .simpanBtn{
+  background: #28A745;
+}
+
 .actionButton .deleteBtn {
   background: #DC3545;
 }

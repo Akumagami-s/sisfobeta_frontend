@@ -81,7 +81,7 @@
                 <p>Dashboard</p>
               </a>
 
-              <a class="nav-link ebaltabDataPrajuritPokok active" 
+              <a class="nav-link ebaltabDataPrajuritPokok" 
                 href="dataPrajurit-eBaltab.html"
                 aria-selected="true">
 
@@ -124,7 +124,7 @@
                 <p>Pengajuan</p>
               </a>
 
-              <a class="nav-link ebaltabSprin"
+              <a class="nav-link ebaltabSprin  active"
                 href="#"
                 aria-selected="true">
 
@@ -159,122 +159,159 @@
       <div class="container-fluid">
           <div class="wrapperContent">
 
+            <!-- nav tab -->
             <div class="nav nav-tabs tabsButton" id="nav-tab" role="tablist">
               <button class="nav-link active"
-               id="index-tab-menu" 
+               id="pembayaran" 
                data-bs-toggle="tab" 
-               data-bs-target="#index-tab" 
                type="button" role="tab" 
                aria-controls="index-tab" 
-               aria-selected="true">Index</button>
+               aria-selected="true">Pembayaran</button>
 
                <button class="nav-link"
-               id="cari-tab-menu" 
+               id="list" 
                data-bs-toggle="tab" 
-               data-bs-target="#cari-tab" 
                type="button" role="tab" 
-               aria-controls="cari-tab" 
-               aria-selected="true">Cari</button>
+               aria-controls="pembayaran-tab" 
+               aria-selected="true">List</button>
+
             </div>
 
+            <!-- nav content -->
             <div class="tab-content" id="nav-tabContent">
+              <!-- pembayaran-tab -->
               <div class="tab-pane fade show active" 
-                id="index-tab" 
+                id="pembayaran-tab" 
                 role="tabpanel" 
-                aria-labelledby="index-tab-menu">
+                aria-labelledby="pembayaran-tab-menu">
 
-                <h1 class="nameContent">Data Pokok Prajurit</h1>
+                <h1 class="nameContent">Data Pembayaran</h1>
 
                 <div class="wrapperTable">
+<<<<<<< HEAD
                   <table id="tableSprin" class="table" style="width:100%">
+=======
+                  <table id="tableDataPembayaran" class="table display" style="width:100%">
+>>>>>>> 5977b91f7878b1ca80ce76e4dcc68a6e45725aae
                     <thead class="headTable">
-                        <tr>
-                            <th>
-                                <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">All
-                            </th>
-                            <th>Name</th>
-                            <th>Pangkat</th>
-                            <th>Corp</th>
-                            <th>NRP</th>
-                            <th>Kesatuan</th>
-                            <th>Jml Bulan</th>
-                            <th>Jumlah Uang</th>
-                            <th>No Rek</th>
-                            <th>keterangan</th>
-                            <th>Kode Bansus</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bodyTable">
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
+                      <tr>
+                          <th>
+                              <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">All
+                          </th>
+                          <th>No Sprin</th>
+                          <th>Nama</th>
+                          <th>Pangkat</th>
+                          <th>Corp</th>
+                          <th>NRP</th>
+                          <th>Kesatuan</th>
+                          <th>Jml Bulan</th>
+                          <th>Jumlah Uang</th>
+                          <th>No Rek</th>
+                          <th>keterangan</th>
+                          <th>Kode Bansus</th>
+                          <th>Aksi</th>
+                      </tr>
+                  </thead>
+                  <tbody class="bodyTable">
+                      <tr>
+                        <td>
+                          <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>Alfito</td>
+                        <td>Brigadir</td>
+                        <td>Angsa</td>
+                        <td>Reksa</td>
+                        <td>Anjay</td>
+                        <td>123 bulan</td>
+                        <td>Rp 1.000</td>
+                        <td>###</td>
+                        <td>ok aja</td>
+                        <td>ok aja</td>
+                        <td>ok aja</td>
+                        <td><div class="action">
+                            <button style="background-color: #7334FF; border: none; border-radius: 5px;" class="text-light py-1 px-3">Lihat</button>
+                          </div>
+                         </td>
+                      </tr>
 
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                    </tbody>
+                  </tbody>
                 </table>
                 </div>
+
+                <div class="actionButton fade show">
+                    <button class="btn simpanBtn d-flex align-items-center" type="edit">
+                        <img src="../assets/img/pay 1.svg" alt="">
+                        Sudah Dibayar 
+                    </button>
+                    <button class="btn deleteBtn d-flex align-items-center" type="delete">
+                        <img src="../assets/img/white_deleteIcon.svg" alt="">
+                        Delete
+                    </button>
+                  </div>
               </div>
 
-              <div class="tab-pane fade" 
-                id="cari-tab" 
+              <!-- list-tab -->
+              <div class="tab-pane fade show" 
+                id="list-tab" 
                 role="tabpanel" 
-                aria-labelledby="cari-tab-menu">
+                aria-labelledby="list-tab-menu">
 
-                    jadnjdudua
-                
+                <h1 class="nameContent">Cari No Sprin</h1>
+
+                <div class="searchAndImportWrapper">
+                  <input class="searchInput" type="search" placeholder="Masukan NRP">
+                  <ion-icon name="search"></ion-icon>
+                </div>
+
+                <div class="wrapperTable">
+                  <table id="tableList" class="table display" style="width:100%">
+                    <thead class="headTable">
+                      <tr>
+                          <th>
+                              <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">All
+                          </th>
+                          <th>No Sprin</th>
+                          <th>Nama</th>
+                          <th>Pangkat</th>
+                          <th>Corp</th>
+                          <th>NRP</th>
+                          <th>Kesatuan</th>
+                          <th>Jml Bulan</th>
+                          <th>Jumlah Uang</th>
+                          <th>No Rek</th>
+                          <th>keterangan</th>
+                          <th>Status</th>
+                          <th>Aksi</th>
+                      </tr>
+                  </thead>
+                  <tbody class="bodyTable">
+                      <tr>
+                        <td>
+                          <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                        </td>
+                        <td>Alfito</td>
+                        <td>Brigadir</td>
+                        <td>Angsa</td>
+                        <td>Reksa</td>
+                        <td>Anjay</td>
+                        <td>123 bulan</td>
+                        <td>Rp 1.000</td>
+                        <td>###</td>
+                        <td>ok aja</td>
+                        <td>ok aja</td>
+                        <td>ok aja</td>
+                        <td><div class="action">
+                            <button style="background-color: #7334FF; border: none; border-radius: 5px;" class="text-light py-1 px-3">Lihat</button>
+                          </div>
+                         </td>
+                      </tr>
+
+                  </tbody>
+                </table>
+                </div>
+            
               </div>
+
             </div>
 
           </div>
@@ -302,6 +339,44 @@
     <!--Slick Js-->
     <script src="../assets/vendors/slick/slick.min.js"></script>
     <!--dataPrajurit Js-->
+<<<<<<< HEAD
     <script src="../assets/js/sprin-ebaltab.js"></script>
+=======
+
+
+    <script>
+      let isInitialize = false;
+
+      $('#list').click(function(){
+       $('#pembayaran-tab').hide();
+       $('#list-tab').show();
+      if (isInitialize == false) {
+          $('#tableList').DataTable({
+                scrollX : true,
+            });
+         isInitialize = true;
+       }
+        });
+
+        $('#pembayaran').click(function(){
+          $('#list-tab').hide();
+          $('#pembayaran-tab').show();
+        });
+
+    </script>
+
+
+    <script>
+        $(document).ready( function () {
+            $('#tableDataPembayaran').DataTable({
+                scrollX : true,
+            });
+        } );
+
+        document.querySelector(".searchIcon").addEventListener("click",function(){
+            document.querySelector(".searchInput").classList.toggle("active");
+        });
+    </script>
+>>>>>>> 5977b91f7878b1ca80ce76e4dcc68a6e45725aae
 </body>
 </html>

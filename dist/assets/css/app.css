@@ -200,10 +200,6 @@ footer p {
   background: #FF832A;
 }
 
-.actionButton .simpanBtn{
-  background: #28A745;
-}
-
 .actionButton .deleteBtn {
   background: #DC3545;
 }
@@ -310,6 +306,16 @@ footer p {
 
 .wrapperMainData .wrapperData .tab-content .tab-pane .dataWrapper .fullWidth {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContent .container-fluid .wrapperContent .nav-tabs {
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContent .container-fluid .wrapperContent .nav-tabs .nav-link {
+    margin: .5rem 1rem;
+  }
 }
 
 @media screen and (min-width: 320px) {

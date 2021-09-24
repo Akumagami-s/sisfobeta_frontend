@@ -1,6 +1,11 @@
 $(document).ready( function () {
     $('#tableMasterInstitutPangkat').DataTable({
         scrollX : true,
+        "columns": [
+            { "width": "40%" },
+            { "width": "40%" },
+            { "width": "20%" },
+          ]
     });
 } );
 $(document).ready( function () {

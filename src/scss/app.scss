@@ -135,6 +135,8 @@
         } 
     }
 }
+
+
 .tabsButton {
     margin-bottom: 2rem;
 }
@@ -279,6 +281,22 @@ footer {
                     }
                     .fullWidth {
                         width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 768px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .nav-tabs {
+                    align-items: center;
+                    justify-content: center;
+
+                    .nav-link {
+                        margin: .5rem 1rem;
                     }
                 }
             }

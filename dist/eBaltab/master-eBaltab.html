@@ -8,7 +8,7 @@
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--Ebaltab Css-->
-    <link rel="stylesheet" href="../assets/css/dataPrajuriteBaltab.css">
+    <link rel="stylesheet" href="../assets/css/mastereBaltab.css">
     <!--unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--Component-->
@@ -81,7 +81,7 @@
                 <p>Dashboard</p>
               </a>
 
-              <a class="nav-link ebaltabDataPrajuritPokok active" 
+              <a class="nav-link ebaltabDataPrajuritPokok" 
                 href="dataPrajurit-eBaltab.html"
                 aria-selected="true">
 
@@ -140,7 +140,7 @@
                 <p>Sprin</p>
               </a>
 
-              <a class="nav-link ebaltabMaster"
+              <a class="nav-link ebaltabMaster active"
                 href="#"
                 aria-selected="true">
 
@@ -161,416 +161,136 @@
 
             <div class="nav nav-tabs tabsButton" id="nav-tab" role="tablist">
               <button class="nav-link active"
-               id="index-tab-menu" 
+               id="institut-tab-menu" 
                data-bs-toggle="tab" 
-               data-bs-target="#index-tab" 
+               data-bs-target="#institut-tab" 
                type="button" role="tab" 
-               aria-controls="index-tab" 
-               aria-selected="true">Index</button>
+               aria-controls="institut-tab" 
+               aria-selected="true">Institut</button>
 
                <button class="nav-link"
-               id="cari-tab-menu" 
+               id="distrik-tab-menu" 
                data-bs-toggle="tab" 
-               data-bs-target="#cari-tab" 
+               data-bs-target="#distrik-tab" 
                type="button" role="tab" 
-               aria-controls="cari-tab" 
-               aria-selected="true">Cari</button>
+               aria-controls="distrik-tab" 
+               aria-selected="true">Distrik</button>
+
+               <button class="nav-link"
+               id="lokasi-tab-menu" 
+               data-bs-toggle="tab" 
+               data-bs-target="#lokasi-tab" 
+               type="button" role="tab" 
+               aria-controls="lokasi-tab" 
+               aria-selected="true">Lokasi</button>
+
+               <button class="nav-link"
+               id="kategori-tab-menu" 
+               data-bs-toggle="tab" 
+               data-bs-target="#kategori-tab" 
+               type="button" role="tab" 
+               aria-controls="kategori-tab" 
+               aria-selected="true">Kategori</button>
+
+               <button class="nav-link"
+               id="satminkal-tab-menu" 
+               data-bs-toggle="tab" 
+               data-bs-target="#satminkal-tab" 
+               type="button" role="tab" 
+               aria-controls="satminkal-tab" 
+               aria-selected="true">Satminkal</button>
+
+               <button class="nav-link"
+               id="bunga-tab-menu" 
+               data-bs-toggle="tab" 
+               data-bs-target="#bunga-tab" 
+               type="button" role="tab" 
+               aria-controls="bunga-tab" 
+               aria-selected="true">Bunga</button>
+
+               <button class="nav-link"
+               id="potongan-tab-menu" 
+               data-bs-toggle="tab" 
+               data-bs-target="#potongan-tab" 
+               type="button" role="tab" 
+               aria-controls="potongan-tab" 
+               aria-selected="true">Potongan</button>
+
             </div>
 
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" 
-                id="index-tab" 
+                id="institut-tab" 
                 role="tabpanel" 
-                aria-labelledby="index-tab-menu">
+                aria-labelledby="institut-tab-menu">
 
                 <h1 class="nameContent">Data Pokok Prajurit</h1>
-
-                <div class="wrapperTable">
-                  <table id="tablePokokPrajurit" class="table" style="width:100%">
-                    <thead class="headTable">
-                        <tr>
-                            <th>NRP</th>
-                            <th>Name</th>
-                            <th>Pangkat</th>
-                            <th>Kesatuan</th>
-                            <th>Korp</th>
-                            <th>Pengankatan</th>
-                            <th>Tanggal</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bodyTable">
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                        <tr>
-                          <td>00000</td>
-                          <td>Alfito</td>
-                          <td>Brigadir</td>
-                          <td>Angsa</td>
-                          <td>Reksa</td>
-                          <td>Anjay</td>
-                          <td>17 April 2021</td>
-                          <td><div class="action">
-                              <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                              <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                          </div></td>
-                        </tr>
-
-                    </tbody>
-                </table>
+                
+                <div class="wrapperMainData">
+                    <div class="wrapperData">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" 
+                              id="nav-rh" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#nav-riwayathidup" 
+                              type="button" role="tab" 
+                              aria-controls="nav-riwayathidup" 
+                              aria-selected="true">
+                              RH
+                            </button>
+      
+                            <button class="nav-link" 
+                              id="nav-pangkat-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#nav-pangkat" 
+                              type="button" role="tab" 
+                              aria-controls="nav-pangkat" 
+                              aria-selected="false">
+                              Pangkat
+                            </button>
+      
+                            <button class="nav-link" 
+                              id="nav-tabungan-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#nav-tabungan" 
+                              type="button" role="tab" 
+                              aria-controls="nav-tabungan" 
+                              aria-selected="false">
+                              Tabungan
+                            </button>
+      
+                            <button class="nav-link" 
+                              id="nav-status-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#nav-status" 
+                              type="button" role="tab" 
+                              aria-controls="nav-status" 
+                              aria-selected="false">
+                              Status
+                            </button>
+      
+                            <button class="nav-link" 
+                              id="nav-pembayaran-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#nav-pembayaran" 
+                              type="button" role="tab" 
+                              aria-controls="nav-pembayaran" 
+                              aria-selected="false">
+                              Pembayaran
+                            </button>
+                            
+                          </div>
+                    </div>
                 </div>
+                
               </div>
 
               <div class="tab-pane fade" 
-                id="cari-tab" 
+                id="distrik-tab" 
                 role="tabpanel" 
-                aria-labelledby="cari-tab-menu">
+                aria-labelledby="distrik-tab-menu">
 
                 <h1 class="nameContent">Data Pokok Prajurit</h1>
-
-                <div class="searchAndImportWrapper">
-                    <input class="searchInput" type="search" placeholder="Masukan NRP">
-                    <ion-icon name="search"></ion-icon>
-                </div>
-
-                <div class="wrapperMainData">
-                    <div class="wrapperData">
-
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button class="nav-link active" 
-                        id="nav-rh" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-riwayathidup" 
-                        type="button" role="tab" 
-                        aria-controls="nav-riwayathidup" 
-                        aria-selected="true">
-                        RH
-                      </button>
-
-                      <button class="nav-link" 
-                        id="nav-pangkat-tab" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-pangkat" 
-                        type="button" role="tab" 
-                        aria-controls="nav-pangkat" 
-                        aria-selected="false">
-                        Pangkat
-                      </button>
-
-                      <button class="nav-link" 
-                        id="nav-tabungan-tab" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-tabungan" 
-                        type="button" role="tab" 
-                        aria-controls="nav-tabungan" 
-                        aria-selected="false">
-                        Tabungan
-                      </button>
-
-                      <button class="nav-link" 
-                        id="nav-status-tab" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-status" 
-                        type="button" role="tab" 
-                        aria-controls="nav-status" 
-                        aria-selected="false">
-                        Status
-                      </button>
-
-                      <button class="nav-link" 
-                        id="nav-pembayaran-tab" 
-                        data-bs-toggle="tab" 
-                        data-bs-target="#nav-pembayaran" 
-                        type="button" role="tab" 
-                        aria-controls="nav-pembayaran" 
-                        aria-selected="false">
-                        Pembayaran
-                      </button>
-                      
-                    </div>
-                    
-                    <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade show active" 
-                        id="nav-riwayathidup" 
-                        role="tabpanel" 
-                        aria-labelledby="nav-rh">
-                        
-
-                        <div class="d-flex dataWrapper">
-                            <div class="imgProfil">
-                              <img src="../assets/img/profil.png" alt="">
-                            </div>
-                            <div class="wrapperTableInfoData d-flex">
-                                <table class="table table-striped">
-                                    <tbody>
-                                      <tr>
-                                        <td>NRP</td>
-                                        <td>: <span class="value_nrp">290918</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Nama</td>
-                                        <td>: <span class="value_name">Saepul</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Tanggal Lahir</td>
-                                        <td>: <span class="value_date">19 April 1979</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Pangkat</td>
-                                        <td>: <span class="value_grade">Jendral</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Corp</td>
-                                        <td>: <span class="value_corp">TNI</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Kesatuan</td>
-                                        <td>: <span class="value_kesatuan">Kondiklatad</span></td>
-                                      </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table table-striped">
-                                  <tbody>
-                                    <tr>
-                                      <td>Kotama</td>
-                                      <td>: <span class="value_kotama">DENMABESAD</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Pengangkatan</td>
-                                      <td>: <span class="value_datePengangkatan">01 April 1999</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Pensiun</td>
-                                      <td>: <span class="value_pensiun">19 September 2021</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Tanggal Update</td>
-                                      <td>: <span class="value_tanggalUpdate">15 September 2021</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>KRP</td>
-                                      <td>: <span class="value_kpr">(04 September 2021)</span></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="tab-pane fade" 
-                        id="nav-pangkat"
-                        role="tabpanel" 
-                        aria-labelledby="nav-pangkat-tab">
-
-                          <div class="d-flex dataWrapper">
-                            <div class="wrapperTableInfoData fullWidth d-flex">
-                                <table class="table table-striped">
-                                    <tbody>
-                                      <tr>
-                                        <td>Pangkat</td>
-                                        <td>: <span class="value_tahun">Tahun</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Tamtama/PNS Gol.I</td>
-                                        <td>: <span class="value_tamtama">-</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Bintara/PNS Gol.II</td>
-                                        <td>: <span class="value_date">-</span></td>
-                                      </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table table-striped">
-                                  <tbody>
-                                    <tr>
-                                      <td>Pama/PNS Gol.III</td>
-                                      <td>: <span class="value_date">01 Februari 1990</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Pamen/PNS Gol.IV</td>
-                                      <td>: <span class="value_date">01 April 1999</span></td>
-                                    </tr>
-                                    <tr>
-                                      <td>Pati</td>
-                                      <td>: <span class="value_pati">19 September 2021</span></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                      </div>
-
-                      <div class="tab-pane fade" 
-                        id="nav-tabungan" 
-                        role="tabpanel" 
-                        aria-labelledby="nav-tabungan-tab">
-                        
-                          <div class="d-flex dataWrapper">
-                            <div class="wrapperTableInfoData fullWidth">
-                                <table class="table table-striped">
-                                  <thead>
-                                      <tr>
-                                        <td>MULYONO/28678</td>
-                                      </tr>
-                                  </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>Pama</td>
-                                        <td>: <span class="value_date">Feb’ 89 s.d Mar’ 95 </span></td>
-                                        <td>110 Bulan X <span class="bunga">4.500</span></td>
-                                        <td>Rp <span class="total">95.000</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Pamen</td>
-                                        <td>: <span class="value_date">Feb’ 89 s.d Mar’ 95 </span></td>
-                                        <td>168 Bulan X <span class="bunga">5.500</span></td>
-                                        <td>Rp <span class="total">95.000</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>(Index Rp 50.000.-)</td>
-                                        <td>: <span class="value_date">Feb’ 89 s.d Mar’ 95 </span></td>
-                                        <td>110 Bulan X<span class="bunga">4.500</span></td>
-                                        <td>Rp <span class="total">95.000</span></td>
-                                      </tr>
-                                      <tr class="totalBunga">
-                                        <td>Bunga</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Rp <span class="total">9.819.000,00</span></td>
-                                      </tr>
-                                      <tr class="totalKeseluruhan">
-                                        <td>Total</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Rp <span class="total">16.819.000,00</span></td>
-                                      </tr>
-                                    </tbody>
-                                </table>
-
-                                <div class="notice d-flex">
-                                    <p>Perhatian : Perhitungan diatas hanya meruapakan simulasi yang menggunakan sistem Perbulatan. Tingkat imbal hasil tabungan dari perhitungan simulasi tersebut bukanlah suatu jaminan, tetapi hanya merupakan indikasi berdasarkan rata-rata historis. Realisasi pengembalian tabungan tergantung pada kebijaksanaan pimpinan TNI-AD dalam penentuan pemotongan tabungan dan suku bunga.</p>
-                                </div>
-                              </div>
-                          </div>
-
-                      </div>
-
-                      <div class="tab-pane fade" 
-                        id="nav-status" 
-                        role="tabpanel" 
-                        aria-labelledby="nav-status-tab">
-                        
-                          <div class="d-flex dataWrapper">
-                            <div class="wrapperTableInfoData fullWidth">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                          <td>Status</td>
-                                          <td>: <span class="value_proses">Sedang Dalam Proses</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                              </div>
-                          </div>
-
-                      </div>
-
-                      <div class="tab-pane fade" 
-                        id="nav-pembayaran" 
-                        role="tabpanel" 
-                        aria-labelledby="nav-pembayaran-tab">
-                        
-                          <div class="d-flex dataWrapper">
-                            <div class="d-flex wrapperTableInfoData fullWidth">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                          <td>Jumlah Uang</td>
-                                          <td>: <span class="value_uang">100.000.000</span></td>
-                                        </tr>
-                                        <tr>
-                                          <td>Nama Bank</td>
-                                          <td>: <span class="value_bank">BTN</span></td>
-                                        </tr>
-                                        <tr>
-                                          <td>No Rekening</td>
-                                          <td>: <span class="value_uang">237462578</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="table table-striped">
-                                  <tbody>
-                                      <tr>
-                                        <td>Atas Nama</td>
-                                        <td>: <span class="value_prajurit">Arkan</span></td>
-                                      </tr>
-                                      <tr>
-                                        <td>Tanggal</td>
-                                        <td>: <span class="value_date">12 April 2021</span></td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                              </div>
-                          </div>
-
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="actionButton fade show">
-                      <button class="btn editBtn d-flex align-items-center" type="edit">
-                          <img src="../assets/img/white_editIcon.svg" alt="">
-                          Edit
-                      </button>
-                      <button class="btn deleteBtn d-flex align-items-center" type="delete">
-                          <img src="../assets/img/white_deleteIcon.svg" alt="">
-                          Delete
-                      </button>
-                  </div>
-                </div>
 
                 
               </div>

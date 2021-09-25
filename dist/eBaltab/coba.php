@@ -8,7 +8,7 @@
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--Ebaltab Css-->
-    <link rel="stylesheet" href="../assets/css/dataPrajuriteBaltab.css">
+    <link rel="stylesheet" href="../assets/css/rekayasaDataeBaltab.css">
     <!--unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--Component-->
@@ -94,8 +94,8 @@
                 <p>Data Pokok Prajurit</p>
               </a>
 
-              <a class="nav-link ebaltabRekayasaData"
-                href="#"
+              <a class="nav-link ebaltabRekayasaData active"
+                href="rekayasaData-eBaltab.html"
                 aria-selected="true">
 
                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@
               </a>
 
               <a class="nav-link ebaltabPengajuan"
-                href="#"
+                href="pengajuan-eBaltab.html"
 
                 aria-selected="true">
 
@@ -124,7 +124,7 @@
                 <p>Pengajuan</p>
               </a>
 
-              <a class="nav-link ebaltabSprin  active"
+              <a class="nav-link ebaltabSprin"
                 href="#"
                 aria-selected="true">
 
@@ -159,159 +159,109 @@
       <div class="container-fluid">
           <div class="wrapperContent">
 
-            <!-- nav tab -->
             <div class="nav nav-tabs tabsButton" id="nav-tab" role="tablist">
               <button class="nav-link active"
-               id="pembayaran" 
+               id="import-tab-menu" 
                data-bs-toggle="tab" 
+               data-bs-target="#import-tab" 
                type="button" role="tab" 
-               aria-controls="index-tab" 
-               aria-selected="true">Pembayaran</button>
+               aria-controls="import-tab" 
+               aria-selected="true">Import</button>
 
                <button class="nav-link"
-               id="list" 
+               id="verifikasi-tab-menu" 
                data-bs-toggle="tab" 
+               data-bs-target="#verifikasi-tab" 
                type="button" role="tab" 
-               aria-controls="pembayaran-tab" 
-               aria-selected="true">List</button>
-
+               aria-controls="verifikasi-tab" 
+               aria-selected="true">Verifikasi</button>
             </div>
 
-            <!-- nav content -->
             <div class="tab-content" id="nav-tabContent">
-              <!-- pembayaran-tab -->
               <div class="tab-pane fade show active" 
-                id="pembayaran-tab" 
+                id="import-tab" 
                 role="tabpanel" 
-                aria-labelledby="pembayaran-tab-menu">
+                aria-labelledby="import-tab-menu">
 
-                <h1 class="nameContent">Data Pembayaran</h1>
+                <h1 class="nameContent">Import CSV</h1>
+
+                <div class="searchAndImportWrapper">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <button class="btn"><ion-icon name="cloud-download-outline"></ion-icon> IMPORT</button>
+                </div>
+
+                
+
+              </div>
+
+              <div class="tab-pane fade" 
+                id="verifikasi-tab" 
+                role="tabpanel" 
+                aria-labelledby="verifikasi-tab-menu">
+
+                <h1 class="nameContent">Verifikasi Data Import</h1>
 
                 <div class="wrapperTable">
-<<<<<<< HEAD
-                  <table id="tableSprin" class="table" style="width:100%">
-=======
-                  <table id="tableDataPembayaran" class="table display" style="width:100%">
->>>>>>> 5977b91f7878b1ca80ce76e4dcc68a6e45725aae
-                    <thead class="headTable">
-                      <tr>
-                          <th>
-                              <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">All
-                          </th>
-                          <th>No Sprin</th>
-                          <th>Nama</th>
-                          <th>Pangkat</th>
-                          <th>Corp</th>
-                          <th>NRP</th>
-                          <th>Kesatuan</th>
-                          <th>Jml Bulan</th>
-                          <th>Jumlah Uang</th>
-                          <th>No Rek</th>
-                          <th>keterangan</th>
-                          <th>Kode Bansus</th>
-                          <th>Aksi</th>
-                      </tr>
-                  </thead>
-                  <tbody class="bodyTable">
-                      <tr>
-                        <td>
-                          <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                        </td>
-                        <td>Alfito</td>
-                        <td>Brigadir</td>
-                        <td>Angsa</td>
-                        <td>Reksa</td>
-                        <td>Anjay</td>
-                        <td>123 bulan</td>
-                        <td>Rp 1.000</td>
-                        <td>###</td>
-                        <td>ok aja</td>
-                        <td>ok aja</td>
-                        <td>ok aja</td>
-                        <td><div class="action">
-                            <button style="background-color: #7334FF; border: none; border-radius: 5px;" class="text-light py-1 px-3">Lihat</button>
-                          </div>
-                         </td>
-                      </tr>
-
-                  </tbody>
-                </table>
+                    <table id="tableRekayasaData" class="table" style="width:100%">
+                      <thead class="headTable">
+                          <tr>
+                              <th>All</th>
+                              <th>NRP</th>
+                              <th>Nama</th>
+                              <th>Perubahan</th>
+                              <th>Action</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <?php for ($i=0; $i < 5; $i++) { ?>
+                            <tr>
+                            <td>00000</td>
+                            <td>11907601</td>
+                            <td>Brigadir</td>
+                            <td>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <button class="accordion-button collapsed view" type="button" data-bs-toggle="collapse" data-bs-target="#pertama" aria-expanded="false" aria-controls="pertama">
+                                            <img src="../assets/img/eyesView.svg" alt="">
+                                            <p>Lihat</p>
+                                        </button>
+                                      <div id="pertama" class="accordion-collapse collapse" aria-labelledby="pertama" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <strong class="name-value-perubahan">npwp</strong>
+                                            <p>Sebelum : <span class="valueNpwpSebelum">783960412701000</span></p>
+                                            <p>Sesudah : <span class="valueNpwpSesudah">783960412701000</span></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </td>
+                            <td>
+                                <div class="actionButton">
+                                    <button class="btn editBtn d-flex align-items-center" type="edit">
+                                        <img src="../assets/img/white_editIcon.svg" alt="">
+                                        Save
+                                    </button>
+                                </div>
+                            </td>
+                          </tr>
+                              
+                          <?php } ?>
+                      </tbody>
+                  </table>
                 </div>
 
                 <div class="actionButton fade show">
-                    <button class="btn simpanBtn d-flex align-items-center" type="edit">
-                        <img src="../assets/img/pay 1.svg" alt="">
-                        Sudah Dibayar 
+                    <button class="btn greenButton d-flex align-items-center" type="save">
+                        <img src="../assets/img/saveIcon.svg" alt="">
+                        Save
                     </button>
                     <button class="btn deleteBtn d-flex align-items-center" type="delete">
                         <img src="../assets/img/white_deleteIcon.svg" alt="">
                         Delete
                     </button>
-                  </div>
-              </div>
-
-              <!-- list-tab -->
-              <div class="tab-pane fade show" 
-                id="list-tab" 
-                role="tabpanel" 
-                aria-labelledby="list-tab-menu">
-
-                <h1 class="nameContent">Cari No Sprin</h1>
-
-                <div class="searchAndImportWrapper">
-                  <input class="searchInput" type="search" placeholder="Masukan NRP">
-                  <ion-icon name="search"></ion-icon>
                 </div>
 
-                <div class="wrapperTable">
-                  <table id="tableList" class="table display" style="width:100%">
-                    <thead class="headTable">
-                      <tr>
-                          <th>
-                              <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">All
-                          </th>
-                          <th>No Sprin</th>
-                          <th>Nama</th>
-                          <th>Pangkat</th>
-                          <th>Corp</th>
-                          <th>NRP</th>
-                          <th>Kesatuan</th>
-                          <th>Jml Bulan</th>
-                          <th>Jumlah Uang</th>
-                          <th>No Rek</th>
-                          <th>keterangan</th>
-                          <th>Status</th>
-                          <th>Aksi</th>
-                      </tr>
-                  </thead>
-                  <tbody class="bodyTable">
-                      <tr>
-                        <td>
-                          <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
-                        </td>
-                        <td>Alfito</td>
-                        <td>Brigadir</td>
-                        <td>Angsa</td>
-                        <td>Reksa</td>
-                        <td>Anjay</td>
-                        <td>123 bulan</td>
-                        <td>Rp 1.000</td>
-                        <td>###</td>
-                        <td>ok aja</td>
-                        <td>ok aja</td>
-                        <td>ok aja</td>
-                        <td><div class="action">
-                            <button style="background-color: #7334FF; border: none; border-radius: 5px;" class="text-light py-1 px-3">Lihat</button>
-                          </div>
-                         </td>
-                      </tr>
-
-                  </tbody>
-                </table>
-                </div>
-            
               </div>
-
             </div>
 
           </div>
@@ -327,9 +277,6 @@
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <!--Bootstrap Asset-->
     <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!--Chart Js-->
-    <script src="../assets/vendors/chart.js"></script>
-    <script src="../assets/js/chartjs/ui-chart.js"></script>
     <!--DataTable-->
     <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
@@ -339,39 +286,6 @@
     <!--Slick Js-->
     <script src="../assets/vendors/slick/slick.min.js"></script>
     <!--dataPrajurit Js-->
-
-    <script>
-      let isInitialize = false;
-
-      $('#list').click(function(){
-       $('#pembayaran-tab').hide();
-       $('#list-tab').show();
-      if (isInitialize == false) {
-          $('#tableList').DataTable({
-                scrollX : true,
-            });
-         isInitialize = true;
-       }
-        });
-
-        $('#pembayaran').click(function(){
-          $('#list-tab').hide();
-          $('#pembayaran-tab').show();
-        });
-
-    </script>
-
-
-    <script>
-        $(document).ready( function () {
-            $('#tableDataPembayaran').DataTable({
-                scrollX : true,
-            });
-        } );
-
-        document.querySelector(".searchIcon").addEventListener("click",function(){
-            document.querySelector(".searchInput").classList.toggle("active");
-        });
-    </script>
+    <script src="../assets/js/rekayasaData.js"></script>
 </body>
 </html>

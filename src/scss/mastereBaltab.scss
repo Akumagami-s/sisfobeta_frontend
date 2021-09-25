@@ -206,6 +206,29 @@ Styling
 }
 
 
+.mainContent {
+    .container-fluid {
+        .wrapperContent {
+            .tab-content {
+                .tab-pane {
+                    .wrapperTable {
+                        table {
+                            tbody {
+                                tr {
+                                    .actionButton {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (min-width :320px) {
     .mainContent {
         .container-fluid {

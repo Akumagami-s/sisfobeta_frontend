@@ -70,21 +70,23 @@ Styling
                 transition: .5s;
 
                 .notification {
-                    position: relative;
                     .dropdown {
                         .btnNotification {
                             display: flex;
                             align-items: center;
                             border: none;
+                            position: relative;
                             background: transparent;
-                            &::after {
-                                content: '';
-                                background: red;
-                                height: 8px;
-                                width: 8px;
-                                border-radius: 50%;
+
+                            .numberNotif {
                                 position: absolute;
-                                top: 0;
+                                background: red;
+                                font-weight: 500;
+                                color: $white-color;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                             }
                         }
                         
@@ -109,28 +111,27 @@ Styling
                                         }
                                     }
                                     .wrapperMessage {
-                                        max-width: 350px;
                                         .messageName {
                                             h1 {
                                                 font-weight: 600;
                                                 font-family: 'Poppins', sans-serif;
                                                 white-space: nowrap;
-                                                overflow: hidden;
                                                 text-overflow: ellipsis;
                                             }
                                         }
                                         .messageContent {
                                             p {
                                                 font-family: 'Poppins', sans-serif;
-                                                white-space: nowrap;
-                                                overflow: hidden;
-                                                text-overflow: ellipsis;
+                                                white-space: pre-wrap;
                                                 color: #4a5157;
+                                                flex-wrap: wrap;
                                             }
                                         }
                                         
                                     }
                                     .messageTime {
+                                        display: flex;
+                                        justify-content: flex-end;
                                         span {
                                             font-size: 12px;
                                         }
@@ -292,13 +293,16 @@ Styling
                     .notification {
                         .dropdown {
                             .btnNotification {
-                                &::after {
-                                    right: 8px;
+                                .numberNotif {
+                                    right: 1px;
+                                    top: -10px;
+                                    padding: 3px 8px;
+                                    font-size: 12px;
                                 }
                             }
                             
                             .dropdown-menu {
-                                left: -160px;
+                                left: -120px;
                                 li {
                                     .dropdown-item {
                                         margin: .5rem 0;
@@ -309,11 +313,9 @@ Styling
                                             ion-icon {
                                                 margin: 0;
                                                 color: #7e97ae;
-                                                font-size: 14px;
                                             }
                                         }
                                         .wrapperMessage {
-                                            max-width: 250px;
                                             margin-bottom: .3rem;
                                             .messageName {
                                                 margin-bottom: .3rem;
@@ -347,13 +349,13 @@ Styling
                                 font-size: 12px;
                             }
                             &.active {
-                                width: 100px;
+                                width: 50px;
                             }
                         }
                     }
                     ion-icon {
                         margin: 0 .5rem;
-                        font-size: 16px;
+                        font-size: 26px;
                     }
                 }
             }
@@ -444,7 +446,6 @@ Styling
                     }
                     ion-icon {
                         margin: 0 .8rem;
-                        font-size: 18px;
                     }
                 }
             }
@@ -478,11 +479,6 @@ Styling
 
                     .notification {
                         .dropdown {
-                            .btnNotification {
-                                &::after {
-                                    right: 14px;
-                                }
-                            }
                             
                             .dropdown-menu {
                                 left: -360px;
@@ -499,7 +495,6 @@ Styling
                                             }
                                         }
                                         .wrapperMessage {
-                                            max-width: 300px;
                                             margin-bottom: 0;
                                             margin-right: .8rem;
                                             .messageName {
@@ -526,7 +521,6 @@ Styling
                     }
                     ion-icon {
                         margin: 0 .8rem;
-                        font-size: 22px;
                     }
                 }
             }
@@ -590,8 +584,11 @@ Styling
                     .notification {
                         .dropdown {
                             .btnNotification {
-                                &::after {
-                                    right: 16px;
+                                .numberNotif {
+                                    right: 5px;
+                                    top: -10px;
+                                    padding: 3px 8px;
+                                    font-size: 12px;
                                 }
                             }
                             
@@ -606,7 +603,6 @@ Styling
                                             }
                                         }
                                         .wrapperMessage {
-                                            max-width: 300px;
                                             margin-bottom: 0;
                                             margin-right: .8rem;
                                             .messageName {
@@ -680,9 +676,7 @@ Styling
                     .notification {
                         .dropdown {
                             .btnNotification {
-                                &::after {
-                                    right: 18px;
-                                }
+                                
                             }
                             
                             .dropdown-menu {
@@ -697,7 +691,6 @@ Styling
                                             }
                                         }
                                         .wrapperMessage {
-                                            max-width: 400px;
                                             margin-bottom: 0;
                                             margin-right: .8rem;
                                             .messageName {

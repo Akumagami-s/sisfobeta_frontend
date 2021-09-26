@@ -62,25 +62,23 @@ Styling
   transition: .5s;
 }
 
-#mainHeader .navbar .container-fluid .userControl .notification {
-  position: relative;
-}
-
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification {
   display: flex;
   align-items: center;
   border: none;
+  position: relative;
   background: transparent;
 }
 
-#mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
-  content: '';
-  background: red;
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification .numberNotif {
   position: absolute;
-  top: 0;
+  background: red;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
@@ -108,24 +106,23 @@ Styling
   color: #7e97ae;
 }
 
-#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
-  max-width: 350px;
-}
-
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
   font-family: 'Poppins', sans-serif;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: pre-wrap;
   color: #4a5157;
+  flex-wrap: wrap;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .messageTime {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .messageTime span {
@@ -287,11 +284,14 @@ Styling
     margin-left: 0px;
     display: none;
   }
-  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
-    right: 8px;
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification .numberNotif {
+    right: 1px;
+    top: -10px;
+    padding: 3px 8px;
+    font-size: 12px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
-    left: -160px;
+    left: -120px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
     margin: .5rem 0;
@@ -304,10 +304,8 @@ Styling
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage ion-icon {
     margin: 0;
     color: #7e97ae;
-    font-size: 14px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
-    max-width: 250px;
     margin-bottom: .3rem;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName {
@@ -329,11 +327,11 @@ Styling
     font-size: 12px;
   }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
-    width: 100px;
+    width: 50px;
   }
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 .5rem;
-    font-size: 16px;
+    font-size: 26px;
   }
   #mainHeader .mainSubmenu {
     padding-top: 1rem;
@@ -400,7 +398,6 @@ Styling
   }
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 .8rem;
-    font-size: 18px;
   }
 }
 
@@ -423,9 +420,6 @@ Styling
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
     font-size: 10px;
   }
-  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
-    right: 14px;
-  }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
     left: -360px;
   }
@@ -442,7 +436,6 @@ Styling
     font-size: 18px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
-    max-width: 300px;
     margin-bottom: 0;
     margin-right: .8rem;
   }
@@ -460,7 +453,6 @@ Styling
   }
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 .8rem;
-    font-size: 22px;
   }
   #mainHeader .mainSubmenu {
     padding-top: 3rem;
@@ -501,8 +493,11 @@ Styling
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
     font-size: 12px;
   }
-  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
-    right: 16px;
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification .numberNotif {
+    right: 5px;
+    top: -10px;
+    padding: 3px 8px;
+    font-size: 12px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
     left: -360px;
@@ -514,7 +509,6 @@ Styling
     font-size: 18px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
-    max-width: 300px;
     margin-bottom: 0;
     margin-right: .8rem;
   }
@@ -563,9 +557,6 @@ Styling
 }
 
 @media screen and (min-width: 1400px) {
-  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
-    right: 18px;
-  }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
     left: -480px;
   }
@@ -579,7 +570,6 @@ Styling
     font-size: 20px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
-    max-width: 400px;
     margin-bottom: 0;
     margin-right: .8rem;
   }

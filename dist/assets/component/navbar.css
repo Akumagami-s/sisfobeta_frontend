@@ -1,6 +1,7 @@
 /*------------
 Font
 ------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @font-face {
   font-family: steelfish;
@@ -61,6 +62,76 @@ Styling
   transition: .5s;
 }
 
+#mainHeader .navbar .container-fluid .userControl .notification {
+  position: relative;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
+  content: '';
+  background: red;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+  top: 30px;
+  padding: 1rem 0;
+  border: 0;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
+  display: flex;
+  align-items: center;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage {
+  background: #f0f7ff;
+  display: flex;
+  align-items: center;
+  padding: .5rem .5rem;
+  border-radius: 6px;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage ion-icon {
+  margin: 0;
+  color: #7e97ae;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
+  max-width: 350px;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #4a5157;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .messageTime span {
+  font-size: 12px;
+}
+
 #mainHeader .navbar .container-fluid .userControl .searchBox {
   display: flex;
   align-items: center;
@@ -97,31 +168,31 @@ Styling
   color: #fff;
 }
 
-#mainHeader .navbar .container-fluid .userControl .dropdown {
+#mainHeader .navbar .container-fluid .userControl .profil {
   margin: 0 .8rem;
 }
 
-#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle {
+#mainHeader .navbar .container-fluid .userControl .profil .dropdown-toggle {
   background: none;
   border: none;
 }
 
-#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle::after {
+#mainHeader .navbar .container-fluid .userControl .profil .dropdown-toggle::after {
   display: none;
 }
 
-#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-toggle img {
+#mainHeader .navbar .container-fluid .userControl .profil .dropdown-toggle img {
   max-width: 40px;
   border-radius: 50%;
 }
 
-#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-menu {
+#mainHeader .navbar .container-fluid .userControl .profil .dropdown-menu {
   left: -110px;
   border-radius: 8px;
   box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
 }
 
-#mainHeader .navbar .container-fluid .userControl .dropdown .dropdown-menu .dropdown-item {
+#mainHeader .navbar .container-fluid .userControl .profil .dropdown-menu .dropdown-item {
   font-size: 14px;
   font-weight: 500;
 }
@@ -215,6 +286,41 @@ Styling
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
     margin-left: 0px;
     display: none;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
+    right: 8px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+    left: -160px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
+    margin: .5rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage {
+    margin-bottom: .5rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage ion-icon {
+    margin: 0;
+    color: #7e97ae;
+    font-size: 14px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
+    max-width: 250px;
+    margin-bottom: .3rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName {
+    margin-bottom: .3rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+    font-size: 14px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .messageTime span {
+    font-size: 12px;
   }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
     font-size: 12px;
@@ -317,6 +423,41 @@ Styling
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
     font-size: 10px;
   }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
+    right: 14px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+    left: -360px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
+    margin: .8rem 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage {
+    margin-bottom: 0;
+    margin-right: .8rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage ion-icon {
+    font-size: 18px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
+    max-width: 300px;
+    margin-bottom: 0;
+    margin-right: .8rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName {
+    margin-bottom: .3rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+    font-size: 14px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .messageTime span {
+    font-size: 12px;
+  }
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 .8rem;
     font-size: 22px;
@@ -360,6 +501,32 @@ Styling
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
     font-size: 12px;
   }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
+    right: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+    left: -360px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
+    margin: .8rem 0;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage ion-icon {
+    font-size: 18px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
+    max-width: 300px;
+    margin-bottom: 0;
+    margin-right: .8rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName {
+    margin-bottom: .3rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+    font-size: 12px;
+  }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
     font-size: 16px;
   }
@@ -392,5 +559,37 @@ Styling
   }
   #mainHeader .mainSubmenu .menu .nav-link p {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification::after {
+    right: 18px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+    left: -480px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
+    margin: 1rem 0;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage {
+    margin-right: 1rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage ion-icon {
+    font-size: 20px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
+    max-width: 400px;
+    margin-bottom: 0;
+    margin-right: .8rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName {
+    margin-bottom: .3rem;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+    font-size: 18px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+    font-size: 14px;
   }
 }

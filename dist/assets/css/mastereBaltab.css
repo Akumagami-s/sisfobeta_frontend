@@ -113,7 +113,7 @@ Styling
 }
 
 .modal .modal-dialog .modal-content .actionButton {
-  margin: 0;
+  margin: .5rem;
 }
 
 .modal .modal-dialog .modal-content .modal-body .columnForm .actionForm {

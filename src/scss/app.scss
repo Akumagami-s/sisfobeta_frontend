@@ -467,3 +467,27 @@ footer {
         margin-top: 4rem;
     }
 }
+
+@media screen and (max-width :568px) {
+    .wrapperMainData {
+        .wrapperData {
+            .tab-content {
+                .tab-pane {
+                    .dataWrapper {
+                        .wrapperTableInfoData  {
+                            table {
+                                thead {
+                                    tr {
+                                        td {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

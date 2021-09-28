@@ -652,6 +652,7 @@ Styling
                 .nav-link {
                     justify-content: center;
                     flex-direction: row;
+                    margin: .8rem .8rem;
                     padding: .5rem 1.5rem;
                     width: 15.1%;
                     svg {
@@ -674,10 +675,6 @@ Styling
                 .userControl {
                     .notification {
                         .dropdown {
-                            .btnNotification {
-                                
-                            }
-                            
                             .dropdown-menu {
                                 left: -480px;
                                 li {

@@ -94,39 +94,55 @@ Styling
                         }
                     }
                 }
-                .rekapMassDebetBRI ,.rekapMassDebetBTN {
-                    background: #FFFFFF;
-                    padding: 2rem;
-                    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-                    border-radius: 15px;
-                }
                 .titleRekapDataMassdebet {
 
                 }
                 .wrapperDataMassDebet {
                     display: flex;
                     width: 100%;
+                    align-items: center;
                     .statistic {
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
+                        text-align: center;
                         width: 100%;
                         background: #FFFFFF;
                         box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
                         border-radius: 15px;
                         .wrapperIcon {
-                            width: 100%;
+                            margin-bottom: 1.5rem;
                             canvas {
                                 width: 100%;
                             }
                             img {
                                 width: 100%;
                             }
+
+                            .wrapperArrow {
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                        .label {
+                            .nameLabel {
+                                font-weight:500;
+                            }
+                            .value {
+                                font-weight: 700;
+                            }
                         }
                     }
                 }
 
+            }
+            .rekapMassDebetBRI ,.rekapMassDebetBTN {
+                background: #FFFFFF;
+                padding: 2rem;
+                box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+                border-radius: 15px;
             }
         }
     }
@@ -141,6 +157,7 @@ Styling
         .container-fluid {
             .wrapperContent {
                 .wrapperRekapData {
+                    margin-bottom: 1.5rem;
                     .wrapperContentRekapData {
                         flex-direction: column;
                         .wrapperRekapDataPerbulan {
@@ -246,24 +263,56 @@ Styling
                             }
                         }
                     }
-                    .rekapMassDebetBRI ,.rekapMassDebetBTN {
-                        padding: 1rem;
+                    
+                    .titleRekapDataMassdebet {
+                        font-size: 22px;
+                        margin-bottom: 1rem;
                     }
                     .wrapperDataMassDebet {
+                        .slick-list {
+                            width: 100%;
+                            .slick-track {
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
                         .statistic {
                             width: 100%;
-                            padding: 1rem;
+                            padding: 2rem 1rem;
+                            margin: 1rem 1rem;
                             .wrapperIcon {
-                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 canvas {
-                                    width: 100%;
+                                    max-width: 100px;
                                 }
                                 img {
-                                    width: 100%;
+                                    max-width: 130px;
+                                }
+                                .wrapperArrow {
+                                    right: 20px;
+                                    top: 20px;
+                                    img {
+                                        max-width: 15px;
+                                    }
+                                }
+                            }
+
+                            .label {
+                                width: 100%;
+                                .nameLabel {
+                                    font-size: 12px;
+                                }
+                                .value {
+                                    font-size: 16px;
                                 }
                             }
                         }
                     }
+                }
+                .rekapMassDebetBRI ,.rekapMassDebetBTN {
+                    padding: 1rem;
                 }
             }
         }
@@ -409,6 +458,28 @@ Styling
                             }
                         }
                     }
+                    .wrapperDataMassDebet {
+                        .statistic {
+                            min-height: 300px;
+                            .wrapperIcon {
+                                canvas {
+                                    max-width: 150px;
+                                }
+                                img {
+                                    max-width: 180px;
+                                }
+                            }
+
+                            .label {
+                                .nameLabel {
+                                    font-size: 12px;
+                                }
+                                .value {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -475,6 +546,28 @@ Styling
                                             max-width:130px;
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+
+                    .wrapperDataMassDebet {
+                        .statistic {
+                            .wrapperIcon {
+                                canvas {
+                                    max-width: 180px;
+                                }
+                                img {
+                                    max-width: 200px;
+                                }
+                            }
+
+                            .label {
+                                .nameLabel {
+                                    font-size: 16px;
+                                }
+                                .value {
+                                    font-size: 18px;
                                 }
                             }
                         }

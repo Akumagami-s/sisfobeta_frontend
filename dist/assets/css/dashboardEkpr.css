@@ -87,23 +87,19 @@ Styling
   position: absolute;
 }
 
-.mainContent .container-fluid .wrapperContent .wrapperRekapData .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .wrapperRekapData .rekapMassDebetBTN {
-  background: #FFFFFF;
-  padding: 2rem;
-  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-}
-
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
@@ -111,7 +107,7 @@ Styling
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon {
-  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
@@ -122,11 +118,34 @@ Styling
   width: 100%;
 }
 
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon .wrapperArrow {
+  position: absolute;
+  right: 0;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .nameLabel {
+  font-weight: 500;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
+  font-weight: 700;
+}
+
+.mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
+  background: #FFFFFF;
+  padding: 2rem;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
 .wrapperChart {
   display: flex;
 }
 
 @media screen and (min-width: 0px) {
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData {
+    margin-bottom: 1.5rem;
+  }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
     flex-direction: column;
   }
@@ -219,21 +238,51 @@ Styling
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow img {
     max-width: 10px;
   }
-  .mainContent .container-fluid .wrapperContent .wrapperRekapData .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .wrapperRekapData .rekapMassDebetBTN {
-    padding: 1rem;
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .titleRekapDataMassdebet {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .slick-list {
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .slick-list .slick-track {
+    display: flex;
+    align-items: center;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    margin: 1rem 1rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
-    width: 100%;
+    max-width: 100px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+    max-width: 130px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon .wrapperArrow {
+    right: 20px;
+    top: 20px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label {
     width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .nameLabel {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
+    padding: 1rem;
   }
 }
 
@@ -329,6 +378,21 @@ Styling
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
     max-width: 200px;
   }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
+    min-height: 300px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
+    max-width: 150px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .nameLabel {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -378,6 +442,18 @@ Styling
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
     max-width: 130px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .nameLabel {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
+    font-size: 18px;
   }
 }
 

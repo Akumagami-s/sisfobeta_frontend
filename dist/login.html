@@ -7,10 +7,12 @@
     <title>Login | SISFOBETA</title>
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!--Dashboard Css-->
     <link rel="stylesheet" href="./assets/css/login.css">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
 </head>
 <body>
 
@@ -59,7 +61,8 @@
                             <div class="icon-control">
                                 <img src="./assets/img/key.svg" alt="">
                             </div>
-                            <input class="form-control password" type="password" placeholder="Masukan password anda">
+                            <input class="form-control password" type="password" placeholder="Masukan password anda" id="password">
+                            <i class="bi bi-eye-slash eyesPassword" id="togglePassword"></i>
                         </div>
                         <div class="confirmation-user d-flex align-items-center justify-content-between">
                             <div class="form-check">
@@ -97,5 +100,19 @@
     <!--Chart Js-->
     <script src="../assets/vendors/chartjs/Chart.js"></script>
     <script src="../assets/js/chartjs/ui-chart.js"></script>
+
+    <script>
+
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        
+        togglePassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+
+            this.classList.toggle('bi-eye');
+        });
+    </script>
 </body>
 </html>

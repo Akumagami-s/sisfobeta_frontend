@@ -168,6 +168,15 @@ Style
 
             .mainAuth {
                 form {
+                    .passwordInput {
+                        position: relative;
+                        .eyesPassword {
+                            position: absolute;
+                            right: 20px;
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                    }
                     .inputSection {
                         position: relative;
                         margin: 8px 0;
@@ -189,7 +198,7 @@ Style
                         }
                         .form-control {
                             width: 100%;
-                            padding: .85rem 1rem .85rem 3rem;
+                            padding: .8rem 3rem .85rem 3rem;
                             border: 2px solid #8E8E8E;
                             border-radius: 8px;
                         }
@@ -283,6 +292,13 @@ Style
 
                 .mainAuth {
                     form {
+                        .passwordInput {
+                            .eyesPassword {
+                                top: 45px;
+                                font-size: 18px;
+                                cursor: pointer;
+                            }
+                        }
                         .inputSection {
                             label {
                                 font-size: 14px;
@@ -362,6 +378,12 @@ Style
 
                 .mainAuth {
                     form {
+                        .passwordInput {
+                            .eyesPassword {
+                                top: 45px;
+                                font-size: 18px;
+                            }
+                        }
                         .inputSection {
                             label {
                                 font-size: 14px;
@@ -450,6 +472,11 @@ Style
 
                 .mainAuth {
                     form {
+                        .passwordInput {
+                            .eyesPassword {
+                                font-size: 20px;
+                            }
+                        }
                         .inputSection {
                             label {
                                 font-size: 16px;

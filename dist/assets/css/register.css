@@ -176,10 +176,31 @@ Style
   font-family: 'Poppins', sans-serif;
 }
 
+.authRegister .wrapperAuth .rightContent .mainAuth form .passwordInput, .authRegister .wrapperAuth .rightContent .mainAuth form .confirmPassword {
+  position: relative;
+}
+
 .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection {
   position: relative;
   margin: 8px 0;
   font-family: 'Poppins', sans-serif;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .inputName {
+  text-transform: uppercase;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .inputName::placeholder {
+  text-transform: none;
+}
+
+.authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .eyesPassword {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  font-size: 20px;
+  top: 12px;
+  cursor: pointer;
 }
 
 .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .icon-control {
@@ -282,7 +303,7 @@ Style
   }
   .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
     font-size: 14px;
-    padding: .85rem 1rem .85rem 2.5rem;
+    padding: .85rem 3rem .85rem 2.5rem;
   }
   .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .custom-select select {
     padding: .85rem 1rem .85rem 2.5rem;

@@ -176,10 +176,29 @@ Style
                 }
                 form {
                     font-family: 'Poppins', sans-serif;
+                    .passwordInput, .confirmPassword {
+                        position: relative;
+                    }
                     .inputSection {
                         position: relative;
                         margin: 8px 0;
                         font-family: 'Poppins', sans-serif;
+
+                        .inputName {
+                            text-transform: uppercase;
+
+                            &::placeholder {
+                                text-transform: none;
+                            }
+                        }
+                        .eyesPassword {
+                            position: absolute;
+                            z-index: 10;
+                            right: 20px;
+                            font-size: 20px;
+                            top: 12px;
+                            cursor: pointer;
+                        }
                         .icon-control {
                             position: absolute;
                             top: 50%;
@@ -288,7 +307,7 @@ Style
                             }
                             .form-control {
                                 font-size: 14px;
-                                padding: .85rem 1rem .85rem 2.5rem;
+                                padding: .85rem 3rem .85rem 2.5rem;
                             }
                             .custom-select {
                                 select {

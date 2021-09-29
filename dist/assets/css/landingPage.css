@@ -1,0 +1,328 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+.header{
+    background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+}
+
+.header .navbar h1{
+    font-size: 42px;
+}
+
+.header .navbar p{
+    font-size: 12px;
+}
+
+.header .title{
+    margin-top: 6rem;
+}
+
+.header .title h1{
+    font-size: 43px;
+}
+
+.header .title .account{
+    margin-top: 4rem;
+}
+
+.header .title .account .btn-login{
+    width: 150px;
+    height: 45px;
+    background-color: white;
+}
+
+.header .title .account .btn-regis{
+    width: 150px;
+    height: 45px;
+    background-color: #3D563D;
+}
+
+.header .title .mockup{
+    width: 100%;
+    height: 60%;
+}
+
+.wave{
+    width: 100%;
+    position: relative;
+    margin-top: -170px;
+}
+
+.news .news-title{
+    border-left: 7px solid #3D563D;
+}
+
+.news .news-title h2{
+    margin-left: 0.5rem;
+}
+
+.news .baner img{
+    width: 100%;
+}
+
+.fitur .fitur-title{
+    border-left: 7px solid #3D563D;
+}
+
+.fitur .fitur-title h2{
+    margin-left: 0.5rem;
+}
+
+.fitur .icon{
+    width: 60px;
+    height: 45px;
+    background-color: #7334FF;
+    border-radius: 15%;
+}
+
+.fitur .icon img{
+    width: 55px;
+    height: 25px;
+}
+
+.fitur .mockup2{
+    width: 100%;
+    height: 100%;
+}
+
+.about .about-title{
+    border-left: 7px solid #3D563D;
+}
+
+.about .about-title h2{
+    margin-left: 0.5rem;
+}
+
+.ditkuad{
+    width: 140px;
+    height: 140px;
+}
+
+.btn{
+    width: 390px;
+    height: 210px;
+}
+
+.footer{
+    background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+}
+
+.sosmed{
+    width: 35px;
+    height: 35px;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .header .navbar h1{
+        font-size: 28px;
+    }
+
+    .header .navbar p{
+        font-size: 8px;
+    }
+
+    .header .navbar-nav a{
+        font-size: 13px;
+    }
+
+    .header .title{
+        margin-top: 3rem;
+    }
+
+    .header .title h1{
+        font-size: 29px;
+    }
+
+    .header .title .account{
+        margin-top: 2rem;
+    }
+
+    .header .title .account .btn-login{
+        width: 120px;
+        height: 40px;
+        background-color: white;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 120px;
+        height: 40px;
+        background-color: #3D563D;
+    }
+
+    .header .title .mockup{
+        width: 100%;
+        height: 60%;
+        margin-top: 2rem;
+    }
+
+    .wave{
+        width: 100%;
+        position: relative;
+        margin-top: -50px;
+    }
+
+    .fitur .mockup2{
+        display: none;
+    }
+
+    .ditkuad{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .btn{
+        width: 200px;
+        height: 110px;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .wave{
+        width: 100%;
+        position: relative;
+        margin-top: -60px;
+    }
+
+    .header .title .mockup{
+        width: 100%;
+        height: 60%;
+        margin-top: 2rem;
+    }
+
+    .mockup3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .wave{
+        width: 100%;
+        position: relative;
+        margin-top: -60px;
+    }
+
+    .header .navbar h1{
+        font-size: 28px;
+    }
+
+    .header .navbar p{
+        font-size: 8px;
+    }
+
+    .header .navbar-nav a{
+        font-size: 13px;
+    }
+
+    .header .title{
+        margin-top: 3rem;
+    }
+
+    .header .title h1{
+        font-size: 29px;
+    }
+
+    .header .title .account{
+        margin-top: 2rem;
+    }
+
+    .header .title .account .btn-login{
+        width: 120px;
+        height: 40px;
+        background-color: white;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 120px;
+        height: 40px;
+        background-color: #3D563D;
+    }
+
+    .mockup3{
+        display: none;
+    }
+
+    .ditkuad{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .btn{
+        width: 220px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .wave{
+        width: 100%;
+        position: relative;
+        margin-top: -60px;
+    }
+
+    .header .navbar h1{
+        font-size: 28px;
+    }
+
+    .header .navbar p{
+        font-size: 8px;
+    }
+
+    .header .navbar-nav a{
+        font-size: 13px;
+    }
+
+    .header .title{
+        margin-top: 3rem;
+    }
+
+    .header .title h1{
+        font-size: 29px;
+    }
+
+    .header .title .account{
+        margin-top: 2rem;
+    }
+
+    .header .title .account .btn-login{
+        width: 120px;
+        height: 40px;
+        background-color: white;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 120px;
+        height: 40px;
+        background-color: #3D563D;
+    }
+
+    .mockup3{
+        display: none;
+    }
+}

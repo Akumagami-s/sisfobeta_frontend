@@ -68,6 +68,14 @@ Resset Css
                         font-family: 'Poppins', sans-serif;
                     }
 
+                    .eyeIconPassword {
+                        position: absolute;
+                        right: 10px;
+                        cursor: pointer;
+                        font-size: 20px;
+                        color: #3E563E;
+                    }
+
                     .eyeIcon {
                         position: absolute;
                         right: 10px;
@@ -146,6 +154,11 @@ Resset Css
     
                 .actionMain {
                     padding: 1rem 1rem 2rem 1rem;
+                    form {
+                        .eyeIconPassword {
+                            bottom: 188px;
+                        }
+                    }
                     .nameApps {
                         font-size: 46px;
                         letter-spacing: 5px;
@@ -193,6 +206,11 @@ Resset Css
                 }
     
                 .actionMain {
+                    form {
+                        .eyeIconPassword {
+                            bottom: 193px;
+                        }
+                    }
                     .nameApps {
                         font-family: steelfish;
                         font-size: 56px;

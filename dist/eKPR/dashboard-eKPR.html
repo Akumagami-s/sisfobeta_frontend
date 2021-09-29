@@ -370,10 +370,92 @@
 
             <div class="wrapperRekapData rekapMassDebetBRI">
               <h1 class="titleRekapDataMassdebet">Rekap Data MassDebet BRI & Manual</h1>
+                <div class="wrapperDataMassDebet">
+                    <div class="statistic">
+                      <div class="wrapperChart wrapperIcon">
+                        <canvas id="chartMassDebetBRITunggakan"></canvas>
+                        <div class="wrapperArrow">
+                          <img src="../assets/img/arrowChart.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="label">
+                        <h1 class="nameLabel">Total Tunggakan (IDR)</h1>
+                        <p class="value">Rp 308.260.458.101</p>
+                     </div>
+                    </div>
+
+                    <div class="statistic">
+                      <div class="wrapperChart wrapperIcon">
+                        <img src="../assets/img/debiturLogo.svg" alt="">
+                        <div class="wrapperArrow">
+                          <img src="../assets/img/arrowChart.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="label">
+                        <h1 class="nameLabel">Total Debitur</h1>
+                        <p class="value">Rp 308.260.458.101</p>
+                     </div>
+                    </div>
+
+                    <div class="statistic">
+                      <div class="wrapperChart wrapperIcon">
+                        <canvas id="chartMassDebetBRIPinjaman"></canvas>
+                        <div class="wrapperArrow">
+                          <img src="../assets/img/arrowChart.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="label">
+                        <h1 class="nameLabel">Total Pinjaman (IDR)</h1>
+                        <p class="value">Rp308.260.458.101</p>
+                     </div>
+                    </div>
+                </div>
             </div>
 
             <div class="wrapperRekapData rekapMassDebetBTN">
+              <h1 class="titleRekapDataMassdebet">Rekap Data MassDebet BTN</h1>
+              <div class="wrapperDataMassDebet">
+                  <div class="statistic">
+                    <div class="wrapperChart wrapperIcon">
+                      <canvas id="totalTunggakan"></canvas>
+                      <div class="wrapperArrow">
+                        <img src="../assets/img/arrowChart.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="label">
+                      <h1 class="nameLabel">Total Tunggakan (IDR)</h1>
+                      <p class="value">Rp 308.260.458.101</p>
+                   </div>
+                  </div>
+
+                  <div class="statistic">
+                    <div class="wrapperChart wrapperIcon">
+                      <img src="../assets/img/debiturLogo.svg" alt="">
+                      <div class="wrapperArrow">
+                        <img src="../assets/img/arrowChart.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="label">
+                      <h1 class="nameLabel">Total Debitur</h1>
+                      <p class="value">Rp 308.260.458.101</p>
+                   </div>
+                  </div>
+
+                  <div class="statistic">
+                    <div class="wrapperChart wrapperIcon">
+                      <canvas id="totalTunggakan"></canvas>
+                      <div class="wrapperArrow">
+                        <img src="../assets/img/arrowChart.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="label">
+                      <h1 class="nameLabel">Total Pinjaman (IDR)</h1>
+                      <p class="value">Rp308.260.458.101</p>
+                   </div>
+                  </div>
+              </div>
             </div>
+
           </div>
       </div>
       </div>
@@ -568,6 +650,79 @@
     var chartDebiturOutstanding = new Chart(
     document.getElementById('chartDebiturOutstanding'),
     configDebiturOutstanding
+    );
+
+
+
+
+
+    const rekapDataMassDebetBRITunggakan = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#FF832A','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configDataMassDebetBRITunggakan = {
+    type: 'doughnut',
+    data: rekapDataMassDebetBRITunggakan,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartMassDebetTunggakan = new Chart(
+    document.getElementById('chartMassDebetBRITunggakan'),
+    configDataMassDebetBRITunggakan
+    );
+
+
+
+
+
+
+
+
+    const rekapDataMassDebetBRIPinjaman = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#A2A846','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configDataMassDebetBRIPinjaman = {
+    type: 'doughnut',
+    data: rekapDataMassDebetBRIPinjaman,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartMassDebetPinjaman = new Chart(
+    document.getElementById('chartMassDebetBRIPinjaman'),
+    configDataMassDebetBRIPinjaman
     );
     </script>
 </body>

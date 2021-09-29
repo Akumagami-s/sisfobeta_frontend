@@ -26,9 +26,12 @@
                     <form action="" class="d-flex flex-column" style="width: 100%;">
                         <p class="labelRequest">Masukan Email Anda</p>
                         <input type="email" autocomplete="off">
-                        <p class="labelRequest">Konfirmasi Password Baru</p>
+                        <p class="labelRequest">Password Baru</p>
                         <input type="password" id="password" autocomplete="off">
-                        <ion-icon class="eyeIcon" name="eye-sharp" id="togglePassword"></ion-icon>
+                        <ion-icon class="eyeIconPassword" name="eye-sharp" id="togglePassword"></ion-icon>
+                        <p class="labelRequest">Konfirmasi Password Baru</p>
+                        <input type="password" id="ConfirmasiPassword" autocomplete="off">
+                        <ion-icon class="eyeIcon" name="eye-sharp" id="toggleConfirmPassword"></ion-icon>
                         <button class="btn-forget" type="submit">Kirim</button>
                     </form>
                 </div>
@@ -51,13 +54,21 @@
 <script>
 
 const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#password');
+        const password = document.querySelector('#password');
+        const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+        const confirmPassword = document.querySelector('#ConfirmasiPassword');
+        
+        togglePassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+        });
 
-togglePassword.addEventListener('click', function (e) {
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-});
+        toggleConfirmPassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPassword.setAttribute('type', type);
+        });
 </script>
 
 </body>

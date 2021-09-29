@@ -87,6 +87,41 @@ Styling
   position: absolute;
 }
 
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .wrapperRekapData .rekapMassDebetBTN {
+  background: #FFFFFF;
+  padding: 2rem;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet {
+  display: flex;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+  width: 100%;
+}
+
 .wrapperChart {
   display: flex;
 }
@@ -183,6 +218,22 @@ Styling
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow img {
     max-width: 10px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .wrapperRekapData .rekapMassDebetBTN {
+    padding: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
+    width: 100%;
+    padding: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon {
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+    width: 100%;
   }
 }
 

@@ -32,5 +32,460 @@ $fontsize-card-valueNumber : 28px;
 /*------------
 Styling
 ------------*/
+.mainContent {
+    .container-fluid {
+        .wrapperContent {
+            .wrapperRekapData {
+                .wrapperContentRekapData {
+                    display: flex;
+                    align-items: center;
+                    .wrapperRekapDataPerbulan {
+                        background: #FFFFFF;
+                        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+                        border-radius: 15px;
+                        width: 100%;
+                        .headerData {
+                            margin-bottom: 2rem;
+                        }
+
+                        .contentData {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .wrapperChart {
+                                canvas {
+                                    width: 100%;
+                                    max-width: 250px;
+                                }
+                            }
+
+                            .wrapperInfoChart {
+                                position: relative;
+                                .label {
+                                    .nameLabel {
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .containerDebitur {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .wrapperDebitur {
+                            display: flex;
+                            .debitur {
+                                box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                                border-radius: 16px;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                width: 100%;
+                                .wrapperChart {
+                                    canvas {
+                                        width: 100%;
+                                    }
+                                }
+                                .wrapperArrow {
+                                    position: absolute;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wrapperChart {
+    display: flex;
+}
+
+@media screen and (min-width : 0px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperRekapData {
+                    .wrapperContentRekapData {
+                        flex-direction: column;
+                        .wrapperRekapDataPerbulan {
+                            padding: 2rem 1rem;
+                            margin-bottom:1rem;
+                            .headerData {
+                                font-size: 18px;
+                            }
+    
+                            .contentData {
+                                flex-direction: column;
+                                .wrapperChart {
+                                    margin-bottom: 1.5rem;
+                                    canvas {
+                                        max-width: 200px;
+                                    }
+                                }
+    
+                                .wrapperInfoChart {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 100%;
+                                    align-items: flex-start;
+                                    .label {
+                                        margin-left: 1rem;
+                                        &:not(:last-child) {
+                                            margin-bottom: 1rem;
+                                        }
+                                        .nameLabel {
+                                            font-size: 16px;
+                                            margin-bottom: .5rem;
+                                        }
+                                        .value {
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                        }
+
+                                        &::before {
+                                            content: '';
+                                            display: inline-block;
+                                            height: 10px;
+                                            position: absolute;
+                                            width: 10px;
+                                            left: 0;
+                                            border-radius: 50%;
+                                            transform: translate(-50%,100%);
+                                        }
+                                    }
+
+                                    .totalPokok {
+                                        &::before {
+                                            background: #FF832A;
+                                        }
+                                    }
+
+                                    .totalBunga {
+                                        &::before {
+                                            background: #7334FF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .containerDebitur {
+                            .wrapperDebitur {
+                                .debitur {
+                                    padding: 1rem .8rem;
+                                    margin: .5rem 0;
+                                    flex-direction: column-reverse;
+                                    &:not(:last-child) {
+                                        margin-right: 1rem;
+                                    }
+                                    .contentDebitur {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        width: 100%;
+                                        .labelName {
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                        }
+                                        .value {
+                                            font-size: 12px;
+                                        }
+                                        .month {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    .wrapperChart {
+                                        margin-bottom: 1rem;
+                                        canvas {
+                                            max-width: 150px;
+                                        }
+                                    }
+                                    .wrapperArrow {
+                                        right: 10px;
+                                        top: 10px;
+                                        img {
+                                            max-width: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width :576px ) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperRekapData {
+                    .wrapperContentRekapData {
+                        .wrapperRekapDataPerbulan {
+                            padding: 2rem;
+                            .contentData {
+                                .wrapperInfoChart {
+                                    .label {
+                                        .nameLabel {
+                                            font-size: 18px;
+                                        }
+                                        .value {
+                                            font-size: 14px;
+                                        }
+                                        &::before {
+                                            height: 15px;
+                                            width: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .containerDebitur {
+                            .wrapperDebitur {
+                                .debitur {
+                                    padding: 1.5rem;
+                                    .contentDebitur {
+                                        .labelName {
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                        }
+                                        .value {
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            margin-bottom: .5rem;
+                                        }
+                                        .month {
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    .wrapperChart {
+                                        margin-bottom: 1rem;
+                                        canvas {
+                                            max-width: 150px;
+                                        }
+                                    }
+                                    .wrapperArrow {
+                                        right: 20px;
+                                        top: 10px;
+                                        img {
+                                            max-width: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width : 1024px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperRekapData {
+                    .wrapperContentRekapData {
+                        flex-direction: row;
+                        .wrapperRekapDataPerbulan {
+                            margin-bottom: 0;
+                            margin-right: 1.5rem;
+                            .contentData {
+                                flex-direction: row;
+                                justify-content: space-between;
+                                .wrapperChart {
+                                    margin-bottom: 0;
+                                    canvas {
+                                        max-width: 200px;
+                                    }
+                                }
+                                .wrapperInfoChart {
+                                    width: 40%;
+                                }
+                            }
+                        }
+                        .containerDebitur {
+                            .wrapperDebitur {
+                                .debitur {
+                                    .wrapperChart {
+                                        margin-bottom: 1rem;
+                                        canvas {
+                                            max-width: 100px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width :1200px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperRekapData {
+                    .wrapperContentRekapData {
+                        flex-direction: row;
+                        .containerDebitur {
+                            .wrapperDebitur {
+                                .debitur {
+                                    flex-direction: row;
+                                    align-items: center;
+                                    .contentDebitur {
+                                        width: 70%;
+                                    }
+                                    .wrapperChart {
+                                        width: 30%;
+                                        margin-bottom: 0rem;
+                                        canvas {
+                                            max-width:200px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 1400px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperRekapData {
+                    .wrapperContentRekapData {
+                        flex-direction: row;
+                        .wrapperRekapDataPerbulan {
+                            margin-bottom: 0;
+                            margin-right: 1.5rem;
+                            padding: 3rem;
+                            .headerData {
+                                font-size: 26px;
+                            }
+                            .contentData {
+                                flex-direction: row;
+                                justify-content: space-between;
+                                .wrapperChart {
+                                    margin-bottom: 0;
+                                    canvas {
+                                        max-width: 250px;
+                                    }
+                                }
+
+                                .wrapperInfoChart {
+                                    width: 40%;
+                                    .label {
+                                        &:not(:last-child) {
+                                            margin-bottom: 2rem;
+                                        }
+                                        .nameLabel {
+                                            font-size: 24px;
+                                        }
+                                        .value {
+                                            font-size: 16px;
+                                        }
+                                        &::before {
+                                            height: 15px;
+                                            width: 15px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+
+                        .containerDebitur {
+                            .wrapperDebitur {
+                                .debitur {
+                                    .contentDebitur {
+                                        width: 60%;
+                                    }
+                                    .wrapperChart {
+                                        width: 40%;
+                                        margin-bottom: 0rem;
+                                        canvas {
+                                            max-width:130px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width :1800px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContent {
+                .wrapperRekapData {
+                    .wrapperContentRekapData {
+                        .wrapperRekapDataPerbulan {
+                            .headerData {
+                                font-size: 26px;
+                            }
+                            .contentData {
+                                .wrapperInfoChart {
+                                    .label {
+                                        .nameLabel {
+                                            font-size: 24px;
+                                        }
+                                        .value {
+                                            font-size: 16px;
+                                        }
+                                        &::before {
+                                            height: 15px;
+                                            width: 15px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+
+                        .containerDebitur {
+                            .wrapperDebitur {
+                                .debitur {
+                                    .contentDebitur {
+                                        .labelName {
+                                            font-size: 18px;
+                                        }
+                                        .value {
+                                            font-size: 16px;
+                                        }
+                                        .month {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 

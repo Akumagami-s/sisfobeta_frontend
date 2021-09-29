@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebaltab | Menu</title>
+    <title>eKPR | Dashboard</title>
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--Ebaltab Css-->
-    <link rel="stylesheet" href="../assets/css/dashboardEbaltab.css">
+    <link rel="stylesheet" href="../assets/css/dashboardEkpr.css">
     <!--unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--Component-->
@@ -286,43 +286,104 @@
             <h1 class="titleHeaderContent">Dashboard eKPR</h1>
 
             <div class="wrapperRekapData">
-                <div class="wrapperRekapDataPerbulan">
+                <div class="wrapperContentRekapData">
+                  <div class="wrapperRekapDataPerbulan">
                     <h1 class="headerData">Rekap Data Perbulan</h1>
+
                     <div class="contentData">
                         <div class="wrapperChart">
                           <canvas id="chartRekapData"></canvas>
                         </div>
+
+                        <div class="wrapperInfoChart">
+                            <div class="label totalPokok">
+                                <h1 class="nameLabel">Total Pokok (IDR)</h1>
+                                <p class="value">Rp 308.260.458.101</p>
+                            </div>
+                            <div class="label totalBunga">
+                              <h1 class="nameLabel">Total Bunga (IDR)</h1>
+                              <p class="value">Rp 251.059.910.964</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="containerDebitu">
+                  </div>
+                <div class="containerDebitur">
                     <div class="wrapperDebitur">
                         <div class="debitur debiturBaru">
-
+                            <div class="contentDebitur">
+                                <h3 class="labelName">Debitur Baru</h3>
+                                <h1 class="value">Rp 308.260.458.101</h1>
+                                <p class="month">Agustus 2021</p>
+                            </div>
+                            <div class="wrapperChart">
+                              <canvas id="chartDebiturBaru"></canvas>
+                              <div class="wrapperArrow">
+                                  <img src="../assets/img/arrowChart.svg" alt="">
+                              </div>
+                            </div>
                         </div>
                         <div class="debitur debiturLunas">
-
+                          <div class="contentDebitur">
+                            <h3 class="labelName">Debitur Baru</h3>
+                            <h1 class="value">Rp 308.260.458.101</h1>
+                            <p class="month">Agustus 2021</p>
+                          </div>
+                          <div class="wrapperChart">
+                            <canvas id="chartDebiturLunas"></canvas>
+                            <div class="wrapperArrow">
+                                <img src="../assets/img/arrowChart.svg" alt="">
+                            </div>
+                          </div>
                         </div>
+
                     </div>
                     <div class="wrapperDebitur">
                       <div class="debitur debiturMeninggal">
-                            
+                        <div class="contentDebitur">
+                          <h3 class="labelName">Debitur Meninggal</h3>
+                          <h1 class="value">Rp 308.260.458.101</h1>
+                          <p class="month">Agustus 2021</p>
+                        </div>
+                        <div class="wrapperChart">
+                          <canvas id="chartDebiturMeninggal"></canvas>
+                          <div class="wrapperArrow">
+                              <img src="../assets/img/arrowChart.svg" alt="">
+                          </div>
+                        </div>
                       </div>
                       <div class="debitur debiturOutstanding">
-
+                        <div class="contentDebitur">
+                          <h3 class="labelName">Debitur Outstanding</h3>
+                          <h1 class="value">Rp 308.260.458.101</h1>
+                          <p class="month">Agustus 2021</p>
+                        </div>
+                        <div class="wrapperChart">
+                          <canvas id="chartDebiturOutstanding"></canvas>
+                          <div class="wrapperArrow">
+                              <img src="../assets/img/arrowChart.svg" alt="">
+                          </div>
                       </div>
                     </div>
                 </div>
+                </div>
             </div>
+
             <div class="wrapperRekapData rekapMassDebetBRI">
+              <h1 class="titleRekapDataMassdebet">Rekap Data MassDebet BRI & Manual</h1>z
             </div>
+
             <div class="wrapperRekapData rekapMassDebetBTN">
             </div>
           </div>
       </div>
+      </div>
     </div>
+
     <footer>
       <p>Copyright 2021 © DITKUAD</p>
     </footer>
+
+   
 
 
     <!--jQuery-->
@@ -339,5 +400,175 @@
     <script src="../assets/vendors/slick/slick.min.js"></script>
     <!--Ekpr Js-->
     <script src="../assets/js/dashboard-ekpr.js"></script>
+
+    <script>
+      
+    const rekapDataKPR = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#7334FF','#FF832A'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configRekapDataKPR = {
+    type: 'doughnut',
+    data: rekapDataKPR,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var rekapDataKPRChart = new Chart(
+    document.getElementById('chartRekapData'),
+    configRekapDataKPR
+    );
+
+
+
+    const dataDebiturBaru = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#7334FF','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configDebiturBaru = {
+    type: 'doughnut',
+    data: dataDebiturBaru,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartDebiturBaru = new Chart(
+    document.getElementById('chartDebiturBaru'),
+    configDebiturBaru
+    );
+
+
+
+    const dataDebiturLunas = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [15,85],
+      backgroundColor: [
+        '#DC3545','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configDebiturLunas = {
+    type: 'doughnut',
+    data: dataDebiturLunas,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartDebiturLunas = new Chart(
+    document.getElementById('chartDebiturLunas'),
+    configDebiturLunas
+    );
+
+
+
+
+
+    const dataDebiturMeninggal = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#FF832A','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configDebiturMeninggal = {
+    type: 'doughnut',
+    data: dataDebiturMeninggal,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartDebiturMeninggal = new Chart(
+    document.getElementById('chartDebiturMeninggal'),
+    configDebiturMeninggal
+    );
+
+
+
+
+
+    const dataDebiturOutstanding = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [15,85],
+      backgroundColor: [
+        '#A2A846','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configDebiturOutstanding = {
+    type: 'doughnut',
+    data: dataDebiturOutstanding,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartDebiturOutstanding = new Chart(
+    document.getElementById('chartDebiturOutstanding'),
+    configDebiturOutstanding
+    );
+    </script>
 </body>
 </html>

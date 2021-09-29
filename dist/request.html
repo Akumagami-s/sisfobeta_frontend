@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request New Email And Password</title>
+    <!--Bootstrap Asset-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <!--Forget Password Style-->
+    <link rel="stylesheet" href="./assets/css/request.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+
+    <section class="wrapperRequest">
+        <div class="container">
+
+            <div class="wrapperMain">
+                <div class="iconSection">
+                    <img src="./assets/img/forget.svg" alt="" class="iconEmail">
+                    <img src="./assets/img/wafeVerived.svg" alt="" class="wave">
+                </div>
+                <div class="actionMain">
+                    <form action="" class="d-flex flex-column" style="width: 100%;">
+                        <p class="labelRequest">Masukan Email Anda</p>
+                        <input type="text">
+                        <p class="labelRequest">Konfirmasi Password Baru</p>
+                        <input type="password" id="password">
+                        <ion-icon class="eyeIcon" name="eye-sharp" id="togglePassword"></ion-icon>
+                        <button class="btn-forget" type="submit">Kirim</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+<!--jQuery-->
+<script src="./assets/vendors/jquery/jquery.min.js"></script>
+<!--Bootstrap Asset-->
+<script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Ion Icon-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+});
+</script>
+
+</body>
+</html>

@@ -17,6 +17,9 @@
     <!--slick Css-->
     <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
+
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
 </head>
 <body>
     <div id="mainHeader">
@@ -408,6 +411,110 @@
                      </div>
                     </div>
                 </div>
+
+                <div class="wrapperRekapPenerimaan">
+                    <h1 class="nameContentSection">Rekap Penerimaan</h1>
+
+                    <div class="wrapperStatistic">
+                        <div class="statisticPenerimaan">
+                            <div class="label">
+                                <h1 class="nameLabel">Total Pokok (IDR)</h1>
+                                <p class="value"><span class="mataUang">Rp</span> 308.260.458.101</p>
+                            </div>
+                            <div class="wrapperChart wrapperIcon">
+                              <canvas id="chartPenerimaanTotalPokokBRI"></canvas>
+                              <div class="wrapperArrow">
+                                <img src="../assets/img/arrowChart.svg" alt="">
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="statisticPenerimaan">
+                          <div class="label">
+                              <h1 class="nameLabel">Total Bunga (IDR)</h1>
+                              <p class="value"><span class="mataUang">Rp</span> 308.260.458.101</p>
+                          </div>
+                          <div class="wrapperChart wrapperIcon">
+                            <canvas id="chartPenerimaanTotalBungaBRI"></canvas>
+                            <div class="wrapperArrow">
+                              <img src="../assets/img/arrowChart.svg" alt="">
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="wrapperRekapPiutang">
+                  <h1 class="nameContentSection">Rekap Piutang</h1>
+
+                  <div class="wrapperStatistic">
+                    <div class="statisticPiutang">
+                        <div class="label">
+                            <h1 class="nameLabel">Total Pokok (IDR)</h1>
+                            <p class="value"><span class="mataUang">Rp</span> 308.260.458.101</p>
+                        </div>
+                        <div class="wrapperChart wrapperIcon">
+                          <canvas id="chartPiutangTotalPokokBRI"></canvas>
+                          <div class="wrapperArrow">
+                            <img src="../assets/img/arrowChart.svg" alt="">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="statisticPiutang">
+                      <div class="label">
+                          <h1 class="nameLabel">Total Bunga (IDR)</h1>
+                          <p class="value"><span class="mataUang">Rp</span> 308.260.458.101</p>
+                      </div>
+                      <div class="wrapperChart wrapperIcon">
+                        <canvas id="chartPiutangTotalBungaBRI"></canvas>
+                        <div class="wrapperArrow">
+                          <img src="../assets/img/arrowChart.svg" alt="">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="wrapperDetailData">
+                  <h1 class="nameContentSection">Detail Data</h1>
+                  <div class="wrapperTable">
+                    <table id="detailDataBRI" class="display table" style="width:100%">
+                      <thead class="headTable">
+                          <tr>
+                              <th>Jangka Waktu</th>
+                              <th>Saldo Pokok</th>
+                              <th>Saldo Bunga</th>
+                              <th>Piutang Pokok</th>
+                              <th>Piutang Bunga</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                              <td>12</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                          </tr>
+                          <tr>
+                              <td>12</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                          </tr>
+                          <tr>
+                              <td>12</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                              <td>Rp.230.215.700</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
             </div>
 
             <div class="wrapperRekapData rekapMassDebetBTN">
@@ -415,7 +522,7 @@
               <div class="wrapperDataMassDebet">
                   <div class="statistic">
                     <div class="wrapperChart wrapperIcon">
-                      <canvas id="totalTunggakan"></canvas>
+                      <canvas id="chartMassDebetBTNTunggakan"></canvas>
                       <div class="wrapperArrow">
                         <img src="../assets/img/arrowChart.svg" alt="">
                       </div>
@@ -441,7 +548,7 @@
 
                   <div class="statistic">
                     <div class="wrapperChart wrapperIcon">
-                      <canvas id="totalTunggakan"></canvas>
+                      <canvas id="chartMassDebetBTNPinjaman"></canvas>
                       <div class="wrapperArrow">
                         <img src="../assets/img/arrowChart.svg" alt="">
                       </div>
@@ -451,6 +558,110 @@
                       <p class="value">Rp308.260.458.101</p>
                    </div>
                   </div>
+              </div>
+
+                <div class="wrapperRekapPenerimaan">
+                  <h1 class="nameContentSection">Rekap Penerimaan</h1>
+
+                  <div class="wrapperStatistic">
+                      <div class="statisticPenerimaan">
+                          <div class="label">
+                              <h1 class="nameLabel">Total Pokok (IDR)</h1>
+                              <p class="value"><span class="mataUang">Rp</span> 308.260.458.101</p>
+                          </div>
+                          <div class="wrapperChart wrapperIcon">
+                            <canvas id="chartPenerimaanTotalPokokBTN"></canvas>
+                            <div class="wrapperArrow">
+                              <img src="../assets/img/arrowChart.svg" alt="">
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="statisticPenerimaan">
+                        <div class="label">
+                            <h1 class="nameLabel">Total Bunga (IDR)</h1>
+                            <p class="value"><span class="mataUang">Rp</span> 308.260.458.101</p>
+                        </div>
+                        <div class="wrapperChart wrapperIcon">
+                          <canvas id="chartPenerimaanTotalBungaBTN"></canvas>
+                          <div class="wrapperArrow">
+                            <img src="../assets/img/arrowChart.svg" alt="">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="wrapperRekapPiutang">
+                <h1 class="nameContentSection">Rekap Piutang</h1>
+
+                <div class="wrapperStatistic">
+                  <div class="statisticPiutang">
+                      <div class="label">
+                          <h1 class="nameLabel">Total Pokok (IDR)</h1>
+                          <p class="value"><span class="mataUang">Rp</span> 308.260.458.101</p>
+                      </div>
+                      <div class="wrapperChart wrapperIcon">
+                        <canvas id="chartPiutangTotalPokokBTN"></canvas>
+                        <div class="wrapperArrow">
+                          <img src="../assets/img/arrowChart.svg" alt="">
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="statisticPiutang">
+                    <div class="label">
+                        <h1 class="nameLabel">Total Bunga (IDR)</h1>
+                        <p class="value"><span class="mataUang">Rp</span> 308.260.458.101</p>
+                    </div>
+                    <div class="wrapperChart wrapperIcon">
+                      <canvas id="chartPiutangTotalBungaBTN"></canvas>
+                      <div class="wrapperArrow">
+                        <img src="../assets/img/arrowChart.svg" alt="">
+                      </div>
+                    </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="wrapperDetailData">
+                <h1 class="nameContentSection">Detail Data</h1>
+                <div class="wrapperTable">
+                  <table id="detailDataBTN" class="display table" style="width:100%">
+                    <thead class="headTable">
+                        <tr>
+                            <th>Jangka Waktu</th>
+                            <th>Saldo Pokok</th>
+                            <th>Saldo Bunga</th>
+                            <th>Piutang Pokok</th>
+                            <th>Piutang Bunga</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bodyTable">
+                        <tr>
+                            <td>12</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                            <td>Rp.230.215.700</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
               </div>
             </div>
 
@@ -473,6 +684,9 @@
     <!--Chart Js-->
     <script src="../assets/vendors/chart.js"></script>
     <script src="../assets/js/chartjs/ui-chart.js"></script>
+    <!--DataTable-->
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
     <!--Ion Icon-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -686,12 +900,6 @@
     );
 
 
-
-
-
-
-
-
     const rekapDataMassDebetBRIPinjaman = {
     labels: [
       'Value',
@@ -721,6 +929,373 @@
     var chartMassDebetPinjaman = new Chart(
     document.getElementById('chartMassDebetBRIPinjaman'),
     configDataMassDebetBRIPinjaman
+    );
+
+
+    const rekapDataMassDebetBTNTunggakan = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#FF832A','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configDataMassDebetBTNTunggakan = {
+    type: 'doughnut',
+    data: rekapDataMassDebetBTNTunggakan,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartMassDebetBTNTunggakan = new Chart(
+    document.getElementById('chartMassDebetBTNTunggakan'),
+    configDataMassDebetBTNTunggakan
+    );
+
+
+    const rekapDataMassDebetBTNPinjaman = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#A2A846','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configDataMassDebetBTNPinjaman = {
+    type: 'doughnut',
+    data: rekapDataMassDebetBTNPinjaman,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartMassDebetBTNPinjaman = new Chart(
+    document.getElementById('chartMassDebetBTNPinjaman'),
+    configDataMassDebetBTNPinjaman
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Penerimaan Rekap
+    const dataPenerimaanTotalPokokBRI = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#7334FF','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configPenerimaanTotalPokokBRI = {
+    type: 'doughnut',
+    data: dataPenerimaanTotalPokokBRI,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartPenerimaanTotalPokokBRI = new Chart(
+    document.getElementById('chartPenerimaanTotalPokokBRI'),
+    configPenerimaanTotalPokokBRI
+    );
+
+
+    const dataPenerimaanTotalPokokBTN = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#7334FF','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configPenerimaanTotalPokokBTN = {
+    type: 'doughnut',
+    data: dataPenerimaanTotalPokokBTN,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartPenerimaanTotalPokokBTN = new Chart(
+    document.getElementById('chartPenerimaanTotalPokokBTN'),
+    configPenerimaanTotalPokokBTN
+    );
+
+
+
+
+    const dataPenerimaanTotalBungaBRI = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#DC3545','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configPenerimaanTotalBungaBRI = {
+    type: 'doughnut',
+    data: dataPenerimaanTotalBungaBRI,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartPenerimaanTotalBungaBRI = new Chart(
+    document.getElementById('chartPenerimaanTotalBungaBRI'),
+    configPenerimaanTotalBungaBRI
+    );
+
+    const dataPenerimaanTotalBungaBTN = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#DC3545','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configPenerimaanTotalBungaBTN = {
+    type: 'doughnut',
+    data: dataPenerimaanTotalBungaBTN,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartPenerimaanTotalBungaBTN = new Chart(
+    document.getElementById('chartPenerimaanTotalBungaBTN'),
+    configPenerimaanTotalBungaBTN
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Piutang Rekap
+    const dataPiutangTotalPokokBRI = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#7334FF','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configPiutangTotalPokokBRI = {
+    type: 'doughnut',
+    data: dataPiutangTotalPokokBRI,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartPiutangTotalPokokBRI = new Chart(
+    document.getElementById('chartPiutangTotalPokokBRI'),
+    configPiutangTotalPokokBRI
+    );
+
+
+    const dataPiutangTotalPokokBTN = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#7334FF','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configPiutangTotalPokokBTN = {
+    type: 'doughnut',
+    data: dataPiutangTotalPokokBTN,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartPiutangTotalPokokBTN = new Chart(
+    document.getElementById('chartPiutangTotalPokokBTN'),
+    configPiutangTotalPokokBTN
+    );
+
+
+    
+
+
+
+
+    const dataPiutangTotalBungaBRI = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#DC3545','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configPiutangTotalBungaBRI = {
+    type: 'doughnut',
+    data: dataPiutangTotalBungaBRI,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartPiutangTotalBungaBRI = new Chart(
+    document.getElementById('chartPiutangTotalBungaBRI'),
+    configPiutangTotalBungaBRI
+    );
+
+
+    const dataPiutangTotalBungaBTN = {
+    labels: [
+      'Value',
+      'apa'
+    ],
+    datasets: [{
+      label: 'uhuy',
+      data: [85,15],
+      backgroundColor: [
+        '#DC3545','#eee'
+      ],
+      hoverOffset: 4
+    }]
+    };
+
+    const configPiutangTotalBungaBTN = {
+    type: 'doughnut',
+    data: dataPiutangTotalBungaBTN,
+    options : {
+      plugins : {
+        legend: {
+          display: false
+        },
+      }
+    }
+    };
+    var chartPiutangTotalBungaBTN = new Chart(
+    document.getElementById('chartPiutangTotalBungaBTN'),
+    configPiutangTotalBungaBTN
     );
     </script>
 </body>

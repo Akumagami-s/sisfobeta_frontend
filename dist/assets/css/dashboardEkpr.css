@@ -131,6 +131,35 @@ Styling
   font-weight: 700;
 }
 
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow {
+  position: absolute;
+  right: 0;
+}
+
 .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
   background: #FFFFFF;
   padding: 2rem;
@@ -243,6 +272,7 @@ Styling
     margin-bottom: 1rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .slick-list {
+    padding: 0;
     width: 100%;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .slick-list .slick-track {
@@ -260,10 +290,10 @@ Styling
     justify-content: center;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
-    max-width: 100px;
+    max-width: 90px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
-    max-width: 130px;
+    max-width: 100px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon .wrapperArrow {
     right: 20px;
@@ -281,8 +311,61 @@ Styling
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
     font-size: 16px;
   }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang {
+    margin: 1rem 0;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+    margin: 1rem;
+    padding: 2rem 1rem;
+    max-height: 150px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label {
+    margin-right: 1rem;
+    width: 50%;
+    font-weight: 700;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .nameLabel {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
+    font-size: 12px;
+    display: flex;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+    width: 100%;
+    max-width: 70px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow {
+    right: 15px;
+    top: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img {
+    max-width: 10px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDetailData .nameContentSection {
+    margin-bottom: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDetailData .wrapperTable table .headTable {
+    background: #7334FF;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDetailData .wrapperTable table .headTable tr th:first-child {
+    border-radius: 6px 0 0px 6px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDetailData .wrapperTable table .headTable tr th:last-child {
+    border-radius: 0px 6px 6px 0px;
+  }
   .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
-    padding: 1rem;
+    padding: 2rem 1rem;
+  }
+  .nameContentSection {
+    font-size: 16px;
   }
 }
 
@@ -329,6 +412,27 @@ Styling
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow img {
     max-width: 10px;
   }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .slick-list, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .slick-list {
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+    max-height: 180px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .nameLabel {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart {
+    width: 50%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+    max-width: 120px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img {
+    max-width: 10px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -357,6 +461,9 @@ Styling
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
     max-width: 100px;
+  }
+  .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
+    padding: 2rem;
   }
 }
 
@@ -455,6 +562,28 @@ Styling
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
     font-size: 18px;
   }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+    padding: 2rem 3rem;
+    max-height: 300px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .nameLabel {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
+    padding: 3rem;
+  }
+  .nameContentSection {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 1800px) {
@@ -479,5 +608,24 @@ Styling
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .month {
     font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+    padding: 2rem 3rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .nameLabel {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
+    font-size: 22px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow {
+    top: 20px;
+    right: 20px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img {
+    max-width: 15px;
   }
 }

@@ -137,6 +137,37 @@ Styling
                     }
                 }
 
+                .wrapperRekapPenerimaan,.wrapperRekapPiutang {
+                    width: 100%;
+                    .nameContentSection {
+                    }
+                    .wrapperStatistic {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        .statisticPenerimaan, .statisticPiutang {
+                            display: flex;
+                            position: relative;
+                            align-items: center;
+                            width: 100%;
+                            background: #FFFFFF;
+                            box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                            border-radius: 15px;
+                            .label {
+                            }
+                            .wrapperChart {
+                                canvas {
+                                    width: 100%;
+                                }
+                                .wrapperArrow {
+                                    position: absolute;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
             .rekapMassDebetBRI ,.rekapMassDebetBTN {
                 background: #FFFFFF;
@@ -270,11 +301,14 @@ Styling
                     }
                     .wrapperDataMassDebet {
                         .slick-list {
+                            padding: 0;
                             width: 100%;
                             .slick-track {
                                 display: flex;
                                 align-items: center;
                             }
+                        }
+                        .draggable {
                         }
                         .statistic {
                             width: 100%;
@@ -285,10 +319,10 @@ Styling
                                 align-items: center;
                                 justify-content: center;
                                 canvas {
-                                    max-width: 100px;
+                                    max-width: 90px;
                                 }
                                 img {
-                                    max-width: 130px;
+                                    max-width: 100px;
                                 }
                                 .wrapperArrow {
                                     right: 20px;
@@ -310,12 +344,78 @@ Styling
                             }
                         }
                     }
+                    .wrapperRekapPenerimaan,.wrapperRekapPiutang {
+                        margin: 1rem 0;
+                        .wrapperStatistic {
+                            .statisticPenerimaan, .statisticPiutang {
+                                margin: 1rem;
+                                padding: 2rem 1rem;
+                                max-height: 150px;
+                                .label {
+                                    margin-right: 1rem;
+                                    width: 50%;
+                                    .nameLabel {
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                    }
+                                    .value {
+                                        font-size: 12px;
+                                        display: flex;
+                                    }
+                                    font-weight: 700;
+                                }
+                                .wrapperChart {
+                                    width: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    canvas {
+                                        width: 100%;
+                                        max-width: 70px;
+                                    }
+                                    .wrapperArrow {
+                                        right: 15px;
+                                        top: 15px;
+                                        img {
+                                            max-width: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperDetailData {
+                        .nameContentSection {
+                            margin-bottom: 2rem;
+                        }
+                        .wrapperTable {
+                            table {
+                                .headTable {
+                                    background: #7334FF;
+                                    tr {
+                                        th {
+                                            &:first-child {
+                                                border-radius: 6px 0 0px 6px;
+                                            }
+                                            &:last-child {
+                                                border-radius: 0px 6px 6px 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 .rekapMassDebetBRI ,.rekapMassDebetBTN {
-                    padding: 1rem;
+                    padding: 2rem 1rem;
                 }
             }
         }
+    }
+
+    .nameContentSection {
+        font-size: 16px;
     }
 }
 
@@ -381,11 +481,43 @@ Styling
                             }
                         }
                     }
+                    .wrapperRekapPenerimaan,.wrapperRekapPiutang {
+                        .nameContentSection {
+                        }
+                        .wrapperStatistic {
+                            .slick-list {
+                                width: 100%;
+                            }
+                            .statisticPenerimaan, .statisticPiutang {
+                                max-height: 180px;
+                                .label {
+                                    .nameLabel {
+                                        font-size: 14px;
+                                    }
+                                    .value {
+                                        font-size: 16px;
+                                    }
+                                }
+                                .wrapperChart {
+                                    width: 50%;
+                                    canvas {
+                                        max-width: 120px;
+                                    }
+                                    .wrapperArrow {
+                                        img {
+                                            max-width: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
+
 
 
 
@@ -427,6 +559,10 @@ Styling
                             }
                         }
                     }
+                }
+
+                .rekapMassDebetBRI ,.rekapMassDebetBTN {
+                    padding: 2rem;
                 }
             }
         }
@@ -572,9 +708,44 @@ Styling
                             }
                         }
                     }
+
+                    .wrapperRekapPenerimaan,.wrapperRekapPiutang {
+                        
+                        .wrapperStatistic {
+                            .statisticPenerimaan, .statisticPiutang {
+                                padding: 2rem 3rem;
+                                max-height: 300px;
+                                .label {
+                                    .nameLabel {
+                                        font-size: 16px;
+                                    }
+                                    .value {
+                                        font-size: 18px;
+                                    }
+                                }
+                                .wrapperChart {
+                                    canvas {
+                                        max-width: 180px;
+                                    }
+                                    .wrapperArrow {
+                                        img {
+                                            max-width: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .rekapMassDebetBRI ,.rekapMassDebetBTN {
+                    padding: 3rem;
                 }
             }
         }
+    }
+    .nameContentSection {
+        font-size: 22px;
     }
 }
 
@@ -620,6 +791,36 @@ Styling
                                         }
                                         .month {
                                             font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .wrapperRekapPenerimaan,.wrapperRekapPiutang {
+                        .nameContentSection {
+                        }
+                        .wrapperStatistic {
+                            .statisticPenerimaan, .statisticPiutang {
+                                padding: 2rem 3rem;
+                                .label {
+                                    .nameLabel {
+                                        font-size: 18px;
+                                    }
+                                    .value {
+                                        font-size: 22px;
+                                    }
+                                }
+                                .wrapperChart {
+                                    canvas {
+                                        max-width: 200px;
+                                    }
+                                    .wrapperArrow {
+                                        top: 20px;
+                                        right: 20px;
+                                        img {
+                                            max-width: 15px;
                                         }
                                     }
                                 }

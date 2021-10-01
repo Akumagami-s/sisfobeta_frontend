@@ -15,45 +15,51 @@
     <!--Header-->
     <div class="header">
         <!--Nav-->
-        <nav class="container navbar navbar-light bg-transparent">
+        <nav class="container navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container-fluid">
-            <a class="navbar-brand d-flex flex-row"><img src="assets/img/tni_logo.png" alt="">
+            <a class="navbar-brand d-flex flex-row"><img src="assets/img/tni_logo.png" class="tni-logo">
                 <div class="brand-title d-flex flex-column justify-content-center align-items-center text-white">
-                    <h1>SISFOBETA 4.0</h1>
-                    <p>SISTEM INFORMASI BENDAHARA TWP AD ONLINE</p>
+                    <h1 class="nav-h1">SISFOBETA 4.0</h1>
+                    <p class="nav-p">SISTEM INFORMASI BENDAHARA TWP AD ONLINE</p>
                 </div>
             </a>
-            <div class="d-flex">
-                <div class="navbar-nav d-flex flex-row">
-                    <a class="nav-link active me-4 text-white" aria-current="page" href="#">Home</a>
-                    <a class="nav-link me-4 text-white" href="#">Produk</a>
-                    <a class="nav-link me-4 text-white" href="#">Tentang Kami</a>
-                    <a class="nav-link text-white" href="#">Hubungi Kami</a>
-                </div>
+            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-2 collapse-width" id="navbarColor01">
+                <ul class="navbar-nav ms-auto flex-row">
+                    <a class="nav-link active me-4 text-white text-center" aria-current="page" href="#">Home
+                    <span class="visually-hidden">(current)</span>
+                    </a>
+                    <a class="nav-link me-4  text-white text-center" href="#">Produk</a>
+                    <a class="nav-link me-4  text-white text-center" href="#">Tentang Kami</a>
+                    <a class="nav-link text-white text-center" href="#">Hubungi Kami</a>
+
+                </ul>
             </div>
             </div>
         </nav>
         <!--Nav End-->
 
         <!--Header Content-->
-        <div class="container">
+        <div class="container ">
             <div class="container title">
                 <div class="row">
                   <div class="col-12 col-md-6">
-                    <h1 class="w-75 text-white">
+                    <h1 class="w-75 text-white header-title">
                         Selamat Datang Di SISFOBETA Direktorat Keuangan TNI Angkatan Darat
                     </h1>
                     <div class="account">
-                        <p class="text-white fs-5">Belum Punya Akun?</p><br>
+                        <p class="text-white account-title">Belum Punya Akun?</p><br>
                         <div>
-                        <button type="button" class="btn btn-login fs-5 me-2">Masuk</button>
-                        <button type="button" class="btn btn-regis fs-5 text-white">Daftar</button>
+                        <button type="button" class="btn btn-login me-2">Masuk</button>
+                        <button type="button" class="btn btn-regis text-white">Daftar</button>
                         </div>
                     </div>
                   </div>
                   <div class="col w-100 d-flex flex-column align-items-center">
                     <img src="assets/img/mockup.svg" class="mockup"><br>
-                    <img src="assets/img/id_badge_web_generic 1.svg">
+                    <img src="assets/img/id_badge_web_generic 1.svg" class="playstore">
                   </div>
                 </div>
             </div>
@@ -71,106 +77,79 @@
         <div class="news-title">
             <h2>Berita</h2>
         </div>
-        <div class="row news-content mt-4">
-            <div class="col-12 col-md-4 mb-3 mt-mb-0">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+        <div class="news-card d-flex bd-highlight mt-3">
+            <div class="bd-highlight card" style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-3 mt-mb-0">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+            <div class="bd-highlight card mx-1 mx-md-3" style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 ">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+            <div class="bd-highlight card " style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
         </div>
 
-        <div class="row news-content mt-4">
-            <div class="col-12 col-md-4 mb-3 mt-mb-0">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+        <div class="news-card d-flex bd-highlight mt-3">
+            <div class="bd-highlight card" style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-3 mt-mb-0">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+            <div class="bd-highlight card mx-1 mx-md-3" style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-3 mt-mb-0">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+            <div class="bd-highlight card " style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
         </div>
 
-        <div class="baner mt-4">
+        <div class="baner mt-3">
             <img src="assets/img/Permata_Mutiara_Maja-web 1.svg" alt="">
         </div>
 
-        <h3 class="mt-5">HEADLINE</h3>
-        <div class="row news-content mt-1">
-            <div class="col-12 col-md-4 mb-3 mt-mb-0">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+        <h3 class="mt-4 news-headline">HEADLINE</h3>
+        <div class="news-card d-flex bd-highlight mt-2">
+            <div class="bd-highlight card" style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-3 mt-mb-0">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+            <div class="bd-highlight card mx-1 mx-md-3" style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-3 mt-mb-0">
-                <div class="card shadow bg-body" style="width: 26
-                rem;">
-                    <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="" class="text-black text-decoration-none">Terkait Program TWP AD, Jenderal Andika Minta ...</a>
-                      <p class="text-success mt-5">11 September 2021</p>
-                    </div>
+            <div class="bd-highlight card " style="width: 26rem;">
+                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
+                <div class="card-body p-1 p-md-4">
+                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
+                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
                 </div>
             </div>
         </div>
@@ -181,10 +160,10 @@
     <!--Content Fitur-->
     <div class="container fitur mt-5">
         <div class="fitur-title d-flex">
-            <h2>Fitur</h2><p class="ms-1 fs-3">SISFOBETA</p>
+            <h2>Fitur</h2><p class="ms-1">SISFOBETA</p>
         </div>
         <div class="row mt-4">
-            <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center">
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center fitur-card">
               <div class="d-flex ">
                 <div class="icon icon-kpr d-flex justify-content-center align-items-center">
                     <img src="assets/img/icon-kpr.svg" class="">
@@ -207,7 +186,7 @@
             <div class="col-12 col-md-4">
               <img src="assets/img/mockup2.svg" class="mockup2">
             </div>
-            <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center mt-5 mt-md-0">
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center mt-5 mt-md-0 fitur-card">
                 <div class="d-flex">
                   <div class="icon icon-twp d-flex justify-content-center align-items-center">
                       <img src="assets/img/icon-twp.svg" class="">
@@ -232,36 +211,30 @@
     <!--Content Fitur End-->
 
     <!--Content Service-->
-   <div class="container py-5">
-        <div class="row">
-            <div class="col d-flex align-items-center justify-content-center">
-                <div class="card" style="width: 18rem; height: 16rem;">
-                    <div class="d-flex justify-content-center align-items-center pt-4">
-                        <img src="assets/img/icon-lokasi.svg" alt="">
-                    </div>
-                    <div class="card-body">
-                    <p class="card-text mt-3 text-center ">Dimanapun dan kapanpun dapat di akses setiap saat</p>
-                    </div>
+    <div class="container service py-3">
+        <div class="service-card d-flex bd-highlight mt-3 d-flex align-items-center justify-content-center gap-1 gap-md-3">
+            <div class="bd-highlight card" style="width: 16rem;">
+                <div class="d-flex justify-content-center align-items-center pt-4">
+                    <img src="assets/img/icon-lokasi.svg" class="img-service">
+                </div>
+                <div class="card-body py-2 py-md-5">
+                <h6 class="service-text text-center pb-3">Dimanapun dan kapanpun dapat di akses setiap saat</h6>
                 </div>
             </div>
-            <div class="col d-flex align-items-center justify-content-center">
-                <div class="card" style="width: 18rem; height: 16rem;">
-                    <div class="d-flex justify-content-center align-items-center pt-4">
-                        <img src="assets/img/icon-app.svg" alt="">
-                    </div>
-                    <div class="card-body">
-                    <p class="card-text mt-3 text-center">Satu aplikasi untuk semua mudah dan cepat</p>
-                    </div>
+            <div class="bd-highlight card my-3" style="width: 16rem;">
+                <div class="d-flex justify-content-center align-items-center pt-4">
+                    <img src="assets/img/icon-app.svg" class="img-service">
+                </div>
+                <div class="card-body py-2 py-md-5">
+                <h6 class="service-text text-center pb-3">Dimanapun dan kapanpun dapat di akses setiap saat</h6>
                 </div>
             </div>
-            <div class="col d-flex align-items-center justify-content-center">
-                <div class="card" style="width: 18rem; height: 16rem;">
-                    <div class="d-flex justify-content-center align-items-center pt-4">
-                        <img src="assets/img/icon-service.svg" alt="">
-                    </div>
-                    <div class="card-body">
-                    <p class="card-text mt-3 text-center">24 jam layanan pelanggan</p>
-                    </div>
+            <div class="bd-highlight card" style="width: 16rem;">
+                <div class="d-flex justify-content-center align-items-center pt-4">
+                    <img src="assets/img/icon-service.svg" class="img-service">
+                </div>
+                <div class="card-body py-2 py-md-5">
+                <h6 class="service-text text-center pb-3">Dimanapun dan kapanpun dapat di akses setiap saat</h6>
                 </div>
             </div>
         </div>
@@ -269,14 +242,14 @@
     <!--Content Service End-->
 
     <!--Content About-->
-    <div class="container about mt-5">
+    <div class="container about">
         <div class="about-title d-flex">
-            <h2>Tentang</h2><p class="ms-1 fs-3">Kami</p>
+            <h2>Tentang</h2><p class="ms-1">Kami</p>
         </div>
-        <div class="mt-4">
+        <div class="mt-2">
             <div class="d-flex flex-wrap justify-content-between">
-                <div class="" style="width: 700px;">
-                    <p class="fs-5"><b>SISFOBETA</b> merupakan suatu aplikasi yg memudahkan setiap prajurit di seluruh penjuru Indonesia dalam mengakses baltab, iuran twp dan pengajuan serta transaksi KPR.</p>
+                <div style="width: 700px;">
+                    <p class="about-text"><b>SISFOBETA</b> merupakan suatu aplikasi yg memudahkan setiap prajurit di seluruh penjuru Indonesia dalam mengakses baltab, iuran twp dan pengajuan serta transaksi KPR.</p>
                 </div>
                 <div class="" style="width: 300px;">
                     <img src="assets/img/mockup3.svg" class="w-100 h-75 mockup3">
@@ -287,11 +260,11 @@
     <!--Content About End-->
 
     <!--Content Sponsor-->
-    <div class="container mt-5">
-        <h2 class="text-center">Di Dukung Oleh</h2>
+    <div class="container mt-5 sponsor">
+        <h2 class="text-center sponsor-text">Di Dukung Oleh</h2>
         <div class="d-flex mt-3 align-items-center justify-content-center">
             <img src="assets/img/ditkuad-removebg-preview.svg" class="ditkuad">
-            <img src="assets/img/Bank BTN.png" class="btn">
+            <img src="assets/img/Bank BTN.png" class="logo-btn">
         </div>
     </div>
     <!--Content Sponsor End-->
@@ -301,10 +274,10 @@
         <div class="container">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="navbar-nav d-flex flex-row mt-4">
-                    <a class="nav-link active me-4 text-white" aria-current="page" href="#">Home</a>
-                    <a class="nav-link me-4 text-white" href="#">Produk</a>
-                    <a class="nav-link me-4 text-white" href="#">Tentang Kami</a>
-                    <a class="nav-link text-white" href="#">Hubungi Kami</a>
+                    <a class="nav-link active me-4 text-white" aria-current="page" href="#">Tentang</a>
+                    <a class="nav-link me-4 text-white" href="#">Contact</a>
+                    <a class="nav-link me-4 text-white" href="#">Syarat & Ketentuan</a>
+                    <a class="nav-link text-white" href="#">Kebijakan Pribadi</a>
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center">
@@ -326,6 +299,7 @@
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <!--Bootstrap Asset-->
     <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <!--Slick Js-->
     <script src="../assets/vendors/slick/slick.min.js"></script>
     <script>

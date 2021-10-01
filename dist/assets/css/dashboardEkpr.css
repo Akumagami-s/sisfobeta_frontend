@@ -258,7 +258,7 @@ Styling
     margin-bottom: 1rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
-    max-width: 150px;
+    max-width: 80px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow {
     right: 10px;

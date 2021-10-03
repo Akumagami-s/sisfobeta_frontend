@@ -23,13 +23,13 @@
                         <h1>SISFOBETA 4.0</h1>
                     </div>
                 </a>
-                <div >
+                <div id="nav-menu-mx"> 
                     <ul class="navbar-nav ms-auto flex-row">
-                        <a class="nav-link active me-4 text-white text-center" aria-current="page" href="#">Home
+                        <a class="nav-link active text-white text-center" aria-current="page" href="#">Home
                         <span class="visually-hidden">(current)</span>
                         </a>
-                        <a class="nav-link me-4 text-white text-center" href="#">Produk</a>
-                        <a class="nav-link me-4 text-white text-center" href="#">Tentang Kami</a>
+                        <a class="nav-link text-white text-center" href="#">Produk</a>
+                        <a class="nav-link text-white text-center" href="#">Tentang Kami</a>
                         <a class="nav-link text-white text-center" href="#">Hubungi Kami</a>
 
                     </ul>
@@ -125,10 +125,10 @@
         <div class="container">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="navbar-nav d-flex flex-row mt-4">
-                    <a class="nav-link active me-4 text-white" aria-current="page" href="#">Tentang</a>
-                    <a class="nav-link me-4 text-white" href="#">Contact</a>
-                    <a class="nav-link me-4 text-white" href="#">Syarat & Ketentuan</a>
-                    <a class="nav-link text-white" href="#">Kebijakan Pribadi</a>
+                    <a class="nav-link active me-4 text-white footer-text" aria-current="page" href="#">Tentang</a>
+                    <a class="nav-link me-4 text-white footer-text" href="#">Contact</a>
+                    <a class="nav-link me-4 text-white footer-text" href="#">Syarat & Ketentuan</a>
+                    <a class="nav-link text-white footer-text" href="#">Kebijakan Pribadi</a>
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center">
@@ -139,7 +139,7 @@
                     <a class="nav-link " href="#"><img src="assets/img/yutub.svg" class="sosmed"></a>
                 </div>
             </div>
-            <p class="text-white text-center py-4">Copyright @2021 DITKUAD-BTN</p>
+            <p class="text-white text-center py-3 footer-copyright">Copyright @2021 DITKUAD-BTN</p>
         </div>
     </div>
 
@@ -183,6 +183,50 @@
             });
     </script>
 
+    <script>
+        const navHeight = $("nav").height();
+        const vh = $(window).height();
+
+        $(window).scroll(function(){
+            if (window.scrollY > $("nav").offset().top){
+                $("body").css("padding-top", (navHeight + 1));
+
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    $("a.navbar-brand").addClass('d-none')
+                } else {
+                    $("nav").height(0)
+                }
+            } else {
+                
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    $("a.navbar-brand").removeClass('d-none')
+                } else {
+                    $("nav").height(navHeight);
+                }
+            }
+        // 100 * (() / vh)
+            if (window.scrollY > ($(".header").offset().top + (180 * (200 / vh)) )) {
+                $("nav").addClass('fix-nav fixed-top bg-nav');
+
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    $("a.navbar-brand").addClass('d-none')
+                    $("#nav-menu-mx").addClass('mx-auto');
+                } else {
+                    $("nav").height(navHeight);
+                }
+            } else{
+                $("nav").removeClass('fix-nav fixed-top bg-nav');
+                $("body").css("padding-top", "");
+
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    $("a.navbar-brand").removeClass('d-none')
+                    $("#nav-menu-mx").removeClass('mx-auto');
+                } else {
+                    $("nav").height(navHeight);
+                }
+            }
+        })
+    </script>
 
 </body>
 </html>

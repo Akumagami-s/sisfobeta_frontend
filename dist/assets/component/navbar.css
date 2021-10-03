@@ -361,7 +361,10 @@ Styling
 
 @media screen and (min-width: 992px) {
   #mainHeader {
-    padding: 1rem 3rem;
+    padding: 1rem 0rem;
+  }
+  #mainHeader .navbar {
+    padding: 0 3rem;
   }
   #mainHeader .navbar .container-fluid .navbar-brand img {
     max-width: 100px;

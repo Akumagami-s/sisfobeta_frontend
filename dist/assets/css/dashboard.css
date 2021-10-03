@@ -74,6 +74,7 @@ body {
 .onScrolled {
   position: fixed;
   top: 0;
+  width: 200%;
   background: #32502E;
   padding: 1rem;
   transition: .3s;

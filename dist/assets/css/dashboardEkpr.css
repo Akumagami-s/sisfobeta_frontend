@@ -12,8 +12,7 @@ Font
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -27,18 +26,13 @@ Variables
 Styling
 ------------*/
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   width: 100%;
 }
@@ -48,15 +42,9 @@ Styling
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart canvas {
@@ -74,31 +62,19 @@ Styling
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur {
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   width: 100%;
 }
@@ -112,35 +88,21 @@ Styling
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 100%;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
 }
 
@@ -174,27 +136,18 @@ Styling
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
@@ -210,14 +163,11 @@ Styling
 .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
   background: #FFFFFF;
   padding: 2rem;
-  -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
 }
 
 .wrapperChart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -226,10 +176,7 @@ Styling
     margin-bottom: 1.5rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
     padding: 2rem 1rem;
@@ -239,10 +186,7 @@ Styling
     font-size: 18px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart {
     margin-bottom: 1.5rem;
@@ -251,17 +195,10 @@ Styling
     max-width: 200px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    align-items: flex-start;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label {
     margin-left: 1rem;
@@ -285,8 +222,7 @@ Styling
     width: 10px;
     left: 0;
     border-radius: 50%;
-    -webkit-transform: translate(-50%, 100%);
-            transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%);
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .totalPokok::before {
     background: #FF832A;
@@ -297,25 +233,15 @@ Styling
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur {
     padding: 1rem .8rem;
     margin: .5rem 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur:not(:last-child) {
     margin-right: 1rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .labelName {
@@ -350,12 +276,8 @@ Styling
     width: 100%;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .slick-list .slick-track {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
     width: 100%;
@@ -363,15 +285,9 @@ Styling
     margin: 1rem 1rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
     max-width: 90px;
@@ -414,21 +330,13 @@ Styling
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
     font-size: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart {
     width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
     width: 100%;
@@ -529,23 +437,15 @@ Styling
 
 @media screen and (min-width: 1024px) {
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
     margin-bottom: 0;
     margin-right: 1.5rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart {
     margin-bottom: 0;
@@ -569,19 +469,11 @@ Styling
 
 @media screen and (min-width: 1200px) {
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur {
     width: 70%;
@@ -612,10 +504,7 @@ Styling
 
 @media screen and (min-width: 1400px) {
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
     margin-bottom: 0;
@@ -626,13 +515,8 @@ Styling
     font-size: 26px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart {
     margin-bottom: 0;

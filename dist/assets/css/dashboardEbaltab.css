@@ -11,8 +11,7 @@ Font
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -30,28 +29,16 @@ Styling
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperDataSummary {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperDataSummary .data {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   width: 100%;
 }
@@ -62,12 +49,8 @@ Styling
 
 .mainContent .container-fluid .wrapperContent .wrapperDataSummary .data .icon {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperDataSummary .data .wrapperChart canvas {
@@ -92,22 +75,15 @@ Styling
 }
 
 .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .alokasiDana {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
 .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic {
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 1rem 1rem;
   width: 100%;
 }
@@ -125,22 +101,15 @@ Styling
 }
 
 .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .penyaluranDana {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
 .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic {
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 1rem 1rem;
   width: 100%;
 }
@@ -159,19 +128,14 @@ Styling
 
 .mainContent .container-fluid .wrapperContent .statisticAllDataEbaltab {
   background: #fff;
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   margin: 1rem 1rem;
 }
 
 .mainContent .container-fluid .wrapperContent .statisticAllDataEbaltab .containerChart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -184,13 +148,9 @@ Styling
 }
 
 .mainContent .container-fluid .wrapperContent .statisticAllDataEbaltab .containerChart .wrapperInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .mainContent .container-fluid .wrapperContent .statisticAllDataEbaltab .containerChart .wrapperInfo .info {
@@ -241,10 +201,7 @@ Styling
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic {
     padding: 2rem 2rem;
     margin: 1rem 1rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue {
     width: 100%;
@@ -265,10 +222,7 @@ Styling
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic {
     padding: 2rem 2rem;
     margin: 1rem 1rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic .contentValue {
     width: 100%;
@@ -287,16 +241,9 @@ Styling
     padding: 2rem 1rem;
   }
   .mainContent .container-fluid .wrapperContent .statisticAllDataEbaltab .containerChart {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
   }
   .mainContent .container-fluid .wrapperContent .statisticAllDataEbaltab .containerChart .wrapperChart {
@@ -316,9 +263,7 @@ Styling
     padding: 0 3rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperDataSummary {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .mainContent .container-fluid .wrapperContent .wrapperDataSummary .data .icon img {
     max-width: 150px;
@@ -366,10 +311,7 @@ Styling
     font-size: 14px;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .nameValue {
     font-size: 18px;
@@ -382,10 +324,7 @@ Styling
     margin-bottom: 0;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic .contentValue .nameValue {
     font-size: 18px;
@@ -414,10 +353,7 @@ Styling
     margin-top: .5rem;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding: 2rem 3rem;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue {
@@ -434,10 +370,7 @@ Styling
     width: 30%;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding: 2rem 3rem;
   }
   .mainContent .container-fluid .wrapperContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic .contentValue {

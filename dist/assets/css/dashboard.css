@@ -11,8 +11,7 @@ Font
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -25,6 +24,10 @@ Variables
 /*------------
 Reusable
 ------------*/
+.nameTable {
+  font-size: 24px;
+}
+
 .nameContentMenu {
   color: #3B4E63;
   font-weight: 700;
@@ -68,9 +71,138 @@ body {
   transition: 1s;
 }
 
+.onScrolled {
+  position: fixed;
+  top: 0;
+  background: #32502E;
+  padding: 1rem;
+  transition: .3s;
+}
+
 /*------------
 Styling
 ------------*/
+#mainHeader .navbar {
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+#mainHeader .wrapperMenuToApps {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  z-index: 100;
+  transition: .3s;
+  width: 100%;
+}
+
+#mainHeader .wrapperMenuToApps .menu {
+  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #fff;
+  transition: .3s;
+}
+
+#mainHeader .wrapperMenuToApps .menu:hover {
+  transition: .3s;
+}
+
+#mainHeader .wrapperMenuToApps .menu:hover .nameMenu {
+  color: #000;
+}
+
+#mainHeader .wrapperMenuToApps .menu:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#mainHeader .wrapperMenuToApps .menu .icon {
+  margin-bottom: 8px;
+}
+
+#mainHeader .wrapperMenuToApps .menu .icon img {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+#mainHeader .wrapperMenuToApps .menu .nameMenu {
+  color: #000;
+  font-weight: 500;
+}
+
+.mainContent {
+  margin-top: -100px;
+}
+
+.mainContent .container-fluid .headerMainMenu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel .label {
+  color: #3B4E63;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu {
+  display: flex;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .icon {
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .nameAndValue, .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .currencyAndRate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .nameAndValue {
+  margin-bottom: .3rem;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .nameAndValue .nameCard {
+  font-weight: 700;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .nameAndValue .valueCard {
+  font-weight: 500;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .currencyAndRate .currency {
+  font-weight: 500;
+}
+
+.mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .currencyAndRate .rateVelue {
+  color: #32B404;
+  font-weight: 500;
+}
+
 .mainContent .container-fluid .wrapperContentAllMenu {
   display: flex;
   width: 100%;
@@ -394,9 +526,152 @@ Styling
   background: #7334FF;
 }
 
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperChartLabaRugi {
+  bacbackground: #FFFFFF;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperChartLabaRugi .nameTable {
+  font-weight: 700;
+  color: #3B4E63;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperTable {
+  margin-bottom: 1.5rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperTable .nameTable {
+  font-weight: 700;
+  color: #3B4E63;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperTable table {
+  text-align: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperTable table thead tr th:first-child {
+  border-radius: 6px 0 0px 6px;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperTable table thead tr th:last-child {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperTable .iuranTWP .headTable {
+  background: #FF832B;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperTable .dataPensiun .headTable {
+  background: #A2A846;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperTable .rekapTabungan .headTable {
+  background: #7334FF;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperChartHistoriData {
+  bacbackground: #FFFFFF;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eTWP .wrapperChartHistoriData .nameTable {
+  font-weight: 700;
+  font-size: 24px;
+  color: #3B4E63;
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 0px) {
   #mainHeader {
-    height: 350px;
+    height: 450px;
+  }
+  .mainContent .container-fluid .headerMainMenu {
+    flex-direction: column;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit {
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperChartPrajurit {
+    width: 60%;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperChartPrajurit canvas {
+    max-width: 500px;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel {
+    width: 40%;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel .label {
+    color: #3B4E63;
+    position: relative;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel .label:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel .label::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    position: absolute;
+    background: red;
+    top: 40%;
+    left: -25px;
+    border-radius: 50%;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel .label .nameLabel {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel .label .valueLabel {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel .prajuritAktif::before {
+    background: #A2A846;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit .wrapperContentStatistic .wrapperLabel .prajuritPensiun::before {
+    background: #587350;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu {
+    width: 100%;
+    display: flex;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu:not(:last-child) {
+    margin-right: .8rem;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .icon img {
+    max-width: 40px;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .nameAndValue .nameCard {
+    font-size: 22px;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .nameAndValue .valueCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .currencyAndRate .currency {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticMenu .wrapperMenu .menu .infoStatistic .currencyAndRate .rateVelue {
+    font-size: 16px;
   }
   .mainContent .container-fluid .wrapperContentAllMenu .contentMenu {
     width: 100%;
@@ -628,6 +903,16 @@ Styling
     color: #3B4E63;
     font-size: 24px;
   }
+  .mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperChartLabaRugi {
+    bacbackground: #FFFFFF;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    padding: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperChartLabaRugi .nameTable {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -637,6 +922,13 @@ Styling
 }
 
 @media screen and (min-width: 1200px) {
+  .mainContent .container-fluid .headerMainMenu {
+    flex-direction: row;
+  }
+  .mainContent .container-fluid .headerMainMenu .wrapperStatisticPrajurit {
+    margin: 0;
+    margin-right: 1.5rem;
+  }
   .mainContent .container-fluid .wrapperContentAllMenu {
     align-items: flex-start;
   }

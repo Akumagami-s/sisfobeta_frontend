@@ -21,18 +21,13 @@
 }
 
 .wrapperSlick .slick-list .slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .wrapperTable {
   width: 100%;
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
@@ -48,13 +43,9 @@
 .filter {
   background: #486245;
   padding: .5rem .5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #fff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .bodyTable tr {
@@ -67,12 +58,8 @@
 }
 
 .bodyTable tr td .action {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .bodyTable tr td .action a img {
@@ -92,14 +79,9 @@
 }
 
 .searchAndImportWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin-bottom: 2rem;
 }
@@ -110,24 +92,6 @@
   border-bottom: 1px solid #000000;
   padding: .5rem 0;
   max-width: 250px;
-}
-
-.searchAndImportWrapper .searchInput::-webkit-input-placeholder {
-  color: #8E8E8E;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-}
-
-.searchAndImportWrapper .searchInput:-ms-input-placeholder {
-  color: #8E8E8E;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-}
-
-.searchAndImportWrapper .searchInput::-ms-input-placeholder {
-  color: #8E8E8E;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
 }
 
 .searchAndImportWrapper .searchInput::placeholder {
@@ -151,7 +115,6 @@
 
 .nav-tabs .nav-link:hover::before {
   width: 100%;
-  -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
@@ -165,7 +128,6 @@
   bottom: -2px;
   display: block;
   background-color: #3C543C;
-  -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
@@ -175,7 +137,6 @@
 
 .nav-tabs .nav-link.active::before {
   width: 100%;
-  -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
@@ -198,8 +159,7 @@
 
 .wrapperData {
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
@@ -207,8 +167,7 @@ footer {
   margin-top: 4rem;
   text-align: center;
   padding: 2rem 0;
-  -webkit-box-shadow: 0px -10px 100px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px -10px 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -10px 100px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
@@ -216,8 +175,6 @@ footer p {
 }
 
 .actionButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: 'Poppins', sans-serif;
   margin: 2rem 0;
@@ -292,21 +249,13 @@ footer p {
 }
 
 .wrapperMainData .wrapperData .tab-content .tab-pane .dataWrapper {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .wrapperMainData .wrapperData .tab-content .tab-pane .dataWrapper .imgProfil {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapperMainData .wrapperData .tab-content .tab-pane .dataWrapper .imgProfil img {
@@ -315,9 +264,7 @@ footer p {
 }
 
 .wrapperMainData .wrapperData .tab-content .tab-pane .dataWrapper .wrapperTableInfoData {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .wrapperMainData .wrapperData .tab-content .tab-pane .dataWrapper .wrapperTableInfoData .table {
@@ -343,12 +290,8 @@ footer p {
 }
 
 .wrapperMainData .wrapperData .tab-content .tab-pane .dataWrapper .wrapperTableInfoData table tbody tr {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .wrapperMainData .wrapperData .tab-content .tab-pane .dataWrapper .wrapperTableInfoData table tbody tr td {
@@ -371,12 +314,8 @@ footer p {
 
 @media screen and (max-width: 768px) {
   .mainContent .container-fluid .wrapperContent .nav-tabs {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .mainContent .container-fluid .wrapperContent .nav-tabs .nav-link {
     margin: .5rem 1rem;
@@ -385,7 +324,6 @@ footer p {
 
 @media screen and (min-width: 320px) {
   .mainContent {
-    -webkit-transition: 1s;
     transition: 1s;
   }
   .wrapperTable {
@@ -402,10 +340,7 @@ footer p {
     font-size: 12px;
   }
   .tab-content .tab-pane .dataWrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .tab-content .tab-pane .dataWrapper .imgProfil {
     width: 100%;
@@ -416,10 +351,7 @@ footer p {
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData .notice {
     padding: 1.5rem 1rem;
@@ -460,10 +392,7 @@ footer p {
     font-size: 14px;
   }
   .tab-content .tab-pane .dataWrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .tab-content .tab-pane .dataWrapper .imgProfil {
     width: 30%;
@@ -475,10 +404,7 @@ footer p {
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData {
     width: 80%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData table {
     width: 100%;
@@ -493,10 +419,7 @@ footer p {
     max-width: 200px;
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData .notice {
     padding: 1.5rem 1rem;

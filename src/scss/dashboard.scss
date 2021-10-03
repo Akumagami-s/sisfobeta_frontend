@@ -37,6 +37,9 @@ $fontsize-card-valueNumber : 28px;
 /*------------
 Reusable
 ------------*/
+.nameTable {
+    font-size: 24px;
+}
 .nameContentMenu {
     color: #3B4E63;
     font-weight: 700;
@@ -71,14 +74,132 @@ Reusable
 body {
     transition: 1s;
 }
+.onScrolled {
+    position: fixed;
+    top: 0;
+    background: #32502E;
+    padding: 1rem;
+    transition: .3s;
+}
 
 /*------------
 Styling
 ------------*/
+#mainHeader {
+    .navbar {
+        margin-bottom: 2rem;
+        z-index: 1;
+    }
+    .wrapperMenuToApps {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        z-index: 100;
+        transition: .3s;
+        width: 100%;
+        .menu {
+            text-align: center;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: flex-end;
+            border-radius: 10px;
+            text-decoration: none;
+            background: #fff;
+            transition: .3s;
 
+            &:hover {
+                transition: .3s;
+                .nameMenu {
+                    color: #000;
+                }
+
+            }
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+            .icon {
+                margin-bottom: 8px;
+                img {
+                    max-height: 30px;
+                    max-width: 30px;
+                }
+            }
+            .nameMenu {
+                color: #000;
+                font-weight: 500;
+            }
+        }
+    }
+}
 .mainContent {
+    margin-top: -100px;
     .container-fluid {
-        .headerMenu {
+        .headerMainMenu {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            .wrapperStatisticPrajurit {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+                padding: 2rem;
+                .wrapperContentStatistic {
+                    display: flex;
+                    align-items: center;
+                    .wrapperLabel {
+                        .label {
+                            color: #3B4E63;
+                            .nameLabel {
+                            }
+                            .valueLabel {
+
+                            }
+                        }
+                    }
+                }
+            }
+            .wrapperStatisticMenu {
+                display: flex; 
+                .wrapperMenu {
+                    .menu {
+                        width: 100%;
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                        border-radius: 20px;
+
+                        .icon {
+                            margin-bottom: 1rem;
+                        }
+                        .infoStatistic {
+                            .nameAndValue,.currencyAndRate {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                            .nameAndValue {
+                                margin-bottom: .3rem;
+                                .nameCard {
+                                    font-weight: 700;
+                                }
+                                .valueCard {
+                                    font-weight: 500;
+                                }
+                            }
+                            .currencyAndRate {
+                                .currency {
+                                    font-weight: 500;
+                                }
+                                .rateVelue {
+                                    color: #32B404;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
         }
         .wrapperContentAllMenu {
@@ -373,6 +494,68 @@ Styling
                         }
                     }
                 }
+                .wrapperChartLabaRugi {
+                    bacbackground: #FFFFFF;
+                    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+                    border-radius: 15px;
+                    padding: 2rem;
+                    .nameTable {
+                        font-weight: 700;
+                        color: #3B4E63;
+                    }
+                }
+            }
+
+            .eTWP {
+                .wrapperTable {
+                    margin-bottom: 1.5rem;
+                    .nameTable {
+                        font-weight: 700;
+                        color: #3B4E63;
+                    }
+                    table {
+                        text-align: center;
+                        thead {
+                            tr {
+                                th {
+                                    &:first-child {
+                                        border-radius: 6px 0 0px 6px;
+                                    }
+                                    &:last-child {
+                                        border-radius: 0px 6px 6px 0px;
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                    .iuranTWP {
+                        .headTable {
+                            background: #FF832B;
+                        }
+                    }
+                    .dataPensiun {
+                        .headTable {
+                            background: #A2A846;
+                        }
+                    }
+                    .rekapTabungan {
+                        .headTable {
+                            background: #7334FF;
+                        }
+                    }
+                }
+                .wrapperChartHistoriData {
+                    bacbackground: #FFFFFF;
+                    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+                    border-radius: 15px;
+                    padding: 2rem;
+                    .nameTable {
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: #3B4E63;
+                        margin-bottom: 1rem;
+                    }
+                }
             }
         }
     }
@@ -380,12 +563,111 @@ Styling
 
 @media screen and (min-width :0px) {
     #mainHeader {
-        height: 350px;
+        height: 450px;
     }
-
     .mainContent {
         .container-fluid {
-            .headerMenu {
+            .headerMainMenu {
+                flex-direction: column;
+                .wrapperStatisticPrajurit {
+                    padding: 2rem;
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                    .wrapperContentStatistic {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        .wrapperChartPrajurit {
+                            width: 60%;
+                            canvas {
+                                max-width: 500px;
+                            }
+                        }
+                        .wrapperLabel {
+                            width: 40%;
+                            .label {
+                                color: #3B4E63;
+                                position: relative;
+
+                                &:not(:last-child) {
+                                    margin-bottom: 1rem;
+                                }
+
+                                &::before {
+                                    content:  '';
+                                    height: 15px;
+                                    width: 15px;
+                                    display: inline-block;
+                                    position: absolute;
+                                    background: red;
+                                    top: 40%;
+                                    left: -25px;
+                                    border-radius: 50%;
+                                }
+                                .nameLabel {
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                                .valueLabel {
+                                    font-size: 18px;
+                                }
+                            }
+                            
+                            .prajuritAktif {
+                                &::before {
+                                    background: #A2A846;
+                                }
+                            }
+                            .prajuritPensiun {
+                                &::before {
+                                    background: #587350;
+                                }
+                            }
+                        }
+                    }
+                }
+                .wrapperStatisticMenu {
+                    display: flex; 
+                    flex-direction: column;
+                    width: 100%;
+
+                    .wrapperMenu {
+                        width: 100%;
+                        display: flex;
+                        .menu {
+                            padding: 1rem;
+                            margin-bottom: 1rem;
+                            &:not(:last-child) {
+                                margin-right: .8rem;
+                            }
+                            .icon {
+                                img {
+                                    max-width: 40px;
+                                }
+                            }
+                            .infoStatistic {
+                                .nameAndValue,.currencyAndRate {
+                                }
+                                .nameAndValue {
+                                    .nameCard {
+                                        font-size: 22px;
+                                    }
+                                    .valueCard {
+                                        font-size: 18px;
+                                    }
+                                }
+                                .currencyAndRate {
+                                    .currency {
+                                        font-size: 16px;
+                                    }
+                                    .rateVelue {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
     
             }
             .wrapperContentAllMenu {
@@ -653,6 +935,17 @@ Styling
                             font-size: 24px;
                         }
                     }
+
+                    .wrapperChartLabaRugi {
+                        bacbackground: #FFFFFF;
+                        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+                        border-radius: 15px;
+                        padding: 2rem;
+                        .nameTable {
+                            font-size: 24px;
+                            margin-bottom: 1rem;
+                        }
+                    }
                 }
             }
         }
@@ -677,6 +970,13 @@ Styling
 @media screen and (min-width : 1200px) {
     .mainContent {
         .container-fluid {
+            .headerMainMenu {
+                flex-direction: row;
+                .wrapperStatisticPrajurit {
+                    margin: 0;
+                    margin-right: 1.5rem;
+                }
+            }
             .wrapperContentAllMenu {
                 align-items: flex-start;
                 .eBaltab,.eKPR,.eAkunting,.eTWP {

@@ -12,8 +12,7 @@ Font
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -21,37 +20,23 @@ Resset Css
 }
 
 .wrapperRequest .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
 .wrapperRequest .container .wrapperMain {
   background: #fff;
   width: 100%;
-  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
 }
 
 .wrapperRequest .container .wrapperMain .iconSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(142.87deg, #3B533B 19.31%, #97BB7D 110.21%);
   border-radius: 15px;
   position: relative;
@@ -71,23 +56,14 @@ Resset Css
 }
 
 .wrapperRequest .container .wrapperMain .actionMain {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .wrapperRequest .container .wrapperMain .actionMain form {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
 }
 
@@ -139,12 +115,8 @@ Resset Css
 }
 
 .wrapperRequest .container .wrapperMain .actionMain .inputParent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 1.5rem;
   width: 100%;
 }

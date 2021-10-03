@@ -143,90 +143,131 @@
             </div>
         </nav>
         <!--End Navbar-->
+        <div class="wrapperMenuToApps">
+          <a href="#" class="menu">
+              <div class="icon">
+                <img src="./assets/img/ebaltab-icon.svg" alt="">
+              </div>
+              <p class="nameMenu">e-BALTAB</p>
+          </a>
+
+          <a href="#" class="menu">
+            <div class="icon">
+              <img src="./assets/img/eKprIcon.svg" alt="">
+            </div>
+            <p class="nameMenu">e-KPR</p>
+          </a>
+
+          <a href="#" class="menu">
+            <div class="icon">
+              <img src="./assets/img/etwpIcon.svg" alt="">
+            </div>
+            <p class="nameMenu">e-TWP</p>
+          </a>
+
+          <a href="#" class="menu">
+            <div class="icon">
+              <img src="./assets/img/eAkuntingIcon.svg" alt="">
+            </div>
+            <p class="nameMenu">e-AKUNTING</p>
+          </a>
+        </div>
     </div>
+    
 
     <section class="mainContent">
         <div class="container-fluid">
             <div class="headerMainMenu">
                 <div class="wrapperStatisticPrajurit">
-                    <h1 class="name">Rekap / <span class="month">Agustus 2021</span></h1>
+                    <h1 class="nameContentMenu">Rekap / <span class="month">Agustus 2021</span></h1>
                     <div class="wrapperContentStatistic">
                         <div class="wrapperChartPrajurit">
-
+                            <canvas id="chartdataRekapPrajurit"></canvas>
                         </div>
                         <div class="wrapperLabel">
-                          <div class="label"></div>
-                          <div class="label"></div>
+                          <div class="label prajuritAktif">
+                            <h1 class="nameLabel">Prajurit Aktif</h1>
+                            <p class="valueLabel">500.013.072.418</p>
+                          </div>
+                          <div class="label prajuritPensiun">
+                            <h1 class="nameLabel">Prajurit Pensiun</h1>
+                            <p class="valueLabel">500.013.072.418</p>
+                          </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="wrapperStatisticMenu">
-                    <a href="#" class="menu eBaltab">
-                      <div class="icon">
-                        <img src="./assets/img/ebaltab-icon.svg" alt="">
-                      </div>
-                      <div class="valueStatistic">
-                        <div class="menuNameAndCurancy">
-                          <h1 class="nameMenu">e-BALTAB</h1>
-                          <p class="currency">IDR</p>
+                <dizv class="wrapperStatisticMenu">
+                    <div class="top wrapperMenu">
+                      <div class="menu eBaltab">
+                        <div class="icon">
+                          <img src="./assets/img/ebaltab-icon.svg" alt="">
                         </div>
-                        <div class="wrapperValue">
-                            <div class="value">54.094.650.000</div>
-                            <div class="valueBunga">+0,17%</div>
+                        <div class="infoStatistic">
+                            <div class="nameAndValue">
+                                <h1 class="nameCard">e-BALTAB</h1>
+                                <div class="valueCard">1,700,000</div>
+                            </div>
+                            <div class="currencyAndRate">
+                                <p class="currency">IDR</p>
+                                <p class="rateVelue">+0,17%</p>
+                            </div>
                         </div>
                       </div>
-                    </a>
+  
+                      <div class="menu eKPR">
+                        <div class="icon">
+                          <img src="./assets/img/eKprIcon.svg" alt="">
+                        </div>
+                        <div class="infoStatistic">
+                          <div class="nameAndValue">
+                              <h1 class="nameCard">e-KPR</h1>
+                              <div class="valueCard">1,700,000</div>
+                          </div>
+                          <div class="currencyAndRate">
+                              <p class="currency">IDR</p>
+                              <p class="rateVelue">+0,17%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-                    <a href="#" class="menu eKPR">
-                      <div class="icon">
-                        <img src="./assets/img/eKprIcon.svg" alt="">
-                      </div>
-                      <div class="valueStatistic">
-                        <div class="menuNameAndCurancy">
-                          <h1 class="nameMenu">e-BALTAB</h1>
-                          <p class="currency">IDR</p>
+                    <div class="bottom wrapperMenu">
+                      <div class="menu eTWP">
+                        <div class="icon">
+                          <img src="./assets/img/etwpIcon.svg" alt="">
                         </div>
-                        <div class="wrapperValue">
-                          <div class="value">54.094.650.000</div>
-                          <div class="valueBunga">+0,17%</div>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a href="#" class="menu eTWP">
-                      <div class="icon">
-                        <img src="./assets/img/etwpIcon.svg" alt="">
-                      </div>
-                      <div class="valueStatistic">
-                        <div class="menuNameAndCurancy">
-                          <h1 class="nameMenu">e-BALTAB</h1>
-                          <p class="currency">IDR</p>
-                        </div>
-                        <div class="wrapperValue">
-                          <div class="value">54.094.650.000</div>
-                          <div class="valueBunga">+0,17%</div>
+                        <div class="infoStatistic">
+                          <div class="nameAndValue">
+                              <h1 class="nameCard">e-TWP</h1>
+                              <div class="valueCard">1,700,000</div>
+                          </div>
+                          <div class="currencyAndRate">
+                              <p class="currency">IDR</p>
+                              <p class="rateVelue">+0,17%</p>
+                          </div>
                         </div>
                       </div>
-                    </a>
-
-                    <a href="#" class="menu eAkunting">
-                      <div class="icon">
-                        <img src="./assets/img/eAkuntingIcon.svg" alt="">
-                      </div>
-                      <div class="valueStatistic">
-                        <div class="menuNameAndCurancy">
-                          <h1 class="nameMenu">e-BALTAB</h1>
-                          <p class="currency">IDR</p>
+  
+                      <div class="menu eAkunting">
+                        <div class="icon">
+                          <img src="./assets/img/eAkuntingIcon.svg" alt="">
                         </div>
-                        <div class="wrapperValue">
-                          <div class="value">54.094.650.000</div>
-                          <div class="valueBunga">+0,17%</div>
+                        <div class="infoStatistic">
+                          <div class="nameAndValue">
+                              <h1 class="nameCard">e-AKUNTING</h1>
+                              <div class="valueCard">1,700,000</div>
+                          </div>
+                          <div class="currencyAndRate">
+                              <p class="currency">IDR</p>
+                              <p class="rateVelue">+0,17%</p>
+                          </div>
                         </div>
                       </div>
-                    </a>
-                </div>
+                    </div>
+                </dizv>
             </div>
+            
             <div class="wrapperContentAllMenu">
                 <div class="eBaltab contentMenu">
                   <div class="nameContentMenu">e-BALTAB</div>
@@ -689,9 +730,131 @@
                       </tbody>
                     </table>
                   </div>
+
+                  <div class="wrapperChartLabaRugi">
+                    <h1 class="nameTable">Laba Rugi</h1>
+                    <canvas id="chartLabaRugi"></canvas>
+                  </div>
                 </div>
 
-                <div class="eTWP contentMenu"></div>
+                <div class="eTWP contentMenu">
+                  <div class="nameContentMenu">e-Akunting</div>
+                  <div class="wrapperTable">
+                    <h1 class="nameTable">Iuran TWP</h1>
+                    <table id="eTWP-iuranTWP" class="display table iuranTWP" style="width:100%">
+                      <thead class="headTable">
+                          <tr>
+                              <th>Personil</th>
+                              <th>Kesatuan</th>
+                              <th>TMT</th>
+                              <th>Tabungan</th>
+                              <th>Keluarga</th>
+                              <th>Mutasi</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                              <td>1010</td>
+                              <td>Jamal</td>
+                              <td>Rumah</td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>1</td>
+
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Romlah</td>
+                              <td>Rumah</td>
+                              <td>1.000.000</td>
+                              <td>1</td>
+                              <td>1</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Saepul</td>
+                              <td>Rumah</td>
+                              <td>1.000.000</td>
+                              <td>1</td>
+                              <td>1</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+
+                  <div class="wrapperTable">
+                    <h1 class="nameTable">Data Pensiun</h1>
+                    <table id="eTWP-dataPensiun" class="display table dataPensiun" style="width:100%">
+                      <thead class="headTable">
+                          <tr>
+                              <th>Kode</th>
+                              <th>Nama Akun</th>
+                              <th>Email</th>
+                              <th>Dana Pensiun</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                              <td>1010</td>
+                              <td>Jamal</td>
+                              <td>Rumah</td>
+                              <td>1</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Romlah</td>
+                              <td>Rumah</td>
+                              <td>1.000.000</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Saepul</td>
+                              <td>Rumah</td>
+                              <td>1.000.000</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+
+                  <div class="wrapperTable">
+                    <h1 class="nameTable">Rekap Tabungan</h1>
+                    <table id="eTWP-rekapTabungan" class="display table rekapTabungan" style="width:100%">
+                      <thead class="headTable">
+                          <tr>
+                              <th>Kode</th>
+                              <th>Nama Akun</th>
+                              <th>Email</th>
+                              <th>Dana Pensiun</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                              <td>1010</td>
+                              <td>Jamal</td>
+                              <td>Rumah</td>
+                              <td>1</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Romlah</td>
+                              <td>Rumah</td>
+                              <td>1.000.000</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Saepul</td>
+                              <td>Rumah</td>
+                              <td>1.000.000</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+
+                  <div class="wrapperChartHistoriData">
+                    <h1 class="nameTable">History Data</h1>
+                    <canvas id="chartHistoryData"></canvas>
+                  </div>
+                </div>
             </div>
         </div>
     </section>
@@ -714,6 +877,11 @@
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
     <!--Dashboard Js-->
     <script src="./assets/js/dashboard.js"></script>
+    <script>
+      $(document).scroll(function(){
+        $('.wrapperMenuToApps').toggleClass('onScrolled', $(this).scrollTop() > 160);
+      });
+    </script>
     <script>
       $(document).ready(function() {
       $('#eAkunting-saldoakun').DataTable( {
@@ -746,9 +914,69 @@
       "searching": false
       });
       } );
+
+
+      $(document).ready(function() {
+      $('#eTWP-iuranTWP').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eTWP-dataPensiun').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eTWP-rekapTabungan').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
     </script>
 
     <script>
+      const dataRekapPrajurit = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [55,45],
+          backgroundColor: [
+          '#587350','#A2A846'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configdataRekapPrajurit = {
+        type: 'doughnut',
+        data: dataRekapPrajurit,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartdataRekapPrajurit = new Chart(
+      document.getElementById('chartdataRekapPrajurit'),
+      configdataRekapPrajurit
+      );
+
+
+
+
+
+
+
       const dataRekapBRISudahTerealisasi = {
         labels: [
           'Value',
@@ -989,6 +1217,75 @@
       var chartDataPokokDanBunga = new Chart(
       document.getElementById('chartDataPokokDanBunga'),
       configDataPokokDanBunga
+      );
+
+
+
+
+
+      const monthLabaRugi = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+    const dataLabaRugi = {
+      labels: monthLabaRugi,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'transparent',
+        borderColor: '#A2A846',
+        data: [0, 10, 20, 30, 20, 0],
+      }]
+    };
+
+      const configLabaRugi = {
+      type: 'line',
+      data: dataLabaRugi,
+      options: {
+        legend : false
+      }
+    };
+      var chartLabaRugi = new Chart(
+      document.getElementById('chartLabaRugi'),
+      configLabaRugi
+      );
+
+
+
+
+
+
+      const monthHistoryData = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+    const dataHistory = {
+      labels: monthHistoryData,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'transparent',
+        borderColor: '#7334FF',
+        data: [0, 10, 20, 30, 20, 0],
+      }]
+    };
+
+      const configHistoryData = {
+      type: 'line',
+      data: dataHistory,
+      options: {
+        legend : false
+      }
+    };
+      var chartHistoryData = new Chart(
+      document.getElementById('chartHistoryData'),
+      configHistoryData
       );
     </script>
 </body>

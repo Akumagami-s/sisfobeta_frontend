@@ -25,6 +25,15 @@ Variables
 /*------------
 Styling
 ------------*/
+.onScrolled {
+  position: fixed;
+  top: 0;
+}
+
+#mainHeader {
+  padding-top: 1rem;
+}
+
 .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
   display: flex;
   align-items: center;
@@ -172,6 +181,15 @@ Styling
 }
 
 @media screen and (min-width: 0px) {
+  #mainHeader {
+    height: 270px;
+  }
+  #mainHeader .navbar {
+    margin-bottom: 2rem;
+  }
+  .mainContent {
+    padding: 2rem 1rem;
+  }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData {
     margin-bottom: 1.5rem;
   }

@@ -39,7 +39,6 @@ Styling
 ------------*/
 #mainHeader {
     background: $dashboard-background;
-    padding: 1rem 0;
     .navbar {
         .container-fluid {
             .navbar-brand {
@@ -198,16 +197,10 @@ Styling
     }
 }
 .pembungkus {
-    position: relative;
-    transition: 1s;
-}
-.mainSubmenu {
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: relative;
     z-index: 10;
     transition: 1s;
-
     .menu{
         border: none;
         width: 100%;
@@ -331,7 +324,7 @@ Styling
             }
         }
     }
-    .mainSubmenu {
+    .pembungkus {
         width: 100%;
         padding: 1rem 0;
         .menu{
@@ -407,7 +400,6 @@ Styling
 
 @media screen and (min-width :992px) {
     #mainHeader {
-        padding: 1rem 0rem;
         .navbar {
             padding: 0 3rem;
             .container-fluid {
@@ -478,7 +470,7 @@ Styling
             }
         }
     }
-    .mainSubmenu {
+    .pembungkus {
         .menu{
             justify-content: center;
             .nav-link {
@@ -577,7 +569,7 @@ Styling
             }
         }
     }
-    .mainSubmenu {
+    .pembungkus {
          .backToHome {
             img {
                 max-width: 30px;

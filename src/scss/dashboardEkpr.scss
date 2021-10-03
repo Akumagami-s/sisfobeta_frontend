@@ -32,6 +32,13 @@ $fontsize-card-valueNumber : 28px;
 /*------------
 Styling
 ------------*/
+.onScrolled {
+    position: fixed;
+    top: 0;
+}
+#mainHeader {
+    padding-top: 1rem;
+}
 .mainContent {
     .container-fluid {
         .wrapperContent {
@@ -184,7 +191,14 @@ Styling
 }
 
 @media screen and (min-width : 0px) {
+    #mainHeader {
+        .navbar {
+            margin-bottom: 2rem;
+        }
+        height: 270px;
+    }
     .mainContent {
+        padding: 2rem 1rem;
         .container-fluid {
             .wrapperContent {
                 .wrapperRekapData {
@@ -515,6 +529,11 @@ Styling
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width : 992px) {
+    #mainHeader {
     }
 }
 

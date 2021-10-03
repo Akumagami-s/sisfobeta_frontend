@@ -191,11 +191,6 @@ Styling
   font-weight: 500;
 }
 
-.pembungkus {
-  position: relative;
-  transition: 1s;
-}
-
 .mainSubmenu {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -361,7 +356,10 @@ Styling
 
 @media screen and (min-width: 992px) {
   #mainHeader {
-    padding: 1rem 3rem;
+    padding: 1rem 0rem;
+  }
+  #mainHeader .navbar {
+    padding: 0 3rem;
   }
   #mainHeader .navbar .container-fluid .navbar-brand img {
     max-width: 100px;

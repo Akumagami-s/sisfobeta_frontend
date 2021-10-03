@@ -27,7 +27,6 @@ Styling
 ------------*/
 #mainHeader {
   background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
-  padding: 1rem 0;
 }
 
 #mainHeader .navbar .container-fluid .navbar-brand {
@@ -192,19 +191,13 @@ Styling
 }
 
 .pembungkus {
-  position: relative;
-  transition: 1s;
-}
-
-.mainSubmenu {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  position: relative;
   z-index: 10;
   transition: 1s;
 }
 
-.mainSubmenu .menu {
+.pembungkus .menu {
   border: none;
   width: 100%;
   display: flex;
@@ -213,7 +206,7 @@ Styling
   justify-content: center;
 }
 
-.mainSubmenu .menu .nav-link {
+.pembungkus .menu .nav-link {
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -224,25 +217,25 @@ Styling
   background: #fff;
 }
 
-.mainSubmenu .menu .nav-link svg {
+.pembungkus .menu .nav-link svg {
   fill: #08850D;
 }
 
-.mainSubmenu .menu .nav-link p {
+.pembungkus .menu .nav-link p {
   color: #3B4E63;
   text-align: center;
 }
 
-.mainSubmenu .menu .active {
+.pembungkus .menu .active {
   color: #3B4E63;
   background: #3C543C;
 }
 
-.mainSubmenu .menu .active svg {
+.pembungkus .menu .active svg {
   fill: #fff;
 }
 
-.mainSubmenu .menu .active p {
+.pembungkus .menu .active p {
   color: #fff;
 }
 
@@ -303,28 +296,28 @@ Styling
     margin: 0 .5rem;
     font-size: 26px;
   }
-  .mainSubmenu {
+  .pembungkus {
     width: 100%;
     padding: 1rem 0;
   }
-  .mainSubmenu .menu {
+  .pembungkus .menu {
     justify-content: center;
   }
-  .mainSubmenu .menu .nav-link {
+  .pembungkus .menu .nav-link {
     flex-direction: column;
     display: flex;
     margin: .5rem .5rem;
     padding: .5rem 1rem;
     border-radius: 10px;
   }
-  .mainSubmenu .menu .nav-link svg {
+  .pembungkus .menu .nav-link svg {
     max-width: 25px;
   }
-  .mainSubmenu .menu .nav-link p {
+  .pembungkus .menu .nav-link p {
     font-size: 10px;
     display: none;
   }
-  .mainSubmenu .menu .active {
+  .pembungkus .menu .active {
     color: #fff;
   }
 }
@@ -360,9 +353,6 @@ Styling
 }
 
 @media screen and (min-width: 992px) {
-  #mainHeader {
-    padding: 1rem 0rem;
-  }
   #mainHeader .navbar {
     padding: 0 3rem;
   }
@@ -414,17 +404,17 @@ Styling
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 .8rem;
   }
-  .mainSubmenu .menu {
+  .pembungkus .menu {
     justify-content: center;
   }
-  .mainSubmenu .menu .nav-link {
+  .pembungkus .menu .nav-link {
     flex-direction: row;
     padding: .5rem 1rem;
   }
-  .mainSubmenu .menu .nav-link svg {
+  .pembungkus .menu .nav-link svg {
     margin-right: .5rem;
   }
-  .mainSubmenu .menu .nav-link p {
+  .pembungkus .menu .nav-link p {
     font-size: 12px;
     display: block;
   }
@@ -484,23 +474,23 @@ Styling
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 1rem;
   }
-  .mainSubmenu .backToHome img {
+  .pembungkus .backToHome img {
     max-width: 30px;
   }
-  .mainSubmenu .menu {
+  .pembungkus .menu {
     width: 100%;
   }
-  .mainSubmenu .menu .nav-link {
+  .pembungkus .menu .nav-link {
     justify-content: center;
     flex-direction: row;
     margin: .8rem .8rem;
     padding: .5rem 1.5rem;
     width: 15.1%;
   }
-  .mainSubmenu .menu .nav-link svg {
+  .pembungkus .menu .nav-link svg {
     max-width: 30px;
   }
-  .mainSubmenu .menu .nav-link p {
+  .pembungkus .menu .nav-link p {
     font-size: 16px;
   }
 }

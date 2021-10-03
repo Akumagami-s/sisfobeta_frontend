@@ -24,8 +24,13 @@ Variables
 /*------------
 Styling
 ------------*/
+.onScrolled {
+  position: fixed;
+  top: 0;
+}
+
 #mainHeader {
-  height: 100%;
+  padding-top: 1rem;
 }
 
 .mainContent .container-fluid .wrapperContent .wrapperDataSummary {
@@ -158,6 +163,15 @@ Styling
 }
 
 @media screen and (min-width: 0px) {
+  #mainHeader {
+    height: 270px;
+  }
+  #mainHeader .navbar {
+    margin-bottom: 2rem;
+  }
+  .mainContent {
+    padding: 2rem 1rem;
+  }
   .mainContent .container-fluid .wrapperContent .wrapperDataSummary .data {
     margin: 1rem 1rem;
     padding: 2rem 2rem;

@@ -917,6 +917,9 @@ Styling
 }
 
 @media screen and (min-width: 992px) {
+  .mainContent {
+    padding: 0 3rem !important;
+  }
   .mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable {
     padding: 2rem;
   }

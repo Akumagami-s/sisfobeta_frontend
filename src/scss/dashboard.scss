@@ -33,18 +33,1142 @@ $font-weight900 : 900;
 $fontsize-card-title : 24px;
 $fontsize-card-valueNumber : 28px;
 
+
+/*------------
+Reusable
+------------*/
+.nameContentMenu {
+    color: #3B4E63;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+.fullWidth {
+    width: 100%;
+}
+.nameCard {
+    color: #3B4E63;
+    font-weight: 500;
+}
+.labelNameCard {
+    font-weight: 400;
+    color: #3B4E63;
+}
+.valueOfCard {
+    font-weight: 700;
+    color: #3B4E63;
+}
+.colorText {
+    color: #3B4E63;
+}
+.nameHightCard {
+    font-weight: 700;
+    color: #3B4E63;
+}
+.valueChart {
+    font-weight: 700;
+}
+body {
+    transition: 1s;
+}
+
 /*------------
 Styling
 ------------*/
 
-@media screen and (min-width :0px) {
-    #mainHeader {
-        height: 300px;
+.mainContent {
+    .container-fluid {
+        .headerMenu {
+
+        }
+        .wrapperContentAllMenu {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            .contentMenu {
+            }
+            .eBaltab {
+                .wrapperCardPengajuan {
+                    display: flex;
+                    .cardPengajuan {
+                        background: #fff;
+                        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                        border-radius: 20px;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+                        width: 100%;
+                        .infoStatistic {
+                            width: 100%;
+                            .nameCard {
+                                margin-bottom: .3rem;
+                            }
+                            .labelNameCard {
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        .wrapperChart {
+                            display: flex;
+                            width: 50%;
+                            justify-content: center;
+                            .chartKecil {
+                                max-width: 180px;
+                            }
+                        }
+                        .wrapperArrow {
+                            position: absolute;
+                        }
+                    }
+                }
+                .wrapperCardDanaAlokasi {
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                    border-radius: 20px;         
+                    width: 100%;  
+                    margin-bottom: 1.5rem;
+                    .nameHightCard {
+                        margin-bottom: 1rem;
+                    }
+                    .wrapperContentCard {
+                        display: flex;
+                        align-items: center;
+                        .wrapperChart {
+                            width: 60%;
+                        }
+                        .wrapperLabel {
+                            width: 40%;
+                            .label {
+                                position: relative;
+                                .nameLabel {
+                                    font-weight: 700;
+                                    margin-bottom: .5rem;
+                                }
+                                &::before {
+                                    content: '';
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                }
+                            }
+                            .jumlahDanaAlokasi {
+                                &::before {
+                                    background: #7334FF;
+                                }
+                            }
+                            .alokasiTerelalisasi {
+                                &::before {
+                                    background: #FF832B;
+                                }
+                            }
+                        }
+                    }
+                }
+                .wrapperCardPenyaluran {
+                    display: flex;
+                    .cardPenyaluran {
+                        background: #fff;
+                        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                        border-radius: 20px;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+                        width: 100%;
+                        .infoStatistic {
+                            width: 100%;
+                            .nameCard {
+                                margin-bottom: .3rem;
+                            }
+                            .labelNameCard {
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        .wrapperChart {
+                            display: flex;
+                            width: 50%;
+                            justify-content: center;
+                            .chartKecil {
+                                max-width: 180px;
+                            }
+                        }
+                        .wrapperArrow {
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+            .eKPR {
+                .wrapperDebitur {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    margin-bottom: 1rem;
+                    .debitur {
+                        position: relative;
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                        border-radius: 20px;
+                        .headerCardDebitur {
+                            .nameCard {
+
+                            }
+                            .wrapperArrow {
+                                position: absolute;
+                            }
+                        }
+                        .contentDebitur {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+
+                            .wrapperChart {
+                                width: 50%;
+                            }
+                            .wrapperLabel {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+                .wrapperRekapData {
+                    width: 100%;
+                    display: flex;
+                    margin-bottom: 1rem;
+                    .cardRekap {
+                        background: #fff;
+                        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                        border-radius: 20px;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+                        width: 100%;
+                        .infoStatistic {
+                            width: 100%;
+                            .nameCard {
+                                margin-bottom: .3rem;
+                            }
+                            .labelNameCard {
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        .wrapperChart {
+                            display: flex;
+                            width: 50%;
+                            justify-content: center;
+                        }
+                        .wrapperArrow {
+                            position: absolute;
+                        }
+                    }
+                }
+                .wrapperStatistic {
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    .debitur {
+                        position: relative;
+                        width: 100%;
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                        border-radius: 20px;
+                        .headerCardDebitur {
+                            .wrapperArrow {
+                                position: absolute;
+                            }
+                        }
+                        .contentDebitur {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+
+                            .wrapperChart {
+                                width: 50%;
+                            }
+                            .wrapperLabel {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+                .wrapperCardDataPokokDanBunga {
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                    border-radius: 20px;         
+                    width: 100%;  
+                    margin-bottom: 1.5rem;
+                    .nameHightCard {
+                        margin-bottom: 1rem;
+                    }
+                    .wrapperContentCard {
+                        display: flex;
+                        align-items: center;
+                        .wrapperChart {
+                            width: 60%;
+                        }
+                        .wrapperLabel {
+                            width: 40%;
+                            .label {
+                                position: relative;
+                                .nameLabel {
+                                    font-weight: 700;
+                                    margin-bottom: .5rem;
+                                }
+                                &::before {
+                                    content: '';
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                }
+                            }
+                            .jumlahDanaAlokasi {
+                                &::before {
+                                    background: #7334FF;
+                                }
+                            }
+                            .alokasiTerelalisasi {
+                                &::before {
+                                    background: #FF832B;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .eAkunting {
+                position: relative;
+                .wrapperTable {
+                    margin-bottom: 1.5rem;
+                    .nameTable {
+                        font-weight: 700;
+                        color: #3B4E63;
+                    }
+                    table {
+                        text-align: center;
+                        thead {
+                            tr {
+                                th {
+                                    &:first-child {
+                                        border-radius: 6px 0 0px 6px;
+                                    }
+                                    &:last-child {
+                                        border-radius: 0px 6px 6px 0px;
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                    .saldoAkun,.hutangPerAkun {
+                        .headTable {
+                            background: #FF832A;
+                            
+                        }
+                    }
+                    .saldoAkunDuo {
+                        .headTable {
+                            background: #A2A846;
+                        }
+                    }
+                    .piutangPerAkun {
+                        .headTable {
+                            background: #7334FF;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width :1200px) {
+@media screen and (min-width :0px) {
     #mainHeader {
-        height: 400px;
+        height: 350px;
+    }
+
+    .mainContent {
+        .container-fluid {
+            .headerMenu {
+    
+            }
+            .wrapperContentAllMenu {
+                .contentMenu {
+                    width: 100%;
+                }
+                .eBaltab {
+                    .wrapperCardPengajuan {
+                        margin-bottom: 1.5rem;
+                        .cardPengajuan {
+                            padding: 1.5rem 1rem;
+                            &:not(:last-child) {
+                                margin-right: 1rem;
+                            }
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 15px;
+                                }
+                                .labelNameCard {
+                                    font-size: 14px;
+                                }
+                                .valueOfCard {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperArrow {
+                                right: 15px;
+                                top: 10px;
+                                img {
+                                    max-width: 15px;
+                                }
+                            } 
+                        }
+                    }
+                    .wrapperCardDanaAlokasi {
+                        padding: 2rem;
+                        .nameHightCard {
+                            font-size: 24px;
+                        }
+                        .wrapperContentCard {
+                            align-items: center;
+                            .wrapperChart {
+                                width: 60%;
+                                canvas {
+                                    max-width: 500px;
+                                }
+                            }
+                            .wrapperLabel {
+                                width: 40%;
+                                .label {
+                                    position: relative;
+                                    padding-left: 1rem;
+                                    margin-bottom: 1rem;
+                                    .nameLabel {
+                                        font-size: 22px;
+                                        font-weight: 700;
+                                        margin-bottom: .5rem;
+                                    }
+                                    .valueChart {
+                                        font-size: 16px;
+                                    }
+                                    &::before {
+                                        height: 20px;
+                                        width: 20px;
+                                        left: -20px;
+                                        top: 50%;
+                                    }
+                                }
+                                .jumlahDanaAlokasi {
+                                    &::before {
+                                        background: #7334FF;
+                                    }
+                                }
+                                .alokasiTerelalisasi {
+                                    &::before {
+                                        background: #FF832B;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperCardPenyaluran {
+                        margin-bottom: 1.5rem;
+                        .cardPenyaluran {
+                            padding: 1.5rem 1rem;
+                            &:not(:last-child) {
+                                margin-right: 1rem;
+                            }
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 15px;
+                                }
+                                .labelNameCard {
+                                    font-size: 14px;
+                                }
+                                .valueOfCard {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperArrow {
+                                right: 15px;
+                                top: 10px;
+                                img {
+                                    max-width: 15px;
+                                }
+                            } 
+                        }
+                    }
+                }
+
+                .eKPR {
+                    .wrapperDebitur {
+                        justify-content: center;
+                        .debitur {
+                            padding: 1rem;
+                            margin: .5rem;
+                            width: 47%;
+                            .headerCardDebitur {
+                                margin-bottom: 1rem;
+                                .nameCard {
+                                    font-size: 14px;
+                                }
+                                .wrapperArrow {
+                                    right: 15px;
+                                    top: 10px;
+                                    img {
+                                        max-width: 15px;
+                                    }
+                                }
+                            }
+                            .contentDebitur {
+                                .wrapperChart {
+                                    max-width: 180px;
+                                }
+                                .wrapperLabel {
+                                    .valueChart {
+                                        font-size: 18px;
+                                    }
+                                    .date {
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperRekapData {
+                        width: 100%;
+                        .cardRekap {
+                            padding: 1.5rem 1rem;
+                            &:not(:last-child) {
+                                margin-right: 1rem;
+                            }
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 15px;
+                                }
+                                .labelNameCard {
+                                    font-size: 14px;
+                                }
+                                .valueOfCard {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 180px;
+                                }
+                            }
+                            .wrapperArrow {
+                                right: 15px;
+                                top: 10px;
+                                img {
+                                    max-width: 15px;
+                                }
+                            } 
+                        }
+                    }
+                    .wrapperStatistic {
+                        .debitur {
+                            padding: 1rem;
+                            margin: .5rem;
+                            .headerCardDebitur {
+                                margin-bottom: 1rem;
+                                .nameCard {
+                                    font-size: 14px;
+                                }
+                                .wrapperArrow {
+                                    right: 15px;
+                                    top: 10px;
+                                    img {
+                                        max-width: 15px;
+                                    }
+                                }
+                            }
+                            .contentDebitur {
+                                .wrapperChart {
+                                    max-width: 180px;
+                                }
+                                .wrapperLabel {
+                                    .valueChart {
+                                        font-size: 18px;
+                                    }
+                                    .date {
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperCardDataPokokDanBunga {
+                        padding: 2rem;
+                        .nameHightCard {
+                            font-size: 24px;
+                        }
+                        .wrapperContentCard {
+                            align-items: center;
+                            .wrapperChart {
+                                width: 60%;
+                                canvas {
+                                    max-width: 500px;
+                                }
+                            }
+                            .wrapperLabel {
+                                width: 40%;
+                                .label {
+                                    position: relative;
+                                    padding-left: 1rem;
+                                    margin-bottom: 1rem;
+                                    .nameLabel {
+                                        font-size: 22px;
+                                        font-weight: 700;
+                                        margin-bottom: .5rem;
+                                    }
+                                    .valueChart {
+                                        font-size: 16px;
+                                    }
+                                    &::before {
+                                        height: 20px;
+                                        width: 20px;
+                                        left: -20px;
+                                        top: 50%;
+                                    }
+                                }
+                                .jumlahDanaAlokasi {
+                                    &::before {
+                                        background: #7334FF;
+                                    }
+                                }
+                                .alokasiTerelalisasi {
+                                    &::before {
+                                        background: #FF832B;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .eAkunting {
+                    .wrapperTable {
+                        .nameTable {
+                            font-weight: 700;
+                            color: #3B4E63;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :992px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContentAllMenu {
+                .eAkunting {
+                    .wrapperTable {
+                        padding: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 1200px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContentAllMenu {
+                align-items: flex-start;
+                .eBaltab,.eKPR,.eAkunting,.eTWP {
+                    width: 50%;
+                    padding: 0 .5rem;
+                }
+                .eBaltab {
+                    .wrapperCardPengajuan {
+                        .cardPengajuan {
+                            padding: 1rem 1rem;
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 12px;
+                                }
+                                .labelNameCard {
+                                    font-size: 12px;
+                                }
+                            }
+                            .wrapperArrow {
+                                img {
+                                    max-width: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .wrapperCardDanaAlokasi {
+                        padding: 2rem;
+                        .nameHightCard {
+                            font-size: 22px;
+                        }
+                        .wrapperContentCard {
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 500px;
+                                }
+                            }
+                            .wrapperLabel {
+                                .label {
+                                    .nameLabel {
+                                        font-size: 14px;
+                                    }
+                                    .valueChart {
+                                        font-size: 14px;
+                                    }
+                                    &::before {
+                                        height: 15px;
+                                        width: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperCardPenyaluran {
+                        margin-bottom: 0;
+                        .cardPenyaluran {
+                            padding: 1rem ;
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 14px;
+                                }
+                                .labelNameCard {
+                                    font-size: 12px;
+                                }
+                                .valueOfCard {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperArrow {
+                                right: 15px;
+                                top: 10px;
+                                img {
+                                    max-width: 10px;
+                                }
+                            } 
+                        }
+                    }
+                }
+
+                .eKPR {
+                    .wrapperDebitur {
+                        justify-content: flex-start;
+                        flex-wrap: nowrap;
+                        .debitur {
+                            padding: .8rem;
+                            margin: 0;
+                            border-radius: 12px;
+                            &:not(:last-child) {
+                                margin-right: .5rem;
+                            }
+                            width: 100%;
+                            .headerCardDebitur {
+                                .nameCard {
+                                    font-size: 10px;
+                                }
+                                .wrapperArrow {
+                                    top: 7px;
+                                    img {
+                                        max-width: 8px;
+                                    }
+                                }
+                            }
+                            .contentDebitur {
+                                .wrapperChart {
+                                    width: 60%;
+                                    max-width: 180px;
+                                }
+                                .wrapperLabel {
+                                    width: 40%;
+                                    .valueChart {
+                                        font-size: 8px;
+                                    }
+                                    .date {
+                                        font-size: 8px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperRekapData {
+                        .cardRekap {
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 14px;
+                                }
+                                .labelNameCard {
+                                    font-size: 12px;
+                                }
+                                .valueOfCard {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 180px;
+                                }
+                            }
+                            .wrapperArrow {
+                                right: 15px;
+                                top: 10px;
+                                img {
+                                    max-width: 15px;
+                                }
+                            } 
+                        }
+                    }
+                    .wrapperStatistic {
+                        justify-content: flex-start;
+                        flex-wrap: nowrap;
+                        .debitur {
+                            padding: .8rem;
+                            margin: 0;
+                            border-radius: 12px;
+                            &:not(:last-child) {
+                                margin-right: .5rem;
+                            }
+                            width: 100%;
+                            .headerCardDebitur {
+                                .nameCard {
+                                    font-size: 13px;
+                                }
+                                .wrapperArrow {
+                                    top: 7px;
+                                    img {
+                                        max-width: 8px;
+                                    }
+                                }
+                            }
+                            .contentDebitur {
+                                .wrapperChart {
+                                    width: 60%;
+                                    max-width: 180px;
+                                }
+                                .wrapperLabel {
+                                    width: 40%;
+                                    .valueChart {
+                                        font-size: 10px;
+                                    }
+                                    .date {
+                                        font-size: 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperCardDataPokokDanBunga {
+                        padding: 2rem;
+                        .nameHightCard {
+                            font-size: 22px;
+                        }
+                        .wrapperContentCard {
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 500px;
+                                }
+                            }
+                            .wrapperLabel {
+                                .label {
+                                    .nameLabel {
+                                        font-size: 14px;
+                                    }
+                                    .valueChart {
+                                        font-size: 14px;
+                                    }
+                                    &::before {
+                                        height: 15px;
+                                        width: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .eAkunting {
+                    top: -240px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :1600px){
+    .mainContent {
+        .container-fluid {
+            .wrapperContentAllMenu {
+                .eBaltab {
+                    .wrapperCardPengajuan {
+                        .cardPengajuan {
+                            padding: 1.5rem 2rem;
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 14px;
+                                }
+                                .labelNameCard {
+                                    font-size: 14px;
+                                }
+                            }
+                            .wrapperArrow {
+                                img {
+                                    max-width: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .wrapperCardDanaAlokasi {
+                        padding: 2rem;
+                        .wrapperContentCard {
+                            .wrapperLabel {
+                                .label {
+                                    .nameLabel {
+                                        font-size: 18px;
+                                    }
+                                    .valueChart {
+                                        font-size: 14px;
+                                    }
+                                    &::before {
+                                        height: 18px;
+                                        width: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperCardPenyaluran {
+                        .cardPenyaluran {
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 16px;
+                                }
+                                .labelNameCard {
+                                    font-size: 14px;
+                                }
+                                .valueOfCard {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperArrow {
+                                right: 15px;
+                                top: 10px;
+                                img {
+                                    max-width: 15px;
+                                }
+                            } 
+                        }
+                    }
+                }
+
+                .eKPR {
+                    .wrapperDebitur {
+                        .debitur {
+                            .headerCardDebitur {
+                                .nameCard {
+                                    font-size: 12px;
+                                }
+                                .wrapperArrow {
+                                    top: 7px;
+                                    img {
+                                        max-width: 12px;
+                                    }
+                                }
+                            }
+                            .contentDebitur {
+                                .wrapperChart {
+                                    width: 50%;
+                                    max-width: 180px;
+                                }
+                                .wrapperLabel {
+                                    width: 50%;
+                                    .valueChart {
+                                        font-size: 12px;
+                                    }
+                                    .date {
+                                        font-size: 8px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperRekapData {
+                        .cardRekap {
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 14px;
+                                }
+                                .labelNameCard {
+                                    font-size: 12px;
+                                }
+                                .valueOfCard {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 200px;
+                                }
+                            }
+                            .wrapperArrow {
+                                right: 15px;
+                                top: 10px;
+                                img {
+                                    max-width: 15px;
+                                }
+                            } 
+                        }
+                    }
+                    .wrapperStatistic {
+                        .debitur {
+                            .headerCardDebitur {
+                                .nameCard {
+                                    font-size: 12px;
+                                }
+                                .wrapperArrow {
+                                    top: 7px;
+                                    img {
+                                        max-width: 12px;
+                                    }
+                                }
+                            }
+                            .contentDebitur {
+                                .wrapperChart {
+                                    width: 50%;
+                                    max-width: 180px;
+                                }
+                                .wrapperLabel {
+                                    width: 50%;
+                                    .valueChart {
+                                        font-size: 14px;
+                                    }
+                                    .date {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperCardDataPokokDanBunga {
+                        padding: 2rem;
+                        .wrapperContentCard {
+                            .wrapperLabel {
+                                .label {
+                                    .nameLabel {
+                                        font-size: 18px;
+                                    }
+                                    .valueChart {
+                                        font-size: 14px;
+                                    }
+                                    &::before {
+                                        height: 18px;
+                                        width: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .eAkunting {
+                    top: -220px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1900px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContentAllMenu {
+                .eKPR {
+                    .wrapperDebitur {
+                        .debitur {
+                            .headerCardDebitur {
+                                .nameCard {
+                                    font-size: 16px;
+                                }
+                            }
+                            .contentDebitur {
+                                .wrapperLabel {
+                                    .valueChart {
+                                        font-size: 14px;
+                                    }
+                                    .date {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapperRekapData {
+                        .cardRekap {
+                            .infoStatistic {
+                                .nameCard {
+                                    font-size: 18px;
+                                }
+                                .labelNameCard {
+                                    font-size: 14px;
+                                }
+                                .valueOfCard {
+                                    font-size: 18px;
+                                }
+                            }
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 200px;
+                                }
+                            }
+                            .wrapperArrow {
+                                right: 15px;
+                                top: 10px;
+                                img {
+                                    max-width: 15px;
+                                }
+                            } 
+                        }
+                    }
+                    .wrapperStatistic {
+                        .debitur {
+                            .headerCardDebitur {
+                                .nameCard {
+                                    font-size: 16px;
+                                }
+                            }
+                            .contentDebitur {
+                                .wrapperLabel {
+                                    .valueChart {
+                                        font-size: 14px;
+                                    }
+                                    .date {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .eAkunting {
+                    top: -280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :2400px) {
+    .mainContent {
+        .container-fluid {
+            .wrapperContentAllMenu {
+                .eAkunting {
+                    top: -320px;
+                }
+            }
+        }
     }
 }

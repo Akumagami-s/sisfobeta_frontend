@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--Component-->
     <link rel="stylesheet" href="./assets/component/navbar.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
     <!--slick Css-->
     <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
 </head>
 <body>
     <div id="mainHeader">
@@ -31,6 +35,94 @@
               </a>
     
               <div class="userControl">
+                <div class="notification">
+                  <div class="dropdown">
+                    
+                    <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                      <ion-icon name="notifications-outline"></ion-icon>
+                      <div class="numberNotif">2</div>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="notification">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="iconMassage">
+                              <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            </div>
+                            <div class="wrapperMessage">
+                                <div class="messageName">
+                                    <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                </div>
+                                <div class="messageContent">
+                                    <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                </div>
+                            </div>
+                            <div class="messageTime">
+                              <span>19.30</span>
+                            </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="iconMassage">
+                              <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            </div>
+                            <div class="wrapperMessage">
+                                <div class="messageName">
+                                    <h1>Verifikasi Akun Anda</h1>
+                                </div>
+                                <div class="messageContent">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio aliquam, atque illum ab vitae amet ea sequi temporibus? Ipsa id quaerat ducimus, aut quibusdam, sint doloremque, obcaecati ab quos ullam eos ex cum fuga delectus voluptatum iure voluptas qui aperiam totam nam. Veniam earum assumenda at laudantium voluptatem placeat fugit, nobis, nesciunt doloribus itaque velit quia expedita repellat alias culpa nisi dolore voluptate blanditiis a optio sint officia delectus! Quod quam adipisci aperiam quis perferendis totam magni earum, sequi fugiat. Aspernatur, a cumque repudiandae consequuntur perferendis totam nesciunt et rem cum cupiditate officia quisquam enim unde ab. Quos, esse.</p>
+                                </div>
+                            </div>
+                            <div class="messageTime">
+                              <span>19.30</span>
+                            </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="iconMassage">
+                              <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            </div>
+                            <div class="wrapperMessage">
+                                <div class="messageName">
+                                    <h1>Verifikasi Akun Anda</h1>
+                                </div>
+                                <div class="messageContent">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                                </div>
+                            </div>
+                            <div class="messageTime">
+                              <span>19.30</span>
+                            </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="iconMassage">
+                              <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            </div>
+                            <div class="wrapperMessage">
+                                <div class="messageName">
+                                    <h1>Verifikasi Akun Anda</h1>
+                                </div>
+                                <div class="messageContent">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                                </div>
+                            </div>
+                            <div class="messageTime">
+                              <span>19.30</span>
+                            </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
                 <div class="searchBox">
                   <ion-icon name="search" class="searchIcon"></ion-icon>
                   <input class="searchInput"
@@ -38,7 +130,7 @@
                   name="search"
                   placeholder="Search">
                 </div>
-                <div class="dropdown">
+                <div class="dropdown profil">
                   <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
                     <img src="./assets/img/profil.png" alt="">
                   </button>
@@ -47,12 +139,562 @@
                     <li><button class="dropdown-item" href="#">Logout</button></li>
                   </ul>
                 </div>
-                
               </div>
             </div>
         </nav>
         <!--End Navbar-->
     </div>
+
+    <section class="mainContent">
+        <div class="container-fluid">
+            <div class="headerMainMenu">
+                <div class="wrapperStatisticPrajurit">
+                    <h1 class="name">Rekap / <span class="month">Agustus 2021</span></h1>
+                    <div class="wrapperContentStatistic">
+                        <div class="wrapperChartPrajurit">
+
+                        </div>
+                        <div class="wrapperLabel">
+                          <div class="label"></div>
+                          <div class="label"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapperStatisticMenu">
+                    <a href="#" class="menu eBaltab">
+                      <div class="icon">
+                        <img src="./assets/img/ebaltab-icon.svg" alt="">
+                      </div>
+                      <div class="valueStatistic">
+                        <div class="menuNameAndCurancy">
+                          <h1 class="nameMenu">e-BALTAB</h1>
+                          <p class="currency">IDR</p>
+                        </div>
+                        <div class="wrapperValue">
+                            <div class="value">54.094.650.000</div>
+                            <div class="valueBunga">+0,17%</div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="#" class="menu eKPR">
+                      <div class="icon">
+                        <img src="./assets/img/eKprIcon.svg" alt="">
+                      </div>
+                      <div class="valueStatistic">
+                        <div class="menuNameAndCurancy">
+                          <h1 class="nameMenu">e-BALTAB</h1>
+                          <p class="currency">IDR</p>
+                        </div>
+                        <div class="wrapperValue">
+                          <div class="value">54.094.650.000</div>
+                          <div class="valueBunga">+0,17%</div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="#" class="menu eTWP">
+                      <div class="icon">
+                        <img src="./assets/img/etwpIcon.svg" alt="">
+                      </div>
+                      <div class="valueStatistic">
+                        <div class="menuNameAndCurancy">
+                          <h1 class="nameMenu">e-BALTAB</h1>
+                          <p class="currency">IDR</p>
+                        </div>
+                        <div class="wrapperValue">
+                          <div class="value">54.094.650.000</div>
+                          <div class="valueBunga">+0,17%</div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="#" class="menu eAkunting">
+                      <div class="icon">
+                        <img src="./assets/img/eAkuntingIcon.svg" alt="">
+                      </div>
+                      <div class="valueStatistic">
+                        <div class="menuNameAndCurancy">
+                          <h1 class="nameMenu">e-BALTAB</h1>
+                          <p class="currency">IDR</p>
+                        </div>
+                        <div class="wrapperValue">
+                          <div class="value">54.094.650.000</div>
+                          <div class="valueBunga">+0,17%</div>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wrapperContentAllMenu">
+                <div class="eBaltab contentMenu">
+                  <div class="nameContentMenu">e-BALTAB</div>
+
+                  <div class="wrapperCardPengajuan">
+                      <div class="cardPengajuan totalPenerima">
+                          <div class="infoStatistic">
+                              <h1 class="nameCard">Jumlah Pengajuan</h1>
+                              <p class="labelNameCard">Total Penerima</p>
+                              <p class="valueOfCard">366.746</p>
+                          </div>
+                          <div class="wrapperChart">
+                              <canvas class="chartKecil" id="chartPengajuanTotalPenerima"></canvas>
+                          </div>
+                          <div class="wrapperArrow">
+                            <img src="./assets/img/arrowChart.svg" alt="">
+                          </div>
+                      </div>
+
+                      <div class="cardPengajuan sudahDiterima">
+                        <div class="infoStatistic">
+                          <h1 class="nameCard">Jumlah Pengajuan</h1>
+                          <p class="labelNameCard">Total Penerima</p>
+                          <p class="valueOfCard">366.746</p>
+                        </div>
+                        <div class="wrapperChart">
+                          <canvas class="chartKecil" id="chartPengajuanTotalSudahDiterima"></canvas>
+                        </div>
+                        <div class="wrapperArrow">
+                        <img src="./assets/img/arrowChart.svg" alt="">
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="wrapperCardDanaAlokasi">
+                      <div class="nameHightCard">Data Alokasi</div>
+                      <div class="wrapperContentCard">
+                          <div class="wrapperChart">
+                            <canvas id="chartDanaAlokasiEbaltab"></canvas>
+                          </div>
+                          <div class="wrapperLabel">
+                            <div class="label jumlahDanaAlokasi">
+                                <h1 class="nameLabel colorText">Jumlah Dana Alokasi</h1>
+                                <p class="valueChart c17.274olorText">500.013.072.418</p>
+                            </div>
+                            <div class="label alokasiTerelalisasi">
+                                <h1 class="nameLabel colorText">Dana Alokasi Terealisasi</h1>
+                                <p class="valueChart colorText">500.013.072.418</p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="wrapperCardPenyaluran">
+                    <div class="cardPenyaluran belumTerealisasi">
+                        <div class="infoStatistic">
+                            <h1 class="nameCard">Data Penyaluran</h1>
+                            <p class="labelNameCard">Sudah Terealisasi</p>
+                            <p class="valueOfCard">366.746</p>
+                        </div>
+                        <div class="wrapperChart">
+                            <canvas class="chartKecil" id="chartPenyaluranSudahTerelalisasi"></canvas>
+                        </div>
+                        <div class="wrapperArrow">
+                          <img src="./assets/img/arrowChart.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="cardPenyaluran sudahTerealisasi">
+                      <div class="infoStatistic">
+                        <h1 class="nameCard">Data Penyaluran</h1>
+                        <p class="labelNameCard">Belum Terealisasi</p>
+                        <p class="valueOfCard">366.746</p>
+                      </div>
+                      <div class="wrapperChart">
+                        <canvas class="chartKecil" id="chartPenyaluranBelumTerelalisasi"></canvas>
+                      </div>
+                      <div class="wrapperArrow">
+                      <img src="./assets/img/arrowChart.svg" alt="">
+                      </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="eKPR contentMenu">
+                  <div class="nameContentMenu">e-KPR</div>
+                  <div class="wrapperDebitur">
+                        <div class="debitur">
+                          <div class="headerCardDebitur">
+                              <h1 class="nameCard">Total Debitur</h1>
+                              <div class="wrapperArrow">
+                                <img src="./assets/img/arrowChart.svg" alt="">
+                              </div>
+                          </div>
+                          <div class="contentDebitur">
+                              <div class="wrapperChart">
+                                  <canvas id="chartTotalDebitur"></canvas>
+                              </div>
+                              <div class="wrapperLabel">
+                                  <h1 class="valueChart">17.274</h1>
+                                  <p class="date">
+                                      <span class="month">Agustus</span>
+                                      <span class="year">2021</span>
+                                      <span class="currency">(IDR)</span>
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="debitur">
+                          <div class="headerCardDebitur">
+                              <h1 class="nameCard">Debitur Baru</h1>
+                              <div class="wrapperArrow">
+                                <img src="./assets/img/arrowChart.svg" alt="">
+                              </div>
+                          </div>
+                          <div class="contentDebitur">
+                              <div class="wrapperChart">
+                                  <canvas id="chartDebiturBaru"></canvas>
+                              </div>
+                              <div class="wrapperLabel">
+                                  <h1 class="valueChart">17.274</h1>
+                                  <p class="date">
+                                      <span class="month">Agustus</span>
+                                      <span class="year">2021</span>
+                                      <span class="currency">(IDR)</span>
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="debitur">
+                          <div class="headerCardDebitur">
+                              <h1 class="nameCard">Debitur Lunas</h1>
+                              <div class="wrapperArrow">
+                                <img src="./assets/img/arrowChart.svg" alt="">
+                              </div>
+                          </div>
+                          <div class="contentDebitur">
+                              <div class="wrapperChart">
+                                  <canvas id="chartDebiturLunas"></canvas>
+                              </div>
+                              <div class="wrapperLabel">
+                                  <h1 class="valueChart">17.274</h1>
+                                  <p class="date">
+                                      <span class="month">Agustus</span>
+                                      <span class="year">2021</span>
+                                      <span class="currency">(IDR)</span>
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="debitur">
+                          <div class="headerCardDebitur">
+                              <h1 class="nameCard">Debitur Meninggal</h1>
+                              <div class="wrapperArrow">
+                                <img src="./assets/img/arrowChart.svg" alt="">
+                              </div>
+                          </div>
+                          <div class="contentDebitur">
+                              <div class="wrapperChart">
+                                  <canvas id="chartDebiturMeninggal"></canvas>
+                              </div>
+                              <div class="wrapperLabel">
+                                  <h1 class="valueChart">17.274</h1>
+                                  <p class="date">
+                                      <span class="month">Agustus</span>
+                                      <span class="year">2021</span>
+                                      <span class="currency">(IDR)</span>
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+
+                  <div class="wrapperRekapData rekapDataBRI">
+                      <div class="cardRekap">
+                        <div class="infoStatistic">
+                          <h1 class="nameCard">Rekap Data BRI</h1>
+                          <p class="labelNameCard">Sudah Terealisasi</p>
+                          <p class="valueOfCard">128.493.253</p>
+                        </div>
+                        <div class="wrapperChart">
+                            <canvas id="chartRekapBRISudahTerealisasi"></canvas>
+                        </div>
+                        <div class="wrapperArrow">
+                          <img src="./assets/img/arrowChart.svg" alt="">
+                        </div>
+                      </div>
+
+                      <div class="cardRekap">
+                        <div class="infoStatistic">
+                          <h1 class="nameCard">Rekap Data BRI</h1>
+                          <p class="labelNameCard">Belum Terealisasi</p>
+                          <p class="valueOfCard">128.493.253</p>
+                        </div>
+                        <div class="wrapperChart">
+                            <canvas id="chartRekapBRIBelumTerealisasi"></canvas>
+                        </div>
+                        <div class="wrapperArrow">
+                          <img src="./assets/img/arrowChart.svg" alt="">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="wrapperRekapData rekapDataBTN">
+                    <div class="cardRekap">
+                      <div class="infoStatistic">
+                        <h1 class="nameCard">Rekap Data BTN</h1>
+                        <p class="labelNameCard">Sudah Terealisasi</p>
+                        <p class="valueOfCard">128.493.253</p>
+                      </div>
+                      <div class="wrapperChart">
+                          <canvas id="chartRekapBTNSudahTerealisasi"></canvas>
+                      </div>
+                      <div class="wrapperArrow">
+                        <img src="./assets/img/arrowChart.svg" alt="">
+                      </div>
+                    </div>
+
+                    <div class="cardRekap">
+                      <div class="infoStatistic">
+                        <h1 class="nameCard">Rekap Data BTN</h1>
+                        <p class="labelNameCard">Belum Terealisasi</p>
+                        <p class="valueOfCard">128.493.253</p>
+                      </div>
+                      <div class="wrapperChart">
+                          <canvas id="chartRekapBTNBelumTerealisasi"></canvas>
+                      </div>
+                      <div class="wrapperArrow">
+                        <img src="./assets/img/arrowChart.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wrapperStatistic">
+                    
+                    <div class="debitur">
+                      <div class="headerCardDebitur">
+                          <h1 class="nameCard">Total Tungakan</h1>
+                          <div class="wrapperArrow">
+                            <img src="./assets/img/arrowChart.svg" alt="">
+                          </div>
+                      </div>
+                      <div class="contentDebitur">
+                          <div class="wrapperChart">
+                              <canvas id="chartTotalTunggakan"></canvas>
+                          </div>
+                          <div class="wrapperLabel">
+                              <h1 class="valueChart">17.274</h1>
+                              <p class="date">
+                                  <span class="month">Agustus</span>
+                                  <span class="year">2021</span>
+                                  <span class="currency">(IDR)</span>
+                              </p>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="debitur">
+                      <div class="headerCardDebitur">
+                          <h1 class="nameCard">Outstanding</h1>
+                          <div class="wrapperArrow">
+                            <img src="./assets/img/arrowChart.svg" alt="">
+                          </div>
+                      </div>
+                      <div class="contentDebitur">
+                          <div class="wrapperChart">
+                              <canvas id="chartOutstanding"></canvas>
+                          </div>
+                          <div class="wrapperLabel">
+                              <h1 class="valueChart">17.274</h1>
+                              <p class="date">
+                                  <span class="month">Agustus</span>
+                                  <span class="year">2021</span>
+                                  <span class="currency">(IDR)</span>
+                              </p>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="debitur">
+                      <div class="headerCardDebitur">
+                          <h1 class="nameCard">Total Pinjaman</h1>
+                          <div class="wrapperArrow">
+                            <img src="./assets/img/arrowChart.svg" alt="">
+                          </div>
+                      </div>
+                      <div class="contentDebitur">
+                          <div class="wrapperChart">
+                              <canvas id="chartTotalPinjaman"></canvas>
+                          </div>
+                          <div class="wrapperLabel">
+                              <h1 class="valueChart">17.274</h1>
+                              <p class="date">
+                                  <span class="month">Agustus</span>
+                                  <span class="year">2021</span>
+                                  <span class="currency">(IDR)</span>
+                              </p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="wrapperCardDataPokokDanBunga">
+                    <div class="nameHightCard">Data Alokasi</div>
+                    <div class="wrapperContentCard">
+                        <div class="wrapperChart">
+                          <canvas id="chartDataPokokDanBunga"></canvas>
+                        </div>
+                        <div class="wrapperLabel">
+                          <div class="label jumlahDanaAlokasi">
+                              <h1 class="nameLabel colorText">DataPokok</h1>
+                              <p class="valueChart c17.274olorText">500.013.072.418</p>
+                          </div>
+                          <div class="label alokasiTerelalisasi">
+                              <h1 class="nameLabel colorText">Bunga</h1>
+                              <p class="valueChart colorText">500.013.072.418</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="eAkunting contentMenu">
+                  <div class="nameContentMenu">e-Akunting</div>
+                  <div class="wrapperTable">
+                      <h1 class="nameTable">Saldo Akun</h1>
+                      <table id="eAkunting-saldoakun" class="display table saldoAkun" style="width:100%">
+                        <thead class="headTable">
+                            <tr>
+                                <th>Nomor</th>
+                                <th>Nama Akun</th>
+                                <th>Asset</th>
+                                <th>Jumlah</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bodyTable">
+                            <tr>
+                                <td>1010</td>
+                                <td>Jamal</td>
+                                <td>Rumah</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1010</td>
+                                <td>Romlah</td>
+                                <td>Rumah</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1010</td>
+                                <td>Saepul</td>
+                                <td>Rumah</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+                  <div class="wrapperTable">
+                    <h1 class="nameTable">Saldo Akun</h1>
+                    <table id="eAkunting-saldoakunDuo" class="display table saldoAkunDuo" style="width:100%">
+                      <thead class="headTable">
+                          <tr>
+                              <th>Nomor</th>
+                              <th>Nama Akun</th>
+                              <th>Uang</th>
+                              <th>Saldo</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                              <td>1010</td>
+                              <td>Jamal</td>
+                              <td>Rumah</td>
+                              <td>1</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Romlah</td>
+                              <td>Rumah</td>
+                              <td>1.000.000</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Saepul</td>
+                              <td>Rumah</td>
+                              <td>1.000.000</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+
+                  <div class="wrapperTable">
+                    <h1 class="nameTable">Piutang Per Akun</h1>
+                    <table id="eAkunting-piutangPerAkuin" class="display table piutangPerAkun" style="width:100%">
+                      <thead class="headTable">
+                          <tr>
+                              <th>Nomor</th>
+                              <th>Nama Akun</th>
+                              <th>Uang</th>
+                              <th>Jumlah</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                              <td>1010</td>
+                              <td>Jamal</td>
+                              <td>RP</td>
+                              <td>1</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Romlah</td>
+                              <td>RP</td>
+                              <td>1.000.000</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Saepul</td>
+                              <td>RP</td>
+                              <td>1.000.000</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+
+                  <div class="wrapperTable">
+                    <h1 class="nameTable">Hutang Per Akun</h1>
+                    <table id="eAkunting-hutangPerAkuin" class="display table hutangPerAkun" style="width:100%">
+                      <thead class="headTable">
+                          <tr>
+                              <th>Nomor</th>
+                              <th>Nama Akun</th>
+                              <th>Uang</th>
+                              <th>Jumlah</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                              <td>1010</td>
+                              <td>Jamal</td>
+                              <td>RP</td>
+                              <td>1</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Romlah</td>
+                              <td>RP</td>
+                              <td>1.000.000</td>
+                          </tr>
+                          <tr>
+                              <td>1010</td>
+                              <td>Saepul</td>
+                              <td>RP</td>
+                              <td>1.000.000</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="eTWP contentMenu"></div>
+            </div>
+        </div>
+    </section>
 
 
     <!--jQuery-->
@@ -65,10 +707,289 @@
     <!--Chart Js-->
     <script src="./assets/vendors/chartjs/Chart.js"></script>
     <script src="./assets/js/chartjs/ui-chart.js"></script>
-
     <!--Slick Js-->
     <script src="./assets/vendors/slick/slick.min.js"></script>
+    <!--DataTable-->
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
     <!--Dashboard Js-->
     <script src="./assets/js/dashboard.js"></script>
+    <script>
+      $(document).ready(function() {
+      $('#eAkunting-saldoakun').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-saldoakunDuo').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-piutangPerAkuin').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-hutangPerAkuin').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+    </script>
+
+    <script>
+      const dataRekapBRISudahTerealisasi = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configRekapBRISudahTerealisasi = {
+        type: 'doughnut',
+        data: dataRekapBRISudahTerealisasi,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartRekapBRISudahTerealisasi = new Chart(
+      document.getElementById('chartRekapBRISudahTerealisasi'),
+      configRekapBRISudahTerealisasi
+      );
+
+
+      const dataRekapBRIBelumTerealisasi = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#FF832A','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configRekapBRIBelumTerealisasi = {
+        type: 'doughnut',
+        data: dataRekapBRIBelumTerealisasi,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartRekapBRIBelumTerealisasi = new Chart(
+      document.getElementById('chartRekapBRIBelumTerealisasi'),
+      configRekapBRIBelumTerealisasi
+      );
+
+
+
+
+      const dataRekapBTNSudahTerealisasi = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#A2A846','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configRekapBTNSudahTerealisasi = {
+        type: 'doughnut',
+        data: dataRekapBTNSudahTerealisasi,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartRekapBTNSudahTerealisasi = new Chart(
+      document.getElementById('chartRekapBTNSudahTerealisasi'),
+      configRekapBTNSudahTerealisasi
+      );
+
+
+      const dataRekapBTNBelumTerealisasi = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configRekapBTNBelumTerealisasi = {
+        type: 'doughnut',
+        data: dataRekapBTNBelumTerealisasi,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartRekapBTNBelumTerealisasi = new Chart(
+      document.getElementById('chartRekapBTNBelumTerealisasi'),
+      configRekapBTNBelumTerealisasi
+      );
+
+
+      const dataTotalTunggakan = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configTotalTunggakan = {
+        type: 'doughnut',
+        data: dataTotalTunggakan,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartTotalTunggakan = new Chart(
+      document.getElementById('chartTotalTunggakan'),
+      configTotalTunggakan
+      );
+
+      const dataOutstanding = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configOutstanding = {
+        type: 'doughnut',
+        data: dataOutstanding,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartOutstanding = new Chart(
+      document.getElementById('chartOutstanding'),
+      configOutstanding
+      );
+
+      const dataTotalPinjaman = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configTotalPinjaman = {
+        type: 'doughnut',
+        data: dataTotalPinjaman,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartTotalPinjaman = new Chart(
+      document.getElementById('chartTotalPinjaman'),
+      configTotalPinjaman
+      );
+
+
+
+
+
+      const dataPokokDanBunga = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [55,45],
+          backgroundColor: [
+          '#FF832A','#A2A846'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configDataPokokDanBunga = {
+        type: 'doughnut',
+        data: dataPokokDanBunga,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartDataPokokDanBunga = new Chart(
+      document.getElementById('chartDataPokokDanBunga'),
+      configDataPokokDanBunga
+      );
+    </script>
 </body>
 </html>

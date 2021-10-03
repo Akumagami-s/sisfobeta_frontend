@@ -22,16 +22,964 @@ Resset Css
 Variables
 ------------*/
 /*------------
+Reusable
+------------*/
+.nameContentMenu {
+  color: #3B4E63;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.nameCard {
+  color: #3B4E63;
+  font-weight: 500;
+}
+
+.labelNameCard {
+  font-weight: 400;
+  color: #3B4E63;
+}
+
+.valueOfCard {
+  font-weight: 700;
+  color: #3B4E63;
+}
+
+.colorText {
+  color: #3B4E63;
+}
+
+.nameHightCard {
+  font-weight: 700;
+  color: #3B4E63;
+}
+
+.valueChart {
+  font-weight: 700;
+}
+
+body {
+  transition: 1s;
+}
+
+/*------------
 Styling
 ------------*/
+.mainContent .container-fluid .wrapperContentAllMenu {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan {
+  display: flex;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan {
+  background: #fff;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .nameCard {
+  margin-bottom: .3rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .labelNameCard {
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .wrapperChart {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .wrapperChart .chartKecil {
+  max-width: 180px;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .wrapperArrow {
+  position: absolute;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .nameHightCard {
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperChart {
+  width: 60%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel {
+  width: 40%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label {
+  position: relative;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label .nameLabel {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .jumlahDanaAlokasi::before {
+  background: #7334FF;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .alokasiTerelalisasi::before {
+  background: #FF832B;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran {
+  display: flex;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran {
+  background: #fff;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .nameCard {
+  margin-bottom: .3rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .labelNameCard {
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperChart {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperChart .chartKecil {
+  max-width: 180px;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperArrow {
+  position: absolute;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow {
+  position: absolute;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperChart {
+  width: 50%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel {
+  width: 50%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap {
+  background: #fff;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .nameCard {
+  margin-bottom: .3rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .labelNameCard {
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperChart {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow {
+  position: absolute;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur {
+  position: relative;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .wrapperArrow {
+  position: absolute;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperChart {
+  width: 50%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel {
+  width: 50%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .nameHightCard {
+  margin-bottom: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperChart {
+  width: 60%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel {
+  width: 40%;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label {
+  position: relative;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label .nameLabel {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .jumlahDanaAlokasi::before {
+  background: #7334FF;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .alokasiTerelalisasi::before {
+  background: #FF832B;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting {
+  position: relative;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable {
+  margin-bottom: 1.5rem;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable .nameTable {
+  font-weight: 700;
+  color: #3B4E63;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable table {
+  text-align: center;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable table thead tr th:first-child {
+  border-radius: 6px 0 0px 6px;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable table thead tr th:last-child {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable .saldoAkun .headTable, .mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable .hutangPerAkun .headTable {
+  background: #FF832A;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable .saldoAkunDuo .headTable {
+  background: #A2A846;
+}
+
+.mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable .piutangPerAkun .headTable {
+  background: #7334FF;
+}
+
 @media screen and (min-width: 0px) {
   #mainHeader {
-    height: 300px;
+    height: 350px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .contentMenu {
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan {
+    margin-bottom: 1.5rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan {
+    padding: 1.5rem 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .nameCard {
+    font-size: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .labelNameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .valueOfCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi {
+    padding: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .nameHightCard {
+    font-size: 24px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard {
+    align-items: center;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperChart {
+    width: 60%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperChart canvas {
+    max-width: 500px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel {
+    width: 40%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label .nameLabel {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label .valueChart {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label::before {
+    height: 20px;
+    width: 20px;
+    left: -20px;
+    top: 50%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .jumlahDanaAlokasi::before {
+    background: #7334FF;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .alokasiTerelalisasi::before {
+    background: #FF832B;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran {
+    margin-bottom: 1.5rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran {
+    padding: 1.5rem 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .nameCard {
+    font-size: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .labelNameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .valueOfCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur {
+    justify-content: center;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur {
+    padding: 1rem;
+    margin: .5rem;
+    width: 47%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur {
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .nameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperChart {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData {
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap {
+    padding: 1.5rem 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .nameCard {
+    font-size: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .labelNameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .valueOfCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperChart canvas {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur {
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur {
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .nameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperChart {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga {
+    padding: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .nameHightCard {
+    font-size: 24px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard {
+    align-items: center;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperChart {
+    width: 60%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperChart canvas {
+    max-width: 500px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel {
+    width: 40%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label .nameLabel {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label .valueChart {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label::before {
+    height: 20px;
+    width: 20px;
+    left: -20px;
+    top: 50%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .jumlahDanaAlokasi::before {
+    background: #7334FF;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .alokasiTerelalisasi::before {
+    background: #FF832B;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable .nameTable {
+    font-weight: 700;
+    color: #3B4E63;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mainContent .container-fluid .wrapperContentAllMenu .eAkunting .wrapperTable {
+    padding: 2rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #mainHeader {
-    height: 400px;
+  .mainContent .container-fluid .wrapperContentAllMenu {
+    align-items: flex-start;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab, .mainContent .container-fluid .wrapperContentAllMenu .eKPR, .mainContent .container-fluid .wrapperContentAllMenu .eAkunting, .mainContent .container-fluid .wrapperContentAllMenu .eTWP {
+    width: 50%;
+    padding: 0 .5rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan {
+    padding: 1rem 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .nameCard {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .labelNameCard {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .wrapperArrow img {
+    max-width: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi {
+    padding: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .nameHightCard {
+    font-size: 22px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperChart canvas {
+    max-width: 500px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label .nameLabel {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label .valueChart {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label::before {
+    height: 15px;
+    width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran {
+    margin-bottom: 0;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran {
+    padding: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .nameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .labelNameCard {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .valueOfCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperArrow img {
+    max-width: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur {
+    padding: .8rem;
+    margin: 0;
+    border-radius: 12px;
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur:not(:last-child) {
+    margin-right: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .nameCard {
+    font-size: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow {
+    top: 7px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow img {
+    max-width: 8px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperChart {
+    width: 60%;
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel {
+    width: 40%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 8px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 8px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .nameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .labelNameCard {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .valueOfCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperChart canvas {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur {
+    padding: .8rem;
+    margin: 0;
+    border-radius: 12px;
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur:not(:last-child) {
+    margin-right: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .nameCard {
+    font-size: 13px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .wrapperArrow {
+    top: 7px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .wrapperArrow img {
+    max-width: 8px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperChart {
+    width: 60%;
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel {
+    width: 40%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga {
+    padding: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .nameHightCard {
+    font-size: 22px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperChart canvas {
+    max-width: 500px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label .nameLabel {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label .valueChart {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label::before {
+    height: 15px;
+    width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eAkunting {
+    top: -240px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan {
+    padding: 1.5rem 2rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .nameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .infoStatistic .labelNameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPengajuan .cardPengajuan .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi {
+    padding: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label .nameLabel {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label .valueChart {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label::before {
+    height: 18px;
+    width: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .nameCard {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .labelNameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .infoStatistic .valueOfCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .nameCard {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow {
+    top: 7px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow img {
+    max-width: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperChart {
+    width: 50%;
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel {
+    width: 50%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 8px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .nameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .labelNameCard {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .valueOfCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperChart canvas {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .nameCard {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .wrapperArrow {
+    top: 7px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .wrapperArrow img {
+    max-width: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperChart {
+    width: 50%;
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel {
+    width: 50%;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga {
+    padding: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label .nameLabel {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label .valueChart {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperCardDataPokokDanBunga .wrapperContentCard .wrapperLabel .label::before {
+    height: 18px;
+    width: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eAkunting {
+    top: -220px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .nameCard {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .nameCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .labelNameCard {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .valueOfCard {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperChart canvas {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow {
+    right: 15px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .headerCardDebitur .nameCard {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eKPR .wrapperStatistic .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContentAllMenu .eAkunting {
+    top: -280px;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .mainContent .container-fluid .wrapperContentAllMenu .eAkunting {
+    top: -320px;
   }
 }

@@ -385,8 +385,7 @@ footer p {
 
 @media screen and (min-width: 320px) {
   .mainContent {
-    -webkit-transition: 1s;
-    transition: 1s;
+    margin-top: 2rem;
   }
   .wrapperTable {
     padding: 1rem;

@@ -12,7 +12,8 @@ Font
 Resset Css
 ------------*/
 *, ::after, ::before, h1, h2, p {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -29,16 +30,22 @@ Styling
   background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
   position: relative;
   z-index: 1;
-  padding-bottom: 3rem;
+  padding: 1rem 0;
 }
 
 #mainHeader .navbar .container-fluid .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 #mainHeader .navbar .container-fluid .navbar-brand img {
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -57,14 +64,23 @@ Styling
 }
 
 #mainHeader .navbar .container-fluid .userControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   position: relative;
   background: transparent;
@@ -76,27 +92,42 @@ Styling
   font-weight: 500;
   color: #fff;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
   top: 30px;
   padding: 1rem 0;
   border: 0;
-  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage {
   background: #f0f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: .5rem .5rem;
   border-radius: 6px;
 }
@@ -120,8 +151,12 @@ Styling
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .messageTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .messageTime span {
@@ -129,14 +164,22 @@ Styling
 }
 
 #mainHeader .navbar .container-fluid .userControl .searchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: transparent;
 }
 
 #mainHeader .navbar .container-fluid .userControl .searchBox .searchIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   cursor: pointer;
 }
@@ -144,10 +187,23 @@ Styling
 #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
   border: none;
   width: 0px;
+  -webkit-transition: .5s;
   transition: .5s;
   background: transparent;
   color: #fff;
   font-weight: 500;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput:-ms-input-placeholder {
+  color: #fff;
+}
+
+#mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-ms-input-placeholder {
+  color: #fff;
 }
 
 #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
@@ -156,6 +212,7 @@ Styling
 
 #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput.active {
   width: 200px;
+  -webkit-transition: width .5s;
   transition: width .5s;
   border-bottom: 2px solid #fff;
 }
@@ -185,7 +242,8 @@ Styling
 #mainHeader .navbar .container-fluid .userControl .profil .dropdown-menu {
   left: -110px;
   border-radius: 8px;
-  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
 }
 
 #mainHeader .navbar .container-fluid .userControl .profil .dropdown-menu .dropdown-item {
@@ -193,89 +251,80 @@ Styling
   font-weight: 500;
 }
 
-#mainHeader .mainSubmenu .wrapperHome {
-  margin-bottom: 1rem;
+.pembungkus {
+  position: relative;
+  margin-bottom: 10rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-#mainHeader .mainSubmenu .backToHome {
-  background: #fff;
-  padding: .7rem;
-  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  margin-right: 1rem;
+.mainSubmenu {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-#mainHeader .mainSubmenu .backToHome img {
-  max-width: 30px;
-}
-
-#mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb {
-  margin: 0;
-}
-
-#mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item {
-  font-weight: 500;
-}
-
-#mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item a {
-  text-decoration: none;
-  color: #BEBEBE;
-}
-
-#mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item.active {
-  color: #fff;
-}
-
-#mainHeader .mainSubmenu .namePages {
-  color: #fff;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-#mainHeader .mainSubmenu .menu {
+.mainSubmenu .menu {
   border: none;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#mainHeader .mainSubmenu .menu .nav-link {
+.mainSubmenu .menu .nav-link {
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 500;
-  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
-  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
   background: #fff;
 }
 
-#mainHeader .mainSubmenu .menu .nav-link svg {
+.mainSubmenu .menu .nav-link svg {
   fill: #08850D;
 }
 
-#mainHeader .mainSubmenu .menu .nav-link p {
+.mainSubmenu .menu .nav-link p {
   color: #3B4E63;
+  text-align: center;
 }
 
-#mainHeader .mainSubmenu .menu .active {
+.mainSubmenu .menu .active {
   color: #3B4E63;
-  background: linear-gradient(136.39deg, rgba(60, 84, 60, 0.1) 9.31%, rgba(255, 255, 255, 0.1) 91.79%);
+  background: #3C543C;
 }
 
-#mainHeader .mainSubmenu .menu .active svg {
+.mainSubmenu .menu .active svg {
   fill: #fff;
 }
 
-#mainHeader .mainSubmenu .menu .active p {
+.mainSubmenu .menu .active p {
   color: #fff;
 }
 
 @media screen and (min-width: 0px) {
-  #mainHeader {
-    border-radius: 0px 0px 50px 50px;
-  }
   #mainHeader .navbar .container-fluid .navbar-brand img {
     max-width: 70px;
   }
@@ -294,8 +343,13 @@ Styling
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
     margin: .5rem 0;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage {
     margin-bottom: .5rem;
@@ -322,6 +376,15 @@ Styling
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
     font-size: 12px;
   }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-ms-input-placeholder {
+    font-size: 12px;
+  }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
     font-size: 12px;
   }
@@ -332,45 +395,40 @@ Styling
     margin: 0 .5rem;
     font-size: 26px;
   }
-  #mainHeader .mainSubmenu {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+  .mainSubmenu {
+    width: 100%;
+    padding: 1rem 0;
   }
-  #mainHeader .mainSubmenu .backToHome {
-    border-radius: 10px;
+  .mainSubmenu .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  #mainHeader .mainSubmenu .backToHome img {
-    max-width: 25px;
-  }
-  #mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item a {
-    font-size: 14px;
-  }
-  #mainHeader .mainSubmenu .menu {
-    justify-content: center;
-  }
-  #mainHeader .mainSubmenu .menu .nav-link {
-    flex-direction: column;
+  .mainSubmenu .menu .nav-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: .5rem .5rem;
     padding: .5rem 1rem;
     border-radius: 10px;
   }
-  #mainHeader .mainSubmenu .menu .nav-link svg {
+  .mainSubmenu .menu .nav-link svg {
     max-width: 25px;
   }
-  #mainHeader .mainSubmenu .menu .nav-link p {
+  .mainSubmenu .menu .nav-link p {
     font-size: 10px;
     display: none;
   }
-  #mainHeader .mainSubmenu .menu .active {
+  .mainSubmenu .menu .active {
     color: #fff;
   }
 }
 
 @media screen and (min-width: 768px) {
-  #mainHeader {
-    border-radius: 0px 0px 50px 50px;
-  }
   #mainHeader .navbar .container-fluid .navbar-brand img {
     max-width: 80px;
   }
@@ -389,6 +447,15 @@ Styling
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
     font-size: 16px;
   }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-ms-input-placeholder {
+    font-size: 16px;
+  }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
     font-size: 16px;
   }
@@ -402,8 +469,7 @@ Styling
 
 @media screen and (min-width: 992px) {
   #mainHeader {
-    border-radius: 0px 0px 50px 50px;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
   }
   #mainHeader .navbar .container-fluid .navbar-brand img {
     max-width: 100px;
@@ -424,8 +490,13 @@ Styling
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
     margin: .8rem 0;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage {
     margin-bottom: 0;
@@ -453,26 +524,22 @@ Styling
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 .8rem;
   }
-  #mainHeader .mainSubmenu {
-    padding-top: 3rem;
+  .mainSubmenu .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  #mainHeader .mainSubmenu .backToHome img {
-    max-width: 30px;
-  }
-  #mainHeader .mainSubmenu .wrapperBreadcrumb .breadcrumb .breadcrumb-item a {
-    font-size: 16px;
-  }
-  #mainHeader .mainSubmenu .menu {
-    justify-content: center;
-  }
-  #mainHeader .mainSubmenu .menu .nav-link {
-    flex-direction: row;
+  .mainSubmenu .menu .nav-link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding: .5rem 1rem;
   }
-  #mainHeader .mainSubmenu .menu .nav-link svg {
+  .mainSubmenu .menu .nav-link svg {
     margin-right: .5rem;
   }
-  #mainHeader .mainSubmenu .menu .nav-link p {
+  .mainSubmenu .menu .nav-link p {
     font-size: 12px;
     display: block;
   }
@@ -523,6 +590,15 @@ Styling
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput {
     font-size: 16px;
   }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::-ms-input-placeholder {
+    font-size: 16px;
+  }
   #mainHeader .navbar .container-fluid .userControl .searchBox .searchInput::placeholder {
     font-size: 16px;
   }
@@ -532,26 +608,28 @@ Styling
   #mainHeader .navbar .container-fluid .userControl ion-icon {
     margin: 0 1rem;
   }
-  #mainHeader .mainSubmenu {
-    padding-top: 4rem;
-  }
-  #mainHeader .mainSubmenu .backToHome img {
+  .mainSubmenu .backToHome img {
     max-width: 30px;
   }
-  #mainHeader .mainSubmenu .menu {
+  .mainSubmenu .menu {
     width: 100%;
   }
-  #mainHeader .mainSubmenu .menu .nav-link {
-    justify-content: center;
-    flex-direction: row;
+  .mainSubmenu .menu .nav-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: .8rem .8rem;
     padding: .5rem 1.5rem;
     width: 15.1%;
   }
-  #mainHeader .mainSubmenu .menu .nav-link svg {
+  .mainSubmenu .menu .nav-link svg {
     max-width: 30px;
   }
-  #mainHeader .mainSubmenu .menu .nav-link p {
+  .mainSubmenu .menu .nav-link p {
     font-size: 16px;
   }
 }

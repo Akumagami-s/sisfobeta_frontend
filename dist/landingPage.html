@@ -6,159 +6,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!--Bootstrap Asset-->
-    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--LandingPage css-->
-    <link rel="stylesheet" href="assets/css/landingPage.css">
+    <link rel="stylesheet" href="./assets/css/landingPage.css">
+
+    <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
 </head>
 <body>
     
     <!--Header-->
     <div class="header">
         <!--Nav-->
-        <nav class="container navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container-fluid">
-            <a class="navbar-brand d-flex flex-row"><img src="assets/img/tni_logo.png" class="tni-logo">
-                <div class="brand-title d-flex flex-column justify-content-center align-items-center text-white">
-                    <h1 class="nav-h1">SISFOBETA 4.0</h1>
-                    <p class="nav-p">SISTEM INFORMASI BENDAHARA TWP AD ONLINE</p>
-                </div>
-            </a>
-            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mt-2 collapse-width" id="navbarColor01">
-                <ul class="navbar-nav ms-auto flex-row">
-                    <a class="nav-link active me-4 text-white text-center" aria-current="page" href="#">Home
-                    <span class="visually-hidden">(current)</span>
-                    </a>
-                    <a class="nav-link me-4  text-white text-center" href="#">Produk</a>
-                    <a class="nav-link me-4  text-white text-center" href="#">Tentang Kami</a>
-                    <a class="nav-link text-white text-center" href="#">Hubungi Kami</a>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+                <a class="navbar-brand d-flex flex-row"><img src="./assets/img/tni_logo.png" class="tni-logo">
+                    <div class="brand-title d-flex flex-column justify-content-center align-items-center text-white">
+                        <h1>SISFOBETA 4.0</h1>
+                    </div>
+                </a>
+                <div >
+                    <ul class="navbar-nav ms-auto flex-row">
+                        <a class="nav-link active me-4 text-white text-center" aria-current="page" href="#">Home
+                        <span class="visually-hidden">(current)</span>
+                        </a>
+                        <a class="nav-link me-4 text-white text-center" href="#">Produk</a>
+                        <a class="nav-link me-4 text-white text-center" href="#">Tentang Kami</a>
+                        <a class="nav-link text-white text-center" href="#">Hubungi Kami</a>
 
-                </ul>
-            </div>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!--Nav End-->
 
         <!--Header Content-->
-        <div class="container ">
-            <div class="container title">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <h1 class="w-75 text-white header-title">
-                        Selamat Datang Di SISFOBETA Direktorat Keuangan TNI Angkatan Darat
-                    </h1>
-                    <div class="account">
-                        <p class="text-white account-title">Belum Punya Akun?</p><br>
-                        <div>
-                        <button type="button" class="btn btn-login me-2">Masuk</button>
-                        <button type="button" class="btn btn-regis text-white">Daftar</button>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <div class="container ">
+                    <div class="container title">
+                        <div class="row">
+                          <div class="col-12 col-md-6">
+                            <h1 class="w-75 text-white header-title">
+                                Selamat Datang Di SISFOBETA 4.0
+                            </h1>
+                            <div class="account">
+                                <p class="text-white account-title">Belum Punya Akun?</p><br>
+                                <div>
+                                <button type="button" class="btn btn-login me-2">Masuk</button>
+                                <button type="button" class="btn btn-regis text-white">Daftar</button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col w-100 d-flex flex-column align-items-center">
+                            <img src="assets/img/mockup.svg" class="mockup"><br>
+                            <!-- <img src="assets/img/id_badge_web_generic 1.svg" class="playstore"> -->
+                          </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="col w-100 d-flex flex-column align-items-center">
-                    <img src="assets/img/mockup.svg" class="mockup"><br>
-                    <img src="assets/img/id_badge_web_generic 1.svg" class="playstore">
-                  </div>
                 </div>
+
+              </div>
+              <div class="carousel-item">
+                <div class="container ">
+                    <div class="container title">
+                        <div class="row">
+                          <div class="col-12 col-md-6">
+                            <h1 class="w-75 text-white header-title">
+                                Selamat Datang Di SISFOBETA 4.0
+                            </h1>
+                            <div class="account">
+                                <p class="text-white account-title">Belum Punya Akun?</p><br>
+                                <div>
+                                <button type="button" class="btn btn-login me-2">Masuk</button>
+                                <button type="button" class="btn btn-regis text-white">Daftar</button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col w-100 d-flex flex-column align-items-center">
+                            <img src="assets/img/mockup.svg" class="mockup"><br>
+                            <!-- <img src="assets/img/id_badge_web_generic 1.svg" class="playstore"> -->
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container ">
+                    <div class="container title">
+                        <div class="row">
+                          <div class="col-12 col-md-6">
+                            <h1 class="w-75 text-white header-title">
+                                Selamat Datang Di SISFOBETA 4.0
+                            </h1>
+                            <div class="account">
+                                <p class="text-white account-title">Belum Punya Akun?</p><br>
+                                <div>
+                                <button type="button" class="btn btn-login me-2">Masuk</button>
+                                <button type="button" class="btn btn-regis text-white">Daftar</button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col w-100 d-flex flex-column align-items-center">
+                            <img src="assets/img/mockup.svg" class="mockup"><br>
+                            <!-- <img src="assets/img/id_badge_web_generic 1.svg" class="playstore"> -->
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+
         <!--Header Content End-->
     </div>
     <!--Header End-->
 
-    <div>
-        <img src="assets/img/Vector.svg" class="wave">
-    </div>
-
-    <!--Content News-->
-    <div class="container news">
+    <!--Content Headline-->
+    <div class="container headline">
         <div class="news-title">
-            <h2>Berita</h2>
+            <h2>HEADLINE</h2>
         </div>
-        <div class="news-card d-flex bd-highlight mt-3">
-            <div class="bd-highlight card" style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+    </div>
+    <div class="container containerNews">
+        <div class="wrapperNews">
+            <div class="wrapperContentNews">
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="bd-highlight card mx-1 mx-md-3" style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="bd-highlight card " style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="news-card d-flex bd-highlight mt-3">
-            <div class="bd-highlight card" style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+        <div class="wrapperNews">
+            <div class="wrapperContentNews">
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="bd-highlight card mx-1 mx-md-3" style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="bd-highlight card " style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="baner mt-3">
+    </div>
+    <!--Content Headline End-->
+
+    <!--Content Baner-->
+    <div class="container">
+        <div class="wrapperBaner">
             <img src="assets/img/Permata_Mutiara_Maja-web 1.svg" alt="">
         </div>
+    </div>
+    <!--Content Baner End-->
 
-        <h3 class="mt-4 news-headline">HEADLINE</h3>
-        <div class="news-card d-flex bd-highlight mt-2">
-            <div class="bd-highlight card" style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+    <!--Content Berita-->
+    <div class="container">
+        <div class="berita-title">
+            <h2>Berita</h2>
+        </div>
+        <div class="wrapperNews">
+            <div class="wrapperContentNews2">
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="bd-highlight card mx-1 mx-md-3" style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="bd-highlight card " style="width: 26rem;">
-                <img src="assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" class="card-img-top" alt="...">
-                <div class="card-body p-1 p-md-4">
-                <p class="card-text">Terkait Program TWP AD, Jenderal Andika Minta ...</p>
-                <p class="card-text text-success mt-2 mt-md-4">11 September 2021</p>
+
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <div class="imgNews">
+                        <img src="./assets/img/kepala-staf-angkatan-darat-jenderal-tni-andika-perkasa-foto-23 2.svg" alt="">
+                    </div>
+                    <div class="contentNews">
+                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-    <!--Content News End-->
+    <!--Content Berita End-->
 
     <!--Content Fitur-->
-    <div class="container fitur mt-5">
+    <div class="container fitur mt-5" id="fitur">
         <div class="fitur-title d-flex">
             <h2>Fitur</h2><p class="ms-1">SISFOBETA</p>
         </div>
@@ -183,7 +283,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 ">
               <img src="assets/img/mockup2.svg" class="mockup2">
             </div>
             <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center mt-5 mt-md-0 fitur-card">
@@ -211,7 +311,42 @@
     <!--Content Fitur End-->
 
     <!--Content Service-->
-    <div class="container service py-3">
+
+    <div class="container">
+        <div class="wrapperService">
+            <div class="wrapperContentService justify-content-center">
+                <div class="service">
+                    <div class="imgService d-flex justify-content-center align-items-center">
+                        <img src="./assets/img/icon-lokasi.svg" alt="">
+                    </div>
+                    <div class="contentService">
+                        <h1 class="titleService text-center">Dimanapun dan kapanpun dapat di akses setiap saat</h1>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="imgService d-flex justify-content-center align-items-center">
+                        <img src="./assets/img/icon-app.svg" alt="">
+                    </div>
+                    <div class="contentService">
+                        <h1 class="titleService text-center">Dimanapun dan kapanpun dapat di akses setiap saat</h1>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="imgService d-flex justify-content-center align-items-center">
+                        <img src="./assets/img/icon-service.svg" alt="">
+                    </div>
+                    <div class="contentService">
+                        <h1 class="titleService text-center">Dimanapun dan kapanpun dapat di akses setiap saat</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="container service py-3">
         <div class="service-card d-flex bd-highlight mt-3 d-flex align-items-center justify-content-center gap-1 gap-md-3">
             <div class="bd-highlight card" style="width: 16rem;">
                 <div class="d-flex justify-content-center align-items-center pt-4">
@@ -238,7 +373,7 @@
                 </div>
             </div>
         </div>
-   </div>
+   </div> -->
     <!--Content Service End-->
 
     <!--Content About-->
@@ -295,16 +430,161 @@
 
 
 
+
     <!--jQuery-->
-    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
     <!--Bootstrap Asset-->
-    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!--Slick Js-->
-    <script src="../assets/vendors/slick/slick.min.js"></script>
+    <script src="./assets/vendors/slick/slick.min.js"></script>
     <script>
+        $('.wrapperContentNews ').slick({
+        infinite: false,
+        arrows : false,
+        slidesToShow: 3,
+        responsive: [
+        {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: false
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+        }
+        ]
+            });
+
+
+        $('.wrapperContentNews2 ').slick({
+        infinite: false,
+        arrows : false,
+        slidesToShow: 2.5,
+        responsive: [
+        {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 2.5,
+            dots: false
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 1.5,
+            slidesToScroll: 1.5
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1.5,
+            slidesToScroll: 1.5
+        }
+        }
+        ]
+            });
+
         
+            $('.wrapperContentService').slick({
+        infinite: false,
+        arrows : false,
+        slidesToShow: 3,
+        responsive: [
+        {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: false
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+        }
+        ]
+            });
     </script>
+
+    <!-- Sticky -->
+    <script>
+        const navHeight = $("nav").height();
+        const vh = $(window).height();
+
+        $(window).scroll(function(){
+            if (window.scrollY > $("nav").offset().top){
+                $("body").css("padding-top", (navHeight + 1));
+                $("nav").height(0)
+                $("nav-brand").addClass('d-none')
+            } else {
+                $("nav").height(navHeight);
+                $("nav-brand").removeClass('d-none')
+            }
+        // 100 * (() / vh)
+            if (window.scrollY > ($(".header").offset().top + (180 * (200 / vh)) )) {
+                $("nav").addClass('fix-nav fixed-top bg-nav');
+                $("nav").height(navHeight);
+                $("nav-brand").addClass('d-none')
+            } else{
+                $("nav").height(navHeight);
+                $("nav").removeClass('fix-nav fixed-top bg-nav');
+                $("body").css("padding-top", "");
+                $("nav-brand").removeClass('d-none')
+            }
+        })
+    </script>
+
+    <!-- <script>
+        const navHeight = $("nav").height();
+        const vh = $(window).height();
+
+        $(window).scroll(function(){
+            if (window.scrollY > $("nav").offset().top){
+                $("body").css("padding-top", (navHeight + 1));
+                $("nav").height(0)
+                // $(".navbar-brand").addClass('d-none');
+            } else {
+                $("nav").height(navHeight);
+                // $(".navbar-brand").removeClass('d-none');
+            }
+        // 100 * (() / vh)
+            if (window.scrollY > ($(".header").offset().top + (100 * (200 / vh)) )) {
+                $("nav").addClass('fix-nav fixed-top bg-nav');
+                $("nav").height(navHeight);
+                // $(".navbar-brand").addClass('d-none');
+            } else{
+                $("nav").height(navHeight);
+                $("nav").removeClass('fix-nav fixed-top bg-nav');
+                $("body").css("padding-top", "");
+                // $(".navbar-brand").removeClass('d-none');
+            }
+        })
+    </script> -->
 
 </body>
 </html>

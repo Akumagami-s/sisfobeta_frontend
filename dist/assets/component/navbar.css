@@ -25,8 +25,14 @@ Variables
 /*------------
 Styling
 ------------*/
+.onScrolled {
+  position: fixed;
+  top: 0;
+}
+
 #mainHeader {
   background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+  padding-top: 1rem;
 }
 
 #mainHeader .navbar .container-fluid .navbar-brand {
@@ -240,6 +246,12 @@ Styling
 }
 
 @media screen and (min-width: 0px) {
+  #mainHeader {
+    height: 270px;
+  }
+  #mainHeader .navbar {
+    margin-bottom: 2rem;
+  }
   #mainHeader .navbar .container-fluid .navbar-brand img {
     max-width: 70px;
   }

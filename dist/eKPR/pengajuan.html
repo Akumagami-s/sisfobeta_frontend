@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-KPR | Menu</title>
+    <title>Ebaltab | Menu</title>
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--Ekpr Css-->
@@ -157,7 +157,7 @@
                 <p>Dashboard</p>
               </a>
     
-              <a class="nav-link ekprKelolaUser active" 
+              <a class="nav-link ekprKelolaUser" 
                 href="#"
                 aria-selected="true">
     
@@ -188,7 +188,7 @@
                 <p>Management Rumah</p>
               </a>
     
-              <a class="nav-link ekprPengajuan"
+              <a class="nav-link ekprPengajuan active"
                 href="#"
                 aria-selected="true">
     
@@ -273,282 +273,43 @@
         <div class="container-fluid">
             <div class="wrapperContent">
   
-              <div class="nav nav-tabs tabsButton" id="nav-tab" role="tablist">
+                <div class="wrapperTable">
+                    <h1 class="nameContent">Konfirmasi Pengajuan</h1>
 
-                 <button class="nav-link active"
-                 id="daftarAkun-tab-menu" 
-                 data-bs-toggle="tab" 
-                 data-bs-target="#daftarAkun-tab" 
-                 type="button" role="tab" 
-                 aria-controls="daftarAkun-tab" 
-                 aria-selected="true">Daftar Akun</button>
-  
-                 <button class="nav-link"
-                 id="pengelola-tab-menu" 
-                 data-bs-toggle="tab" 
-                 data-bs-target="#pengelola-tab" 
-                 type="button" role="tab" 
-                 aria-controls="pengelola-tab" 
-                 aria-selected="true">Pengelola</button>
-  
-                 <button class="nav-link"
-                 id="user-tab-menu" 
-                 data-bs-toggle="tab" 
-                 data-bs-target="#user-tab" 
-                 type="button" role="tab" 
-                 aria-controls="user-tab" 
-                 aria-selected="true">User</button>
-  
-                 <button class="nav-link"
-                 id="verifikasi-tab-menu" 
-                 data-bs-toggle="tab" 
-                 data-bs-target="#verifikasi-tab" 
-                 type="button" role="tab" 
-                 aria-controls="verifikasi-tab" 
-                 aria-selected="true">Verifikasi Akun User</button>
-              </div>
-  
-              <div class="tab-content" id="nav-tabContent">
-  
-                <div class="tab-pane fade show active" 
-                  id="daftarAkun-tab" 
-                  role="tabpanel" 
-                  aria-labelledby="daftarAkun-tab-menu">
-  
-                  <h1 class="nameContent">Kelola Akun</h1>
-  
-                  <div class="wrapperTable">
-                    <table id="tableMasterKategori" class="table" style="width:100%">
-  
-                      <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#kategori">
-                        Tambah
-                      </button>
-  
-                      <div class="modal fade" id="kategori" tabindex="-1" aria-labelledby="kategoriLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-  
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="kategoriLabel">Tambah Kategori</h5>
-                            </div>
-  
-                            <div class="modal-body">
-                              <form action="">
-                                  <div class="mainForm columnForm">
-                                    <div class="actionForm first">
-                                      <label for="">Image</label>
-                                      <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                    <div class="actionForm two">
-                                      <label for="">Nama</label>
-                                      <input type="text">
-                                    </div>
-                                    <div class="actionForm two">
-                                        <label for="">Email</label>
-                                        <input type="text">
-                                      </div>
-                                      <div class="actionForm two">
-                                        <label for="">NRP</label>
-                                        <input type="text">
-                                      </div>
-                                      <div class="actionForm two">
-                                        <label for="">Role</label>
-                                        <select class="form-select" id="inputGroupSelect01">
-                                            <option selected>Pengelola</option>
-                                            <option value="1">Admin</option>
-                                          </select>
-                                      </div>
-                                      <div class="actionForm two">
-                                        <label for="">Password</label>
-                                        <input type="password">
-                                      </div>
-                                  </div>
-                                  
-                                  <div class="buttonActionForm">
-  
-                                  </div>
-                              </form>
-                            </div>
-  
-                            <div class="modal-footer actionButton">
-                              <button class="btn saveBtn d-flex align-items-center" type="save">
-                                <img src="../assets/img/saveIcon.svg" alt="">
-                                Simpan
-                            </button>
-                            <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
-                                Batal
-                            </button>
-                            </div>
-  
-                          </div>
-                        </div>
-                      </div>
-  
+                    <table id="tablePengajuan" class="table" style="width:100%">
                       
                       <thead class="headTable">
                           <tr>
                             <th>#</th>
-                            <th>Role</th>
-                            <th>Avatar</th>
+                            <th>Status</th>
                             <th>Nama</th>
-                            <th>Email</th>
+                            <th>Pangkat</th>
                             <th>NRP</th>
-                            <th>Password</th>
-                            <th>Action</th>
-                          </tr>
-                      </thead>
-                      <tbody class="bodyTable">
-                          <tr>
-                            <td>00</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>
-                                <div class="action">
-                                    <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                                    <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                                </div>
-                            </td>
-                          </tr>
-  
-                      </tbody>
-                  </table>
-                  </div>
-                </div>
-  
-                <div class="tab-pane fade" 
-                  id="pengelola-tab" 
-                  role="tabpanel" 
-                  aria-labelledby="pengelola-tab-menu">
-  
-                  <h1 class="nameContent">Kelola Akun</h1>
-  
-                  <div class="wrapperTable">
-                    <table id="tablePengelola" class="table" style="width:100%">
-                      
-                      <thead class="headTable">
-                          <tr>
-                            <th>#</th>
-                            <th>Avatar</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>NRP</th>
-                            <th>Password</th>
-                            <th>Action</th>
+                            <th>Kesatuan</th>
+                            <th>Pinjaman</th>
+                            <th>Jangka Waktu</th>
+                            <th>Aksi</th>
                           </tr>
                       </thead>
                       <tbody class="bodyTable">
                            <tr>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
                                <td>
                                     <div class="action">
-                                        <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
                                         <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
                                     </div>
                                </td>
                            </tr>
                       </tbody>
                   </table>
-                  </div>
-                </div>
-  
-                <div class="tab-pane fade" 
-                  id="user-tab" 
-                  role="tabpanel" 
-                  aria-labelledby="user-tab-menu">
-  
-                  <h1 class="nameContent">Kelola Akun</h1>
-  
-                  <div class="wrapperTable">
-                    <table id="tableUser" class="table" style="width:100%">
-  
-                      <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#satminkal">
-                        Export
-                      </button>
-                      
-                      <thead class="headTable">
-                          <tr>
-                            <th>#</th>
-                            <th>Nama</th>
-                            <th>Status</th>
-                            <th>NRP</th>
-                            <th>Password</th>
-                            <th>Action</th>
-                          </tr>
-                      </thead>
-                      <tbody class="bodyTable">
-                          <tr>
-                            <td>1</td>
-                            <td>00000</td>
-                            <td>17 April 2021</td>
-                            <td>KTM KODE</td>
-                            <td>00000</td>
-                            <td>
-                                <div class="action">
-                                    <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                                    <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                                </div>
-                            </td>
-                          </tr>
-  
-                      </tbody>
-                  </table>
-                  </div>
-                </div>
-  
-                <div class="tab-pane fade" 
-                  id="verifikasi-tab" 
-                  role="tabpanel" 
-                  aria-labelledby="verifikasi-tab-menu">
-  
-                  <h1 class="nameContent">Verifikasi Akun User</h1>
-  
-                  <div class="wrapperTable">
-                    <table id="tableVerifikasi" class="table" style="width:100%">
-                      
-                      <thead class="headTable">
-                          <tr>
-                            <th>#</th>
-                            <th>Role</th>
-                            <th>Avatar</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>NRP</th>
-                            <th>Password</th>
-                            <th>Action</th>
-                          </tr>
-                      </thead>
-                      <tbody class="bodyTable">
-                          <tr>
-                            <td>00</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>
-                                <button class="btn verifikasiBtn d-flex align-items-center" type="verifikasi">
-                                    <img src="../assets/img/verifikasi.svg" alt="">
-                                    <p class="verifikasiText">Verifikasi</p>
-                                </button>
-                            </td>
-                          </tr>
-  
-                      </tbody>
-                  </table>
-                  </div>
-                </div>
-  
-              </div>
+                  </div>              
   
             </div>
         </div>
@@ -567,17 +328,13 @@
     <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.datatables.net/fixedheader/3.2.0/js/dataTables.fixedHeader.min.js"></script>
-    <!--Slick Js-->
-    <script src="../assets/vendors/slick/slick.min.js"></script>
     <!--Ion Icon-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--dataPrajurit Js-->
-    <script src="../assets/js/kelolaUser.js"></script>
-    
+    <script src="../assets/js/pengajuanKpr.js"></script>
+    <!--Table Js-->
     <script>
-        
-
     </script>
 </body>
 </html>

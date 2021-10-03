@@ -309,7 +309,7 @@ footer {
 
 @media screen and (min-width : 320px) {
     .mainContent {
-        margin-top: 2rem;
+        transition: 1s;
     }
     .wrapperTable {
         padding: 1rem;
@@ -366,7 +366,6 @@ footer {
 
 @media screen and (min-width : 768px) {
     .mainContent {
-        margin-top: 3rem;
     }
     .wrapperTable {
         padding: 2rem;
@@ -464,7 +463,6 @@ footer {
 
 @media screen and (min-width : 1400px) {
     .mainContent {
-        margin-top: 4rem;
     }
 }
 

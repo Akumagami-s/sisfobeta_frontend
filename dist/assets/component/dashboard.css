@@ -25,6 +25,14 @@ Variables
 /*------------
 Styling
 ------------*/
-#mainHeader {
-  height: 100%;
+@media screen and (min-width: 0px) {
+  #mainHeader {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #mainHeader {
+    height: 400px;
+  }
 }

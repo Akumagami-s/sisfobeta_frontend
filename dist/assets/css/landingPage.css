@@ -24,12 +24,28 @@ Variables
 /*------------
 Styling
 ------------*/
+
 .header{
     background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
 }
+.header .container .container .row {
+    align-items: center;
+}
+
+.bg-nav{
+    background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+}
+
+.bg-sidebar{
+
+}
+
+.tni-logo{
+    width: 20%;
+}
 
 .header .navbar h1{
-    font-size: 42px;
+    font-size: 28px;
 }
 
 .header .navbar p{
@@ -37,15 +53,15 @@ Styling
 }
 
 .header .title{
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 
 .header .title .header-title{
-    font-size: 42px;
+    font-size: 38px;
 }
 
 .header .title .account{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .header .title .account .account-title{
@@ -67,26 +83,102 @@ Styling
 }
 
 .header .title .mockup{
-    width: 100%;
-    height: 60%;
+
+    width: 90%;
 }
 
-.wave{
-    width: 100%;
-    position: relative;
-    margin-top: -170px;
+.headline{
+    padding-top: 1rem;
 }
 
-.news .news-title{
+.containerNews {
+    padding: 0.5rem 0;
+}
+
+.news-title{
     border-left: 7px solid #3D563D;
 }
 
-.news .news-title h2{
+.news-title h2{
     margin-left: 0.5rem;
 }
 
-.news .baner img{
+.berita-title{
+    border-left: 7px solid #3D563D;
+}
+
+.berita-title h2{
+    margin-left: 0.5rem;
+}
+
+.wrapperNews {
     width: 100%;
+    position: relative;
+}
+.wrapperNews .wrapperContentNews {
+    display: flex;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+.wrapperNews .wrapperContentNews .slick-list {
+    width: 100%;
+}
+
+.wrapperNews .wrapperContentNews .news {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem .8rem;
+}
+.wrapperNews .wrapperContentNews .news .imgNews {
+    width: 100%;
+}
+.wrapperNews .wrapperContentNews .news .imgNews img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.wrapperNews .wrapperContentNews .news .contentNews{
+    padding: 1rem 1rem 2rem 1rem;
+}
+.wrapperNews .wrapperContentNews .news .contentNews .titleNews{
+    font-size: 18px;
+}
+
+
+.wrapperNews .wrapperContentNews2 {
+    display: flex;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+.wrapperNews .wrapperContentNews2 .slick-list {
+    width: 100%;
+}
+
+.wrapperNews .wrapperContentNews2 .news {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem .8rem;
+}
+.wrapperNews .wrapperContentNews2 .news .imgNews {
+    width: 100%;
+}
+.wrapperNews .wrapperContentNews2 .news .imgNews img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.wrapperNews .wrapperContentNews2 .news .contentNews{
+    padding: 1rem 1rem 2rem 1rem;
+}
+.wrapperNews .wrapperContentNews2 .news .contentNews .titleNews{
+    font-size: 18px;
+}
+
+.wrapperBaner img{
+    width: 100%;
+    padding-bottom: 1.5rem;
 }
 
 .fitur .fitur-title{
@@ -118,6 +210,42 @@ Styling
     height: 100%;
 }
 
+.wrapperService{
+    padding: 0 10rem;
+}
+
+.wrapperService .wrapperContentService {
+    display: flex;
+    margin: 2rem 0;
+    width: 100%;
+}
+.wrapperService .wrapperContentService .slick-list {
+    width: 100%;
+}
+
+.wrapperService .wrapperContentService .service {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem .8rem;
+}
+.wrapperService .wrapperContentService .service .imgService {
+    padding: 2rem 5rem 1rem 5rem;
+    width: 100%;
+}
+.wrapperService .wrapperContentService .service .imgService img {
+    width: 100%;
+}
+.wrapperService .wrapperContentService .service .contentService{
+    padding: 1rem 1.5rem 2.5rem 1.5rem;
+}
+.wrapperService .wrapperContentService .service .contentService .titleService{
+    padding: 0 0.5rem;
+    font-size: 16px;
+}
+
+
 .about .about-title{
     border-left: 7px solid #3D563D;
 }
@@ -135,13 +263,13 @@ Styling
 }
 
 .ditkuad{
-    width: 140px;
-    height: 140px;
+    width: 110px;
+    height: 110px;
 }
 
 .logo-btn{
-    width: 390px;
-    height: 210px;
+    width: 360px;
+    height: 180px;
 }
 
 .footer{
@@ -154,6 +282,7 @@ Styling
 }
 
 @media screen and (max-width: 370px) {
+    
     .header .navbar h1{
         font-size: 28px;
     }
@@ -210,31 +339,21 @@ Styling
     }
 
     .header .title .mockup{
-        width: 100%;
-        height: 60%;
-        margin-top: 2rem;
+        width: 70%;
     }
 
-    .wave{
-        width: 100%;
-        position: relative;
-        margin-top: -60px !important;
+    .wrapperNews .wrapperContentNews .news .contentNews .titleNews{
+        font-size: 12px;
     }
 
-    .news .news-title h2{
+    .news-title h2{
+        margin-left: 0.5rem;
         font-size: 20px;
     }
-
-    .news .news-card .card{
-        width: 96px;
-    }
-
-    .news .news-card .card .card-body .card-text{
-        font-size: 8px;
-    }
-
-    .news .news-headline{
-        font-size: 18px;
+    
+    .berita-title h2{
+        margin-left: 0.5rem;
+        font-size: 20px;
     }
 
     .fitur .fitur-title h2{
@@ -269,17 +388,22 @@ Styling
         display: none;
     }
 
-    .service .service-card .card{
-        width: 96px;
+    .wrapperService{
+        padding: 0 0.5rem !important;
     }
-
-    .service .service-card .card .card-body .service-text{
-        font-size: 10px !important;
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 2rem 1rem 2rem !important;
+        width: 100%;
     }
-
-    .img-service{
-        width: 45px !important;
-        height: 45px !important;
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem !important;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem !important;
+        font-size: 12px !important;
     }
 
     .about .about-title h2{
@@ -294,18 +418,18 @@ Styling
         font-size: 14px;
     }
 
-    .sponsor .sponsor-text{
-        font-size: 20px;
+    .sponsor-text{
+        font-size: 20px !important;
     }
 
-    .sponsor .ditkuad{
-        width: 70px;
-        height: 70px;
+    .ditkuad{
+        width: 70px !important;
+        height: 70px !important;
     }
 
-    .sponsor .logo-btn{
-        width: 170px;
-        height: 100px;
+    .logo-btn{
+        width: 170px !important;
+        height: 100px !important;
     }
 
     .mockup{
@@ -319,6 +443,7 @@ Styling
     .mockup3{
         display: none;
     }
+
 }
 
 
@@ -389,28 +514,6 @@ Styling
         margin-top: 2rem;
     }
 
-    .wave{
-        width: 100%;
-        position: relative;
-        margin-top: -60px !important;
-    }
-
-    .news .news-title h2{
-        font-size: 20px;
-    }
-
-    .news .news-card .card{
-        width: 96px;
-    }
-
-    .news .news-card .card .card-body .card-text{
-        font-size: 8px;
-    }
-
-    .news .news-headline{
-        font-size: 18px;
-    }
-
     .fitur .fitur-title h2{
         font-size: 20px;
     }
@@ -443,17 +546,22 @@ Styling
         display: none;
     }
 
-    .service .service-card .card{
-        width: 96px;
+    .wrapperService{
+        padding: 0 0.2rem !important;
     }
-
-    .service .service-card .card .card-body .service-text{
-        font-size: 11px !important;
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 2.5rem 1rem 2.5rem !important;
+        width: 100%;
     }
-
-    .img-service{
-        width: 45px;
-        height: 45px;
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem !important;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem !important;
+        font-size: 14px !important;
     }
 
     .about .about-title h2{
@@ -468,16 +576,16 @@ Styling
         font-size: 14px;
     }
 
-    .sponsor .sponsor-text{
-        font-size: 20px;
+    .sponsor-text{
+        font-size: 20px !important;
     }
 
-    .sponsor .ditkuad{
-        width: 70px;
-        height: 70px;
+    .ditkuad{
+        width: 70px !important;
+        height: 70px !important;
     }
 
-    .sponsor .logo-btn{
+    .logo-btn{
         width: 170px;
         height: 100px;
     }
@@ -545,9 +653,22 @@ Styling
         height: 25px;
     }
 
-    .img-service{
-        width: 60px;
-        height: 60px;
+    .wrapperService{
+        padding: 0 1.5rem;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 3.8rem 1rem 3.8rem;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem;
+        font-size: 16px;
     }
 
     .sponsor .sponsor-text{
@@ -626,6 +747,24 @@ Styling
         margin-bottom: 95px;
     }
 
+    .wrapperService{
+        padding: 0 2rem;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 3.8rem 1rem 3.8rem;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem;
+        font-size: 16px;
+    }
+
     .sponsor .ditkuad{
         width: 90px;
         height: 90px;
@@ -662,6 +801,12 @@ Styling
         display: none;
     }
 
+}
+
+@media (min-width: 765px) and (max-widht: 1020px){
+    .col-md-4 {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 1070px) {

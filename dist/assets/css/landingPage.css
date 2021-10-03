@@ -282,7 +282,20 @@ Styling
 }
 
 @media screen and (max-width: 370px) {
-    
+    .header .navbar .container #nav-menu-mx {
+        width: 100%;
+        justify-content: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+        margin: 0 .3rem;
+    }
+
+
     .header .navbar h1{
         font-size: 28px;
     }
@@ -444,11 +457,38 @@ Styling
         display: none;
     }
 
+    .footer .footer-text{
+        font-size: 0.7rem;
+    }
+
+    .footer .footer-copyright{
+        font-size: 0.75rem;
+    }
+
+    .sosmed{
+        width: 25px;
+        height: 25px;
+    }
+
 }
 
 
 
 @media screen and (max-width: 450px) {
+    .header .navbar .container #nav-menu-mx {
+        width: 100%;
+        justify-content: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+        margin: 0 .5rem;
+    }
+
+
     .header .navbar h1{
         font-size: 28px;
     }
@@ -602,10 +642,36 @@ Styling
         display: none;
     }
 
+    .footer .footer-text{
+        font-size: 0.8rem;
+    }
+
+    .footer .footer-copyright{
+        font-size: 0.85rem;
+    }
+
+    .sosmed{
+        width: 25px;
+        height: 25px;
+    }
+
 }
 
 
 @media screen and (max-width: 550px) {
+    .header .navbar .container #nav-menu-mx {
+        width: 100%;
+        justify-content: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+        margin: 0 1rem;
+    }
+
     .wave{
         width: 100%;
         position: relative;
@@ -704,9 +770,9 @@ Styling
 }
 
 @media screen and (max-width: 770px) {
-    .wave{
-        width: 100%;
-        position: relative;
+
+    .header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+        margin: 0 1rem;
     }
 
     .header .navbar h1{
@@ -789,11 +855,11 @@ Styling
         height: 130px;
     }
 
-    .mockup{
+    .mockup2{
         display: none;
     }
 
-    .mockup2{
+    .mockup{
         display: none;
     }
 
@@ -862,6 +928,24 @@ Styling
         margin-bottom: 80px;
     }
 
+    .wrapperService{
+        padding: 0 2rem;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 4rem 1rem 4rem;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem;
+        font-size: 16px;
+    }
+
     .mockup3{
         display: none;
     }
@@ -890,13 +974,7 @@ Styling
     }
 }
 
-@media screen and (max-width: 1250px) {
-    .wave{
-        width: 100%;
-        position: relative;
-        margin-top: -80px;
-    }
-
+@media screen and (max-width: 1200px) {
     .header .title .account .btn-login{
         width: 120px;
         height: 40px;
@@ -909,5 +987,27 @@ Styling
         height: 40px;
         background-color: #3D563D;
         margin-bottom: 80px;
+    }
+
+    .wrapperService{
+        padding: 0 2rem;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 2rem 5rem 1rem 5rem;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem;
+        font-size: 16px;
+    }
+
+    .mockup3{
+        display: none;
     }
 }

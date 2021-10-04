@@ -27,8 +27,9 @@ Styling
 ------------*/
 .mobileMenu {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: fixed;
+  z-index: 100;
   bottom: 0;
   width: 100%;
   padding: .8rem 0;

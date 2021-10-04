@@ -50,3 +50,117 @@ Styling
         }
     }
 }
+.mainContent {
+    .nameContent {
+        color: $font-color;
+        font-size: 18px;
+    }
+    .wrapperDataSummary {
+        display: flex;
+        .data {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background: $white-color;
+        }
+    }
+
+    .container-danaAlokasi-penyaluranDana {
+        .alokasiDana,.penyaluranDana {
+            display: flex;
+            .cardStatistic {
+                display: flex;
+                align-items: center;
+                box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+
+                .contentValue {
+                    .nameValue {
+                        font-weight: 600;
+                    }
+                    .valueDana {
+                        display: flex;
+                        font-weight: 600;
+                        .value {
+                            margin-left: 2px;
+                        }
+                    }
+                }
+                .wrapperChart {
+                    canvas {
+                        max-width: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :0px) {
+    .mainContent {
+        position: relative;
+        .nameContent {
+            margin-bottom: 1rem;
+        }
+        .wrapperDataSummary {
+            .slick-track {
+                display: flex;
+                align-items: center;
+            }
+            .data {
+                padding: 1rem;
+                margin: 1rem .5rem;
+                border-radius: 8px;
+                .icon {
+                    margin-bottom: 1rem;
+                    img,canvas {
+                        max-width: 70px;
+                    }
+                }
+                .titleData {
+                    font-size: 14px;
+                    font-weight: 600;
+                    .valueData {
+                        color: #DC3545;
+                    }
+                }
+                .btnStyle {
+                    margin-top: 1rem;
+                    font-size: 14px;
+                }
+                .month,.years {
+                    font-size: 12px;
+                }
+            }
+        }
+        .container-danaAlokasi-penyaluranDana {
+            .alokasiDana,.penyaluranDana {
+                .cardStatistic {
+                    padding: 1rem;
+                    margin: .5rem;
+                    width: 100%;
+                    justify-content: space-between;
+                    border-radius: 8px;
+                    .contentValue {
+                        margin-right: .5rem;
+                        .nameValue {
+                            font-size: 12px;
+                        }
+                        .valueDana {
+                            font-size: 10px;
+                        }
+                    }
+                    .wrapperChart {
+                        canvas {
+                            max-width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

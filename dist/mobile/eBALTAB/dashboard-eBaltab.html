@@ -193,6 +193,86 @@
             Lainnya
         </a>
     </div>
+    <div class="mainContent">
+        <h1 class="nameContent">Data Penyaluran Ulang</h1>
+        <div class="wrapperDataSummary">
+          <div class="data dataNotSync">
+              <div class="icon">
+                <img src="../../assets/img/syncDataIcon.svg" alt="">
+              </div>
+              <h1 class="titleData"><span class="valueData">287.828</span> Data Belum Sinkron</h1>
+              <button class="btnStyle redButton" type="submit">SINKRON DATA</button>
+          </div>
+
+          <div class="data kelengkapanPengajuan">
+            <div class="arrow">
+                <img src="../assets/img/arrowChart.svg" alt="">
+            </div>
+            <div class="icon wrapperChart">
+              <canvas id="kelengkapanPengajuan"></canvas>
+            </div>
+            <h1 class="titleData">Kelengkapan Pengajuan</h1>
+            <p><span class="month">September</span> <span class="years">2021</span></p>
+          </div>
+
+          <div class="data approvalSprin">
+            <div class="arrow">
+              <img src="../assets/img/arrowChart.svg" alt="">
+            </div>
+            <div class="icon wrapperChart">
+              <canvas id="approvalSprin"></canvas>
+            </div>
+            <h1 class="titleData">Approval Sprin</h1>
+            <p><span class="month">September</span><span class="years">2021</span></p>
+          </div>
+        </div>
+
+        <div class="container-danaAlokasi-penyaluranDana">
+          <div class="alokasiDana wrapperSlick">
+              <div class="statisticDanaAlokasi cardStatistic">
+                  <div class="contentValue">
+                    <h3 class="nameValue">Dana Alokasi</h3>
+                    <h1 class="valueDana">Rp <span class="value">308.260.458.101</span></h1>
+                  </div>
+                  <div class="wrapperChart">
+                    <canvas id="chartDanaAlokasi"></canvas>
+                  </div>
+              </div>
+
+              <div class="statisticApprovalDanaAlokasi cardStatistic">
+                <div class="contentValue">
+                  <h3 class="nameValue">Dana Alokasi</h3>
+                  <h1 class="valueDana">Rp <span class="value">308.260.458.101</span></h1>
+                </div>
+                <div class="wrapperChart">
+                  <canvas id="chartApprovalDanaAlokasi"></canvas>
+                </div>
+              </div>
+          </div>
+
+          <div class="penyaluranDana wrapperSlick">
+            <div class="cardStatistic">
+              <div class="contentValue">
+                <h3 class="nameValue">Dana Penyaluran</h3>
+                <h1 class="valueDana">Rp <span class="value">308.260.458.101</span></h1>
+              </div>
+              <div class="wrapperChart">
+                <canvas id="chartDanaPenyaluran"></canvas>
+              </div>
+            </div>
+
+            <div class="cardStatistic">
+              <div class="contentValue">
+                <h3 class="nameValue">Approval Dana Penyaluran</h3>
+                <h1 class="valueDana">Rp <span class="value">308.260.458.101</span></h1>
+              </div>
+              <div class="wrapperChart">
+                <canvas id="chartApprovalDanaPenyaluran"></canvas>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
 
 
     <!--jQuery-->
@@ -225,7 +305,44 @@
                 slidesToShow: 3,
                 slidesToScroll: 1,
             }
-            },
+          },
+        ]
+    });
+
+    $('.wrapperDataSummary').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows : false,
+        responsive: [
+            {
+            breakpoint: 425,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '30px',
+            }
+          },
+        ]
+    });
+
+
+    $('.wrapperSlick').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows : false,
+        responsive: [
+            {
+            breakpoint: 425,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '30px',
+            }
+          },
         ]
     });
     </script>

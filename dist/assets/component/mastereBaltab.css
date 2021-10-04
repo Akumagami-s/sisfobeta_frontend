@@ -1,0 +1,253 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+#mainHeader {
+  height: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperMainData .wrapperData .tab-content .tab-pane .wrapperTable {
+  position: relative;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperMainData .wrapperData .tab-content .tab-pane .wrapperTable .table tbody .actionButton {
+  margin: 0;
+}
+
+.wrapperTable {
+  position: relative;
+}
+
+.wrapperTable .btnModal {
+  position: absolute;
+  background: #3B533B;
+  font-size: 12px;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  background: #DDDDDD;
+}
+
+.modal .modal-dialog .modal-content .modal-header h5 {
+  font-weight: 600;
+}
+
+.modal .modal-dialog .modal-content .modal-body .mainForm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .mainForm .first, .modal .modal-dialog .modal-content .modal-body .mainForm .two {
+  width: 100%;
+  padding: 1rem;
+}
+
+.modal .modal-dialog .modal-content .modal-body .mainForm .actionForm {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  margin: 1rem 0;
+}
+
+.modal .modal-dialog .modal-content .modal-body .mainForm .actionForm label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.modal .modal-dialog .modal-content .modal-body .mainForm .actionForm input {
+  width: 70%;
+  border: 1px solid #222222;
+  border-radius: 6px;
+  padding: .2rem .8rem;
+}
+
+.modal .modal-dialog .modal-content .modal-body .mainForm .actionForm select {
+  width: 70%;
+  border: 1px solid #222222;
+  border-radius: 6px;
+  padding: .2rem .8rem;
+}
+
+.modal .modal-dialog .modal-content .modal-body .rowForm {
+  flex-direction: row;
+}
+
+.modal .modal-dialog .modal-content .modal-body .columnForm {
+  flex-direction: column;
+}
+
+.modal .modal-dialog .modal-content .modal-footer {
+  justify-content: flex-start;
+}
+
+.modal .modal-dialog .modal-content .modal-footer button:not(:last-child) {
+  margin-right: .8rem;
+}
+
+.modal .modal-dialog .modal-content .modal-footer .saveBtn {
+  background: #28A745;
+}
+
+.modal .modal-dialog .modal-content .actionButton {
+  margin: .5rem;
+}
+
+.modal .modal-dialog .modal-content .modal-body .columnForm .actionForm {
+  margin: 0;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga {
+  background: #fff;
+  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction {
+  display: flex;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput {
+  display: flex;
+  flex-direction: column;
+  margin: .8rem;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput label {
+  margin-bottom: .5rem;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput select, .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput input {
+  padding: .5rem 1rem;
+  border: 1px solid #222222;
+  border-radius: 6px;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput button {
+  width: min-content;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput button img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperTable table tbody tr .actionButton {
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperMainData .wrapperData .tab-content .tab-pane .wrapperTable {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperTable {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .btnModal {
+    top: 15px;
+    right: 15px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .mainForm .actionForm label, .modal .modal-dialog .modal-content .modal-body .mainForm .actionForm input, .modal .modal-dialog .modal-content .modal-body .mainForm .actionForm select {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga {
+    padding: 1rem 2rem;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction {
+    flex-wrap: wrap;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput label {
+    margin-bottom: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput select, .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput input {
+    width: 100%;
+    padding: .5rem 1rem;
+    border: 1px solid #222222;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperMainData .wrapperData .tab-content .tab-pane .wrapperTable {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperTable {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .btnModal {
+    top: 32px;
+    right: 300px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .mainForm .actionForm label, .modal .modal-dialog .modal-content .modal-body .mainForm .actionForm input, .modal .modal-dialog .modal-content .modal-body .mainForm .actionForm select {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga {
+    padding: 1rem 2rem;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction {
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1000px;
+    align-items: flex-end;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput {
+    display: flex;
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput label {
+    margin-bottom: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput select, .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperPotonganBunga .wrapperAction .formInput input {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal .modal-dialog .modal-content .modal-body .rowForm {
+    flex-direction: column;
+  }
+  .modal .modal-dialog .modal-content .modal-body .columnForm {
+    flex-direction: column;
+  }
+}

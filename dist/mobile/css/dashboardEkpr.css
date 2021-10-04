@@ -1,0 +1,649 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+.onScrolled {
+  position: fixed;
+  top: 0;
+}
+
+#mainHeader {
+  padding-top: 1rem;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .headerData {
+  margin-bottom: 2rem;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart canvas {
+  width: 100%;
+  max-width: 250px;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart {
+  position: relative;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .nameLabel {
+  font-weight: 700;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur {
+  display: flex;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur {
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow {
+  position: absolute;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon {
+  margin-bottom: 1.5rem;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon .wrapperArrow {
+  position: absolute;
+  right: 0;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .nameLabel {
+  font-weight: 500;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
+  font-weight: 700;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+  width: 100%;
+}
+
+.mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow {
+  position: absolute;
+  right: 0;
+}
+
+.mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
+  background: #FFFFFF;
+  padding: 2rem;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.wrapperChart {
+  display: flex;
+}
+
+@media screen and (min-width: 0px) {
+  #mainHeader {
+    height: 270px;
+  }
+  #mainHeader .navbar {
+    margin-bottom: 2rem;
+  }
+  .mainContent {
+    padding: 2rem 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData {
+    margin-bottom: 1.5rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
+    flex-direction: column;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .headerData {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData {
+    flex-direction: column;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart {
+    margin-bottom: 1.5rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart canvas {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label {
+    margin-left: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .nameLabel {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .value {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label::before {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    left: 0;
+    border-radius: 50%;
+    transform: translate(-50%, 100%);
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .totalPokok::before {
+    background: #FF832A;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .totalBunga::before {
+    background: #7334FF;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur {
+    padding: 1rem .8rem;
+    margin: .5rem 0;
+    flex-direction: column-reverse;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .labelName {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .value {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .month {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart {
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
+    max-width: 80px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow {
+    right: 10px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow img {
+    max-width: 10px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .titleRekapDataMassdebet {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .slick-list {
+    padding: 0;
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .slick-list .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 1rem 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
+    max-width: 90px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+    max-width: 100px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon .wrapperArrow {
+    right: 20px;
+    top: 20px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label {
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .nameLabel {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang {
+    margin: 1rem 0;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+    margin: 1rem;
+    padding: 2rem 1rem;
+    max-height: 150px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label {
+    margin-right: 1rem;
+    width: 50%;
+    font-weight: 700;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .nameLabel {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
+    font-size: 12px;
+    display: flex;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+    width: 100%;
+    max-width: 70px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow {
+    right: 15px;
+    top: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img {
+    max-width: 10px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDetailData .nameContentSection {
+    margin-bottom: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDetailData .wrapperTable table .headTable {
+    background: #7334FF;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDetailData .wrapperTable table .headTable tr th:first-child {
+    border-radius: 6px 0 0px 6px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDetailData .wrapperTable table .headTable tr th:last-child {
+    border-radius: 0px 6px 6px 0px;
+  }
+  .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
+    padding: 2rem 1rem;
+  }
+  .nameContentSection {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
+    padding: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .nameLabel {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .value {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label::before {
+    height: 15px;
+    width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur {
+    padding: 1.5rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .labelName {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .value {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .month {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart {
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
+    max-width: 150px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow {
+    right: 20px;
+    top: 10px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperArrow img {
+    max-width: 10px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .slick-list, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .slick-list {
+    width: 100%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+    max-height: 180px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .nameLabel {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart {
+    width: 50%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+    max-width: 120px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img {
+    max-width: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
+    flex-direction: row;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart {
+    margin-bottom: 0;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart canvas {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart {
+    width: 40%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart {
+    margin-bottom: 1rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
+    max-width: 100px;
+  }
+  .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
+    flex-direction: row;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur {
+    flex-direction: row;
+    align-items: center;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur {
+    width: 70%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart {
+    width: 30%;
+    margin-bottom: 0rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic {
+    min-height: 300px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
+    max-width: 150px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .nameLabel {
+    font-size: 12px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData {
+    flex-direction: row;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+    padding: 3rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .headerData {
+    font-size: 26px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart {
+    margin-bottom: 0;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperChart canvas {
+    max-width: 250px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart {
+    width: 40%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .nameLabel {
+    font-size: 24px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .value {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label::before {
+    height: 15px;
+    width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur {
+    width: 60%;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart {
+    width: 40%;
+    margin-bottom: 0rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .wrapperChart canvas {
+    max-width: 130px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon canvas {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .wrapperIcon img {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .nameLabel {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+    padding: 2rem 3rem;
+    max-height: 300px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .nameLabel {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+    max-width: 180px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img {
+    max-width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
+    padding: 3rem;
+  }
+  .nameContentSection {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .headerData {
+    font-size: 26px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .nameLabel {
+    font-size: 24px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label .value {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .wrapperRekapDataPerbulan .contentData .wrapperInfoChart .label::before {
+    height: 15px;
+    width: 15px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .labelName {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .value {
+    font-size: 16px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperContentRekapData .containerDebitur .wrapperDebitur .debitur .contentDebitur .month {
+    font-size: 14px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang {
+    padding: 2rem 3rem;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .nameLabel, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .nameLabel {
+    font-size: 18px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
+    font-size: 22px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart canvas, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart canvas {
+    max-width: 200px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow {
+    top: 20px;
+    right: 20px;
+  }
+  .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart .wrapperArrow img, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart .wrapperArrow img {
+    max-width: 15px;
+  }
+}

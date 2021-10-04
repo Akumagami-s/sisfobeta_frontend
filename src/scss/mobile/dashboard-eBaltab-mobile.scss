@@ -103,11 +103,21 @@ Styling
             }
         }
     }
+
+    .statisticAllDataEbaltab {
+        .containerChart {
+            padding: 1rem;
+            background: $white-color;
+            box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+    }
 }
 
 @media screen and (min-width :0px) {
     .mainContent {
         position: relative;
+        margin-bottom: 4rem;
         .nameContent {
             margin-bottom: 1rem;
         }
@@ -143,6 +153,7 @@ Styling
             }
         }
         .container-danaAlokasi-penyaluranDana {
+            margin-bottom: 1rem;
             .alokasiDana,.penyaluranDana {
                 .cardStatistic {
                     padding: 1rem;

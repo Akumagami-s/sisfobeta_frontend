@@ -271,6 +271,20 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="statisticAllDataEbaltab">
+          <h1 class="nameContent">Data Penyaluran Ulang</h1>
+          <div class="containerChart">
+              <div class="wrapperChart">
+                <canvas id="allDataEbaltab"></canvas>
+              </div>
+              <!-- <div class="wrapperInfo">
+                <p class="info jumblahPengajuan">jumblah Pengajuan</p>
+                <p class="info danaAlokasi">Dana Alokasi</p>
+                <p class="info danaPenyaluran">Dana Penyaluran</p>
+              </div> -->
+          </div>
       </div>
     </div>
 
@@ -287,60 +301,8 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--Slick Js-->
     <script src="../../assets/vendors/slick/slick.min.js"></script>
+    <!--Custom Js-->
+    <script src="../js/dashboard-eBaltab.js"></script>
 
-    <script>
-        $(document).scroll(function(){
-            $('.wrapperMainMenu').toggleClass('onScrolled', $(this).scrollTop() > 170);
-        });
-      
-      $('.wrapperMainMenu').slick({
-        infinite: false,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows : false,
-        responsive: [
-            {
-            breakpoint: 425,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
-          },
-        ]
-    });
-
-    $('.wrapperDataSummary').slick({
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows : false,
-        responsive: [
-            {
-            breakpoint: 425,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-          },
-        ]
-    });
-
-
-    $('.wrapperSlick').slick({
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows : false,
-        responsive: [
-            {
-            breakpoint: 425,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-          },
-        ]
-    });
-    </script>
 </body>
 </html>

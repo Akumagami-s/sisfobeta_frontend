@@ -4,7 +4,7 @@ Font
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @font-face {
   font-family: steelfish;
-  src: url(../../../../font/stelfish.ttf);
+  src: url(../../../dist/assets/font/stelfish.ttf);
 }
 
 /*------------
@@ -24,3 +24,6 @@ Variables
 /*------------
 Styling
 ------------*/
+#mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
+  font-family: steelfish;
+}

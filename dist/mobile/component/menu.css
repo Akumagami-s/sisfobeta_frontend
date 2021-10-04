@@ -25,3 +25,42 @@ Variables
 /*------------
 Styling
 ------------*/
+.mobileMenu {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: .8rem 0;
+  background: #fff;
+  box-shadow: 11px 11px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.mobileMenu .menu {
+  font-size: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+  color: #B8B8B8;
+  text-decoration: none;
+}
+
+.mobileMenu .menu svg {
+  margin-bottom: 4px;
+  fill: #B8B8B8;
+}
+
+.mobileMenu .menu:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.mobileMenu .menu.active {
+  color: #A2A846;
+}
+
+.mobileMenu .menu.active svg {
+  fill: #A2A846;
+}

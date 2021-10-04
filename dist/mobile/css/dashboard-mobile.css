@@ -1,0 +1,128 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Reusable
+------------*/
+.nameTable {
+  font-size: 24px;
+}
+
+.nameContentMenu {
+  color: #3B4E63;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.nameCard {
+  color: #3B4E63;
+  font-weight: 500;
+}
+
+.labelNameCard {
+  font-weight: 400;
+  color: #3B4E63;
+}
+
+.valueOfCard {
+  font-weight: 700;
+  color: #3B4E63;
+}
+
+.colorText {
+  color: #3B4E63;
+}
+
+.nameHightCard {
+  font-weight: 700;
+  color: #3B4E63;
+}
+
+.valueChart {
+  font-weight: 700;
+}
+
+body {
+  transition: 1s;
+}
+
+/*------------
+Styling
+------------*/
+#mainHeader .navbar {
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+#mainHeader .wrapperMenuToApps {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  z-index: 100;
+  transition: .3s;
+  width: 100%;
+}
+
+#mainHeader .wrapperMenuToApps .menu {
+  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #fff;
+  transition: .3s;
+}
+
+#mainHeader .wrapperMenuToApps .menu:hover {
+  transition: .3s;
+}
+
+#mainHeader .wrapperMenuToApps .menu:hover .nameMenu {
+  color: #000;
+}
+
+#mainHeader .wrapperMenuToApps .menu:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#mainHeader .wrapperMenuToApps .menu .icon {
+  margin-bottom: 8px;
+}
+
+#mainHeader .wrapperMenuToApps .menu .icon img {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+#mainHeader .wrapperMenuToApps .menu .nameMenu {
+  color: #000;
+  font-weight: 500;
+}

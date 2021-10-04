@@ -30,9 +30,11 @@
                         <a class="nav-link active text-white text-center" aria-current="page" href="#">Home
                         <span class="visually-hidden">(current)</span>
                         </a>
-                        <a class="nav-link text-white text-center" href="#">Produk</a>
-                        <a class="nav-link text-white text-center" href="#">Tentang Kami</a>
-                        <a class="nav-link text-white text-center" href="#">Hubungi Kami</a>
+                        <a class="nav-link text-white text-center" href="#fitur">Produk</a>
+                        <a class="nav-link text-white text-center" href="#about">Tentang Kami</a>
+                        <a class="nav-link text-white text-center" href="hubungiKami.html">Hubungi Kami</a>
+                        <a class="nav-link text-success text-center button-nav" href="#">Masuk</a>
+                        <a class="nav-link text-success text-center button-nav" href="#">Daftar</a>
 
                     </ul>
                 </div>
@@ -43,11 +45,7 @@
         <!--Header Content-->
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+
             <div class="carousel-inner">
               <div class="carousel-item active">
                 
@@ -56,7 +54,7 @@
                         <div class="row">
                           <div class="col-12 col-md-6">
                             <h1 class="w-75 text-white header-title">
-                                Selamat Datang Di SISFOBETA 4.0
+                                Selamat Datang Di <span class="sisfobeta"> SISFOBETA 4.0</span>
                             </h1>
                             <div class="account">
                                 <p class="text-white account-title">Belum Punya Akun?</p><br>
@@ -81,7 +79,7 @@
                         <div class="row">
                           <div class="col-12 col-md-6">
                             <h1 class="w-75 text-white header-title">
-                                Selamat Datang Di SISFOBETA 4.0
+                                Selamat Datang Di <span class="sisfobeta"> SISFOBETA 4.0</span>
                             </h1>
                             <div class="account">
                                 <p class="text-white account-title">Belum Punya Akun?</p><br>
@@ -105,7 +103,7 @@
                         <div class="row">
                           <div class="col-12 col-md-6">
                             <h1 class="w-75 text-white header-title">
-                                Selamat Datang Di SISFOBETA 4.0
+                                Selamat Datang Di <span class="sisfobeta"> SISFOBETA 4.0</span>
                             </h1>
                             <div class="account">
                                 <p class="text-white account-title">Belum Punya Akun?</p><br>
@@ -124,6 +122,12 @@
                 </div>
               </div>
             </div>
+
+            <div class="carousel-control-next d-flex flex-column ">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="btn-carousel" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn-carousel" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn-carousel" aria-label="Slide 3"></button>
+              </div>
           </div>
 
         <!--Header Content End-->
@@ -284,7 +288,7 @@
               </div>
             </div>
             <div class="col-12 col-md-4 ">
-              <img src="assets/img/mockup2.svg" class="mockup2">
+              <img src="assets/img/mockup2 (1).svg" class="mockup2">
             </div>
             <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center mt-5 mt-md-0 fitur-card">
                 <div class="d-flex">
@@ -345,39 +349,11 @@
         </div>
 
     </div>
-
-    <!-- <div class="container service py-3">
-        <div class="service-card d-flex bd-highlight mt-3 d-flex align-items-center justify-content-center gap-1 gap-md-3">
-            <div class="bd-highlight card" style="width: 16rem;">
-                <div class="d-flex justify-content-center align-items-center pt-4">
-                    <img src="assets/img/icon-lokasi.svg" class="img-service">
-                </div>
-                <div class="card-body py-2 py-md-5">
-                <h6 class="service-text text-center pb-3">Dimanapun dan kapanpun dapat di akses setiap saat</h6>
-                </div>
-            </div>
-            <div class="bd-highlight card my-3" style="width: 16rem;">
-                <div class="d-flex justify-content-center align-items-center pt-4">
-                    <img src="assets/img/icon-app.svg" class="img-service">
-                </div>
-                <div class="card-body py-2 py-md-5">
-                <h6 class="service-text text-center pb-3">Dimanapun dan kapanpun dapat di akses setiap saat</h6>
-                </div>
-            </div>
-            <div class="bd-highlight card" style="width: 16rem;">
-                <div class="d-flex justify-content-center align-items-center pt-4">
-                    <img src="assets/img/icon-service.svg" class="img-service">
-                </div>
-                <div class="card-body py-2 py-md-5">
-                <h6 class="service-text text-center pb-3">Dimanapun dan kapanpun dapat di akses setiap saat</h6>
-                </div>
-            </div>
-        </div>
-   </div> -->
     <!--Content Service End-->
 
+
     <!--Content About-->
-    <div class="container about">
+    <div class="container about" id="about">
         <div class="about-title d-flex">
             <h2>Tentang</h2><p class="ms-1">Kami</p>
         </div>
@@ -405,23 +381,39 @@
     <!--Content Sponsor End-->
 
     <!--Footer-->
-    <div class="footer mt-5">
+    <div class="footer mt-5" id="footer">
         <div class="container">
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="navbar-nav d-flex flex-row mt-4">
-                    <a class="nav-link active me-4 text-white footer-text" aria-current="page" href="#">Tentang</a>
-                    <a class="nav-link me-4 text-white footer-text" href="#">Contact</a>
-                    <a class="nav-link me-4 text-white footer-text" href="#">Syarat & Ketentuan</a>
-                    <a class="nav-link text-white footer-text" href="#">Kebijakan Pribadi</a>
-                </div>
+            <div class="d-flex justify-content-center align-items-center footer-menu">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="text-white text-decoration-none footer-link footer-link2" href="tentang.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="text-white text-decoration-none footer-link footer-link2" href="#footer">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="text-white text-decoration-none footer-link footer-link2" href="syarat.html">Syarat & Ketentuan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white text-decoration-none footer-link2" href="#">Kebijakan Pribadi</a>
+                      </li>
+                  </ul>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="navbar-nav d-flex flex-row mt-2">
-                    <a class="nav-link active me-4 " aria-current="page" href="#"><img src="assets/img/facebook 1.svg" class="sosmed"></a>
-                    <a class="nav-link me-4 " href="#"><img src="assets/img/twitter 1.svg" class="sosmed"></a>
-                    <a class="nav-link me-4 " href="#"><img src="assets/img/instagram 1.svg" class="sosmed"></a>
-                    <a class="nav-link " href="#"><img src="assets/img/yutub.svg" class="sosmed"></a>
-                </div>
+            <div class="d-flex justify-content-center align-items-center footer-menu">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="text-white text-decoration-none footer-link" href="#"><img src="assets/img/facebook 1.svg" class="sosmed"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="text-white text-decoration-none footer-link" href="#"><img src="assets/img/instagram 1.svg" class="sosmed"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="text-white text-decoration-none footer-link" href="#"><img src="assets/img/twitter 1.svg" class="sosmed"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white text-decoration-none" href="#"><img src="assets/img/yutub.svg" class="sosmed"></a>
+                      </li>
+                  </ul>
             </div>
             <p class="text-white text-center py-3 footer-copyright">Copyright @2021 DITKUAD-BTN</p>
         </div>
@@ -529,6 +521,38 @@
         }
         ]
             });
+
+        
+            $('.navbar-nav').slick({
+        infinite: false,
+        arrows : false,
+        slidesToShow: 6,
+        // variableWidth: true,
+        responsive: [
+        {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            dots: false
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4
+        }
+        }
+        ]
+            });
     </script>
 
     <!-- Sticky -->
@@ -575,6 +599,13 @@
                 }
             }
         })
+    </script>
+
+    <!-- Click Button -->
+    <script>
+        $(".news").on('click', function(event){
+            window.location.href = 'detailBerita.html';
+        });
     </script>
 
 </body>

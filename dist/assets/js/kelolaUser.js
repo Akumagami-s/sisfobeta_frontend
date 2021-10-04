@@ -65,7 +65,6 @@ $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function(e){
         .columns.adjust();
   });
 
-//for slick BACA YOGA
   $('.menu').slick({
     infinite: false,
     slidesToShow: 6,
@@ -89,8 +88,6 @@ $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function(e){
       ]
   });
 
-
-//for sticky menu BACA YOGA
   $(document).scroll(function(){
     $('.pembungkus').toggleClass('onScrolled', $(this).scrollTop() > 170);
   });

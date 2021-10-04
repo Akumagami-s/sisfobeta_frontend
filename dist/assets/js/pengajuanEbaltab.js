@@ -1,10 +1,5 @@
-$(document).ready( function () {
-    $('#tableRekayasaData').DataTable({
-        scrollX : true,
-    });
-} );
 
-$('.menu').slick({
+  $('.menu').slick({
     infinite: false,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -13,12 +8,12 @@ $('.menu').slick({
         {
           breakpoint: 1200,
           settings: {
-            slidesToShow: 5,
+            slidesToShow: 6,
             slidesToScroll: 1,
           }
         },
         {
-          breakpoint: 991,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 5,
             slidesToScroll: 1,
@@ -27,7 +22,6 @@ $('.menu').slick({
       ]
   });
 
-//for sticky menu BACA YOGA
   $(document).scroll(function(){
     $('.pembungkus').toggleClass('onScrolled', $(this).scrollTop() > 170);
   });

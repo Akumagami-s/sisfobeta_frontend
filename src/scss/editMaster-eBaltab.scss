@@ -40,7 +40,6 @@ Styling
 
 
 #mainHeader {
-    height: 100%;
 }
 
 .mainContent {
@@ -102,7 +101,11 @@ Styling
         }
     }
 }
-
+@media screen and (min-width :0px) {
+    #mainHeader {
+        height: 270px;
+    }
+}
 
 @media screen and (min-width: 320px) {
 

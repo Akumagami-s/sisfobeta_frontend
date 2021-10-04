@@ -72,3 +72,11 @@ Styling
         color: #A2A846;
     }
 }
+
+@media screen and (min-width :375px) {
+    .mobileMenu {
+        .menu {
+            font-size: 9px;
+        }
+    }
+}

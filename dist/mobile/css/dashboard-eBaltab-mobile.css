@@ -148,6 +148,6 @@ Styling
     font-size: 12px;
   }
   .mainContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .wrapperChart canvas, .mainContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic .wrapperChart canvas {
-    max-width: 60px;
+    max-width: 80px;
   }
 }

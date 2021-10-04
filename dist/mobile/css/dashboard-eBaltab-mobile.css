@@ -24,6 +24,14 @@ Variables
 /*------------
 Styling
 ------------*/
+.slick-list {
+  width: 100%;
+}
+
+.slick-list .slick-track {
+  width: 100%;
+}
+
 #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
   font-family: steelfish;
 }
@@ -123,10 +131,10 @@ Styling
     margin-right: .5rem;
   }
   .mainContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .nameValue, .mainContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic .contentValue .nameValue {
-    font-size: 12px;
+    font-size: 14px;
   }
   .mainContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .contentValue .valueDana, .mainContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic .contentValue .valueDana {
-    font-size: 10px;
+    font-size: 12px;
   }
   .mainContent .container-danaAlokasi-penyaluranDana .alokasiDana .cardStatistic .wrapperChart canvas, .mainContent .container-danaAlokasi-penyaluranDana .penyaluranDana .cardStatistic .wrapperChart canvas {
     max-width: 60px;

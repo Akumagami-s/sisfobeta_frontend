@@ -36,7 +36,12 @@ $fontsize-card-valueNumber : 28px;
 /*------------
 Styling
 ------------*/
-
+.slick-list {
+    width: 100%;
+    .slick-track {
+        width: 100%;
+    }
+}
 #mainHeader {
     .navbar {
         .container-fluid {
@@ -148,10 +153,10 @@ Styling
                     .contentValue {
                         margin-right: .5rem;
                         .nameValue {
-                            font-size: 12px;
+                            font-size: 14px;
                         }
                         .valueDana {
-                            font-size: 10px;
+                            font-size: 12px;
                         }
                     }
                     .wrapperChart {

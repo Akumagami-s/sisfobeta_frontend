@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-KPR | Menu</title>
+    <title>Ebaltab | Menu</title>
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--Ekpr Css-->
@@ -157,7 +157,7 @@
                 <p>Dashboard</p>
               </a>
     
-              <a class="nav-link ekprKelolaUser active" 
+              <a class="nav-link ekprKelolaUser " 
                 href="#"
                 aria-selected="true">
     
@@ -167,7 +167,7 @@
                 <p>Kelola User</p>
               </a>
     
-              <a class="nav-link ekprDataKPR"
+              <a class="nav-link ekprDataKPR active"
                 href="#"
                 aria-selected="true">
     
@@ -276,271 +276,791 @@
               <div class="nav nav-tabs tabsButton" id="nav-tab" role="tablist">
 
                  <button class="nav-link active"
-                 id="daftarAkun-tab-menu" 
+                 id="bri-tab-menu" 
                  data-bs-toggle="tab" 
-                 data-bs-target="#daftarAkun-tab" 
+                 data-bs-target="#bri-tab" 
                  type="button" role="tab" 
-                 aria-controls="daftarAkun-tab" 
-                 aria-selected="true">Daftar Akun</button>
+                 aria-controls="bri-tab" 
+                 aria-selected="true">Masdebet BRI</button>
   
                  <button class="nav-link"
-                 id="pengelola-tab-menu" 
+                 id="manual-tab-menu" 
                  data-bs-toggle="tab" 
-                 data-bs-target="#pengelola-tab" 
+                 data-bs-target="#manual-tab" 
                  type="button" role="tab" 
-                 aria-controls="pengelola-tab" 
-                 aria-selected="true">Pengelola</button>
+                 aria-controls="manual-tab" 
+                 aria-selected="true">Data Manual</button>
   
                  <button class="nav-link"
-                 id="user-tab-menu" 
+                 id="btn-tab-menu" 
                  data-bs-toggle="tab" 
-                 data-bs-target="#user-tab" 
+                 data-bs-target="#btn-tab" 
                  type="button" role="tab" 
-                 aria-controls="user-tab" 
-                 aria-selected="true">User</button>
+                 aria-controls="btn-tab" 
+                 aria-selected="true">Masdebet BTN</button>
   
                  <button class="nav-link"
-                 id="verifikasi-tab-menu" 
+                 id="debitur-tab-menu" 
                  data-bs-toggle="tab" 
-                 data-bs-target="#verifikasi-tab" 
+                 data-bs-target="#debitur-tab" 
                  type="button" role="tab" 
-                 aria-controls="verifikasi-tab" 
-                 aria-selected="true">Verifikasi Akun User</button>
+                 aria-controls="debitur-tab" 
+                 aria-selected="true">Data Debitur</button>
+
+                 <button class="nav-link"
+                 id="out-tab-menu" 
+                 data-bs-toggle="tab" 
+                 data-bs-target="#out-tab" 
+                 type="button" role="tab" 
+                 aria-controls="out-tab" 
+                 aria-selected="true">Outstanding</button>
+
+                 <button class="nav-link"
+                 id="penerimaan-tab-menu" 
+                 data-bs-toggle="tab" 
+                 data-bs-target="#penerimaan-tab" 
+                 type="button" role="tab" 
+                 aria-controls="penerimaan-tab" 
+                 aria-selected="true">Penerimaan</button>
+
+                 <button class="nav-link"
+                 id="rekap-tab-menu" 
+                 data-bs-toggle="tab" 
+                 data-bs-target="#rekap-tab" 
+                 type="button" role="tab" 
+                 aria-controls="rekap-tab" 
+                 aria-selected="true">Rekap Bulanan</button>
+
+                 <button class="nav-link"
+                 id="tunggakan-tab-menu" 
+                 data-bs-toggle="tab" 
+                 data-bs-target="#tunggakan-tab" 
+                 type="button" role="tab" 
+                 aria-controls="tunggakan-tab" 
+                 aria-selected="true">Tunggakan</button>
+
+                 <button class="nav-link"
+                 id="piutang-tab-menu" 
+                 data-bs-toggle="tab" 
+                 data-bs-target="#piutang-tab" 
+                 type="button" role="tab" 
+                 aria-controls="piutang-tab" 
+                 aria-selected="true">Piutang</button>
+
+                 <button class="nav-link"
+                 id="report-tab-menu" 
+                 data-bs-toggle="tab" 
+                 data-bs-target="#report-tab" 
+                 type="button" role="tab" 
+                 aria-controls="report-tab" 
+                 aria-selected="true">Report Global</button>
               </div>
   
               <div class="tab-content" id="nav-tabContent">
   
                 <div class="tab-pane fade show active" 
-                  id="daftarAkun-tab" 
+                  id="bri-tab" 
                   role="tabpanel" 
-                  aria-labelledby="daftarAkun-tab-menu">
+                  aria-labelledby="bri-tab-menu">
   
-                  <h1 class="nameContent">Kelola Akun</h1>
+                  <h1 class="nameContent">Data Pinjaman Verified</h1>
   
                   <div class="wrapperTable">
-                    <table id="tableMasterKategori" class="table" style="width:100%">
+                    <table id="tableBri" class="table" style="width:100%">
+                      
+                      <thead class="headTable">
+                          <tr>
+                            <th>No</th>
+                            <th>Update</th>
+                            <th>NRP</th>
+                            <th>Nama</th>
+                            <th>Pangkat</th>
+                            <th>Kesatuan</th>
+                            <th>Kotama</th>
+                            <th>Tahap</th>
+                            <th>Pinjaman</th>
+                            <th>Jangka Waktu </th>
+                            <th>TMT Angsuran</th>
+                            <th>Jumlah Angsuran</th>
+                            <th>Angsuran Ke</th>
+                            <th>Angsuran Masuk</th>
+                            <th>Tunggakan</th>
+                            <th>Jml Tunggakan</th>
+                            <th>Ket</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                          </tr>
   
-                      <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#kategori">
-                        Tambah
-                      </button>
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
+                
+                <div class="tab-pane fade" 
+                  id="manual-tab" 
+                  role="tabpanel" 
+                  aria-labelledby="manual-tab-menu">
   
-                      <div class="modal fade" id="kategori" tabindex="-1" aria-labelledby="kategoriLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
+                  <h1 class="nameContent">Data Pinjaman Manual</h1>
   
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="kategoriLabel">Tambah Kategori</h5>
-                            </div>
+                  <div class="wrapperTable">
+                    <table id="tableManual" class="table" style="width:100%">
+                      
+                      <thead class="headTable">
+                          <tr>
+                            <th>No</th>
+                            <th>Update</th>
+                            <th>Nama</th>
+                            <th>Pangkat</th>
+                            <th>NRP</th>
+                            <th>Kesatuan</th>
+                            <th>Kotama</th>
+                            <th>Tahap</th>
+                            <th>Pinjaman</th>
+                            <th>Jangka Waktu </th>
+                            <th>TMT Angsuran</th>
+                            <th>Jumlah Angsuran</th>
+                            <th>Angsuran Ke</th>
+                            <th>Angsuran Masuk</th>
+                            <th>Tunggakan</th>
+                            <th>Jml Tunggakan</th>
+                            <th>Ket</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                          </tr>
   
-                            <div class="modal-body">
-                              <form action="">
-                                  <div class="mainForm columnForm">
-                                    <div class="actionForm first">
-                                      <label for="">Image</label>
-                                      <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                    <div class="actionForm two">
-                                      <label for="">Nama</label>
-                                      <input type="text">
-                                    </div>
-                                    <div class="actionForm two">
-                                        <label for="">Email</label>
-                                        <input type="text">
-                                      </div>
-                                      <div class="actionForm two">
-                                        <label for="">NRP</label>
-                                        <input type="text">
-                                      </div>
-                                      <div class="actionForm two">
-                                        <label for="">Role</label>
-                                        <select class="form-select" id="inputGroupSelect01">
-                                            <option selected>Pengelola</option>
-                                            <option value="1">Admin</option>
-                                          </select>
-                                      </div>
-                                      <div class="actionForm two">
-                                        <label for="">Password</label>
-                                        <input type="password">
-                                      </div>
-                                  </div>
-                                  
-                                  <div class="buttonActionForm">
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" 
+                  id="btn-tab" 
+                  role="tabpanel" 
+                  aria-labelledby="btn-tab-menu">
   
-                                  </div>
-                              </form>
-                            </div>
+                  <h1 class="nameContent">Data Pinjaman BTN</h1>
   
-                            <div class="modal-footer actionButton">
-                              <button class="btn saveBtn d-flex align-items-center" type="save">
-                                <img src="../assets/img/saveIcon.svg" alt="">
-                                Simpan
+                  <div class="wrapperTable">
+                    <table id="tableBtn" class="table" style="width:100%">
+                      
+                      <thead class="headTable">
+                          <tr>
+                            <th>No</th>
+                            <th>Update</th>
+                            <th>NRP</th>
+                            <th>Nama</th>
+                            <th>Pangkat</th>
+                            <th>Kesatuan</th>
+                            <th>Kotama</th>
+                            <th>Tahap</th>
+                            <th>Pinjaman</th>
+                            <th>Jangka Waktu </th>
+                            <th>TMT Angsuran</th>
+                            <th>Jumlah Angsuran</th>
+                            <th>Angsuran Ke</th>
+                            <th>Angsuran Masuk</th>
+                            <th>Tunggakan</th>
+                            <th>Jml Tunggakan</th>
+                            <th>Ket</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                          </tr>
+  
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" 
+                  id="debitur-tab" 
+                  role="tabpanel" 
+                  aria-labelledby="debitur-tab-menu">
+  
+                  <h1 class="nameContent">Data Debitur</h1>
+  
+                  <div class="wrapperMainData">
+                    <div class="wrapperData">
+                          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" 
+                              id="dataDebitur-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#dataDebitur" 
+                              type="button" role="tab" 
+                              aria-controls="dataDebitur" 
+                              aria-selected="false">
+                              Data Debitur
                             </button>
-                            <button class="btn deleteBtn d-flex align-items-center" data-bs-dismiss="modal" type="batal">
-                                Batal
+      
+                            <button class="nav-link" 
+                              id="debiturBaru-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#debiturBaru" 
+                              type="button" role="tab" 
+                              aria-controls="debiturBaru" 
+                              aria-selected="false">
+                              Debitur Baru
                             </button>
-                            </div>
-  
+      
+                            <button class="nav-link" 
+                              id="debiturLunas-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#debiturLunas" 
+                              type="button" role="tab" 
+                              aria-controls="debiturLunas" 
+                              aria-selected="false">
+                              Debitur Lunas
+                            </button>
+
+                            <button class="nav-link" 
+                              id="debiturMeninggal-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#debiturMeninggal" 
+                              type="button" role="tab" 
+                              aria-controls="debiturMeninggal" 
+                              aria-selected="false">
+                              Debitur Meninggal
+                            </button>
                           </div>
-                        </div>
-                      </div>
+
+                          <div class="tab-content" id="nav-tabContent">
+
+                            <div class="tab-pane fade show active" 
+                              id="dataDebitur" 
+                              role="tabpanel" 
+                              aria-labelledby="dataDebitur-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableDataDebitur" class="table" style="width:100%">
+                               
+                                    <thead class="headTable">
+                                        <tr>
+                                          <th>No</th>
+                                          <th>Update</th>
+                                          <th>NRP</th>
+                                          <th>Nama</th>
+                                          <th>Pangkat</th>
+                                          <th>Kesatuan</th>
+                                          <th>Kotama</th>
+                                          <th>Tahap</th>
+                                          <th>Pinjaman</th>
+                                          <th>Jangka Waktu </th>
+                                          <th>TMT Angsuran</th>
+                                          <th>Jumlah Angsuran</th>
+                                          <th>Angsuran Ke</th>
+                                          <th>Angsuran Masuk</th>
+                                          <th>Tunggakan</th>
+                                          <th>Jml Tunggakan</th>
+                                          <th>Ket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bodyTable">
+                                        <tr>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                        </tr>
+                
+                                    </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" 
+                              id="debiturBaru" 
+                              role="tabpanel" 
+                              aria-labelledby="debiturBaru-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableDebiturBaru" class="table" style="width:100%">
+                               
+                                    <thead class="headTable">
+                                        <tr>
+                                          <th>No</th>
+                                          <th>Update</th>
+                                          <th>NRP</th>
+                                          <th>Nama</th>
+                                          <th>Pangkat</th>
+                                          <th>Kesatuan</th>
+                                          <th>Kotama</th>
+                                          <th>Tahap</th>
+                                          <th>Pinjaman</th>
+                                          <th>Jangka Waktu </th>
+                                          <th>TMT Angsuran</th>
+                                          <th>Jumlah Angsuran</th>
+                                          <th>Angsuran Ke</th>
+                                          <th>Angsuran Masuk</th>
+                                          <th>Tunggakan</th>
+                                          <th>Jml Tunggakan</th>
+                                          <th>Ket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bodyTable">
+                                        <tr>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                        </tr>
+                
+                                    </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" 
+                              id="debiturLunas" 
+                              role="tabpanel" 
+                              aria-labelledby="debiturLunas-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableDebiturLunas" class="table" style="width:100%">
+                               
+                                    <thead class="headTable">
+                                        <tr>
+                                          <th>No</th>
+                                          <th>Update</th>
+                                          <th>NRP</th>
+                                          <th>Nama</th>
+                                          <th>Pangkat</th>
+                                          <th>Kesatuan</th>
+                                          <th>Kotama</th>
+                                          <th>Tahap</th>
+                                          <th>Pinjaman</th>
+                                          <th>Jangka Waktu </th>
+                                          <th>TMT Angsuran</th>
+                                          <th>Jumlah Angsuran</th>
+                                          <th>Angsuran Ke</th>
+                                          <th>Angsuran Masuk</th>
+                                          <th>Tunggakan</th>
+                                          <th>Jml Tunggakan</th>
+                                          <th>Ket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bodyTable">
+                                        <tr>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                        </tr>
+                
+                                    </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" 
+                              id="debiturMeninggal" 
+                              role="tabpanel" 
+                              aria-labelledby="debiturMeninggal-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableDebiturMeninggal" class="table" style="width:100%">
+                               
+                                    <thead class="headTable">
+                                        <tr>
+                                          <th>No</th>
+                                          <th>Update</th>
+                                          <th>NRP</th>
+                                          <th>Nama</th>
+                                          <th>Pangkat</th>
+                                          <th>Kesatuan</th>
+                                          <th>Kotama</th>
+                                          <th>Tahap</th>
+                                          <th>Pinjaman</th>
+                                          <th>Jangka Waktu </th>
+                                          <th>TMT Angsuran</th>
+                                          <th>Jumlah Angsuran</th>
+                                          <th>Angsuran Ke</th>
+                                          <th>Angsuran Masuk</th>
+                                          <th>Tunggakan</th>
+                                          <th>Jml Tunggakan</th>
+                                          <th>Ket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bodyTable">
+                                        <tr>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                        </tr>
+                
+                                    </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                          </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" 
+                  id="out-tab" 
+                  role="tabpanel" 
+                  aria-labelledby="out-tab-menu">
   
+                  <h1 class="nameContent">Data Outstanding</h1>
+  
+                  <div class="wrapperTable">
+                    <table id="tableOut" class="table" style="width:100%">
                       
                       <thead class="headTable">
                           <tr>
-                            <th>#</th>
-                            <th>Role</th>
-                            <th>Avatar</th>
+                            <th>No</th>
                             <th>Nama</th>
-                            <th>Email</th>
+                            <th>Pangkat</th>
                             <th>NRP</th>
-                            <th>Password</th>
-                            <th>Action</th>
+                            <th>Kesatuan</th>
+                            <th>Kotama</th>
+                            <th>Piutang Pokok</th>
+                            <th>Tunggakan Bunga</th>
+                            <th>Outstanding</th>
                           </tr>
                       </thead>
                       <tbody class="bodyTable">
                           <tr>
                             <td>00</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>
-                                <div class="action">
-                                    <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                                    <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                                </div>
-                            </td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
                           </tr>
   
                       </tbody>
                   </table>
                   </div>
                 </div>
-  
+
                 <div class="tab-pane fade" 
-                  id="pengelola-tab" 
+                  id="penerimaan-tab" 
                   role="tabpanel" 
-                  aria-labelledby="pengelola-tab-menu">
+                  aria-labelledby="penerimaan-tab-menu">
   
-                  <h1 class="nameContent">Kelola Akun</h1>
+                  <h1 class="nameContent">Data Penerimaan</h1>
   
                   <div class="wrapperTable">
-                    <table id="tablePengelola" class="table" style="width:100%">
+                    <table id="tablePenerimaan" class="table" style="width:100%">
                       
                       <thead class="headTable">
                           <tr>
-                            <th>#</th>
-                            <th>Avatar</th>
+                            <th>No</th>
                             <th>Nama</th>
-                            <th>Email</th>
+                            <th>Pangkat</th>
                             <th>NRP</th>
-                            <th>Password</th>
-                            <th>Action</th>
-                          </tr>
-                      </thead>
-                      <tbody class="bodyTable">
-                           <tr>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>1</td>
-                               <td>
-                                    <div class="action">
-                                        <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                                        <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                                    </div>
-                               </td>
-                           </tr>
-                      </tbody>
-                  </table>
-                  </div>
-                </div>
-  
-                <div class="tab-pane fade" 
-                  id="user-tab" 
-                  role="tabpanel" 
-                  aria-labelledby="user-tab-menu">
-  
-                  <h1 class="nameContent">Kelola Akun</h1>
-  
-                  <div class="wrapperTable">
-                    <table id="tableUser" class="table" style="width:100%">
-  
-                      <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#satminkal">
-                        Export
-                      </button>
-                      
-                      <thead class="headTable">
-                          <tr>
-                            <th>#</th>
-                            <th>Nama</th>
-                            <th>Status</th>
-                            <th>NRP</th>
-                            <th>Password</th>
-                            <th>Action</th>
-                          </tr>
-                      </thead>
-                      <tbody class="bodyTable">
-                          <tr>
-                            <td>1</td>
-                            <td>00000</td>
-                            <td>17 April 2021</td>
-                            <td>KTM KODE</td>
-                            <td>00000</td>
-                            <td>
-                                <div class="action">
-                                    <a href="editDataPrajurit.html"><img src="../assets/img/editIcon.svg" alt=""></a>
-                                    <a href="#"><img src="../assets/img/deleteIcon.svg" alt=""></a>
-                                </div>
-                            </td>
-                          </tr>
-  
-                      </tbody>
-                  </table>
-                  </div>
-                </div>
-  
-                <div class="tab-pane fade" 
-                  id="verifikasi-tab" 
-                  role="tabpanel" 
-                  aria-labelledby="verifikasi-tab-menu">
-  
-                  <h1 class="nameContent">Verifikasi Akun User</h1>
-  
-                  <div class="wrapperTable">
-                    <table id="tableVerifikasi" class="table" style="width:100%">
-                      
-                      <thead class="headTable">
-                          <tr>
-                            <th>#</th>
-                            <th>Role</th>
-                            <th>Avatar</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>NRP</th>
-                            <th>Password</th>
-                            <th>Action</th>
+                            <th>Kesatuan</th>
+                            <th>Kotama</th>
+                            <th>Penerimaan Pokok</th>
+                            <th>Penerimaan Bunga</th>
                           </tr>
                       </thead>
                       <tbody class="bodyTable">
                           <tr>
                             <td>00</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>17 April 2021</td>
-                            <td>
-                                <button class="btn verifikasiBtn d-flex align-items-center" type="verifikasi">
-                                    <img src="../assets/img/verifikasi.svg" alt="">
-                                    <p class="verifikasiText">Verifikasi</p>
-                                </button>
-                            </td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                          </tr>
+  
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" 
+                  id="rekap-tab" 
+                  role="tabpanel" 
+                  aria-labelledby="rekap-tab-menu">
+  
+                  <h1 class="nameContent">Data Bulanan</h1>
+
+                  <form>
+                    <div class="mb-1">
+                      <label for="exampleInputEmail1" class="form-label">Pilih Tahun</label>
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>1990</option>
+                        <option value="1">1991</option>
+                        <option value="1">1992</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Pilih Bulan</label>
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Januari</option>
+                        <option value="1">Febuari</option>
+                        <option value="1">Maret</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-danger mb-4 w-100">Cari</button>
+                  </form>
+  
+                  <div class="wrapperTable">
+                    <table id="tableRekap" class="table" style="width:100%">
+                      
+                      <thead class="headTable">
+                          <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Pangkat</th>
+                            <th>NRP</th>
+                            <th>Kesatuan</th>
+                            <th>Kotama</th>
+                            <th>Tahap</th>
+                            <th>Pinjaman</th>
+                            <th>Jangka Waktu</th>
+                            <th>TMT Angsuran</th>
+                            <th>Jumlah Angsuran</th>
+                            <th>Angsuran Ke</th>
+                            <th>Angsuran Masuk</th>
+                            <th>Tunggakan</th>
+                            <th>Jml Tunggakan</th>
+                            <th>Ket</th>
+                            <th>Rekening</th>
+                            <th>Rek BRI</th>
+                            <th>Rek BTN</th>
+                            <th>Bunga</th>
+                            <th>Pokok</th>
+                            <th>Sisa Pinjaman Pokok</th>
+                            <th>Inisial Bunga</th>
+                            <th>Inisial Pokok</th>
+                            <th>Hutang pokok</th>
+                            <th>Hutang Bunga</th>
+                            <th>Outstanding</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                          </tr>
+  
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" 
+                  id="tunggakan-tab" 
+                  role="tabpanel" 
+                  aria-labelledby="tunggakan-tab-menu">
+  
+                  <h1 class="nameContent">Data Tunggakan</h1>
+  
+                  <div class="wrapperTable">
+                    <table id="tableTunggakan" class="table" style="width:100%">
+                      
+                      <thead class="headTable">
+                          <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Pangkat</th>
+                            <th>NRP</th>
+                            <th>Kesatuan</th>
+                            <th>Kotama</th>
+                            <th>Tunggakan Pokok</th>
+                            <th>Tunggakan Bunga</th>
+                            <th>Jumlah Tunggakan</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                          </tr>
+  
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" 
+                  id="piutang-tab" 
+                  role="tabpanel" 
+                  aria-labelledby="piutang-tab-menu">
+  
+                  <h1 class="nameContent">Data Piutang</h1>
+  
+                  <div class="wrapperTable">
+                    <table id="tablePiutang" class="table" style="width:100%">
+                      
+                      <thead class="headTable">
+                          <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Pangkat</th>
+                            <th>NRP</th>
+                            <th>Kesatuan</th>
+                            <th>Kotama</th>
+                            <th>Piutang Pokok</th>
+                            <th>Piutang Bunga</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bodyTable">
+                          <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
                           </tr>
   
                       </tbody>
@@ -567,17 +1087,11 @@
     <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.datatables.net/fixedheader/3.2.0/js/dataTables.fixedHeader.min.js"></script>
-    <!--Slick Js-->
-    <script src="../assets/vendors/slick/slick.min.js"></script>
     <!--Ion Icon-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--dataPrajurit Js-->
-    <script src="../assets/js/kelolaUser.js"></script>
-    
-    <script>
-        
-
-    </script>
+    <script src="../assets/js/dataKpr.js"></script>
+    <!--Table Js-->
 </body>
 </html>

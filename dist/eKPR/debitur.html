@@ -265,93 +265,320 @@
         <div class="container-fluid">
             <div class="wrapperContent">
 
-              <div class="a-link">
-                  <a class="a-padding text-decoration-none text-center active-btn" href="dataKpr.html">
-                    Masdebet BRI
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="dataManual.html">
-                    Data Manual
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="masdebetBTN.html">
-                    Masdebet BTN
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="debitur.html">
-                    Data Debitur
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="outstanding.html">
-                    Outstanding
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="penerimaan.html">
-                    Penerimaan
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="bulanan.html">
-                    Rekap Bulanan
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="tunggakan.html">
-                    Tunggakan
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="piutang.html">
-                    Piutang
-                  </a>
-                  <a class="a-padding text-decoration-none text-center a-btn" href="">
-                    Report Global
-                  </a>
-              </div>
+                <div class="a-link">
+                    <a class="a-padding text-decoration-none text-center a-btn" href="dataKpr.html">
+                      Masdebet BRI
+                    </a>
+                    <a class="a-padding text-decoration-none text-center a-btn" href="dataManual.html">
+                      Data Manual
+                    </a>
+                    <a class="a-padding text-decoration-none text-center a-btn" href="masdebetBTN.html">
+                      Masdebet BTN
+                    </a>
+                    <a class="a-padding text-decoration-none text-center active-btn" href="debitur.html">
+                      Data Debitur
+                    </a>
+                    <a class="a-padding text-decoration-none text-center a-btn" href="outstanding.html">
+                      Outstanding
+                    </a>
+                    <a class="a-padding text-decoration-none text-center a-btn" href="penerimaan.html">
+                      Penerimaan
+                    </a>
+                    <a class="a-padding text-decoration-none text-center a-btn" href="bulanan.html">
+                      Rekap Bulanan
+                    </a>
+                    <a class="a-padding text-decoration-none text-center a-btn" href="tunggakan.html">
+                      Tunggakan
+                    </a>
+                    <a class="a-padding text-decoration-none text-center a-btn" href="piutang.html">
+                      Piutang
+                    </a>
+                    <a class="a-padding text-decoration-none text-center a-btn" href="">
+                      Report Global
+                    </a>
+                </div>
   
-                  <h1 class="nameContent">Data Pinjaman Verified</h1>
+
+                  <h1 class="nameContent">Data Debitur</h1>
   
-                  <div class="wrapperTable">
-                    <table id="tableBri" class="table" style="width:100%">
-                      
-                      <thead class="headTable">
-                          <tr>
-                            <th class="table-text">No</th>
-                            <th class="table-text">Update</th>
-                            <th class="table-text">NRP</th>
-                            <th class="table-text">Nama</th>
-                            <th class="table-text">Pangkat</th>
-                            <th class="table-text">Kesatuan</th>
-                            <th class="table-text">Kotama</th>
-                            <th class="table-text">Tahap</th>
-                            <th class="table-text">Pinjaman</th>
-                            <th class="table-text">Jangka Waktu </th>
-                            <th class="table-text">TMT Angsuran</th>
-                            <th class="table-text">Jumlah Angsuran</th>
-                            <th class="table-text">Angsuran Ke</th>
-                            <th class="table-text">Angsuran Masuk</th>
-                            <th class="table-text">Tunggakan</th>
-                            <th class="table-text">Jml Tunggakan</th>
-                            <th class="table-text">Ket</th>
-                          </tr>
-                      </thead>
-                      <tbody class="bodyTable">
-                          <tr>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                            <td>00</td>
-                          </tr>
-  
-                      </tbody>
-                  </table>
+                  <div class="wrapperMainData">
+                    <div class="wrapperData">
+                          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" 
+                              id="dataDebitur-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#dataDebitur" 
+                              type="button" role="tab" 
+                              aria-controls="dataDebitur" 
+                              aria-selected="false">
+                              Data Debitur
+                            </button>
+      
+                            <button class="nav-link" 
+                              id="debiturBaru-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#debiturBaru" 
+                              type="button" role="tab" 
+                              aria-controls="debiturBaru" 
+                              aria-selected="false">
+                              Debitur Baru
+                            </button>
+      
+                            <button class="nav-link" 
+                              id="debiturLunas-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#debiturLunas" 
+                              type="button" role="tab" 
+                              aria-controls="debiturLunas" 
+                              aria-selected="false">
+                              Debitur Lunas
+                            </button>
+
+                            <button class="nav-link" 
+                              id="debiturMeninggal-tab" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#debiturMeninggal" 
+                              type="button" role="tab" 
+                              aria-controls="debiturMeninggal" 
+                              aria-selected="false">
+                              Debitur Meninggal
+                            </button>
+                          </div>
+
+                          <div class="tab-content" id="nav-tabContent">
+
+                            <div class="tab-pane fade show active" 
+                              id="dataDebitur" 
+                              role="tabpanel" 
+                              aria-labelledby="dataDebitur-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableDataDebitur" class="table" style="width:100%">
+                               
+                                    <thead class="headTable">
+                                        <tr>
+                                          <th>No</th>
+                                          <th>Update</th>
+                                          <th>NRP</th>
+                                          <th>Nama</th>
+                                          <th>Pangkat</th>
+                                          <th>Kesatuan</th>
+                                          <th>Kotama</th>
+                                          <th>Tahap</th>
+                                          <th>Pinjaman</th>
+                                          <th>Jangka Waktu </th>
+                                          <th>TMT Angsuran</th>
+                                          <th>Jumlah Angsuran</th>
+                                          <th>Angsuran Ke</th>
+                                          <th>Angsuran Masuk</th>
+                                          <th>Tunggakan</th>
+                                          <th>Jml Tunggakan</th>
+                                          <th>Ket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bodyTable">
+                                        <tr>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                        </tr>
+                
+                                    </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" 
+                              id="debiturBaru" 
+                              role="tabpanel" 
+                              aria-labelledby="debiturBaru-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableDebiturBaru" class="table" style="width:100%">
+                               
+                                    <thead class="headTable">
+                                        <tr>
+                                          <th>No</th>
+                                          <th>Update</th>
+                                          <th>NRP</th>
+                                          <th>Nama</th>
+                                          <th>Pangkat</th>
+                                          <th>Kesatuan</th>
+                                          <th>Kotama</th>
+                                          <th>Tahap</th>
+                                          <th>Pinjaman</th>
+                                          <th>Jangka Waktu </th>
+                                          <th>TMT Angsuran</th>
+                                          <th>Jumlah Angsuran</th>
+                                          <th>Angsuran Ke</th>
+                                          <th>Angsuran Masuk</th>
+                                          <th>Tunggakan</th>
+                                          <th>Jml Tunggakan</th>
+                                          <th>Ket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bodyTable">
+                                        <tr>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                        </tr>
+                
+                                    </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" 
+                              id="debiturLunas" 
+                              role="tabpanel" 
+                              aria-labelledby="debiturLunas-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableDebiturLunas" class="table" style="width:100%">
+                               
+                                    <thead class="headTable">
+                                        <tr>
+                                          <th>No</th>
+                                          <th>Update</th>
+                                          <th>NRP</th>
+                                          <th>Nama</th>
+                                          <th>Pangkat</th>
+                                          <th>Kesatuan</th>
+                                          <th>Kotama</th>
+                                          <th>Tahap</th>
+                                          <th>Pinjaman</th>
+                                          <th>Jangka Waktu </th>
+                                          <th>TMT Angsuran</th>
+                                          <th>Jumlah Angsuran</th>
+                                          <th>Angsuran Ke</th>
+                                          <th>Angsuran Masuk</th>
+                                          <th>Tunggakan</th>
+                                          <th>Jml Tunggakan</th>
+                                          <th>Ket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bodyTable">
+                                        <tr>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                          <td>00</td>
+                                        </tr>
+                
+                                    </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" 
+                              id="debiturMeninggal" 
+                              role="tabpanel" 
+                              aria-labelledby="debiturMeninggal-tab">
+                                
+                              <div class="wrapperTable">
+                                <table id="tableDebiturMeninggal" class="table" style="width:100%">
+                               
+                                    <thead class="headTable">
+                                        <tr>
+                                          <th class="table-text">No</th>
+                                          <th class="table-text">Update</th>
+                                          <th class="table-text">NRP</th>
+                                          <th class="table-text">Nama</th>
+                                          <th class="table-text">Pangkat</th>
+                                          <th class="table-text">Kesatuan</th>
+                                          <th class="table-text">Kotama</th>
+                                          <th class="table-text">Tahap</th>
+                                          <th class="table-text">Pinjaman</th>
+                                          <th class="table-text">Jangka Waktu </th>
+                                          <th class="table-text">TMT Angsuran</th>
+                                          <th class="table-text">Jumlah Angsuran</th>
+                                          <th class="table-text">Angsuran Ke</th>
+                                          <th class="table-text">Angsuran Masuk</th>
+                                          <th class="table-text">Tunggakan</th>
+                                          <th class="table-text">Jml Tunggakan</th>
+                                          <th class="table-text">Ket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bodyTable">
+                                        <tr>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                          <td class="table-text">00</td>
+                                        </tr>
+                
+                                    </tbody>
+                              </table>
+                              </div>
+
+                            </div>
+
+                          </div>
+                    </div>
+                  </div>
+
   
             </div>
         </div>
       </div>
-    </div>
 
     <footer >
         <p>Copyright 2021 © DITKUAD</p>

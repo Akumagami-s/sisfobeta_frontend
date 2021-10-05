@@ -7,19 +7,17 @@ $('.wrapperDataMassDebet').slick({
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '40px',
+            slidesToShow: 1.1,
+            slidesToScroll: 1.1,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 500,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 1.1,
+            slidesToScroll: 1.1,
             centerMode: true,
-            centerPadding: '30px',
+            centerPadding: '10px',
           }
         },
       ]
@@ -61,8 +59,8 @@ $('.wrapperDataMassDebet').slick({
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 1.1,
+            slidesToScroll: 1.1,
           }
         },
       ]

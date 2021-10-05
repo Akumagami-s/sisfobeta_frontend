@@ -247,15 +247,21 @@ Styling
 
 @media screen and (min-width: 0px) {
   #mainHeader .navbar {
-    margin-bottom: 2rem;
+    margin-bottom: 4.2rem;
   }
   #mainHeader .navbar .container-fluid .navbar-brand img {
-    max-width: 70px;
+    max-width: 50px;
   }
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title {
     margin-left: 0px;
-    display: none;
   }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1{
+    font-size: 36px;
+  }
+  #mainHeader .navbar .container-fluid .navbar-brand .brand-title p{
+    font-size: 4px;
+  }
+
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .btnNotification .numberNotif {
     right: 1px;
     top: -10px;
@@ -318,13 +324,13 @@ Styling
     margin: .5rem .5rem;
     padding: .5rem 1rem;
     border-radius: 10px;
+    height: 10vh;
   }
   .pembungkus .menu .nav-link svg {
     max-width: 25px;
   }
   .pembungkus .menu .nav-link p {
-    font-size: 10px;
-    display: none;
+    font-size: 8px;
   }
   .pembungkus .menu .active {
     color: #fff;
@@ -342,7 +348,7 @@ Styling
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
     margin-bottom: 4px;
     letter-spacing: 10px;
-    font-size: 56px;
+    font-size: 36px;
   }
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
     font-size: 9px;
@@ -374,7 +380,7 @@ Styling
   }
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
     margin-bottom: 4px;
-    font-size: 72px;
+    font-size: 41px;
   }
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {
     font-size: 10px;
@@ -419,6 +425,7 @@ Styling
   .pembungkus .menu .nav-link {
     flex-direction: row;
     padding: .5rem 1rem;
+    height: 10vh;
   }
   .pembungkus .menu .nav-link svg {
     margin-right: .5rem;
@@ -437,7 +444,7 @@ Styling
     margin-left: 8px;
   }
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
-    font-size: 86px;
+    font-size: 50px;
     letter-spacing: 11px;
   }
   #mainHeader .navbar .container-fluid .navbar-brand .brand-title p {

@@ -204,7 +204,63 @@ Styling
   transform: rotate(180deg);
 }
 
+.mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .date {
+  font-weight: 500;
+}
+
+.mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .nameCard {
+  font-weight: 700;
+}
+
+.mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .labelNameCard {
+  font-weight: 500;
+}
+
 @media screen and (min-width: 0px) {
+  #mainHeader {
+    border-radius: 0 0 30px 30px;
+  }
+  .mainContent {
+    position: relative;
+    top: -80px;
+  }
   .mainContent .wrapperStatisticPrajurit {
     margin-bottom: 1rem;
     padding: 1rem;
@@ -333,6 +389,61 @@ Styling
   .mainContent .wrapperContentAllMenu .eBaltab .wrapperCardPenyaluran .cardPenyaluran .wrapperArrow img {
     max-width: 8px;
   }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur {
+    padding: 1rem;
+    width: 100%;
+    margin: .5rem;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .nameCard {
+    font-size: 14px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow img {
+    max-width: 10px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperChart canvas {
+    max-width: 80px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .valueChart {
+    font-size: 14px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperLabel .date {
+    font-size: 12px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap {
+    padding: 1rem;
+    margin: .5rem;
+    position: relative;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .nameCard {
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .labelNameCard {
+    font-size: 12px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .infoStatistic .valueOfCard {
+    font-size: 12px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperChart canvas {
+    max-width: 80px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperRekapData .cardRekap .wrapperArrow img {
+    max-width: 12px;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -357,6 +468,20 @@ Styling
   .mainContent .wrapperContentAllMenu .eBaltab .wrapperCardDanaAlokasi .wrapperContentCard .wrapperLabel .label::before {
     height: 11px;
     width: 11px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .nameCard {
+    font-size: 14px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .headerCardDebitur .wrapperArrow img {
+    max-width: 10px;
+  }
+  .mainContent .wrapperContentAllMenu .eKPR .wrapperDebitur .debitur .contentDebitur .wrapperChart canvas {
+    max-width: 100px;
   }
 }
 

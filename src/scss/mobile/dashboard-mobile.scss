@@ -196,11 +196,66 @@ Styling
                 }
             }
         }
+
+        .eKPR {
+            .wrapperDebitur {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                .debitur {
+                    position: relative;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    width: 100%;
+                    .contentDebitur {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        justify-content: space-between;
+                        .wrapperLabel {
+                            .date {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+            .wrapperRekapData {
+                display: flex;
+                margin-bottom: 1rem;
+                align-items: center;
+                .cardRekap {
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .infoStatistic {
+                        .nameCard {
+                            font-weight: 700;
+                        }
+                        .labelNameCard {
+                            font-weight: 500;
+                        }
+                        .valueOfCard {
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (min-width :0px) {
+    #mainHeader {
+        border-radius: 0 0 30px 30px;
+    }
     .mainContent {
+        position: relative;
+        top: -80px;
         .wrapperStatisticPrajurit {
             margin-bottom: 1rem;
             padding: 1rem;
@@ -347,6 +402,77 @@ Styling
                     }
                 }
             }
+            .eKPR {
+                .wrapperDebitur {
+                    .debitur {
+                        padding: 1rem;
+                        width: 100%;
+                        margin: .5rem;
+                        .headerCardDebitur {
+                            width: 100%;
+                            margin-bottom: 1rem;
+                            .nameCard {
+                                font-size: 14px;
+                            }
+                            .wrapperArrow {
+                                position: absolute;
+                                right: 15px;
+                                top: 20px;
+                                img {
+                                    max-width: 10px;
+                                }
+                            }
+                        }
+                        .contentDebitur {
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 80px;
+                                }
+                            }
+                            .wrapperLabel {
+                                .valueChart {
+                                    font-size: 14px;
+                                }
+                                .date {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .wrapperRekapData {
+                    .cardRekap {
+                        padding: 1rem;
+                        margin: .5rem;
+                        position: relative;
+                        .infoStatistic {
+                            .nameCard {
+                                font-size: 12px;
+                                margin-bottom: 1rem;
+                            }
+                            .labelNameCard {
+                                font-size: 12px;
+                            }
+                            .valueOfCard {
+                                font-size: 12px;
+                            }
+                        }
+                        .wrapperChart {
+                            canvas {
+                                max-width: 80px;
+                            }
+                        }
+                        .wrapperArrow {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            img {
+                                max-width: 12px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -383,6 +509,32 @@ Styling
                                 &::before {
                                     height: 11px;
                                     width: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .eKPR {
+                .wrapperDebitur {
+                    .debitur {
+                        .headerCardDebitur {
+                            .nameCard {
+                                font-size: 14px;
+                            }
+                            .wrapperArrow {
+                                position: absolute;
+                                right: 15px;
+                                top: 20px;
+                                img {
+                                    max-width: 10px;
+                                }
+                            }
+                        }
+                        .contentDebitur {
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 100px;
                                 }
                             }
                         }

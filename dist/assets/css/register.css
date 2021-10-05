@@ -302,7 +302,6 @@ Style
     max-width: 16px;
   }
   .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
-    appearance: none;
     font-size: 14px;
     padding: .85rem 3rem .85rem 2.5rem;
   }

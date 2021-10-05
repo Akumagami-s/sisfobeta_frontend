@@ -18,6 +18,9 @@
     <!--slick Css-->
     <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
 </head>
 <body>
     <div id="mainHeader">
@@ -478,6 +481,271 @@
             </div>
 
           </div>
+
+          <div class="eAkunting contentMenu">
+            <div class="nameContentAllMenu">e-Akunting</div>
+
+            <div class="wrapperTable">
+                <h1 class="nameContentMenu">Saldo Akun</h1>
+                <table id="eAkunting-saldoakun" class="display table saldoAkun" style="width:100%">
+                  <thead class="headTable">
+                      <tr>
+                          <th>Nomor</th>
+                          <th>Nama Akun</th>
+                          <th>Asset</th>
+                          <th>Jumlah</th>
+                      </tr>
+                  </thead>
+                  <tbody class="bodyTable">
+                      <tr>
+                          <td>1010</td>
+                          <td>Jamal</td>
+                          <td>Rumah</td>
+                          <td>1</td>
+                      </tr>
+                      <tr>
+                          <td>1010</td>
+                          <td>Romlah</td>
+                          <td>Rumah</td>
+                          <td>1</td>
+                      </tr>
+                      <tr>
+                          <td>1010</td>
+                          <td>Saepul</td>
+                          <td>Rumah</td>
+                          <td>1</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+
+            <div class="wrapperTable">
+              <h1 class="nameContentMenu">Saldo Akun</h1>
+              <table id="eAkunting-saldoakunDuo" class="display table saldoAkunDuo" style="width:100%">
+                <thead class="headTable">
+                    <tr>
+                        <th>Nomor</th>
+                        <th>Nama Akun</th>
+                        <th>Uang</th>
+                        <th>Saldo</th>
+                    </tr>
+                </thead>
+                <tbody class="bodyTable">
+                    <tr>
+                        <td>1010</td>
+                        <td>Jamal</td>
+                        <td>Rumah</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Romlah</td>
+                        <td>Rumah</td>
+                        <td>1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Saepul</td>
+                        <td>Rumah</td>
+                        <td>1.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="wrapperTable">
+              <h1 class="nameContentMenu">Piutang Per Akun</h1>
+              <table id="eAkunting-piutangPerAkuin" class="display table piutangPerAkun" style="width:100%">
+                <thead class="headTable">
+                    <tr>
+                        <th>Nomor</th>
+                        <th>Nama Akun</th>
+                        <th>Uang</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody class="bodyTable">
+                    <tr>
+                        <td>1010</td>
+                        <td>Jamal</td>
+                        <td>RP</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Romlah</td>
+                        <td>RP</td>
+                        <td>1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Saepul</td>
+                        <td>RP</td>
+                        <td>1.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="wrapperTable">
+              <h1 class="nameContentMenu">Hutang Per Akun</h1>
+              <table id="eAkunting-hutangPerAkuin" class="display table hutangPerAkun" style="width:100%">
+                <thead class="headTable">
+                    <tr>
+                        <th>Nomor</th>
+                        <th>Nama Akun</th>
+                        <th>Uang</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody class="bodyTable">
+                    <tr>
+                        <td>1010</td>
+                        <td>Jamal</td>
+                        <td>RP</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Romlah</td>
+                        <td>RP</td>
+                        <td>1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Saepul</td>
+                        <td>RP</td>
+                        <td>1.000.000</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="wrapperChartLabaRugi">
+              <h1 class="nameContentMenu">Laba Rugi</h1>
+              <canvas id="chartLabaRugi"></canvas>
+            </div>
+          </div>
+
+          <div class="eTWP contentMenu">
+            <div class="nameContentAllMenu">e-TWP</div>
+            <div class="wrapperTable">
+              <h1 class="nameContentMenu">Iuran TWP</h1>
+              <table id="eTWP-iuranTWP" class="display table iuranTWP" style="width:100%">
+                <thead class="headTable">
+                    <tr>
+                        <th>Personil</th>
+                        <th>Kesatuan</th>
+                        <th>TMT</th>
+                        <th>Tabungan</th>
+                        <th>Keluarga</th>
+                        <th>Mutasi</th>
+                    </tr>
+                </thead>
+                <tbody class="bodyTable">
+                    <tr>
+                        <td>1010</td>
+                        <td>Jamal</td>
+                        <td>Rumah</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Romlah</td>
+                        <td>Rumah</td>
+                        <td>1.000.000</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Saepul</td>
+                        <td>Rumah</td>
+                        <td>1.000.000</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="wrapperTable">
+              <h1 class="nameContentMenu">Data Pensiun</h1>
+              <table id="eTWP-dataPensiun" class="display table dataPensiun" style="width:100%">
+                <thead class="headTable">
+                    <tr>
+                        <th>Kode</th>
+                        <th>Nama Akun</th>
+                        <th>Email</th>
+                        <th>Dana Pensiun</th>
+                    </tr>
+                </thead>
+                <tbody class="bodyTable">
+                    <tr>
+                        <td>1010</td>
+                        <td>Jamal</td>
+                        <td>Rumah</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Romlah</td>
+                        <td>Rumah</td>
+                        <td>1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Saepul</td>
+                        <td>Rumah</td>
+                        <td>1.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="wrapperTable">
+              <h1 class="nameContentMenu">Rekap Tabungan</h1>
+              <table id="eTWP-rekapTabungan" class="display table rekapTabungan" style="width:100%">
+                <thead class="headTable">
+                    <tr>
+                        <th>Kode</th>
+                        <th>Nama Akun</th>
+                        <th>Email</th>
+                        <th>Dana Pensiun</th>
+                    </tr>
+                </thead>
+                <tbody class="bodyTable">
+                    <tr>
+                        <td>1010</td>
+                        <td>Jamal</td>
+                        <td>Rumah</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Romlah</td>
+                        <td>Rumah</td>
+                        <td>1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Saepul</td>
+                        <td>Rumah</td>
+                        <td>1.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="wrapperChartHistoriData">
+              <h1 class="nameContentMenu">History Data</h1>
+              <canvas id="chartHistoryData"></canvas>
+            </div>
+          </div>
+
         </div>
     </div>
     
@@ -539,6 +807,9 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--Slick Js-->
     <script src="../assets/vendors/slick/slick.min.js"></script>
+    <!--DataTable-->
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
     <!--Custom Js-->
     <script src="./js/dashboard-mobile.js"></script>
     <script>
@@ -622,6 +893,70 @@
         },
       ]
       });
+    </script>
+    <script>
+      $(document).ready(function() {
+      $('#eAkunting-saldoakun').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false,
+      "info":false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-saldoakunDuo').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false,
+      "info":false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-piutangPerAkuin').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false,
+      "info":false,
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-hutangPerAkuin').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false,
+      "info":false,
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eTWP-iuranTWP').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false,
+      "info":false,
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eTWP-dataPensiun').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false,
+      "info":false,
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eTWP-rekapTabungan').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false,
+      "info":false,
+      });
+      } );
     </script>
 </body>
 </html>

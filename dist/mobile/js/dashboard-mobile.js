@@ -1,3 +1,69 @@
+const monthLabaRugi = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+];
+  const dataLabaRugi = {
+    labels: monthLabaRugi,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'transparent',
+      borderColor: '#A2A846',
+      data: [0, 10, 20, 30, 20, 0],
+    }]
+  };
+
+    const configLabaRugi = {
+    type: 'line',
+    data: dataLabaRugi,
+    options: {
+      plugins : {
+        legend : false
+      }
+    }
+  };
+    var chartLabaRugi = new Chart(
+    document.getElementById('chartLabaRugi'),
+    configLabaRugi
+    );
+
+
+    const monthHistoryData = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+    ];
+      const dataHistory = {
+        labels: monthHistoryData,
+        datasets: [{
+          label: 'My First dataset',
+          backgroundColor: 'transparent',
+          borderColor: '#7334FF',
+          data: [0, 10, 20, 30, 20, 0],
+        }]
+      };
+  
+        const configHistoryData = {
+        type: 'line',
+        data: dataHistory,
+        options: {
+          plugins : {
+            legend : false
+          }
+        }
+      };
+        var chartHistoryData = new Chart(
+        document.getElementById('chartHistoryData'),
+        configHistoryData
+        );
+
+
 const dataRekapPrajurit = {
     labels: [
       'Value',
@@ -606,3 +672,6 @@ var chartDebiturOutstanding = new Chart(
 document.getElementById('chartDebiturOutstanding'),
 configDebiturOutstanding
 );
+
+
+

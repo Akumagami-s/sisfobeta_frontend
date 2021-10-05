@@ -298,6 +298,104 @@ Styling
                 }
             }
         }
+        
+        .eAkunting {
+            position: relative;
+            .wrapperTable {
+                .nameContentMenu {
+                    font-weight: 700;
+                    color: #3B4E63;
+                }
+                table {
+                    width: 100%;
+                    text-align: center;
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    border-radius: 6px 0 0px 6px;
+                                }
+                                &:last-child {
+                                    border-radius: 0px 6px 6px 0px;
+                                }
+                            }
+                        }
+                    } 
+                }
+                .saldoAkun,.hutangPerAkun {
+                    .headTable {
+                        background: #FF832A;
+                        
+                    }
+                }
+                .saldoAkunDuo {
+                    .headTable {
+                        background: #A2A846;
+                    }
+                }
+                .piutangPerAkun {
+                    .headTable {
+                        background: #7334FF;
+                    }
+                }
+            }
+            .wrapperChartLabaRugi {
+                background: #fff;
+                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+                border-radius: 15px;
+                padding: 1rem;
+                .nameContentMenu {
+                    font-weight: 700;
+                    color: #3B4E63;
+                }
+            }
+        }
+
+        .eTWP {
+            .wrapperTable {
+                margin-bottom: 1rem;
+                .nameContentMenu {
+                    font-weight: 700;
+                    color: #3B4E63;
+                }
+                table {
+                    text-align: center;
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    border-radius: 6px 0 0px 6px;
+                                }
+                                &:last-child {
+                                    border-radius: 0px 6px 6px 0px;
+                                }
+                            }
+                        }
+                    } 
+                }
+                .iuranTWP {
+                    .headTable {
+                        background: #FF832B;
+                    }
+                }
+                .dataPensiun {
+                    .headTable {
+                        background: #A2A846;
+                    }
+                }
+                .rekapTabungan {
+                    .headTable {
+                        background: #7334FF;
+                    }
+                }
+            }
+            .wrapperChartHistoriData {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+                border-radius: 15px;
+                padding: 2rem;
+            }
+        }
     }
 }
 
@@ -596,6 +694,85 @@ Styling
                             }
                         }
                     }
+                }
+            }
+            .eAkunting {
+                .wrapperTable {
+                    margin-bottom: 1rem;
+                    .nameContentMenu {
+                        margin-bottom: 0;
+                    }
+                    table {
+                        text-align: center;
+                        thead {
+                            tr {
+                                th {
+                                    font-size: 11px;
+                                    &:first-child {
+                                        border-radius: 6px 0 0px 6px;
+                                    }
+                                    &:last-child {
+                                        border-radius: 0px 6px 6px 0px;
+                                    }
+                                }
+                            }
+                        } 
+                        tbody {
+                            tr {
+                                td {
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+                    .saldoAkun,.hutangPerAkun {
+                        .headTable {
+                            background: #FF832A;
+                            
+                        }
+                    }
+                    .saldoAkunDuo {
+                        .headTable {
+                            background: #A2A846;
+                        }
+                    }
+                    .piutangPerAkun {
+                        .headTable {
+                            background: #7334FF;
+                        }
+                    }
+                }
+                .wrapperChartLabaRugi {
+                    bacbackground: #FFFFFF;
+                    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+                    border-radius: 15px;
+                    padding: 1rem;
+                    .nameTable {
+                        font-weight: 700;
+                        color: #3B4E63;
+                    }
+                }
+            }
+            .eTWP {
+                .wrapperTable {
+                    margin-bottom: 1rem;
+                    table {
+                        thead {
+                            tr {
+                                font-size: 11px;
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    font-size: 11px;
+                                }
+                            }
+                        } 
+                    }
+                }
+                .wrapperChartHistoriData {
+                    padding: 1rem;
                 }
             }
         }

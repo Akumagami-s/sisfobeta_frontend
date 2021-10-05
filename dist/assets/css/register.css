@@ -302,6 +302,7 @@ Style
     max-width: 16px;
   }
   .authRegister .wrapperAuth .rightContent .mainAuth form .inputSection .form-control {
+    appearance: none;
     font-size: 14px;
     padding: .85rem 3rem .85rem 2.5rem;
   }
@@ -420,5 +421,11 @@ Style
   .authRegister .wrapperAuth .rightContent {
     width: 40%;
     padding: 64px 84px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .authRegister .wrapperAuth .rightContent .headingAuth .patners {
+    max-width: 320px;
   }
 }

@@ -306,6 +306,9 @@ Style
                                 }
                             }
                             .form-control {
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
                                 font-size: 14px;
                                 padding: .85rem 3rem .85rem 2.5rem;
                             }
@@ -473,3 +476,19 @@ Style
         }
     }
 }
+
+
+@media screen and (min-width :1900px) {
+    .authRegister {
+        .wrapperAuth {
+            .rightContent {
+                .headingAuth {
+                    .patners {
+                        max-width: 320px;
+                    }
+                }
+            }
+        }
+    }
+}
+

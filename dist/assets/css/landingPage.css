@@ -74,6 +74,7 @@ Styling
 }
 
 .header .title .header-title{
+    width: 60%;
     font-size: 38px;
 }
 

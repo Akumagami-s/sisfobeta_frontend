@@ -314,39 +314,126 @@
                           <div class="modal-content">
   
                             <div class="modal-header">
-                              <h5 class="modal-title" id="kategoriLabel">Tambah Kategori</h5>
+                              <h5 class="modal-title" id="kategoriLabel">Tambah Data Rumah</h5>
                             </div>
   
                             <div class="modal-body">
                               <form action="">
+                                  <!-- Data Rumah -->
+                                  <h4 class="text-danger">Gambar Rumah</h4>
                                   <div class="mainForm columnForm">
                                     <div class="actionForm first">
-                                      <label for="">Image</label>
+                                      <label for="">Gambar 1 </label>
                                       <input class="form-control" type="file" id="formFile">
                                     </div>
-                                    <div class="actionForm two">
-                                      <label for="">Nama</label>
-                                      <input type="text">
+                                    <div class="d-flex bd-highlight">
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">Gambar 2</label>
+                                          <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                      </div>
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">Gambar 3</label>
+                                          <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="actionForm two">
-                                        <label for="">Email</label>
-                                        <input type="text">
+                                    <div class="d-flex bd-highlight">
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">Gambar 4</label>
+                                          <input class="form-control" type="file" id="formFile">
+                                        </div>
                                       </div>
-                                      <div class="actionForm two">
-                                        <label for="">NRP</label>
-                                        <input type="text">
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">Gambar 5</label>
+                                          <input class="form-control" type="file" id="formFile">
+                                        </div>
                                       </div>
-                                      <div class="actionForm two">
-                                        <label for="">Role</label>
-                                        <select class="form-select" id="inputGroupSelect01">
-                                            <option selected>Pengelola</option>
-                                            <option value="1">Admin</option>
-                                          </select>
+                                    </div>
+                                    <hr>
+
+                                  <!-- Spesifikasi Rumah -->
+                                  <h4 class="text-danger">Spesifikasi Rumah</h4>
+                                  <div class="mainForm columnForm">
+                                    <div class="actionForm first">
+                                      <label for="">Nama Perumahan</label>
+                                      <input class="form-control" type="text" id="formtext">
+                                    </div>
+                                    <div class="d-flex bd-highlight">
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">Luas Tanah(M²)</label>
+                                          <input class="form-control" type="text" id="formtext">
+                                        </div>
                                       </div>
-                                      <div class="actionForm two">
-                                        <label for="">Password</label>
-                                        <input type="password">
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">
+                                            Luas Bangunan(M²)</label>
+                                          <input class="form-control" type="text" id="formtext">
+                                        </div>
                                       </div>
+                                    </div>
+                                    <div class="d-flex bd-highlight">
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">Deskripsi</label>
+                                          <textarea class="form-control ms-2" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        </div>
+                                      </div>
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">Alamat Perumahan</label>
+                                          <textarea class="form-control ms-2" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex bd-highlight">
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">
+                                            Fasilitas</label>
+                                          <input class="form-control" type="text" id="formtext" placeholder="Pilih : Garasi, Listrik, Air">
+                                        </div>
+                                      </div>
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">
+                                            Harga</label>
+                                          <input class="form-control" type="text" id="formtext">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <h4 class="text-danger">Kordinar Lokasi Rumah</h4>
+                                    <iframe src="https://www.google.com/maps/d/embed?mid=1DHV2_3ZBOiOOuGh18lSw2U4vv9k&hl=en" width="640" height="480" class="w-100"></iframe>
+                                    <div class="d-flex bd-highlight">
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">
+                                            Lat</label>
+                                          <input class="form-control" type="text" id="formtext">
+                                        </div>
+                                      </div>
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">
+                                            Lng</label>
+                                          <input class="form-control" type="text" id="formtext">
+                                        </div>
+                                      </div>
+                                      <div class="p-2 flex-fill bd-highlight">
+                                        <div class="actionForm two">
+                                          <label for="">Link</label>
+                                          <textarea class="form-control ms-2" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+
                                   </div>
                                   
                                   <div class="buttonActionForm">
@@ -428,48 +515,25 @@
                   <div class="wrapperTable">
                     <table id="tableDataFaslitas" class="table" style="width:100%">
                       
-                        <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#kategori">
+                        <button type="button" class="btn btn-primary btnModal" data-bs-toggle="modal" data-bs-target="#fasilitas">
                             Tambah
                           </button>
       
-                          <div class="modal fade" id="kategori" tabindex="-1" aria-labelledby="kategoriLabel" aria-hidden="true">
+                          <div class="modal fade" id="fasilitas" tabindex="-1" aria-labelledby="fasilitasLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                               <div class="modal-content">
       
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="kategoriLabel">Tambah Kategori</h5>
+                                  <h5 class="modal-title" id="fasilitasLabel">Tambah Fasilitas</h5>
                                 </div>
       
                                 <div class="modal-body">
                                   <form action="">
                                       <div class="mainForm columnForm">
-                                        <div class="actionForm two">
-                                          <label for="">Masukan</label>
-                                          <input type="text">
-                                        </div>
-                                        <div class="actionForm two">
-                                            <label for="">Email</label>
-                                            <input type="text">
-                                          </div>
-                                          <div class="actionForm two">
-                                            <label for="">NRP</label>
-                                            <input type="text">
-                                          </div>
-                                          <div class="actionForm two">
-                                            <label for="">Role</label>
-                                            <select class="form-select" id="inputGroupSelect01">
-                                                <option selected>Pengelola</option>
-                                                <option value="1">Admin</option>
-                                              </select>
-                                          </div>
-                                          <div class="actionForm two">
-                                            <label for="">Password</label>
-                                            <input type="password">
-                                          </div>
-                                      </div>
-                                      
-                                      <div class="buttonActionForm">
-      
+                                        <div class="actionForm first">
+                                          <label for="">Nama Fasilitas</label>
+                                          <input class="form-control" type="text" id="formtext">
+                                        </div>                                       
                                       </div>
                                   </form>
                                 </div>

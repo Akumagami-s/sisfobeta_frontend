@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebaltab | Dashboard</title>
+    <title>SISFOBETA | Dashboard</title>
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--Ebaltab Css-->
@@ -14,7 +14,7 @@
     <!--Component-->
     <link rel="stylesheet" href="./component/menu.css">
     <link rel="stylesheet" href="./component/navbar-mobile.css">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
     <!--slick Css-->
     <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
@@ -133,6 +133,112 @@
         </nav>
         <!--End Navbar-->
     </div>
+
+    <div class="mainContent">
+        <div class="wrapperStatisticPrajurit">
+          <h1 class="nameContentMenu">Rekap / <span class="month">Agustus 2021</span></h1>
+          <div class="wrapperContentStatistic">
+              <div class="wrapperChartPrajurit">
+                  <canvas id="chartdataRekapPrajurit"></canvas>
+              </div>
+              <div class="wrapperLabel">
+                <div class="label prajuritAktif">
+                  <h1 class="nameLabel">Prajurit Aktif</h1>
+                  <p class="valueLabel">500.013.072.418</p>
+                </div>
+                <div class="label prajuritPensiun">
+                  <h1 class="nameLabel">Prajurit Pensiun</h1>
+                  <p class="valueLabel">500.013.072.418</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="wrapperContentAllMenu">
+          <div class="eBaltab contentMenu">
+            <div class="nameContentAllMenu">e-BALTAB</div>
+
+            <div class="wrapperCardPengajuan">
+                <div class="cardPengajuan totalPenerima">
+                    <div class="infoStatistic">
+                        <h1 class="nameCard">Jumlah Pengajuan</h1>
+                        <p class="labelNameCard">Total Penerima</p>
+                        <p class="valueOfCard">366.746</p>
+                    </div>
+                    <div class="wrapperChart">
+                        <canvas id="chartPengajuanTotalPenerima"></canvas>
+                    </div>
+                    <div class="wrapperArrow">
+                      <img src="../assets/img/arrowChart.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="cardPengajuan sudahDiterima">
+                  <div class="infoStatistic">
+                    <h1 class="nameCard">Jumlah Pengajuan</h1>
+                    <p class="labelNameCard">Total Penerima</p>
+                    <p class="valueOfCard">366.746</p>
+                  </div>
+                  <div class="wrapperChart">
+                    <canvas id="chartPengajuanTotalSudahDiterima"></canvas>
+                  </div>
+                  <div class="wrapperArrow downArrow">
+                  <img src="../assets/img/arrowChart.svg" alt="">
+                  </div>
+                </div>
+            </div>
+
+            <div class="wrapperCardDanaAlokasi">
+                <div class="nameContentMenu">Data Alokasi</div>
+                <div class="wrapperContentCard">
+                    <div class="wrapperChart">
+                      <canvas id="chartDanaAlokasiEbaltab"></canvas>
+                    </div>
+                    <div class="wrapperLabel">
+                      <div class="label jumlahDanaAlokasi">
+                          <h1 class="nameLabel colorText">Jumlah Dana Alokasi</h1>
+                          <p class="valueChart c17.274olorText">500.013.072.418</p>
+                      </div>
+                      <div class="label alokasiTerelalisasi">
+                          <h1 class="nameLabel colorText">Dana Alokasi Terealisasi</h1>
+                          <p class="valueChart colorText">500.013.072.418</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapperCardPenyaluran">
+              <div class="cardPenyaluran belumTerealisasi">
+                  <div class="infoStatistic">
+                      <h1 class="nameCard">Data Penyaluran</h1>
+                      <p class="labelNameCard">Sudah Terealisasi</p>
+                      <p class="valueOfCard">366.746</p>
+                  </div>
+                  <div class="wrapperChart">
+                      <canvas class="chartKecil" id="chartPenyaluranSudahTerelalisasi"></canvas>
+                  </div>
+                  <div class="wrapperArrow">
+                    <img src="../assets/img/arrowChart.svg" alt="">
+                  </div>
+              </div>
+
+              <div class="cardPenyaluran sudahTerealisasi">
+                <div class="infoStatistic">
+                  <h1 class="nameCard">Data Penyaluran</h1>
+                  <p class="labelNameCard">Belum Terealisasi</p>
+                  <p class="valueOfCard">366.746</p>
+                </div>
+                <div class="wrapperChart">
+                  <canvas class="chartKecil" id="chartPenyaluranBelumTerelalisasi"></canvas>
+                </div>
+                <div class="wrapperArrow">
+                <img src="../assets/img/arrowChart.svg" alt="">
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+    </div>
     
     <div class="mobileMenu">
         <a href="" class="menu active">
@@ -201,6 +307,197 @@
     <!--Slick Js-->
     <script src="../assets/vendors/slick/slick.min.js"></script>
     <!--Custom Js-->
+    <script>
+      const dataRekapPrajurit = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [55,45],
+          backgroundColor: [
+          '#587350','#A2A846'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configdataRekapPrajurit = {
+        type: 'doughnut',
+        data: dataRekapPrajurit,
+        options : {
+          plugins : {
+            legend: {
+              display: false
+            },
+          }
+        }
+      };
+      var chartdataRekapPrajurit = new Chart(
+      document.getElementById('chartdataRekapPrajurit'),
+      configdataRekapPrajurit
+      );
+
+
+      const dataPengajuanTotalPenerima = {
+        labels: [
+            'Value',
+            'apa'
+        ],
+        datasets: [{
+            label: 'uhuy',
+            data: [85,15],
+            backgroundColor: [
+            '#7334FF','#eee'
+            ],
+            hoverOffset: 4
+        }]
+        };
+
+        const configPengajuanTotalPenerima = {
+        type: 'doughnut',
+        data: dataPengajuanTotalPenerima,
+        options : {
+          plugins : {
+            legend: {
+              display: false
+            },
+          }
+        }
+        };
+        var chartPengajuanTotalPenerima = new Chart(
+        document.getElementById('chartPengajuanTotalPenerima'),
+        configPengajuanTotalPenerima
+        );
+
+
+        const dataPengajuanTotalSudahDiterima = {
+          labels: [
+              'Value',
+              'apa'
+          ],
+          datasets: [{
+              label: 'uhuy',
+              data: [85,15],
+              backgroundColor: [
+              '#DC3545','#eee'
+              ],
+              hoverOffset: 4
+          }]
+          };
+
+          const configPengajuanTotalSudahDiterima = {
+          type: 'doughnut',
+          data: dataPengajuanTotalSudahDiterima,
+            options : {
+                plugins : {
+                legend: {
+                  display: false
+                },
+              }
+            }
+          };
+          var chartPengajuanTotalSudahDiterima = new Chart(
+          document.getElementById('chartPengajuanTotalSudahDiterima'),
+          configPengajuanTotalSudahDiterima
+        );
+
+
+        const dataDanaAlokasiEbaltab = {
+        labels: [
+            'Value',
+            'apa'
+        ],
+        datasets: [{
+            label: 'uhuy',
+            data: [85,15],
+            backgroundColor: [
+            '#7334FF','#FF832A'
+            ],
+            hoverOffset: 4
+        }]
+        };
+
+        const configDanaAlokasiEbaltab = {
+        type: 'doughnut',
+        data: dataDanaAlokasiEbaltab,
+        options : {
+          plugins : {
+                legend: {
+                  display: false
+                },
+              }
+          }
+        };
+        var chartDanaAlokasiEbaltab = new Chart(
+        document.getElementById('chartDanaAlokasiEbaltab'),
+        configDanaAlokasiEbaltab
+      );
+
+
+      const dataPenyaluranSudahTerelalisasi = {
+        labels: [
+            'Value',
+            'apa'
+        ],
+        datasets: [{
+            label: 'uhuy',
+            data: [85,15],
+            backgroundColor: [
+            '#FF832A','#eee'
+            ],
+            hoverOffset: 4
+        }]
+        };
+
+        const configPenyaluranSudahTerelalisasi = {
+        type: 'doughnut',
+        data: dataPenyaluranSudahTerelalisasi,
+        options : {
+          plugins : {
+            legend: {
+              display: false
+            },
+          }
+        }
+        };
+        var chartPenyaluranSudahTerelalisasi = new Chart(
+        document.getElementById('chartPenyaluranSudahTerelalisasi'),
+        configPenyaluranSudahTerelalisasi
+    );
+
+      const dataPenyaluranBelumTerelalisasi = {
+          labels: [
+              'Value',
+              'apa'
+          ],
+          datasets: [{
+              label: 'uhuy',
+              data: [85,15],
+              backgroundColor: [
+              '#A2A846','#eee'
+              ],
+              hoverOffset: 4
+          }]
+          };
+
+          const configPenyaluranBelumTerelalisasi = {
+          type: 'doughnut',
+          data: dataPenyaluranBelumTerelalisasi,
+          options : {
+            plugins : {
+              legend: {
+                display: false
+              },
+            }
+          }
+          };
+          var chartPenyaluranBelumTerelalisasi = new Chart(
+          document.getElementById('chartPenyaluranBelumTerelalisasi'),
+          configPenyaluranBelumTerelalisasi
+      );
+    </script>
 
 </body>
 </html>

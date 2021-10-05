@@ -24,10 +24,6 @@ Variables
 /*------------
 Styling
 ------------*/
-#mainHeader {
-  height: 100%;
-}
-
 .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .searchAndImportWrapper .btn {
   display: flex;
   align-items: center;
@@ -73,6 +69,12 @@ Styling
 
 .mainContent .container-fluid .wrapperContent .tab-content .tab-pane .wrapperTable table tbody tr td .actionButton .btn img {
   max-width: 18px;
+}
+
+@media screen and (min-width: 0px) {
+  #mainHeader {
+    height: 270px;
+  }
 }
 
 @media screen and (min-width: 320px) {

@@ -1,19 +1,5 @@
-$(document).ready( function () {
-    $('#tableSandbox').DataTable({
-        scrollX : true,
-        "columns": [
-            { "width": "15%" },
-            { "width": "15%" },
-            { "width": "15%" },
-            { "width": "20%" },
-            { "width": "20%" },
-            { "width": "15%" },
-        ],
-    });
-} );
 
-
-$('.menu').slick({
+  $('.menu').slick({
     infinite: false,
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -40,8 +26,3 @@ $('.menu').slick({
     $('.pembungkus').toggleClass('onScrolled', $(this).scrollTop() > 170);
   });
 
-
-$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function(e){
-    $($.fn.dataTable.tables(true)).DataTable()
-        .columns.adjust();
-  });

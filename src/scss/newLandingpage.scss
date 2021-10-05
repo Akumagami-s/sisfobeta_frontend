@@ -80,6 +80,23 @@ $fontsize-card-valueNumber : 28px;
                     font-weight: 500;
                 }
             }
+            .loginAndRegister {
+                button {
+                    background: none;
+                    border: none;
+                    background: #3D563D;
+                    padding: .5rem 1rem;
+                    border-radius: 4px;
+                    &:not(:last-child) {
+                        margin-right: .5rem;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                }
+            }
         }
     }
 }
@@ -144,7 +161,7 @@ $fontsize-card-valueNumber : 28px;
             width: 100%;
             .berita {
                 background: #FFFFFF;
-                box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 width: 100%;
                 text-decoration: none;
                 transition: .5s;
@@ -172,6 +189,124 @@ $fontsize-card-valueNumber : 28px;
     }
 }
 
+.headlineWrapper {
+    margin-bottom: 2rem;
+    .container {
+        .headlineSlide {
+            display: flex;
+            width: 100%;
+            .headline {
+                background: #FFFFFF;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                width: 100%;
+                text-decoration: none;
+                .newsImages {
+                    width: 100%;
+                }
+                .informationOfNews {
+                    .titleNews {
+                        font-weight: 600;
+                        color: rgba(62, 62, 62, 1);
+                    }
+                    .timeNewsUpdate {
+                        color: #97BB7D;
+                        font-weight: 600;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.sisfobetaFitur {
+    margin-bottom: 2rem;
+    .container {
+        .fiturWrapper {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.benefitSisfobeta {
+    .container {
+        .wrapperBenefit {
+            display: flex;
+            justify-content: center;
+            .benefit {
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border-radius: 12px;
+                background: #fff;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .icon {
+                    margin-bottom: 1rem;
+                }
+                .textBenefit {
+                    
+                    max-width: 240px;
+                }
+            }
+        }
+    }
+}
+
+.tentangKamiContainer {
+    margin: 5rem 0;
+    .container {
+        .wrapperTentangKami {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.partnersWrapper {
+    margin-bottom: 3rem;
+    .container {
+        text-align: center;
+        .titlePartner {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+        .wrapperPartner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+footer {
+    background: linear-gradient(281.65deg, #98BC7D -8.58%, #3E573D 94.33%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .menuFooter {
+        margin-bottom: 1rem;
+        display: flex;
+        .footMenu {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 1rem;
+        }
+    }
+    .socialMedia {
+        .social {
+            margin: 0 .5rem;
+            svg {
+                max-width: 40px;
+            }
+        }
+    }
+
+}
 
 
 @media screen and (min-width : 0px) {
@@ -183,6 +318,7 @@ $fontsize-card-valueNumber : 28px;
     }
     /* RESPONSIVE NAVBAR*/
     .navbar {
+        padding-bottom: .8rem;
         .container {
             .navbar-brand {
                 img {
@@ -198,6 +334,9 @@ $fontsize-card-valueNumber : 28px;
                 }
             }
             .navbar-collapse {
+                .navbar-nav {
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
@@ -255,6 +394,146 @@ $fontsize-card-valueNumber : 28px;
             }
         }
     }
+
+    .headlineWrapper {
+        .container {
+            .headerHeadline {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                .wrapperButtonArrow {
+                    display: flex;
+                    align-items: center;
+                    .arrow {
+                        cursor: pointer;
+                        border-radius: 4px;
+                        span {
+                            display: flex;
+                            align-items: center;
+                        }
+                        &:not(:last-child) {
+                            margin-right: .7rem;
+                        }
+                        ion-icon {
+                            font-size: 18px;
+                        }
+                        background: #fff;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
+                        color: rgb(3, 74, 3);
+                        padding: 1rem;
+                    }
+                }
+            }
+            .headlineSlide {
+                .headline {
+                    margin: 1rem;
+                    width: 100%;
+                    border-radius: 12px;
+                    .newsImages {
+                        border-radius: 12px 12px 0 0;
+                    }
+                    .informationOfNews {
+                        padding: .8rem;
+                        .titleNews {
+                            font-size: 12px;
+                            margin-bottom: 2rem;
+                        }
+                        .timeNewsUpdate {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sisfobetaFitur {
+        .container {
+            .fiturWrapper {
+                flex-direction: column;
+                .mockup {
+                    display: none;
+                }
+                .contentFitur {
+                    .fitur {
+                        margin: 1rem 0;
+                        display: flex;
+                        .iconFitur {
+                            margin-right: 1rem;
+                            svg {
+                                max-width: 60px;
+                            }
+                        }
+                        .infoFitur {
+                            .nameFitur {
+                                font-size: 18px;
+                                font-weight: 600;
+                                margin-bottom: .5rem;
+                            }
+                            .textFitur {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .benefitSisfobeta {
+        .container {
+            .wrapperBenefit {
+                flex-direction: column;
+                .benefit {
+                    margin-bottom: 1.5rem;
+                    padding: 1.5rem 1rem;
+                    .textBenefit {
+                        max-width: 240px;
+                    }
+                }
+            }
+        }
+    }
+    .tentangKamiContainer {
+        .container {
+            .nameContent {
+                margin-bottom: 1rem;
+            }
+            .wrapperTentangKami {
+                flex-direction: column;
+                .tentangKami {
+                    margin-bottom: 2rem;
+                    font-size: 14px;
+                }
+                .icon {
+                    img {
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 1rem 1rem;
+        .menuFooter {
+            width: 100%;
+            align-items: flex-start;
+            flex-direction: column;
+            .footMenu {
+                margin: 1rem 0;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+        .socialMedia {
+            .social {
+                margin: 0 .5rem;
+                svg {
+                    max-width: 30px;
+                }
+            }
+        }
+    
+    }
 }
 
 @media screen and (min-width :768px) {
@@ -285,7 +564,6 @@ $fontsize-card-valueNumber : 28px;
                         .rightContent {
                             width: 40%;
                             img {
-                                max-width: none;
                             }
                         }
                     }
@@ -317,9 +595,88 @@ $fontsize-card-valueNumber : 28px;
             }
         }
     }
+    .headlineWrapper {
+        .container {
+            .headlineSlide {
+                .headline {
+                    .informationOfNews {
+                        padding: 1.8rem 1rem;
+                        .titleNews {
+                            font-size: 14px;
+                            margin-bottom: 2rem;
+                        }
+                        .timeNewsUpdate {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .benefitSisfobeta {
+        .container {
+            .wrapperBenefit {
+                flex-direction: row;
+                .benefit {
+                    margin-bottom: 0;
+                    &:not(:last-child) {
+                        margin-right: 1.5rem;
+                    }
+                    padding: 1.5rem 1rem;
+                    .textBenefit {
+                        max-width: 240px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tentangKamiContainer {
+        .container {
+            .wrapperTentangKami {
+                flex-direction: row;
+                .tentangKami {
+                    font-size: 16px;
+                    padding: 1rem;
+                }
+                .icon {
+                    img {
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 3rem 1rem;
+        .menuFooter {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: row;
+            .footMenu {
+                margin: 0rem 1rem;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+        .socialMedia {
+            .social {
+                margin: 0 .5rem;
+                svg {
+                    max-width: 30px;
+                }
+            }
+        }
+    
+    }
 }
 
 @media screen and (min-width : 992px) {
+    .onScrolled {
+        padding: 1.5rem 0;
+    }
     .navbar {
         .container {
             .navbar-brand {
@@ -328,16 +685,33 @@ $fontsize-card-valueNumber : 28px;
                 }
                 .nameBrand {
                     h1 {
-                        font-size: 64px;
+                        font-size: 52px;
                         letter-spacing: 5px;
                     }
                     p {
                         display: block;
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                 }
             }
             .navbar-collapse {
+                .navbar-nav {
+                    margin-bottom: 0;
+                    .nav-link {
+                        font-size: 14px;
+                    }
+                }
+                .loginAndRegister {
+                    margin-left: 1.5rem;
+                    button {
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -356,7 +730,7 @@ $fontsize-card-valueNumber : 28px;
                             width: 100%;
                             padding: 0 1rem;
                             img {
-                                max-width: none;
+                                max-width: 500px;
                             }
                         }
                     }
@@ -388,6 +762,43 @@ $fontsize-card-valueNumber : 28px;
             }
         }
     }
+    .headlineWrapper {
+        .container {
+            .headlineSlide {
+                .headline {
+                    width: 31.6%;
+                    margin: 1rem .5rem;
+                    border-radius: 18px;
+                    .newsImages {
+                        border-radius: 18px 18px 0 0;
+                    }
+                    .informationOfNews {
+                        padding: 1.8rem 1rem;
+                        .titleNews {
+                            font-size: 16px;
+                        }
+                        .timeNewsUpdate {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sisfobetaFitur {
+        .container {
+            .fiturWrapper {
+                flex-direction: row;
+                .mockup {
+                    display: block;
+                    img {
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -401,7 +812,7 @@ $fontsize-card-valueNumber : 28px;
     .slideShow {
         .slide {
             .item {
-                height: 75vh;
+                height: 85vh;
             }
         }
     }
@@ -425,5 +836,104 @@ $fontsize-card-valueNumber : 28px;
             }
         }
     }
+    .sisfobetaFitur {
+        .container {
+            .fiturWrapper {
+                flex-direction: row;
+                .mockup {
+                    display: block;
+                    img {
+                        max-width: 300px;
+                    }
+                }
+                .contentFitur {
+                    padding: 0 1rem;
+                    .fitur {
+                        margin: 0;
+                        margin-bottom: 4rem;
+                        .iconFitur {
+                            margin-right: 1rem;
+                            svg {
+                                max-width: 70px;
+                            }
+                        }
+                        .infoFitur {
+                            .nameFitur {
+                                font-size: 20px;
+                            }
+                            .textFitur {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tentangKamiContainer {
+        .container {
+            .wrapperTentangKami {
+                .tentangKami {
+                    font-size: 18px;
+                }
+                .icon {
+                    img {
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+    }
 }
 
+@media screen and (min-width : 1400px) {
+    .navbar {
+        .container {
+            .navbar-brand {
+                .nameBrand {
+                    h1 {
+                        font-size: 62px;
+                        letter-spacing: 5px;
+                    }
+                    p {
+                        display: block;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-link {
+                        font-size: 16px;
+                    }
+                }
+                .loginAndRegister {
+                    margin-left: 1.5rem;
+                    button {
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tentangKamiContainer {
+        .container {
+            .wrapperTentangKami {
+                .tentangKami {
+                    font-size: 24px;
+                }
+                .icon {
+                    width: 100%;
+                    img {
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

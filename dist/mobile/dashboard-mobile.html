@@ -459,7 +459,7 @@
             </div>
             
             <div class="wrapperCardDataPokokDanBunga">
-              <div class="nameHightCard">Data Alokasi</div>
+              <div class="nameContentMenu">Data Alokasi</div>
               <div class="wrapperContentCard">
                   <div class="wrapperChart">
                     <canvas id="chartDataPokokDanBunga"></canvas>
@@ -556,16 +556,17 @@
       slidesToScroll: 1,
       arrows : false,
       speed: 300,
+      centerMode: true,
+      centerPadding: '20px',
       responsive: [
         {
           breakpoint: 500,
           settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1,
-              centerMode: true,
-              centerPadding: '20px',
+              
           }
-        }
+        },
       ]
       });
 
@@ -584,7 +585,7 @@
               centerMode: true,
               centerPadding: '20px',
           }
-        }
+        },
       ]
       });
 
@@ -603,7 +604,26 @@
               centerMode: true,
               centerPadding: '20px',
           }
-        }
+        },
+      ]
+      });
+
+      $('.wrapperStatistic').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows : false,
+      speed: 300,
+      centerMode: true,
+      centerPadding: '20px',
+      responsive: [
+        {
+          breakpoint: 500,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+          }
+        },
       ]
       });
     </script>

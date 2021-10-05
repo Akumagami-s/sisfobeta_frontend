@@ -240,7 +240,59 @@ Styling
                         .labelNameCard {
                             font-weight: 500;
                         }
-                        .valueOfCard {
+                    }
+                }
+            }
+            .wrapperStatistic {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                .debitur {
+                    position: relative;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    width: 100%;
+                    .contentDebitur {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        justify-content: space-between;
+                        .wrapperLabel {
+                            .date {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+            .wrapperCardDataPokokDanBunga {
+                background: #fff;
+                box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+                border-radius: 15px;
+                .wrapperContentCard {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .wrapperLabel {
+                    color: $font-color;
+                    .label {
+                        .nameLabel {
+                            font-weight: 700;
+                        }
+                        .valueChart {
+                            font-weight: 500;
+                        }
+                    }
+                    .jumlahDanaAlokasi {
+                        &::before {
+                            background: #FF832A;
+                        }
+                    }
+                    .alokasiTerelalisasi {
+                        &::before {
+                            background: #A2A846;
                         }
                     }
                 }
@@ -472,6 +524,79 @@ Styling
                         }
                     }
                 }
+                .wrapperStatistic {
+                    .debitur {
+                        padding: 1rem;
+                        width: 100%;
+                        margin: .5rem;
+                        .headerCardDebitur {
+                            width: 100%;
+                            margin-bottom: 1rem;
+                            .nameCard {
+                                font-size: 14px;
+                            }
+                            .wrapperArrow {
+                                position: absolute;
+                                right: 15px;
+                                top: 20px;
+                                img {
+                                    max-width: 10px;
+                                }
+                            }
+                        }
+                        .contentDebitur {
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 80px;
+                                }
+                            }
+                            .wrapperLabel {
+                                .valueChart {
+                                    font-size: 14px;
+                                }
+                                .date {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .wrapperCardDataPokokDanBunga {
+                    margin-bottom: 1rem;
+                    padding: 1rem;
+                    .wrapperContentCard {
+                        canvas {
+                            max-width: 110px;
+                        }
+                    }
+                    .wrapperLabel {
+                        color: $font-color;
+                        .label {
+                            position: relative;
+                            .nameLabel {
+                                font-size: 14px;
+                            }
+                            .valueChart {
+                                font-size: 14px;
+                            }
+                            &:not(:last-child) {
+                                margin-bottom: 1rem;
+                            }
+        
+                            &::before {
+                                content: '';
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 50%;
+                                display: block;
+                                position: absolute;
+                                left: -20px;
+                                top: 35%;
+                                bottom: 50%;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -517,6 +642,30 @@ Styling
             }
             .eKPR {
                 .wrapperDebitur {
+                    .debitur {
+                        .headerCardDebitur {
+                            .nameCard {
+                                font-size: 14px;
+                            }
+                            .wrapperArrow {
+                                position: absolute;
+                                right: 15px;
+                                top: 20px;
+                                img {
+                                    max-width: 10px;
+                                }
+                            }
+                        }
+                        .contentDebitur {
+                            .wrapperChart {
+                                canvas {
+                                    max-width: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .wrapperStatistic {
                     .debitur {
                         .headerCardDebitur {
                             .nameCard {

@@ -329,7 +329,7 @@ const dataRekapPrajurit = {
       label: 'uhuy',
       data: [85,15],
       backgroundColor: [
-      '#7334FF','#eee'
+      '#FF832B','#eee'
       ],
       hoverOffset: 4
     }]
@@ -391,7 +391,7 @@ const dataRekapPrajurit = {
       label: 'uhuy',
       data: [85,15],
       backgroundColor: [
-      '#7334FF','#eee'
+      '#A2A846','#eee'
       ],
       hoverOffset: 4
     }]

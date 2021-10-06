@@ -60,6 +60,7 @@ Variables
 
 .navbar {
   transition: .5s;
+  background: #fff;
 }
 
 .navbar .container .navbar-brand {
@@ -70,13 +71,13 @@ Variables
 .navbar .container .navbar-brand .nameBrand h1 {
   font-family: steelfish;
   font-weight: 500;
-  color: #fff;
+  color: #3B4E63;
 }
 
 .navbar .container .navbar-brand .nameBrand p {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: #3B4E63;
 }
 
 .navbar .container .navbar-collapse {
@@ -86,7 +87,7 @@ Variables
 .navbar .container .navbar-collapse .navbar-nav .nav-link {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: #3B4E63;
 }
 
 .navbar .container .navbar-collapse .loginAndRegister button {

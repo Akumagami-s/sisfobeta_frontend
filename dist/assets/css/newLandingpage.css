@@ -46,6 +46,18 @@ Variables
   transition: .5s;
 }
 
+.navbar.onScrolled .container .navbar-brand .nameBrand h1 {
+  color: #3B4E63;
+}
+
+.navbar.onScrolled .container .navbar-brand .nameBrand p {
+  color: #3B4E63;
+}
+
+.navbar.onScrolled .container .navbar-collapse .navbar-nav .nav-link {
+  color: #3B4E63;
+}
+
 .navbar {
   transition: .5s;
 }
@@ -58,11 +70,13 @@ Variables
 .navbar .container .navbar-brand .nameBrand h1 {
   font-family: steelfish;
   font-weight: 500;
+  color: #fff;
 }
 
 .navbar .container .navbar-brand .nameBrand p {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  color: #fff;
 }
 
 .navbar .container .navbar-collapse {
@@ -72,6 +86,7 @@ Variables
 .navbar .container .navbar-collapse .navbar-nav .nav-link {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  color: #fff;
 }
 
 .navbar .container .navbar-collapse .loginAndRegister button {
@@ -597,7 +612,7 @@ footer .socialMedia .social svg {
     padding: 0 1rem;
   }
   .slideShow .wrapperContent .container .slidesContent .content .rightContent img {
-    max-width: 500px;
+    max-width: 400px;
   }
   .beritaWrapper .container .beritaContainer .berita {
     width: 31.6%;
@@ -719,6 +734,13 @@ footer .socialMedia .social svg {
     color: #fff;
     font-weight: 500;
     font-size: 16px;
+  }
+  .slideShow .wrapperContent .container .slidesContent .content .rightContent {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .slideShow .wrapperContent .container .slidesContent .content .rightContent img {
+    max-width: 550px;
   }
   .tentangKamiContainer .container .wrapperTentangKami .tentangKami {
     font-size: 24px;

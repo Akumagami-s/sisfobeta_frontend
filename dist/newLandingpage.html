@@ -74,11 +74,11 @@
                     <div class="content">
                         <div class="leftContent">
                             <h1 class="homeTitle">
-                                Selamat Datang Di SISFOBETA Direktorat Keuangan TNI Angkatan Darat ayam
+                                Satu aplikasi untuk semua  mudah dan cepat
                             </h1>
                         </div>
                         <div class="rightContent">
-                            <img src="./assets/img/mockupLandingPage.svg" alt="">
+                            <img src="./assets/img/contentJumbotron2.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -87,13 +87,10 @@
 
         <div class="slide">
             <div class="item">
-                <img src="./assets/img/testbg.svg" alt="">
+                <img src="./assets/img/gradient1.svg" alt="">
             </div>
             <div class="item">
-                <img src="./assets/img/bw2.jpeg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/img/bw3.jpeg" alt="">
+                <img src="./assets/img/gradient2.svg" alt="">
             </div>
         </div>
     </div>
@@ -463,19 +460,6 @@
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
     <!--Dashboard Js-->
     <script>
-      $(document).scroll(function(){
-        $('.navbar').toggleClass('onScrolled', $(this).scrollTop() > 0);
-      });
-      $('.slide').slick({
-            dots: false,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            autoplay :true,
-            arrows :false,
-            cssEase: 'linear'
-        });
-
         $('.slidesContent').slick({
             dots: false,
             infinite: true,
@@ -486,7 +470,22 @@
             arrows :false,
             cssEase: 'linear',
         });
+    </script>
+    <script>
+      $(document).scroll(function(){
+        $('.navbar').toggleClass('onScrolled', $(this).scrollTop() > 0);
+      });
 
+      $('.slide').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            autoplay :true,
+            autoplaySpeed : 5000,
+            arrows :false,
+            cssEase: 'linear'
+        });
 
         $('.headlineSlide').slick({
             dots: false,

@@ -55,6 +55,29 @@ $fontsize-card-valueNumber : 28px;
     background: #fff;
     transition: .5s;
 }
+.navbar.onScrolled {
+    .container {
+        .navbar-brand {
+            .nameBrand {
+                h1 {
+                    color: $font-color;
+                }
+                p {
+                    color: $font-color;
+
+                }
+            }
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-link {
+                    color: $font-color;
+                }
+            }
+        }
+    }
+}
+
 .navbar {
     transition: .5s;
     .container {
@@ -65,10 +88,12 @@ $fontsize-card-valueNumber : 28px;
                 h1 {
                     font-family: steelfish;
                     font-weight: 500;
+                    color: #fff;
                 }
                 p {
                     font-family: 'Poppins', sans-serif;
                     font-weight: 600;
+                    color: #fff;
                 }
             }
         }
@@ -78,6 +103,7 @@ $fontsize-card-valueNumber : 28px;
                 .nav-link {
                     font-family: 'Poppins', sans-serif;
                     font-weight: 500;
+                    color: #fff;
                 }
             }
             .loginAndRegister {
@@ -730,7 +756,7 @@ footer {
                             width: 100%;
                             padding: 0 1rem;
                             img {
-                                max-width: 500px;
+                                max-width: 400px;
                             }
                         }
                     }
@@ -915,6 +941,23 @@ footer {
                             color: #fff;
                             font-weight: 500;
                             font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slideShow {
+        .wrapperContent {
+            .container {
+                .slidesContent {
+                    .content {
+                        .rightContent {
+                            width: 100%;
+                            padding: 0 1rem;
+                            img {
+                                max-width: 550px;
+                            }
                         }
                     }
                 }

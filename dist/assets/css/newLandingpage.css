@@ -227,7 +227,7 @@ Variables
 }
 
 .sisfobetaFitur {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .sisfobetaFitur .container .fiturWrapper {
@@ -469,6 +469,12 @@ footer .socialMedia .social svg {
   .tentangKamiContainer .container .wrapperTentangKami .icon img {
     max-width: 200px;
   }
+  .partnersWrapper .container .wrapperPartner .ditkuad {
+    margin-right: 1rem;
+  }
+  .partnersWrapper .container .wrapperPartner .ditkuad img {
+    max-width: 80px;
+  }
   footer {
     padding: 1rem 1rem;
   }
@@ -653,10 +659,15 @@ footer .socialMedia .social svg {
     flex-direction: row;
   }
   .sisfobetaFitur .container .fiturWrapper .mockup {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .sisfobetaFitur .container .fiturWrapper .mockup img {
     max-width: 200px;
+  }
+  .sisfobetaFitur .container .fiturWrapper .contentFitur {
+    width: 100%;
   }
 }
 
@@ -681,9 +692,6 @@ footer .socialMedia .social svg {
   }
   .sisfobetaFitur .container .fiturWrapper {
     flex-direction: row;
-  }
-  .sisfobetaFitur .container .fiturWrapper .mockup {
-    display: block;
   }
   .sisfobetaFitur .container .fiturWrapper .mockup img {
     max-width: 300px;

@@ -248,7 +248,7 @@ $fontsize-card-valueNumber : 28px;
 }
 
 .sisfobetaFitur {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     .container {
         .fiturWrapper {
             display: flex;
@@ -540,6 +540,18 @@ footer {
             }
         }
     }
+    .partnersWrapper {
+        .container {
+            .wrapperPartner {
+                .ditkuad {
+                    margin-right: 1rem;
+                    img {
+                        max-width: 80px;
+                    }
+                }
+            }
+        }
+    }
     footer {
         padding: 1rem 1rem;
         .menuFooter {
@@ -675,6 +687,8 @@ footer {
             }
         }
     }
+    
+
     footer {
         padding: 3rem 1rem;
         .menuFooter {
@@ -819,10 +833,15 @@ footer {
             .fiturWrapper {
                 flex-direction: row;
                 .mockup {
-                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     img {
                         max-width: 200px;
                     }
+                }
+                .contentFitur {
+                    width: 100%;
                 }
             }
         }
@@ -869,7 +888,6 @@ footer {
             .fiturWrapper {
                 flex-direction: row;
                 .mockup {
-                    display: block;
                     img {
                         max-width: 300px;
                     }

@@ -21,6 +21,7 @@
                  color: #fff;
                  tr {
                      th {
+                        text-align: center;
                         &:first-child {
                             border-radius: 6px 0 0px 6px;
                         }
@@ -32,6 +33,33 @@
              }
              tbody {
                  background: #fff;
+                 tr {
+                     th {
+                         text-align: center;
+                     }
+                     td {
+                        text-align: center;
+                     }
+                     .pointAction {
+                         .dropdown {
+                             .buttonMore {
+                                 border: none;
+                                 background: transparent;
+                                 img {
+                                     min-height: 18px;
+                                 }
+                             }
+                             .dropdown-menu {
+                                li {
+                                    .dropdown-item {
+                                        font-size: 12px;
+                                    }
+                                }
+                             }
+                            
+                         }
+                     }
+                 }
              }
          }
      }
@@ -42,7 +70,4 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #2F5D62;
 }
-
-

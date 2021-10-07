@@ -180,10 +180,6 @@ Styling
   display: flex;
 }
 
-.form-control-sm {
-  width: 8rem !important;
-}
-
 @media screen and (min-width: 0px) {
   #mainHeader {
     height: 270px;
@@ -331,7 +327,7 @@ Styling
     font-size: 12px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperDataMassDebet .statistic .label .value {
-    font-size: 12px;
+    font-size: 16px;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang {
     margin: 1rem 0;
@@ -351,7 +347,7 @@ Styling
     font-weight: 500;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .label .value, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .label .value {
-    font-size: 10px;
+    font-size: 12px;
     display: flex;
   }
   .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPenerimaan .wrapperStatistic .statisticPiutang .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPenerimaan .wrapperChart, .mainContent .container-fluid .wrapperContent .wrapperRekapData .wrapperRekapPiutang .wrapperStatistic .statisticPiutang .wrapperChart {
@@ -385,12 +381,6 @@ Styling
   }
   .mainContent .container-fluid .wrapperContent .rekapMassDebetBRI, .mainContent .container-fluid .wrapperContent .rekapMassDebetBTN {
     padding: 2rem 1rem;
-  }
-  .table-text{
-    font-size: 12px;
-  }
-  .value-bri{
-    font-size: 10px;
   }
   .nameContentSection {
     font-size: 16px;

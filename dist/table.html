@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Request For Reksa</title>
-    <link rel="stylesheet" href="./assets/css/table.css">
-
+    
     <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/table.css">
 </head>
 <body>
     <h1 class="name">Reksa Table</h1>
@@ -19,6 +19,7 @@
                 <th>First</th>
                 <th>Last</th>
                 <th>Handle</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -27,23 +28,61 @@
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
+                <td class="pointAction">
+                  <div class="dropdown">
+                    <button class="buttonMore" type="button" id="moreAction1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./assets/img/more.svg" alt="">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="moreAction1">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th>2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>@fat</td>
+                <td class="pointAction">
+                  <div class="dropdown">
+                    <button class="buttonMore" type="button" id="moreAction2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./assets/img/more.svg" alt="">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="moreAction2">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th>3</th>
                 <td>Larry the Bird</td>
                 <td>@twitter</td>
                 <td>@fat</td>
+                <td class="pointAction">
+                  <div class="dropdown">
+                    <button class="buttonMore" type="button" id="moreAction3" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./assets/img/more.svg" alt="">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="moreAction3">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
     </div>
 
       <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
 </body>
 </html>

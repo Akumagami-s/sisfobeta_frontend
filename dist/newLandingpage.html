@@ -14,6 +14,10 @@
     <!--slick Css-->
     <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/vendors/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendors/owlcarousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="./assets/vendors/owlcarousel/assets/owl.theme.default.min.css">
+
     <!--Data Table-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
@@ -56,41 +60,18 @@
     <!--End Navbar-->
 
     <!--Jumbotron-->
-    <div class="slideShow">
-        <div class="wrapperContent">
-            <div class="container">
-                <div class="slidesContent">
-                    <div class="content">
-                        <div class="leftContent">
-                            <h1 class="homeTitle">
-                                Sistem informasi bendahara TWP Ad yang terintergasi
-                            </h1>
-                        </div>
-                        <div class="rightContent">
-                            <img src="./assets/img/mockupLandingPage.svg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <div class="leftContent">
-                            <h1 class="homeTitle">
-                                Satu aplikasi untuk semua  mudah dan cepat
-                            </h1>
-                        </div>
-                        <div class="rightContent">
-                            <img src="./assets/img/contentJumbotron2.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="item">
-                <img src="./assets/img/gradient1.svg" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/img/gradient2.svg" alt="">
+    <div class="jumbotronWrapper">
+        <div class="container">
+            <div class="slidesJumbotron owl-carousel">
+                <a href="#" class="items">
+                    <img id="mainImages" src="./assets/img/mobil_Jumbotron.svg" alt="">
+                </a>
+                <a href="#" class="items">
+                    <img id="mainImages" src="./assets/img/mobil_Jumbotron.svg" alt="">
+                </a>
+                <a href="#" class="items">
+                    <img id="mainImages" src="./assets/img/mobil_Jumbotron.svg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -101,52 +82,71 @@
         <div class="container">
             <h1 class="nameContent">Berita</h1>
             <div class="beritaContainer">
-                <a href="#" class="berita">
-                    <img class="newsImages" src="./assets/img/berita.svg" alt="">
-                    <div class="informationOfNews">
-                        <h1 class="titleNews">Jelang HUT TNI Ke-76, Kodim 1628 Gelar Doa Bersama dan Berikan Tali Asih Kepada Panti Asuhan</h1>
-                        <p class="timeNewsUpdate">11 september 2021</p>
-                    </div>
-                </a>
+                <div class="firstRow">
+                    <a href="#" class="berita">
+                        <img class="newsImages" src="./assets/img/berita.svg" alt="">
+                        <div class="informationOfNews">
+                            <h1 class="titleNews">Jelang HUT TNI Ke-76, Kodim 1628 Gelar Doa Bersama dan Berikan Tali Asih Kepada Panti Asuhan</h1>
+                            <p class="timeNewsUpdate">11 september 2021</p>
+                        </div>
+                    </a>
+    
+                    <a  href="#" class="berita">
+                        <img class="newsImages" src="./assets/img/berita (1).svg" alt="">
+                        <div class="informationOfNews">
+                            <h1 class="titleNews">Jelang HUT Ke-76 TNI, Corps Pomad Ziarah Ke TMPN Kaliba</h1>
+                            <p class="timeNewsUpdate">11 september 2021</p>
+                        </div>
+                    </a>
+    
+                    <a  href="#" class="berita">
+                        <img class="newsImages" src="./assets/img/berita (2).svg" alt="">
+                        <div class="informationOfNews">
+                            <h1 class="titleNews">Bakti Sosial Donor Darah Kerjasama Kodim 1616/Gianyar Bersama Yayasan Tapak Dara dan PMI</h1>
+                            <p class="timeNewsUpdate">11 september 2021</p>
+                        </div>
+                    </a>
 
-                <a  href="#" class="berita">
-                    <img class="newsImages" src="./assets/img/berita (1).svg" alt="">
-                    <div class="informationOfNews">
-                        <h1 class="titleNews">Jelang HUT Ke-76 TNI, Corps Pomad Ziarah Ke TMPN Kaliba</h1>
-                        <p class="timeNewsUpdate">11 september 2021</p>
-                    </div>
-                </a>
+                    <a  href="#" class="berita">
+                        <img class="newsImages" src="./assets/img/berita (2).svg" alt="">
+                        <div class="informationOfNews">
+                            <h1 class="titleNews">Bakti Sosial Donor Darah Kerjasama Kodim 1616/Gianyar Bersama Yayasan Tapak Dara dan PMI</h1>
+                            <p class="timeNewsUpdate">11 september 2021</p>
+                        </div>
+                    </a>
 
-                <a  href="#" class="berita">
-                    <img class="newsImages" src="./assets/img/berita (2).svg" alt="">
-                    <div class="informationOfNews">
-                        <h1 class="titleNews">Bakti Sosial Donor Darah Kerjasama Kodim 1616/Gianyar Bersama Yayasan Tapak Dara dan PMI</h1>
-                        <p class="timeNewsUpdate">11 september 2021</p>
-                    </div>
-                </a>
-
-                <a  href="#" class="berita">
-                    <img class="newsImages" src="./assets/img/berita (3).svg" alt="">
-                    <div class="informationOfNews">
-                        <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
-                        <p class="timeNewsUpdate">11 september 2021</p>
-                    </div>
-                </a>
-
-                <a  href="#" class="berita">
-                    <img class="newsImages" src="./assets/img/berita (4).svg" alt="">
-                    <div class="informationOfNews">
-                        <h1 class="titleNews">Gotong Royong, Satgas Yonif 131 dan Warga Bersihkan Posyandu di Papua</h1>
-                        <p class="timeNewsUpdate">11 september 2021</p>
-                    </div>
-                </a>
-
-                <div class="berita">
-                    <img class="newsImages" src="./assets/img/berita (5).svg" alt="">
-                    <div class="informationOfNews">
-                        <h1 class="titleNews">Gotong Royong, Satgas Yonif 131 dan Warga Bersihkan Posyandu di Papua</h1>
-                        <p class="timeNewsUpdate">11 september 2021</p>
-                    </div>
+                    <a  href="#" class="berita">
+                        <img class="newsImages" src="./assets/img/berita (2).svg" alt="">
+                        <div class="informationOfNews">
+                            <h1 class="titleNews">Bakti Sosial Donor Darah Kerjasama Kodim 1616/Gianyar Bersama Yayasan Tapak Dara dan PMI</h1>
+                            <p class="timeNewsUpdate">11 september 2021</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="secondRow">
+                    <a  href="#" class="berita">
+                        <img class="newsImages" src="./assets/img/berita (3).svg" alt="">
+                        <div class="informationOfNews">
+                            <h1 class="titleNews">Terkait Program TWP AD, Jenderal Andika Minta ...</h1>
+                            <p class="timeNewsUpdate">11 september 2021</p>
+                        </div>
+                    </a>
+    
+                    <a  href="#" class="berita">
+                        <img class="newsImages" src="./assets/img/berita (4).svg" alt="">
+                        <div class="informationOfNews">
+                            <h1 class="titleNews">Gotong Royong, Satgas Yonif 131 dan Warga Bersihkan Posyandu di Papua</h1>
+                            <p class="timeNewsUpdate">11 september 2021</p>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="berita">
+                        <img class="newsImages" src="./assets/img/berita (5).svg" alt="">
+                        <div class="informationOfNews">
+                            <h1 class="titleNews">Gotong Royong, Satgas Yonif 131 dan Warga Bersihkan Posyandu di Papua</h1>
+                            <p class="timeNewsUpdate">11 september 2021</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -336,7 +336,7 @@
     <!--Tentang Kami-->
     <div class="tentangKamiContainer">
         <div class="container">
-            <h1 class="nameContent">Fitur Sisfobeta</h1>
+            <h1 class="nameContent">Tentang Kami</h1>
             <div class="wrapperTentangKami">
                 <div class="tentangKami">
                     <p><b>SISFOBETA</b> merupakan suatu aplikasi yg memudahkan setiap prajurit di seluruh penjuru Indonesia dalam mengakses baltab, iuran twp dan pengajuan serta transaksi KPR.</p>
@@ -454,38 +454,96 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--Slick Js-->
     <script src="./assets/vendors/slick/slick.min.js"></script>
+    <script src="./assets/vendors/owlcarousel/owl.carousel.min.js"></script>
     <!--DataTable-->
     <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
-    <!--Dashboard Js-->
-    <script>
-        $('.slidesContent').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            fade: true,
-            autoplay :true,
-            autoplaySpeed : 5000,
-            arrows :false,
-            cssEase: 'linear',
-        });
-    </script>
     <script>
       $(document).scroll(function(){
         $('.navbar').toggleClass('onScrolled', $(this).scrollTop() > 0);
       });
-
-      $('.slide').slick({
-            dots: false,
-            infinite: true,
-            speed: 500,
-            fade: true,
+        $('.slidesJumbotron').owlCarousel({
+            items:1,
+            loop:true,
+            center :true,
+            stagePadding: 25,
+            navs :false,
+            margin : 10,
             autoplay :true,
-            autoplaySpeed : 5000,
-            arrows :false,
-            cssEase: 'linear'
+            dots : false,
+            autoplaySpeed :1000,
         });
 
+        $('.firstRow').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows : false,
+            dots : false,
+            responsive: [
+                {
+                breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1.1,
+                    }
+                }
+            ]
+        });
+
+        $('.wrapperBenefit').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows : false,
+            dots : false,
+            responsive: [
+                {
+                breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1.1,
+                    }
+                }
+            ]
+        });
+
+        $('.secondRow').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows : false,
+            dots : false,
+            responsive: [
+                {
+                breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1.1,
+                    }
+                }
+            ]
+        });
+
+       
         $('.headlineSlide').slick({
             dots: false,
             infinite: false,

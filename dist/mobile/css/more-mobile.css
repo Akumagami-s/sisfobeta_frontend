@@ -1,6 +1,7 @@
 /*------------
 Font
 ------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @font-face {
   font-family: steelfish;
@@ -36,7 +37,7 @@ Variables
 }
 
 .mainContent .wrapperMenuMore .moreMenu a .nameMenuMore {
-  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (min-width: 0px) {
@@ -50,7 +51,7 @@ Variables
     padding: 1rem 0;
   }
   .mainContent .wrapperMenuMore .moreMenu a .nameMenuMore {
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
   }
 }

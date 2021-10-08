@@ -1,8 +1,10 @@
 /*------------
 Font
 ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @font-face {
+
     font-family: steelfish;
     src: url(../../../dist/assets/font/stelfish.ttf);
 }
@@ -46,7 +48,7 @@ $fontsize-card-valueNumber : 28px;
                     margin-right: .5rem;
                 }
                 .nameMenuMore {
-                    font-size: 12px;
+                    font-family: 'Poppins', sans-serif;
                 }
             }
         }
@@ -64,7 +66,7 @@ $fontsize-card-valueNumber : 28px;
                 a {
                     padding: 1rem 0;
                     .nameMenuMore {
-                        font-size: 16px;
+                        font-size: 14px;
                         color: #000;
                     }
                 }

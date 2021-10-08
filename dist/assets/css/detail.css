@@ -25,10 +25,6 @@ Variables
 Styling
 ------------*/
 
-.title{
-    padding-top: 2.5rem;
-}
-
 .title .title-news{
     font-weight: normal;
     font-size: 2rem;
@@ -70,11 +66,20 @@ Styling
     width: 60%
 }
 
+@media screen and (min-width : 0px) {
+    .title{
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (min-width : 992px) {
+    .title{
+        padding-top: 10rem;
+    }
+}
+
 
 @media screen and (max-width: 450px) {
-    .title{
-        padding-top: 1.5rem;
-    }
     
     .title .title-news{
         font-weight: normal;

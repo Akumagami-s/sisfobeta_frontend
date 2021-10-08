@@ -7,42 +7,48 @@
         <title>Detail Berita</title>
         <!--Bootstrap Asset-->
         <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/newLandingpage.css">
         <!--LandingPage css-->
         <link rel="stylesheet" href="./assets/css/landingPage.css"> 
         <link rel="stylesheet" href="./assets/css/detail.css">
         <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
+        <link rel="stylesheet" href="./assets/css/newLandingpage.css">
     </head>
 <body>
 
     <!-- header -->
-    <div class="header">
-        <!--Nav-->
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container">
-                <a class="navbar-brand d-flex flex-row"><img src="./assets/img/tni_logo.png" class="tni-logo">
-                    <div class="brand-title d-flex flex-column justify-content-center align-items-center text-white">
-                        <h1>SISFOBETA 4.0</h1>
-                    </div>
-                </a>
-                <div id="nav-menu-mx"> 
-                    <ul class="navbar-nav ms-auto flex-row">
-                        <a class="nav-link active text-white text-center" aria-current="page" href="landingPage.html">Home
-                            <span class="visually-hidden">(current)</span>
-                            </a>
-                            <a class="nav-link text-white text-center" href="#fitur">Produk</a>
-                            <a class="nav-link text-white text-center" href="#about">Tentang Kami</a>
-                            <a class="nav-link text-white text-center" href="hubungiKami.html">Hubungi Kami</a>
-                            <a class="nav-link text-success text-center button-nav" href="#">Masuk</a>
-                            <a class="nav-link text-success text-center button-nav" href="#">Daftar</a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/img/tni-ad.svg" alt="">
+              <div class="nameBrand">
+                <h1>SISFOBETA 4.0</h1>
+                <p>SISTEM INFORMASI BENDAHARA TWP AD ONLINE</p>
+              </div>
+          </a>
 
-                    </ul>
-                </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#">Utama</a>
+              <a class="nav-link" href="#">Produk</a>
+              <a class="nav-link" href="#">Tentang Kami</a>
+              <a class="nav-link" href="#">Hubungi Kami</a>
             </div>
-        </nav>
-
-        <!--Nav End-->
-    </div>
+            <div class="loginAndRegister">
+                <button class="login">
+                    <a href="#">Masuk</a>
+                </button>
+                <button class="register">
+                    <a href="#">Daftar</a>
+                </button>
+            </div>
+          </div>
+        </div>
+    </nav>
 
     <!-- title -->
     <div class="title">
@@ -206,90 +212,6 @@
             });
     </script>
     
-    <script>
-            $('.navbar-nav').slick({
-        infinite: false,
-        arrows : false,
-        slidesToShow: 6,
-        // variableWidth: true,
-        responsive: [
-        {
-        breakpoint: 1200,
-        settings: {
-            infinite: false,
-            arrows : false,
-            slidesToShow: 6,
-            slidesToScroll: 6,
-            dots: false
-        }
-        },
-        {
-        breakpoint: 600,
-        settings: {
-            infinite: false,
-            arrows : false,
-            slidesToShow: 5,
-            slidesToScroll: 5
-        }
-        },
-        {
-        breakpoint: 480,
-        settings: {
-            infinite: false,
-            arrows : false,
-            slidesToShow: 4,
-            slidesToScroll: 4
-        }
-        }
-        ]
-            });
-    </script>
-
-    <script>
-        const navHeight = $("nav").height();
-        const vh = $(window).height();
-
-        $(window).scroll(function(){
-            if (window.scrollY > $("nav").offset().top){
-                $("body").css("padding-top", (navHeight + 1));
-
-                if (window.matchMedia("(max-width: 768px)").matches) {
-                    $("a.navbar-brand").addClass('d-none')
-                } else {
-                    $("nav").height(0)
-                }
-            } else {
-                
-                if (window.matchMedia("(max-width: 768px)").matches) {
-                    $("a.navbar-brand").removeClass('d-none')
-                } else {
-                    $("nav").height(navHeight);
-                }
-            }
-        // 100 * (() / vh)
-            if (window.scrollY > ($(".header").offset().top + (180 * (200 / vh)) )) {
-                $("nav").addClass('fix-nav fixed-top bg-nav');
-
-                if (window.matchMedia("(max-width: 768px)").matches) {
-                    $("a.navbar-brand").addClass('d-none')
-                    $("#nav-menu-mx").addClass('mx-auto');
-                } else {
-                    $("nav").height(navHeight);
-                }
-            } else{
-                $("nav").removeClass('fix-nav fixed-top bg-nav');
-                $("body").css("padding-top", "");
-
-                if (window.matchMedia("(max-width: 768px)").matches) {
-                    $("a.navbar-brand").removeClass('d-none')
-                    $("#nav-menu-mx").removeClass('mx-auto');
-                } else {
-                    $("nav").height(navHeight);
-                }
-            }
-        })
-    </script>
-
     <!-- Click Button -->
     <script>
         $(".news").on('click', function(event){

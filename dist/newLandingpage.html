@@ -64,13 +64,13 @@
         <div class="container">
             <div class="slidesJumbotron owl-carousel">
                 <a href="#" class="items">
-                    <img id="mainImages" src="./assets/img/mobil_Jumbotron.svg" alt="">
+                    <img class="mainImages" data-img-desktop='assets/img/desktop_jumbotron.svg' data-img-mobile='assets/img/mobile_jumbotron.svg' src='' alt="">
                 </a>
                 <a href="#" class="items">
-                    <img id="mainImages" src="./assets/img/mobil_Jumbotron.svg" alt="">
+                    <img class="mainImages" data-img-desktop='assets/img/desktop_jumbotron.svg' data-img-mobile='assets/img/mobile_jumbotron.svg' src='' alt="">
                 </a>
                 <a href="#" class="items">
-                    <img id="mainImages" src="./assets/img/mobil_Jumbotron.svg" alt="">
+                    <img class="mainImages" data-img-desktop='assets/img/desktop_jumbotron.svg' data-img-mobile='assets/img/mobile_jumbotron.svg' src='' alt="">
                 </a>
             </div>
         </div>
@@ -458,6 +458,26 @@
     <!--DataTable-->
     <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+
+        
+        function resize(){
+                if ($(window).width() > 768) { 
+                // The .each() method is unnecessary here:
+                $( ".mainImages" ).each(function() {
+                    $( this ).attr( "data-img-desktop" );
+                    $(".mainImages").attr('src', $( this ).attr( "data-img-desktop" ));
+                });
+                } else {
+                    $( ".mainImages" ).each(function() {
+                        $( this ).attr( "data-img-mobile" );
+                        $(".mainImages").attr('src', $( this ).attr( "data-img-mobile" ));
+                });
+            }
+        }
+            resize();
+            $(window).on('resize', resize);
+    </script>
     <script>
       $(document).scroll(function(){
         $('.navbar').toggleClass('onScrolled', $(this).scrollTop() > 0);

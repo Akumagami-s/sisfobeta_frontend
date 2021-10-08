@@ -29,15 +29,6 @@ Styling
     padding-top: 2.5rem;
 }
 
-.header .navbar .container #nav-menu-mx .navbar-nav{
-    width: 100%;
-}
-
-.header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
-    width: 100%;
-    margin: 0 .3rem;
-}
-
 .title .title-news{
     font-weight: normal;
     font-size: 2rem;

@@ -118,7 +118,10 @@ $fontsize-card-valueNumber : 28px;
                 }
             }
             .loginAndRegister {
-                button {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 500;
                     background: none;
                     border: none;
                     background: #3D563D;
@@ -126,11 +129,6 @@ $fontsize-card-valueNumber : 28px;
                     border-radius: 4px;
                     &:not(:last-child) {
                         margin-right: .5rem;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: #fff;
-                        font-weight: 500;
                     }
                 }
             }
@@ -654,13 +652,11 @@ footer {
                 }
                 .loginAndRegister {
                     margin-left: 1.5rem;
-                    button {
-                        a {
-                            text-decoration: none;
-                            color: #fff;
-                            font-weight: 500;
-                            font-size: 16px;
-                        }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 16px;
                     }
                 }
             }
@@ -834,13 +830,11 @@ footer {
                 }
                 .loginAndRegister {
                     margin-left: 1.5rem;
-                    button {
-                        a {
-                            text-decoration: none;
-                            color: #fff;
-                            font-weight: 500;
-                            font-size: 16px;
-                        }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 16px;
                     }
                 }
             }

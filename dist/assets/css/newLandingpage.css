@@ -100,7 +100,10 @@ Variables
   color: #3B4E63;
 }
 
-.navbar .container .navbar-collapse .loginAndRegister button {
+.navbar .container .navbar-collapse .loginAndRegister a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
   background: none;
   border: none;
   background: #3D563D;
@@ -108,14 +111,8 @@ Variables
   border-radius: 4px;
 }
 
-.navbar .container .navbar-collapse .loginAndRegister button:not(:last-child) {
+.navbar .container .navbar-collapse .loginAndRegister a:not(:last-child) {
   margin-right: .5rem;
-}
-
-.navbar .container .navbar-collapse .loginAndRegister button a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
 }
 
 .jumbotronWrapper {
@@ -533,7 +530,7 @@ footer .socialMedia .social svg {
   .navbar .container .navbar-collapse .loginAndRegister {
     margin-left: 1.5rem;
   }
-  .navbar .container .navbar-collapse .loginAndRegister button a {
+  .navbar .container .navbar-collapse .loginAndRegister a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -653,7 +650,7 @@ footer .socialMedia .social svg {
   .navbar .container .navbar-collapse .loginAndRegister {
     margin-left: 1.5rem;
   }
-  .navbar .container .navbar-collapse .loginAndRegister button a {
+  .navbar .container .navbar-collapse .loginAndRegister a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;

@@ -9,7 +9,7 @@ document.querySelector(".searchIcon").addEventListener("click",function(){
 });
 
 $(document).scroll(function(){
-    $('.pembungkus').toggleClass('onScrolled', $(this).scrollTop() > 170);
+    $('.pembungkus').toggleClass('onScrolled', $(this).scrollTop() > 150);
   });
 
   $('.menu').slick({

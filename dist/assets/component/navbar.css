@@ -208,7 +208,6 @@ Styling
   width: 100%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -246,6 +245,9 @@ Styling
 }
 
 @media screen and (min-width: 0px) {
+  #mainHeader {
+    height: 250px;
+  }
   #mainHeader .navbar {
     margin-bottom: 2rem;
   }
@@ -362,6 +364,9 @@ Styling
 }
 
 @media screen and (min-width: 992px) {
+  #mainHeader {
+    height: 230px;
+  }
   #mainHeader .navbar {
     padding: 0 3rem;
   }

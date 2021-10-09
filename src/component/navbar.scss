@@ -212,7 +212,6 @@ Styling
         width: 100%;
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         justify-content: center;
         .nav-link {
             border-radius: 15px;
@@ -246,6 +245,7 @@ Styling
 
 @media screen and (min-width :0px) {
     #mainHeader {
+        height: 250px;
         .navbar {
             margin-bottom: 2rem;
             .container-fluid {
@@ -407,6 +407,7 @@ Styling
 
 @media screen and (min-width :992px) {
     #mainHeader {
+        height: 230px;
         .navbar {
             padding: 0 3rem;
             .container-fluid {

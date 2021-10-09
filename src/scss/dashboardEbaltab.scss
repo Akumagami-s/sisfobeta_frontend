@@ -180,7 +180,6 @@ Styling
         .navbar {
             margin-bottom: 1rem;
         }
-        height: 250px;
     }
     .mainContent {
         padding: 2rem 1rem;
@@ -298,9 +297,6 @@ Styling
     }
 }
 @media screen and (min-width :992px) {
-    #mainHeader {
-        height: 230px;
-    }
     .mainContent {
         padding: 4rem 3rem;
         .container-fluid {

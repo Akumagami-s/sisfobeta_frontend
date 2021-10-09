@@ -163,9 +163,6 @@ Styling
 }
 
 @media screen and (min-width: 0px) {
-  #mainHeader {
-    height: 250px;
-  }
   #mainHeader .navbar {
     margin-bottom: 1rem;
   }
@@ -273,9 +270,6 @@ Styling
 }
 
 @media screen and (min-width: 992px) {
-  #mainHeader {
-    height: 230px;
-  }
   .mainContent {
     padding: 4rem 3rem;
   }

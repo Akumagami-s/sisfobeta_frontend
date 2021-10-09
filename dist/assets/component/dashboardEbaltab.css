@@ -164,10 +164,10 @@ Styling
 
 @media screen and (min-width: 0px) {
   #mainHeader {
-    height: 250px;
+    height: 270px;
   }
   #mainHeader .navbar {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .mainContent {
     padding: 2rem 1rem;
@@ -273,11 +273,8 @@ Styling
 }
 
 @media screen and (min-width: 992px) {
-  #mainHeader {
-    height: 230px;
-  }
   .mainContent {
-    padding: 4rem 3rem;
+    padding: 0 3rem;
   }
   .mainContent .container-fluid .wrapperContent .wrapperDataSummary {
     justify-content: center;

@@ -87,12 +87,15 @@ Styling
     .wrapperPilihRumah{
         .propertiWrapper {
             display: flex;
+            margin-bottom: 1rem;
             .properti {
                 background: #FFFFFF;
-                box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 border-radius: 15px;
                 min-height: 400px;
                 width: 100%;
+                text-decoration: none;
+                color: #000;
                 .fotoProperti {
                     width: 100%;
                     border-radius: 15px 15px 0 0;
@@ -101,7 +104,7 @@ Styling
             .kategoriProperti {
                 text-align: center;
                 background: linear-gradient(142.66deg, #3C543C 2%, #8AAC74 98.99%) !important;
-                box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 border-radius: 15px;
                 width: 100%;
                 display: flex;
@@ -111,6 +114,81 @@ Styling
                 color: #fff;
             }
         }
+        .pilihanBank {
+            display: flex;
+            justify-content: center;
+            .kategoriProperti {
+                text-align: center;
+                background: linear-gradient(142.66deg, #3C543C 2%, #8AAC74 98.99%) !important;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+            }
+            .wrapperPropertiPilihan {
+                display: flex;
+                .propertiPilihan {
+                    width: 100%;
+                    position: relative;
+
+                    &:hover {
+                        .wrapperInformation {
+                            display: block;
+                        }
+                    }
+                    .nameProperti {
+                        position: absolute;
+                        text-align: center;
+                        font-weight: 600;
+                        color: #fff;
+                        top: 40px;
+                        z-index: 2;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                    .imagesProperti {
+                        width: 100%;
+                        border-radius: 15px;
+                    }
+                    .wrapperInformation {
+                        padding: .7rem;
+                        position: absolute;
+                        top: 0;
+                        height: 100%;
+                        z-index: 3;
+                        display: none;
+                        .propertiInformation {
+                            background: #fff;
+                            border-radius: 15px;
+                            height: 100%;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            .nameInformationProperti {
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 600;
+                            }
+                            .textInformation {
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 500;
+                            }
+                            .viewMorePropertiPilihan {
+                                text-align: start;
+                                font-family: 'Poppins', sans-serif;
+                                width: 100%;
+                                font-weight: 600;
+                                text-decoration: none;
+                                color: rgba(65, 89, 63, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .slick-list {
@@ -118,6 +196,7 @@ Styling
     .slick-track {
         width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 }
@@ -140,9 +219,6 @@ Styling
             .propertiWrapper {
                 display: flex;
                 .properti {
-                    background: #FFFFFF;
-                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                    border-radius: 15px;
                     margin: 1rem .8rem;
                     min-height: 370px;
                     font-family: 'Poppins', sans-serif;
@@ -209,6 +285,55 @@ Styling
                     }
                 }
             }
+            .pilihanBank {
+                .kategoriProperti {
+                    margin: 1rem 0;
+                    padding: 1rem 2rem;
+                    width: 50%;
+                    margin-right: 1rem;
+                    .nameKategori {
+                        font-size: 24px;
+                        margin-bottom: 1rem;
+                    }
+                    .promotiontext {
+                        font-size: 16px;
+                        margin-bottom: 1rem;
+                    }
+                    .icon {
+                        svg {
+                            width: 100%;
+                            max-width: 200px;
+                        }
+                    }
+                }
+                .wrapperPropertiPilihan {
+                    width: 50%;
+                    .propertiPilihan {
+                        margin: 1rem .5rem;
+                        .nameProperti {
+                            font-size: 18px;
+                            width: 100%;
+                        }
+                        .wrapperInformation {
+                            .propertiInformation {
+                                padding: 1rem;
+                                .nameInformationProperti {
+                                    font-size: 20px;
+                                    margin-bottom: 1rem;
+                                    color: rgba(65, 89, 63, 1);
+                                }
+                                .textInformation {
+                                    font-size: 12px;
+                                    margin-bottom: 2rem;
+                                }
+                                .viewMorePropertiPilihan {
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -240,6 +365,133 @@ Styling
                     }
                 }
             }
+            .pilihanBank {
+                .kategoriProperti {
+                    width: 30%;
+                }
+                .wrapperPropertiPilihan {
+                    width: 70%;
+                    .propertiPilihan {
+                        .wrapperInformation {
+                            .propertiInformation {
+                                padding: 1rem;
+                                .nameInformationProperti {
+                                    font-size: 22px;
+                                }
+                                .textInformation {
+                                    font-size: 14px;
+                                    margin-bottom: 4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+@media screen and (min-width : 1400px) {
+    .mainContent {
+        .wrapperPilihRumah {
+            .propertiWrapper {
+                .properti {
+                    .informationProperti {
+                        padding: 1.5rem;
+                    }
+                }
+                .kategoriProperti {
+                    padding: 5rem 0;
+                }
+            }
+
+            .pilihanBank {
+                .kategoriProperti {
+                    width: 25%;
+                    .nameKategori {
+                        font-size: 22px;
+                    }
+                    .promotiontext {
+                        font-size: 16px;
+                    }
+                    .icon {
+                        svg {
+                            max-width: 150px;
+                        }
+                    }
+                }
+                .wrapperPropertiPilihan {
+                    width: 75%;
+                    align-items: center;
+                    .propertiPilihan {
+                        .wrapperInformation {
+                            .propertiInformation {
+                                padding: 1rem;
+                                .textInformation {
+                                    margin-bottom: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1900px) {
+    .mainContent {
+        .wrapperPilihRumah {
+            .propertiWrapper {
+                .properti {
+                    max-width: 430px;
+                }
+                .kategoriProperti {
+                    padding: 6rem 0;
+                    .nameKategori {
+                        font-size: 28px;
+                        max-width: 280px;
+                    }
+                    .promotiontext {
+                        font-size: 18px;
+                        max-width: 300px;
+                    }
+                    .morePropertButton {
+                        padding: .7rem 2rem;
+                    }
+                }
+            }
+            .pilihanBank {
+                .kategoriProperti {
+                    width: 25%;
+                    max-width: 430px;
+                    .nameKategori {
+                        font-size: 28px;
+                    }
+                    .promotiontext {
+                        font-size: 18px;
+                    }
+                    .icon {
+                        svg {
+                            max-width: 150px;
+                        }
+                    }
+                }
+                .wrapperPropertiPilihan {
+                    width: 75%;
+                    align-items: center;
+                    .propertiPilihan {
+                        .wrapperInformation {
+                            .propertiInformation {
+                                padding: 1rem;
+                                .textInformation {
+                                    margin-bottom: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

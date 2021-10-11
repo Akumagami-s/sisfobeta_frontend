@@ -182,10 +182,10 @@ Styling
 
 @media screen and (min-width: 0px) {
   #mainHeader {
-    height: 230px;
+    height: 270px;
   }
   #mainHeader .navbar {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .mainContent {
     padding: 2rem 1rem;

@@ -96,10 +96,6 @@ Styling
   fill: #08850D;
 }
 
-.mainContent .userTabsMenu .nav-link .nameMenu {
-  font-size: 11px;
-}
-
 .mainContent .userTabsMenu .nav-link.active .iconMenu {
   background: #526D4C;
 }
@@ -108,7 +104,24 @@ Styling
   fill: #fff;
 }
 
+.mainContent .userTabsContent .dataWrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.mainContent .userTabsContent .actionButton {
+  margin: 1rem 0;
+}
+
+.mainContent .userTabsContent .actionButton .editBtn {
+  font-size: 14px;
+}
+
 @media screen and (min-width: 0px) {
+  .mainContent {
+    margin-bottom: 3rem;
+  }
   .mainContent .nameContent {
     font-size: 18px;
     margin-bottom: 1rem;
@@ -130,5 +143,25 @@ Styling
   }
   .mainContent .userTabsMenu .nav-link .nameMenu {
     font-size: 9px;
+  }
+  .mainContent .userTabsContent .dataWrapper {
+    padding: 1rem;
+  }
+  .mainContent .userTabsContent .dataWrapper .imgProfil {
+    display: flex;
+    justify-content: center;
+  }
+  .mainContent .userTabsContent .dataWrapper .imgProfil img {
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .mainContent .userTabsMenu .nav-link .iconMenu svg {
+    min-width: 25px;
+    min-height: 25px;
+  }
+  .mainContent .userTabsMenu .nav-link .nameMenu {
+    font-size: 10px;
   }
 }

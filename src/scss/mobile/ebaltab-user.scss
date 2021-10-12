@@ -89,9 +89,6 @@ Styling
                     fill: #08850D;
                 }
             }
-            .nameMenu {
-                font-size: 11px;
-            }
         }
         .nav-link.active {
             .iconMenu {
@@ -102,9 +99,23 @@ Styling
             }
         }
     }
+    .userTabsContent {
+        .dataWrapper {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .actionButton {
+            margin: 1rem 0;
+            .editBtn {
+                font-size: 14px;
+            }
+        }
+    }
 }
 @media screen and (min-width : 0px) {
     .mainContent {
+        margin-bottom: 3rem;
         .nameContent {
             font-size: 18px;
             margin-bottom: 1rem;
@@ -124,6 +135,35 @@ Styling
                 }
                 .nameMenu {
                     font-size: 9px;
+                }
+            }
+        }
+        .userTabsContent {
+            .dataWrapper {
+                padding: 1rem;
+                .imgProfil {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 375px) {
+    .mainContent {
+        .userTabsMenu {
+            .nav-link {
+                .iconMenu {
+                    svg {
+                        min-width: 25px;
+                        min-height: 25px;
+                    }
+                }
+                .nameMenu {
+                    font-size: 10px;
                 }
             }
         }

@@ -208,16 +208,12 @@ Styling
                     .uangMuka {
                         .inputForm {
                             display: flex;
-                            .rupiah {
-                                display: flex;
-                                align-items: center;
-                            }
                             .persen {
                                 display: flex;
                                 flex-direction: row-reverse;
                                 align-items: center;
                             }
-                            .rupiah,.persen {
+                            .persen {
                                 width: 100%;
                                 input {
                                     width: 100%;
@@ -231,7 +227,9 @@ Styling
         
     }
 }
-
+.wrapperUserAction.fixedScrollMenu {
+    position: sticky;
+}
 @media screen and (min-width : 0px) {
     .headerCard {
         padding: 1rem 2rem;
@@ -242,6 +240,7 @@ Styling
     .mainContent {
         flex-direction: column;
         .wrapperDetailProperti {
+            margin-bottom: 1.5rem;
             .wrapperImagesProperti{
                 margin-bottom: 1.5rem;
                 .fullImages {
@@ -540,19 +539,8 @@ Styling
                         }
                         .uangMuka {
                             .inputForm {
-                                .rupiah {
-                                    width: 70%;
-                                    input {
-                                        border-left: opacify($color: #9D9D9D, $amount: 0.3);
-                                    }
-                                    
-                                }
                                 .persen {
-                                    width: 30%;
-                                    input {
-                                        border-right: opacify($color: #9D9D9D, $amount: 0.3);
-                                        border-left: none;
-                                    }
+                                    width: 100%;
                                 }
                                 .rupiah,.persen {
                                     label {
@@ -563,7 +551,10 @@ Styling
                                         margin-bottom: 0;
                                     }
                                     input {
-                                        border-radius: 0px;
+                                        border-top-left-radius: 5px;
+                                        border-bottom-left-radius: 5px;
+                                        border-top-right-radius: 0;
+                                        border-bottom-right-radius: 0;
                                     }
                                 }
                             }
@@ -592,6 +583,7 @@ Styling
         flex-direction: row;
         .wrapperDetailProperti {
             width: 70%;
+            margin-bottom: 0;
             .detailInformasi {
                 .detailProperti {
                     .contentCard {
@@ -623,7 +615,9 @@ Styling
         }
         .wrapperUserAction {
             width: 30%;
-            margin-left: 1rem;
+            margin-left: 2rem;
+            position: sticky;
+            top: 9rem;
         }
         
     }

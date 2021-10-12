@@ -571,10 +571,6 @@
                             <div class="formSection uangMuka">
                                 <label for="">Uang Muka</label>
                                 <div class="inputForm">
-                                    <div class="rupiah">
-                                        <label for="uangMuka">RP</label>
-                                        <input type="number" name="uangMuka" id="uangMuka">
-                                    </div>
                                     <div class="persen">
                                         <label for="uangMukaPersen">%</label>
                                         <input type="number" name="uangMuka" id="uangMukaPersen">
@@ -595,7 +591,7 @@
                                 </select>
                             </div>
                             <div class="formSection pilihKavling">
-                                <label for="pilihKavling">Jangka Waktu</label>
+                                <label for="pilihKavling">Pilih Kavling</label>
                                 <select name="" id="pilihKavling">
                                     <option value="">1 Month</option>
                                     <option value="">1 Month</option>
@@ -638,6 +634,10 @@
     <script>
       $(document).scroll(function(){
         $('.pembungkus').toggleClass('onScrolled', $(this).scrollTop() > 150);
+      });
+
+      $(document).scroll(function(){
+        $('.wrapperUserAction').toggleClass('fixedScrollMenu', $(this).scrollTop() > 200);
       });
     </script>
     <script>

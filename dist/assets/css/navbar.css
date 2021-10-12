@@ -246,7 +246,7 @@ Styling
 
 @media screen and (min-width: 0px) {
   #mainHeader {
-    height: 230px;
+    height: 250px;
   }
   #mainHeader .navbar {
     margin-bottom: 2rem;

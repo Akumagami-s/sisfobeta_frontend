@@ -236,23 +236,22 @@ Styling
   display: flex;
 }
 
-.mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .rupiah {
-  display: flex;
-  align-items: center;
-}
-
 .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 
-.mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .rupiah, .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen {
+.mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen {
   width: 100%;
 }
 
-.mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .rupiah input, .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen input {
+.mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen input {
   width: 100%;
+}
+
+.wrapperUserAction.fixedScrollMenu {
+  position: sticky;
 }
 
 @media screen and (min-width: 0px) {
@@ -264,6 +263,9 @@ Styling
   }
   .mainContent {
     flex-direction: column;
+  }
+  .mainContent .wrapperDetailProperti {
+    margin-bottom: 1.5rem;
   }
   .mainContent .wrapperDetailProperti .wrapperImagesProperti {
     margin-bottom: 1.5rem;
@@ -504,18 +506,8 @@ Styling
   .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .formSection select option {
     padding: 1rem 0;
   }
-  .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .rupiah {
-    width: 70%;
-  }
-  .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .rupiah input {
-    border-left: #9d9d9d;
-  }
   .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen {
-    width: 30%;
-  }
-  .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen input {
-    border-right: #9d9d9d;
-    border-left: none;
+    width: 100%;
   }
   .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .rupiah label, .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen label {
     background: #DDDDDD;
@@ -525,7 +517,10 @@ Styling
     margin-bottom: 0;
   }
   .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .rupiah input, .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .uangMuka .inputForm .persen input {
-    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .mainContent .wrapperUserAction .pengajuanKPR .contentCard form .btnAjukanKPR {
     border: none;
@@ -546,6 +541,7 @@ Styling
   }
   .mainContent .wrapperDetailProperti {
     width: 70%;
+    margin-bottom: 0;
   }
   .mainContent .wrapperDetailProperti .detailInformasi .detailProperti .contentCard .detail .nameDetail, .mainContent .wrapperDetailProperti .detailInformasi .detailProperti .contentCard .detail .valueDetail {
     font-size: 14px;
@@ -565,7 +561,9 @@ Styling
   }
   .mainContent .wrapperUserAction {
     width: 30%;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    position: sticky;
+    top: 9rem;
   }
 }
 

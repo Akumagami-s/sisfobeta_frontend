@@ -46,6 +46,7 @@ Styling
     background: $dashboard-background;
     .navbar {
         flex-wrap: nowrap;
+        flex-direction: column;
         .container-fluid {
             .navbar-brand {
                 display: flex;
@@ -164,6 +165,28 @@ Styling
                         }
                     }
                 }
+                .moreIcon {
+                    display: flex;
+                    align-items: center;
+                    ion-icon {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .navbarBack {
+            .backHome {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                ion-icon {
+                    font-size: 24px;
+                    color: #fff;
+                }
+            }
+            
+            .userControl {
+                justify-content: flex-end;
             }
         }
     }
@@ -218,7 +241,6 @@ Styling
 
 @media screen and (min-width :0px) {
     #mainHeader {
-        height: 166px;
         padding-top: 0;
         .navbar {
             margin-bottom: 1rem;
@@ -291,6 +313,86 @@ Styling
                         margin: 0 .5rem;
                         font-size: 24px;
                     }
+                    .profil {
+                        margin: 0 .3rem;
+                    }
+                }
+            }
+
+            .navbarBack {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                .namePages {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 12px;
+                    width: 100%;
+                }
+                .userControl {
+                    width: 100%;
+                    .notification {
+                        .dropdown {
+                            .btnNotification {
+                                .numberNotif {
+                                    right: -5px;
+                                    top: -10px;
+                                    padding: 3px 6px;
+                                    font-size: 8px;
+                                }
+                            }
+                            
+                            .dropdown-menu {
+                                left: -180px;
+                                li {
+                                    .dropdown-item {
+                                        margin: .5rem 0;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        .iconMassage {
+                                            margin-bottom: .5rem;
+                                            ion-icon {
+                                                margin: 0;
+                                                color: #7e97ae;
+                                            }
+                                        }
+                                        .wrapperMessage {
+                                            margin-bottom: .3rem;
+                                            .messageName {
+                                                margin-bottom: .3rem;
+                                                h1 {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                            .messageContent {
+                                                p {
+                                                    font-size: 12px;
+                                                    
+                                                }
+                                            }
+                                            
+                                        }
+                                        .messageTime {
+                                            span {
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ion-icon {
+                        margin: 0rem;
+                        font-size: 20px;
+                    }
+                    .profil {
+                        margin: 0 .5rem;
+                        .dropdown-toggle {
+                            img {
+                                max-width: 24px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -301,6 +403,12 @@ Styling
                 font-size: 10px;
                 padding: .8rem  .3rem;
             }
+        }
+    }
+
+    .mobileMenu {
+        .menu {
+            font-size: 10px;
         }
     }
 }

@@ -36,6 +36,7 @@ Styling
 
 #mainHeader .navbar {
   flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 #mainHeader .navbar .container-fluid .navbar-brand {
@@ -162,6 +163,30 @@ Styling
   font-weight: 500;
 }
 
+#mainHeader .navbar .container-fluid .userControl .moreIcon {
+  display: flex;
+  align-items: center;
+}
+
+#mainHeader .navbar .container-fluid .userControl .moreIcon ion-icon {
+  margin: 0;
+}
+
+#mainHeader .navbar .navbarBack .backHome {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#mainHeader .navbar .navbarBack .backHome ion-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+#mainHeader .navbar .navbarBack .userControl {
+  justify-content: flex-end;
+}
+
 #mainHeader .wrapperMainMenu {
   display: flex;
   align-items: stretch;
@@ -216,7 +241,6 @@ Styling
 
 @media screen and (min-width: 0px) {
   #mainHeader {
-    height: 166px;
     padding-top: 0;
   }
   #mainHeader .navbar {
@@ -272,6 +296,68 @@ Styling
     margin: 0 .5rem;
     font-size: 24px;
   }
+  #mainHeader .navbar .container-fluid .userControl .profil {
+    margin: 0 .3rem;
+  }
+  #mainHeader .navbar .navbarBack {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #mainHeader .navbar .navbarBack .namePages {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+  }
+  #mainHeader .navbar .navbarBack .userControl {
+    width: 100%;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .btnNotification .numberNotif {
+    right: -5px;
+    top: -10px;
+    padding: 3px 6px;
+    font-size: 8px;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu {
+    left: -180px;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
+    margin: .5rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage {
+    margin-bottom: .5rem;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu li .dropdown-item .iconMassage ion-icon {
+    margin: 0;
+    color: #7e97ae;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage {
+    margin-bottom: .3rem;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName {
+    margin-bottom: .3rem;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageName h1 {
+    font-size: 14px;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu li .dropdown-item .wrapperMessage .messageContent p {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .navbarBack .userControl .notification .dropdown .dropdown-menu li .dropdown-item .messageTime span {
+    font-size: 12px;
+  }
+  #mainHeader .navbar .navbarBack .userControl ion-icon {
+    margin: 0rem;
+    font-size: 20px;
+  }
+  #mainHeader .navbar .navbarBack .userControl .profil {
+    margin: 0 .5rem;
+  }
+  #mainHeader .navbar .navbarBack .userControl .profil .dropdown-toggle img {
+    max-width: 24px;
+  }
   #mainHeader .wrapperMainMenu {
     padding: .5rem .3rem;
   }
@@ -279,5 +365,8 @@ Styling
     width: 100%;
     font-size: 10px;
     padding: .8rem  .3rem;
+  }
+  .mobileMenu .menu {
+    font-size: 10px;
   }
 }

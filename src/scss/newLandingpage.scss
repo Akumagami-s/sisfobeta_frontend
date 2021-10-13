@@ -92,8 +92,8 @@ $fontsize-card-valueNumber : 28px;
             align-items: center;
             .nameBrand {
                 h1 {
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
+                    font-family: steelfish;
+                    font-weight: 500;
                     color: $font-color;
 
                 }
@@ -327,7 +327,8 @@ footer {
                 }
                 .nameBrand {
                     h1 {
-                        font-size: 22px;
+                        font-size: 32px;
+                        letter-spacing: 1px;
                     }
                     p {
                         display: none;
@@ -635,7 +636,8 @@ footer {
                 }
                 .nameBrand {
                     h1 {
-                        font-size: 34px;
+                        font-size: 52px;
+                        letter-spacing: 5px;
                     }
                     p {
                         display: block;
@@ -814,7 +816,7 @@ footer {
             .navbar-brand {
                 .nameBrand {
                     h1 {
-                        font-size: 40px;
+                        font-size: 64px;
                     }
                     p {
                         display: block;

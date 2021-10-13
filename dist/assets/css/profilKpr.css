@@ -1,0 +1,33 @@
+.button .kembali{
+    border-radius: 5px;
+    padding:.5rem 1rem;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    margin-right: .5rem;
+}
+
+.button .download{
+    border-radius: 5px;
+    padding:.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    margin-right: .5rem;
+}
+
+.button .riwayat{
+    border-radius: 5px;
+    padding:.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.h2{
+    color: #3E3C3C;
+}
+
+.tableFont{
+    font-size: 18px;
+    color: #3E3C3C;
+}
+

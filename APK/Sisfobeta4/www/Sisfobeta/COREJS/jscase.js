@@ -11,7 +11,6 @@ function pooin(auth) {
         sessionStorage.setItem("thump",'https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png');
     }
     sessionStorage.setItem("nrp_new", auth.data.nrp_new);
-
     if(sessionStorage.getItem("role")>=2){
         window.location.replace("../Sisfobeta/mobile/eBALTAB/user-eBaltab.html");
     }else{
@@ -19,9 +18,9 @@ function pooin(auth) {
     }
     }
 }
-function session() {
-    // body...
-}
+// function session() {
+//     // body...
+// }
 function sesce() {
     console.log(sessionStorage);
 }

@@ -1,0 +1,12 @@
+.wrapperUpdateData .cardIdentitas{
+    padding: 1.5rem 0;
+}
+
+.wrapperUpdateData .cardIdentitas .nama{
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+.wrapperUpdateData .cardIdentitas .nrp{
+    font-size: 20px;
+}

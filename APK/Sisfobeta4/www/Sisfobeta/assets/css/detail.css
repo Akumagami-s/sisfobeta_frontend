@@ -1,0 +1,128 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+
+.title .title-news{
+    font-weight: normal;
+    font-size: 2rem;
+    color: #1d1d1d;
+    width: 80%
+}
+
+.title .time-news{
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.3);
+    display: block;
+    margin-bottom: .75rem;
+    font-weight: bolder;
+    padding-top: 1.5rem;
+}
+
+.baner{
+    padding: 3rem 0.75rem 1rem 0.75rem;
+}
+
+.baner .baner-img{
+    width: 100%;
+}
+
+.content{
+    padding-top: 0.5rem;
+}
+
+.rekomen{
+    padding-top: 3rem;
+}
+
+.rekomen .title-rekomen{
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    width: 60%
+}
+
+@media screen and (min-width : 0px) {
+    .title{
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (min-width : 992px) {
+    .title{
+        padding-top: 10rem;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    
+    .title .title-news{
+        font-weight: normal;
+        font-size: 1.5rem;
+        color: #1d1d1d;
+        width: 80%
+    }
+    
+    .title .time-news{
+        font-size: .6rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(0,0,0,0.3);
+        display: block;
+        margin-bottom: .75rem;
+        font-weight: bolder;
+        padding-top: 1rem;
+    }
+    
+    .baner{
+        padding: 1.5rem 0.75rem 1rem 0.75rem;
+    }
+    
+    .baner .baner-img{
+        width: 100%;
+    }
+    
+    .content{
+        padding-top: 0.5rem;
+    }
+
+    .content .text{
+        font-size: 0.9rem;
+    }
+    
+    .rekomen{
+        padding-top: 3rem;
+    }
+    
+    .rekomen .title-rekomen{
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #1d1d1d;
+        width: 60%
+    }
+}

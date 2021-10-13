@@ -1,0 +1,1056 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+
+.header{
+    background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+}
+.header .container .container .row {
+    align-items: center;
+}
+
+.bg-nav{
+    background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+}
+
+.tni-logo{
+    width: 22%;
+}
+
+.header .navbar h1{
+    letter-spacing: 0.2rem;
+    font-size: 42px;
+    font-family: steelfish;
+}
+
+.sisfobeta{
+    letter-spacing: 0.2rem;
+    font-size: 42px;
+    font-family: steelfish;
+}
+
+.header .navbar p{
+    font-size: 12px;
+}
+
+.header .title{
+    margin-top: 1rem;
+}
+
+.header .navbar .container #nav-menu-mx .navbar-nav{
+    width: 100%;
+}
+
+.header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+    margin: 0 .3rem;
+}
+
+.header .navbar .button-nav{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.header .title .header-title{
+    width: 60%;
+    font-size: 38px;
+}
+
+.header .title .account{
+    margin-top: 2rem;
+}
+
+.header .title .account .account-title{
+    font-size: 20px;
+}
+
+.header .title .account .btn-login{
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.header .title .account .btn-regis{
+    width: 150px;
+    height: 45px;
+    background-color: #3D563D;
+    font-size: 20px;
+}
+
+.header .title .mockup{
+
+    width: 90%;
+}
+
+.header .carousel .carousel-control-next .btn-carousel{
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: .3rem;
+}
+
+
+.headline{
+    padding-top: 1rem;
+}
+
+.containerNews {
+    padding: 0.5rem 0;
+}
+
+.news-title{
+    border-left: 7px solid #3D563D;
+}
+
+.news-title h2{
+    margin-left: 0.5rem;
+}
+
+.berita-title{
+    border-left: 7px solid #3D563D;
+}
+
+.berita-title h2{
+    margin-left: 0.5rem;
+}
+
+.wrapperNews {
+    width: 100%;
+    position: relative;
+}
+.wrapperNews .wrapperContentNews {
+    display: flex;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+.wrapperNews .wrapperContentNews .slick-list {
+    width: 100%;
+}
+
+.wrapperNews .wrapperContentNews .news {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem .8rem;
+}
+.wrapperNews .wrapperContentNews .news .imgNews {
+    width: 100%;
+}
+.wrapperNews .wrapperContentNews .news .imgNews img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.wrapperNews .wrapperContentNews .news .contentNews{
+    padding: 1rem 1rem 2rem 1rem;
+}
+.wrapperNews .wrapperContentNews .news .contentNews .titleNews{
+    font-size: 18px;
+}
+
+
+.wrapperNews .wrapperContentNews2 {
+    display: flex;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+.wrapperNews .wrapperContentNews2 .slick-list {
+    width: 100%;
+}
+
+.wrapperNews .wrapperContentNews2 .news {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem .8rem;
+}
+.wrapperNews .wrapperContentNews2 .news .imgNews {
+    width: 100%;
+}
+.wrapperNews .wrapperContentNews2 .news .imgNews img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.wrapperNews .wrapperContentNews2 .news .contentNews{
+    padding: 1rem 1rem 2rem 1rem;
+}
+.wrapperNews .wrapperContentNews2 .news .contentNews .titleNews{
+    font-size: 18px;
+}
+
+.wrapperBaner img{
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.fitur .fitur-title{
+    border-left: 7px solid #3D563D;
+}
+
+.fitur .fitur-title h2{
+    margin-left: 0.5rem;
+}
+
+.fitur .fitur-title p{
+    font-size: 29px;
+}
+
+.fitur .icon{
+    width: 60px;
+    height: 45px;
+    background-color: #7334FF;
+    border-radius: 15%;
+}
+
+.fitur .icon img{
+    width: 55px;
+    height: 25px;
+}
+
+.fitur .mockup2{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapperService{
+    padding: 0 10rem;
+}
+
+.wrapperService .wrapperContentService {
+    display: flex;
+    margin: 2rem 0;
+    width: 100%;
+}
+.wrapperService .wrapperContentService .slick-list {
+    width: 100%;
+}
+
+.wrapperService .wrapperContentService .service {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem .8rem;
+}
+.wrapperService .wrapperContentService .service .imgService {
+    padding: 2rem 5rem 1rem 5rem;
+    width: 100%;
+}
+.wrapperService .wrapperContentService .service .imgService img {
+    width: 100%;
+}
+.wrapperService .wrapperContentService .service .contentService{
+    padding: 1rem 1.5rem 2.5rem 1.5rem;
+}
+.wrapperService .wrapperContentService .service .contentService .titleService{
+    padding: 0 0.5rem;
+    font-size: 16px;
+}
+
+
+.about .about-title{
+    border-left: 7px solid #3D563D;
+}
+
+.about .about-title h2{
+    margin-left: 0.5rem;
+}
+
+.about .about-title p{
+    font-size: 29px;
+}
+
+.about .about-text{
+    font-size: 18px;
+}
+
+.ditkuad{
+    width: 110px;
+    height: 110px;
+}
+
+.logo-btn{
+    width: 360px;
+    height: 180px;
+}
+
+.footer{
+    background: linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+}
+
+.footer-link{
+    padding-right: 2rem;
+}
+
+.footer-menu{
+    padding-top: 1.5rem;
+}
+
+.footer-link2{
+    font-size: 1rem;
+}
+
+.sosmed{
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width: 370px) {
+    .header .navbar .container #nav-menu-mx {
+        width: 100%;
+        justify-content: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+        margin: 0 .3rem;
+    }
+
+
+    .header .navbar h1{
+        font-size: 28px;
+    }
+
+    .header .navbar p{
+        font-size: 8px;
+    }
+
+    .header .navbar .tni-logo{
+        width: 50px;
+        height: 70px;
+    }
+
+    .header .navbar .nav-h1{
+        font-size: 22px;
+    }
+
+    .header .navbar .nav-p{
+        font-size: 7px;
+    }
+
+    .header .navbar-nav a{
+        font-size: 13px;
+    }
+
+    .header .title{
+        margin-top: 3rem;
+    }
+
+    .header .title .header-title{
+        font-size: 22px;
+    }
+
+    .header .title .account .account-title{
+        font-size: 14px;
+    }
+
+    .header .title .account{
+        margin-top: 2rem;
+    }
+
+    .header .title .account .btn-login{
+        width: 100px !important;
+        height: 35px !important;
+        background-color: white;
+        font-size: 14px;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 100px !important;
+        height: 35px !important;
+        background-color: #3D563D;
+        font-size: 14px;
+    }
+
+    .header .title .mockup{
+        width: 70%;
+    }
+
+    .wrapperNews .wrapperContentNews .news .contentNews .titleNews{
+        font-size: 12px;
+    }
+
+    .news-title h2{
+        margin-left: 0.5rem;
+        font-size: 20px;
+    }
+    
+    .berita-title h2{
+        margin-left: 0.5rem;
+        font-size: 20px;
+    }
+
+    .fitur .fitur-title h2{
+        font-size: 20px;
+    }
+
+    .fitur .fitur-title p{
+        font-size: 20px;
+    }
+
+    .fitur .icon{
+        width: 50px;
+        height: 30px;
+        background-color: #7334FF;
+        border-radius: 15%;
+    }
+    
+    .fitur .icon img{
+        width: 35px;
+        height: 15px;
+    }
+
+    .fitur .fitur-card h4{
+        font-size: 18px;
+    }
+
+    .fitur .fitur-card p{
+        font-size: 14px;
+    }
+
+    .fitur .mockup2{
+        display: none;
+    }
+
+    .wrapperService{
+        padding: 0 0.5rem !important;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 2rem 1rem 2rem !important;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem !important;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem !important;
+        font-size: 12px !important;
+    }
+
+    .about .about-title h2{
+        font-size: 20px;
+    }
+
+    .about .about-title p{
+        font-size: 20px;
+    }
+
+    .about .about-text{
+        font-size: 14px;
+    }
+
+    .sponsor-text{
+        font-size: 20px !important;
+    }
+
+    .ditkuad{
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .logo-btn{
+        width: 170px !important;
+        height: 100px !important;
+    }
+
+    .mockup{
+        display: none;
+    }
+
+    .playstore{
+        display: none;
+    }
+
+    .mockup3{
+        display: none;
+    }
+
+    .footer .footer-text{
+        font-size: 0.7rem;
+    }
+
+    .footer .footer-copyright{
+        font-size: 0.75rem;
+    }
+
+    .footer-link2{
+        font-size: 0.6rem;
+    }
+
+    .sosmed{
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .header .navbar .container #nav-menu-mx {
+        width: 100%;
+        justify-content: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+        margin: 0 .5rem;
+    }
+
+
+    .header .navbar h1{
+        font-size: 28px;
+    }
+
+    .header .navbar p{
+        font-size: 8px;
+    }
+
+    .header .navbar .tni-logo{
+        width: 50px;
+        height: 70px;
+    }
+
+    .header .navbar .nav-h1{
+        font-size: 22px;
+    }
+
+    .header .navbar .nav-p{
+        font-size: 7px;
+    }
+
+    .header .navbar-nav a{
+        font-size: 13px;
+    }
+
+    .header .title{
+        margin-top: 3rem;
+    }
+
+    .header .title h1{
+        font-size: 29px;
+    }
+
+    .header .title .header-title{
+        font-size: 24px;
+    }
+
+    .header .title .account .account-title{
+        font-size: 16px;
+    }
+
+    .header .title .account{
+        margin-top: 2rem;
+    }
+
+    .header .title .account .btn-login{
+        width: 100px !important;
+        height: 35px !important;
+        background-color: white;
+        font-size: 14px;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 100px !important;
+        height: 35px !important;
+        background-color: #3D563D;
+        font-size: 14px;
+    }
+
+    .header .title .mockup{
+        width: 100%;
+        height: 60%;
+        margin-top: 2rem;
+    }
+
+    .fitur .fitur-title h2{
+        font-size: 20px;
+    }
+
+    .fitur .fitur-title p{
+        font-size: 20px;
+    }
+
+    .fitur .icon{
+        width: 50px;
+        height: 30px;
+        background-color: #7334FF;
+        border-radius: 15%;
+    }
+    
+    .fitur .icon img{
+        width: 35px;
+        height: 15px;
+    }
+
+    .fitur .fitur-card h4{
+        font-size: 18px;
+    }
+
+    .fitur .fitur-card p{
+        font-size: 14px;
+    }
+
+    .fitur .mockup2{
+        display: none;
+    }
+
+    .wrapperService{
+        padding: 0 0.2rem !important;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 2.5rem 1rem 2.5rem !important;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem !important;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem !important;
+        font-size: 14px !important;
+    }
+
+    .about .about-title h2{
+        font-size: 20px;
+    }
+
+    .about .about-title p{
+        font-size: 20px;
+    }
+
+    .about .about-text{
+        font-size: 14px;
+    }
+
+    .sponsor-text{
+        font-size: 20px !important;
+    }
+
+    .ditkuad{
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .logo-btn{
+        width: 170px;
+        height: 100px;
+    }
+
+    .mockup{
+        display: none;
+    }
+
+    .playstore{
+        display: none;
+    }
+
+    .mockup3{
+        display: none;
+    }
+
+    .footer .footer-text{
+        font-size: 0.8rem;
+    }
+
+    .footer .footer-copyright{
+        font-size: 0.85rem;
+    }
+
+    .sosmed{
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .header .navbar .container #nav-menu-mx {
+        width: 100%;
+        justify-content: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+        margin: 0 1rem;
+    }
+
+    .wave{
+        width: 100%;
+        position: relative;
+    }
+
+    .header .title .mockup{
+        width: 100%;
+        height: 60%;
+        margin-top: 2rem;
+    }
+
+    .header .title .header-title{
+        font-size: 25px;
+    }
+
+    .header .title .account .account-title{
+        font-size: 15px;
+    }
+
+    .header .title .account .btn-login{
+        width: 110px !important;
+        height: 35px !important;
+        background-color: white;
+        font-size: 16px;
+        margin-bottom: 70px;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 110px !important;
+        height: 35px !important;
+        background-color: #3D563D;
+        font-size: 16px;
+        margin-bottom: 70px;
+    }
+
+    .fitur .icon{
+        width: 60px;
+        height: 40px;
+        background-color: #7334FF;
+        border-radius: 15%;
+    }
+    
+    .fitur .icon img{
+        width: 45px;
+        height: 25px;
+    }
+
+    .wrapperService{
+        padding: 0 1.5rem;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 3.8rem 1rem 3.8rem;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem;
+        font-size: 16px;
+    }
+
+    .sponsor .sponsor-text{
+        font-size: 22px;
+    }
+
+    .sponsor .ditkuad{
+        width: 85px;
+        height: 85px;
+    }
+
+    .sponsor .logo-btn{
+        width: 190px;
+        height: 120px;
+    }
+
+    .mockup3{
+        display: none;
+    }
+
+    .mockup2{
+        display: none;
+    }
+
+    .mockup{
+        display: none;
+    }
+
+    .playstore{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 770px) {
+
+    .header .navbar .container #nav-menu-mx .navbar-nav .nav-link{
+        margin: 0 1rem;
+    }
+
+    .header .navbar h1{
+        font-size: 28px;
+    }
+
+    .header .navbar p{
+        font-size: 8px;
+    }
+
+    .header .navbar-nav a{
+        font-size: 13px;
+    }
+
+    .header .title{
+        margin-top: 3rem;
+    }
+
+    .header .title h1{
+        font-size: 29px;
+    }
+
+    .header .title .account{
+        margin-top: 2rem;
+    }
+
+    .header .title .account .btn-login{
+        width: 120px;
+        height: 40px;
+        background-color: white;
+        margin-bottom: 95px;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 120px;
+        height: 40px;
+        background-color: #3D563D;
+        margin-bottom: 95px;
+    }
+
+    .wrapperService{
+        padding: 0 2rem;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 3.8rem 1rem 3.8rem;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem;
+        font-size: 16px;
+    }
+
+    .sponsor .ditkuad{
+        width: 90px;
+        height: 90px;
+    }
+
+    .sponsor .logo-btn{
+        width: 195px;
+        height: 125px;
+    }
+
+    .mockup3{
+        display: none;
+    }
+
+    .ditkuad{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .btn{
+        width: 220px;
+        height: 130px;
+    }
+
+    .mockup2{
+        display: none;
+    }
+
+    .mockup{
+        display: none;
+    }
+
+    .playstore{
+        display: none;
+    }
+
+}
+
+@media (min-width: 765px) and (max-widht: 1020px){
+    .col-md-4 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .wave{
+        width: 100%;
+        position: relative;
+        margin-top: -70px;
+    }
+
+    .header .navbar h1{
+        font-size: 28px;
+    }
+
+    .header .navbar p{
+        font-size: 8px;
+    }
+
+    .header .title .header-title{
+        font-size: 27px;
+    }
+
+    .header .title .account .account-title{
+        font-size: 17px;
+    }
+
+    .header .navbar-nav a{
+        font-size: 13px;
+    }
+
+    .header .title{
+        margin-top: 3rem;
+    }
+
+    .header .title h1{
+        font-size: 29px;
+    }
+
+    .header .title .account{
+        margin-top: 2rem;
+    }
+
+    .header .title .account .btn-login{
+        width: 120px;
+        height: 40px;
+        background-color: white;
+        margin-bottom: 80px;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 120px;
+        height: 40px;
+        background-color: #3D563D;
+        margin-bottom: 80px;
+    }
+
+    .wrapperService{
+        padding: 0 2rem;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 1.5rem 4rem 1rem 4rem;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem;
+        font-size: 16px;
+    }
+
+    .mockup3{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1460px) {
+    .wave{
+        width: 100%;
+        position: relative;
+        margin-top: -100px;
+    }
+
+    .header .title .account .btn-login{
+        width: 120px;
+        height: 40px;
+        background-color: white;
+        margin-bottom: 80px;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 120px;
+        height: 40px;
+        background-color: #3D563D;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header .title .account .btn-login{
+        width: 120px;
+        height: 40px;
+        background-color: white;
+        margin-bottom: 80px;
+    }
+    
+    .header .title .account .btn-regis{
+        width: 120px;
+        height: 40px;
+        background-color: #3D563D;
+        margin-bottom: 80px;
+    }
+
+    .wrapperService{
+        padding: 0 2rem;
+    }
+    .wrapperService .wrapperContentService .service .imgService {
+        padding: 2rem 5rem 1rem 5rem;
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .imgService img {
+        width: 100%;
+    }
+    .wrapperService .wrapperContentService .service .contentService{
+        padding: 0.5rem 1rem 2rem 1rem;
+    }
+    .wrapperService .wrapperContentService .service .contentService .titleService{
+        padding: 0 0.5rem;
+        font-size: 16px;
+    }
+
+    .mockup3{
+        display: none;
+    }
+}

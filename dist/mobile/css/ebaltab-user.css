@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 /*------------
 Font
 ------------*/
@@ -112,12 +110,24 @@ Styling
   border-radius: 10px;
 }
 
+.mainContent .userTabsContent .dataWrapper .wrapperTableInfoData .table {
+  margin-bottom: 0;
+}
+
 .mainContent .userTabsContent .actionButton {
   margin: 1rem 0;
 }
 
 .mainContent .userTabsContent .actionButton .editBtn {
   font-size: 14px;
+}
+
+.mainContent .userTabsContent #tabungan-tabs-menu .dataWrapper .wrapperTableInfoData table tbody tr td {
+  width: 50%;
+}
+
+.mainContent .userTabsContent #tabungan-tabs-menu .dataWrapper .wrapperTableInfoData .notice {
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 0px) {
@@ -156,7 +166,6 @@ Styling
   .mainContent .userTabsContent .dataWrapper .imgProfil img {
     border-radius: 50%;
   }
-
 }
 
 @media screen and (min-width: 375px) {
@@ -169,3 +178,9 @@ Styling
   }
 }
 
+@media screen and (min-width: 992px) {
+  .tab-content .tab-pane .dataWrapper .imgProfil img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}

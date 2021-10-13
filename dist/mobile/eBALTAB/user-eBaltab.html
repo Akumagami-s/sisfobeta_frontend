@@ -251,8 +251,6 @@
         </div>
 
         <div class="nav nav-tabs userTabsMenu" id="nav-tab" role="tablist">
-
-          <!-- Rh -->
           <button class="nav-link active"
             id="RH-tabs" 
             data-bs-toggle="tab" 
@@ -281,8 +279,6 @@
             </div>
             <p class="nameMenu">RH</p>
           </button>
-
-          <!-- Pangkat -->
           <button class="nav-link" 
             id="pangkat-tabs" 
             data-bs-toggle="tab" 
@@ -310,7 +306,6 @@
             <p class="nameMenu">Pangkat</p>
           </button>
 
-          <!-- tabungan -->
           <button class="nav-link" 
             id="tabungan-tabs" 
             data-bs-toggle="tab" 
@@ -331,7 +326,6 @@
             <p class="nameMenu">Tabungan</p>
           </button>
 
-          <!-- status -->
           <button class="nav-link" 
             id="starus-tabs" 
             data-bs-toggle="tab" 
@@ -361,7 +355,6 @@
             <p class="nameMenu">Status</p>
           </button>
 
-          <!-- Pembayaran -->
           <button class="nav-link" 
             id="pembayaran-tabs" 
             data-bs-toggle="tab" 
@@ -446,7 +439,6 @@
             </div>
 
           </div>
-
           <div class="tab-pane fade" 
             id="pangkatTabsMenu" 
             role="tabpanel" 
@@ -458,42 +450,39 @@
                       <tbody>
                         <tr>
                           <td>Pangkat</td>
-                          <td>: <span class="value_nrp">Jendral</span></td>
+                          <td>: <span class="value_pangkat">Tahun</span></td>
                         </tr>
                         <tr>
                           <td>Tamtama/PNS Gol.I</td>
-                          <td>: <span class="value_name">10 April 1999</span></td>
+                          <td>: <span class="value_tamtamaGOLI">-</span></td>
                         </tr>
                         <tr>
                           <td>Bintara/PNS Gol.II</td>
-                          <td>: <span class="value_date">19 April 2009</span></td>
+                          <td>: <span class="value_bintaraGOLII">-</span></td>
                         </tr>
                         <tr>
                           <td>Pama/PNS Gol.III</td>
-                          <td>: <span class="value_grade">19 April 2020</span></td>
+                          <td>: <span class="value_pamaGOLIII">01 Februari 1990</span></td>
                         </tr>
                         <tr>
-                          <td>Pamen/PNS Gol.I</td>
-                          <td>: <span class="value_corp">TNI</span></td>
+                          <td>Pamen/PNS Gol.Ip</td>
+                          <td>: <span class="value_pamenGOLI">01 April 1999</span></td>
                         </tr>
                         <tr>
                           <td>Pati</td>
-                          <td>: <span class="value_kesatuan">Kondiklatad</span></td>
+                          <td>: <span class="value_pati">19 September 2004</span></td>
                         </tr>
-
                       </tbody>
                   </table>
               </div>
-              </div>
-              <div class="actionButton fade show justify-content-end">
-                <button class="btn editBtn d-flex align-items-center" type="edit">
-                    <img src="../../assets/img/white_editIcon.svg" alt="">
-                    Edit
-                </button>
-              </div>
-
+            </div>
+            <div class="actionButton fade show justify-content-end">
+              <button class="btn editBtn d-flex align-items-center" type="edit">
+                  <img src="../../assets/img/white_editIcon.svg" alt="">
+                  Edit
+              </button>
+            </div>
           </div>
-
           <div class="tab-pane fade" 
             id="tabungan-tabs-menu" 
             role="tabpanel" 
@@ -619,68 +608,70 @@
             </div>
 
           </div>
-
           <div class="tab-pane fade" 
             id="status-tabs-menu" 
             role="tabpanel" 
             aria-labelledby="status-tabs">
             
             <div class="d-flex dataWrapper">
-
-              <div class="wrapperTableInfoData d-flex">
+              <div class="wrapperTableInfoData fullWidth">
                   <table class="table table-striped">
                       <tbody>
-                        <tr>
-                          <td>Status</td>
-                          <td>: <span class="value_nrp">Proses Pencairan</span></td>
-                        </tr>
+                          <tr>
+                            <td>Status</td>
+                            <td>: <span class="value_proses">Sedang Dalam Proses</span></td>
+                          </tr>
                       </tbody>
                   </table>
-              </div>
+                </div>
+            </div>
+            <div class="actionButton fade show justify-content-end">
+              <button class="btn editBtn d-flex align-items-center" type="edit">
+                  <img src="../../assets/img/white_editIcon.svg" alt="">
+                  Edit
+              </button>
             </div>
 
           </div>
-
           <div class="tab-pane fade" 
             id="pembayaran-tabs-menu" 
             role="tabpanel" 
             aria-labelledby="pembayaran-tabs">
             
             <div class="d-flex dataWrapper">
-              <div class="wrapperTableInfoData d-flex">
+              <div class="d-flex wrapperTableInfoData fullWidth">
                   <table class="table table-striped">
                       <tbody>
-                        <tr>
-                          <td>Jumlah Uang</td>
-                          <td>: <span class="value_nrp">290918</span></td>
-                        </tr>
-                        <tr>
-                          <td>Nama Bank</td>
-                          <td>: <span class="value_name">Saepul</span></td>
-                        </tr>
-                        <tr>
-                          <td>Nomor Rekening</td>
-                          <td>: <span class="value_date">########</span></td>
-                        </tr>
-                        <tr>
-                          <td>Atas Nama</td>
-                          <td>: <span class="value_grade">-</span></td>
-                        </tr>
-                        <tr>
-                          <td>Tanggal</td>
-                          <td>: <span class="value_corp">18 September 2020</span></td>
-                        </tr>
+                          <tr>
+                            <td>Jumlah Uang</td>
+                            <td>: <span class="value_uang">100.000.000</span></td>
+                          </tr>
+                          <tr>
+                            <td>Nama Bank</td>
+                            <td>: <span class="value_bank">BTN</span></td>
+                          </tr>
+                          <tr>
+                            <td>No Rekening</td>
+                            <td>: <span class="value_uang">237462578</span></td>
+                          </tr>
+                          <tr>
+                            <td>Atas Nama</td>
+                            <td>: <span class="value_prajurit">Arkan</span></td>
+                          </tr>
+                          <tr>
+                            <td>Tanggal</td>
+                            <td>: <span class="value_date">12 April 2021</span></td>
+                          </tr>
                       </tbody>
                   </table>
-              </div>
-              <div class="actionButton fade show justify-content-end">
-                <button class="btn editBtn d-flex align-items-center" type="edit">
-                    <img src="../../assets/img/white_editIcon.svg" alt="">
-                    Edit
-                </button>
-              </div>
+                </div>
             </div>
-
+            <div class="actionButton fade show justify-content-end">
+              <button class="btn editBtn d-flex align-items-center" type="edit">
+                  <img src="../../assets/img/white_editIcon.svg" alt="">
+                  Edit
+              </button>
+            </div>
           </div>
         </div>
 

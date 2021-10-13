@@ -104,6 +104,11 @@ Styling
             background: #FFFFFF;
             box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            .wrapperTableInfoData {
+                .table {
+                    margin-bottom: 0;
+                }
+            }
         }
         .actionButton {
             margin: 1rem 0;
@@ -111,7 +116,26 @@ Styling
                 font-size: 14px;
             }
         }
+        #tabungan-tabs-menu {
+            .dataWrapper {
+                .wrapperTableInfoData {
+                    table {
+                        tbody {
+                            tr {
+                                td {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                    .notice {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
     }
+    
 }
 @media screen and (min-width : 0px) {
     .mainContent {
@@ -164,6 +188,21 @@ Styling
                 }
                 .nameMenu {
                     font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :992px) {
+    .tab-content {
+        .tab-pane {
+            .dataWrapper {
+                .imgProfil {
+                    img {
+                        max-width: 120px;
+                        max-height: 120px;
+                    }
                 }
             }
         }

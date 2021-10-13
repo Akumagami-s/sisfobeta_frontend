@@ -92,16 +92,15 @@ $fontsize-card-valueNumber : 28px;
             align-items: center;
             .nameBrand {
                 h1 {
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
-                    color: $font-color;
+                    font-family: steelfish;
+                    font-weight: 500;
+                    color: #3d553d;
 
                 }
                 p {
-                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-weight: 600;
-                    color: $font-color;
-
+                    color: #3d553d;
                 }
             }
         }
@@ -279,6 +278,12 @@ $fontsize-card-valueNumber : 28px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .partner {
+                img {
+                    max-width: 120px;
+                }
+            }
         }
     }
 }
@@ -327,7 +332,8 @@ footer {
                 }
                 .nameBrand {
                     h1 {
-                        font-size: 22px;
+                        font-size: 32px;
+                        letter-spacing: 1px;
                     }
                     p {
                         display: none;
@@ -635,7 +641,8 @@ footer {
                 }
                 .nameBrand {
                     h1 {
-                        font-size: 34px;
+                        font-size: 42px;
+                        letter-spacing: 7px;
                     }
                     p {
                         display: block;
@@ -731,7 +738,6 @@ footer {
     }
 }
 
-
 @media screen and (min-width : 1200px) {
     
     .nameContent {
@@ -814,7 +820,7 @@ footer {
             .navbar-brand {
                 .nameBrand {
                     h1 {
-                        font-size: 40px;
+                        font-size: 56px;
                     }
                     p {
                         display: block;

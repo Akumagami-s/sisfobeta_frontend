@@ -10,3 +10,19 @@
 .wrapperUpdateData .cardIdentitas .nrp{
     font-size: 20px;
 }
+
+.button .kembali{
+    border-radius: 5px;
+    padding:.5rem 1rem;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    margin-right: .5rem;
+}
+
+.button .update{
+    border-radius: 5px;
+    padding:.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}

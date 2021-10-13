@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 /*------------
 Font
 ------------*/
@@ -154,6 +156,7 @@ Styling
   .mainContent .userTabsContent .dataWrapper .imgProfil img {
     border-radius: 50%;
   }
+
 }
 
 @media screen and (min-width: 375px) {
@@ -165,3 +168,4 @@ Styling
     font-size: 10px;
   }
 }
+

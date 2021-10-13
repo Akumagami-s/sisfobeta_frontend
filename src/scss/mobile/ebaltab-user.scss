@@ -30,6 +30,18 @@ Styling
         .navbarBack {
             display: none;
         }
+        .container-fluid {
+            .userControl {
+                .notification {
+                    .dropdown {
+                        .dropdown-menu {
+                            max-height: 350px;
+                            overflow-y: scroll;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .mainContent {

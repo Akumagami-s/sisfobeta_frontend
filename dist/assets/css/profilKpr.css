@@ -1,16 +1,3 @@
-.wrapperUpdateData .cardIdentitas{
-    padding: 1.5rem 0;
-}
-
-.wrapperUpdateData .cardIdentitas .nama{
-    margin-bottom: 0.5rem;
-    font-size: 20px;
-}
-
-.wrapperUpdateData .cardIdentitas .nrp{
-    font-size: 20px;
-}
-
 .button .kembali{
     border-radius: 5px;
     padding:.5rem 1rem;
@@ -20,9 +7,27 @@
     margin-right: .5rem;
 }
 
-.button .update{
+.button .download{
+    border-radius: 5px;
+    padding:.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    margin-right: .5rem;
+}
+
+.button .riwayat{
     border-radius: 5px;
     padding:.5rem 1rem;
     color: white;
     text-decoration: none;
 }
+
+.h2{
+    color: #3E3C3C;
+}
+
+.tableFont{
+    font-size: 18px;
+    color: #3E3C3C;
+}
+

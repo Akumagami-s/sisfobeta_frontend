@@ -110,6 +110,10 @@ Styling
   border-radius: 10px;
 }
 
+.mainContent .userTabsContent .dataWrapper .wrapperTableInfoData .table {
+  margin-bottom: 0;
+}
+
 .mainContent .userTabsContent .actionButton {
   margin: 1rem 0;
 }
@@ -163,5 +167,12 @@ Styling
   }
   .mainContent .userTabsMenu .nav-link .nameMenu {
     font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tab-content .tab-pane .dataWrapper .imgProfil img {
+    max-width: 120px;
+    max-height: 120px;
   }
 }

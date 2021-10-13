@@ -123,11 +123,11 @@ Styling
 }
 
 .mainContent .userTabsContent #tabungan-tabs-menu .dataWrapper .wrapperTableInfoData table tbody tr td {
-  width: 50%;
+  width: 100%;
 }
 
 .mainContent .userTabsContent #tabungan-tabs-menu .dataWrapper .wrapperTableInfoData .notice {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 0px) {

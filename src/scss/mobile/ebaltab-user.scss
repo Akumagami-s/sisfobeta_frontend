@@ -116,7 +116,26 @@ Styling
                 font-size: 14px;
             }
         }
+        #tabungan-tabs-menu {
+            .dataWrapper {
+                .wrapperTableInfoData {
+                    table {
+                        tbody {
+                            tr {
+                                td {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                    .notice {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
     }
+    
 }
 @media screen and (min-width : 0px) {
     .mainContent {

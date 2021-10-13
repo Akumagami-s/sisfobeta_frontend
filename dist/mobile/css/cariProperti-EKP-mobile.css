@@ -1,0 +1,173 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  font-family: 'Poppins', sans-serif;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Styling
+------------*/
+#mainHeader .navbar {
+  margin-bottom: 0;
+}
+
+#mainHeader .navbar .navbarHome {
+  display: none;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+#mainHeader .wrapperMainMenu {
+  padding: .5rem 0;
+}
+
+#mainHeader .wrapperMainMenu .menu {
+  font-size: 12px;
+  padding: .5rem .3rem;
+}
+
+#mainHeader .wrapperMainMenu .menu::before {
+  height: 3px;
+  bottom: -8.5px;
+}
+
+.mainContent .search {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .search input {
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #A6A6A6;
+  font-family: 'Poppins', sans-serif;
+  border-right: none;
+}
+
+.mainContent .search button {
+  border: none;
+  background: linear-gradient(127.42deg, #3D553D 2.41%, #8AAC74 100%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.mainContent .wrapperAction {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.mainContent .wrapperAction .wrapperUrutkan .urutkanBtn {
+  border: none;
+  position: static !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.mainContent .wrapperAction .wrapperUrutkan .urutkanBtn::after {
+  display: none;
+}
+
+.mainContent .wrapperAction .wrapperUrutkan .urutkanMenu {
+  width: 100%;
+}
+
+.mainContent .wrapperAction .wrapperUrutkan .urutkanMenu .dropdown-item {
+  white-space: pre-wrap;
+}
+
+.mainContent .wrapperAction .wrapperFilter .btnFilter {
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-header .btn-close {
+  margin: 0;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-header .resetFilter {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kota {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kota input {
+  width: 100%;
+  border: 0.5px solid #535353;
+  box-sizing: border-box;
+  border-radius: 4px;
+  min-height: 35px;
+  padding: .5rem;
+}
+
+@media screen and (min-width: 0px) {
+  .mainContent .search {
+    margin-bottom: 1rem;
+  }
+  .mainContent .search input {
+    padding: .65rem 1rem;
+    font-size: 12px;
+  }
+  .mainContent .search input::placeholder {
+    font-size: 10px;
+  }
+  .mainContent .search button {
+    padding: .5rem;
+  }
+  .mainContent .search button svg {
+    width: 100%;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan {
+    margin-right: 1rem;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan .urutkanBtn {
+    padding: .5rem 1rem;
+    font-size: 12px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan .urutkanBtn svg {
+    margin-right: .3rem;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan .urutkanMenu {
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan .urutkanMenu .dropdown-item {
+    font-size: 12px;
+  }
+  .mainContent .wrapperAction .wrapperFilter .btnFilter {
+    min-width: 100px;
+    max-width: 100px;
+    padding: .5rem 1rem;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+}

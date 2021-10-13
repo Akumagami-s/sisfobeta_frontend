@@ -1,0 +1,195 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    font-family: 'Poppins', sans-serif;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Styling
+------------*/
+
+#mainHeader {
+    .navbar {
+        margin-bottom: 0;
+        .navbarHome {
+            display: none;
+        }
+        .container-fluid {
+            .userControl {
+                .notification {
+                    .dropdown {
+                        .dropdown-menu {
+                            max-height: 350px;
+                            overflow-y: scroll;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapperMainMenu {
+        padding: .5rem 0;
+        .menu {
+            font-size: 12px;
+            padding: .5rem .3rem;
+            &::before {
+                height: 3px;
+                bottom: -8.5px;
+            }
+        }
+    }
+}
+
+.mainContent {
+    .search{
+        display: flex;
+        align-items: center;
+        input {
+            width: 100%;
+            border-radius: 10px 0px 0px 10px;
+            border: 1px solid #A6A6A6;
+            font-family: 'Poppins', sans-serif;
+            border-right: none;
+        }
+        button {
+            border: none;
+            background: linear-gradient(127.42deg, #3D553D 2.41%, #8AAC74 100%);
+            border-radius: 0px 10px 10px 0px;
+        }
+    }
+    .wrapperAction {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .wrapperUrutkan {
+            .urutkanBtn {
+                border: none;
+                position: static !important; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                &::after {
+                    display: none;
+                }
+            }
+            .urutkanMenu {
+                width: 100%;
+                .dropdown-item {
+                    white-space: pre-wrap;
+                }
+            }
+        }
+        .wrapperFilter {
+            .btnFilter {
+                border: none;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    .wrapperFilter {
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    .modal-header {
+                        .btn-close {
+                            margin: 0;
+                        }
+                        .resetFilter {
+                            border: none;
+                            background: transparent;
+                            font-size: 12px;
+                        }
+                    }
+                    .modal-body {
+                        form {
+                            .kota {
+                                display: flex;
+                                flex-direction: column;
+                                input {
+                                    width: 100%;
+                                    border: 0.5px solid #535353;
+                                    box-sizing: border-box;
+                                    border-radius: 4px;
+                                    min-height: 35px;
+                                    padding: .5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 0px) {
+    .mainContent {
+        .search{
+            margin-bottom: 1rem;
+            input {
+                padding: .65rem 1rem;
+                font-size: 12px;
+                &::placeholder {
+                    font-size: 10px;
+                }
+                
+            }
+            button {
+                padding: .5rem;
+                svg {
+                    width: 100%;
+                }
+            }
+        }
+        .wrapperAction {
+            .wrapperUrutkan {
+                margin-right: 1rem;
+                .urutkanBtn {
+                    padding: .5rem 1rem;
+                    font-size: 12px;
+                    min-width: 100px;
+                    max-width: 100px;
+                    svg {
+                        margin-right: .3rem;
+                    }
+                }
+                .urutkanMenu {
+                    min-width: 100px;
+                    max-width: 100px;
+                    .dropdown-item {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .wrapperFilter {
+                .btnFilter {
+                    min-width: 100px;
+                    max-width: 100px;
+                    padding: .5rem 1rem;
+                    font-size: 12px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}

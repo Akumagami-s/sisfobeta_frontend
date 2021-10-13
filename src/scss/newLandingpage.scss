@@ -94,14 +94,13 @@ $fontsize-card-valueNumber : 28px;
                 h1 {
                     font-family: steelfish;
                     font-weight: 500;
-                    color: $font-color;
+                    color: #3d553d;
 
                 }
                 p {
-                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-weight: 600;
-                    color: $font-color;
-
+                    color: #3d553d;
                 }
             }
         }
@@ -279,6 +278,12 @@ $fontsize-card-valueNumber : 28px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .partner {
+                img {
+                    max-width: 120px;
+                }
+            }
         }
     }
 }
@@ -636,8 +641,8 @@ footer {
                 }
                 .nameBrand {
                     h1 {
-                        font-size: 52px;
-                        letter-spacing: 5px;
+                        font-size: 42px;
+                        letter-spacing: 7px;
                     }
                     p {
                         display: block;
@@ -733,7 +738,6 @@ footer {
     }
 }
 
-
 @media screen and (min-width : 1200px) {
     
     .nameContent {
@@ -816,7 +820,7 @@ footer {
             .navbar-brand {
                 .nameBrand {
                     h1 {
-                        font-size: 64px;
+                        font-size: 56px;
                     }
                     p {
                         display: block;

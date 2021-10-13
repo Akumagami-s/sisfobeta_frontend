@@ -83,6 +83,11 @@ body {
 /*------------
 Styling
 ------------*/
+.more .moreIcon{
+  height: 30px;
+  margin-left: .5rem;
+}
+
 #mainHeader .navbar {
   margin-bottom: 2rem;
   z-index: 1;

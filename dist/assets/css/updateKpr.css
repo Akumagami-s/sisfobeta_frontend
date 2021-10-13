@@ -1,0 +1,28 @@
+.wrapperUpdateData .cardIdentitas{
+    padding: 1.5rem 0;
+}
+
+.wrapperUpdateData .cardIdentitas .nama{
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+.wrapperUpdateData .cardIdentitas .nrp{
+    font-size: 20px;
+}
+
+.button .kembali{
+    border-radius: 5px;
+    padding:.5rem 1rem;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    margin-right: .5rem;
+}
+
+.button .update{
+    border-radius: 5px;
+    padding:.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}

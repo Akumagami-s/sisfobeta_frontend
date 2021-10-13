@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 /*------------
 Font
 ------------*/
@@ -158,6 +160,7 @@ Styling
   .mainContent .userTabsContent .dataWrapper .imgProfil img {
     border-radius: 50%;
   }
+
 }
 
 @media screen and (min-width: 375px) {
@@ -170,9 +173,12 @@ Styling
   }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 992px) {
   .tab-content .tab-pane .dataWrapper .imgProfil img {
     max-width: 120px;
     max-height: 120px;
   }
 }
+=======
+>>>>>>> cfffac873144d375e1c016cf4bb3ba5a24985151

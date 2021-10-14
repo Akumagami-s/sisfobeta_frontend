@@ -1,0 +1,175 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    font-family: 'Poppins', sans-serif;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Styling
+------------*/
+
+#mainHeader {
+    .navbar {
+        margin-bottom: 0;
+        .navbarHome {
+            display: none;
+        }
+        .container-fluid {
+            .userControl {
+                .notification {
+                    .dropdown {
+                        .dropdown-menu {
+                            max-height: 350px;
+                            overflow-y: scroll;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapperMainMenu {
+        padding: .5rem 0;
+        .menu {
+            font-size: 12px;
+            padding: .5rem .3rem;
+            &::before {
+                height: 3px;
+                bottom: -8.5px;
+            }
+        }
+    }
+}
+.wrapperProfilDeveloper {
+    position: relative;
+    margin-bottom: 2rem;
+    .sampulUser {
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .profilUser {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.wrapperMoreInformation {
+    .nav-tabs {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+        flex-wrap: nowrap;
+        padding: .5rem 0;
+        .nav-link {
+            font-size: 11px;
+            width: 100%;
+            margin: 0;
+            font-weight: 500;
+            padding: .5rem;
+
+            &::before {
+                height: 3px;
+                bottom: -8.8px;
+            }
+        }
+    }
+    .tab-content {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (min-width : 0px) {
+    .wrapperProfilDeveloper {
+        position: relative;
+        .sampulUser {
+            img {
+                min-height: 150px;
+                max-height: 150px;
+            }
+        }
+        .profilUser {
+            .profilImages {
+                position: absolute;
+                top: -35px;
+                img {
+                    min-width: 100px;
+                    max-width: 100px;
+                    border-radius: 50%;
+                }
+            }
+            .informationAboutDeveloper {
+                margin-top: 5rem;
+                .nameDeveloper {
+                    font-size: 16px;
+                }
+                .keteranganDeveloper {
+                    font-size: 14px;
+                    margin-bottom: 1rem;
+                }
+                .wrapperNumber ,.wrapperLocation ,.wrapperEmail {
+                    svg {
+                        margin-right: .1rem;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                .modalMassage {
+                    margin-top: 1rem;
+                    .btnKirimPesan {
+                        background: rgba(40, 167, 69, 1);
+                        color: #fff;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                        padding: .3rem 1rem;
+                        width: 100%;
+                    }
+                    .modal {
+                        .modal-dialog {
+                            .modal-header {
+                                background: #DDDDDD;
+                                .modal-title {
+                                    font-size: 14px;
+                                    text-align: start;
+                                }
+                                .modal-title {
+                                    font-weight: 600;
+                                }
+                            }
+                            .modal-body {
+                                text-align: start;
+                                form {
+                                    label,input,textarea {
+                                        font-size: 12px;
+                                        font-family: 'Poppins', sans-serif;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

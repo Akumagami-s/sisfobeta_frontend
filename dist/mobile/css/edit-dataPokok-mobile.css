@@ -48,6 +48,8 @@ Styling
 .accordion-button{
   background-color: #C4C4C4;
   font-size: 14px;
+  font-weight: 450;
+  height: 40px;
 }
 
 .accordion-button:not(.collapsed)::after{

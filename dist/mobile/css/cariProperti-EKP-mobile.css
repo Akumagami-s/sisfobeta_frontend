@@ -50,6 +50,10 @@ Styling
   bottom: -8.5px;
 }
 
+.mainContent {
+  margin-bottom: 3rem;
+}
+
 .mainContent .search {
   display: flex;
   align-items: center;
@@ -235,6 +239,78 @@ Styling
   font-size: 12px;
 }
 
+.mainContent .wrapperProperti .properti {
+  text-decoration: none;
+  background: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.mainContent .wrapperProperti .properti .imagesProperti {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas p {
+  color: #000;
+  font-weight: 500;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas span {
+  color: #000;
+  font-weight: 500;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan {
+  font-weight: 600;
+  color: #000;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan .tipeRumah {
+  color: #FF0000;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .location {
+  font-weight: 600;
+  color: #000;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .totalYangTersedia {
+  color: #97BB7D;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails {
+  margin-top: 1.5rem;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .priceProperti {
+  color: #28A745;
+  font-weight: 600;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr h3, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga h3 {
+  color: #000;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueSukuBunga, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueSukuBunga {
+  color: #28A745;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 0px) {
   .mainContent .search {
     margin-bottom: 1rem;
@@ -251,6 +327,9 @@ Styling
   }
   .mainContent .search button svg {
     width: 100%;
+  }
+  .mainContent .wrapperAction {
+    margin-bottom: 1.5rem;
   }
   .mainContent .wrapperAction .wrapperUrutkan {
     margin-right: 1rem;
@@ -277,5 +356,62 @@ Styling
     padding: .5rem 1rem;
     font-size: 12px;
     border-radius: 4px;
+  }
+  .mainContent .wrapperProperti .properti {
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    width: 100%;
+  }
+  .mainContent .wrapperProperti .properti .imagesProperti {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti {
+    padding: 1rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan .tipeRumah {
+    margin-right: .3rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas {
+    margin-bottom: .5rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas p {
+    font-size: 12px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas span {
+    font-size: 12px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan {
+    font-size: 14px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .location {
+    font-size: 12px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .totalYangTersedia {
+    font-size: 12px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .developer {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .developer .nameDeveloper {
+    color: #0094FF;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .priceProperti {
+    font-size: 16px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga {
+    margin-top: 1rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr h3, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga h3 {
+    font-size: 14px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueSukuBunga, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueSukuBunga {
+    font-size: 12px;
   }
 }

@@ -415,4 +415,7 @@ Styling
   .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueSukuBunga, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueSukuBunga {
     font-size: 12px;
   }
+  .mainContent .pages .pagination .page-item {
+    font-size: 12px;
+  }
 }

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--Bootstrap Asset-->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+    <!--Dashboard Css-->
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <!--unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Component-->
+    <link rel="stylesheet" href="./assets/component/navbar.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <!--slick Css-->
+    <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
+    <!--Data Table-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.dataTables.min.css">
+</head>
+<body>
+    <div id="mainHeader">
+        <!--Navbar-->
+        <nav class="navbar navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/tni_logo.png" alt="">
+                <div class="brand-title">
+                    <h1>SISFOBETA 4.0</h1>
+                    <p>SISTEM INFORMASI BENDAHARA TWP AD ONLINE</p>
+                </div>
+              </a>
+    
+              <div class="userControl">
+                <div class="notification">
+                  <div class="dropdown">
+                    
+                    <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                      <ion-icon name="notifications-outline"></ion-icon>
+                      <div class="numberNotif">2</div>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="notification">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="iconMassage">
+                              <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            </div>
+                            <div class="wrapperMessage">
+                                <div class="messageName">
+                                    <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                </div>
+                                <div class="messageContent">
+                                    <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                </div>
+                            </div>
+                            <div class="messageTime">
+                              <span>19.30</span>
+                            </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="iconMassage">
+                              <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            </div>
+                            <div class="wrapperMessage">
+                                <div class="messageName">
+                                    <h1>Verifikasi Akun Anda</h1>
+                                </div>
+                                <div class="messageContent">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio aliquam, atque illum ab vitae amet ea sequi temporibus? Ipsa id quaerat ducimus, aut quibusdam, sint doloremque, obcaecati ab quos ullam eos ex cum fuga delectus voluptatum iure voluptas qui aperiam totam nam. Veniam earum assumenda at laudantium voluptatem placeat fugit, nobis, nesciunt doloribus itaque velit quia expedita repellat alias culpa nisi dolore voluptate blanditiis a optio sint officia delectus! Quod quam adipisci aperiam quis perferendis totam magni earum, sequi fugiat. Aspernatur, a cumque repudiandae consequuntur perferendis totam nesciunt et rem cum cupiditate officia quisquam enim unde ab. Quos, esse.</p>
+                                </div>
+                            </div>
+                            <div class="messageTime">
+                              <span>19.30</span>
+                            </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="iconMassage">
+                              <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            </div>
+                            <div class="wrapperMessage">
+                                <div class="messageName">
+                                    <h1>Verifikasi Akun Anda</h1>
+                                </div>
+                                <div class="messageContent">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                                </div>
+                            </div>
+                            <div class="messageTime">
+                              <span>19.30</span>
+                            </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                            <div class="iconMassage">
+                              <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            </div>
+                            <div class="wrapperMessage">
+                                <div class="messageName">
+                                    <h1>Verifikasi Akun Anda</h1>
+                                </div>
+                                <div class="messageContent">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                                </div>
+                            </div>
+                            <div class="messageTime">
+                              <span>19.30</span>
+                            </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="dropdown profil">
+                  <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
+                    <img src="./assets/img/profil.png" alt="">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                    <li><a class="dropdown-item" href="#">Profil</a></li>
+                    <li><button class="dropdown-item" href="#">Logout</button></li>
+                  </ul>
+                </div>
+                
+                <div class="more">
+                  <a href=""><img src="assets/img/more.svg" class="moreIcon"></a>
+                </div>
+
+              </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+        <div class="wrapperMenuToApps">
+          <a href="#" class="menu">
+              <div class="icon">
+                <img src="./assets/img/ebaltab-icon.svg" alt="">
+              </div>
+              <p class="nameMenu">e-BALTAB</p>
+          </a>
+
+          <a href="#" class="menu">
+            <div class="icon">
+              <img src="./assets/img/eKprIcon.svg" alt="">
+            </div>
+            <p class="nameMenu">e-KPR</p>
+          </a>
+
+          <a href="#" class="menu">
+            <div class="icon">
+              <img src="./assets/img/etwpIcon.svg" alt="">
+            </div>
+            <p class="nameMenu">e-TWP</p>
+          </a>
+        </div>
+    </div>
+    
+
+    <section class="mainContent">
+        <div class="container-fluid">
+            
+            <div class="wrapperContentAllMenu">
+                <div class="eTWP contentMenu">
+                  <div class="nameContentMenu text-white">e-TWP</div>
+
+                    <div class="card">
+                        <div class="container">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Tanggal</th>
+                                <th>Keterangan</th>
+                                <th>Index</th>
+                                <th>Total</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                  
+                </div>
+
+                <div class="eKPR contentMenu">
+                  <div class="nameContentMenu text-white">e-Baltab</div>
+
+                  <div class="card">
+                    <div class="container">
+                        <table class="table table-striped">
+                            <tbody>
+                              <tr>
+                                <td colspan="5"><h4>MULYONO/28678</h4></td>
+                              </tr>
+                              <tr>
+                                <td class="fw-bold">Keterangan</td>
+                                <td class="fw-bold">Periode</td>
+                                <td class="fw-bold">Jumlah Bulan</td>
+                                <td class="fw-bold">Nominal</td>
+                                <td class="fw-bold">Total</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                              </tr>
+                              <tr style="background-color: #A2A846;">
+                                  <td>Total</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Total</td>
+                              </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="container " style="background-color: #A2A846;">
+                            <p>Perhatian : Perhitungan diatas hanya meruapakan simulasi yang menggunakan sistem Perbulatan. Tingkat imbal hasil tabungan dari perhitungan simulasi tersebut bukanlah suatu jaminan, tetapi hanya merupakan indikasi berdasarkan rata-rata historis. Realisasi pengembalian tabungan tergantung pada kebijaksanaan pimpinan TNI-AD dalam penentuan pemotongan tabungan dan suku bunga.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--jQuery-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Asset-->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Chart Js-->
+    <script src="./assets/vendors/chartjs/Chart.js"></script>
+    <script src="./assets/js/chartjs/ui-chart.js"></script>
+    <!--Slick Js-->
+    <script src="./assets/vendors/slick/slick.min.js"></script>
+    <!--DataTable-->
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
+    <!--Dashboard Js-->
+    <script src="./assets/js/dashboard.js"></script>
+    <script>
+      $(document).scroll(function(){
+        $('.wrapperMenuToApps').toggleClass('onScrolled', $(this).scrollTop() > 160);
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+      $('#eAkunting-saldoakun').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-saldoakunDuo').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-piutangPerAkuin').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eAkunting-hutangPerAkuin').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+
+      $(document).ready(function() {
+      $('#eTWP-iuranTWP').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eTWP-dataPensiun').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+
+      $(document).ready(function() {
+      $('#eTWP-rekapTabungan').DataTable( {
+      "scrollX": true,
+      "paging":   false,
+      "searching": false
+      });
+      } );
+    </script>
+
+    <script>
+      const dataRekapPrajurit = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [55,45],
+          backgroundColor: [
+          '#587350','#A2A846'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configdataRekapPrajurit = {
+        type: 'doughnut',
+        data: dataRekapPrajurit,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartdataRekapPrajurit = new Chart(
+      document.getElementById('chartdataRekapPrajurit'),
+      configdataRekapPrajurit
+      );
+
+
+
+
+
+
+
+      const dataRekapBRISudahTerealisasi = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configRekapBRISudahTerealisasi = {
+        type: 'doughnut',
+        data: dataRekapBRISudahTerealisasi,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartRekapBRISudahTerealisasi = new Chart(
+      document.getElementById('chartRekapBRISudahTerealisasi'),
+      configRekapBRISudahTerealisasi
+      );
+
+
+      const dataRekapBRIBelumTerealisasi = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#FF832A','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configRekapBRIBelumTerealisasi = {
+        type: 'doughnut',
+        data: dataRekapBRIBelumTerealisasi,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartRekapBRIBelumTerealisasi = new Chart(
+      document.getElementById('chartRekapBRIBelumTerealisasi'),
+      configRekapBRIBelumTerealisasi
+      );
+
+
+
+
+      const dataRekapBTNSudahTerealisasi = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#A2A846','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configRekapBTNSudahTerealisasi = {
+        type: 'doughnut',
+        data: dataRekapBTNSudahTerealisasi,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartRekapBTNSudahTerealisasi = new Chart(
+      document.getElementById('chartRekapBTNSudahTerealisasi'),
+      configRekapBTNSudahTerealisasi
+      );
+
+
+      const dataRekapBTNBelumTerealisasi = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configRekapBTNBelumTerealisasi = {
+        type: 'doughnut',
+        data: dataRekapBTNBelumTerealisasi,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartRekapBTNBelumTerealisasi = new Chart(
+      document.getElementById('chartRekapBTNBelumTerealisasi'),
+      configRekapBTNBelumTerealisasi
+      );
+
+
+      const dataTotalTunggakan = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configTotalTunggakan = {
+        type: 'doughnut',
+        data: dataTotalTunggakan,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartTotalTunggakan = new Chart(
+      document.getElementById('chartTotalTunggakan'),
+      configTotalTunggakan
+      );
+
+      const dataOutstanding = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configOutstanding = {
+        type: 'doughnut',
+        data: dataOutstanding,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartOutstanding = new Chart(
+      document.getElementById('chartOutstanding'),
+      configOutstanding
+      );
+
+      const dataTotalPinjaman = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [85,15],
+          backgroundColor: [
+          '#7334FF','#eee'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configTotalPinjaman = {
+        type: 'doughnut',
+        data: dataTotalPinjaman,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartTotalPinjaman = new Chart(
+      document.getElementById('chartTotalPinjaman'),
+      configTotalPinjaman
+      );
+
+
+
+
+
+      const dataPokokDanBunga = {
+        labels: [
+          'Value',
+          'apa'
+        ],
+        datasets: [{
+          label: 'uhuy',
+          data: [55,45],
+          backgroundColor: [
+          '#FF832A','#A2A846'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configDataPokokDanBunga = {
+        type: 'doughnut',
+        data: dataPokokDanBunga,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartDataPokokDanBunga = new Chart(
+      document.getElementById('chartDataPokokDanBunga'),
+      configDataPokokDanBunga
+      );
+
+
+
+
+
+      const monthLabaRugi = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+    const dataLabaRugi = {
+      labels: monthLabaRugi,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'transparent',
+        borderColor: '#A2A846',
+        data: [0, 10, 20, 30, 20, 0],
+      }]
+    };
+
+      const configLabaRugi = {
+      type: 'line',
+      data: dataLabaRugi,
+      options: {
+        legend : false
+      }
+    };
+      var chartLabaRugi = new Chart(
+      document.getElementById('chartLabaRugi'),
+      configLabaRugi
+      );
+
+
+
+
+
+
+      const monthHistoryData = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+    const dataHistory = {
+      labels: monthHistoryData,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'transparent',
+        borderColor: '#7334FF',
+        data: [0, 10, 20, 30, 20, 0],
+      }]
+    };
+
+      const configHistoryData = {
+      type: 'line',
+      data: dataHistory,
+      options: {
+        legend : false
+      }
+    };
+      var chartHistoryData = new Chart(
+      document.getElementById('chartHistoryData'),
+      configHistoryData
+      );
+    </script>
+</body>
+</html>

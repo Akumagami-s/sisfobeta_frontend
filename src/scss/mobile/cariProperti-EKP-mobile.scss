@@ -122,16 +122,105 @@ Styling
                     }
                     .modal-body {
                         form {
+                            label {
+                                font-size: 12px;
+                                font-weight: 500;
+                                margin-bottom: .3rem;
+                            }
+                            input {
+                                border: 0.5px solid #535353;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                padding: 0.5rem;
+                                font-size: 12px;
+                            }
                             .kota {
                                 display: flex;
                                 flex-direction: column;
+                                margin-bottom: .5rem;
                                 input {
-                                    width: 100%;
-                                    border: 0.5px solid #535353;
-                                    box-sizing: border-box;
-                                    border-radius: 4px;
                                     min-height: 35px;
-                                    padding: .5rem;
+                                }
+                            }
+                            .wrapperPrice {
+                                display: flex;
+                                .minPrice {
+                                    margin-right: .5rem;
+                                }
+                                .minPrice,.maxPrice {
+                                    width: 100%;
+                                    input {
+                                        width: 100%;
+                                        min-height: 35px;
+                                    }
+                                }
+                            }
+                            .tipeProperti {
+                                margin-bottom: 1rem;
+                                .form-check {
+                                    input {
+                                        margin-right: .3rem;
+                                        border-radius: 50%;
+                                        box-shadow: none;
+                                        &:checked {
+                                            background-color: #08850D;
+                                        }
+                                    }
+                                    label {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                            .jenisProperti {
+                                margin-bottom: 1rem;
+                                input {
+                                    box-shadow: none;
+                                    margin-right: .3rem;
+                                    &:checked {
+                                        background-color: #08850D;
+                                    }
+                                }
+                            }
+                            .kamarTidur,.kamarMandi {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 1rem;
+                                .label {
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                }
+                                .wrapperProduct {
+                                    display: flex;
+                                    align-items: center;
+                                    input {
+                                        width: 30px;
+                                        padding: .3rem .1rem;
+                                        text-align: center;
+                                        border: none;
+                                        appearance: none;
+                                        &::-webkit-inner-spin-button {
+                                            -webkit-appearance: none;
+                                        }
+                                    }
+                                    .distract,.add {
+                                        padding: .3rem;
+                                        cursor: pointer;
+                                        border: 1px solid #368736;
+                                        background: transparent;
+                                        color: #368736;
+                                    }
+                                }
+                            }
+                            .btnCari {
+                                margin-top: 2rem;
+                                button {
+                                    border: none;
+                                    background: #28A745;
+                                    border-radius: 4px;
+                                    padding: .3rem 1rem;
+                                    color: #fff;
+                                    font-size: 12px;
                                 }
                             }
                         }

@@ -303,6 +303,61 @@
                                             <input type="number" name="maximalPrice" id="maxPrice">
                                         </div>
                                     </div>
+                                    <div class="tipeProperti">
+                                        <label for="">Tipe Properti</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="semua">
+                                            <label class="form-check-label" for="semua">
+                                              Semua
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="rumah" checked>
+                                            <label class="form-check-label" for="rumah">
+                                              Rumah
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="apartemen" checked>
+                                            <label class="form-check-label" for="apartemen">
+                                              Apartemen
+                                            </label>
+                                          </div>
+                                    </div>
+                                    <div class="jenisProperti">
+                                        <label for="">Jenis Properti</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="propertiSubsidi">
+                                          <label class="form-check-label" for="propertiSubsidi">
+                                            Properti Subsidi
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="propertiNonSubsidi" checked>
+                                          <label class="form-check-label" for="propertiNonSubsidi">
+                                            Properti Non Subsidi
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <div class="kamarTidur">
+                                        <p class="label">Kamar Tidur</p>
+                                        <div class="wrapperProduct">
+                                          <div class="distract">-</div>
+                                            <input class="value" type="number" value="1">
+                                          <div class="add">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="kamarMandi">
+                                      <p class="label">Kamar Mandi</p>
+                                      <div class="wrapperProduct">
+                                        <div class="distract">-</div>
+                                          <input class="value" type="number" value="1">
+                                        <div class="add">+</div>
+                                      </div>
+                                    </div>
+                                    <div class="btnCari d-flex justify-content-end">
+                                      <button type="submit">Cari</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -365,6 +420,16 @@
             slidesToScroll: 1,
             arrows : false,
             dots : false,
+      });
+
+      $(document).ready(function() {
+        $('.wrapperFilter').on('click', '.add', function() {
+            $(this).siblings('input[type="number"]').val(parseInt($(this).siblings('input[type="number"]').val(), 10) + 1);
+        }).on('click', '.distract', function() {
+            if (parseInt($(this).siblings('input[type="number"]').val(), 10) > 0) {
+                $(this).siblings('input[type="number"]').val(parseInt($(this).siblings('input[type="number"]').val(), 10) - 1);
+          }
+        });
       });
     </script>
 

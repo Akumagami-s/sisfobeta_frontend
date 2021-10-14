@@ -398,12 +398,13 @@ Styling
     font-size: 12px;
     font-weight: 600;
     color: #000;
+    margin-bottom: .5rem;
   }
   .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .developer .nameDeveloper {
     color: #0094FF;
   }
   .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .priceProperti {
-    font-size: 16px;
+    font-size: 18px;
   }
   .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga {
     margin-top: 1rem;

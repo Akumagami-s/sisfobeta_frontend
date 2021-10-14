@@ -1,0 +1,159 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    font-family: 'Poppins', sans-serif;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Styling
+------------*/
+
+#mainHeader {
+    .navbar {
+        margin-bottom: 0;
+        .navbarBack {
+            display: none;
+        }
+        .container-fluid {
+            .userControl {
+                .notification {
+                    .dropdown {
+                        .dropdown-menu {
+                            max-height: 350px;
+                            overflow-y: scroll;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapperMainMenu {
+        padding: .5rem 0;
+        .menu {
+            font-size: 12px;
+            padding: .5rem .3rem;
+            &::before {
+                height: 3px;
+                bottom: -8.5px;
+            }
+        }
+    }
+}
+
+.mainContent {
+    margin-bottom: 4rem;
+    .nameContent {
+        font-size: 18px;
+    }
+    .formSection {
+        margin-bottom: .8rem;
+        .inputForm {
+            label {
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: .5rem;
+            }
+            input {
+                width: 100%;
+                min-height: 36px;
+                border: 1px solid #535353;
+                border-radius: 4px;
+                font-size: 12px;
+                padding: .5rem 1rem;
+            }
+        }
+    }
+    .bunga {
+        label {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: .5rem;
+        }
+        .inputForm {
+            display: flex;
+            align-items: center;
+            label {
+                padding: .5rem .8rem;
+                min-height: 40px;
+                background: #DDDDDD;
+                border: 1px solid #9D9D9D;
+                box-sizing: border-box;
+                border-radius: 5px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                z-index: 2;
+                 margin-bottom: 0rem;
+            }
+            input {
+                width: 100%;
+                border-left: none;
+                min-height: 40px;
+                border-bottom-left-radius: 0;
+                border-top-left-radius: 0;
+                position: relative;
+                left: -3px;
+            }
+        }
+    }
+    .btnSubmit {
+        width: 100%;
+        border: none;
+        padding: .5rem 1rem;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        color: rgba(40, 167, 69, 1);
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .wrapperTable {
+        .table {
+            margin-bottom: 0;
+            overflow-x: hidden;
+            thead {
+                tr {
+                    text-align: center;
+                    th {
+                        font-size: 12px;
+                        color: #fff;
+                        font-weight: 500;
+                        border-bottom: none;
+                        &:first-child {
+                            border-bottom-left-radius: 6px;
+                            border-top-left-radius: 6px;
+                        }
+                        &:last-child {
+                            border-bottom-right-radius: 6px;
+                            border-top-right-radius: 6px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

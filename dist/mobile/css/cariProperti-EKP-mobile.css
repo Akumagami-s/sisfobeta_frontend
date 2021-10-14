@@ -1,0 +1,421 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  font-family: 'Poppins', sans-serif;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Styling
+------------*/
+#mainHeader .navbar {
+  margin-bottom: 0;
+}
+
+#mainHeader .navbar .navbarHome {
+  display: none;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+#mainHeader .wrapperMainMenu {
+  padding: .5rem 0;
+}
+
+#mainHeader .wrapperMainMenu .menu {
+  font-size: 12px;
+  padding: .5rem .3rem;
+}
+
+#mainHeader .wrapperMainMenu .menu::before {
+  height: 3px;
+  bottom: -8.5px;
+}
+
+.mainContent {
+  margin-bottom: 3rem;
+}
+
+.mainContent .search {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .search input {
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #A6A6A6;
+  font-family: 'Poppins', sans-serif;
+  border-right: none;
+}
+
+.mainContent .search button {
+  border: none;
+  background: linear-gradient(127.42deg, #3D553D 2.41%, #8AAC74 100%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.mainContent .wrapperAction {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.mainContent .wrapperAction .wrapperUrutkan .urutkanBtn {
+  border: none;
+  position: static !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.mainContent .wrapperAction .wrapperUrutkan .urutkanBtn::after {
+  display: none;
+}
+
+.mainContent .wrapperAction .wrapperUrutkan .urutkanMenu {
+  width: 100%;
+}
+
+.mainContent .wrapperAction .wrapperUrutkan .urutkanMenu .dropdown-item {
+  white-space: pre-wrap;
+}
+
+.mainContent .wrapperAction .wrapperFilter .btnFilter {
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-header .btn-close {
+  margin: 0;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-header .resetFilter {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form label {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: .3rem;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form input {
+  border: 0.5px solid #535353;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 12px;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kota {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kota input {
+  min-height: 35px;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .wrapperPrice {
+  display: flex;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .wrapperPrice .minPrice {
+  margin-right: .5rem;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .wrapperPrice .minPrice, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .wrapperPrice .maxPrice {
+  width: 100%;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .wrapperPrice .minPrice input, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .wrapperPrice .maxPrice input {
+  width: 100%;
+  min-height: 35px;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .tipeProperti {
+  margin-bottom: 1rem;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .tipeProperti .form-check input {
+  margin-right: .3rem;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .tipeProperti .form-check input:checked {
+  background-color: #08850D;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .tipeProperti .form-check label {
+  margin: 0;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .jenisProperti {
+  margin-bottom: 1rem;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .jenisProperti input {
+  box-shadow: none;
+  margin-right: .3rem;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .jenisProperti input:checked {
+  background-color: #08850D;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarTidur, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarMandi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarTidur .label, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarMandi .label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarTidur .wrapperProduct, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarMandi .wrapperProduct {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarTidur .wrapperProduct input, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarMandi .wrapperProduct input {
+  width: 30px;
+  padding: .3rem .1rem;
+  text-align: center;
+  border: none;
+  appearance: none;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarTidur .wrapperProduct input::-webkit-inner-spin-button, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarMandi .wrapperProduct input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarTidur .wrapperProduct .distract, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarTidur .wrapperProduct .add, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarMandi .wrapperProduct .distract, .mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .kamarMandi .wrapperProduct .add {
+  padding: .3rem;
+  cursor: pointer;
+  border: 1px solid #368736;
+  background: transparent;
+  color: #368736;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .btnCari {
+  margin-top: 2rem;
+}
+
+.mainContent .wrapperFilter .modal .modal-dialog .modal-content .modal-body form .btnCari button {
+  border: none;
+  background: #28A745;
+  border-radius: 4px;
+  padding: .3rem 1rem;
+  color: #fff;
+  font-size: 12px;
+}
+
+.mainContent .wrapperProperti .properti {
+  text-decoration: none;
+  background: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.mainContent .wrapperProperti .properti .imagesProperti {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas p {
+  color: #000;
+  font-weight: 500;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas span {
+  color: #000;
+  font-weight: 500;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan {
+  font-weight: 600;
+  color: #000;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan .tipeRumah {
+  color: #FF0000;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .location {
+  font-weight: 600;
+  color: #000;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .totalYangTersedia {
+  color: #97BB7D;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails {
+  margin-top: 1.5rem;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .priceProperti {
+  color: #28A745;
+  font-weight: 600;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr h3, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga h3 {
+  color: #000;
+}
+
+.mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueSukuBunga, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueSukuBunga {
+  color: #28A745;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 0px) {
+  .mainContent .search {
+    margin-bottom: 1rem;
+  }
+  .mainContent .search input {
+    padding: .65rem 1rem;
+    font-size: 12px;
+  }
+  .mainContent .search input::placeholder {
+    font-size: 10px;
+  }
+  .mainContent .search button {
+    padding: .5rem;
+  }
+  .mainContent .search button svg {
+    width: 100%;
+  }
+  .mainContent .wrapperAction {
+    margin-bottom: 1.5rem;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan {
+    margin-right: 1rem;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan .urutkanBtn {
+    padding: .5rem 1rem;
+    font-size: 12px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan .urutkanBtn svg {
+    margin-right: .3rem;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan .urutkanMenu {
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .mainContent .wrapperAction .wrapperUrutkan .urutkanMenu .dropdown-item {
+    font-size: 12px;
+  }
+  .mainContent .wrapperAction .wrapperFilter .btnFilter {
+    min-width: 100px;
+    max-width: 100px;
+    padding: .5rem 1rem;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  .mainContent .wrapperProperti .properti {
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    width: 100%;
+  }
+  .mainContent .wrapperProperti .properti .imagesProperti {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti {
+    padding: 1rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan .tipeRumah {
+    margin-right: .3rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas {
+    margin-bottom: .5rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas p {
+    font-size: 12px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas span {
+    font-size: 12px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan {
+    font-size: 14px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .location {
+    font-size: 12px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .totalYangTersedia {
+    font-size: 12px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .developer {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: .5rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .developer .nameDeveloper {
+    color: #0094FF;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .priceProperti {
+    font-size: 18px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga {
+    margin-top: 1rem;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr h3, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga h3 {
+    font-size: 14px;
+  }
+  .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueSukuBunga, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueKPR, .mainContent .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueSukuBunga {
+    font-size: 12px;
+  }
+  .mainContent .pages .pagination .page-item {
+    font-size: 12px;
+  }
+}

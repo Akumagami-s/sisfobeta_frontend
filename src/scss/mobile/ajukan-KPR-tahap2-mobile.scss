@@ -1,0 +1,85 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    font-family: 'Poppins', sans-serif;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Styling
+------------*/
+
+.mainContent {
+    padding: 1rem;
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0 2rem 0;
+
+        .iconBack {
+            flex: 2;
+        }
+        .title {
+            flex: 4;
+        }
+    }
+    .bodyContent {
+        .formSection {
+            margin-bottom: .7rem;
+            .inputForm {
+                display: flex;
+                flex-direction: column;
+                label {
+                    font-size: 12px;
+                    color: #000;
+                    font-weight: 600;
+                    margin-bottom: .3rem;
+                }
+                input {
+                    border: 1px solid #9D9D9D;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    padding: .5rem 1rem;
+                    min-height: 35px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .btnSubmit {
+            background: #28A745;
+            border: none;
+            width: 100%;
+            padding: .5rem 1rem;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (min-width : 0px) {
+    .mainContent {
+        .header {
+            .title {
+                font-size: 14px;
+            }
+        }
+    }
+}

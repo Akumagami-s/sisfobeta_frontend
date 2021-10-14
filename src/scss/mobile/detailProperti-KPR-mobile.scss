@@ -1,0 +1,631 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    font-family: 'Poppins', sans-serif;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Styling
+------------*/
+.headerCard {
+    background: #a2a846;
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+    padding: 1rem;
+    .nameHeaderCard {
+        font-size: 14px;
+    }
+}
+
+#mainHeader {
+    .navbar {
+        margin-bottom: 0;
+        .navbarHome {
+            display: none;
+        }
+        .container-fluid {
+            .userControl {
+                .notification {
+                    .dropdown {
+                        .dropdown-menu {
+                            max-height: 350px;
+                            overflow-y: scroll;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapperMainMenu {
+        padding: .5rem 0;
+        .menu {
+            font-size: 12px;
+            padding: .5rem .3rem;
+            &::before {
+                height: 3px;
+                bottom: -8.5px;
+            }
+        }
+    }
+}
+
+
+.wrapperImagesProperti {
+    position: relative;
+    .slick-slider {
+        margin: 0;
+    }
+    .slickImagesProperti {
+        img {
+            width: 100%;
+        }
+    }
+    .slick-slider-dots {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0;
+                button {
+                    &::before {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+                &.slick-active {
+                    button {
+                    }
+                }
+            }
+        }
+    }
+}
+.mainContent {
+    margin-bottom: 4rem;
+    .wrapperInformationProperti {
+        margin-bottom: 2rem;
+        .wrapperFasilitas {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            .fasilitas {
+                p {
+                    color: #000;
+                    font-weight: 500;
+                }
+                span {
+                    color: #000;
+                    font-weight: 500;
+                }
+            }
+        }
+        .namaPerumahan {
+            font-weight: 600;
+            color: #000;
+            .tipeRumah {
+                color: #FF0000;
+            }
+        }
+        .location {
+            font-weight: 600;
+            color: #000;
+        }
+        .totalYangTersedia {
+            color: #97BB7D;
+        }
+        .moreDetails {
+            margin-top: 1.5rem;
+            .priceProperti {
+                color: #28A745;
+                font-weight: 600;
+            }
+            .wrapperKprDanSukuBunga {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .kpr,.sukuBuanga {
+                    h3 {
+                        color: #000;
+                    }
+                    .valueKPR,.valueSukuBunga {
+                        color: #28A745;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .detailInformasi {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        .detailProperti {
+            width: 100%;
+            background: #FFFFFF;
+            margin-bottom: 1.5rem;
+            box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            .contentCard {
+                .detail {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                    .nameDetail {
+                        font-weight: 600;
+                    }
+                    .nameDetail,.valueDetail {
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+            }
+        }
+        .detailFasilitas {
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            .contentCard {
+                .fasilitas {
+                    display: flex;
+                    align-items: center;
+                    .nameFasilitas {
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+    .mapsAreaSekitar {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        margin-bottom: 1.5rem;
+        .contentCard {
+            padding: 1rem;
+            #mapid {
+                border-radius: 10px;
+            }
+        }
+    }
+    .informasiPerusahaan {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        .contentCard {
+            .wrapperProfil {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .profilPerusahaan {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+            .wrapperContactPerusahaan {
+                display: flex;
+                .firstCol , .secondCol {
+                    width: 100%;
+                    .contact {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    .informasiDeveloper {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        .contentCard {
+            .wrapperProfil {
+                display: flex;
+                align-items: center;
+                .profilDeveloper {
+                    display: flex;
+                    align-items: center;
+                    .nameAndMessage {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+            .wrapperContactDeveloper {
+                display: flex;
+                .firstCol , .secondCol {
+                    width: 100%;
+                    .contact {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    .wrapperAjukanKPR {
+        display: flex;
+        justify-content: flex-end;
+        .btnAjukanKPR {
+            border: none;
+            background: #28A745;
+            color: #fff;
+            font-weight: 500;
+        }
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    .modal-header {
+                        .title {
+                            color: #000;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 0px) {
+    .mainContent {
+        .wrapperInformationProperti {
+            .namaPerumahan {
+                .tipeRumah {
+                    margin-right: .3rem;
+                }
+            }
+            .wrapperFasilitas {
+                margin-bottom: .5rem;
+                .fasilitas {
+                    p {
+                        font-size: 12px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .namaPerumahan {
+                font-size: 14px;
+            }
+            .location {
+                font-size: 12px;
+            }
+            .totalYangTersedia {
+                font-size: 12px;
+            }
+            .moreDetails {
+                .developer {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #000;
+                    margin-bottom: .5rem;
+                    .nameDeveloper {
+                        color: #0094FF;
+                    }
+                }
+                .priceProperti {
+                    font-size: 18px;
+                }
+                .wrapperKprDanSukuBunga {
+                    margin-top: 1rem;
+                    .kpr,.sukuBuanga {
+                        h3 {
+                            font-size: 14px;
+                        }
+                        .valueKPR,.valueSukuBunga {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .detailInformasi {
+            .detailProperti {
+                .contentCard {
+                    padding: 1rem;
+                    .detail {
+                        .nameDetail,.valueDetail {
+                            font-size: 11px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .detailFasilitas {
+                .contentCard {
+                    padding: 1rem;
+                    .fasilitas {
+                        .icon {
+                            margin-right: .3rem;
+                            svg {
+                                width: 12px;
+                            }
+                        }
+                        .nameFasilitas {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .informasiPerusahaan {
+            margin-bottom: 1.5rem;
+            .contentCard {
+                padding: 1rem;
+                .wrapperProfil {
+                    .profilPerusahaan {
+                        margin-bottom: .7rem;
+                        .imagesProfil {
+                            margin-bottom: .5rem;
+                            .imagesPerusahaan {
+                                min-width: 60px;
+                                max-width: 60px;
+                            }
+                        }
+                        .namePerusahaan {
+                            font-weight: 600;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .btnDetailPerusahaan {
+                        text-decoration: none;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: rgba(0, 148, 255, 1);
+                    }
+                }
+                .wrapperContactPerusahaan {
+                    .firstCol , .secondCol {
+                        padding: 0 .3rem;
+                        .contact {
+                            width: 100%;
+                            .icon {
+                                margin-right: .4rem;
+                                svg {
+                                    max-width: 11px;
+                                }
+                            }
+                            .valueContact {
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                    .firstCol {
+                        width: 40%;
+                    }
+                    .secondCol {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        .informasiDeveloper {
+            margin-bottom: 1rem;
+            .contentCard {
+                padding: 1rem;
+                .wrapperProfil {
+                    padding: 1rem 0;
+                    .profilDeveloper {
+                        .imagesProfil {
+                            .imagesDeveloper {
+                                min-width: 60px;
+                                max-width: 60px;
+                                margin-right: 1rem;
+                            }
+                        }
+                        .nameAndMessage {
+                            .nameDeveloper {
+                                font-weight: 600;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                margin-bottom: .5rem;
+                            }
+                            .modalMassage {
+                                .btnKirimPesan {
+                                    background: rgba(40, 167, 69, 1);
+                                    color: #fff;
+                                    font-size: 12px;
+                                    font-family: 'Poppins', sans-serif;
+                                    padding: .3rem 1rem;
+                                }
+                                .modal {
+                                    .modal-dialog {
+                                        .modal-header {
+                                            background: #DDDDDD;
+                                            .modal-title {
+                                                font-size: 14px;
+                                            }
+                                            .modal-title {
+                                                font-weight: 600;
+                                            }
+                                        }
+                                        .modal-body {
+                                            form {
+                                                label,input,textarea {
+                                                    font-size: 12px;
+                                                    font-family: 'Poppins', sans-serif;
+        
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .wrapperContactDeveloper {
+                    padding: 1rem 0;
+                    .firstCol , .secondCol {
+                        .contact {
+                            .icon {
+                                margin-right: .4rem;
+                                svg {
+                                    max-width: 11px;
+                                }
+                            }
+                            .valueContact {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    .firstCol {
+                        width: 40%;
+                    }
+                    .secondCol {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        .wrapperAjukanKPR {
+            .btnAjukanKPR {
+                font-size: 14px;
+                padding: .3rem 1rem;
+                border-radius: 6px;
+            }
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        .modal-header {
+                            border: none;
+                            .title {
+                                font-size: 16px;
+                            }
+                        }
+                        .modal-body {
+                            form {
+                                .formSection {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-bottom: 1rem;
+                                    label {
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                        margin-bottom: .5rem;
+                                    }
+                                    input,select {
+                                        border: 1px solid #9D9D9D;
+                                        box-sizing: border-box;
+                                        border-radius: 5px;
+                                        min-height: 40px;
+                                        font-size: 12px;
+                                        padding: .3rem .5rem;
+                                    }
+                                    select {
+                                        option {
+                                            padding: 1rem 0;
+                                        }
+                                    }
+                                }
+                                .btnAjukan {
+                                    width: 100%;
+                                    a {
+                                        padding: .7rem 1rem;
+                                        text-decoration: none;
+                                        background: #28A745;
+                                        border-radius: 5px;
+                                        min-width: 100%;
+                                        display: inline-block;
+                                        text-align: center;
+                                        color: #fff;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .uangMuka {
+                                    .inputForm {
+                                        display: flex;
+                                        align-items: center;
+                                        label {
+                                            padding: .5rem .8rem;
+                                            min-height: 40px;
+                                            background: #DDDDDD;
+                                            border: 1px solid #9D9D9D;
+                                            box-sizing: border-box;
+                                            border-radius: 5px;
+                                            position: relative;
+                                            display: flex;
+                                            align-items: center;
+                                            z-index: 2;
+                                             margin-bottom: 0rem;
+                                        }
+                                        input {
+                                            width: 100%;
+                                            border-left: none;
+                                            border-bottom-left-radius: 0;
+                                            border-top-left-radius: 0;
+                                            position: relative;
+                                            left: -3px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (min-width : 375px) {
+    .mainContent {
+        .informasiDeveloper {
+            .contentCard {
+                padding: 1rem;
+                .wrapperContactDeveloper {
+                    .firstCol , .secondCol {
+                        .contact {
+                            .icon {
+                                svg {
+                                    max-width: 12px;
+                                }
+                            }
+                            .valueContact {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

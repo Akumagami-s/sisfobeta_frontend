@@ -84,8 +84,8 @@ function datapokok() {
 
 function editdatapokok() {
     // const nrp=sessionStorage.getItem("nrp")
-    // document.getElementsByClassName('pp_js')[1].src=sessionStorage.getItem("thump")
-    // document.getElementsByClassName('pp_js')[0].src=sessionStorage.getItem("thump")
+    document.getElementsByClassName('pp_js')[1].src=sessionStorage.getItem("thump")
+    document.getElementsByClassName('pp_js')[0].src=sessionStorage.getItem("thump")
     fetch('https://asiabytes.tech/baltab/api/AjaxEdit/527216', {
           method: 'GET', // or 'PUT'
           headers: {

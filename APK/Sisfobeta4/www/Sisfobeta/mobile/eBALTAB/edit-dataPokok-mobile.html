@@ -146,7 +146,7 @@
                     </div>
                     <div class="dropdown profil">
                       <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
-                        <img src="../../assets/img/profil.png" alt="">
+                        <img src="../../assets/img/profil.png" alt="" style="min-width: 30px; max-width: 30px;">
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="profilDropdown">
                         <li><a class="dropdown-item" href="#">Profil</a></li>
@@ -164,6 +164,7 @@
 <!-- here -->
     <div class="wrapperContent container mt-3">
     </div>
+    <a href="" class="btn btn-success update">Update</a>
 <!-- endhere -->
     <div class="mobileMenu">
       <a href="" class="menu">
@@ -207,6 +208,15 @@
     <script src="../../COREJS/runtime.js"></script>
     <script>
       this.editdatapokok()
+    </script>
+    <script>
+      function pon(pin) {
+        console.log(pin);
+        var a=document.getElementsByClassName('show')
+        for (let i = 0; i < a.length; i++) {
+        a[i].classList.toggle('show')
+        }
+      }
     </script>
 
 </body>

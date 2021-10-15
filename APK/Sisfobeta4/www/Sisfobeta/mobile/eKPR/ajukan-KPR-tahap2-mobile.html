@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Properti</title>
+    <!--Bootstrap Asset-->
+    <link rel="stylesheet" href="../../assets/vendors/bootstrap/css/bootstrap.min.css">
+    <!--unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Component-->
+    <link rel="stylesheet" href="../component/menu.css">
+    <link rel="stylesheet" href="../component/navbar-mobile.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <!--slick Css-->
+    <link rel="stylesheet" href="../../assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="../../assets/vendors/slick/slick-theme.css">
+    <!--Laflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <!--Ebaltab User Css-->
+    <link rel="stylesheet" href="../css/ajukan-KPR-tahap2-mobile.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div class="header">
+            <a href="#" class="iconBack">
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.3438 7.03136H3.74558L7.8038 3.62074C8.0163 3.44215 8.02453 3.14543 7.82212 2.95793C7.61998 2.77066 7.2837 2.76316 7.07094 2.94175L2.43631 6.83707C2.23577 7.01426 2.125 7.24957 2.125 7.50011C2.125 7.75043 2.23577 7.98597 2.44561 8.1709L7.0712 12.0582C7.174 12.1447 7.30575 12.1876 7.4375 12.1876C7.57775 12.1876 7.718 12.1389 7.82239 12.0421C8.0248 11.8546 8.01656 11.5581 7.80406 11.3795L3.72884 7.96886H14.3438C14.637 7.96886 14.875 7.75886 14.875 7.50011C14.875 7.24136 14.637 7.03136 14.3438 7.03136Z" fill="#3E3C3C"/>
+                </svg>
+            </a>
+            <h1 class="title">Pengajuan KPR</h1>
+        </div>
+        <div class="bodyContent">
+            <form action="">
+                <div class="formSection nomorKK">
+                    <div class="inputForm">
+                        <label for="nomorKK">Nomor KK</label>
+                        <input type="text" name="nmrKK" id="nomorKK">
+                    </div>
+                </div>
+                <div class="formSection nomorNik">
+                    <div class="inputForm">
+                        <label for="nomorNIK">Nomor NIK</label>
+                        <input type="text" name="nomorNIK" id="nomorNIK">
+                    </div>
+                </div>
+                <div class="formSection name">
+                    <div class="inputForm">
+                        <label for="name">Nama</label>
+                        <input type="number" name="name" id="name">
+                    </div>
+                </div>
+                <div class="formSection tanggalLahir">
+                    <div class="inputForm">
+                        <label for="tanggalLahir">Jangka Waktu</label>
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="formSection ibuKandung">
+                    <div class="inputForm">
+                        <label for="ibuKandung">Nama Ibu Kandung</label>
+                        <input type="text" name="ibuKandung" id="ibuKandung">
+                    </div>
+                </div>
+                <button class="btnSubmit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--jQuery-->
+    <script src="../../assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Asset-->
+    <script src="../../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart Js-->
+    <script src="../../assets/vendors/chart.js"></script>
+    <script src="../../assets/js/chartjs/ui-chart.js"></script>
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Slick Js-->
+    <script src="../../assets/vendors/slick/slick.min.js"></script>
+    <!--Street Maps-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+</body>
+</html>

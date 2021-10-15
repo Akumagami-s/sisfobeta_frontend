@@ -1,0 +1,150 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+#mainHeader {
+  height: 100%;
+}
+
+.mainContent .container .wrapperContent .accordion {
+  box-shadow: 0px 4px 16px rgba(17, 17, 26, 0.1), 0px 8px 32px rgba(17, 17, 26, 0.05);
+  padding: 2rem;
+  border-radius: 14px;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item {
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header {
+  margin-bottom: .8rem;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button {
+  border-radius: 8px;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background: #edf0f7;
+  color: none;
+  box-shadow: none;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) .iconMassage {
+  background: #fff;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) .iconMassage:hover {
+  background: #fff;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button:hover {
+  background: #edf0f7;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button .iconMassage {
+  background: #f0f7ff;
+  padding: .5rem .5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: .8rem;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button .iconMassage ion-icon {
+  font-size: 18px;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button .messageName {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-collapse .accordion-body {
+  border-radius: 8px;
+  background: #edf0f7;
+  padding: 1.5rem 2rem;
+}
+
+.mainContent .container .wrapperContent .accordion .accordion-item .accordion-collapse .accordion-body p {
+  font-family: 'Poppins', sans-serif;
+  color: #4a5157;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .mainContent .container .wrapperContent .accordion {
+    padding: 1rem;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button .iconMassage ion-icon {
+    font-size: 18px;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button .messageName {
+    font-size: 16px;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding: 1.5rem 1rem;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainContent .container .wrapperContent .accordion {
+    padding: 1rem;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button .messageName {
+    font-size: 18px;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding: 1.5rem 2rem;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainContent .container .wrapperContent .accordion {
+    padding: 2rem;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-header .accordion-button .messageName {
+    font-size: 18px;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding: 1.5rem 2rem;
+  }
+  .mainContent .container .wrapperContent .accordion .accordion-item .accordion-collapse .accordion-body p {
+    font-size: 16px;
+  }
+}

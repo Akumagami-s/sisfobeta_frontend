@@ -32,14 +32,9 @@
               </a>
     
               <div class="userControl">
-                <div class="notification">
-                  <div class="dropdown" id='notifpoin'>
-                      asd
-                  </div>
-                </div>
                 <div class="dropdown profil">
                   <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
-                    <img src="" class="pp_js" alt="">
+                    <img src="" class="pp_js" alt="" style="min-height: 30px; max-height: 30px;">
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="profilDropdown">
                     <li><a class="dropdown-item" href="#">Profil</a></li>
@@ -57,14 +52,14 @@
                 </a>
                 <h1 class="namePages">Edit Data Prajurit</h1>
                 <div class="userControl">
-                    <div class="notification">
-                      <div class="dropdown" id='notifpoin'>
-
-                      </div>
+                  <div class="notification">
+                    <div class="dropdown" id='notifpoin'>
+  
                     </div>
+                  </div>  
                     <div class="dropdown profil">
                       <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
-                        <img src="" class="pp_js" alt="">
+                        <img src="" class="pp_js" alt="" style="min-height: 25px; max-height: 30px;">
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="profilDropdown">
                         <li><a class="dropdown-item" href="#">Profil</a></li>
@@ -84,6 +79,10 @@
     <div class="wrapperContent container mt-3">
 
     </div>
+    <div class="container row mt-3">
+      <a href="" class="mr-1 col-md-12 btn btn-success" onclick="updatedatapokok()">Update</a>
+    </div>
+
 <!-- endhere -->
 
     <div class="mobileMenu">
@@ -129,6 +128,15 @@
     <script>
       this.editdatapokok()
         this.sesce()
+    </script>
+    <script>
+      function pon(pin) {
+        console.log(pin);
+        var a=document.getElementsByClassName('show')
+        for (let i = 0; i < a.length; i++) {
+        a[i].classList.toggle('show')
+        }
+      }
     </script>
 
 </body>

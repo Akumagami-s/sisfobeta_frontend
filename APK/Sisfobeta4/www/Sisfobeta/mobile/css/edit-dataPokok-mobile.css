@@ -30,3 +30,29 @@ Styling
 #mainHeader .navbar .navbarHome {
   display: none;
 }
+
+.accordion-button:not(.collapsed){
+    color: #3E3C3C;
+    background-color: #C4C4C4;
+}
+
+.accordion-button:focus{
+    border-color: #3E3C3C;
+    box-shadow: none;
+}
+
+.accordion-button{
+    background-color: #C4C4C4;
+    font-size: 14px;
+    font-weight: 450;
+    height: 40px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url('../../assets/img/right-chevron.svg');
+}
+
+.update{
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}

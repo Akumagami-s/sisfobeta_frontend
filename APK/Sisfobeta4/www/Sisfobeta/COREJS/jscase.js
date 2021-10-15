@@ -102,4 +102,8 @@ function editdatapokok() {
             console.error('Error:', error);
           });
 }
+
+function updatedatapokok0() {
+    
+}
 // notifpoin

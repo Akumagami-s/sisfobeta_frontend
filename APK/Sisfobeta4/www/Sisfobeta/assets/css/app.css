@@ -360,11 +360,11 @@ footer p {
     flex-direction: column;
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData .notice {
-    padding: 1.5rem 1rem;
-    margin-top: 2rem;
+    padding: 1rem 1rem;
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData .notice p {
-    font-size: 12px;
+    font-size: 9px;
+    color: #212529;
   }
   .tab-content .tab-pane .dataWrapper .wrapperTableInfoData table {
     width: 100%;

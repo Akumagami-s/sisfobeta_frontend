@@ -75,15 +75,15 @@ Variables
 }
 
 .navbar .container .navbar-brand .nameBrand h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #3B4E63;
+  font-family: steelfish;
+  font-weight: 500;
+  color: #3d553d;
 }
 
 .navbar .container .navbar-brand .nameBrand p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  color: #3B4E63;
+  color: #3d553d;
 }
 
 .navbar .container .navbar-toggler {
@@ -255,6 +255,10 @@ Variables
   align-items: center;
 }
 
+.partnersWrapper .container .wrapperPartner .partner img {
+  max-width: 120px;
+}
+
 footer {
   background: linear-gradient(281.65deg, #98BC7D -8.58%, #3E573D 94.33%);
   display: flex;
@@ -297,7 +301,8 @@ footer .socialMedia .social svg {
     max-width: 60px;
   }
   .navbar .container .navbar-brand .nameBrand h1 {
-    font-size: 22px;
+    font-size: 32px;
+    letter-spacing: 1px;
   }
   .navbar .container .navbar-brand .nameBrand p {
     display: none;
@@ -515,7 +520,8 @@ footer .socialMedia .social svg {
     max-width: 70px;
   }
   .navbar .container .navbar-brand .nameBrand h1 {
-    font-size: 34px;
+    font-size: 42px;
+    letter-spacing: 7px;
   }
   .navbar .container .navbar-brand .nameBrand p {
     display: block;
@@ -638,7 +644,7 @@ footer .socialMedia .social svg {
 
 @media screen and (min-width: 1400px) {
   .navbar .container .navbar-brand .nameBrand h1 {
-    font-size: 40px;
+    font-size: 56px;
   }
   .navbar .container .navbar-brand .nameBrand p {
     display: block;

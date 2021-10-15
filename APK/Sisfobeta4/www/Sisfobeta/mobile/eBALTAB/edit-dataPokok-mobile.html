@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebaltab | Dashboard</title>
+    <title>Edit Data</title>
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../../assets/vendors/bootstrap/css/bootstrap.min.css">
-    <!--Ebaltab Css-->
-    <link rel="stylesheet" href="../css/dashboard-eBaltab-mobile.css">
     <!--unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--Component-->
@@ -18,12 +16,14 @@
     <!--slick Css-->
     <link rel="stylesheet" href="../../assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="../../assets/vendors/slick/slick-theme.css">
+    <!--Ebaltab User Css-->
+    <link rel="stylesheet" href="../css/edit-dataPokok-mobile.css">
 </head>
 <body>
     <div id="mainHeader">
         <!--Navbar-->
         <nav class="navbar navbar-light ">
-            <div class="container-fluid">
+            <div class="container-fluid navbarHome hidden">
               <a class="navbar-brand" href="#">
                 <img src="../../assets/img/tni_logo.png" alt="">
                 <div class="brand-title">
@@ -34,6 +34,7 @@
               <div class="userControl">
                 <div class="notification">
                   <div class="dropdown" id='notifpoin'>
+
                   </div>
                 </div>
                 <div class="dropdown profil">
@@ -45,115 +46,126 @@
                     <li><button class="dropdown-item" href="#">Logout</button></li>
                   </ul>
                 </div>
+                <a href="../more-mobile.html" class="moreIcon">
+                    <ion-icon name="ellipsis-vertical"></ion-icon>
+                </a>
               </div>
+            </div>
+            <div class="container-fluid navbarBack">
+                <a href="#" class="backHome">
+                    <ion-icon name="arrow-back"></ion-icon>
+                </a>
+                <h1 class="namePages">Edit Data Prajurit</h1>
+                <div class="userControl">
+                    <div class="notification">
+                      <div class="dropdown">
+                        
+                        <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                          <ion-icon name="notifications-outline"></ion-icon>
+                          <div class="numberNotif">2</div>
+                        </button>
+    
+                        <ul class="dropdown-menu" aria-labelledby="notification">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="iconMassage">
+                                  <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                </div>
+                                <div class="wrapperMessage">
+                                    <div class="messageName">
+                                        <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                    </div>
+                                    <div class="messageContent">
+                                        <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                    </div>
+                                </div>
+                                <div class="messageTime">
+                                  <span>19.30</span>
+                                </div>
+                            </a>
+                          </li>
+    
+                          <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="iconMassage">
+                                  <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                </div>
+                                <div class="wrapperMessage">
+                                    <div class="messageName">
+                                        <h1>Verifikasi Akun Anda</h1>
+                                    </div>
+                                    <div class="messageContent">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio aliquam, atque illum ab vitae amet ea sequi temporibus? Ipsa id quaerat ducimus, aut quibusdam, sint doloremque, obcaecati ab quos ullam eos ex cum fuga delectus voluptatum iure voluptas qui aperiam totam nam. Veniam earum assumenda at laudantium voluptatem placeat fugit, nobis, nesciunt doloribus itaque velit quia expedita repellat alias culpa nisi dolore voluptate blanditiis a optio sint officia delectus! Quod quam adipisci aperiam quis perferendis totam magni earum, sequi fugiat. Aspernatur, a cumque repudiandae consequuntur perferendis totam nesciunt et rem cum cupiditate officia quisquam enim unde ab. Quos, esse.</p>
+                                    </div>
+                                </div>
+                                <div class="messageTime">
+                                  <span>19.30</span>
+                                </div>
+                            </a>
+                          </li>
+    
+                          <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="iconMassage">
+                                  <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                </div>
+                                <div class="wrapperMessage">
+                                    <div class="messageName">
+                                        <h1>Verifikasi Akun Anda</h1>
+                                    </div>
+                                    <div class="messageContent">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                                    </div>
+                                </div>
+                                <div class="messageTime">
+                                  <span>19.30</span>
+                                </div>
+                            </a>
+                          </li>
+    
+                          <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="iconMassage">
+                                  <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                </div>
+                                <div class="wrapperMessage">
+                                    <div class="messageName">
+                                        <h1>Verifikasi Akun Anda</h1>
+                                    </div>
+                                    <div class="messageContent">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                                    </div>
+                                </div>
+                                <div class="messageTime">
+                                  <span>19.30</span>
+                                </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="dropdown profil">
+                      <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
+                        <img src="../../assets/img/profil.png" alt="">
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                        <li><a class="dropdown-item" href="#">Profil</a></li>
+                        <li><button class="dropdown-item" href="#">Logout</button></li>
+                      </ul>
+                    </div>
+                    <a href="../more-mobile.html" class="moreIcon">
+                        <ion-icon name="ellipsis-vertical"></ion-icon>
+                    </a>
+                </div>
             </div>
         </nav>
         <!--End Navbar-->
-        <div class="wrapperMainMenu">
-            <a href="" class="menu active">Dashboard</a>
-            <a href="" class="menu">Data Pokok Prajurit</a>
-            <a href="" class="menu">Rekayasa Data</a>
-            <a href="" class="menu">Pengajuan</a>
-            <a href="" class="menu">Sprin</a>
-            <a href="" class="menu">Master</a>
-        </div>
     </div>
-    <div class="mainContent">
-      <h1 class="nameContent">Data Penyaluran Ulang</h1>
-        <div class="wrapperDataSummary">
-          <div class="data dataNotSync">
-              <div class="icon">
-                <img src="../../assets/img/syncDataIcon.svg" alt="">
-              </div>
-              <h1 class="titleData"><span class="valueData">287.828</span> Data Belum Sinkron</h1>
-              <button class="btnStyle redButton" type="submit">SINKRON DATA</button>
-          </div>
-
-          <div class="data kelengkapanPengajuan">
-            <div class="arrow">
-                <img src="../assets/img/arrowChart.svg" alt="">
-            </div>
-            <div class="icon wrapperChart">
-              <canvas id="kelengkapanPengajuan"></canvas>
-            </div>
-            <h1 class="titleData">Kelengkapan Pengajuan</h1>
-            <p><span class="month">September</span> <span class="years">2021</span></p>
-          </div>
-
-          <div class="data approvalSprin">
-            <div class="arrow">
-              <img src="../assets/img/arrowChart.svg" alt="">
-            </div>
-            <div class="icon wrapperChart">
-              <canvas id="approvalSprin"></canvas>
-            </div>
-            <h1 class="titleData">Approval Sprin</h1>
-            <p><span class="month">September</span><span class="years">2021</span></p>
-          </div>
-        </div>
-
-        <div class="container-danaAlokasi-penyaluranDana">
-          <div class="alokasiDana wrapperSlick">
-              <div class="statisticDanaAlokasi cardStatistic">
-                  <div class="contentValue">
-                    <h3 class="nameValue">Dana Alokasi</h3>
-                    <h1 class="valueDana">Rp <span class="value">308.260.458.101</span></h1>
-                  </div>
-                  <div class="wrapperChart">
-                    <canvas id="chartDanaAlokasi"></canvas>
-                  </div>
-              </div>
-
-              <div class="statisticApprovalDanaAlokasi cardStatistic">
-                <div class="contentValue">
-                  <h3 class="nameValue">Dana Alokasi</h3>
-                  <h1 class="valueDana">Rp <span class="value">308.260.458.101</span></h1>
-                </div>
-                <div class="wrapperChart">
-                  <canvas id="chartApprovalDanaAlokasi"></canvas>
-                </div>
-              </div>
-          </div>
-
-          <div class="penyaluranDana wrapperSlick">
-            <div class="cardStatistic">
-              <div class="contentValue">
-                <h3 class="nameValue">Dana Penyaluran</h3>
-                <h1 class="valueDana">Rp <span class="value">308.260.458.101</span></h1>
-              </div>
-              <div class="wrapperChart">
-                <canvas id="chartDanaPenyaluran"></canvas>
-              </div>
-            </div>
-
-            <div class="cardStatistic">
-              <div class="contentValue">
-                <h3 class="nameValue">Approval Dana Penyaluran</h3>
-                <h1 class="valueDana">Rp <span class="value">308.260.458.101</span></h1>
-              </div>
-              <div class="wrapperChart">
-                <canvas id="chartApprovalDanaPenyaluran"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="statisticAllDataEbaltab">
-          <h1 class="nameContent">Data Penyaluran Ulang</h1>
-          <div class="containerChart">
-              <div class="wrapperChart">
-                <canvas id="allDataEbaltab"></canvas>
-              </div>
-              <!-- <div class="wrapperInfo">
-                <p class="info jumblahPengajuan">jumblah Pengajuan</p>
-                <p class="info danaAlokasi">Dana Alokasi</p>
-                <p class="info danaPenyaluran">Dana Penyaluran</p>
-              </div> -->
-          </div>
-      </div>
+<!-- here -->
+    <div class="wrapperContent container mt-3">
     </div>
+<!-- endhere -->
     <div class="mobileMenu">
-      
       <a href="" class="menu">
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24.6868 12.1976C25.14 11.6828 25.0962 10.8937 24.5891 10.4356L13.4163 0.337365C12.9091 -0.120727 12.0961 -0.111131 11.5996 0.358998L0.388821 10.974C-0.107637 11.4441 -0.132003 12.2322 0.334872 12.7335L0.615943 13.0358C1.08225 13.5371 1.83598 13.5969 2.29837 13.1689L3.1362 12.3939V23.7403C3.1362 24.4364 3.68229 25 4.35575 25H8.72575C9.39921 25 9.9453 24.4364 9.9453 23.7403V15.8024H15.5193V23.7403C15.5096 24.4359 15.9914 24.9995 16.6649 24.9995H21.296C21.9695 24.9995 22.5156 24.4359 22.5156 23.7398V12.5537C22.5156 12.5537 22.747 12.7631 23.0325 13.0223C23.3175 13.2809 23.916 13.0735 24.3692 12.5582L24.6868 12.1976Z" />
@@ -165,28 +177,6 @@
               <path d="M26.5624 0H3.43758C1.54129 0 0 1.71254 0 3.81953V21.1805C0 23.2875 1.54129 25 3.43758 25H26.5624C28.4587 25 30 23.2875 30 21.1805V3.81953C30 1.71254 28.4587 0 26.5624 0ZM9.375 5.55547C11.0976 5.55547 12.4999 7.1139 12.4999 9.02786C12.4999 10.9416 11.0976 12.5 9.375 12.5C7.65244 12.5 6.25008 10.9416 6.25008 9.02786C6.25008 7.1139 7.65244 5.55547 9.375 5.55547ZM15 18.4029C15 18.9779 14.58 19.4445 14.0625 19.4445H4.6875C4.17 19.4445 3.75 18.9779 3.75 18.4029V17.7083C3.75 15.6013 5.29129 13.8888 7.18758 13.8888H11.5624C13.4587 13.8888 15 15.6013 15 17.7083V18.4029ZM25.3125 19.4445H18.4376C17.9201 19.4445 17.5001 18.9779 17.5001 18.4029C17.5001 17.8279 17.9201 17.3612 18.4376 17.3612H25.3125C25.83 17.3612 26.25 17.8279 26.25 18.4029C26.25 18.9779 25.83 19.4445 25.3125 19.4445ZM25.3125 13.8888H18.4376C17.9201 13.8888 17.5001 13.4221 17.5001 12.8471C17.5001 12.2721 17.9201 11.8055 18.4376 11.8055H25.3125C25.83 11.8055 26.25 12.2721 26.25 12.8471C26.25 13.4221 25.83 13.8888 25.3125 13.8888ZM25.3125 8.33333H18.4376C17.9201 8.33333 17.5001 7.86667 17.5001 7.29167C17.5001 6.71666 17.9201 6.25 18.4376 6.25H25.3125C25.83 6.25 26.25 6.71666 26.25 7.29167C26.25 7.86667 25.83 8.33333 25.3125 8.33333Z"/>
           </svg>
           e-BALTAB
-      </a>
-      <a href="" class="menu">
-        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
-            <path d="M8.86452 7.66673H1.67702C0.752266 7.66673 0 6.91446 0 5.98952V1.67702C0 0.752266 0.752266 0 1.67702 0H8.86452C9.78946 0 10.5417 0.752266 10.5417 1.67702V5.98952C10.5417 6.91446 9.78946 7.66673 8.86452 7.66673ZM1.67702 1.4375C1.54489 1.4375 1.4375 1.54489 1.4375 1.67702V5.98952C1.4375 6.12183 1.54489 6.22923 1.67702 6.22923H8.86452C8.99683 6.22923 9.10422 6.12183 9.10422 5.98952V1.67702C9.10422 1.54489 8.99683 1.4375 8.86452 1.4375H1.67702Z"/>
-            <path d="M8.86452 22.9997H1.67702C0.752266 22.9997 0 22.2475 0 21.3227V11.2602C0 10.3353 0.752266 9.58301 1.67702 9.58301H8.86452C9.78946 9.58301 10.5417 10.3353 10.5417 11.2602V21.3227C10.5417 22.2475 9.78946 22.9997 8.86452 22.9997ZM1.67702 11.0205C1.54489 11.0205 1.4375 11.1279 1.4375 11.2602V21.3227C1.4375 21.4548 1.54489 21.5622 1.67702 21.5622H8.86452C8.99683 21.5622 9.10422 21.4548 9.10422 21.3227V11.2602C9.10422 11.1279 8.99683 11.0205 8.86452 11.0205H1.67702Z"/>
-            <path d="M21.3227 22.9997H14.1352C13.2103 22.9997 12.458 22.2475 12.458 21.3227V17.0102C12.458 16.0853 13.2103 15.333 14.1352 15.333H21.3227C22.2475 15.333 22.9997 16.0853 22.9997 17.0102V21.3227C22.9997 22.2475 22.2475 22.9997 21.3227 22.9997ZM14.1352 16.7705C14.0029 16.7705 13.8955 16.8779 13.8955 17.0102V21.3227C13.8955 21.4548 14.0029 21.5622 14.1352 21.5622H21.3227C21.4548 21.5622 21.5622 21.4548 21.5622 21.3227V17.0102C21.5622 16.8779 21.4548 16.7705 21.3227 16.7705H14.1352Z"/>
-            <path d="M21.3227 13.4167H14.1352C13.2103 13.4167 12.458 12.6645 12.458 11.7395V1.67702C12.458 0.752266 13.2103 0 14.1352 0H21.3227C22.2475 0 22.9997 0.752266 22.9997 1.67702V11.7395C22.9997 12.6645 22.2475 13.4167 21.3227 13.4167ZM14.1352 1.4375C14.0029 1.4375 13.8955 1.54489 13.8955 1.67702V11.7395C13.8955 11.8718 14.0029 11.9792 14.1352 11.9792H21.3227C21.4548 11.9792 21.5622 11.8718 21.5622 11.7395V1.67702C21.5622 1.54489 21.4548 1.4375 21.3227 1.4375H14.1352Z"/>
-            </g>
-            <defs>
-            <clipPath id="clip0">
-            <rect width="23" height="23" fill="white"/>
-            </clipPath>
-            </defs>
-        </svg>
-        Dashboard
-      </a>
-      <a href="" class="menu">
-          <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M29.88 1.29104C29.7279 0.782227 29.4367 0.37789 29.0703 0.166586C28.89 0.0598855 28.6964 0.00329005 28.5004 0H21.0026C20.6049 0 20.2235 0.219388 19.9423 0.6099C19.661 1.00041 19.503 1.53006 19.503 2.08233C19.503 2.63459 19.661 3.16424 19.9423 3.55475C20.2235 3.94527 20.6049 4.16465 21.0026 4.16465H24.8865L16.5039 15.8049L11.5703 8.93318C11.4309 8.73801 11.2651 8.5831 11.0823 8.47738C10.8996 8.37166 10.7036 8.31723 10.5057 8.31723C10.3077 8.31723 10.1117 8.37166 9.92895 8.47738C9.74622 8.5831 9.58036 8.73801 9.44096 8.93318L0.443569 21.4271C0.303017 21.6207 0.191458 21.851 0.115327 22.1048C0.039196 22.3585 0 22.6307 0 22.9056C0 23.1805 0.039196 23.4527 0.115327 23.7064C0.191458 23.9602 0.303017 24.1905 0.443569 24.384C0.582973 24.5792 0.748827 24.7341 0.931563 24.8399C1.1143 24.9456 1.3103 25 1.50826 25C1.70622 25 1.90222 24.9456 2.08496 24.8399C2.26769 24.7341 2.43355 24.5792 2.57295 24.384L10.5057 13.3477L15.4392 20.2194C15.5786 20.4146 15.7445 20.5695 15.9272 20.6752C16.11 20.7809 16.306 20.8353 16.5039 20.8353C16.7019 20.8353 16.8979 20.7809 17.0806 20.6752C17.2633 20.5695 17.4292 20.4146 17.5686 20.2194L27.0009 7.10074V12.494C27.0009 13.0462 27.1589 13.5759 27.4401 13.9664C27.7213 14.3569 28.1027 14.5763 28.5004 14.5763C28.8981 14.5763 29.2796 14.3569 29.5608 13.9664C29.842 13.5759 30 13.0462 30 12.494V2.08233C29.9976 1.81021 29.9569 1.54138 29.88 1.29104Z"/>
-          </svg>
-          e-AKUNTING
       </a>
       <a href="" class="menu">
           <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -213,6 +203,11 @@
     <script src="../../assets/vendors/slick/slick.min.js"></script>
     <!--Custom Js-->
     <script src="../js/dashboard-eBaltab.js"></script>
+    <script src="../../COREJS/jscase.js"></script>
+    <script src="../../COREJS/runtime.js"></script>
+    <script>
+      this.editdatapokok()
+    </script>
 
 </body>
 </html>

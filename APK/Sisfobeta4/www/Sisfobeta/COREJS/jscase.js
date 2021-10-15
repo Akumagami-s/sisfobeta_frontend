@@ -1,7 +1,7 @@
 function pooin(auth) {
     alert(auth.message)
-    // console.log(auth);
     if (auth.message=='Success') {
+    sessionStorage.setItem("ActiveSession", 1);
     sessionStorage.setItem("nrp", auth.data.nrp);
     sessionStorage.setItem("nama", auth.data.name);
     sessionStorage.setItem("role", auth.data.role);
@@ -14,15 +14,25 @@ function pooin(auth) {
     if(sessionStorage.getItem("role")>=2){
         window.location.replace("../Sisfobeta/mobile/eBALTAB/user-eBaltab.html");
     }else{
-
-    }
+        window.location.replace("../Sisfobeta/mobile/eBALTAB/user-eBaltab.html");
+        }
     }
 }
-// function session() {
-//     // body...
-// }
+
 function sesce() {
-    console.log(sessionStorage);
+        const bin=sessionStorage.getItem("ActiveSession")
+        if (bin!=1) {
+            window.location.replace("../../login.html");
+        }
+}
+function logsesce() {
+        const bin=sessionStorage.getItem("ActiveSession")
+        if (bin==1) {
+            console.log('sama')
+             window.location.replace("../Sisfobeta/mobile/eBALTAB/user-eBaltab.html");
+        }else{
+            console.log('beda')
+        }
 }
 
 function login() {
@@ -70,5 +80,26 @@ function datapokok() {
           .catch((error) => {
             console.error('Error:', error);
           });
-
 }
+
+function editdatapokok() {
+    // const nrp=sessionStorage.getItem("nrp")
+    // document.getElementsByClassName('pp_js')[1].src=sessionStorage.getItem("thump")
+    // document.getElementsByClassName('pp_js')[0].src=sessionStorage.getItem("thump")
+    fetch('https://asiabytes.tech/baltab/api/AjaxEdit/527216', {
+          method: 'GET', // or 'PUT'
+          headers: {
+          'specToken': 'eyJpdiI6IktxSmlSV1k1WW1ZWTJKaGdXK2FnM2c9PSIsInZhbHVlIjoiYVgwbndSdDN4bGhFdmkrWGIzY3VCZk95UjFiT2pjYWRWd0RaSEdXaTl2ST0iLCJtYWMiOiIxN2VmMDZhMWRkMTZkNmFkNTBjM2U0ZDhjNmJlZmZhMmI2ODc2ZTdlY2ZlZTcwNzMyNjIxZjY4OTExODZiYmE2IiwidGFnIjoiIn0=',
+          },
+          })
+          .then(response => response.text())
+          .then(data => {
+            // console.log('as');
+            // console.log(data);
+            document.getElementsByClassName('wrapperContent')[0].innerHTML=data
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+}
+// notifpoin

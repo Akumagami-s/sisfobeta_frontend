@@ -10,14 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!--Dashboard Css-->
     <link rel="stylesheet" href="./assets/css/login.css">
-
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">    
 </head>
 <body>
-
     <section class="authLogin">
-        
         <div class="wrapperAuth">
             <div class="leftBackground">
                 <div class="gradient">
@@ -36,14 +32,14 @@
                 <div class="headingAuth">
                     <div class="textWelcome">
                         <h1 class="welcome">SELAMAT DATANG DI</h1>
-                        <h1 class="nameApps">SISFOBETA <span class="version">4.0</span></h1>
+                        <h1 class="nameApps" style="font-family: steelfish;">SISFOBETA <span class="version">4.0</span></h1>
                     </div>
                     <div class="patners">
                         <div class="tni_ad">
                             <img src="./assets/img/tni_logo.png" alt="">
                         </div>
                         <div class="bank-btn">
-                            <img src="https://i.ibb.co/KxsBZk9/photo-2021-10-06-15-38-20-removebg-preview.png" alt="">
+                            <img src="https://i.ibb.co/KxsBZk9/photo-2021-10-06-15-38-20-removebg-preview.png" alt="" style="min-width: 200px; max-width: 200px;">
                         </div>
                     </div>
                 </div>
@@ -62,7 +58,7 @@
                                 <img src="./assets/img/key.svg" alt="">
                             </div>
                             <input class="form-control password" id="PW" type="password" placeholder="Masukan password anda" id="password" autocomplete="new-password">
-                            <i class="bi bi-eye-slash eyesPassword" id="togglePassword"></i>
+                            <i class="bi bi-eye-slash eyesPassword" id="togglePassword" onclick="matamas()"></i>
                         </div>
                         <div class="confirmation-user d-flex align-items-center justify-content-between">
                             <!-- <div class="form-check">
@@ -73,7 +69,7 @@
                             </div> -->
                             <a class="forgetPassowrd" href="https://asiabytes.tech/forgot_password">Lupa Password</a>
                         </div>
-                        <a class="btn login" href="#" onclick="login()">Masuk</a>
+                        <a class="btn login text-light" href="#" onclick="login()">Masuk</a>
 
                         <div class="toRegisterPage">
                             <p>Belum punya akun? <a href="../register/register.html">Daftar</a></p>
@@ -98,18 +94,21 @@
     <script src="../assets/js/chartjs/ui-chart.js"></script>
 
     <script>
-
-        const togglePassword = document.querySelector('#togglePassword');
-        const password = document.querySelector('#password');
-        
-        togglePassword.addEventListener('click', function (e) {
-            // toggle the type attribute
-            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
-
-            this.classList.toggle('bi-eye');
-        });
+        function matamas() {
+            const bu=document.getElementById('PW').type
+            if (bu=='password') {
+                document.getElementById('PW').type='text'
+                document.getElementById('togglePassword').classList.toggle('bi-eye');
+            }else{
+                document.getElementById('PW').type='password'
+                document.getElementById('togglePassword').classList.toggle('bi-eye');
+            }
+        }
     </script>
     <script src="COREJS/jscase.js"></script>
+    <script type="text/javascript">
+        console.log('asssss')
+        this.logsesce()
+    </script>
 </body>
 </html>

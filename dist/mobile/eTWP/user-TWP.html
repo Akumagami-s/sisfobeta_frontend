@@ -18,8 +18,17 @@
     <link rel="stylesheet" href="../../assets/vendors/slick/slick-theme.css">
     <!--ETWP User Css-->
     <link rel="stylesheet" href="../css/eTWP-user.css">
+    <style>
+      .hide{
+        display: none;
+      }
+    </style>
 </head>
 <body>
+
+  <style>
+    
+  </style>
     <div id="mainHeader">
         <!--Navbar-->
         <nav class="navbar navbar-light ">
@@ -593,10 +602,16 @@
             id="tabungan-tabs-menu" 
             role="tabpanel" 
             aria-labelledby="tabungan-tabs">
+
+            <!-- select -->
+            <select id="select" class="form-select mb-4" aria-label="Default select example">
+              <option selected value="!rekap">Rekap</option>
+              <option value="!rincian">Rincian</option>
+            </select>
             
             <div class="d-flex dataWrapper">
               <div class="wrapperTableInfoData d-flex">
-                  <table class="table table-striped">
+                  <table class="table table-striped" id="tableRekap">
                       <tbody>
                         <tr>
                           <td colspan="2"><h4>MULYONO/28678</h4></td>
@@ -709,6 +724,74 @@
                 <div class="notice d-flex">
                     <p>Perhatian : Perhitungan diatas hanya meruapakan simulasi yang menggunakan sistem Perbulatan. Tingkat imbal hasil tabungan dari perhitungan simulasi tersebut bukanlah suatu jaminan, tetapi hanya merupakan indikasi berdasarkan rata-rata historis. Realisasi pengembalian tabungan tergantung pada kebijaksanaan pimpinan TNI-AD dalam penentuan pemotongan tabungan dan suku bunga.</p>
                 </div>
+
+              </div>
+            </div>
+
+            <div class="d-flex dataWrapper" >
+              <div class="wrapperTableInfoData d-flex">
+
+                  <table class="table table-striped hide" id="tableRincian">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <ul class="list-unstyled">
+                              <li class="fw-bold">Tanggal</li>
+                              <li class="fw-bold">Keterangan</li>
+                              <li class="fw-bold">Index</li>
+                              <li class="fw-bold">Total</li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul class="list-unstyled">
+                              <li>19 Oktober 2021</li>
+                              <li>-</li>
+                              <li>100.000</li>
+                              <li>Rp.2.500.000</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <ul class="list-unstyled">
+                              <li class="fw-bold">Keterangan</li>
+                              <li class="fw-bold">Periode</li>
+                              <li class="fw-bold">Jumlah Bulan</li>
+                              <li class="fw-bold">Nominal</li>
+                              <li class="fw-bold">Total</li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul class="list-unstyled">
+                              <li>19 Oktober 2021</li>
+                              <li>-</li>
+                              <li>100.000</li>
+                              <li>Rp.2.500.000</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <ul class="list-unstyled">
+                              <li class="fw-bold">Keterangan</li>
+                              <li class="fw-bold">Periode</li>
+                              <li class="fw-bold">Jumlah Bulan</li>
+                              <li class="fw-bold">Nominal</li>
+                              <li class="fw-bold">Total</li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul class="list-unstyled">
+                              <li>19 Oktober 2021</li>
+                              <li>-</li>
+                              <li>100.000</li>
+                              <li>Rp.2.500.000</li>
+                            </ul>
+                          </td>
+                        </tr>
+                       
+                      </tbody>
+                  </table>
 
               </div>
             </div>
@@ -843,6 +926,25 @@
           $('#collapseOne').removeClass('show');
           $('#collapseTwo').removeClass('show');
       });
+
+      // $("#select").on('change', function(event){
+      //   if($(this).val()==rician){
+      //     console.log('ok');
+      //   }
+      //   console.log($(this).val());
+      // });
+
+
+      // $('!rincian').click(function(event) {
+      //       $('#tableRekap').addClass('hide');
+      //       $('#tableRincian').removeClass('hide')
+      //   });
+
+
+      // if(value = '!rincian'){
+      //   $('#tableRekap').addClass('hide');
+      // }
+
 
     </script>
 

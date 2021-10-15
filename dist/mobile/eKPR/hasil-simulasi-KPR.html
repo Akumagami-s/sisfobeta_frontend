@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Data</title>
+    <title>Simulasi KPR</title>
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../../assets/vendors/bootstrap/css/bootstrap.min.css">
     <!--unicons-->
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="../../assets/vendors/slick/slick-theme.css">
     <!--Ebaltab User Css-->
-    <link rel="stylesheet" href="../css/edit-dataPokok-mobile.css">
+    <link rel="stylesheet" href="../css/simulasi-KPR-mobile.css">
 </head>
 <body>
     <div id="mainHeader">
@@ -242,196 +242,75 @@
             </div>
         </nav>
         <!--End Navbar-->
+        <div class="wrapperMainMenu">
+            <a href="#" class="menu">Dashboard</a>
+            <a href="#" class="menu active">Simulasi KPR</a>
+            <a href="#" class="menu">Pinjaman</a>
+        </div>
     </div>
 
-    <div class="wrapperContent container mt-3">
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button id="one" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              RH
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              
-                <div class="imgProfil">
-                    <center><img src="../../assets/img/profil.png" class=""></center>
-                </div>
-                <form class="mt-2">
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">NRP</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Nama Prajurit</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Pangkat Prajurit</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Tanggal Pengangkatan</label>
-                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="disabledSelect" class="form-label">Corp</label>
-                    <select id="disabledSelect" class="form-select">
-                      <option>1</option>
-                      <option>2</option>
-                    </select>
-                  </div>
-                  <div class="mb-2">
-                    <label for="disabledSelect" class="form-label">Kotama</label>
-                    <select id="disabledSelect" class="form-select">
-                      <option>1</option>
-                      <option>2</option>
-                    </select>
-                  </div>
-                  <div class="mb-2">
-                    <label for="disabledSelect" class="form-label">Kesatuan</label>
-                    <select id="disabledSelect" class="form-select">
-                      <option>1</option>
-                      <option>2</option>
-                    </select>
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Tanggal Lahir</label>
-                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </form>
-            </div>
-          </div>
+    <div class="mainContent">
+        <h1 class="nameContent">Simulasi KPR</h1>
+        <div class="table-responsive wrapperTable">
+            <table class="table">
+                <thead class="headTable">
+                  <tr>
+                    <th scope="col">Angsuran Ke</th>
+                    <th scope="col">Angsuran Pokok</th>
+                    <th scope="col">Angsuran Bunga</th>
+                    <th scope="col">Besar Angsuran</th>
+                    <th scope="col">Sisa Pinjaman Pokok</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                </tbody>
+            </table>
         </div>
-      </div>
-
-      <div class="accordion mt-3" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button id="two" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-              Pangkat
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-
-                <form class="mt-2">
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">TMT Tamtama</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">TMT Bintara</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Kd Pama</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">TMT Pamen</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">TMT Pati</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion mt-3" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button id="three" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-              Riwayat
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-
-                <form class="mt-2">
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">TMT Pangkat</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">TMT Pensiun</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Kd Bansus</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">TMT Perwira</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">No Debitur</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">TMT KTg</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Gaji Pokok</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Tunjangan Istri</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Tunjangan Anak</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion mt-3" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button id="four" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
-              Info Rekening
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-
-                <form class="mt-2">
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Nomor Rekening</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Nama Bank</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-2">
-                    <label for="exampleInputEmail1" class="form-label">Nama Pemilik Rekening</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="actionButton fade show justify-content-end">
-        <button class="btn btn-success d-flex align-items-center" type="edit">
-            <img src="../../assets/img/floppy-disk 3.svg" style="height: 15px;">
-            Update
-        </button>
-      </div>
-
+    </div>
+    
+    <div class="mobileMenu">
+      
+      <a href="" class="menu active">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.6868 12.1976C25.14 11.6828 25.0962 10.8937 24.5891 10.4356L13.4163 0.337365C12.9091 -0.120727 12.0961 -0.111131 11.5996 0.358998L0.388821 10.974C-0.107637 11.4441 -0.132003 12.2322 0.334872 12.7335L0.615943 13.0358C1.08225 13.5371 1.83598 13.5969 2.29837 13.1689L3.1362 12.3939V23.7403C3.1362 24.4364 3.68229 25 4.35575 25H8.72575C9.39921 25 9.9453 24.4364 9.9453 23.7403V15.8024H15.5193V23.7403C15.5096 24.4359 15.9914 24.9995 16.6649 24.9995H21.296C21.9695 24.9995 22.5156 24.4359 22.5156 23.7398V12.5537C22.5156 12.5537 22.747 12.7631 23.0325 13.0223C23.3175 13.2809 23.916 13.0735 24.3692 12.5582L24.6868 12.1976Z" />
+          </svg>
+          e-KPR
+      </a>
+      <a href="" class="menu">
+          <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.5624 0H3.43758C1.54129 0 0 1.71254 0 3.81953V21.1805C0 23.2875 1.54129 25 3.43758 25H26.5624C28.4587 25 30 23.2875 30 21.1805V3.81953C30 1.71254 28.4587 0 26.5624 0ZM9.375 5.55547C11.0976 5.55547 12.4999 7.1139 12.4999 9.02786C12.4999 10.9416 11.0976 12.5 9.375 12.5C7.65244 12.5 6.25008 10.9416 6.25008 9.02786C6.25008 7.1139 7.65244 5.55547 9.375 5.55547ZM15 18.4029C15 18.9779 14.58 19.4445 14.0625 19.4445H4.6875C4.17 19.4445 3.75 18.9779 3.75 18.4029V17.7083C3.75 15.6013 5.29129 13.8888 7.18758 13.8888H11.5624C13.4587 13.8888 15 15.6013 15 17.7083V18.4029ZM25.3125 19.4445H18.4376C17.9201 19.4445 17.5001 18.9779 17.5001 18.4029C17.5001 17.8279 17.9201 17.3612 18.4376 17.3612H25.3125C25.83 17.3612 26.25 17.8279 26.25 18.4029C26.25 18.9779 25.83 19.4445 25.3125 19.4445ZM25.3125 13.8888H18.4376C17.9201 13.8888 17.5001 13.4221 17.5001 12.8471C17.5001 12.2721 17.9201 11.8055 18.4376 11.8055H25.3125C25.83 11.8055 26.25 12.2721 26.25 12.8471C26.25 13.4221 25.83 13.8888 25.3125 13.8888ZM25.3125 8.33333H18.4376C17.9201 8.33333 17.5001 7.86667 17.5001 7.29167C17.5001 6.71666 17.9201 6.25 18.4376 6.25H25.3125C25.83 6.25 26.25 6.71666 26.25 7.29167C26.25 7.86667 25.83 8.33333 25.3125 8.33333Z"/>
+          </svg>
+          e-BALTAB
+      </a>
+      <a href="" class="menu">
+          <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.25 7.60758C7.25 11.8092 10.8761 15.2152 15.3494 15.2152C19.8226 15.2152 23.4488 11.8092 23.4488 7.60758C23.4488 3.40597 19.8226 0 15.3494 0C10.8783 0.00461093 7.25518 3.40802 7.25 7.60758ZM15.3494 1.04925C19.2057 1.04925 22.3317 3.98541 22.3317 7.60758C22.3317 11.2297 19.2057 14.1659 15.3494 14.1659C11.4931 14.1659 8.36708 11.2297 8.36708 7.60758C8.37144 3.9872 11.495 1.05335 15.3494 1.04925Z"/>
+              <path d="M26.2017 16.5082L21.8264 18.4499C21.2223 17.3945 20.0635 16.7229 18.7882 16.6891L14.7492 16.5848C14.1096 16.5676 13.4821 16.4155 12.9135 16.1396L12.5025 15.9395C10.3981 14.9092 7.88987 14.9118 5.78771 15.9462L5.81335 15.0716C5.8218 14.7819 5.5788 14.5406 5.27035 14.5327L0.841298 14.4182C0.532846 14.4102 0.276212 14.6385 0.267757 14.9282L0.000214085 24.0574C-0.00824033 24.3471 0.234757 24.5884 0.543209 24.5964L4.97226 24.7109H4.98753C5.29026 24.7109 5.53789 24.4847 5.54607 24.2006L5.55889 23.7638L6.70952 23.1852C7.16115 22.9569 7.68915 22.9026 8.18251 23.0338L15.0535 24.8451C15.0655 24.8484 15.0775 24.851 15.0898 24.8536C15.5864 24.9512 16.0926 25.0001 16.5999 24.9998C17.6744 25.0003 18.7364 24.7829 19.713 24.3617C19.737 24.3515 19.7602 24.3394 19.7823 24.3259L29.7447 18.2732C29.9929 18.1223 30.073 17.8162 29.9277 17.5744C29.188 16.3417 27.5476 15.8722 26.2017 16.5082ZM1.1323 23.562L1.36902 15.4815L4.68126 15.5671L4.44454 23.6478L1.1323 23.562ZM19.2099 23.4247C17.9965 23.939 16.6413 24.081 15.3372 23.8307L8.48469 22.024C7.71342 21.8193 6.88788 21.9041 6.18234 22.2604L5.59435 22.5563L5.75171 17.1837C7.61497 16.0197 10.0046 15.9001 11.9889 16.8712L12.3999 17.0713C13.1183 17.4197 13.9105 17.6118 14.7186 17.6338L18.758 17.7381C19.8925 17.7688 20.856 18.5276 21.0862 19.5717L15.0696 19.4157C14.7612 19.4077 14.5045 19.6362 14.4958 19.9257C14.4874 20.2154 14.7306 20.4567 15.0388 20.4647L21.6786 20.6363H21.6941C21.9966 20.6361 22.2439 20.4099 22.2521 20.126C22.2589 19.898 22.2409 19.6698 22.1981 19.4454L26.6858 17.4537C26.6902 17.4519 26.6945 17.4499 26.6989 17.4478C27.3354 17.1453 28.1051 17.2465 28.6287 17.7017L19.2099 23.4247Z"/>
+              <path d="M13.4028 7.76025H12.439V9.67773H11.5742V4.70117H13.3242C13.8984 4.70117 14.3416 4.82992 14.6538 5.0874C14.966 5.34489 15.1221 5.71745 15.1221 6.20508C15.1221 6.53776 15.0412 6.81689 14.8794 7.04248C14.7199 7.26579 14.4966 7.43783 14.2095 7.55859L15.3271 9.6333V9.67773H14.4009L13.4028 7.76025ZM12.439 7.06641H13.3276C13.6193 7.06641 13.8472 6.99349 14.0112 6.84766C14.1753 6.69954 14.2573 6.49788 14.2573 6.24268C14.2573 5.97607 14.181 5.76986 14.0283 5.62402C13.8779 5.47819 13.6523 5.40299 13.3516 5.39844H12.439V7.06641ZM19.1006 7.86621C19.1006 8.43815 18.9707 8.89502 18.7109 9.23682C18.4512 9.57633 18.1025 9.74609 17.665 9.74609C17.2594 9.74609 16.9347 9.61279 16.6909 9.34619V11.0996H15.8604V5.97949H16.626L16.6602 6.35547C16.904 6.05924 17.2355 5.91113 17.6548 5.91113C18.106 5.91113 18.4591 6.07975 18.7144 6.41699C18.9718 6.75195 19.1006 7.21794 19.1006 7.81494V7.86621ZM18.2734 7.79443C18.2734 7.42529 18.1994 7.13249 18.0513 6.91602C17.9054 6.69954 17.6958 6.59131 17.4224 6.59131C17.0828 6.59131 16.839 6.73145 16.6909 7.01172V8.65234C16.8413 8.93945 17.0874 9.08301 17.4292 9.08301C17.6935 9.08301 17.8997 8.97705 18.0479 8.76514C18.1982 8.55094 18.2734 8.22738 18.2734 7.79443Z"/>
+          </svg>
+          e-TWP
+      </a>
     </div>
 
 
@@ -447,28 +326,22 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--Slick Js-->
     <script src="../../assets/vendors/slick/slick.min.js"></script>
-    <!--Custom Js-->
-    <script src="../js/dashboard-eBaltab.js"></script>
+
     <script>
-      $("#one").on('click', function(event){
-          $('#collapseTwo').removeClass('show');
-          $('#collapseThree').removeClass('show');
-          $('#collapseFour').removeClass('show');
-      });
-      $("#two").on('click', function(event){
-          $('#collapseOne').removeClass('show');
-          $('#collapseThree').removeClass('show');
-          $('#collapseFour').removeClass('show');
-      });
-      $("#three").on('click', function(event){
-          $('#collapseOne').removeClass('show');
-          $('#collapseTwo').removeClass('show');
-          $('#collapseFour').removeClass('show');
-      });
-      $("#four").on('click', function(event){
-          $('#collapseOne').removeClass('show');
-          $('#collapseTwo').removeClass('show');
-          $('#collapseThree').removeClass('show');
+        $('.wrapperProperti').slick({
+            infinite: false,
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+            arrows : false,
+            dots : false,
+        });
+
+        $('.wrapperHunianPilihan').slick({
+            infinite: false,
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+            arrows : false,
+            dots : false,
       });
     </script>
 

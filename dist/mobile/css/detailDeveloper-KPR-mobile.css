@@ -1,0 +1,374 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  font-family: 'Poppins', sans-serif;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Styling
+------------*/
+.nameContent {
+  font-weight: 500;
+  margin-bottom: .5rem;
+  font-size: 16px;
+}
+
+#mainHeader .navbar {
+  margin-bottom: 0;
+}
+
+#mainHeader .navbar .navbarHome {
+  display: none;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+#mainHeader .wrapperMainMenu {
+  padding: .5rem 0;
+}
+
+#mainHeader .wrapperMainMenu .menu {
+  font-size: 12px;
+  padding: .5rem .3rem;
+}
+
+#mainHeader .wrapperMainMenu .menu::before {
+  height: 3px;
+  bottom: -8.5px;
+}
+
+.wrapperProfilDeveloper {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.wrapperProfilDeveloper .sampulUser img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wrapperProfilDeveloper .profilUser {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapperMoreInformation .nav-tabs {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  flex-wrap: nowrap;
+  padding: .5rem 0;
+}
+
+.wrapperMoreInformation .nav-tabs .nav-link {
+  font-size: 11px;
+  width: 100%;
+  margin: 0;
+  font-weight: 500;
+  padding: .5rem;
+}
+
+.wrapperMoreInformation .nav-tabs .nav-link::before {
+  height: 3px;
+  bottom: -8.8px;
+}
+
+.wrapperMoreInformation .tab-content {
+  padding: 2rem 1rem;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .content {
+  padding: .7rem 0 1.5rem 0;
+  border-bottom: 1px solid #9D9D9D;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .content .isiContent {
+  font-size: 12px;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperAction {
+  margin-bottom: 1rem;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperAction .wrapperFilter {
+  width: 100%;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperAction .wrapperFilter .urutkanBtn {
+  width: 100%;
+  justify-content: space-between;
+  border: none;
+  background: #FFFFFF;
+  border: 0.5px solid #818181;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #000;
+  font-size: 12px;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperAction .wrapperFilter .filterMenu {
+  width: 100%;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperAction .wrapperFilter .filterMenu .dropdown-item {
+  font-size: 12px;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti {
+  text-decoration: none;
+  background: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .imagesProperti {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas p {
+  color: #000;
+  font-weight: 500;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas span {
+  color: #000;
+  font-weight: 500;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan {
+  font-weight: 600;
+  color: #000;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan .tipeRumah {
+  color: #FF0000;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .location {
+  font-weight: 600;
+  color: #000;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .totalYangTersedia {
+  color: #97BB7D;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails {
+  margin-top: 1.5rem;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .priceProperti {
+  color: #28A745;
+  font-weight: 600;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr h3, .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga h3 {
+  color: #000;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueKPR, .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueSukuBunga, .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueKPR, .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueSukuBunga {
+  color: #28A745;
+  font-weight: 500;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperUlasan form .form-group {
+  margin-bottom: 1rem;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperUlasan form .form-group textarea {
+  font-size: 12px;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperUlasan .button {
+  width: 100%;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperUlasan .button .btnKirimUlasan {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperUlasan .ulasan {
+  margin-top: 2rem;
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+}
+
+.wrapperMoreInformation .tab-content .tab-pane .wrapperUlasan .ulasan li {
+  padding: 1rem 1rem;
+  font-size: 12px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  border-radius: 10px;
+}
+
+.wrapperMoreInformation .tab-content #ulasan-tab p {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 0px) {
+  .wrapperProfilDeveloper {
+    position: relative;
+  }
+  .wrapperProfilDeveloper .sampulUser img {
+    min-height: 150px;
+    max-height: 150px;
+  }
+  .wrapperProfilDeveloper .profilUser .profilImages {
+    position: absolute;
+    top: -35px;
+  }
+  .wrapperProfilDeveloper .profilUser .profilImages img {
+    min-width: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper {
+    margin-top: 5rem;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .nameDeveloper {
+    font-size: 16px;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .keteranganDeveloper {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .wrapperNumber svg, .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .wrapperLocation svg, .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .wrapperEmail svg {
+    margin-right: .1rem;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .wrapperNumber span, .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .wrapperLocation span, .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .wrapperEmail span {
+    font-size: 14px;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage {
+    margin-top: 1rem;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage .btnKirimPesan {
+    background: #28a745;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    padding: .3rem 1rem;
+    width: 100%;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage .modal .modal-dialog .modal-header {
+    background: #DDDDDD;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage .modal .modal-dialog .modal-header .modal-title {
+    font-size: 14px;
+    text-align: start;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage .modal .modal-dialog .modal-header .modal-title {
+    font-weight: 600;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage .modal .modal-dialog .modal-body {
+    text-align: start;
+  }
+  .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage .modal .modal-dialog .modal-body form label, .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage .modal .modal-dialog .modal-body form input, .wrapperProfilDeveloper .profilUser .informationAboutDeveloper .modalMassage .modal .modal-dialog .modal-body form textarea {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti {
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    width: 100%;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .imagesProperti {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti {
+    padding: 1rem;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan .tipeRumah {
+    margin-right: .3rem;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas {
+    margin-bottom: .5rem;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas p {
+    font-size: 12px;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .wrapperFasilitas .fasilitas span {
+    font-size: 12px;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .namaPerumahan {
+    font-size: 14px;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .location {
+    font-size: 12px;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .totalYangTersedia {
+    font-size: 12px;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .developer {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: .5rem;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .developer .nameDeveloper {
+    color: #0094FF;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .priceProperti {
+    font-size: 18px;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga {
+    margin-top: 1rem;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr h3, .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga h3 {
+    font-size: 14px;
+  }
+  .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueKPR, .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .kpr .valueSukuBunga, .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueKPR, .wrapperMoreInformation .tab-content .tab-pane .wrapperProperti .properti .wrapperInformationProperti .moreDetails .wrapperKprDanSukuBunga .sukuBuanga .valueSukuBunga {
+    font-size: 12px;
+  }
+}

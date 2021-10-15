@@ -1,0 +1,64 @@
+.notice{
+    background-color: #A2A846;
+    border-radius: 10px;
+  }
+  .notice .info{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .notice .content{
+    color: white;
+    font-size: 14px;
+  }
+  .notice .ajukanKPR{
+    background-color: white;
+    color: #A2A846;
+  }
+  .listDaftarProperti{
+    width: 50%;
+    border-radius: 10px;
+  }
+  .mainContent {
+      margin-bottom: 3rem;
+  }
+  .static .angsuran{
+    border-radius: 10px;
+    height: auto;
+  }
+  .bulet{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #7334FF;
+    margin-right: .2rem;
+  }
+  .bulett{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #A2A846;
+    margin-right: .2rem;
+  }
+  .bulet1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: .2rem;
+  }
+  .bulet0{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: .2rem;
+  }
+
+  @media screen and (min-width :1400px) {
+    .mainContent .container-fluid .wrapperKpr .contentKpr .daftarPropertiContainer .wrapperDaftarProperti .listDaftarProperti{
+        width: 50%;
+    }
+    
+  }
+

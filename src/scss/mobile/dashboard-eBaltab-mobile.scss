@@ -44,6 +44,24 @@ Styling
 }
 #mainHeader {
     .navbar {
+        margin-bottom: 0;
+        .navbarBack {
+            display: none;
+        }
+        .container-fluid {
+            .userControl {
+                .notification {
+                    .dropdown {
+                        .dropdown-menu {
+                            max-height: 350px;
+                            overflow-y: scroll;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar {
         .container-fluid {
             .navbar-brand {
                 .brand-title {

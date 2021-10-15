@@ -140,11 +140,13 @@
                 <h1 class="namePages">Edit Data Prajurit</h1>
                 <div class="userControl">
                     <div class="notification">
-                      <div class="dropdown">                        
+                      <div class="dropdown">
+                        
                         <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
                           <ion-icon name="notifications-outline"></ion-icon>
                           <div class="numberNotif">2</div>
                         </button>
+    
                         <ul class="dropdown-menu" aria-labelledby="notification">
                           <li>
                             <a class="dropdown-item" href="#">
@@ -417,6 +419,47 @@
                     <label for="exampleInputEmail1" class="form-label">Nama Pemilik Rekening</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
+                  <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">TMT Pamen</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">TMT Pati</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion mt-3" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button id="five" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+              Keluarga
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+                <form class="mt-2">
+                  <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Istri</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Anak 1</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Anak 2</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <label for="floatingTextarea" class="form-label">Alamat</label>
+                  <div class="form-floating mb-2"> 
+                    <textarea class="form-control" id="floatingTextarea"></textarea> 
+                  </div>
                 </form>
             </div>
           </div>
@@ -452,21 +495,31 @@
           $('#collapseTwo').removeClass('show');
           $('#collapseThree').removeClass('show');
           $('#collapseFour').removeClass('show');
+          $('#collapseFive').removeClass('show');
       });
       $("#two").on('click', function(event){
           $('#collapseOne').removeClass('show');
           $('#collapseThree').removeClass('show');
           $('#collapseFour').removeClass('show');
+          $('#collapseFive').removeClass('show');
       });
       $("#three").on('click', function(event){
           $('#collapseOne').removeClass('show');
           $('#collapseTwo').removeClass('show');
           $('#collapseFour').removeClass('show');
+          $('#collapseFive').removeClass('show');
       });
       $("#four").on('click', function(event){
           $('#collapseOne').removeClass('show');
           $('#collapseTwo').removeClass('show');
           $('#collapseThree').removeClass('show');
+          $('#collapseFive').removeClass('show');
+      });
+      $("#five").on('click', function(event){
+          $('#collapseOne').removeClass('show');
+          $('#collapseTwo').removeClass('show');
+          $('#collapseThree').removeClass('show');
+          $('#collapseFour').removeClass('show');
       });
     </script>
 

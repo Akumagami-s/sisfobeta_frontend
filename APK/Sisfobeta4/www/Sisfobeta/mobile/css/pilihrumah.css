@@ -1,0 +1,426 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+.onScrolled {
+  position: fixed;
+  top: 0;
+}
+
+.nameContent {
+  margin-bottom: 0;
+  font-size: 36px;
+}
+
+.mainContent .headHome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.mainContent .headHome .search {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .headHome .search input {
+  width: 100%;
+  padding: .65rem 1rem;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #A6A6A6;
+  min-width: 400px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border-right: none;
+}
+
+.mainContent .headHome .search input::placeholder {
+  font-size: 14px;
+}
+
+.mainContent .headHome .search input:required {
+  content: 'isi';
+}
+
+.mainContent .headHome .search button {
+  padding: .5rem;
+  border: none;
+  background: linear-gradient(127.42deg, #3D553D 2.41%, #8AAC74 100%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.mainContent .headHome .search button svg {
+  width: 28px;
+  height: 28px;
+}
+
+.mainContent .wrapperPilihRumah .propertiWrapper {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.mainContent .wrapperPilihRumah .propertiWrapper .properti {
+  background: #FFFFFF;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  min-height: 400px;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+}
+
+.mainContent .wrapperPilihRumah .propertiWrapper .properti .fotoProperti {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti {
+  text-align: center;
+  background: linear-gradient(142.66deg, #3C543C 2%, #8AAC74 98.99%) !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti {
+  text-align: center;
+  background: linear-gradient(142.66deg, #3C543C 2%, #8AAC74 98.99%) !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan {
+  display: flex;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan {
+  width: 100%;
+  position: relative;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan:hover .wrapperInformation {
+  display: block;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .nameProperti {
+  position: absolute;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  top: 40px;
+  z-index: 2;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .imagesProperti {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation {
+  padding: .7rem;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 3;
+  display: none;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation {
+  background: #fff;
+  border-radius: 15px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .nameInformationProperti {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .textInformation {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .viewMorePropertiPilihan {
+  text-align: start;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  font-weight: 600;
+  text-decoration: none;
+  color: #41593f;
+}
+
+.slick-list {
+  width: 100%;
+}
+
+.slick-list .slick-track {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 0px) {
+  #mainHeader .pembungkus .menu .nav-link {
+    min-width: 180px;
+    min-height: 61px;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper {
+    display: flex;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti {
+    margin: 1rem .8rem;
+    min-height: 370px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti .fotoProperti {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti .informationProperti {
+    padding: 1rem;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti .informationProperti .namePT {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-bottom: .3rem;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti .informationProperti .namePerumahan {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti .informationProperti .detailInformation {
+    margin-top: 2rem;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti .informationProperti .detailInformation .locationProperti {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: .3rem;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti .informationProperti .detailInformation .price {
+    color: #28A745;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .nameKategori {
+    font-size: 24px;
+    width: 100%;
+    font-weight: 500;
+    max-width: 240px;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .promotiontext {
+    width: 100%;
+    max-width: 280px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3rem;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .morePropertButton {
+    text-decoration: none;
+    padding: .7rem 2rem;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: #41593F;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    width: 50%;
+    margin-right: 1rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .nameKategori {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .promotiontext {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .icon svg {
+    width: 100%;
+    max-width: 200px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan {
+    width: 50%;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan {
+    margin: 1rem .5rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .nameProperti {
+    font-size: 18px;
+    width: 100%;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation {
+    padding: 1rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .nameInformationProperti {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #41593f;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .textInformation {
+    font-size: 12px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #mainHeader .pembungkus .menu .nav-link {
+    min-width: 210px;
+    min-height: 61px;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .nameKategori {
+    font-size: 22px;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .promotiontext {
+    font-size: 16px;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .morePropertButton {
+    padding: .7rem 2rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti {
+    width: 30%;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan {
+    width: 70%;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation {
+    padding: 1rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .nameInformationProperti {
+    font-size: 22px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .textInformation {
+    font-size: 14px;
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti .informationProperti {
+    padding: 1.5rem;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti {
+    padding: 5rem 0;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti {
+    width: 25%;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .nameKategori {
+    font-size: 22px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .promotiontext {
+    font-size: 16px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .icon svg {
+    max-width: 150px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan {
+    width: 75%;
+    align-items: center;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation {
+    padding: 1rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .textInformation {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .mainContent .wrapperPilihRumah .propertiWrapper .properti {
+    max-width: 430px;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti {
+    padding: 6rem 0;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .nameKategori {
+    font-size: 28px;
+    max-width: 280px;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .promotiontext {
+    font-size: 18px;
+    max-width: 300px;
+  }
+  .mainContent .wrapperPilihRumah .propertiWrapper .kategoriProperti .morePropertButton {
+    padding: .7rem 2rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti {
+    width: 25%;
+    max-width: 430px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .nameKategori {
+    font-size: 28px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .promotiontext {
+    font-size: 18px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .kategoriProperti .icon svg {
+    max-width: 150px;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan {
+    width: 75%;
+    align-items: center;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation {
+    padding: 1rem;
+  }
+  .mainContent .wrapperPilihRumah .pilihanBank .wrapperPropertiPilihan .propertiPilihan .wrapperInformation .propertiInformation .textInformation {
+    margin-bottom: 2rem;
+  }
+}

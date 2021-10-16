@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebaltab | User</title>
+    <!--Bootstrap Asset-->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+    <!--unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Component-->
+    <link rel="stylesheet" href="./component/menu.css">
+    <link rel="stylesheet" href="./component/navbar-mobile.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <!--slick Css-->
+    <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
+    <!--Ebaltab User Css-->
+    <link rel="stylesheet" href="./css/ebaltab-user.css">
+    <link rel="stylesheet" href="./css/dashboardUser.css">
+</head>
+<body>
+     
+    <div id="mainHeader">
+      <!--Navbar-->
+      <nav class="navbar navbar-light ">
+          <div class="container-fluid navbarHome hidden">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/img/tni_logo.png" alt="">
+              <div class="brand-title">
+                  <h1>SISFOBETA 4.0</h1>
+              </div>
+            </a>
+
+            <div class="userControl">
+              <div class="notification">
+                <div class="dropdown">
+                  
+                  <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <div class="numberNotif">2</div>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="notification">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <div class="iconMassage">
+                            <ion-icon name="chatbubble-ellipses"></ion-icon>
+                          </div>
+                          <div class="wrapperMessage">
+                              <div class="messageName">
+                                  <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                              </div>
+                              <div class="messageContent">
+                                  <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                              </div>
+                          </div>
+                          <div class="messageTime">
+                            <span>19.30</span>
+                          </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <div class="iconMassage">
+                            <ion-icon name="chatbubble-ellipses"></ion-icon>
+                          </div>
+                          <div class="wrapperMessage">
+                              <div class="messageName">
+                                  <h1>Verifikasi Akun Anda</h1>
+                              </div>
+                              <div class="messageContent">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio aliquam, atque illum ab vitae amet ea sequi temporibus? Ipsa id quaerat ducimus, aut quibusdam, sint doloremque, obcaecati ab quos ullam eos ex cum fuga delectus voluptatum iure voluptas qui aperiam totam nam. Veniam earum assumenda at laudantium voluptatem placeat fugit, nobis, nesciunt doloribus itaque velit quia expedita repellat alias culpa nisi dolore voluptate blanditiis a optio sint officia delectus! Quod quam adipisci aperiam quis perferendis totam magni earum, sequi fugiat. Aspernatur, a cumque repudiandae consequuntur perferendis totam nesciunt et rem cum cupiditate officia quisquam enim unde ab. Quos, esse.</p>
+                              </div>
+                          </div>
+                          <div class="messageTime">
+                            <span>19.30</span>
+                          </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <div class="iconMassage">
+                            <ion-icon name="chatbubble-ellipses"></ion-icon>
+                          </div>
+                          <div class="wrapperMessage">
+                              <div class="messageName">
+                                  <h1>Verifikasi Akun Anda</h1>
+                              </div>
+                              <div class="messageContent">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                              </div>
+                          </div>
+                          <div class="messageTime">
+                            <span>19.30</span>
+                          </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <div class="iconMassage">
+                            <ion-icon name="chatbubble-ellipses"></ion-icon>
+                          </div>
+                          <div class="wrapperMessage">
+                              <div class="messageName">
+                                  <h1>Verifikasi Akun Anda</h1>
+                              </div>
+                              <div class="messageContent">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                              </div>
+                          </div>
+                          <div class="messageTime">
+                            <span>19.30</span>
+                          </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown profil">
+                <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
+                  <img src="../assets/img/profil.png" alt="">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                  <li><a class="dropdown-item" href="#">Profil</a></li>
+                  <li><button class="dropdown-item" href="#">Logout</button></li>
+                </ul>
+              </div>
+              <a href="../more-mobile.html" class="moreIcon">
+                  <ion-icon name="ellipsis-vertical"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="container-fluid navbarBack">
+              <a href="#" class="backHome">
+                  <ion-icon name="arrow-back"></ion-icon>
+              </a>
+              <h1 class="namePages">Edit Data Prajurit</h1>
+              <div class="userControl">
+                  <div class="notification">
+                    <div class="dropdown">
+                      
+                      <button class="btnNotification" type="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                        <div class="numberNotif">2</div>
+                      </button>
+
+                      <ul class="dropdown-menu" aria-labelledby="notification">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                              <div class="iconMassage">
+                                <ion-icon name="chatbubble-ellipses"></ion-icon>
+                              </div>
+                              <div class="wrapperMessage">
+                                  <div class="messageName">
+                                      <h1>Selamat Datang Di SISFOBETA 4.0</h1>
+                                  </div>
+                                  <div class="messageContent">
+                                      <p>aplikasi yang terintegrasi untuk memudahkan prajurit di seluruh Indonesia dimanapun dan kapanpun untuk mendapatkan informasi iuran twp, baltab , dan kpr secara online dan up to date</p>
+                                  </div>
+                              </div>
+                              <div class="messageTime">
+                                <span>19.30</span>
+                              </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">
+                              <div class="iconMassage">
+                                <ion-icon name="chatbubble-ellipses"></ion-icon>
+                              </div>
+                              <div class="wrapperMessage">
+                                  <div class="messageName">
+                                      <h1>Verifikasi Akun Anda</h1>
+                                  </div>
+                                  <div class="messageContent">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio aliquam, atque illum ab vitae amet ea sequi temporibus? Ipsa id quaerat ducimus, aut quibusdam, sint doloremque, obcaecati ab quos ullam eos ex cum fuga delectus voluptatum iure voluptas qui aperiam totam nam. Veniam earum assumenda at laudantium voluptatem placeat fugit, nobis, nesciunt doloribus itaque velit quia expedita repellat alias culpa nisi dolore voluptate blanditiis a optio sint officia delectus! Quod quam adipisci aperiam quis perferendis totam magni earum, sequi fugiat. Aspernatur, a cumque repudiandae consequuntur perferendis totam nesciunt et rem cum cupiditate officia quisquam enim unde ab. Quos, esse.</p>
+                                  </div>
+                              </div>
+                              <div class="messageTime">
+                                <span>19.30</span>
+                              </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">
+                              <div class="iconMassage">
+                                <ion-icon name="chatbubble-ellipses"></ion-icon>
+                              </div>
+                              <div class="wrapperMessage">
+                                  <div class="messageName">
+                                      <h1>Verifikasi Akun Anda</h1>
+                                  </div>
+                                  <div class="messageContent">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                                  </div>
+                              </div>
+                              <div class="messageTime">
+                                <span>19.30</span>
+                              </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#">
+                              <div class="iconMassage">
+                                <ion-icon name="chatbubble-ellipses"></ion-icon>
+                              </div>
+                              <div class="wrapperMessage">
+                                  <div class="messageName">
+                                      <h1>Verifikasi Akun Anda</h1>
+                                  </div>
+                                  <div class="messageContent">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam!</p>
+                                  </div>
+                              </div>
+                              <div class="messageTime">
+                                <span>19.30</span>
+                              </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="dropdown profil">
+                    <button class="dropdown-toggle" type="button" id="profilDropdown" data-bs-toggle="dropdown">
+                      <img src="../../assets/img/profil.png" alt="">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                      <li><a class="dropdown-item" href="#">Profil</a></li>
+                      <li><button class="dropdown-item" href="#">Logout</button></li>
+                    </ul>
+                  </div>
+                  <a href="../more-mobile.html" class="moreIcon">
+                      <ion-icon name="ellipsis-vertical"></ion-icon>
+                  </a>
+              </div>
+          </div>
+      </nav>
+      <!--End Navbar-->
+    </div>
+
+    <div class="mainContent">
+        <h1 class="nameContent" style="font-size: 24px;">E-TWP</h1>
+
+        <div class="wrapperTableInfoData">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Tanggal</li>
+                    <li class="fw-bold">Keterangan</li>
+                    <li class="fw-bold">Index</li>
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>11 Sep 2021</li>
+                    <li>-</li>
+                    <li>50.000</li>
+                    <li>Rp.200.000</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Tanggal</li>
+                    <li class="fw-bold">Keterangan</li>
+                    <li class="fw-bold">Index</li>
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>11 Sep 2021</li>
+                    <li>-</li>
+                    <li>50.000</li>
+                    <li>Rp.200.000</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Tanggal</li>
+                    <li class="fw-bold">Keterangan</li>
+                    <li class="fw-bold">Index</li>
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>11 Sep 2021</li>
+                    <li>-</li>
+                    <li>50.000</li>
+                    <li>Rp.200.000</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    
+      <h1 class="nameContent mt-5" style="font-size: 24px;">E-Baltab</h1>
+
+      <div class="wrapperTableInfoData">
+        <table class="table table-striped card">
+            <tbody>
+              <tr>
+                <td colspan="2"><h4 style="font-size: 20px;">MULYONO/28678</h4></td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Keterangan</li>
+                    <li class="fw-bold">Periode</li>
+                    <li class="fw-bold">Jumlah Bulan</li>
+                    <li class="fw-bold">Nominal</li>
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>Pama</li>
+                    <li>Feb '14 s.d Mar '11</li>
+                    <li>100 X</li>
+                    <li>2.500,00</li>
+                    <li>500.000.000</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Keterangan</li>
+                    <li class="fw-bold">Periode</li>
+                    <li class="fw-bold">Jumlah Bulan</li>
+                    <li class="fw-bold">Nominal</li>
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>Pama</li>
+                    <li>Feb '14 s.d Mar '11</li>
+                    <li>100 X</li>
+                    <li>2.500,00</li>
+                    <li>500.000.000</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Keterangan</li>
+                    <li class="fw-bold">Periode</li>
+                    <li class="fw-bold">Jumlah Bulan</li>
+                    <li class="fw-bold">Nominal</li>
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>Pama</li>
+                    <li>Feb '14 s.d Mar '11</li>
+                    <li>100 X</li>
+                    <li>2.500,00</li>
+                    <li>500.000.000</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Keterangan</li>
+                    <br>
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>Pokok (Februari 1989 s.d Januari 2020)</li>
+                    <li>500.000.000</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Keterangan</li>
+                    <br>
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>Pokok (Februari 1989 s.d Januari 2020)</li>
+                    <li>500.000.000</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr style="background-color: #A2A846;">
+                <td>
+                  <ul class="list-unstyled">
+                    <li class="fw-bold">Total</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li>500.000.000</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+
+      <div class="notice">
+          <p style="font-size: 12px;">Perhatian : Perhitungan diatas hanya meruapakan simulasi yang menggunakan sistem Perbulatan. Tingkat imbal hasil tabungan dari perhitungan simulasi tersebut bukanlah suatu jaminan, tetapi hanya merupakan indikasi berdasarkan rata-rata historis. Realisasi pengembalian tabungan tergantung pada kebijaksanaan pimpinan TNI-AD dalam penentuan pemotongan tabungan dan suku bunga.</p>
+      </div>
+
+    </div>
+
+    <!-- KPR -->
+    <h1 class="nameContent mt-5" style="font-size: 24px;">E-KPR</h1>
+
+    <div class="wrapperProperti">
+
+        <a href="#"  class="properti">
+          <img src="../assets/img/rumah2.svg" alt="" class="imagesProperti">
+          <div class="wrapperInformationProperti">
+              <div class="wrapperFasilitas">
+                <div class="fasilitas">
+                    <p class="luasTanah">LT : <span class="valueLuasTanah">72m<sup>2</sup></span></p>
+                </div>
+                <div class="fasilitas">
+                  <p class="luasBangunan">LB : <span class="valueLuasBangunan">72m<sup>2</sup></span></p>
+                </div>
+                <div class="fasilitas">
+                  <div class="icon d-inline-block">
+                    <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.137 4.80695H13.9317C13.7209 4.80695 13.5252 4.86708 13.3643 4.96945V4.54605C13.3643 4.06267 12.9317 3.66944 12.4 3.66944H10.6147C10.4974 3.66944 10.4023 3.75588 10.4023 3.86249C10.4023 3.96911 10.4974 4.05554 10.6147 4.05554H12.4C12.6975 4.05554 12.9395 4.27557 12.9395 4.54605V5.9172H5.30661V4.54605C5.30661 4.27557 5.54864 4.05554 5.84617 4.05554H9.6237C9.74098 4.05554 9.83606 3.96911 9.83606 3.86249C9.83606 3.75588 9.74098 3.66944 9.6237 3.66944H3.38156C3.55204 3.45253 3.61869 3.1706 3.53706 2.89355C3.50671 2.79057 3.3902 2.72946 3.27697 2.75703C3.16368 2.78462 3.09647 2.89049 3.12679 2.99348C3.21108 3.2794 3.02376 3.57436 2.70924 3.65096C2.39456 3.72764 2.07028 3.55726 1.98601 3.27137L1.57767 1.88593C1.49337 1.60001 1.6807 1.30505 1.99524 1.22845C2.31049 1.15169 2.63401 1.32142 2.71844 1.60804L2.8682 2.11612C2.89855 2.21911 3.01509 2.28022 3.12829 2.25265C3.24158 2.22506 3.30879 2.11919 3.27847 2.0162L3.12872 1.50812C2.98349 1.01545 2.4274 0.723453 1.88533 0.8555C1.76576 0.884638 1.65516 0.932283 1.55736 0.995784V0.901987C1.55736 0.404635 1.11227 3.38516e-09 0.565179 3.38516e-09H0.359873C0.161419 -2.57368e-05 0 0.146745 0 0.327106V9.67289C0 9.85326 0.161419 10 0.359817 10H1.19749C1.39589 10 1.55731 9.85326 1.55731 9.67289V7.89283H1.79775C1.91503 7.89283 2.01011 7.8064 2.01011 7.69978C2.01011 7.59317 1.91503 7.50673 1.79775 7.50673H1.55731V6.30328H12.9395V7.50673H2.7888C2.67153 7.50673 2.57645 7.59317 2.57645 7.69978C2.57645 7.8064 2.67153 7.89283 2.7888 7.89283H12.9395V9.67289C12.9395 9.85326 13.1009 10 13.2993 10H14.137C14.3354 10 14.4968 9.85326 14.4968 9.67289V5.13406C14.4969 4.95369 14.3354 4.80695 14.137 4.80695ZM4.72295 4.05554H5.04734C4.94295 4.19562 4.8819 4.36448 4.8819 4.54605V5.9172H4.18342V4.54605C4.18342 4.27557 4.42545 4.05554 4.72295 4.05554ZM1.57577 3.37132C1.6147 3.50339 1.68345 3.62113 1.77363 3.72012C1.69656 3.74512 1.62399 3.77881 1.55734 3.81987V3.30882L1.57577 3.37132ZM1.13262 9.61392H0.424713V0.386077H0.565151C0.878051 0.386077 1.13262 0.617506 1.13262 0.901961V9.61392ZM1.55734 4.54605C1.55734 4.27557 1.79937 4.05554 2.09689 4.05554H3.92415C3.81972 4.19562 3.75871 4.36445 3.75871 4.54605V5.9172H1.55734V4.54605ZM14.0721 9.61392H13.3642V5.70894C13.3642 5.42448 13.6188 5.19305 13.9317 5.19305H14.0721V9.61392Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <span class="valueKamar">3</span>
+                </div>
+                <div class="fasilitas">
+                  <div class="icon d-inline-block">
+                    <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1886:3485)">
+                      <path d="M2.375 0C2.78922 0 3.125 0.223854 3.125 0.5V0.666667H8.625C9.315 0.667208 9.87419 1.04 9.875 1.5V2.33333H10.375C10.7892 2.33333 11.125 2.55719 11.125 2.83333V3.4075C12.214 3.85498 12.8765 4.64719 12.875 5.5V5.69733C13.1736 5.76771 13.3737 5.95554 13.375 6.16667V6.5C13.375 6.59204 13.2631 6.66667 13.125 6.66667H5.125C4.98694 6.66667 4.875 6.59204 4.875 6.5V6.16667C4.87631 5.95554 5.07641 5.76771 5.375 5.69733V5.5C5.37353 4.83633 5.76947 4.19973 6.475 3.7315C6.67106 3.60546 6.88934 3.49571 7.125 3.40467V2.83333C7.125 2.55719 7.46078 2.33333 7.875 2.33333H8.375V1.83333C8.375 1.74129 8.26306 1.66667 8.125 1.66667H3.125V2C3.125 2.27615 2.78922 2.5 2.375 2.5H1.625V0H2.375ZM5.375 6.16667V6.33333H12.875V6.16667C12.875 6.07463 12.7631 6 12.625 6H5.625C5.48694 6 5.375 6.07463 5.375 6.16667ZM6.82725 3.96767C6.21631 4.37348 5.87356 4.92504 5.875 5.5V5.66667H12.375V5.5C12.3758 4.74692 11.7794 4.04967 10.8067 3.66667H7.4415C7.21787 3.74865 7.01134 3.84983 6.82725 3.96767ZM7.875 2.66667C7.73694 2.66667 7.625 2.74129 7.625 2.83333V3.33333H10.625V2.83333C10.625 2.74129 10.5131 2.66667 10.375 2.66667H7.875ZM3.125 1.33333H8.125C8.53922 1.33333 8.875 1.55719 8.875 1.83333V2.33333H9.375V1.5C9.375 1.22385 9.03922 1 8.625 1H3.125V1.33333ZM2.125 2.16667H2.375C2.51306 2.16667 2.625 2.09204 2.625 2V0.5C2.625 0.407958 2.51306 0.333333 2.375 0.333333H2.125V2.16667Z" fill="black"/>
+                      <path d="M9.125 7C9.26306 7 9.375 7.07463 9.375 7.16667V7.83333C9.375 7.92538 9.26306 8 9.125 8C8.98694 8 8.875 7.92538 8.875 7.83333V7.16667C8.875 7.07463 8.98694 7 9.125 7Z" fill="black"/>
+                      <path d="M9.125 8.33398C9.26306 8.33398 9.375 8.40861 9.375 8.50065V9.16732C9.375 9.25936 9.26306 9.33398 9.125 9.33398C8.98694 9.33398 8.875 9.25936 8.875 9.16732V8.50065C8.875 8.40861 8.98694 8.33398 9.125 8.33398Z" fill="black"/>
+                      <path d="M6.125 7.66602C6.26306 7.66602 6.375 7.74064 6.375 7.83268V8.49935C6.375 8.59139 6.26306 8.66602 6.125 8.66602C5.98694 8.66602 5.875 8.59139 5.875 8.49935V7.83268C5.875 7.74064 5.98694 7.66602 6.125 7.66602Z" fill="black"/>
+                      <path d="M8.125 7.66602C8.26306 7.66602 8.375 7.74064 8.375 7.83268V8.49935C8.375 8.59139 8.26306 8.66602 8.125 8.66602C7.98694 8.66602 7.875 8.59139 7.875 8.49935V7.83268C7.875 7.74064 7.98694 7.66602 8.125 7.66602Z" fill="black"/>
+                      <path d="M10.125 7.66602C10.2631 7.66602 10.375 7.74064 10.375 7.83268V8.49935C10.375 8.59139 10.2631 8.66602 10.125 8.66602C9.98694 8.66602 9.875 8.59139 9.875 8.49935V7.83268C9.875 7.74064 9.98694 7.66602 10.125 7.66602Z" fill="black"/>
+                      <path d="M12.125 7.66602C12.2631 7.66602 12.375 7.74064 12.375 7.83268V8.49935C12.375 8.59139 12.2631 8.66602 12.125 8.66602C11.9869 8.66602 11.875 8.59139 11.875 8.49935V7.83268C11.875 7.74064 11.9869 7.66602 12.125 7.66602Z" fill="black"/>
+                      <path d="M11.125 7C11.2631 7 11.375 7.07463 11.375 7.16667V7.83333C11.375 7.92538 11.2631 8 11.125 8C10.9869 8 10.875 7.92538 10.875 7.83333V7.16667C10.875 7.07463 10.9869 7 11.125 7Z" fill="black"/>
+                      <path d="M7.125 7C7.26306 7 7.375 7.07463 7.375 7.16667V7.83333C7.375 7.92538 7.26306 8 7.125 8C6.98694 8 6.875 7.92538 6.875 7.83333V7.16667C6.875 7.07463 6.98694 7 7.125 7Z" fill="black"/>
+                      <path d="M7.125 8.33398C7.26306 8.33398 7.375 8.40861 7.375 8.50065V9.16732C7.375 9.25936 7.26306 9.33398 7.125 9.33398C6.98694 9.33398 6.875 9.25936 6.875 9.16732V8.50065C6.875 8.40861 6.98694 8.33398 7.125 8.33398Z" fill="black"/>
+                      <path d="M11.125 8.33398C11.2631 8.33398 11.375 8.40861 11.375 8.50065V9.16732C11.375 9.25936 11.2631 9.33398 11.125 9.33398C10.9869 9.33398 10.875 9.25936 10.875 9.16732V8.50065C10.875 8.40861 10.9869 8.33398 11.125 8.33398Z" fill="black"/>
+                      <path d="M10.125 9C10.2631 9 10.375 9.07463 10.375 9.16667V9.83333C10.375 9.92538 10.2631 10 10.125 10C9.98694 10 9.875 9.92538 9.875 9.83333V9.16667C9.875 9.07463 9.98694 9 10.125 9Z" fill="black"/>
+                      <path d="M8.125 9C8.26306 9 8.375 9.07463 8.375 9.16667V9.83333C8.375 9.92538 8.26306 10 8.125 10C7.98694 10 7.875 9.92538 7.875 9.83333V9.16667C7.875 9.07463 7.98694 9 8.125 9Z" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_1886:3485">
+                      <rect width="15" height="10" fill="white" transform="matrix(-1 0 0 1 15 0)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <span class="valueKamarMandi">3</span>
+                </div>
+              </div>
+              <h1 href="#" class="namaPerumahan d-inline-block"><span class="tipeRumah">Tipe 35</span>UTAMA GARDEN BINTARO</h1>
+              <p class="location">Kota Tangerang Selatan, Banten </p>
+
+              <div class="moreDetails">
+                <p class="developer">Atas Nama :<span class="nameDeveloper ms-1"> Agus Haryono</span></p>
+              </div>
+          </div>
+      </a>
+
+    </div>
+
+    <div class="pb-4">
+      <div class="row">
+        <div class="col-6">
+          <div class="angsuran container card shadow-sm">
+
+            <h5 class="pt-3 text-center" style="font-size: 16px;">Jumlah Angsuran Bulan</h5>
+                <div class="col py-2">
+                  <canvas id="bulan" width="60" height="60"></canvas>
+                </div>
+                <div class="col pt-2 pb-2">
+                  <div>
+                    <div class="d-flex justify-content-center align-items-center" style="font-size: 14px;"><div class="bulet"></div> Sudah Dibayar</div>
+                    <div class="d-flex "><div class="bulet0"></div><span class="value fw-bold" style="font-size: 14px;">500</span></div>
+
+                    <div class="d-flex justify-content-center align-items-center pt-1" style="font-size: 14px;"><div class="bulet1"></div> Belum Dibayar</div>
+                    <div class="d-flex "><div class="bulet0"></div><span class="value fw-bold" style="font-size: 14px;">500</span></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-6">
+          
+          <div class="angsuran container card shadow-sm">
+
+            <h5 class="pt-3 text-center" style="font-size: 16px;">Jumlah Angsuran uang</h5>
+
+                <div class="col py-2">
+                  <canvas id="uang" width="60" height="60"></canvas>
+                </div>
+                <div class="col pt-2 pb-2">
+                  <div>
+                    <div class="d-flex justify-content-center align-items-center" style="font-size: 14px;"><div class="bulett"></div> Sudah Dibayar</div>
+                    <div class="d-flex "><div class="bulet0"></div><span class="value fw-bold" style="font-size: 14px;">500</span></div>
+
+                    <div class="d-flex justify-content-center align-items-center pt-1" style="font-size: 14px;"><div class="bulet1"></div> Belum Dibayar</div>
+                    <div class="d-flex "><div class="bulet0"></div><span class="value fw-bold" style="font-size: 14px;">500</span></div>
+                  </div>
+                </div>
+      
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+    
+    <div class="mobileMenu">
+        <a href="" class="menu">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.6868 12.1976C25.14 11.6828 25.0962 10.8937 24.5891 10.4356L13.4163 0.337365C12.9091 -0.120727 12.0961 -0.111131 11.5996 0.358998L0.388821 10.974C-0.107637 11.4441 -0.132003 12.2322 0.334872 12.7335L0.615943 13.0358C1.08225 13.5371 1.83598 13.5969 2.29837 13.1689L3.1362 12.3939V23.7403C3.1362 24.4364 3.68229 25 4.35575 25H8.72575C9.39921 25 9.9453 24.4364 9.9453 23.7403V15.8024H15.5193V23.7403C15.5096 24.4359 15.9914 24.9995 16.6649 24.9995H21.296C21.9695 24.9995 22.5156 24.4359 22.5156 23.7398V12.5537C22.5156 12.5537 22.747 12.7631 23.0325 13.0223C23.3175 13.2809 23.916 13.0735 24.3692 12.5582L24.6868 12.1976Z" />
+            </svg>
+            e-KPR
+        </a>
+        <a href="" class="menu">
+            <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.5624 0H3.43758C1.54129 0 0 1.71254 0 3.81953V21.1805C0 23.2875 1.54129 25 3.43758 25H26.5624C28.4587 25 30 23.2875 30 21.1805V3.81953C30 1.71254 28.4587 0 26.5624 0ZM9.375 5.55547C11.0976 5.55547 12.4999 7.1139 12.4999 9.02786C12.4999 10.9416 11.0976 12.5 9.375 12.5C7.65244 12.5 6.25008 10.9416 6.25008 9.02786C6.25008 7.1139 7.65244 5.55547 9.375 5.55547ZM15 18.4029C15 18.9779 14.58 19.4445 14.0625 19.4445H4.6875C4.17 19.4445 3.75 18.9779 3.75 18.4029V17.7083C3.75 15.6013 5.29129 13.8888 7.18758 13.8888H11.5624C13.4587 13.8888 15 15.6013 15 17.7083V18.4029ZM25.3125 19.4445H18.4376C17.9201 19.4445 17.5001 18.9779 17.5001 18.4029C17.5001 17.8279 17.9201 17.3612 18.4376 17.3612H25.3125C25.83 17.3612 26.25 17.8279 26.25 18.4029C26.25 18.9779 25.83 19.4445 25.3125 19.4445ZM25.3125 13.8888H18.4376C17.9201 13.8888 17.5001 13.4221 17.5001 12.8471C17.5001 12.2721 17.9201 11.8055 18.4376 11.8055H25.3125C25.83 11.8055 26.25 12.2721 26.25 12.8471C26.25 13.4221 25.83 13.8888 25.3125 13.8888ZM25.3125 8.33333H18.4376C17.9201 8.33333 17.5001 7.86667 17.5001 7.29167C17.5001 6.71666 17.9201 6.25 18.4376 6.25H25.3125C25.83 6.25 26.25 6.71666 26.25 7.29167C26.25 7.86667 25.83 8.33333 25.3125 8.33333Z"/>
+            </svg>
+            e-BALTAB
+        </a>
+        <a href="" class="menu active">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M8.86452 7.66673H1.67702C0.752266 7.66673 0 6.91446 0 5.98952V1.67702C0 0.752266 0.752266 0 1.67702 0H8.86452C9.78946 0 10.5417 0.752266 10.5417 1.67702V5.98952C10.5417 6.91446 9.78946 7.66673 8.86452 7.66673ZM1.67702 1.4375C1.54489 1.4375 1.4375 1.54489 1.4375 1.67702V5.98952C1.4375 6.12183 1.54489 6.22923 1.67702 6.22923H8.86452C8.99683 6.22923 9.10422 6.12183 9.10422 5.98952V1.67702C9.10422 1.54489 8.99683 1.4375 8.86452 1.4375H1.67702Z"/>
+              <path d="M8.86452 22.9997H1.67702C0.752266 22.9997 0 22.2475 0 21.3227V11.2602C0 10.3353 0.752266 9.58301 1.67702 9.58301H8.86452C9.78946 9.58301 10.5417 10.3353 10.5417 11.2602V21.3227C10.5417 22.2475 9.78946 22.9997 8.86452 22.9997ZM1.67702 11.0205C1.54489 11.0205 1.4375 11.1279 1.4375 11.2602V21.3227C1.4375 21.4548 1.54489 21.5622 1.67702 21.5622H8.86452C8.99683 21.5622 9.10422 21.4548 9.10422 21.3227V11.2602C9.10422 11.1279 8.99683 11.0205 8.86452 11.0205H1.67702Z"/>
+              <path d="M21.3227 22.9997H14.1352C13.2103 22.9997 12.458 22.2475 12.458 21.3227V17.0102C12.458 16.0853 13.2103 15.333 14.1352 15.333H21.3227C22.2475 15.333 22.9997 16.0853 22.9997 17.0102V21.3227C22.9997 22.2475 22.2475 22.9997 21.3227 22.9997ZM14.1352 16.7705C14.0029 16.7705 13.8955 16.8779 13.8955 17.0102V21.3227C13.8955 21.4548 14.0029 21.5622 14.1352 21.5622H21.3227C21.4548 21.5622 21.5622 21.4548 21.5622 21.3227V17.0102C21.5622 16.8779 21.4548 16.7705 21.3227 16.7705H14.1352Z"/>
+              <path d="M21.3227 13.4167H14.1352C13.2103 13.4167 12.458 12.6645 12.458 11.7395V1.67702C12.458 0.752266 13.2103 0 14.1352 0H21.3227C22.2475 0 22.9997 0.752266 22.9997 1.67702V11.7395C22.9997 12.6645 22.2475 13.4167 21.3227 13.4167ZM14.1352 1.4375C14.0029 1.4375 13.8955 1.54489 13.8955 1.67702V11.7395C13.8955 11.8718 14.0029 11.9792 14.1352 11.9792H21.3227C21.4548 11.9792 21.5622 11.8718 21.5622 11.7395V1.67702C21.5622 1.54489 21.4548 1.4375 21.3227 1.4375H14.1352Z"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="23" height="23" fill="white"/>
+              </clipPath>
+              </defs>
+          </svg>
+          Dashboard
+        </a>
+        <a href="" class="menu">
+            <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.25 7.60758C7.25 11.8092 10.8761 15.2152 15.3494 15.2152C19.8226 15.2152 23.4488 11.8092 23.4488 7.60758C23.4488 3.40597 19.8226 0 15.3494 0C10.8783 0.00461093 7.25518 3.40802 7.25 7.60758ZM15.3494 1.04925C19.2057 1.04925 22.3317 3.98541 22.3317 7.60758C22.3317 11.2297 19.2057 14.1659 15.3494 14.1659C11.4931 14.1659 8.36708 11.2297 8.36708 7.60758C8.37144 3.9872 11.495 1.05335 15.3494 1.04925Z"/>
+                <path d="M26.2017 16.5082L21.8264 18.4499C21.2223 17.3945 20.0635 16.7229 18.7882 16.6891L14.7492 16.5848C14.1096 16.5676 13.4821 16.4155 12.9135 16.1396L12.5025 15.9395C10.3981 14.9092 7.88987 14.9118 5.78771 15.9462L5.81335 15.0716C5.8218 14.7819 5.5788 14.5406 5.27035 14.5327L0.841298 14.4182C0.532846 14.4102 0.276212 14.6385 0.267757 14.9282L0.000214085 24.0574C-0.00824033 24.3471 0.234757 24.5884 0.543209 24.5964L4.97226 24.7109H4.98753C5.29026 24.7109 5.53789 24.4847 5.54607 24.2006L5.55889 23.7638L6.70952 23.1852C7.16115 22.9569 7.68915 22.9026 8.18251 23.0338L15.0535 24.8451C15.0655 24.8484 15.0775 24.851 15.0898 24.8536C15.5864 24.9512 16.0926 25.0001 16.5999 24.9998C17.6744 25.0003 18.7364 24.7829 19.713 24.3617C19.737 24.3515 19.7602 24.3394 19.7823 24.3259L29.7447 18.2732C29.9929 18.1223 30.073 17.8162 29.9277 17.5744C29.188 16.3417 27.5476 15.8722 26.2017 16.5082ZM1.1323 23.562L1.36902 15.4815L4.68126 15.5671L4.44454 23.6478L1.1323 23.562ZM19.2099 23.4247C17.9965 23.939 16.6413 24.081 15.3372 23.8307L8.48469 22.024C7.71342 21.8193 6.88788 21.9041 6.18234 22.2604L5.59435 22.5563L5.75171 17.1837C7.61497 16.0197 10.0046 15.9001 11.9889 16.8712L12.3999 17.0713C13.1183 17.4197 13.9105 17.6118 14.7186 17.6338L18.758 17.7381C19.8925 17.7688 20.856 18.5276 21.0862 19.5717L15.0696 19.4157C14.7612 19.4077 14.5045 19.6362 14.4958 19.9257C14.4874 20.2154 14.7306 20.4567 15.0388 20.4647L21.6786 20.6363H21.6941C21.9966 20.6361 22.2439 20.4099 22.2521 20.126C22.2589 19.898 22.2409 19.6698 22.1981 19.4454L26.6858 17.4537C26.6902 17.4519 26.6945 17.4499 26.6989 17.4478C27.3354 17.1453 28.1051 17.2465 28.6287 17.7017L19.2099 23.4247Z"/>
+                <path d="M13.4028 7.76025H12.439V9.67773H11.5742V4.70117H13.3242C13.8984 4.70117 14.3416 4.82992 14.6538 5.0874C14.966 5.34489 15.1221 5.71745 15.1221 6.20508C15.1221 6.53776 15.0412 6.81689 14.8794 7.04248C14.7199 7.26579 14.4966 7.43783 14.2095 7.55859L15.3271 9.6333V9.67773H14.4009L13.4028 7.76025ZM12.439 7.06641H13.3276C13.6193 7.06641 13.8472 6.99349 14.0112 6.84766C14.1753 6.69954 14.2573 6.49788 14.2573 6.24268C14.2573 5.97607 14.181 5.76986 14.0283 5.62402C13.8779 5.47819 13.6523 5.40299 13.3516 5.39844H12.439V7.06641ZM19.1006 7.86621C19.1006 8.43815 18.9707 8.89502 18.7109 9.23682C18.4512 9.57633 18.1025 9.74609 17.665 9.74609C17.2594 9.74609 16.9347 9.61279 16.6909 9.34619V11.0996H15.8604V5.97949H16.626L16.6602 6.35547C16.904 6.05924 17.2355 5.91113 17.6548 5.91113C18.106 5.91113 18.4591 6.07975 18.7144 6.41699C18.9718 6.75195 19.1006 7.21794 19.1006 7.81494V7.86621ZM18.2734 7.79443C18.2734 7.42529 18.1994 7.13249 18.0513 6.91602C17.9054 6.69954 17.6958 6.59131 17.4224 6.59131C17.0828 6.59131 16.839 6.73145 16.6909 7.01172V8.65234C16.8413 8.93945 17.0874 9.08301 17.4292 9.08301C17.6935 9.08301 17.8997 8.97705 18.0479 8.76514C18.1982 8.55094 18.2734 8.22738 18.2734 7.79443Z"/>
+            </svg>
+            e-TWP
+        </a>
+    </div>
+
+
+    <!--jQuery-->
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <!--Bootstrap Asset-->
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Chart Js-->
+    <script src="../assets/vendors/chart.js"></script>
+    <script src="../assets/js/chartjs/ui-chart.js"></script>
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Slick Js-->
+    <script src="../assets/vendors/slick/slick.min.js"></script>
+    <!--DataTable-->
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
+    <!--Custom Js-->
+    <script src="./js/dashboard-mobile.js"></script>
+    <script>
+      const bulan = {
+        datasets: [{
+          label: 'uhuy',
+          data: [55,45],
+          backgroundColor: [
+          '#7334FF','#DDDDDD'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configBulan = {
+        type: 'doughnut',
+        data: bulan,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartBulan = new Chart(
+      document.getElementById('bulan'),
+      configBulan
+      );
+
+
+
+      const uang = {
+        datasets: [{
+          label: 'uhuy',
+          data: [55,45],
+          backgroundColor: [
+          '#A2A846','#DDDDDD'
+          ],
+          hoverOffset: 4
+        }]
+      };
+
+      const configUang = {
+        type: 'doughnut',
+        data: uang,
+        options : {
+          legend: {
+          display: false
+          },
+        }
+      };
+      var chartUang = new Chart(
+      document.getElementById('uang'),
+      configUang
+      );
+    </script>
+</body>
+</html>

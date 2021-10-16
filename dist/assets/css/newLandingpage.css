@@ -246,7 +246,7 @@ Variables
 .partnersWrapper .container .titlePartner {
   font-weight: 700;
   font-size: 18px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .partnersWrapper .container .wrapperPartner {
@@ -256,7 +256,7 @@ Variables
 }
 
 .partnersWrapper .container .wrapperPartner .partner img {
-  max-width: 120px;
+  max-width: 150px;
 }
 
 footer {
@@ -286,6 +286,33 @@ footer .socialMedia .social svg {
   max-width: 40px;
 }
 
+footer .copyRight {
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.mobileMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 6px 0px 12px -2px, rgba(0, 0, 0, 0.3) 3px 0px 7px -3px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.mobileMenu .menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #1E5128;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 0px) {
   .nameContent {
     font-size: 18px;
@@ -305,6 +332,9 @@ footer .socialMedia .social svg {
     letter-spacing: 1px;
   }
   .navbar .container .navbar-brand .nameBrand p {
+    display: none;
+  }
+  .navbar .container .navbar-toggler {
     display: none;
   }
   .navbar .container .navbar-collapse .navbar-nav {
@@ -424,14 +454,9 @@ footer .socialMedia .social svg {
   .tentangKamiContainer .container .wrapperTentangKami .icon img {
     max-width: 200px;
   }
-  .partnersWrapper .container .wrapperPartner .ditkuad {
-    margin-right: 1rem;
-  }
-  .partnersWrapper .container .wrapperPartner .ditkuad img {
-    max-width: 80px;
-  }
   footer {
     padding: 1rem 1rem;
+    margin-bottom: 5rem;
   }
   footer .menuFooter {
     width: 100%;
@@ -448,6 +473,17 @@ footer .socialMedia .social svg {
   }
   footer .socialMedia .social svg {
     max-width: 30px;
+  }
+  .mobileMenu {
+    padding: 1rem 0;
+  }
+  .mobileMenu .menu {
+    padding: 0 1rem;
+    font-size: 12px;
+  }
+  .mobileMenu .menu img {
+    max-width: 18px;
+    margin-bottom: .5rem;
   }
 }
 
@@ -491,6 +527,7 @@ footer .socialMedia .social svg {
   }
   footer {
     padding: 3rem 1rem;
+    margin-bottom: 0;
   }
   footer .menuFooter {
     width: 100%;
@@ -509,6 +546,9 @@ footer .socialMedia .social svg {
   }
   footer .socialMedia .social svg {
     max-width: 30px;
+  }
+  .mobileMenu {
+    display: none;
   }
 }
 

@@ -1,9 +1,11 @@
 /*------------
 Font
 ------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @font-face {
   font-family: steelfish;
+  font-family: 'Poppins', sans-serif;
   src: url(../font/stelfish.ttf);
 }
 
@@ -19,17 +21,12 @@ Resset Css
 }
 
 /*------------
-Variables
-------------*/
-/*------------
 Styling
 ------------*/
-#mainHeader {
-  height: 100%;
+#mainHeader .navbar {
+  margin-bottom: 0;
 }
 
-@media screen and (min-width: 0px) {
-  #mainHeader {
-    height: 270px;
-  }
+#mainHeader .navbar .navbarHome {
+  display: none;
 }

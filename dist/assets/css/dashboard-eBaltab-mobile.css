@@ -32,6 +32,19 @@ Styling
   width: 100%;
 }
 
+#mainHeader .navbar {
+  margin-bottom: 0;
+}
+
+#mainHeader .navbar .navbarBack {
+  display: none;
+}
+
+#mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
 #mainHeader .navbar .container-fluid .navbar-brand .brand-title h1 {
   font-family: steelfish;
 }

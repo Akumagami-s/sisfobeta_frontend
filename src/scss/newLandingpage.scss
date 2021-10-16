@@ -272,7 +272,7 @@ $fontsize-card-valueNumber : 28px;
         .titlePartner {
             font-weight: 700;
             font-size: 18px;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
         .wrapperPartner {
             display: flex;
@@ -281,7 +281,7 @@ $fontsize-card-valueNumber : 28px;
 
             .partner {
                 img {
-                    max-width: 120px;
+                    max-width: 150px;
                 }
             }
         }
@@ -311,9 +311,34 @@ footer {
             }
         }
     }
+    .copyRight {
+        margin-top: 2rem;
+        color: #fff;
+        font-weight: 500;
+    }
 
 }
 
+.mobileMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 6px 0px 12px -2px, rgba(0, 0, 0, 0.3) 3px 0px 7px -3px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: #1E5128;
+        font-weight: 600;
+    }
+}
 
 @media screen and (min-width : 0px) {
     .nameContent {
@@ -339,6 +364,9 @@ footer {
                         display: none;
                     }
                 }
+            }
+            .navbar-toggler {
+                display: none;
             }
             .navbar-collapse {
                 .navbar-nav {
@@ -497,20 +525,9 @@ footer {
             }
         }
     }
-    .partnersWrapper {
-        .container {
-            .wrapperPartner {
-                .ditkuad {
-                    margin-right: 1rem;
-                    img {
-                        max-width: 80px;
-                    }
-                }
-            }
-        }
-    }
     footer {
         padding: 1rem 1rem;
+        margin-bottom: 5rem;
         .menuFooter {
             width: 100%;
             align-items: flex-start;
@@ -530,6 +547,18 @@ footer {
             }
         }
     
+    }
+    .mobileMenu {
+        padding: 1rem 0;
+    
+        .menu {
+            padding: 0 1rem;
+            font-size: 12px;
+            img {
+                max-width: 18px;
+                margin-bottom: .5rem;
+            }
+        }
     }
 }
 
@@ -605,6 +634,7 @@ footer {
 
     footer {
         padding: 3rem 1rem;
+        margin-bottom: 0;
         .menuFooter {
             width: 100%;
             align-items: center;
@@ -626,6 +656,9 @@ footer {
             }
         }
     
+    }
+    .mobileMenu {
+        display: none;
     }
 }
 

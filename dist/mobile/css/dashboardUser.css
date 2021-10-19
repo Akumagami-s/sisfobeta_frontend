@@ -99,6 +99,11 @@
     margin-right: .2rem;
   }
 
+  .ajukanKPR{
+    background-color: white;
+    color: #664d03;
+  }
+
   @media screen and (min-width: 0px) {
 
     .mainContent .wrapperProperti .properti {

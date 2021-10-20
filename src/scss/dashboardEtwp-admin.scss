@@ -1,0 +1,78 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: steelfish;
+    src: url(../font/stelfish.ttf);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*------------
+Variables
+------------*/
+$white-color : #fff;
+$dashboard-background : linear-gradient(125.6deg, #3B533B 11.29%, #97BB7D 108.94%);
+$font-color : #3B4E63;
+$dark-color : #3E3C3C;
+$fontsize-card-title : 24px;
+$fontsize-card-valueNumber : 28px;
+
+/*------------
+Styling
+------------*/
+
+.mainContent {
+    .nameContent {
+        font-family: 'Roboto', sans-serif;
+    }
+    .dateSearch {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        input {
+            border: 1px solid #A6A6A6;
+            border-radius: 10px;
+
+        }
+    }
+    .wrapperChart {
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 15px;
+        padding: 3rem;
+    }
+}
+
+
+@media screen and (min-width :0px) {
+    .mainContent {
+        .nameContent {
+            font-family: 'Roboto', sans-serif;
+        }
+        .dateSearch {
+            display: flex;
+            flex-direction: column;
+            width: min-content;
+            label {
+                margin-bottom: .3rem;
+            }
+            input {
+                padding: .5rem;
+            }
+        }
+    }
+}

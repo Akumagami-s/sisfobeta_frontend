@@ -7,8 +7,6 @@
     <title>ETWP | Dashboard</title>
     <!--Bootstrap Asset-->
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
-    <!--Ebaltab Css-->
-    <link rel="stylesheet" href="../assets/css/dashboardEkpr.css">
     <!--unicons-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--Component-->
@@ -17,9 +15,10 @@
     <!--slick Css-->
     <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
-
     <!--Data Table-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
+    <!--Etwp Css-->
+    <link rel="stylesheet" href="../assets/css/dashboardEtwp-admin.css">
 </head>
 <body>
     <div id="mainHeader">
@@ -230,6 +229,18 @@
         <!--End Navbar-->
     </div>
 
+    <div class="mainContent">
+      <h1 class="nameContent">Laporan Pemotongan TWP</h1>
+      <div class="dateSearch">
+        <label for="monthSearch">Bulan</label>
+        <input type="month" id="monthSearch" value="2017-06">
+      </div>
+
+      <div class="wrapperChart">
+        <canvas id="bar-chart" width="800" height="450"></canvas>
+      </div>
+    </div>
+
 
     <footer>
       <p>Copyright 2021 © DITKUAD</p>
@@ -240,7 +251,6 @@
     <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!--Chart Js-->
     <script src="../assets/vendors/chart.js"></script>
-    <script src="../assets/js/chartjs/ui-chart.js"></script>
     <!--DataTable-->
     <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
@@ -253,6 +263,30 @@
       $(document).scroll(function(){
         $('.pembungkus').toggleClass('onScrolled', $(this).scrollTop() > 170);
       });
+    </script>
+
+
+    <script>
+      new Chart(document.getElementById("bar-chart"), {
+        type: 'bar',
+        data: {
+          labels: ["PUSKU TNI", "KEMHAN", "KUPUS I DITKUAD", "KUPUS II DITKUAD", "KUDAM I/BB", "KUDAM II/SWJ", "KUDAM III/SWJ", "KUDAM IV/DIP", "KUDAM VI/MLW", "KUDAM IX/UDY", "KUDAM XII/TPR", "KUDAM XIII/MDK", "KUDAM XIV/HSN", "KUDAM XVI/PTM", "KUDAM XVII/CEN", "KUDAM Jaya", "KUDAM IM", "KU KOSTRAD", "KU KOPASUS", "TIDAK DIKETAHUI", "MABES TNI AD",],
+          datasets: [
+            {
+              label: "Population",
+              backgroundColor: ["#7334FF","#FF832A"],
+              data: [2478,5267,734,784,433]
+            }
+          ]
+        },
+        options: {
+          legend: { display: true },
+          title: {
+            display: true,
+            text: 'Predicted world population (millions) in 2050'
+          }
+        }
+    });
     </script>
 </body>
 </html>

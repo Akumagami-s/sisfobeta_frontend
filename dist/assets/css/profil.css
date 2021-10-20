@@ -459,3 +459,13 @@ padding: 2rem;
     margin-bottom: .5rem;
   }
 }
+.input-group-text {
+  height: 100%;
+}
+
+.input-group-text img {
+  max-width: 18px;
+}
+.input-group-text img:hover {
+  cursor: pointer;
+}

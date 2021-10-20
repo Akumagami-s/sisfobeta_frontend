@@ -403,7 +403,12 @@ Styling
     
 
 .body{
-padding: 5rem 4rem 0 4rem;
+padding: 2rem;
+}
+@media screen and (min-width : 992px) {
+  .body{
+    padding: 5rem;
+  }
 }
 
 .color-text-brown{
@@ -434,4 +439,23 @@ padding: 5rem 4rem 0 4rem;
 .nav-tabs .nav-link.active{
   color: #3E3E3E;
   border-bottom: 3px solid #3B533B;
+}
+.containerInput {
+  display: flex;
+}
+
+@media screen and (max-width :992px) {
+  .containerInput {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapperInput form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapperInput form .col-12 {
+    margin-bottom: .5rem;
+  }
 }

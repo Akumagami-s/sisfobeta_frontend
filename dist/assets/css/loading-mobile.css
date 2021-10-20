@@ -1,0 +1,46 @@
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.loading {
+  background-image: linear-gradient(73.1deg, #227e22 8%, #63a211 86.9%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading img {
+  max-width: 60px;
+  animation: loading 1.5s ease-in-out alternate infinite;
+  -webkit-animation: loading 1.5s ease-in-out alternate infinite;
+  -moz-animation: loading 1.5s ease-in-out alternate infinite;
+}
+
+.loading .nameApps {
+  font-family: steelfish;
+  color: #fff;
+  margin-left: .5rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  font-size: 38px;
+  animation: loading 1.5s ease-in-out alternate infinite;
+  -webkit-animation: loading 1.5s ease-in-out alternate infinite;
+  -moz-animation: loading 1.5s ease-in-out alternate infinite;
+}
+
+@keyframes loading {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
+  }
+}

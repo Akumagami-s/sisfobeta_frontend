@@ -365,7 +365,7 @@ Styling
 
 @media screen and (min-width: 992px) {
   #mainHeader {
-    height: 400px;
+    height: 230px;
   }
   #mainHeader .navbar {
     padding: 0 3rem;

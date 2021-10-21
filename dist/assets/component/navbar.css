@@ -85,7 +85,7 @@ Styling
 }
 
 #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
-  top: 30px;
+  top: 40px;
   padding: 1rem 0;
   border: 0;
   box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.1);
@@ -265,7 +265,7 @@ Styling
     font-size: 12px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu {
-    left: -120px;
+    left: -155px;
   }
   #mainHeader .navbar .container-fluid .userControl .notification .dropdown .dropdown-menu li .dropdown-item {
     margin: .5rem 0;
@@ -320,6 +320,7 @@ Styling
     margin: .5rem .5rem;
     padding: .5rem 1rem;
     border-radius: 10px;
+    min-height: 61px;
   }
   .pembungkus .menu .nav-link svg {
     max-width: 25px;
@@ -365,7 +366,7 @@ Styling
 
 @media screen and (min-width: 992px) {
   #mainHeader {
-    height: 400px;
+    height: 230px;
   }
   #mainHeader .navbar {
     padding: 0 3rem;

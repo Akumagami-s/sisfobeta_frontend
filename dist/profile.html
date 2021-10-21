@@ -69,114 +69,117 @@
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-                      <div class="row justify-content-center">
-                        <div class="col">
-                          <div class="profil d-flex justify-content-center flex-column align-items-center">
-                              <div class="profil-image pb-3">
-                                  <img src="assets/img/profil.png" alt="">
-                              </div>
-                              <!-- Button trigger modal -->
-                              <button type="button" class="btn btn-primary w-50 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Ganti Photo
-                              </button>
-      
-                              <!-- Modal -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Ganti Photo</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <input type="file" class="dropify" data-default-file="url_of_your_file" />
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                        </div>      
-  
-                        <div class="col-12 col-md-4">
-                          <fieldset disabled>
-                            <div class="mb-2">
-                              <label for="nrp" class="form-label">NRP</label>
-                              <input type="text" class="form-control" id="nrp" aria-describedby="">
+              <div class="containerInput">
+                <div class="col col-12 col-lg-4">
+                  <div class="profil d-flex justify-content-center flex-column align-items-center">
+                      <div class="profil-image pb-3">
+                          <img src="assets/img/profil.png" alt="">
+                      </div>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary w-50 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Ganti Photo
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Ganti Photo</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                          </fieldset>
-                          <div class="mb-2">
-                            <label for="nama" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="nama" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="nik" class="form-label">NIK</label>
-                            <input type="text" class="form-control" id="nik" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="noTlp" class="form-label">No Telepon</label>
-                            <input type="text" class="form-control" id="noTlp" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="npwp" class="form-label">NPWP</label>
-                            <input type="text" class="form-control" id="npwp" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="tglLahir" class="form-label">Tgl Lahir</label>
-                            <input type="date" class="form-control" id="tglLahir" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="pangkat" class="form-label">Pangkat</label>
-                            <input type="text" class="form-control" id="pangkat" aria-describedby="">
+                            <div class="modal-body">
+                              <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                           </div>
                         </div>
-                        
-                        <div class="col-12 col-md-4">
-                          <div class="mb-2">
-                            <label for="satker" class="form-label">Satker</label>
-                            <input type="text" class="form-control" id="satker" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="corp" class="form-label">Corp</label>
-                            <input type="text" class="form-control" id="corp" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="kesatuan" class="form-label">Kesatuan</label>
-                            <input type="text" class="form-control" id="kesatuan" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="kotama" class="form-label">Kotama</label>
-                            <input type="text" class="form-control" id="kotama" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="naBank" class="form-label">Nama Bank</label>
-                            <input type="text" class="form-control" id="naBank" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="naRek" class="form-label">Nama Rekening</label>
-                            <input type="text" class="form-control" id="naRek" aria-describedby="">
-                          </div>
-                          <div class="mb-2">
-                            <label for="noRek" class="form-label">No Rekening</label>
-                            <input type="text" class="form-control" id="noRek" aria-describedby="">
-                          </div>
-                          <div>
-                            <label for="noDebitur" class="form-label">Nomor Debitur</label>
-                            <input type="text" class="form-control" id="noDebitur" aria-describedby="">
-                          </div>
-                          <div class="py-3 float-end">
-                            <button type="button" class="btn btn-danger">Kembali</button>
-                            <button type="button" class="btn btn-success">Perbarui</button>
-                          </div>
-                          </div>
                       </div>
+                  </div>
+                </div>      
+
+                <div class="wrapperInput col-12 col-lg-8">
+                  <form action="" style="display: flex;">
+                    <div class="col-12 p-2 col-lg-6">
+                      <fieldset disabled>
+                        <div class="mb-2">
+                          <label for="nrp" class="form-label">NRP</label>
+                          <input type="text" class="form-control" id="nrp" aria-describedby="">
+                        </div>
+                      </fieldset>
+                      <div class="mb-2">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="nik" class="form-label">NIK</label>
+                        <input type="text" class="form-control" id="nik" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="noTlp" class="form-label">No Telepon</label>
+                        <input type="text" class="form-control" id="noTlp" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="npwp" class="form-label">NPWP</label>
+                        <input type="text" class="form-control" id="npwp" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="tglLahir" class="form-label">Tgl Lahir</label>
+                        <input type="date" class="form-control" id="tglLahir" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="pangkat" class="form-label">Pangkat</label>
+                        <input type="text" class="form-control" id="pangkat" aria-describedby="">
+                      </div>
+                    </div>
+                    <div class="col-12 p-2 col-lg-6">
+                      <div class="mb-2">
+                        <label for="satker" class="form-label">Satker</label>
+                        <input type="text" class="form-control" id="satker" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="corp" class="form-label">Corp</label>
+                        <input type="text" class="form-control" id="corp" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="kesatuan" class="form-label">Kesatuan</label>
+                        <input type="text" class="form-control" id="kesatuan" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="kotama" class="form-label">Kotama</label>
+                        <input type="text" class="form-control" id="kotama" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="naBank" class="form-label">Nama Bank</label>
+                        <input type="text" class="form-control" id="naBank" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="naRek" class="form-label">Nama Rekening</label>
+                        <input type="text" class="form-control" id="naRek" aria-describedby="">
+                      </div>
+                      <div class="mb-2">
+                        <label for="noRek" class="form-label">No Rekening</label>
+                        <input type="text" class="form-control" id="noRek" aria-describedby="">
+                      </div>
+                      <div>
+                        <label for="noDebitur" class="form-label">Nomor Debitur</label>
+                        <input type="text" class="form-control" id="noDebitur" aria-describedby="">
+                      </div>
+                      <div class="py-3 float-end">
+                        <button type="button" class="btn btn-danger">Kembali</button>
+                        <button type="button" class="btn btn-success">Perbarui</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
 
           </div>
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">

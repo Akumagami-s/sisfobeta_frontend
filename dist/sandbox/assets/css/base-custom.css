@@ -1,0 +1,139 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  font-family: steelfish;
+  src: url(../../../dist/assets/font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+#app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo {
+  display: flex;
+  align-items: center;
+}
+
+#app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo .nameBrand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+#app #sidebar .sidebar-wrapper .sidebar-menu .menu .sidebar-item.active .sidebar-link {
+  background-image: linear-gradient(73.1deg, #227e22 8%, #63a211 86.9%);
+}
+
+.SubContentName {
+  margin-bottom: 1rem;
+}
+
+.contentPart {
+  margin-bottom: 2rem;
+}
+
+.contentPart h4 {
+  margin-bottom: .3rem;
+}
+
+table {
+  width: 100%;
+}
+
+table thead {
+  background-image: linear-gradient(73.1deg, #227e22 8%, #63a211 86.9%);
+  color: #fff;
+}
+
+table thead tr th {
+  padding: .5rem .5rem;
+}
+
+table tbody {
+  background: #fff;
+}
+
+table tbody tr td {
+  padding: .5rem .5rem;
+  border: 1px solid #c1c1c1;
+}
+
+pre {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+pre code .token.operator {
+  color: #67cdcc;
+}
+
+pre code .token.function {
+  color: #f08d49;
+}
+
+@media screen and (min-width: 0px) {
+  #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo .nameBrand {
+    font-size: 18px;
+    margin-left: .5rem;
+  }
+  #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo img {
+    min-height: 2.5rem;
+  }
+  table thead tr th {
+    font-size: 12px;
+  }
+  table tbody tr td {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo .nameBrand {
+    font-size: 22px;
+  }
+  #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo img {
+    min-height: 3rem;
+  }
+  table thead tr th {
+    font-size: 14px;
+  }
+  table tbody tr td {
+    font-size: 14px;
+  }
+  table tbody tr td code {
+    background-color: #f9f2f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #app #main {
+    padding: 3rem;
+  }
+  #app #main header {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    padding: .7rem;
+    background-image: linear-gradient(73.1deg, #227e22 8%, #63a211 86.9%);
+  }
+  #app #main header a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+  }
+}

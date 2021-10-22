@@ -39,7 +39,7 @@ Resset Css
 }
 
 .contentPart {
-  margin-bottom: 1.5rem;
+  margin: 1rem 0;
 }
 
 .contentPart h4 {
@@ -68,6 +68,8 @@ table thead {
 
 table thead tr th {
   padding: .5rem .5rem;
+  color: #000;
+  font-weight: 800;
 }
 
 table tbody {

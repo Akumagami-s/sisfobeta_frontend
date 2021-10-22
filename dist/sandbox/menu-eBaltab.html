@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
     <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/apps.css">
     <link rel="stylesheet" href="./assets/css/base-custom.css">
 </head>
 
@@ -91,89 +91,104 @@
                 <p>API Ebaltab adalah api untuk mengakses informasi riwayat hidup prajurit TNI</p>
             </div>
 
-            <div class="page-content">
-                <h1 class="SubContentName" id="dokumentasi">
-                    <a href="#dokumentasi">Dokumentasi</a>
-                </h1>
-                <div class="contentPart">
-                    <h4>Versi</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Versi</th>
-                                <th>Tanggal</th>
-                                <th>Perubahan</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code class="highlighter-rouge">versi 1</code></td>
-                                <td>04/10/2021</td>
-                                <td>Initial deployment</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="contentPart">
-                    <h4>Endpoints</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Endpoint</th>
-                                <th>Kegunaan</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code class="highlighter-rouge">/baltab/sanbox/calldatakeluar</code></td>
-                                <td>Return data sandbox riwayat hidup prajurit baltab</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
-                <h1 class="SubContentName" id="reqParameter">
-                    <a href="#reqParameter">Required Parameter</a>
-                </h1>
-                <div class="contentPart">
-                    <h4>Example API Fields</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Parameter</th>
-                                <th>Deskripsi</th>
-                                <th>Tipe Data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code class="highlighter-rouge">TOKEN</code></td>
-                                <td>Token untuk access API</td>
-                                <td>string</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <pre class=" language-bash" tabindex="0">
-                    <code class=" language-bash">
-                        <span class="token operator">"0": {</span>
+            <div class="wrapperPageContent">
+                <div class="page-content">
+                    <h1 class="SubContentName" id="dokumentasi">
+                        <a href="#dokumentasi">Dokumentasi</a>
+                    </h1>
+                    <div class="contentPart">
+                        <h4>Versi</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Versi</th>
+                                    <th>Tanggal</th>
+                                    <th>Perubahan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="highlighter-rouge">versi 1</code></td>
+                                    <td>04/10/2021</td>
+                                    <td>Initial deployment</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
     
-                     <span class="token function"> "atas_nama": "AGS",
-                        "jumlah": "3213213",
-                        "total_bulan": "12",
-                        "nama_bank": "BRI",
-                        "no_rekening": "4324244",
-                        "data_prajurit": {
-                            "nama_prajurit": "Agus",
-                            "nrp": "333",
-                            "tanggal pensiun": "2034-08-13"
-                        }</span>
-                      <span class="token operator"> },</span>
-                    </code>
-                </pre>
+                    <div class="contentPart">
+                        <h4>Endpoints</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Endpoint</th>
+                                    <th>Kegunaan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="highlighter-rouge">/baltab/sanbox/calldatakeluar</code></td>
+                                    <td>Return data sandbox riwayat hidup prajurit baltab</td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <h1 class="SubContentName" id="reqParameter">
+                        <a href="#reqParameter">Required Parameter</a>
+                    </h1>
+                    <div class="contentPart">
+                        <h4>Example API Fields</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Deskripsi</th>
+                                    <th>Tipe Data</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="highlighter-rouge">TOKEN</code></td>
+                                    <td>Token untuk access API</td>
+                                    <td>string</td>
+                                    </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
+                    <pre class=" language-bash" tabindex="0">
+                        <code class=" language-bash">
+                            <span class="token operator">"0": {</span>
+        
+                         <span class="token function"> "atas_nama": "AGS",
+                            "jumlah": "3213213",
+                            "total_bulan": "12",
+                            "nama_bank": "BRI",
+                            "no_rekening": "4324244",
+                            "data_prajurit": {
+                                "nama_prajurit": "Agus",
+                                "nrp": "333",
+                                "tanggal pensiun": "2034-08-13"
+                            }</span>
+                          <span class="token operator"> },</span>
+                        </code>
+                    </pre>
+                </div>
+                <div class="sidebarRight">
+                    <div class="wrapper-sidebar-right">
+                        <h5 class="sidebar-right-title">In This Pages</h5>
+                        <ul class="sidebar-right-underlist">
+                            <li class="sidebar-right-list">
+                                <a class="sidebar-right-link" href="#dokumentasi">Dokumentasi</a>
+                            </li>
+                            <li class="sidebar-right-list">
+                                <a  class="sidebar-right-link" href="#reqParameter">Required Parameter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             
 
@@ -186,6 +201,7 @@
             </footer>
         </div>
     </div>
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
@@ -193,6 +209,13 @@
     <script src="assets/js/pages/dashboard.js"></script>
 
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $('.sidebar-right-underlist li a').on('click', function(){
+            $('.sidebar-right-underlist li a.current').removeClass('current');
+            $(this).addClass('current');
+        });
+    </script>
 </body>
 
 </html>

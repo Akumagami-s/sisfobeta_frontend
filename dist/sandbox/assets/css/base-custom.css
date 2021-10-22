@@ -45,6 +45,10 @@ Resset Css
   margin-bottom: .3rem;
 }
 
+.wrapperPageContent {
+  display: flex;
+}
+
 table {
   width: 100%;
 }
@@ -67,6 +71,12 @@ table tbody tr td {
   border: 1px solid #c1c1c1;
 }
 
+table tbody tr td code {
+  background-color: #f9f2f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
 pre {
   padding: 2rem;
   background: #fff;
@@ -80,6 +90,32 @@ pre code .token.operator {
 
 pre code .token.function {
   color: #f08d49;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right .sidebar-right-title {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right ul li {
+  padding-left: 0;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right ul li a {
+  color: #25396f;
+  font-weight: 600;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right ul li a.current {
+  color: #435ebe;
+  transition: .3s;
 }
 
 @media screen and (min-width: 0px) {
@@ -96,6 +132,12 @@ pre code .token.function {
   table tbody tr td {
     font-size: 12px;
   }
+  .wrapperPageContent {
+    flex-direction: column;
+  }
+  .wrapperPageContent .sidebarRight {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -111,10 +153,24 @@ pre code .token.function {
   table tbody tr td {
     font-size: 14px;
   }
-  table tbody tr td code {
-    background-color: #f9f2f4;
-    padding: 2px 4px;
-    border-radius: 4px;
+  .wrapperPageContent {
+    flex-direction: row;
+  }
+  .wrapperPageContent .page-content {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  .wrapperPageContent .sidebarRight {
+    width: 20%;
+    padding: 1rem;
+    min-height: 100%;
+    display: block;
+  }
+  .wrapperPageContent .sidebarRight .wrapper-sidebar-right {
+    position: sticky;
+    top: 0;
+    padding: 2rem 0;
   }
 }
 

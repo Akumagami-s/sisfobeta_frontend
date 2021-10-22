@@ -35,10 +35,11 @@ Resset Css
 
 .SubContentName {
   margin-bottom: 1rem;
+  padding: 2rem 0 1rem 0;
 }
 
 .contentPart {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .contentPart h4 {
@@ -77,9 +78,35 @@ table tbody tr td code {
   border-radius: 4px;
 }
 
+.table2 {
+  margin: 1.5rem 0;
+}
+
+.table2 thead {
+  background-image: none;
+  background: #D6E6F2;
+  color: #607080;
+  border: none;
+}
+
+.table2 thead tr {
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.table2 tbody tr:nth-of-type(odd) {
+  background: #E7EFF3;
+}
+
+.table2 tbody tr td {
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+}
+
 pre {
   padding: 2rem;
   background: #fff;
+  margin-bottom: 0;
+  margin: 1.5rem 0;
   border-radius: 32px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -90,6 +117,18 @@ pre code .token.operator {
 
 pre code .token.function {
   color: #f08d49;
+}
+
+.note {
+  padding: 1.3rem;
+  margin: 2rem 0;
+  border: 1px dashed #0b87da;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.note strong {
+  color: #25396f;
 }
 
 .wrapperPageContent .sidebarRight .wrapper-sidebar-right .sidebar-right-title {
@@ -132,11 +171,17 @@ pre code .token.function {
   table tbody tr td {
     font-size: 12px;
   }
+  .table2 {
+    width: 100%;
+  }
   .wrapperPageContent {
     flex-direction: column;
   }
   .wrapperPageContent .sidebarRight {
     display: none;
+  }
+  .note {
+    font-size: 14px;
   }
 }
 
@@ -152,6 +197,9 @@ pre code .token.function {
   }
   table tbody tr td {
     font-size: 14px;
+  }
+  .table2 {
+    width: max-content;
   }
   .wrapperPageContent {
     flex-direction: row;
@@ -171,6 +219,9 @@ pre code .token.function {
     position: sticky;
     top: 0;
     padding: 2rem 0;
+  }
+  .note {
+    font-size: 16px;
   }
 }
 

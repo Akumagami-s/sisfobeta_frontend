@@ -76,7 +76,6 @@
                         </li>
                     </ul>
                 </div>
-                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
         <div id="main">
@@ -87,17 +86,17 @@
             </header>
 
             <div class="page-heading">
-                <h3>E-Baltab</h3>
+                <h1>E-Baltab</h1>
                 <p>API Ebaltab adalah api untuk mengakses informasi riwayat hidup prajurit TNI</p>
             </div>
 
             <div class="wrapperPageContent">
                 <div class="page-content">
-                    <h1 class="SubContentName" id="dokumentasi">
+                    <h2 class="SubContentName" id="dokumentasi">
                         <a href="#dokumentasi">Dokumentasi</a>
-                    </h1>
-                    <div class="contentPart">
-                        <h4>Versi</h4>
+                    </h2>
+                    <dsiv class="contentPart">
+                        <h5>Versi</h5>
                         <table>
                             <thead>
                                 <tr>
@@ -114,10 +113,10 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </dsiv>
     
                     <div class="contentPart">
-                        <h4>Endpoints</h4>
+                        <h5>Endpoints</h5>
                         <table>
                             <thead>
                                 <tr>
@@ -135,11 +134,11 @@
                         </table>
                     </div>
     
-                    <h1 class="SubContentName" id="reqParameter">
+                    <h2 class="SubContentName" id="reqParameter">
                         <a href="#reqParameter">Required Parameter</a>
-                    </h1>
+                    </h2>
                     <div class="contentPart">
-                        <h4>Example API Fields</h4>
+                        <h5>Example API Fields</h5>
                         <table>
                             <thead>
                                 <tr>
@@ -175,6 +174,38 @@
                           <span class="token operator"> },</span>
                         </code>
                     </pre>
+                    <p class="note"><strong><em>Note:</em></strong> On Sandbox, Midtrans uses web-based payment simulator. So, payment that requires app deeplink like GoPay, will use web simulator instead of real app deeplink. To test real app deeplink use cases, please use Midtrans </p>
+
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th>Input</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Expiry Month</td>
+                                <td><code>01</code> (or any month)</td>
+                            </tr>
+                            <tr>
+                                <td>Expiry Year</td>
+                                <td><code>2025</code> (or any future year)</td>
+                            </tr>
+                            <tr>
+                                <td>CVV</td>
+                                <td><code>123</code></td>
+                            </tr>
+                            <tr>
+                                <td>OTP/3DS</td>
+                                <td><code>112233</code></td>
+                            </tr>
+                            <tr>
+                                <td>Card Number</td>
+                                <td>Refer to table given below.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="sidebarRight">
                     <div class="wrapper-sidebar-right">

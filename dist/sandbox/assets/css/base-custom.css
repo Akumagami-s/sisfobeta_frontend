@@ -72,6 +72,10 @@ table thead tr th {
   font-weight: 800;
 }
 
+table .headWhite tr th {
+  color: #fff;
+}
+
 table tbody {
   background: #fff;
 }

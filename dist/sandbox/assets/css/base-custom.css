@@ -63,6 +63,14 @@ table thead tr th {
   padding: .5rem .5rem;
 }
 
+table thead tr th:first-child {
+  border-left: 1px solid #c1c1c1;
+}
+
+table thead tr th:last-child {
+  border-right: 1px solid #c1c1c1;
+}
+
 table tbody {
   background: #fff;
 }

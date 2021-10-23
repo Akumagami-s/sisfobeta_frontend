@@ -1,0 +1,106 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  font-family: 'Poppins', sans-serif;
+  src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+.container-privacy-policy {
+  background-image: url(/dist/assets/img/privacyBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-privacy-policy .privacy-policy {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 9px 10px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  max-width: 1300px;
+}
+
+.container-privacy-policy .privacy-policy .bagian {
+  margin-bottom: .5rem;
+}
+
+.container-privacy-policy .privacy-policy .bagian .title {
+  font-size: 18px;
+}
+
+.container-privacy-policy .privacy-policy .bagian ul li a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 0px) {
+  .container-privacy-policy {
+    padding: 1rem;
+  }
+  .container-privacy-policy .privacy-policy {
+    padding: 1rem;
+  }
+  .container-privacy-policy .privacy-policy .bagian {
+    font-size: 12px;
+  }
+  .container-privacy-policy .privacy-policy .bagian .title {
+    font-size: 14px;
+  }
+  .container-privacy-policy .privacy-policy .bagian .content {
+    font-size: 12px;
+  }
+  .container-privacy-policy .privacy-policy .bagian ul {
+    padding-left: 2rem;
+  }
+  .container-privacy-policy .privacy-policy .bagian ul li {
+    font-size: 12px;
+  }
+  .container-privacy-policy .privacy-policy .bagian ul li a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-privacy-policy {
+    padding: 2rem;
+  }
+  .container-privacy-policy .privacy-policy {
+    padding: 1.5rem;
+  }
+  .container-privacy-policy .privacy-policy .bagian {
+    font-size: 14px;
+  }
+  .container-privacy-policy .privacy-policy .bagian .title {
+    font-size: 18px;
+  }
+  .container-privacy-policy .privacy-policy .bagian .content {
+    font-size: 14px;
+  }
+  .container-privacy-policy .privacy-policy .bagian ul li {
+    font-size: 14px;
+  }
+  .container-privacy-policy .privacy-policy .bagian ul li a {
+    text-decoration: none;
+  }
+}

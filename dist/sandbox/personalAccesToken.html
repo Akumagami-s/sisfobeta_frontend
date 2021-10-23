@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/apps.css">
+    <link rel="stylesheet" href="./assets/css/base-custom.css">
+    
+    <link rel="stylesheet" href="./assets/css/personalAccessToken.css">
+    <!--Base Custom Etwpad Style-->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between wrapperLogo">
+                        <div class="logo">
+                            <a href="#"><img src="../assets/img/loading-etwpad.png" alt="Logo" srcset=""></a>
+                            <h1 class="nameBrand">ETWPAD</h1>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub active">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-stack"></i>
+                                <span>Akun</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="#">Function Token Api</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Akun Sandbox</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-wrench"></i>
+                                <span>Api</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="menu-eBaltab.html">E-baltab</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">E-Kpr</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">E-Twp</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-list"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <h3>Function Token Api</h3>
+            </div>
+
+            <div class="wrapperPageContent">
+                <div class="head">
+                    <h5 class="title">Personal Accses Token</h5>
+                    <div class="wrapperButton">
+                        <button class="btn btn-primary">Generete New Token</button>
+                        <button class="btn btn-danger">Revoke All</button>
+                    </div>
+                </div>
+                <div class="body">
+                    <p class="note"><strong><em>Note:</em></strong> On Sandbox, Midtrans uses web-based payment simulator. So, payment that requires app deeplink like GoPay, will use web simulator instead of real app deeplink. To test real app deeplink use cases, please use Midtrans </p>
+
+                    <div class="wrapperApi">
+                        <div class="apiCode">
+                            <i class="bi bi-check"></i>
+                            <code>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</code>
+                            <clipboard-copy for="new-oauth-token" aria-label="Copy token" tabindex="0" role="button" data-view-component="true">
+                                <ion-icon name="copy-outline"></ion-icon>
+                            </clipboard-copy>
+                        </div> 
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="d-flex justify-content-center">
+                        <p>2021 &copy; ETWPAD</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -170,6 +170,35 @@ pre code .token.function {
   transition: .3s;
 }
 
+.wrapperCard {
+  display: flex;
+}
+
+.wrapperCard .wrapperProperty .cardProperti {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+}
+
+.wrapperCard .wrapperProperty .cardProperti .images-properti {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.wrapperCard .wrapperProperty .cardProperti .information .lokasiPerumahan {
+  font-weight: 800;
+}
+
+.wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-content .tab-pane .wrapperTable {
+  overflow-x: hidden;
+  overflow-x: scroll;
+  margin: 1.5rem 0;
+}
+
 @media screen and (min-width: 0px) {
   #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo .nameBrand {
     font-size: 18px;
@@ -177,6 +206,9 @@ pre code .token.function {
   }
   #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo img {
     min-height: 2.5rem;
+  }
+  #app #main {
+    padding: 3rem;
   }
   table thead tr th {
     font-size: 12px;
@@ -196,6 +228,59 @@ pre code .token.function {
   .note {
     font-size: 14px;
   }
+  .wrapperCard {
+    padding: 2rem 0;
+    flex-direction: column;
+  }
+  .wrapperCard .wrapperProperty {
+    padding: 0;
+    margin: .8rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti {
+    width: 100%;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information {
+    padding: 2rem 1rem;
+    font-size: 12px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information .detailInformation {
+    margin-top: 1.5rem;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+    padding: 1rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton .btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapperCard {
+    padding: 2rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .wrapperCard .wrapperProperty {
+    padding: 1rem .5rem;
+    margin: 0;
+    max-width: 341px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti {
+    width: 100%;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information {
+    padding: 2rem 1rem;
+    font-size: 12px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information .detailInformation {
+    margin-top: 1.5rem;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+    padding: 1rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton .btn {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -204,6 +289,9 @@ pre code .token.function {
   }
   #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo img {
     min-height: 3rem;
+  }
+  #app #main {
+    padding: 3rem;
   }
   table thead tr th {
     font-size: 14px;
@@ -236,12 +324,52 @@ pre code .token.function {
   .note {
     font-size: 16px;
   }
+  .wrapperCard {
+    padding: 2rem 0;
+  }
+  .wrapperCard .wrapperProperty {
+    padding: 1rem .5rem;
+    margin: 0;
+    max-width: 289px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information {
+    font-size: 14px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information .detailInformation {
+    margin-top: 1.5rem;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+    padding: 1rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton .btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .wrapperCard {
+    padding: 2rem 0;
+  }
+  .wrapperCard .wrapperProperty {
+    padding: 1rem .5rem;
+    margin: 0;
+    max-width: 379px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information {
+    font-size: 14px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information .detailInformation {
+    margin-top: 1.5rem;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+    padding: 1.5rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton .btn {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  #app #main {
-    padding: 3rem;
-  }
   #app #main header {
     position: absolute;
     top: 15%;

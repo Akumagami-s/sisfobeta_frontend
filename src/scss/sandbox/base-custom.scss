@@ -178,6 +178,39 @@ pre {
     }
 }
 
+.wrapperCard {
+    display: flex;
+    .wrapperProperty {
+        .cardProperti {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 6px;
+            .images-properti {
+                width: 100%;
+                border-radius: 6px 6px 0 0;
+            }
+            .information {
+                .lokasiPerumahan {
+                    font-weight: 800;
+                }
+            }
+            .wrapperButton {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.tab-content {
+    .tab-pane {
+        .wrapperTable {
+            overflow-x: hidden;
+            overflow-x: scroll;
+            margin: 1.5rem 0;
+        }
+    }
+}
+
 
 @media screen and (min-width : 0px) {
     #app {
@@ -197,6 +230,9 @@ pre {
                     }
                 }
             }
+        }
+        #main {
+            padding: 3rem;
         }
     }
 
@@ -228,7 +264,61 @@ pre {
     .note {
         font-size: 14px;
     }
+
+    .wrapperCard {
+        padding: 2rem 0;
+        flex-direction: column;
+        .wrapperProperty {
+            padding: 0;
+            margin: .8rem 0;
+            .cardProperti {
+                width: 100%;
+                .information {
+                    padding: 2rem 1rem;
+                    font-size: 12px;
+                    .detailInformation {
+                        margin-top: 1.5rem;
+                    }
+                }
+                .wrapperButton {
+                    padding: 1rem 0;
+                    .btn {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
     
+}
+
+@media screen and (min-width :768px) {
+    .wrapperCard {
+        padding: 2rem 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .wrapperProperty {
+            padding: 1rem .5rem;
+            margin: 0;
+            max-width: 341px;
+            .cardProperti {
+                width: 100%;
+                .information {
+                    padding: 2rem 1rem;
+                    font-size: 12px;
+                    .detailInformation {
+                        margin-top: 1.5rem;
+                    }
+                }
+                .wrapperButton {
+                    padding: 1rem 0;
+                    .btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width : 1200px) {
@@ -249,6 +339,10 @@ pre {
                     }
                 }
             }
+        }
+
+        #main {
+            padding: 3rem;
         }
     }
     
@@ -295,13 +389,60 @@ pre {
     .note {
         font-size: 16px;
     }
+
+    .wrapperCard {
+        padding: 2rem 0;
+        .wrapperProperty {
+            padding: 1rem .5rem;
+            margin: 0;
+            max-width: 289px;
+            .cardProperti {
+                .information {
+                    font-size: 14px;
+                    .detailInformation {
+                        margin-top: 1.5rem;
+                    }
+                }
+                .wrapperButton {
+                    padding: 1rem 0;
+                    .btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1900px) {
+    .wrapperCard {
+        padding: 2rem 0;
+        .wrapperProperty {
+            padding: 1rem .5rem;
+            margin: 0;
+            max-width: 379px;
+            .cardProperti {
+                .information {
+                    font-size: 14px;
+                    .detailInformation {
+                        margin-top: 1.5rem;
+                    }
+                }
+                .wrapperButton {
+                    padding: 1.5rem 0;
+                    .btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 @media screen and (max-width : 1200px) {
     #app {
         #main {
-            padding: 3rem;
             header {
                 position: absolute;
                 top: 15%;

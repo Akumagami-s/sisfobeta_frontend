@@ -1,0 +1,138 @@
+/*------------
+Font
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: steelfish;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    src: url(../font/stelfish.ttf);
+}
+
+/*------------
+Resset Css
+------------*/
+*,::after,::before,h1,h2,p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+body {
+    background-color: #f2f7ff;
+}
+.authDownload {
+    .container {
+        .mobile {
+            .wrapperContentMobile {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                padding: 3rem 0;
+                padding-bottom: 5rem;
+                .iconEtwpad {
+                    width: 100%;
+                    max-width: 120px;
+                    margin-bottom: 1rem;
+                }
+                .nameApps {
+                    font-weight: 700;
+                    margin-bottom: 2.5rem;
+                }
+                .informationApps {
+                    color: #607080;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                .btnDownload {
+                    background: rgba(34,126,34,1);
+                    width: 100%;
+                    position: fixed;
+                    bottom: 0;
+                    text-decoration: none;
+                    color: #fff;
+                    text-align: center;
+                    padding: .8rem 1rem;
+                }
+            }
+        }
+        .desktop {
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            .wrapperContentDesktop {
+                padding: 0 2rem;
+                display: flex;
+                align-items: center;
+                height: 80%;
+                background: #fff;
+                border-radius: 20px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                .contentImages {
+                    padding: 0 1.5rem;
+                    .imagesApps {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .informationApps {
+                    padding: 0 1.5rem;
+                    color: #607080;
+                    .nameApps {
+                        font-weight: 700;
+                        color: #000;
+                        font-size: 52px;
+                        margin-bottom: .5rem;
+                    }
+                    .tentangSingkat {
+                        margin-bottom: 2.5rem;
+                    }
+                    .btnDownload {
+                        text-decoration: none;
+                        color: #fff;
+                        background: rgba(34,126,34,1);
+                        padding: .5rem 2rem;
+                        border-radius: 24px;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    }
+                    .caraInstall {
+                        margin-top: 2.5rem;
+                        p {
+                            margin-bottom: .3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width : 0px) {
+    .authDownload {
+        .container {
+            .desktop {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 992px) {
+    .authDownload {
+        .container {
+            .mobile {
+                display: none;
+            }
+            .desktop {
+                display: flex;
+            }
+        }
+    }
+}

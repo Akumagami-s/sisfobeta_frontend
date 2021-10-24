@@ -42,12 +42,24 @@ body {
                 }
                 .nameApps {
                     font-weight: 700;
-                    margin-bottom: 2.5rem;
+                    margin-bottom: 1.5rem;
                 }
                 .informationApps {
                     color: #607080;
                     font-size: 14px;
                     font-weight: 400;
+                    margin-bottom: 2rem;
+                }
+                .caraInstall {
+                    font-size: 14px;
+                    color: #607080;
+                    p {
+                        margin-bottom: .7rem;
+                    }
+                    ol {
+                        padding-left: 20px;
+                        font-size: 13px;
+                    }
                 }
                 .btnDownload {
                     background: rgba(34,126,34,1);

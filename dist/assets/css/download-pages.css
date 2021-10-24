@@ -44,13 +44,28 @@ body {
 
 .authDownload .container .mobile .wrapperContentMobile .nameApps {
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .authDownload .container .mobile .wrapperContentMobile .informationApps {
   color: #607080;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.authDownload .container .mobile .wrapperContentMobile .caraInstall {
+  font-size: 14px;
+  color: #607080;
+}
+
+.authDownload .container .mobile .wrapperContentMobile .caraInstall p {
+  margin-bottom: .7rem;
+}
+
+.authDownload .container .mobile .wrapperContentMobile .caraInstall ol {
+  padding-left: 20px;
+  font-size: 13px;
 }
 
 .authDownload .container .mobile .wrapperContentMobile .btnDownload {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Mazer Admin Dashboard</title>
+    <title>Ebaltab - Sandbox</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
     <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/apps.css">
     <link rel="stylesheet" href="./assets/css/base-custom.css">
 </head>
 
@@ -76,7 +76,6 @@
                         </li>
                     </ul>
                 </div>
-                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
         <div id="main">
@@ -87,93 +86,413 @@
             </header>
 
             <div class="page-heading">
-                <h3>E-Baltab</h3>
+                <h1>E-Baltab</h1>
                 <p>API Ebaltab adalah api untuk mengakses informasi riwayat hidup prajurit TNI</p>
             </div>
 
-            <div class="page-content">
-                <h1 class="SubContentName" id="dokumentasi">
-                    <a href="#dokumentasi">Dokumentasi</a>
-                </h1>
-                <div class="contentPart">
-                    <h4>Versi</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Versi</th>
-                                <th>Tanggal</th>
-                                <th>Perubahan</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code class="highlighter-rouge">versi 1</code></td>
-                                <td>04/10/2021</td>
-                                <td>Initial deployment</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="contentPart">
-                    <h4>Endpoints</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Endpoint</th>
-                                <th>Kegunaan</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code class="highlighter-rouge">/baltab/sanbox/calldatakeluar</code></td>
-                                <td>Return data sandbox riwayat hidup prajurit baltab</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
-                <h1 class="SubContentName" id="reqParameter">
-                    <a href="#reqParameter">Required Parameter</a>
-                </h1>
-                <div class="contentPart">
-                    <h4>Example API Fields</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Parameter</th>
-                                <th>Deskripsi</th>
-                                <th>Tipe Data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code class="highlighter-rouge">TOKEN</code></td>
-                                <td>Token untuk access API</td>
-                                <td>string</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <pre class=" language-bash" tabindex="0">
-                    <code class=" language-bash">
-                        <span class="token operator">"0": {</span>
+            <div class="wrapperPageContent">
+                <div class="page-content">
+                    <h2 class="SubContentName" id="dokumentasi">
+                        <a href="#dokumentasi">Dokumentasi</a>
+                    </h2>
+                    <div class="contentPart">
+                        <h5>Versi</h5>
+                        <table>
+                            <thead class="headWhite">
+                                <tr>
+                                    <th>Versi</th>
+                                    <th>Tanggal</th>
+                                    <th>Perubahan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="highlighter-rouge">versi 1</code></td>
+                                    <td>04/10/2021</td>
+                                    <td>Initial deployment</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
     
-                     <span class="token function"> "atas_nama": "AGS",
-                        "jumlah": "3213213",
-                        "total_bulan": "12",
-                        "nama_bank": "BRI",
-                        "no_rekening": "4324244",
-                        "data_prajurit": {
-                            "nama_prajurit": "Agus",
-                            "nrp": "333",
-                            "tanggal pensiun": "2034-08-13"
-                        }</span>
-                      <span class="token operator"> },</span>
-                    </code>
-                </pre>
+                    <div class="contentPart">
+                        <h5>Endpoints</h5>
+                        <table>
+                            <thead class="headWhite">
+                                <tr>
+                                    <th>Endpoint</th>
+                                    <th>Kegunaan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="highlighter-rouge">/baltab/sanbox/calldatakeluar</code></td>
+                                    <td>Return data sandbox riwayat hidup prajurit baltab</td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <h2 class="SubContentName" id="reqParameter">
+                        <a href="#reqParameter">Required Parameter</a>
+                    </h2>
+                    <div class="contentPart">
+                        <h5>Example API Fields</h5>
+                        <table>
+                            <thead class="headWhite">
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Deskripsi</th>
+                                    <th>Tipe Data</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="highlighter-rouge">TOKEN</code></td>
+                                    <td>Token untuk access API</td>
+                                    <td>string</td>
+                                    </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
+                    <pre class=" language-bash" tabindex="0">
+                        <code class=" language-bash">
+                            <span class="token operator">"0": {</span>
+        
+                         <span class="token function"> "atas_nama": "AGS",
+                            "jumlah": "3213213",
+                            "total_bulan": "12",
+                            "nama_bank": "BRI",
+                            "no_rekening": "4324244",
+                            "data_prajurit": {
+                                "nama_prajurit": "Agus",
+                                "nrp": "333",
+                                "tanggal pensiun": "2034-08-13"
+                            }</span>
+                          <span class="token operator"> },</span>
+                        </code>
+                    </pre>
+                    <p class="note"><strong><em>Note:</em></strong> On Sandbox, Midtrans uses web-based payment simulator. So, payment that requires app deeplink like GoPay, will use web simulator instead of real app deeplink. To test real app deeplink use cases, please use Midtrans </p>
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th>Input</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Expiry Month</td>
+                                <td><code>01</code> (or any month)</td>
+                            </tr>
+                            <tr>
+                                <td>Expiry Year</td>
+                                <td><code>2025</code> (or any future year)</td>
+                            </tr>
+                            <tr>
+                                <td>CVV</td>
+                                <td><code>123</code></td>
+                            </tr>
+                            <tr>
+                                <td>OTP/3DS</td>
+                                <td><code>112233</code></td>
+                            </tr>
+                            <tr>
+                                <td>Card Number</td>
+                                <td>Refer to table given below.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="contentPart contentTabs">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" 
+                            id="nav-home-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-home" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-home" 
+                            aria-selected="true">General</button>
+
+                            <button class="nav-link" 
+                            id="nav-profile-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-profile" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-profile" 
+                            aria-selected="false">Profile</button>
+                            
+                            <button class="nav-link" 
+                            id="nav-contact-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-contact" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-contact" 
+                            aria-selected="false">Contact</button>
+                        </div>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" 
+                            id="nav-home" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-home-tab">
+
+                                <table class="table2">
+                                    <thead>
+                                        <tr>
+                                            <th>Visa</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Full Authentication
+                                                <br>
+                                                <em>Cardholder is 3DS ready</em>
+                                            </td>
+                                            <td>
+                                                <strong>Accept Transaction:</strong>  4811 1111 1111 1114 
+                                                <br>
+                                                <strong>Denied by Bank Transaction:</strong>  4811 1111 1111 1114
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Full Authentication
+                                                <br>
+                                                <em>Cardholder is 3DS ready</em>
+                                            </td>
+                                            <td>
+                                                <strong>Accept Transaction:</strong>  4811 1111 1111 1114 
+                                                <br>
+                                                <strong>Denied by Bank Transaction:</strong>  4811 1111 1111 1114
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Full Authentication
+                                                <br>
+                                                <em>Cardholder is 3DS ready</em>
+                                            </td>
+                                            <td>
+                                                <strong>Accept Transaction:</strong>  4811 1111 1111 1114 
+                                                <br>
+                                                <strong>Denied by Bank Transaction:</strong>  4811 1111 1111 1114
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Full Authentication
+                                                <br>
+                                                <em>Cardholder is 3DS ready</em>
+                                            </td>
+                                            <td>
+                                                <strong>Accept Transaction:</strong>  4811 1111 1111 1114 
+                                                <br>
+                                                <strong>Denied by Bank Transaction:</strong>  4811 1111 1111 1114
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Full Authentication
+                                                <br>
+                                                <em>Cardholder is 3DS ready</em>
+                                            </td>
+                                            <td>
+                                                <strong>Accept Transaction:</strong>  4811 1111 1111 1114 
+                                                <br>
+                                                <strong>Denied by Bank Transaction:</strong>  4811 1111 1111 1114
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                        </div>
+                    </div>
+
+                    <div class="contentPart contentTabs">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" 
+                            id="nav-kprProperti-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-kprProperti" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-kprProperti" 
+                            aria-selected="true">Ajukan KPR</button>
+
+                            <button class="nav-link" 
+                            id="nav-data-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#nav-data" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="nav-data" 
+                            aria-selected="false">Data Prajurit</button>
+                        </div>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" 
+                            id="nav-kprProperti" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-kprProperti-tab">
+                                <div class="wrapperCard">
+                                    <div class="wrapperProperty">
+                                        <div class="cardProperti">
+                                            <img src="../assets/img/rumah1.svg" alt="" class="images-properti">
+                                            <div class="information">
+                                                <h5 class="nameProperty">Nama Perumahaan</h5>
+                                                <p class="lokasiPerumahan">Jl Sedayana Jakarta Barat</p>
+                                                <div class="detailInformation">
+                                                    <p class="textInformation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sint eaque necessitatibus tempore eum error, molestias ducimus beatae, minus unde veritatis accusantium! Saepe, iusto? Illo voluptatem quod consectetur aliquam laudantium ea dolore fuga soluta voluptates eos iste, nemo accusantium est, ullam laborum! Unde magnam quia ipsa, eveniet reprehenderit doloremque numquam?</p>
+                                                </div>
+                                            </div>
+                                            <div class="wrapperButton">
+                                                <button class="btn btn-primary">Ajukan KPR</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrapperProperty">
+                                        <div class="cardProperti">
+                                            <img src="../assets/img/rumah1.svg" alt="" class="images-properti">
+                                            <div class="information">
+                                                <h5 class="nameProperty">Nama Perumahaan</h5>
+                                                <p class="lokasiPerumahan">Jl Sedayana Jakarta Barat</p>
+                                                <div class="detailInformation">
+                                                    <p class="textInformation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sint eaque necessitatibus tempore eum error, molestias ducimus beatae, minus unde veritatis accusantium! Saepe, iusto? Illo voluptatem quod consectetur aliquam laudantium ea dolore fuga soluta voluptates eos iste, nemo accusantium est, ullam laborum! Unde magnam quia ipsa, eveniet reprehenderit doloremque numquam?</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="wrapperButton">
+                                                <button class="btn btn-primary">Ajukan KPR</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrapperProperty">
+                                        <div class="cardProperti">
+                                            <img src="../assets/img/rumah1.svg" alt="" class="images-properti">
+                                            <div class="information">
+                                                <h5 class="nameProperty">Nama Perumahaan</h5>
+                                                <p class="lokasiPerumahan">Jl Sedayana Jakarta Barat</p>
+                                                <div class="detailInformation">
+                                                    <p class="textInformation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sint eaque necessitatibus tempore eum error, molestias ducimus beatae, minus unde veritatis accusantium! Saepe, iusto? Illo voluptatem quod consectetur aliquam laudantium ea dolore fuga soluta voluptates eos iste, nemo accusantium est, ullam laborum! Unde magnam quia ipsa, eveniet reprehenderit doloremque numquam?</p>
+                                                </div>
+                                            </div>
+                                            <div class="wrapperButton">
+                                                <button class="btn btn-primary">Ajukan KPR</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" 
+                            id="nav-data" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-data-tab">
+                            <div class="wrapperTable">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Nama</td>
+                                            <td>:</td>
+                                            <td>ANTONIUS DWI WARDANA</td>
+                                            <td>ANTONIUS DWI WARDANA</td>
+                                            <td>ANTONIUS DWI WARDANA</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="wrapperTable">
+                                <table>
+                                    <thead class="headWhite">
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Tanggal</th>
+                                            <th>Jumlah</th>
+                                            <th>Keterangan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2010-11-01 <span class="time">00:00:00</span></td>
+                                            <td>Rp 553.000</td>
+                                            <td>Transaksi Sukses</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebarRight">
+                    <div class="wrapper-sidebar-right">
+                        <h5 class="sidebar-right-title">In This Pages</h5>
+                        <ul class="sidebar-right-underlist">
+                            <li class="sidebar-right-list">
+                                <a class="sidebar-right-link" href="#dokumentasi">Dokumentasi</a>
+                            </li>
+                            <li class="sidebar-right-list">
+                                <a  class="sidebar-right-link" href="#reqParameter">Required Parameter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             
 
@@ -186,6 +505,7 @@
             </footer>
         </div>
     </div>
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
@@ -193,6 +513,13 @@
     <script src="assets/js/pages/dashboard.js"></script>
 
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $('.sidebar-right-underlist li a').on('click', function(){
+            $('.sidebar-right-underlist li a.current').removeClass('current');
+            $(this).addClass('current');
+        });
+    </script>
 </body>
 
 </html>

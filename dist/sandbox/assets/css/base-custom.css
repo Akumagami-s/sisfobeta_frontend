@@ -35,14 +35,26 @@ Resset Css
 
 .SubContentName {
   margin-bottom: 1rem;
+  padding: 2rem 0 1rem 0;
 }
 
 .contentPart {
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 .contentPart h4 {
   margin-bottom: .3rem;
+}
+
+.contentTabs {
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.wrapperPageContent {
+  display: flex;
 }
 
 table {
@@ -56,6 +68,12 @@ table thead {
 
 table thead tr th {
   padding: .5rem .5rem;
+  color: #000;
+  font-weight: 800;
+}
+
+table .headWhite tr th {
+  color: #fff;
 }
 
 table tbody {
@@ -67,9 +85,41 @@ table tbody tr td {
   border: 1px solid #c1c1c1;
 }
 
+table tbody tr td code {
+  background-color: #f9f2f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.table2 {
+  margin: 1.5rem 0;
+}
+
+.table2 thead {
+  background-image: none;
+  background: #D6E6F2;
+  color: #607080;
+  border: none;
+}
+
+.table2 thead tr {
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.table2 tbody tr:nth-of-type(odd) {
+  background: #E7EFF3;
+}
+
+.table2 tbody tr td {
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+}
+
 pre {
   padding: 2rem;
   background: #fff;
+  margin-bottom: 0;
+  margin: 1.5rem 0;
   border-radius: 32px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -82,6 +132,73 @@ pre code .token.function {
   color: #f08d49;
 }
 
+.note {
+  padding: 1.3rem;
+  margin: 2rem 0;
+  border: 1px dashed #0b87da;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.note strong {
+  color: #25396f;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right .sidebar-right-title {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right ul li {
+  padding-left: 0;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right ul li a {
+  color: #25396f;
+  font-weight: 600;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.wrapperPageContent .sidebarRight .wrapper-sidebar-right ul li a.current {
+  color: #435ebe;
+  transition: .3s;
+}
+
+.wrapperCard {
+  display: flex;
+}
+
+.wrapperCard .wrapperProperty .cardProperti {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+}
+
+.wrapperCard .wrapperProperty .cardProperti .images-properti {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.wrapperCard .wrapperProperty .cardProperti .information .lokasiPerumahan {
+  font-weight: 800;
+}
+
+.wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-content .tab-pane .wrapperTable {
+  overflow-x: hidden;
+  overflow-x: scroll;
+  margin: 1.5rem 0;
+}
+
 @media screen and (min-width: 0px) {
   #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo .nameBrand {
     font-size: 18px;
@@ -90,11 +207,79 @@ pre code .token.function {
   #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo img {
     min-height: 2.5rem;
   }
+  #app #main {
+    padding: 3rem;
+  }
   table thead tr th {
     font-size: 12px;
   }
   table tbody tr td {
     font-size: 12px;
+  }
+  .table2 {
+    width: 100%;
+  }
+  .wrapperPageContent {
+    flex-direction: column;
+  }
+  .wrapperPageContent .sidebarRight {
+    display: none;
+  }
+  .note {
+    font-size: 14px;
+  }
+  .wrapperCard {
+    padding: 2rem 0;
+    flex-direction: column;
+  }
+  .wrapperCard .wrapperProperty {
+    padding: 0;
+    margin: .8rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti {
+    width: 100%;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information {
+    padding: 2rem 1rem;
+    font-size: 12px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information .detailInformation {
+    margin-top: 1.5rem;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+    padding: 1rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton .btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapperCard {
+    padding: 2rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .wrapperCard .wrapperProperty {
+    padding: 1rem .5rem;
+    margin: 0;
+    max-width: 341px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti {
+    width: 100%;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information {
+    padding: 2rem 1rem;
+    font-size: 12px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information .detailInformation {
+    margin-top: 1.5rem;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+    padding: 1rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton .btn {
+    font-size: 14px;
   }
 }
 
@@ -105,23 +290,86 @@ pre code .token.function {
   #app #sidebar .sidebar-wrapper .sidebar-header .wrapperLogo .logo img {
     min-height: 3rem;
   }
+  #app #main {
+    padding: 3rem;
+  }
   table thead tr th {
     font-size: 14px;
   }
   table tbody tr td {
     font-size: 14px;
   }
-  table tbody tr td code {
-    background-color: #f9f2f4;
-    padding: 2px 4px;
-    border-radius: 4px;
+  .table2 {
+    width: max-content;
+  }
+  .wrapperPageContent {
+    flex-direction: row;
+  }
+  .wrapperPageContent .page-content {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  .wrapperPageContent .sidebarRight {
+    width: 20%;
+    padding: 1rem;
+    min-height: 100%;
+    display: block;
+  }
+  .wrapperPageContent .sidebarRight .wrapper-sidebar-right {
+    position: sticky;
+    top: 0;
+    padding: 2rem 0;
+  }
+  .note {
+    font-size: 16px;
+  }
+  .wrapperCard {
+    padding: 2rem 0;
+  }
+  .wrapperCard .wrapperProperty {
+    padding: 1rem .5rem;
+    margin: 0;
+    max-width: 289px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information {
+    font-size: 14px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information .detailInformation {
+    margin-top: 1.5rem;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+    padding: 1rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton .btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .wrapperCard {
+    padding: 2rem 0;
+  }
+  .wrapperCard .wrapperProperty {
+    padding: 1rem .5rem;
+    margin: 0;
+    max-width: 379px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information {
+    font-size: 14px;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .information .detailInformation {
+    margin-top: 1.5rem;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton {
+    padding: 1.5rem 0;
+  }
+  .wrapperCard .wrapperProperty .cardProperti .wrapperButton .btn {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  #app #main {
-    padding: 3rem;
-  }
   #app #main header {
     position: absolute;
     top: 15%;

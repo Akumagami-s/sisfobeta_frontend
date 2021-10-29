@@ -1,0 +1,44 @@
+.skip{
+    text-decoration: none;
+    color: #3E3C3C;
+}
+
+@media screen and (max-width: 360px){
+    .splashImg{
+        margin-top: 40%;
+    }
+    
+    .slick-dots{
+        position: fixed !important;
+        bottom: 20px !important;
+    }
+    
+    .btn-next{
+        background-color: #3E563E;
+        color: white;
+    }
+    
+    .slick-dots li button:before{
+        width: 0 !important;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .splashImg{
+        margin-top: 45%;
+    }
+    
+    .slick-dots{
+        position: fixed !important;
+        bottom: 20px !important;
+    }
+    
+    .btn-next{
+        background-color: #3E563E;
+        color: white;
+    }
+    
+    .slick-dots li button:before{
+        width: 0 !important;
+    }
+}

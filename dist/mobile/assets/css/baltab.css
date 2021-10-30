@@ -1,0 +1,27 @@
+.icon{
+    background-color: #3E563E;
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.icon img{
+    width: 40px;
+    height: 40px;
+}
+
+.p{
+    margin: 0 8px;
+}
+
+@media screen and (max-width: 360px){
+    .p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 420px){
+    .p{
+        font-size: 16px;
+    }
+}

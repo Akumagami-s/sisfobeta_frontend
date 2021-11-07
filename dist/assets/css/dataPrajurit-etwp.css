@@ -1,0 +1,158 @@
+/*------------
+Font
+------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-family: steelfish;
+  src: url(../font/stelfish.ttf);
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*------------
+Resset Css
+------------*/
+*, ::after, ::before, h1, h2, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/*------------
+Variables
+------------*/
+/*------------
+Styling
+------------*/
+.mainContent .filterPilihMenu {
+  margin: 2rem 0;
+}
+
+.mainContent .filterPilihMenu h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.mainContent .filterPilihMenu .dropdown {
+  position: relative !important;
+  width: 30%;
+  max-width: 250px;
+}
+
+.mainContent .filterPilihMenu .dropdown .dropdown-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: #000;
+  box-shadow: none;
+  position: relative;
+  border: 1px solid #808080;
+}
+
+.mainContent .filterPilihMenu .dropdown .dropdown-menu {
+  width: 100% !important;
+  border: 1px solid #808080;
+}
+
+.mainContent .wrapperTable:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.mainContent .wrapperTable .nameTable {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.mainContent .wrapperTable .table .newHead {
+  background: #3C543C;
+}
+
+.mainContent .wrapperTable .table .newHead tr th {
+  font-size: 16px;
+}
+
+.mainContent .wrapperTable .table .newHead tr th::before {
+  color: #fff;
+}
+
+.mainContent .wrapperTable .table .newHead tr th::after {
+  color: #fff;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr td .nama {
+  font-weight: 700;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr td .label {
+  padding: .5rem 1rem;
+  width: fit-content;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr td .status {
+  padding: .5rem 1rem;
+  width: fit-content;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr td .status.aktif {
+  background: #3C543C;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr td .status.meninggal {
+  background: #E90000;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr td .status.pensiun {
+  background: #999999;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr td .label.NotVerived {
+  background: #999999;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr td .label.Verifed {
+  background: #3C543C;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr .pointAction .dropdown .buttonMore {
+  border: none;
+  background: transparent;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr .pointAction .dropdown .dropdown-menu {
+  border-radius: 5px 0px 5px 5px;
+}
+
+.mainContent .wrapperTable .table .bodyTable tr .pointAction .dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  padding: 0 .7rem;
+}
+
+.page-item.active .page-link {
+  background-color: #3C543C;
+  border-color: #3C543C;
+}
+
+@media screen and (min-width: 0px) {
+  .wrapperTable .table .bodyTable tr td {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapperTable .table .bodyTable tr td {
+    font-size: 14px;
+  }
+}

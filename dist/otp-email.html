@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP - Email</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+        *,::after,::before,h1,h2,p {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            outline: none;
+            font-weight: normal;
+        }
+
+        #authMail {
+            padding: 2rem ;
+        }
+
+        #authMail .logo {
+            margin-bottom: 1.7rem;
+        }
+
+        #authMail h3 {
+            font-size: 18px;
+            margin-bottom: 1rem;
+            color: rgba(0, 0, 0, 1);
+        }
+        #authMail h2 {
+            font-size: 22px;
+            margin-bottom: 2rem;
+            color: rgba(0, 0, 0, 1);
+        }
+        .bold {
+            font-weight: 500;
+        }
+        .authVerification {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .authVerification .code {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            padding: .8rem 4rem;
+            border-radius: 8px;
+            font-size: 26px;
+            font-weight: 700;
+        }
+        p {
+            margin: 1.3rem 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="authMail">
+        <div class="logo">
+            <img src="https://i.ibb.co/fVJHQFK/ETTPAD1-1.png" alt="">
+        </div>
+        <h3>Hallo <span class="name bold">Agustinus</span></h3>
+        <h2 class="bold">Masukkan kode berikut untuk melakukan verifikasi pertanyaan keamanan.</h2>
+
+        <div class="authVerification">
+                <span class="code bold">0123</span>
+        </div>
+        
+        <p>Kode di atas hanya berlaku 6 menit. Mohon jangan sebarkan kode ini ke siapapun, termasuk pihak yang mengatasnamakan eTPPAD.</p>
+        <p>Biar akunmu semakin aman, jangan lupa baca panduan keamanan kami di <span class="ettpad">eTPPAD</span>.</p>
+    </div>
+    
+</body>
+</html>
